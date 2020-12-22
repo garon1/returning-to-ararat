@@ -1,0 +1,4 @@
+graphical_culture = north_america_gfx
+graphical_culture_2d = north_america_2d
+
+color = rgb { 210 150 133 }

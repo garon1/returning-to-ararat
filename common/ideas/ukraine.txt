@@ -1,0 +1,427 @@
+ideas = {
+
+	country = {
+		UKR_trust_nationalists = {
+			picture = ger_revive_the_kaiserreich
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+					modifier = {
+						monarchism_drift = 0.03
+					}
+				}
+	UKR_agriculture = {
+			picture = por_iberian_workers_united
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+					modifier = {
+						local_resources_factor = 0.10
+							local_building_slots_factor =  0.05
+					}
+				}
+	UKR_uneducated_population = {
+			picture = generic_research_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+					modifier = {
+						research_speed_factor = -0.07
+					}
+				}
+	UKR_rough_past = {
+			picture = generic_victors_of_ww1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+					modifier = {
+						political_power_cost = 0.01
+						stability_weekly = -0.01
+					}
+				}
+		UKR_not_industrialized = {
+			picture = great_depression
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+					modifier = {
+						political_power_cost = 0.01
+						consumer_goods_factor = -0.03
+						production_speed_industrial_complex_factor = -0.1
+					}
+				}
+			}
+		political_advisor = {
+
+		UKR_democratic_guy = {
+			
+			picture = generic_political_advisor_asia_1
+			
+			allowed = {
+				original_tag = UKR
+			}
+			
+			traits = { social_democracy_reformer }
+
+			do_effect = {
+				NOT = {
+					has_government = social_democracy
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		UKR_communist_guy = {
+			
+			picture = generic_political_advisor_asia_3
+			
+			allowed = {
+				original_tag = UKR
+			}
+			
+			traits = { communist_revolutionary }
+
+			do_effect = {
+				NOT = {
+					has_government = social_democracy
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		UKR_fascist_guy = {
+			
+			picture = generic_political_advisor_asia_2
+			
+			allowed = {
+				original_tag = UKR
+			}
+			
+			traits = { communist_revolutionary }
+
+			do_effect = {
+				NOT = {
+					has_government = social_democracy
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		UKR_pot = {
+
+			picture = generic_political_advisor_asia_2
+
+			allowed = {
+				original_tag = UKR
+			}
+			
+			traits = { prince_of_terror }
+		}
+
+		UKR_coi = {
+
+			picture = generic_political_advisor_asia_1
+				
+			allowed = {
+				original_tag = UKR
+			}
+			
+			traits = { captain_of_industry }
+		}
+
+		UKR_stc = {
+
+			picture = generic_political_advisor_asia_3
+			
+			allowed = {
+				original_tag = UKR
+			}
+			
+			traits = { smooth_talking_charmer }
+		}
+	}
+
+	army_chief = {
+
+		UKR_aco2 = {
+
+			picture = generic_army_asia_4
+			
+			allowed = {
+				original_tag = UKR
+			}		
+			
+			traits = { army_chief_organizational_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		UKR_acd2 = {
+
+			picture = generic_army_asia_1
+			
+			allowed = {
+				original_tag = UKR
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+
+		UKR_acr = {
+
+			picture = generic_air_asia_3
+			
+			allowed = {
+				original_tag = UKR
+			}
+			
+			traits = { air_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		UKR_acgs = {
+
+			picture = generic_air_asia_3
+			
+			allowed = {
+				original_tag = UKR
+			}
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	navy_chief = {
+
+		UKR_nccr = {
+
+			picture = generic_navy_asia_2
+			
+			allowed = {
+				original_tag = UKR
+			}
+					
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		UKR_ncm = {
+
+			picture = generic_navy_asia_3
+			
+			allowed = {
+				original_tag = UKR
+			}
+					
+			traits = { navy_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+		UKR_ar = {
+			ledger = army
+			
+			picture = generic_army_asia_5
+			
+			allowed = {
+				original_tag = UKR
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		UKR_ai2 = {
+			ledger = army
+
+			picture = generic_army_asia_3
+			
+			allowed = {
+				original_tag = UKR
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		UKR_aa2 = {
+			ledger = army
+
+			picture = generic_army_asia_2
+			
+			allowed = {
+				original_tag = UKR
+			}
+			
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		UKR_acas = {
+			ledger = air
+
+			picture = generic_air_asia_2
+			
+			allowed = {
+				original_tag = UKR
+			}
+			
+			traits = { air_close_air_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		UKR_ncs = {
+			ledger = navy
+
+			picture = generic_navy_asia_2
+			
+			allowed = {
+				original_tag = UKR
+			}
+			
+			traits = { navy_capital_ship_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+
+	theorist = {
+		UKR_mt = {
+			ledger = army
+			
+			picture = generic_army_asia_6
+
+			allowed = {
+				original_tag = UKR
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = { military_theorist }
+		}
+		
+		UKR_nt = {
+			ledger = navy
+
+			picture = generic_navy_asia_3
+			
+			allowed = {
+				original_tag = UKR
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_theorist }
+		}	
+
+		UKR_awt = {
+			ledger = air
+
+			picture = generic_air_asia_2
+			
+			allowed = {
+				original_tag = UKR
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+			}
+		}	
+	}
+	
+

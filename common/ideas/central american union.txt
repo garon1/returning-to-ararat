@@ -1,0 +1,416 @@
+ideas = {
+	# MILITARY
+country = {
+CAU_newly_born = {
+			
+			
+			allowed = {
+				original_tag = "CAU"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+					political_power_factor = -0.10
+			}
+		}
+		CAU_industrialize = {
+			
+			
+			allowed = {
+				original_tag = "CAU"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+					research_speed_factor = 0.01
+					production_speed_arms_factory_factor = 0.03
+					production_speed_infrastructure_factor = 0.03
+					production_factory_max_efficiency_factor = 0.03
+			}
+		}
+		CAU_research = {
+			
+			
+			allowed = {
+				original_tag = "CAU"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+					research_speed_factor = 0.08
+			}
+		}
+		CAU_spread_revolution = {
+			
+			
+			allowed = {
+				original_tag = "CAU"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+					justify_war_goal_time = -0.25
+			}
+		}
+		CAU_national_unity = {
+			
+			
+			allowed = {
+				original_tag = "CAU"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+					stability_weekly = 0.01
+					war_support_weekly = 0.05
+			}
+		}
+	}
+
+	political_advisor = {
+
+		CAU_democratic_guy = {
+			
+			picture = generic_political_advisor_asia_1
+			
+			allowed = {
+				original_tag = CAU
+			}
+			
+			traits = { democratic_reformer }
+
+			do_effect = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		CAU_communist_guy = {
+			
+			picture = generic_political_advisor_asia_3
+			
+			allowed = {
+				original_tag = CAU
+			}
+			
+			traits = { communist_revolutionary }
+
+			do_effect = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		CAU_fascist_guy = {
+			
+			picture = generic_political_advisor_asia_2
+			
+			allowed = {
+				original_tag = CAU
+			}
+			
+			traits = { communist_revolutionary }
+
+			do_effect = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+			CAU_pot = {
+
+			picture = generic_political_advisor_asia_2
+
+			allowed = {
+				original_tag = CAU
+			}
+			
+			traits = { prince_of_terror }
+		}
+
+		CAU_coi = {
+
+			picture = generic_political_advisor_asia_1
+				
+			allowed = {
+				original_tag = CAU
+			}
+			
+			traits = { captain_of_industry }
+		}
+
+		CAU_stc = {
+
+			picture = generic_political_advisor_asia_3
+			
+			allowed = {
+				original_tag = CAU
+			}
+			
+			traits = { smooth_talking_charmer }
+		}
+	}
+
+	army_chief = {
+
+		CAU_aco2 = {
+
+			picture = generic_army_asia_4
+			
+			allowed = {
+				original_tag = CAU
+			}		
+			
+			traits = { army_chief_organizational_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		CAU_acd2 = {
+
+			picture = generic_army_asia_1
+			
+			allowed = {
+				original_tag = CAU
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+
+		CAU_acr = {
+
+			picture = generic_air_asia_3
+			
+			allowed = {
+				original_tag = CAU
+			}
+			
+			traits = { air_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		CAU_acgs = {
+
+			picture = generic_air_asia_3
+			
+			allowed = {
+				original_tag = CAU
+			}
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	navy_chief = {
+
+		CAU_nccr = {
+
+			picture = generic_navy_asia_2
+			
+			allowed = {
+				original_tag = CAU
+			}
+					
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		CAU_ncm = {
+
+			picture = generic_navy_asia_3
+			
+			allowed = {
+				original_tag = CAU
+			}
+					
+			traits = { navy_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+		CAU_ar = {
+			ledger = army
+			
+			picture = generic_army_asia_5
+			
+			allowed = {
+				original_tag = CAU
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		CAU_ai2 = {
+			ledger = army
+
+			picture = generic_army_asia_3
+			
+			allowed = {
+				original_tag = CAU
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		CAU_aa2 = {
+			ledger = army
+
+			picture = generic_army_asia_2
+			
+			allowed = {
+				original_tag = CAU
+			}
+			
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		CAU_acas = {
+			ledger = air
+
+			picture = generic_air_asia_2
+			
+			allowed = {
+				original_tag = CAU
+			}
+			
+			traits = { air_close_air_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		CAU_ncs = {
+			ledger = navy
+
+			picture = generic_navy_asia_2
+			
+			allowed = {
+				original_tag = CAU
+			}
+			
+			traits = { navy_capital_ship_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+
+	theorist = {
+		CAU_mt = {
+			ledger = army
+			
+			picture = generic_army_asia_6
+
+			allowed = {
+				original_tag = CAU
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = { military_theorist }
+		}
+		
+		CAU_nt = {
+			ledger = navy
+
+			picture = generic_navy_asia_3
+			
+			allowed = {
+				original_tag = CAU
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_theorist }
+		}	
+
+		CAU_awt = {
+			ledger = air
+
+			picture = generic_air_asia_2
+			
+			allowed = {
+				original_tag = CAU
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+	}
+}

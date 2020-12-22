@@ -1,0 +1,1657 @@
+focus_tree = {
+	id = usa_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = USA
+		}
+		
+		modifier = {
+			add = 10
+			original_tag = USA
+		}
+	}
+	default = no
+	focus = {
+		id = USA_implement_reforms1
+		icon = GFX_goal_unknown
+		cost = 7.00
+		x = 11
+		y = 0
+			completion_reward = {
+					add_political_power = 150
+				}
+
+	}
+	focus = {
+		id = USA_philippines_won_war1
+		icon = GFX_goal_unknown
+		cost = 7.00
+		mutually_exclusive = {
+			focus = USA_stay_isolationist1
+		}
+		x = 19
+		y = 0
+			completion_reward = {
+					add_war_support = -0.20
+					add_political_power = -200
+				}
+			available = {
+					PHI = {
+							is_puppet = no
+							has_war = no
+						}
+				}
+
+	}
+	focus = {
+		id = USA_stay_isolationist1
+		icon = GFX_goal_unknown
+		cost = 7.00
+		mutually_exclusive = {
+			focus = USA_philippines_won_war1
+		}
+		x = 21
+		y = 0
+		available = {
+					date > 1936.1.1
+		date > 1937.1.1
+				}
+			completion_reward = {
+					add_war_support = -0.15
+				}
+
+	}
+	focus = {
+		id = USA_army_modernization1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 27
+		y = 0
+			completion_reward = {
+					army_experience = 20
+				}
+
+	}
+	focus = {
+		id = USA_industrial1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 34
+		y = 0
+			completion_reward = {
+					add_tech_bonus = {
+							name = industrial_bonus
+							bonus = 0.05
+							uses = 1
+							category = industry
+						}
+				}
+
+	}
+	focus = {
+		id = USA_air_force1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 3
+		y = 1
+			completion_reward = {
+					air_experience = 25
+				}
+
+	}
+	focus = {
+		id = USA_final_adjustments1
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = USA_stregthen_government1
+		}
+		cost = 7.00
+		x = 12
+		y = 6
+			completion_reward = {
+					add_ideas = why_we_fight_focus
+				}
+
+	}
+	focus = {
+		id = USA_navy1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 42
+		y = 0
+			completion_reward = {
+					navy_experience = 25
+				}
+
+	}
+	focus = {
+		id = USA_fighter1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_air_force1
+		}
+		x = 1
+		y = 2
+			completion_reward = {
+					add_tech_bonus = {
+							name = fighter_bonus
+							bonus = 1.0
+							uses = 2
+							technology = early_fighter
+							technology = fighter1
+							technology = fighter2
+							technology = fighter3
+							technology = heavy_fighter1
+							technology = heavy_fighter2
+							technology = heavy_fighter3
+						}
+				}
+
+	}
+	focus = {
+		id = USA_CAS1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_fighter1
+		}
+		x = 1
+		y = 4
+			completion_reward = {
+					add_tech_bonus = {
+							name = CAS_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = cas_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = USA_navy_base1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_air_force1
+		}
+		x = 3
+		y = 3
+			complete_tooltip = {
+			air_experience = 25
+			if = { limit = { has_country_flag = aviation_effort_AB }
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}			
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}			
+		}
+
+
+		completion_reward = {
+			air_experience = 25
+
+			if = {
+				limit = {
+					capital_scope = {
+						NOT = {
+							free_building_slots = {
+								building = air_base
+								size > 1
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_AB }
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+				}
+				capital_scope = {
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_AB }
+				}
+			}
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+	focus = {
+		id = USA_anti_air1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_navy_base1
+		}
+		x = 3
+		y = 5
+			completion_reward = {
+					375 = {
+							add_extra_state_shared_building_slots = 2
+						}
+					375 = {
+							add_building_construction = {
+									type = anti_air_building
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = USA_bomber1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_air_force1
+		}
+		x = 5
+		y = 2
+			completion_reward = {
+					add_tech_bonus = {
+							name = bomber_bonus
+							bonus = 1.0
+							uses = 2
+							technology = strategic_bomber1
+							technology = strategic_bomber2
+							technology = strategic_bomber3
+							category = tactical_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = USA_NAV1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_bomber1
+		}
+		x = 5
+		y = 4
+			completion_reward = {
+					add_tech_bonus = {
+							name = nav_bomber_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = naval_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = USA_rocket1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_anti_air1
+		}
+		prerequisite = {
+			focus = USA_CAS1
+		}
+		prerequisite = {
+			focus = USA_NAV1
+		}
+		x = 3
+		y = 6
+			completion_reward = {
+					add_tech_bonus = {
+							name = jet_rocket_bonus
+							ahead_reduction = 0.5
+							uses = 1
+							category = rocketry
+							category = jet_technology
+						}
+				}
+
+	}
+	focus = {
+		id = USA_change_economy1
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = USA_implement_reforms1
+		}
+		x = 7
+		y = 1
+			completion_reward = {
+					if = {
+							limit = {
+									has_idea = free_trade
+								}
+							add_ideas = export_focus
+						}
+				}
+
+	}
+	focus = {
+		id = USA_speech1
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = USA_change_economy1
+		}
+		x = 7
+		y = 2
+			completion_reward = {
+					country_event = usa.65
+				}
+
+	}
+	focus = {
+		id = USA_freedom_of_religon1
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = USA_speech1
+		}
+		x = 8
+		y = 3
+			completion_reward = {
+					add_ideas = YUG_idea_religious_freedoms_guaranteed
+				}
+
+	}
+	focus = {
+		id = USA_school_changes1
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = USA_freedom_of_religon1
+		}
+		x = 8
+		y = 4
+			completion_reward = {
+					add_ideas = { USA_colonial_elite }
+				}
+
+	}
+	focus = {
+		id = USA_change_labour1
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = USA_school_changes1
+		}
+		x = 9
+		y = 5
+			completion_reward = {
+					add_ideas = { FRA_matignon_agreements }
+				}
+
+	}
+	focus = {
+		id = USA_defend_public1
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = USA_change_labour1
+		}
+		x = 10
+		y = 6
+			completion_reward = {
+					if = {
+							limit = {
+									has_full_control_of_state = 686
+								}
+							686 = {
+									add_building_construction = {
+											type = coastal_bunker
+											province = {
+													all_provinces = yes
+													limit_to_naval_base = yes
+												}
+											level = 1
+											instant_build = yes
+										}
+									add_building_construction = {
+											type = bunker
+											province = {
+													all_provinces = yes
+													limit_to_border = yes
+												}
+											level = 1
+											instant_build = yes
+										}
+								}
+						}
+					if = {
+							limit = {
+									has_full_control_of_state = 629
+								}
+							629 = {
+									add_building_construction = {
+											type = coastal_bunker
+											province = {
+													all_provinces = yes
+													limit_to_naval_base = yes
+												}
+											level = 1
+											instant_build = yes
+										}
+									add_building_construction = {
+											type = bunker
+											level = 1
+											instant_build = yes
+											province = {
+													all_provinces = yes
+													limit_to_border = yes
+												}
+										}
+								}
+						}
+					if = {
+							limit = {
+									has_full_control_of_state = 631
+								}
+							631 = {
+									add_building_construction = {
+											type = coastal_bunker
+											province = {
+													all_provinces = yes
+													limit_to_naval_base = yes
+												}
+											level = 1
+											instant_build = yes
+										}
+									add_building_construction = {
+											type = bunker
+											level = 1
+											instant_build = yes
+											province = {
+													all_provinces = yes
+													limit_to_border = yes
+												}
+										}
+								}
+						}
+				}
+			available = {
+					OR = {
+							has_full_control_of_state = 686
+							has_full_control_of_state = 631
+							has_full_control_of_state = 629
+						}
+				}
+
+	}
+	focus = {
+		id = USA_prepare_for_war1
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = USA_implement_reforms1
+		}
+		x = 15
+		y = 1
+			completion_reward = {
+					add_ideas = indoctrination_focus
+					add_political_power = 150
+				}
+
+	}
+	focus = {
+		id = USA_asssemble_country1
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = USA_prepare_for_war1
+		}
+		x = 15
+		y = 2
+			completion_reward = {
+					add_ideas = deterrence
+				}
+
+	}
+	focus = {
+		id = USA_mobilize_for_war1
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = USA_asssemble_country1
+		}
+		x = 14
+		y = 3
+			completion_reward = {
+					add_ideas = militarism_focus
+				}
+
+	}
+	focus = {
+		id = USA_new_nation1
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = USA_philippines_won_war1
+		}
+		x = 17
+		y = 1
+			completion_reward = {
+					country_event = usa.66
+				}
+
+	}
+	focus = {
+		id = USA_interventionism1
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = USA_new_nation1
+		}
+		x = 17
+		y = 2
+			completion_reward = {
+					add_ideas = USA_intervention_in_the_americas
+					add_political_power = 100
+				}
+
+	}
+	focus = {
+		id = USA_road_to_war1
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = USA_interventionism1
+		}
+		x = 18
+		y = 3
+			completion_reward = {
+					add_ideas = POR_camisas_azuis
+				}
+
+	}
+	focus = {
+		id = USA_imperialism1
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = USA_road_to_war1
+		}
+		x = 19
+		y = 4
+			completion_reward = {
+					add_popularity = {
+							ideology = fascism
+							popularity = 0.10
+						}
+				}
+
+	}
+	focus = {
+		id = USA_caribbean1
+		icon = GFX_goal_unknown
+		cost = 15.00
+		prerequisite = {
+			focus = USA_imperialism1
+		}
+		x = 18
+		y = 5
+			completion_reward = {
+					690 = {
+							add_claim_by = USA
+						}
+					693 = {
+							add_claim_by = USA
+						}
+					315 = {
+							add_claim_by = USA
+						}
+					689 = {
+							add_claim_by = USA
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = CUB
+							expire = 0
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = JAM
+							expire = 0
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = BAH
+							expire = 0
+						}
+				}
+
+	}
+	focus = {
+		id = USA_mexico1
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = USA_imperialism1
+		}
+		x = 16
+		y = 5
+			completion_reward = {
+					480 = {
+							add_claim_by = USA
+						}
+					482 = {
+							add_claim_by = USA
+						}
+					484 = { add_claim_by=  USA }
+					create_wargoal = {
+							type = annex_everything
+							target = MEX
+							expire = 0
+						}
+				}
+
+	}
+	focus = {
+		id = USA_take_reds_down1
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = USA_imperialism1
+		}
+		x = 20
+		y = 5
+			completion_reward = {
+					318 = {
+							add_claim_by = USA
+						}
+					317 = {
+							add_claim_by = USA
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = HAI
+							expire = 0
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = CAU
+							expire = 0
+						}
+				}
+
+	}
+	focus = {
+		id = USA_happy_public1
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = USA_stay_isolationist1
+		}
+		x = 23
+		y = 1
+			completion_reward = {
+					add_political_power = 200
+					add_stability = 0.10
+				}
+
+	}
+	focus = {
+		id = USA_guarentee_liberties1
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = USA_happy_public1
+		}
+		x = 23
+		y = 2
+			completion_reward = {
+					add_ideas = YUG_idea_religious_freedoms_guaranteed
+					add_political_power = 100
+				}
+
+	}
+	focus = {
+		id = USA_eliminate_the_threat1
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = USA_guarentee_liberties1
+		}
+		x = 22
+		y = 3
+			completion_reward = {
+					add_popularity = {
+							ideology = communism
+							popularity = 0.01
+						}
+				}
+
+	}
+	focus = {
+		id = USA_topple_communism1
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = USA_eliminate_the_threat1
+		}
+		x = 21
+		y = 4
+			completion_reward = {
+					create_wargoal = {
+							type = topple_government
+							target = GER
+							expire = 0
+						}
+					create_wargoal = {
+							type = topple_government
+							target = HAI
+							expire = 0
+						}
+					create_wargoal = {
+							type = topple_government
+							target = CAU
+							expire = 0
+						}
+					create_wargoal = {
+							type = topple_government
+							target = ECU
+							expire = 0
+						}
+					create_wargoal = {
+							type = topple_government
+							target = BOL
+							expire = 0
+						}
+				}
+
+	}
+	focus = {
+		id = USA_motorization1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_army_modernization1
+		}
+		x = 25
+		y = 1
+			completion_reward = {
+					add_tech_bonus = {
+							name = motorized_bonus
+							bonus = 3.0
+							technology = motorised_infantry
+						}
+				}
+
+	}
+	focus = {
+		id = USA_armor1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_motorization1
+		}
+		x = 25
+		y = 2
+			completion_reward = {
+					add_tech_bonus = {
+							name = armor_bonus
+							bonus = 1.0
+							uses = 1
+							category = armor
+						}
+				}
+
+	}
+	focus = {
+		id = USA_tank1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_armor1
+		}
+		x = 24
+		y = 3
+			completion_reward = {
+					add_tech_bonus = {
+							name = motorized_bonus
+							ahead_reduction = 2
+							uses = 1
+							category = armor
+						}
+				}
+
+	}
+	focus = {
+		id = USA_land1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_army_modernization1
+		}
+		x = 27
+		y = 1
+			completion_reward = {
+					army_experience = 5
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 1.0
+							uses = 1
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = USA_doctorine1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_land1
+		}
+		x = 27
+		y = 2
+			completion_reward = {
+					add_tech_bonus = {
+							name = motorized_bonus
+							ahead_reduction = 2
+							uses = 1
+							category = motorized_equipment
+						}
+				}
+
+	}
+	focus = {
+		id = USA_protect1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_doctorine1
+		}
+		x = 27
+		y = 3
+			completion_reward = {
+					custom_effect_tooltip = shadow_scheme_focus_tt
+					add_ideas = wartime_industry_focus
+				}
+
+	}
+	focus = {
+		id = USA_infantry1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_army_modernization1
+		}
+		x = 29
+		y = 1
+			completion_reward = {
+					add_tech_bonus = {
+							name = infantry_bonus
+							bonus = 1.0
+							uses = 1
+							category = infantry_weapons
+						}
+				}
+
+	}
+	focus = {
+		id = USA_artillery1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_infantry1
+		}
+		x = 29
+		y = 2
+			completion_reward = {
+					add_tech_bonus = {
+							name = artillery_bonus
+							bonus = 1.0
+							uses = 1
+							category = artillery
+						}
+				}
+
+	}
+	focus = {
+		id = USA_decryption1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_artillery1
+		}
+		x = 30
+		y = 3
+			completion_reward = {
+					if = {
+							
+							add_tech_bonus = {
+									name = codebreaking_bonus
+									bonus = 1.0
+									uses = 3
+									category = decryption_tech
+									category = computing_tech
+								}
+						}
+					else = {
+							hidden_effect = {
+									set_technology = {
+											lar_decryption_bonus_tech = 1
+										}
+								}
+							custom_effect_tooltip = lar_decryption_bonus_tt
+						}
+				}
+
+	}
+	focus = {
+		id = USA_manhattan_project1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_protect1
+		}
+		prerequisite = {
+			focus = USA_tank1
+		}
+		prerequisite = {
+			focus = USA_decryption1
+		}
+		x = 27
+		y = 4
+			completion_reward = {
+					add_tech_bonus = {
+							name = nuclear_bonus
+							ahead_reduction = 2
+							category = nuclear
+						}
+				}
+
+	}
+	focus = {
+		id = USA_civilian.5
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_industrial1
+		}
+		x = 32
+		y = 1
+			completion_reward = {
+					378 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+					385 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = USA_civilian2.5
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_civilian.5
+		}
+		x = 32
+		y = 2
+			completion_reward = {
+					375 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+					376 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+					377 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = USA_industrial2.5
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_industrial1
+		}
+		x = 34
+		y = 2
+			completion_reward = {
+					add_tech_bonus = {
+							name = industrial_bonus
+							bonus = 0.5
+							uses = 1
+							category = industry
+						}
+				}
+
+	}
+	focus = {
+		id = USA_armament2.5
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_civilian2.5
+		}
+		prerequisite = {
+			focus = USA_industrial2.5
+		}
+		x = 32
+		y = 3
+			completion_reward = {
+					377 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+					379 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = USA_infra2.5
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_industrial2.5
+		}
+		x = 34
+		y = 3
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 0
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 0
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 1
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = USA_civilian3.5
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_industrial1
+		}
+		x = 36
+		y = 1
+			completion_reward = {
+					357 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+					358 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = USA_civilian4.5
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_civilian3.5
+		}
+		x = 36
+		y = 2
+			completion_reward = {
+					393 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+					395 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+					396 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = USA_infrastructure.5
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_civilian4.5
+		}
+		prerequisite = {
+			focus = USA_industrial2.5
+		}
+		x = 36
+		y = 3
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 0
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 0
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 1
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = USA_re-armament.5
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = USA_civilian4.5
+		}
+		prerequisite = {
+			focus = USA_industrial2.5
+		}
+		x = 38
+		y = 3
+			completion_reward = {
+					366 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+					370 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = USA_secret1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_re-armament.5
+		}
+		prerequisite = {
+			focus = USA_infrastructure.5
+		}
+		prerequisite = {
+			focus = USA_infra2.5
+		}
+		prerequisite = {
+			focus = USA_armament2.5
+		}
+		x = 36
+		y = 4
+			completion_reward = {
+					add_tech_bonus = {
+							name = secret_bonus
+							bonus = 1.0
+							uses = 4
+							category = electronics
+							category = nuclear
+							category = rocketry
+						}
+				}
+
+	}
+	focus = {
+		id = USA_research
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = USA_re-armament.5
+		}
+		prerequisite = {
+			focus = USA_infrastructure.5
+		}
+		prerequisite = {
+			focus = USA_infra2.5
+		}
+		prerequisite = {
+			focus = USA_armament2.5
+		}
+		x = 33
+		y = 4
+			completion_reward = {
+					add_research_slot = 2
+				}
+
+	}
+	focus = {
+		id = USA_flexible1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_navy1
+		}
+		mutually_exclusive = {
+			focus = USA_large1
+			focus = USA_large1
+		}
+		x = 40
+		y = 1
+			completion_reward = {
+					add_tech_bonus = {
+							name = sub_op_bonus
+							bonus = 1.0
+							uses = 2
+							technology = convoy_interdiction_ti
+							technology = unrestricted_submarine_warfare
+							technology = wolfpacks
+							technology = advanced_submarine_warfare
+							technology = combined_operations_raiding
+						}
+				}
+
+	}
+	focus = {
+		id = USA_submarine1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_flexible1
+		}
+		x = 40
+		y = 2
+			completion_reward = {
+					add_tech_bonus = {
+							name = ss_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = ss_tech
+						}
+				}
+
+	}
+	focus = {
+		id = USA_destroyer1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_submarine1
+		}
+		x = 40
+		y = 3
+			completion_reward = {
+					add_tech_bonus = {
+							name = dd_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = dd_tech
+						}
+				}
+
+	}
+	focus = {
+		id = USA_rally_public1
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = USA_mobilize_for_war1
+		}
+		x = 14
+		y = 4
+			completion_reward = {
+					add_war_support = 0.10
+				}
+
+	}
+	focus = {
+		id = USA_stregthen_government1
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = USA_rally_public1
+		}
+		x = 13
+		y = 5
+			completion_reward = {
+					add_ideas = ROM_constitutional_guarantees
+					set_rule = {
+							can_send_volunteers = yes
+						}
+				}
+
+	}
+	focus = {
+		id = USA_choose_path1
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = USA_defend_public1
+			focus = USA_final_adjustments1
+		}
+		x = 11
+		y = 7
+			completion_reward = {
+					add_political_power = 250
+				}
+
+	}
+	focus = {
+		id = USA_japan1
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = USA_imperialism1
+		}
+		x = 22
+		y = 5
+			completion_reward = {
+					633 = {
+							add_claim_by = USA
+						}
+					646 = {
+							add_claim_by = USA
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = JAP
+							expire = 0
+						}
+				}
+
+	}
+	focus = {
+		id = USA_final_touches1
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = USA_mexico1
+		}
+		prerequisite = {
+			focus = USA_caribbean1
+		}
+		prerequisite = {
+			focus = USA_take_reds_down1
+		}
+		prerequisite = {
+			focus = USA_japan1
+		}
+		x = 19
+		y = 7
+			completion_reward = {
+					add_political_power = 200
+					686 = {
+							add_core_of = USA
+						}
+					632 = {
+							add_core_of = USA
+						}
+					631 = {
+							add_core_of = USA
+						}
+					629 = {
+							add_core_of = USA
+						}
+					727 = {
+							add_core_of = USA
+						}
+					642 = {
+							add_core_of = USA
+						}
+					641 = {
+							add_core_of = USA
+						}
+				}
+
+	}
+	focus = {
+		id = USA_large1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_navy1
+		}
+		mutually_exclusive = {
+			focus = USA_flexible1
+			focus = USA_flexible1
+		}
+		x = 44
+		y = 1
+			completion_reward = {
+					add_tech_bonus = {
+							name = fleet_in_being_bonus
+							bonus = 1.0
+							uses = 2
+							category = fleet_in_being_tree
+						}
+				}
+
+	}
+	focus = {
+		id = USA_cruiser1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_large1
+		}
+		x = 44
+		y = 2
+			completion_reward = {
+					add_tech_bonus = {
+							name = cr_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = cl_tech
+							category = ca_tech
+						}
+				}
+
+	}
+	focus = {
+		id = USA_capital1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_cruiser1
+		}
+		x = 44
+		y = 3
+			completion_reward = {
+					navy_experience = 25
+					add_tech_bonus = {
+							name = capital_ships_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = bc_tech
+							category = bb_tech
+							category = cv_tech
+						}
+				}
+
+	}
+}

@@ -1,0 +1,1421 @@
+focus_tree = {
+	id = Croatia
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CRO
+		}
+	}
+	default = no
+	focus = {
+		id = CRO_political_power
+		icon = GFX_goal_unknown
+		cost = 7.00
+		x = 14
+		y = 0
+		completion_reward = {
+		add_political_power = 100
+		}
+
+	}
+	focus = {
+		id = CRO_army
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 32
+		y = 0
+		completion_reward = {
+					army_experience = 10
+				}
+
+	}
+	focus = {
+		id = CRO_industrial
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 35
+		y = 6
+		completion_reward = {
+					add_stability = 0.05
+				}
+
+	}
+	focus = {
+		id = CRO_navy_awakening
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 41
+		y = 0
+		 available = {
+            103 = {
+                is_coastal = yes
+                is_controlled_by = ROOT
+            }
+
+        }
+		completion_reward = {
+					navy_experience = 25
+				}
+
+	}
+	focus = {
+		id = CRO_air_focus
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 41
+		y = 4
+		completion_reward = {
+					add_ideas = HUN_indigenous_designs
+				}
+
+	}
+	focus = {
+		id = CRO_no_more_nationalism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = CRO_political_power
+		}
+		x = 5
+		y = 1
+		completion_reward = {
+		add_stability = -0.10
+		}
+
+	}
+	focus = {
+		id = CRO_constitutional_convention
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = CRO_no_more_nationalism
+		}
+		x = 5
+		y = 2
+		completion_reward = {
+					country_event = croatia.1
+				}
+
+	}
+	focus = {
+		id = CRO_democracy_triumphs
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = CRO_constitutional_convention
+		}
+		x = 5
+		y = 3
+		available = {
+					always = no
+				}
+				completion_reward = {
+				hidden_effect = {
+				news_event = { id = news.386 hours = 10 }
+				}
+				
+				}
+
+	}
+	focus = {
+		id = CRO_stray_russia
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = CRO_democracy_triumphs
+		}
+		x = 5
+		y = 4
+		completion_reward = {
+		add_opinion_modifier = { 
+					target = SOV
+					modifier =  hostile_status
+				}
+		}
+
+	}
+	focus = {
+		id = CRO_join_allies
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = CRO_stray_russia
+		}
+		mutually_exclusive = {
+			focus = CRO_new_alliance
+			focus = CRO_new_alliance
+		}
+		x = 4
+		y = 5
+		completion_reward = {
+		FRA = {
+		country_event = generic.2
+		}
+		
+		}
+
+	}
+	focus = {
+		id = CRO_new_alliance
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = CRO_stray_russia
+		}
+		mutually_exclusive = {
+			focus = CRO_join_allies
+			focus = CRO_join_allies
+		}
+		x = 6
+		y = 5
+		completion_reward = {
+		SLO = {
+		country_event = croatia.6
+		}
+		HUN = {
+		country_event = croatia.6
+		}
+		}
+
+	}
+	focus = {
+		id = CRO_try_war_criminals
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = CRO_democracy_triumphs
+		}
+		x = 10
+		y = 4
+		completion_reward = {
+		country_event = croatia.7
+		}
+
+	}
+	focus = {
+		id = CRO_instability_fixed
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = CRO_try_war_criminals
+		}
+		x = 10
+		y = 5
+		completion_reward = {
+		add_stability = 0.10
+		}
+
+	}
+	focus = {
+		id = CRO_deconsription
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = CRO_new_alliance
+			focus = CRO_public_announcment
+		}
+		x = 8
+		y = 6
+		completion_reward = {
+		add_ideas = CRO_deconscription
+		}
+
+	}
+	focus = {
+		id = CRO_stay_as_we_are
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = CRO_political_power
+		}
+		x = 16
+		y = 2
+		completion_reward = {
+			add_popularity = {
+				ideology = nationalism
+				popularity = 0.05
+			}
+		}
+
+	}
+	focus = {
+		id = CRO_promote_capitalism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = CRO_stay_as_we_are
+		}
+		x = 13
+		y = 3
+		completion_reward = {
+			add_ideas = { FRA_market_dynamism }
+		}
+
+	}
+	focus = {
+		id = CRO_punish_communists
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = CRO_promote_capitalism
+		}
+		x = 12
+		y = 4
+		completion_reward = {
+			add_war_support = 0.10
+		}
+	}
+	focus = {
+		id = CRO_militarism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = CRO_stay_as_we_are
+		}
+		x = 19
+		y = 3
+		completion_reward = {
+		add_ideas = militarism_focus
+		}
+
+	}
+	focus = {
+		id = CRO_include_far_right_groups
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = CRO_stay_as_we_are
+		}
+		prerequisite = {
+			focus = CRO_promote_capitalism
+		}
+		prerequisite = {
+			focus = CRO_militarism
+		}
+		x = 16
+		y = 4
+		completion_reward = {
+		add_ideas = HUN_strengthen_fascists
+		add_stability = -0.15
+		}
+
+	}
+	focus = {
+		id = CRO_croatian_dreams
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = CRO_punish_communists
+		}
+		prerequisite = {
+			focus = CRO_include_far_right_groups
+		}
+		x = 14
+		y = 5
+		completion_reward = {
+		add_ideas = CRO_dreams
+		}
+
+	}
+	focus = {
+		id = CRO_embargo_serbia
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = CRO_militarism
+		}
+		x = 20
+		y = 4
+		completion_reward = {
+		add_opinion_modifier = { 
+					target = SER
+					modifier = embargo
+				}
+		}
+
+	}
+	focus = {
+		id = CRO_strengthen_war_industry
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = CRO_include_far_right_groups
+		}
+		prerequisite = {
+			focus = CRO_embargo_serbia
+		}
+		x = 18
+		y = 5
+		completion_reward = {
+		109 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+		}
+
+	}
+	focus = {
+		id = CRO_ethnostate
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = CRO_croatian_dreams
+		}
+		prerequisite = {
+			focus = CRO_strengthen_war_industry
+		}
+		x = 16
+		y = 6
+		completion_reward = {
+		set_cosmetic_tag = CRO_GREATER
+		105 = {
+				add_claim_by = CRO
+			}
+			102 = {
+				add_claim_by = CRO
+			}
+			804 = {
+				add_claim_by = CRO
+			}
+		}
+
+	}
+	focus = {
+		id = CRO_forge_own_path
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = CRO_political_power
+		}
+		x = 24
+		y = 1
+		completion_reward = {
+		remove_ideas = CRO_nationalism
+		}
+
+	}
+	focus = {
+		id = CRO_question_status_quo
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = CRO_forge_own_path
+		}
+		x = 24
+		y = 2
+		completion_reward = {
+		add_ideas = CRO_changes
+		}
+
+	}
+	focus = {
+		id = CRO_be_with_russia
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = CRO_question_status_quo
+		}
+		mutually_exclusive = {
+			focus = CRO_create_alliance
+			focus = CRO_create_alliance
+		}
+		x = 22
+		y = 3
+		completion_reward = {
+		diplomatic_relation = {
+          country = SOV
+          relation = guarantee
+          active = yes
+        }
+        SOV = {
+        diplomatic_relation = {
+          country = CHL
+          relation = guarantee
+          active = yes
+        }
+      }
+		}
+
+	}
+	focus = {
+		id = CRO_create_alliance
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = CRO_question_status_quo
+		}
+		mutually_exclusive = {
+			focus = CRO_be_with_russia
+			focus = CRO_be_with_russia
+		}
+		x = 26
+		y = 3
+		completion_reward = {
+		create_faction = "Slavic Unity"
+		}
+
+	}
+	focus = {
+		id = CRO_settle_croats
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = CRO_be_with_russia
+			focus = CRO_create_alliance
+		}
+		x = 24
+		y = 4
+		completion_reward = {
+		add_ideas = CRO_croats
+		}
+
+	}
+	focus = {
+		id = CRO_better_research
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = CRO_settle_croats
+		}
+		x = 21
+		y = 5
+		completion_reward = {
+		add_research_slot = 1
+		}
+
+	}
+	focus = {
+		id = CRO_promote_culture
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = CRO_settle_croats
+		}
+		x = 24
+		y = 5
+		completion_reward = {
+		remove_ideas = CRO_divided
+		}
+
+	}
+	focus = {
+		id = CRO_honor_history
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = CRO_settle_croats
+		}
+		x = 27
+		y = 5
+		completion_reward = {
+		add_popularity = {
+				ideology = social_democracy
+				popularity = 0.15
+			}
+		}
+
+	}
+	focus = {
+		id = CRO_self_actualization
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = CRO_better_research
+		}
+		prerequisite = {
+			focus = CRO_promote_culture
+		}
+		prerequisite = {
+			focus = CRO_honor_history
+		}
+		x = 24
+		y = 6
+		completion_reward = {
+		add_ideas = why_we_fight_focus
+		}
+
+	}
+	focus = {
+		id = CRO_demand_bosnia
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = CRO_self_actualization
+		}
+		mutually_exclusive = {
+			focus = CRO_bosnia_diplomatically
+			focus = CRO_bosnia_diplomatically
+		}
+		x = 24
+		y = 7
+		completion_reward = {
+		YUG = {
+		country_event = croatia.8
+		}
+		
+		}
+
+	}
+	focus = {
+		id = CRO_bosnia_diplomatically
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = CRO_self_actualization
+		}
+		mutually_exclusive = {
+			focus = CRO_demand_bosnia
+			focus = CRO_demand_bosnia
+		}
+		x = 27
+		y = 7
+		completion_reward = {
+		YUG = {
+		country_event = croatia.9
+
+		}
+
+
+		}
+
+	}
+	focus = {
+		id = CRO_infantry
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CRO_army
+		}
+		x = 29
+		y = 1
+		completion_reward = {
+					add_tech_bonus = {
+							name = infantry_artillery_bonus
+							bonus = 1.0
+							uses = 1
+							category = infantry_weapons
+						}
+				}
+
+	}
+	focus = {
+		id = CRO_artillery
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = CRO_infantry
+		}
+		x = 29
+		y = 2
+		completion_reward = {
+					add_tech_bonus = {
+							name = infantry_artillery_bonus
+							bonus = 1.0
+							uses = 1
+							category = infantry_weapons
+						}
+				}
+
+	}
+	focus = {
+		id = CRO_mobile_tanks
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CRO_artillery
+		}
+		x = 29
+		y = 3
+		completion_reward = {
+					custom_effect_tooltip = available_designer
+				}
+
+	}
+	focus = {
+		id = CRO_special_forces
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CRO_mobile_tanks
+		}
+		x = 29
+		y = 4
+		completion_reward = {
+					add_ideas = special_forces
+					add_tech_bonus = {
+							name = special_forces_bonus
+							bonus = 1.0
+							uses = 1
+							technology = paratroopers
+							technology = paratroopers2
+							technology = marines
+							technology = marines2
+							technology = tech_mountaineers
+							technology = tech_mountaineers2
+						}
+				}
+
+	}
+	focus = {
+		id = CRO_con1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CRO_industrial
+		}
+		x = 31
+		y = 7
+		completion_reward = {
+					109 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CRO_doctorine
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CRO_army
+		}
+		x = 32
+		y = 1
+		completion_reward = {
+					army_experience = 5
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 1.0
+							uses = 1
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = CRO_doctorine2
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CRO_doctorine
+		}
+		x = 32
+		y = 2
+		completion_reward = {
+					army_experience = 5
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 1.0
+							uses = 1
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = CRO_assault
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CRO_doctorine2
+		}
+		x = 32
+		y = 3
+		completion_reward = {
+					add_ideas = HUN_assault_gun_focus
+				}
+
+	}
+	focus = {
+		id = CRO_mobile
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CRO_assault
+		}
+		x = 32
+		y = 4
+		completion_reward = {
+					add_tech_bonus = {
+							name = HUN_mobile_focus
+							bonus = 1.0
+							uses = 1
+							category = cat_mobile_warfare
+						}
+				}
+
+	}
+	focus = {
+		id = CRO_con2
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CRO_industrial
+		}
+		x = 33
+		y = 7
+		completion_reward = {
+					104 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CRO_defense
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CRO_army
+		}
+		x = 35
+		y = 1
+		completion_reward = {
+					army_experience = 5
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 1.0
+							uses = 1
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = CRO_fortify
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CRO_defense
+		}
+		x = 35
+		y = 2
+		completion_reward = {
+					104 = {
+							add_building_construction = {
+									type = bunker
+									province = 6983
+									level = 2
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									province = 9922
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CRO_mechanization
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CRO_fortify
+		}
+		x = 35
+		y = 3
+		completion_reward = {
+					add_tech_bonus = {
+							name = motorized_bonus
+							ahead_reduction = 2
+							uses = 1
+							category = motorized_equipment
+						}
+				}
+
+	}
+	focus = {
+		id = CRO_armor
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CRO_mechanization
+		}
+		x = 35
+		y = 4
+		completion_reward = {
+					add_tech_bonus = {
+							name = armor_bonus
+							bonus = 1.0
+							uses = 2
+							category = armor
+						}
+				}
+
+	}
+	focus = {
+		id = CRO_army
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CRO_special_forces
+		}
+		prerequisite = {
+			focus = CRO_mobile
+		}
+		prerequisite = {
+			focus = CRO_armor
+		}
+		x = 32
+		y = 5
+		completion_reward = {
+					army_experience = 15
+				}
+
+	}
+	focus = {
+		id = CRO_infra
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CRO_industrial
+		}
+		x = 35
+		y = 7
+		completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 0
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 0
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 1
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CRO_pro1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CRO_industrial
+		}
+		x = 37
+		y = 7
+		completion_reward = {
+					109 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CRO_flexible
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CRO_navy_awakening
+		}
+		x = 38
+		y = 1
+		completion_reward = {
+					add_tech_bonus = {
+							name = sub_op_bonus
+							bonus = 1.0
+							uses = 2
+							technology = convoy_interdiction_ti
+							technology = unrestricted_submarine_warfare
+							technology = wolfpacks
+							technology = advanced_submarine_warfare
+							technology = combined_operations_raiding
+						}
+				}
+
+	}
+	focus = {
+		id = CRO_submarine
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CRO_flexible
+		}
+		x = 38
+		y = 2
+		completion_reward = {
+					add_tech_bonus = {
+							name = ss_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = ss_tech
+						}
+				}
+
+	}
+	focus = {
+		id = CRO_destroyer
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CRO_submarine
+		}
+		x = 38
+		y = 3
+		completion_reward = {
+					add_tech_bonus = {
+							name = dd_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = dd_tech
+						}
+				}
+
+	}
+	focus = {
+		id = CRO_pro2
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CRO_industrial
+		}
+		x = 39
+		y = 7
+		completion_reward = {
+					104 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CRO_heavy
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CRO_air_focus
+		}
+		x = 40
+		y = 5
+
+	}
+	focus = {
+		id = CRO_tactical
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CRO_heavy
+		}
+		x = 40
+		y = 6
+		completion_reward = {
+					add_tech_bonus = {
+							name = HUN_heavy_fighter_effort
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							technology = heavy_fighter1
+							technology = heavy_fighter2
+							technology = heavy_fighter3
+						}
+				}
+
+	}
+	focus = {
+		id = CRO_coast
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_navy_awakening
+		}
+		x = 41
+		y = 1
+
+	}
+	focus = {
+		id = CRO_light
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CRO_air_focus
+		}
+		x = 42
+		y = 5
+		completion_reward = {
+					add_tech_bonus = {
+							name = HUN_light_fighter_effort
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							technology = early_fighter
+							technology = fighter1
+							technology = fighter2
+							technology = fighter3
+						}
+				}
+
+	}
+	focus = {
+		id = CRO_cas
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CRO_light
+		}
+		x = 42
+		y = 6
+		completion_reward = {
+					add_tech_bonus = {
+							name = CAS_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = cas_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = CRO_air
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CRO_tactical
+		}
+		prerequisite = {
+			focus = CRO_cas
+		}
+		x = 41
+		y = 7
+		completion_reward = {
+					air_experience = 5
+				}
+
+	}
+	focus = {
+		id = CRO_apologize_serbs
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = CRO_democracy_triumphs
+		}
+		x = -1
+		y = 4
+		completion_reward = {
+		add_opinion_modifier = { 
+					target = YUG
+					modifier =  apology_given
+				}
+		}
+
+	}
+	focus = {
+		id = CRO_compensate_serbs
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = CRO_apologize_serbs
+		}
+		x = -1
+		y = 5
+		completion_reward = {
+		remove_ideas = CRO_serb_guerillas
+		}
+
+	}
+	focus = {
+		id = CRO_desegregate_serbs
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = CRO_compensate_serbs
+			focus = CRO_join_allies
+			focus = CRO_new_alliance
+		}
+		x = 2
+		y = 6
+		completion_reward = {
+		add_stability = 0.20
+		add_war_support = 0.05
+		}
+
+	}
+	focus = {
+		id = CRO_bosnian_question
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = CRO_desegregate_serbs
+		}
+		prerequisite = {
+			focus = CRO_deconsription
+		}
+		x = 10
+		y = 7
+		completion_reward = {
+		YUG = {
+		country_event = croatia.8
+		}
+		}
+
+	}
+	focus = {
+		id = CRO_empire
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = CRO_ethnostate
+		}
+		x = 16
+		y = 7
+		completion_reward = {
+		105 = {
+				add_core_of = CRO
+			}
+			102 = {
+				add_core_of = CRO
+			}
+			804 = {
+				add_core_of = CRO
+			}
+			 hidden_effect = { id = news.389 hours = 6}
+		}
+
+
+		
+
+	}
+	focus = {
+		id = CRO_demand_dalmatia
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = CRO_self_actualization
+		}
+		x = 21
+		y = 7
+		completion_reward = {
+		ITA = {
+		country_event = croatia.10
+		}
+		}
+
+	}
+	focus = {
+		id = CRO_nuclear
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CRO_con1
+		}
+		prerequisite = {
+			focus = CRO_con2
+		}
+		prerequisite = {
+			focus = CRO_infra
+		}
+		prerequisite = {
+			focus = CRO_pro1
+		}
+		prerequisite = {
+			focus = CRO_pro2
+		}
+		x = 32
+		y = 8
+		completion_reward = {
+					add_tech_bonus = {
+							name = nuclear_bonus
+							ahead_reduction = 0.5
+							category = nuclear
+						}
+				}
+
+	}
+	focus = {
+		id = CRO_research
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CRO_con1
+		}
+		prerequisite = {
+			focus = CRO_con2
+		}
+		prerequisite = {
+			focus = CRO_infra
+		}
+		prerequisite = {
+			focus = CRO_pro1
+		}
+		prerequisite = {
+			focus = CRO_pro2
+		}
+		x = 35
+		y = 8
+		completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = CRO_secret
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CRO_con1
+		}
+		prerequisite = {
+			focus = CRO_con2
+		}
+		prerequisite = {
+			focus = CRO_infra
+		}
+		prerequisite = {
+			focus = CRO_pro1
+		}
+		prerequisite = {
+			focus = CRO_pro2
+		}
+		x = 38
+		y = 8
+		completion_reward = {
+					add_tech_bonus = {
+							name = secret_bonus
+							bonus = 0.5
+							uses = 4
+							category = electronics
+							category = nuclear
+							category = rocketry
+						}
+				}
+
+	}
+	focus = {
+		id = CRO_large
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CRO_navy_awakening
+		}
+		x = 44
+		y = 1
+		completion_reward = {
+					add_tech_bonus = {
+							name = fleet_in_being_bonus
+							bonus = 1.0
+							uses = 2
+							category = fleet_in_being_tree
+						}
+				}
+
+	}
+	focus = {
+		id = CRO_cruiser
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CRO_large
+		}
+		x = 44
+		y = 2
+		completion_reward = {
+					add_tech_bonus = {
+							name = cr_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = cl_tech
+							category = ca_tech
+						}
+				}
+
+	}
+	focus = {
+		id = CRO_capital
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CRO_cruiser
+		}
+		x = 44
+		y = 3
+		completion_reward = {
+					navy_experience = 25
+					add_tech_bonus = {
+							name = capital_ships_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = bc_tech
+							category = bb_tech
+							category = cv_tech
+						}
+				}
+
+	}
+}

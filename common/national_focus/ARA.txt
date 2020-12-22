@@ -1,0 +1,2100 @@
+focus_tree = {
+	id = ARA
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ARA
+		}
+	}
+	default = no
+	focus = {
+		id = ARA_decision
+		icon = GFX_goal_unknown
+		cost = 7.00
+		x = 14
+		y = 0
+			completion_reward = {
+					add_political_power = 50
+				}
+
+	}
+	focus = {
+		id = ARA_destroy_colonialism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		x = 19
+		y = 10
+		prerequisite = {
+			focus = ARA_bring_revolution
+		}
+			completion_reward = {
+					create_wargoal = {
+							type = topple_government
+							target = FRA
+							expire = 0
+						}
+					create_wargoal = {
+							type = topple_government
+							target = ENG
+							expire = 0
+						}
+					create_wargoal = {
+							type = topple_government
+							target = ITA
+							expire = 0
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_army
+		icon = GFX_goal_rhineland
+		cost = 5.00
+		x = 36
+		y = 0
+			completion_reward = {
+					army_experience = 25
+				}
+
+	}
+	focus = {
+		id = ARA_industrial
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 44
+		y = 0
+			completion_reward = {
+					add_stability = 0.05
+				}
+
+	}
+	focus = {
+		id = ARA_naval_awakening
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 43
+		y = 4
+			completion_reward = {
+					navy_experience = 10
+				}
+
+	}
+	focus = {
+		id = ARA_air_focus
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 35
+		y = 6
+			completion_reward = {
+					add_ideas = HUN_indigenous_designs
+				}
+
+	}
+	focus = {
+		id = ARA_stay_on_policy
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_decision
+		}
+		mutually_exclusive = {
+			focus = ARA_stray_away
+			focus = ARA_stray_away
+		}
+		x = 7
+		y = 1
+			completion_reward = {
+					add_ideas = ARA_neutral
+				}
+
+	}
+	focus = {
+		id = ARA_secular1
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_stay_on_policy
+		}
+		mutually_exclusive = {
+			focus = ARA_stay_with_hashemites
+			focus = ARA_stay_with_hashemites
+		}
+		x = 2
+		y = 2
+			completion_reward = {
+					add_stability = 0.1
+					add_popularity = {
+							ideology = democratic
+							popularity = 0.1
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_nationalize
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_secular1
+		}
+		x = 3
+		y = 3
+			completion_reward = {
+					add_ideas = FRA_inefficient_economy_1
+				}
+
+	}
+	focus = {
+		id = ARA_industrialize_poor
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_nationalize
+		}
+		x = 0
+		y = 4
+			completion_reward = {
+					678 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_create_wages
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_industrialize_poor
+		}
+		prerequisite = {
+			focus = ARA_nationalize
+		}
+		x = 1
+		y = 5
+			completion_reward = {
+					add_stability = 0.10
+				}
+
+	}
+	focus = {
+		id = ARA_protect_homeland
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_create_wages
+		}
+		x = 2
+		y = 6
+			completion_reward = {
+					add_political_power = 200
+				}
+
+	}
+	focus = {
+		id = ARA_expand_workers_rights
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_nationalize
+		}
+		x = 6
+		y = 4
+			completion_reward = {
+					add_ideas = { FRA_matignon_agreements }
+				}
+
+	}
+	focus = {
+		id = ARA_democratic_influence
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_nationalize
+		}
+		prerequisite = {
+			focus = ARA_expand_workers_rights
+		}
+		x = 4
+		y = 5
+			completion_reward = {
+					add_ideas = democratic_influence
+				}
+
+	}
+	focus = {
+		id = ARA_france10
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_expand_workers_rights
+		}
+		x = 7
+		y = 5
+			completion_reward = {
+					add_opinion_modifier = {
+							target = ROOT
+							modifier = attache_sent
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_be_democratic
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_democratic_influence
+		}
+		prerequisite = {
+			focus = ARA_france10
+		}
+		x = 7
+		y = 6
+			completion_reward = {
+					create_country_leader = {
+							name = "Ishaqal-Qadir"
+							desc = ""
+							picture = GFX_Portrait_Arabia_Generic_land_2
+							expire = "1965.1.1"
+							ideology = conservatism
+							traits = {
+
+}
+						}
+					set_politics = {
+							ruling_party = democratic
+							elections_allowed = yes
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_grant_minorities_right
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_protect_homeland
+		}
+		prerequisite = {
+			focus = ARA_be_democratic
+		}
+		x = 8
+		y = 7
+			completion_reward = {
+					add_war_support = 0.10
+				}
+
+	}
+	focus = {
+		id = ARA_suffrage
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_grant_minorities_right
+		}
+		x = 8
+		y = 8
+			completion_reward = {
+					add_ideas = { FRA_womens_suffrage }
+					add_popularity = {
+							ideology = communism
+							popularity = 0.05
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_stay_with_hashemites
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_stay_on_policy
+		}
+		mutually_exclusive = {
+			focus = ARA_secular1
+			focus = ARA_secular1
+		}
+		x = 11
+		y = 2
+			completion_reward = {
+					add_stability = 0.10
+				}
+
+	}
+	focus = {
+		id = ARA_steer_towards_secularism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_stay_with_hashemites
+		}
+		x = 10
+		y = 3
+			completion_reward = {
+					add_stability = -0.05
+					add_popularity = {
+							ideology = democratic
+							popularity = -0.05
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_autonomy
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_steer_towards_secularism
+		}
+		x = 9
+		y = 4
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_intervensionism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_stay_with_hashemites
+		}
+		x = 14
+		y = 3
+			completion_reward = {
+					add_war_support = 0.10
+				}
+
+	}
+	focus = {
+		id = ARA_spanish_civil_war
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_intervensionism
+		}
+		prerequisite = {
+			focus = ARA_intervensionism
+		}
+		x = 12
+		y = 4
+			completion_reward = {
+					country_event = arabia.1
+				}
+
+	}
+	focus = {
+		id = ARA_boost_production
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_steer_towards_secularism
+		}
+		prerequisite = {
+			focus = ARA_spanish_civil_war
+		}
+		x = 10
+		y = 5
+			completion_reward = {
+					add_ideas = low_economic_mobilisation
+				}
+
+	}
+	focus = {
+		id = ARA_give_autonomy
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_autonomy
+			focus = ARA_boost_production
+			focus = ARA_spanish_civil_war
+		}
+		x = 11
+		y = 7
+			completion_reward = {
+					add_popularity = {
+							ideology = fascism
+							popularity = 0.02
+						}
+					add_popularity = {
+							ideology = communism
+							popularity = 0.05
+						}
+					add_popularity = {
+							ideology = democratic
+							popularity = 0.05
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_militaries
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_spanish_civil_war
+		}
+		prerequisite = {
+			focus = ARA_intervensionism
+		}
+		x = 16
+		y = 5
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_build_forts_
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_spanish_civil_war
+		}
+		prerequisite = {
+			focus = ARA_militaries
+		}
+		x = 14
+		y = 6
+			completion_reward = {
+					814 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = bunker
+									level = 2
+									province = 2089
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 2
+									province = 12726
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_special_research
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_build_forts_
+			focus = ARA_militaries
+		}
+		x = 13
+		y = 7
+			completion_reward = {
+					add_political_power = -100
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = ARA_giving
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_give_autonomy
+			focus = ARA_special_research
+		}
+		x = 12
+		y = 8
+			completion_reward = {
+					KUR = {
+							country_event = arabia.2
+						}
+					ASS = {
+							country_event = arabia.2
+						}
+					ARM = {
+							country_event = arabia.2
+						}
+					GRE = {
+							country_event = arabia.2
+						}
+					EGY = {
+							country_event = arabia.2
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_stray_away
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_decision
+		}
+		mutually_exclusive = {
+			focus = ARA_stay_on_policy
+			focus = ARA_stay_on_policy
+		}
+		x = 26
+		y = 1
+			completion_reward = {
+					add_timed_idea = {
+							idea = ENG_a_change_in_course_idea
+							days = 365
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_begin_change
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_stray_away
+		}
+		x = 24
+		y = 2
+			completion_reward = {
+					add_political_power = -100
+				}
+
+	}
+	focus = {
+		id = ARA_call
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_begin_change
+		}
+		x = 20
+		y = 3
+			completion_reward = {
+					add_ideas = CZE_communism_with_a_human_face
+				}
+
+	}
+	focus = {
+		id = ARA_militarism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_call
+		}
+		x = 18
+		y = 4
+			completion_reward = {
+					add_ideas = militarism_focus
+				}
+
+	}
+	focus = {
+		id = ARA_railroad
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_call
+		}
+		x = 22
+		y = 4
+			completion_reward = {
+					679 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					455 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					680 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_national_regeneration
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_stray_away
+		}
+		x = 28
+		y = 2
+			completion_reward = {
+					add_war_support = 0.10
+				}
+
+	}
+	focus = {
+		id = ARA_work_propaganda
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_national_regeneration
+		}
+		x = 26
+		y = 3
+			completion_reward = {
+					add_ideas = { FRA_travail }
+				}
+
+	}
+	focus = {
+		id = ARA_dynamic_market
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_work_propaganda
+		}
+		x = 27
+		y = 4
+			completion_reward = {
+					add_ideas = { FRA_market_dynamism }
+				}
+
+	}
+	focus = {
+		id = ARA_leave_neutrality
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_dynamic_market
+		}
+		x = 25
+		y = 5
+			completion_reward = {
+					add_popularity = {
+							ideology = neutrality
+							popularity = -0.20
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_riots
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_national_regeneration
+		}
+		x = 30
+		y = 3
+			completion_reward = {
+					country_event = arabia.6
+				}
+
+	}
+	focus = {
+		id = ARA_protect_rights
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_riots
+		}
+		x = 29
+		y = 4
+			completion_reward = {
+					add_stability = 0.10
+				}
+
+	}
+	focus = {
+		id = ARA_decadence
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_protect_rights
+		}
+		x = 31
+		y = 5
+			completion_reward = {
+					add_political_power = -200
+				}
+
+	}
+	focus = {
+		id = ARA_coup1
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_leave_neutrality
+		}
+		prerequisite = {
+			focus = ARA_decadence
+		}
+		x = 28
+		y = 6
+			completion_reward = {
+					country_event = arabia.7
+				}
+
+	}
+	focus = {
+		id = ARA_go_north
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_coup1
+		}
+		mutually_exclusive = {
+			focus = ARA_go_south
+			focus = ARA_go_south
+		}
+		x = 26
+		y = 7
+			completion_reward = {
+					add_state_claim = 183
+					add_state_claim = 804
+					add_state_claim = 803
+					add_state_claim = 812
+				}
+
+	}
+	focus = {
+		id = ARA_silence_egypt
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_go_north
+		}
+		x = 27
+		y = 8
+			completion_reward = {
+					diplomatic_relation = {
+							country = EGY
+							relation = non_aggression_pact
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_go_south
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_coup1
+		}
+		mutually_exclusive = {
+			focus = ARA_go_north
+			focus = ARA_go_north
+		}
+		x = 30
+		y = 7
+			completion_reward = {
+					add_state_claim = 446
+					add_state_claim = 447
+					ARA = {
+							add_state_core = 819
+						}
+					add_state_claim = 413
+				}
+
+	}
+	focus = {
+		id = ARA_go_further
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_go_south
+		}
+		x = 29
+		y = 8
+			completion_reward = {
+					add_state_claim = 268
+					add_state_claim = 448
+					add_state_claim = 550
+					add_state_claim = 269
+				}
+
+	}
+	focus = {
+		id = ARA_silence_north
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_go_south
+		}
+		x = 31
+		y = 8
+			completion_reward = {
+					diplomatic_relation = {
+							country = ARM
+							relation = non_aggression_pact
+						}
+					diplomatic_relation = {
+							country = ASS
+							relation = non_aggression_pact
+						}
+					diplomatic_relation = {
+							country = KUR
+							relation = non_aggression_pact
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_infantry
+		icon = GFX_goal_generic_amphibious_assault
+		cost = 5.00
+		prerequisite = {
+			focus = ARA_army
+		}
+		x = 33
+		y = 1
+			completion_reward = {
+					add_tech_bonus = {
+							name = infantry_artillery_bonus
+							bonus = 1.0
+							uses = 1
+							category = infantry_weapons
+							category = artillery
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_artillery
+		icon = GFX_goal_generic_army_artillery2
+		cost = 5.00
+		prerequisite = {
+			focus = ARA_infantry
+		}
+		x = 33
+		y = 2
+			completion_reward = {
+					add_tech_bonus = {
+							name = infantry_artillery_bonus
+							bonus = 1.0
+							uses = 1
+							category = infantry_weapons
+							category = artillery
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_mobile_tanks
+		icon = GFX_goal_generic_army_tanks
+		cost = 5.00
+		prerequisite = {
+			focus = ARA_artillery
+		}
+		x = 33
+		y = 3
+			completion_reward = {
+					custom_effect_tooltip = available_designer
+				}
+
+	}
+	focus = {
+		id = ARA_special_forces
+		icon = GFX_goal_generic_special_forces
+		cost = 5.00
+		prerequisite = {
+			focus = ARA_mobile_tanks
+		}
+		x = 33
+		y = 4
+			completion_reward = {
+					add_ideas = special_forces
+					add_tech_bonus = {
+							name = special_forces_bonus
+							bonus = 1.0
+							uses = 1
+							technology = paratroopers
+							technology = paratroopers2
+							technology = marines
+							technology = marines2
+							technology = tech_mountaineers
+							technology = tech_mountaineers2
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_heavy
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARA_air_focus
+		}
+		x = 33
+		y = 7
+			completion_reward = {
+					add_tech_bonus = {
+							name = HUN_heavy_fighter_effort
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							technology = heavy_fighter1
+							technology = heavy_fighter2
+							technology = heavy_fighter3
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_tactical
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARA_heavy
+		}
+		x = 33
+		y = 8
+			completion_reward = {
+					add_tech_bonus = {
+							name = HUN_tac_focus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = tactical_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_doctorine
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARA_army
+		}
+		x = 36
+		y = 1
+			completion_reward = {
+					army_experience = 5
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 1.0
+							uses = 1
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_doctorine2
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARA_doctorine
+		}
+		x = 36
+		y = 2
+			completion_reward = {
+					army_experience = 5
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 1.0
+							uses = 1
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_assault
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARA_doctorine2
+		}
+		x = 36
+		y = 3
+			completion_reward = {
+					add_ideas = HUN_assault_gun_focus
+				}
+
+	}
+	focus = {
+		id = ARA_mobile
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARA_assault
+		}
+		x = 36
+		y = 4
+			completion_reward = {
+					add_tech_bonus = {
+							name = HUN_mobile_focus
+							bonus = 1.0
+							uses = 1
+							category = cat_mobile_warfare
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_light
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARA_air_focus
+		}
+		x = 37
+		y = 7
+			completion_reward = {
+					add_tech_bonus = {
+							name = HUN_light_fighter_effort
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							technology = early_fighter
+							technology = fighter1
+							technology = fighter2
+							technology = fighter3
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_cas
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARA_light
+		}
+		x = 37
+		y = 8
+			completion_reward = {
+					add_tech_bonus = {
+							name = CAS_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = cas_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_air5
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARA_tactical
+		}
+		prerequisite = {
+			focus = ARA_air_focus
+		}
+		prerequisite = {
+			focus = ARA_cas
+		}
+		x = 35
+		y = 9
+			completion_reward = {
+					air_experience = 25
+				}
+
+	}
+	focus = {
+		id = GER_defense
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARA_army
+		}
+		x = 39
+		y = 1
+			completion_reward = {
+					army_experience = 5
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 1.0
+							uses = 1
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_fortify3
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = GER_defense
+		}
+		x = 39
+		y = 2
+			completion_reward = {
+					679 = {
+							add_building_construction = {
+									type = coastal_bunker
+									province = 12883
+									level = 2
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = coastal_bunker
+									province = 12101
+									level = 2
+									instant_build = yes
+								}
+						}
+					294 = {
+							add_building_construction = {
+									type = coastal_bunker
+									province = 2103
+									level = 2
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = coastal_bunker
+									province = 8002
+									level = 2
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = coastal_bunker
+									province = 1947
+									level = 2
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = coastal_bunker
+									province = 10760
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_mechinazation
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARA_fortify3
+		}
+		x = 39
+		y = 3
+			completion_reward = {
+					add_tech_bonus = {
+							name = motorized_bonus
+							ahead_reduction = 2
+							uses = 1
+							category = motorized_equipment
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_Armor
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARA_mechinazation
+		}
+		x = 39
+		y = 4
+			completion_reward = {
+					add_tech_bonus = {
+							name = armor_bonus
+							bonus = 1.0
+							uses = 2
+							category = armor
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_army1
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 5.00
+		prerequisite = {
+			focus = ARA_special_forces
+		}
+		prerequisite = {
+			focus = ARA_mobile
+		}
+		prerequisite = {
+			focus = ARA_Armor
+		}
+		x = 36
+		y = 5
+			completion_reward = {
+					army_experience = 15
+				}
+
+	}
+	focus = {
+		id = ARA_con1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARA_industrial
+		}
+		x = 41
+		y = 1
+			completion_reward = {
+					292 = {
+							add_extra_state_shared_building_slots = 4
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_con2
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARA_industrial
+		}
+		x = 43
+		y = 1
+			completion_reward = {
+					291 = {
+							add_extra_state_shared_building_slots = 4
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_con3
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARA_con1
+		}
+		prerequisite = {
+			focus = ARA_con2
+		}
+		x = 41
+		y = 2
+			completion_reward = {
+					554 = {
+							add_extra_state_shared_building_slots = 4
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_flexible
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARA_naval_awakening
+		}
+		x = 41
+		y = 5
+			completion_reward = {
+					add_tech_bonus = {
+							name = sub_op_bonus
+							bonus = 1.0
+							uses = 2
+							technology = convoy_interdiction_ti
+							technology = unrestricted_submarine_warfare
+							technology = wolfpacks
+							technology = advanced_submarine_warfare
+							technology = combined_operations_raiding
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_submarine
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARA_flexible
+		}
+		x = 41
+		y = 6
+			completion_reward = {
+					add_tech_bonus = {
+							name = ss_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = ss_tech
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_destroyer
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARA_submarine
+		}
+		x = 41
+		y = 7
+			completion_reward = {
+					add_tech_bonus = {
+							name = dd_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = dd_tech
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_con4
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARA_con1
+		}
+		prerequisite = {
+			focus = ARA_con2
+		}
+		x = 43
+		y = 2
+			completion_reward = {
+					453 = {
+							add_extra_state_shared_building_slots = 4
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_coast
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARA_naval_awakening
+		}
+		x = 43
+		y = 5
+			completion_reward = {
+					navy_experience = 25
+					if = {
+							limit = {
+									NOT = {
+											any_owned_state = {
+													dockyard > 0
+													free_building_slots = {
+															building = dockyard
+															size > 2
+															include_locked = yes
+														}
+												}
+										}
+									any_owned_state = {
+											is_coastal = yes
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											is_coastal = yes
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = dockyard
+											level = 3
+											instant_build = yes
+										}
+								}
+							set_country_flag = naval_effort_built
+						}
+					if = {
+							limit = {
+									NOT = {
+											has_country_flag = naval_effort_built
+										}
+									any_owned_state = {
+											dockyard > 0
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											dockyard > 0
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = dockyard
+											level = 3
+											instant_build = yes
+										}
+								}
+							set_country_flag = naval_effort_built
+						}
+					if = {
+							limit = {
+									NOT = {
+											has_country_flag = naval_effort_built
+										}
+									NOT = {
+											any_owned_state = {
+													free_building_slots = {
+															building = dockyard
+															size > 2
+															include_locked = yes
+														}
+												}
+										}
+								}
+							random_state = {
+									limit = {
+											controller = {
+													tag = ROOT
+												}
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = dockyard
+											level = 3
+											instant_build = yes
+										}
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_pro1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARA_industrial
+		}
+		x = 45
+		y = 1
+			completion_reward = {
+					292 = {
+							add_extra_state_shared_building_slots = 4
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_pro2
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARA_industrial
+		}
+		x = 47
+		y = 1
+			completion_reward = {
+					291 = {
+							add_extra_state_shared_building_slots = 4
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_pro3
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARA_pro1
+		}
+		prerequisite = {
+			focus = ARA_pro2
+		}
+		x = 45
+		y = 2
+			completion_reward = {
+					455 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_large
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARA_naval_awakening
+		}
+		x = 45
+		y = 5
+			completion_reward = {
+					add_tech_bonus = {
+							name = fleet_in_being_bonus
+							bonus = 1.0
+							uses = 2
+							category = fleet_in_being_tree
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_focus
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARA_large
+		}
+		x = 45
+		y = 6
+			completion_reward = {
+					add_tech_bonus = {
+							name = cr_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = cl_tech
+							category = ca_tech
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_capital
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARA_focus
+		}
+		x = 45
+		y = 7
+			completion_reward = {
+					navy_experience = 25
+					add_tech_bonus = {
+							name = capital_ships_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = bc_tech
+							category = bb_tech
+							category = cv_tech
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_pro4
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARA_pro1
+		}
+		prerequisite = {
+			focus = ARA_pro2
+		}
+		x = 47
+		y = 2
+			completion_reward = {
+					454 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_secret
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARA_pro4
+		}
+		prerequisite = {
+			focus = ARA_pro3
+		}
+		prerequisite = {
+			focus = ARA_con4
+		}
+		prerequisite = {
+			focus = ARA_con3
+		}
+		x = 46
+		y = 3
+			completion_reward = {
+					add_tech_bonus = {
+							name = secret_bonus
+							bonus = 0.5
+							uses = 4
+							category = electronics
+							category = nuclear
+							category = rocketry
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_nuclear
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARA_con3
+		}
+		prerequisite = {
+			focus = ARA_con4
+		}
+		prerequisite = {
+			focus = ARA_pro3
+		}
+		prerequisite = {
+			focus = ARA_pro4
+		}
+		x = 42
+		y = 3
+			completion_reward = {
+					add_tech_bonus = {
+							name = nuclear_bonus
+							ahead_reduction = 0.5
+							category = nuclear
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_research
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARA_pro4
+		}
+		prerequisite = {
+			focus = ARA_pro3
+		}
+		prerequisite = {
+			focus = ARA_con4
+		}
+		prerequisite = {
+			focus = ARA_con3
+		}
+		x = 44
+		y = 3
+			completion_reward = {
+					add_research_slot = 2
+				}
+
+	}
+	focus = {
+		id = ARA_stay_secular
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_giving
+		}
+		x = 9
+		y = 9
+			completion_reward = {
+					add_political_power = 150
+					add_war_support = 0.07
+					country_event = arabia.3
+				}
+
+	}
+	focus = {
+		id = ARA_abandon_securalism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_giving
+		}
+		x = 12
+		y = 9
+			completion_reward = {
+					add_popularity = {
+							ideology = democratic
+							popularity = -0.1
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_propaganda
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_abandon_securalism
+		}
+		x = 12
+		y = 10
+			completion_reward = {
+					add_political_power = 200
+				}
+
+	}
+	focus = {
+		id = ARA_propose_caliphate
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_propaganda
+		}
+		x = 12
+		y = 11
+			completion_reward = {
+					country_event = arabia.4
+				}
+
+	}
+	focus = {
+		id = ARA_solve_question
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_grant_minorities_right
+		}
+		x = 10
+		y = 8
+			completion_reward = {
+					country_event = arabia.5
+				}
+
+	}
+	focus = {
+		id = ARA_leftist_countries
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_call
+		}
+		x = 20
+		y = 5
+			completion_reward = {
+					add_political_power = 120
+					every_other_country = {
+							limit = {
+									has_government = communism
+									num_of_factories > 30
+								}
+							add_opinion_modifier = {
+									target = ROOT
+									modifier = FRA_leftist_rhetoric_communism
+								}
+						}
+					every_other_country = {
+							limit = {
+									has_government = democratic
+									num_of_factories > 30
+								}
+							add_opinion_modifier = {
+									target = ROOT
+									modifier = FRA_leftist_rhetoric_democratic
+								}
+						}
+					every_other_country = {
+							limit = {
+									has_government = fascism
+									num_of_factories > 30
+								}
+							add_opinion_modifier = {
+									target = ROOT
+									modifier = FRA_leftist_rhetoric_fascism
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_allow_communist_synpathies
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_leftist_countries
+		}
+		prerequisite = {
+			focus = ARA_railroad
+		}
+		x = 23
+		y = 6
+			completion_reward = {
+					add_timed_idea = {
+							idea = internationalism
+							days = 720
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_paramilitary
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_leftist_countries
+		}
+		prerequisite = {
+			focus = ARA_militarism
+		}
+		x = 17
+		y = 6
+			completion_reward = {
+					add_ideas = paramilitarism_focus
+				}
+
+	}
+	focus = {
+		id = ARA_expand_citizenship
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_leftist_countries
+		}
+		prerequisite = {
+			focus = ARA_allow_communist_synpathies
+		}
+		x = 22
+		y = 8
+			completion_reward = {
+					add_ideas = { FRA_expanded_citizenship }
+				}
+
+	}
+	focus = {
+		id = ARA_repeal_constitution
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_paramilitary
+		}
+		prerequisite = {
+			focus = ARA_allow_communist_synpathies
+		}
+		x = 19
+		y = 7
+			completion_reward = {
+					add_political_power = 150
+				}
+
+	}
+	focus = {
+		id = ARA_destroy_fascism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_repeal_constitution
+		}
+		prerequisite = {
+			focus = ARA_allow_communist_synpathies
+		}
+		x = 17
+		y = 8
+			completion_reward = {
+					add_popularity = {
+							ideology = fascism
+							popularity = -0.05
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_bring_revolution
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_destroy_fascism
+		}
+		prerequisite = {
+			focus = ARA_expand_citizenship
+		}
+		x = 20
+		y = 9
+			completion_reward = {
+					add_ideas = { FRA_revolutionary_zeal }
+					create_wargoal = {
+							type = topple_government
+							target = ARM
+							expire = 0
+						}
+					create_wargoal = {
+							type = topple_government
+							target = EGY
+							expire = 0
+						}
+					create_wargoal = {
+							type = topple_government
+							target = PER
+							expire = 0
+						}
+					create_wargoal = {
+							type = topple_government
+							target = GRE
+							expire = 0
+						}
+					create_wargoal = {
+							type = topple_government
+							target = KUR
+							expire = 0
+						}
+					create_wargoal = {
+							type = topple_government
+							target = ASS
+							expire = 0
+						}
+				}
+
+	}
+	focus = {
+		id = ARA_conquer_armenia
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARA_go_north
+		}
+		x = 25
+		y = 8
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = ARM
+							expire = 0
+						}
+				}
+
+	}
+}
