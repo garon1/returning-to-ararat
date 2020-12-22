@@ -1,0 +1,39 @@
+
+state={
+	id=344
+	name="STATE_344"
+
+	history={
+		owner = ARM
+		victory_points = {
+			9893 15 
+		}
+		victory_points = {
+			7620 10 
+		}
+		victory_points = {
+			6813 3 
+		}
+		victory_points = {
+			11746 5 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			806 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = ARM
+
+	}
+
+	provinces={
+		806 886 3889 6813 6888 6956 9893 11746 
+	}
+	manpower=1081781
+	buildings_max_level_factor=1.000
+	state_category=town
+}

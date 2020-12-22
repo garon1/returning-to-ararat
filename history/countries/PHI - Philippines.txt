@@ -1,0 +1,106 @@
+﻿capital = 327
+
+oob = "PHI_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	early_fighter = 1
+	early_bomber = 1
+}
+
+set_convoys = 5
+
+
+set_politics = {
+	ruling_party = traditional_conservatism
+	last_election = "1935.9.15"
+	election_frequency = 72
+	elections_allowed = yes
+}
+set_popularities = {
+	traditional_conservatism = 62
+	nationalism = 9
+	syndicalism = 29
+}
+
+create_country_leader = {
+	name = "Manuel Luis Quezón"
+	desc = "POLITICS_MANUEL_LUIS_QUEZON_DESC"
+	picture = "gfx/leaders/PHI/Portrait_Philippines_Manuel_Luis_Quezon.dds"
+	expire = "1965.1.1"
+	ideology = traditional_conservatism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Elpidio Quirino"
+	picture = "gfx/leaders/PHI/Portrait_Philippines_Elpidio_Quirino.tga"
+	expire = "1960.1.1"
+	ideology = social_liberal_subtype
+}
+create_country_leader = {
+	name = "Manuel Roxas"
+	picture = "gfx/leaders/PHI/Portrait_Philippines_Manuel_Roxas.tga"
+	expire = "1946.1.1"
+	ideology = social_liberal_subtype
+}
+create_country_leader = {
+	name = "Emilio Aguinaldo"
+	picture = "gfx/leaders/PHI/Portrait_Philippines_Emilio_Aguinaldo.tga"
+	expire = "1960.1.1"
+	ideology = nationalism_subtype
+}
+create_country_leader = {
+	name = "Emilio Aguinaldo"
+	picture = "gfx/leaders/PHI/Portrait_Philippines_Emilio_Aguinaldo.tga"
+	expire = "1960.1.1"
+	ideology = totalitarianism_subtype
+}
+create_country_leader = {
+	name = "Emilio Aguinaldo"
+	picture = "gfx/leaders/PHI/Portrait_Philippines_Emilio_Aguinaldo.tga"
+	expire = "1960.1.1"
+	ideology = totalitarianism_subtype
+}
+create_country_leader = {
+	name = "Elpidio Quirino"
+	picture = "gfx/leaders/PHI/Portrait_Philippines_Elpidio_Quirino.tga"
+	expire = "1960.1.1"
+	ideology = social_conservative_subtype
+}
+create_country_leader = {
+	name = "J. Antonio Araneta"
+	picture = "gfx/leaders/PHI/Portrait_Philippines_J_Antonio_Araneta.tga"
+	expire = "1960.1.1"
+	ideology = market_liberal_subtype
+}
+create_country_leader = {
+	name = "Lope K. Santos"
+	picture = "gfx/leaders/PHI/Portrait_Philippines_Lope_K_Santos.tga"
+	expire = "1960.1.1"
+	ideology = social_democracy_subtype
+}
+create_country_leader = {
+	name = "Crisanto Evangelista"
+	picture = "gfx/leaders/PHI/Portrait_Philippines_Crisanto_Evangelista.tga"
+	expire = "1960.1.1"
+	ideology = radical_socialism_subtype
+}
+create_country_leader = {
+	name = "Crisanto Evangelista"
+	picture = "gfx/leaders/PHI/Portrait_Philippines_Crisanto_Evangelista.tga"
+	expire = "1960.1.1"
+	ideology = market_socialism_subtype
+}
+create_country_leader = {
+	name = "Crisanto Evangelista"
+	picture = "gfx/leaders/PHI/Portrait_Philippines_Crisanto_Evangelista.tga"
+	expire = "1960.1.1"
+	ideology = syndicalist_subtype
+}

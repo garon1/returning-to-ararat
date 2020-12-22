@@ -1,0 +1,24 @@
+
+state={
+	id=680
+	name="STATE_680"
+
+	history={
+		owner = ARA
+		victory_points = {
+			3942 1 
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		1631 2013 7184 7513 10383 12316 12442 
+	}
+	manpower=24110
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

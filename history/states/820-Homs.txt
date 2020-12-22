@@ -1,0 +1,22 @@
+state={
+	id=820
+	name="STATE_820"
+	provinces={
+		1056 1072 1088 7671 10087 12473 
+	}
+	manpower=120193
+	state_category=town
+	
+	history={
+		owner = ARA
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+
+		}
+		add_core_of = ARA
+
+
+	}
+	
+}

@@ -1,0 +1,273 @@
+capital = 621
+
+oob = "INM_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	early_fighter = 1
+	early_bomber = 1
+}
+
+set_convoys = 5
+
+
+set_politics = {
+	ruling_party = nationalism
+	last_election = "1935.9.15"
+	election_frequency = 72
+	elections_allowed = yes
+}
+set_popularities = {
+	 nationalism = 80
+	monarchism = 20
+}
+
+create_country_leader = {
+	name = "Khorloogiin Choibalsan"
+	picture = "gfx/leaders/Generic/Portrait_Asia_Generic_new_1.tga"
+	expire = "1965.1.1"
+	ideology = market_socialism_subtype
+}
+create_country_leader = {
+	name = "Peljidiin Genden"
+	picture = "gfx/leaders/Generic/Portrait_Asia_Generic_new_1.tga"
+	expire = "1965.1.1"
+	ideology = syndicalism_subtype
+}
+create_country_leader = {
+	name = "Bat-Ochiryn Eldev-Ochir"
+	picture = "gfx/leaders/Generic/Portrait_Asia_Generic_new_1.tga"
+	expire = "1965.1.1"
+	ideology = radical_socialism_subtype
+}
+create_country_leader = {
+	name = "Soliin Danzan"
+	desc = "POLITICS_SOLIIN_DANZAN_DESC"
+	picture = "Portrait_MON_Soliin_Danzan.tga"
+	expire = "1965.1.1"
+	ideology = social_democracy_subtype
+}
+create_country_leader = {
+	name = "Jamsrangiin Tseveen"
+	desc = "POLITICS_JAMSRANGIIN_TSEVEEN_DESC"
+	picture = "Portrait_MON_Jamsrangiin_Tseveen.tga"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
+}
+create_country_leader = {
+	name = "Mijiddorjiin Khanddorj"
+	picture = "gfx/leaders/Generic/Portrait_Asia_Generic_new_1.tga"
+	expire = "1965.1.1"
+	ideology = market_liberal_subtype
+}
+create_country_leader = {
+	name = "Ünenbayan"
+	desc = "POLITICS_UNENBAYAN_DESC"
+	picture = "Portrait_MON_Unenbayan.tga"
+	expire = "1965.1.1"
+	ideology = traditional_conservativism_subtype
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Demchugdongrub"
+	desc = "POLITICS_DEMCHUGDONGRUB_DESC"
+	picture = "Portrait_MON_Demchugdongrub.tga"
+	expire = "1965.1.1"
+	ideology = totalitarianism_subtype
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Ja Lama"
+	desc = "POLITICS_7TH_CHANGKYA_KHUTUKHTU_DESC"
+	picture = "Portrait_INM_Ja_Lama.tga"
+	expire = "1965.1.1"
+	ideology = nationalism_subtype
+	traits = {
+	}
+}
+
+### Field Marshals ###
+create_field_marshal = {
+	name = "Roman von Ungern-Sternberg"
+	desc = "POLITICS_STERNBERG_ARMY_DESC"
+	portrait_path = "gfx/leaders/MON/Portrait_MON_Sternberg.tga"
+	traits = {
+		harsh_leader
+		aggressive_assaulter
+		cavalry_leader
+	}
+	skill = 3
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 3
+	id = 1157
+}
+
+create_field_marshal = { #
+	name = "Manlaibaatar Damdinsüren"
+	desc = "POLITICS_MANLAIBAATAR_DAMDINSUREN_DESC"
+	portrait_path = "gfx/leaders/MON/Portrait_MON_Manlaibaatar_Damdinsuren.tga"
+	traits = {
+		old_guard
+		war_hero
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+	id = 1154
+}
+
+create_corps_commander = { #
+	name = "Demchugdongrub"
+	desc = "POLITICS_DEMCHUGDONGRUB_ARMY_DESC"
+	portrait_path = "gfx/leaders/MON/Portrait_MON_Demchugdongrub.tga"
+	traits = {
+		infantry_officer
+		cavalry_officer
+		politically_connected
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+	id = 1165
+}
+
+create_corps_commander = { #
+	name = "Buyandelger"
+	desc = "POLITICS_LI_SHOUXIN_DESC"
+	portrait_path = "gfx/leaders/MON/Portrait_MON_Li_Shouxin.tga"
+	traits = {
+		infantry_officer
+		career_officer
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+	id = 116554432
+}
+
+create_corps_commander = { #
+	name = "Altanochir"
+	desc = "POLITICS_ALTANOCHIR_DESC"
+	portrait_path = "gfx/leaders/MON/Portrait_MON_Altanochir.tga"
+	traits = {
+		trickster
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 1155
+}
+
+create_corps_commander = {
+	name = "Togtokh Taij"
+	desc = "POLITICS_TOGTOKH_GUN_DESC"
+	portrait_path = "gfx/leaders/MON/Portrait_MON_Togtokh_Gun.tga"
+	traits = {
+		cavalry_officer
+		war_hero
+		fortress_buster
+		guerilla_fighter
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 1
+	id = 1156
+}
+
+create_corps_commander = {
+	name = "Mikhail Tornovsky"
+	desc = "POLITICS_MIKHAIL_TORNOVSKY_DESC"
+	portrait_path = "gfx/leaders/MON/Portrait_MON_Mikhail_Tornovsky.tga"
+	traits = {
+		politically_connected
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+	id = 1159
+}
+
+create_corps_commander = {
+	name = "Nikolay Kazagrandi"
+	desc = "POLITICS_NIKOLAY_KAZAGRANDI_DESC"
+	portrait_path = "gfx/leaders/MON/Portrait_MON_Nikolay_Kazagrandi.tga"
+	traits = {
+		infantry_officer
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+	id = 1153
+}
+
+create_corps_commander = {
+	name = "Ferdynand Ossendowski"
+	desc = "POLITICS_FERDYNAND_OSSENDOWSKI_DESC"
+	portrait_path = "gfx/leaders/MON/Portrait_MON_Ferdinand_Ossendowski.tga"
+	traits = {
+		media_personality
+		trait_cautious
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+	id = 1152
+}
+
+create_corps_commander = {
+	name = "Boris Rezukhin"
+	desc = "POLITICS_BORIS_REZUKHIN_DESC"
+	portrait_path = "gfx/leaders/MON/Portrait_MON_Boris_Rezukhin.tga"
+	traits = {
+		politically_connected
+		infantry_officer
+		harsh_leader
+	}
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+	id = 1151
+}
+
+create_corps_commander = {
+	name = "Urzhin Garmaev"
+	desc = "POLITICS_URZHIN_GARMAEV_DESC"
+	portrait_path = "gfx/leaders/MON/Portrait_MON_Urzhin_Garmaev.tga"
+	traits = {
+		media_personality
+		organizer
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+	id = 21519
+}

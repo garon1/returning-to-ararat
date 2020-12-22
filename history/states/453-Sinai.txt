@@ -1,0 +1,27 @@
+
+state={
+	id=453
+	name="STATE_453"
+
+	history={
+		owner = ARA
+		buildings = {
+			infrastructure = 2
+			dockyard = 1
+			4073 = {
+				naval_base = 3
+			}
+
+		}
+		add_core_of = EGY
+		add_claim_by = ARA
+
+	}
+
+	provinces={
+		1112 4073 4161 9947 10002 10099 11922 11979 12073 
+	}
+	manpower=115359
+	buildings_max_level_factor=1.000
+	state_category=town
+}
