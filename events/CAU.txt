@@ -1,0 +1,173 @@
+add_namespace = cau
+
+# haiti and central american pact
+country_event = {
+	id = cau.1
+	title = cau.1.t
+	desc = cau.1.d
+	picture = GFX_report_event_gre_allied_diplomacy_military
+
+	is_triggered_only = yes
+	
+	option = {
+		name = cau.1.a
+		HAI = {
+							hidden_effect = {
+									add_equipment_to_stockpile = {
+											type = infantry_equipment
+											amount = 2000
+										}
+								}
+							add_stability = 0.05
+							add_war_support = 0.05
+							send_equipment = {
+									equipment = infantry_equipment
+									amount = 4000
+									target = HAI
+								}
+						}
+		HAI = {
+			add_opinion_modifier = { target = CAU modifier = tizard_relations }
+		}
+	}
+}
+# ecuador and central american pact
+country_event = {
+	id = cau.2
+	title = cau.2.t
+	desc = cau.2.d
+	picture = GFX_report_event_gre_allied_diplomacy_military
+
+	is_triggered_only = yes
+	
+	option = {
+		name = cau.2.a
+		ECU = {
+							hidden_effect = {
+									add_equipment_to_stockpile = {
+											type = infantry_equipment
+											amount = 3000
+										}
+								}
+							add_stability = 0.08
+							add_war_support = 0.08
+							send_equipment = {
+									equipment = infantry_equipment
+									amount = 5000
+									target = ECU
+								}
+						}
+		ECU = {
+			add_opinion_modifier = { target = CAU modifier = tizard_relations }
+		}
+	}
+}
+# speech for carribean
+country_event = {
+	id = cau.3
+	title = cau.3.t
+	desc = cau.3.d
+	picture = GFX_report_event_gre_allied_diplomacy_military
+
+	is_triggered_only = yes
+	
+	option = {
+		name = cau.3.a
+		add_war_support = 0.20
+		add_stability = 0.10
+	}
+}
+#ultimatium for america
+country_event = {
+	id = cau.4
+	title = cau.4.t
+	desc = cau.4.d
+	picture = GFX_report_event_mussolini_hotel
+
+	is_triggered_only = yes
+	
+	option = {
+		name = cau.4.a
+		ai_chance = {
+		factor = 20
+		}
+		hidden_effect = {
+				news_event = { id = news.351 hours = 6 }
+			}
+		CAU = {transfer_state = 685
+		transfer_state = 304
+		}
+	}
+	option = {
+		name = cau.4.b
+		ai_chance = {
+		factor = 80
+		}
+		CAU = {country_event = cau.5}
+		add_named_threat = { threat = 1 name = generic.15 }
+	}
+}
+#no
+country_event = {
+	id = cau.5
+	title = cau.5.t
+	desc = cau.5.d
+	picture = GFX_report_event_spr_no_pasaran
+
+	is_triggered_only = yes
+	
+	option = {
+		name = cau.5.a
+		hidden_effect = {
+				news_event = { id = news.350 hours = 6 }
+			}
+			add_named_threat = { threat = 9 name = generic.15 }
+		declare_war_on = {
+					    target = USA
+					    type = annex_everything
+					}
+				}
+			}
+			# Election of 1936
+country_event = {
+	id = cau.6
+	title = cau.6.t
+	desc = cau.6.d
+	picture = GFX_report_event_usa_election_generic
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = CAU
+		democratic > 0.5
+		date > 1938.1.1
+		date < 1938.2.1
+	}
+
+	option = { 	
+		name = cau.6.a
+		ai_chance = {
+			factor = 50
+		}	
+		add_political_power = 100
+		add_stability = 0.05
+	}
+
+	option = { 
+		name = cau.6.b
+		ai_chance = {
+			factor = 50
+		}	
+		add_political_power = 120
+		create_country_leader = {
+			name = "Jacobo Árbenz"
+			desc = ""
+			picture = "Jacobo_Árbenz.dds"
+			expire = "1965.1.1"
+			ideology = marxism
+			traits = {
+				socialite_connections
+			}
+		}
+	}
+}

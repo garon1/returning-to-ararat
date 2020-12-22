@@ -1,0 +1,404 @@
+
+add_namespace = ukraine
+
+# evailuating our political stance in 1936
+country_event = {
+	id = ukraine.1
+	title = ukraine.1.t
+	desc = ukraine.1.d
+	picture = GFX_report_event_soviet_tank_parade
+
+	is_triggered_only = yes
+	
+	option = { # we better fix this bitch
+		name = ukraine.1.a
+		add_political_power = 10
+		add_stability = 0.05
+	}
+}
+# giving workers unions
+country_event = {
+	id = ukraine.2
+	title = ukraine.2.t
+	desc = ukraine.2.d
+	picture = GFX_report_event_worker_protests
+
+	is_triggered_only = yes
+	
+	option = { # we better fix this  OR ELSE MUAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAH idek
+		name = ukraine.2.a
+		add_political_power = -20
+		add_stability = 0.05
+		add_popularity = {
+							ideology = communism
+							popularity = 0.10
+						}
+	}
+}
+# hunting fascists
+country_event = {
+	id = ukraine.3
+	title = ukraine.3.t
+	desc = ukraine.3.d
+	picture = GFX_report_event_spr_solidify_the_frontlines
+
+	is_triggered_only = yes
+	
+	option = { # we hunt out the fascists and altright as we should 
+		name = ukraine.3.a
+		add_popularity = {
+									ideology = nationalism
+									popularity = -0.10
+								}
+	}
+}
+# ukranian democratic leader died and now he needs a replacement
+country_event = {
+	id = ukraine.4
+	title = ukraine.4.t
+	desc = ukraine.4.d
+	picture = GFX_report_event_molotov_ribbentrop_stalin_pact
+
+	is_triggered_only = yes
+	
+	option = { # we should ask the people
+		name = ukraine.4.a
+		ai_chance = {
+		factor = 50
+		}
+				kill_country_leader = yes
+				create_country_leader = {
+					name = "Oleksander Shumsky"
+					desc = ""
+					picture = "Portrait_Ukraine_Oleksander_Shumsky.dds"
+					expire = "1965.1.1"
+					ideology = marxism
+					traits = {
+						comintern_workhorse
+					}
+				}
+				set_politics = { ruling_party = communism elections_allowed = yes }
+			hidden_effect = {
+				news_event = { id = news.357 hours = 6 }
+			}
+	}
+	option = { # we should ask the people
+		name = ukraine.4.b
+		ai_chance = {
+		factor = 50
+		}
+				kill_country_leader = yes
+				create_country_leader = {
+					name = "Nestor Makhno"
+					desc = ""
+					picture = "Portrait_Ukraine_Makhno.dds"
+					expire = "1965.1.1"
+					ideology = anarchism_subtype
+					traits = {
+						anarchist_zeal
+					}
+				}
+				set_politics = { ruling_party = neutrality elections_allowed = yes }
+			hidden_effect = {
+				news_event = { id = news.358 hours = 6 }
+				add_popularity = {
+							ideology = neutrality
+							popularity = 0.50
+						}
+			}
+	}
+}
+# ultimatium to poland
+country_event = {
+	id = ukraine.5
+	title = ukraine.5.t
+	desc = ukraine.5.d
+	picture = GFX_report_event_spr_solidify_the_frontlines
+
+	is_triggered_only = yes
+	
+	option = { # never
+	ai_chance = {
+		factor = 90
+		}
+		name = ukraine.5.a
+			add_stability = 0.10
+			UKR = {
+					create_wargoal = {
+						type = topple_government
+						target = POL
+					}
+					country_event = ukraine.8
+				}
+	}
+	option = { #well ig srry im kinda shy
+	ai_chance = {
+		factor = 10
+		}
+		name = ukraine.5.b
+			UKR = {
+					transfer_state = 93
+					transfer_state = 91
+					transfer_state = 89
+					transfer_state = 199
+					transfer_state = 201
+					country_event = ukraine.7
+
+				}
+	}
+}
+# ultimatium to romania
+country_event = {
+	id = ukraine.6
+	title = ukraine.6.t
+	desc = ukraine.6.d
+	picture = GFX_report_event_spr_solidify_the_frontlines
+
+	is_triggered_only = yes
+	
+	option = { # never
+	ai_chance = {
+		factor = 90
+		}
+		name = ukraine.6.a
+			add_stability = 0.10
+			UKR = {
+					create_wargoal = {
+						type = topple_government
+						target = ROM
+					}
+					country_event = ukraine.8
+				}
+	}
+	option = { #well ig srry im kinda shy
+	ai_chance = {
+		factor = 10
+		}
+		name = ukraine.6.b
+			UKR = {
+					transfer_state = 198
+					transfer_state = 192
+					transfer_state = 766
+					country_event = ukraine.7
+
+				}
+	}
+}
+# they accepted
+country_event = {
+	id = ukraine.7
+	title = ukraine.7.t
+	desc = ukraine.7.d
+	picture = GFX_report_event_spr_solidify_the_frontlines
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ukraine.7.a
+			add_war_support = 0.10
+	}
+}
+# they refused
+country_event = {
+	id = ukraine.8
+	title = ukraine.8.t
+	desc = ukraine.8.d
+	picture = GFX_report_event_spr_solidify_the_frontlines
+
+	is_triggered_only = yes
+	
+	option = {
+	name = ukraine.8.a
+	}
+}
+# monarchist circles
+country_event = {
+	id = ukraine.9
+	title = ukraine.9.t
+	desc = ukraine.9.d
+	picture = GFX_report_event_tur_sultan_and_pashas
+
+	is_triggered_only = yes
+	
+	option = {
+	name = ukraine.9.a
+	add_stability = -0.05
+	add_popularity = { ideology = neutrality popularity = -0.10 }
+	}
+}
+# ukraine decides on staying with poland
+country_event = {
+	id = ukraine.10
+	title = ukraine.10.t
+	desc = ukraine.10.d
+	picture = GFX_report_event_gre_balkan_pact
+
+	is_triggered_only = yes
+	
+	option = {
+	ai_chance = {
+		factor = 60
+		}
+	name = ukraine.10.a
+	add_stability = -0.05
+        create_faction = "Pact Of Kiev"
+	}
+	option = {
+	ai_chance = {
+		factor = 40
+		}
+	name = ukraine.10.a
+	add_stability = 0.10
+	}
+}
+# ukraine decides on russia
+country_event = {
+	id = ukraine.11
+	title = ukraine.11.t
+	desc = ukraine.11.d
+	picture = GFX_report_event_gre_balkan_pact
+
+	is_triggered_only = yes
+	
+	option = {
+	ai_chance = {
+		factor = 50
+		}
+	name = ukraine.11.a
+	add_stability = -0.05
+      UKR = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = medium_decrease
+				}
+			}
+			SOV = {
+				add_opinion_modifier = {
+					target = UKR
+					modifier = medium_decrease
+				}
+			}
+	}
+	option = {
+	ai_chance = {
+		factor = 50
+		}
+	name = ukraine.11.a
+	add_stability = 0.10
+	UKR = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = medium_increase
+				}
+			}
+			SOV = {
+				add_opinion_modifier = {
+					target = UKR
+					modifier = medium_increase
+				}
+			}
+	}
+}
+# ultimatium to poland
+country_event = {
+	id = ukraine.12
+	title = ukraine.12.t
+	desc = ukraine.12.d
+	picture = GFX_report_event_spr_solidify_the_frontlines
+
+	is_triggered_only = yes
+	
+	option = { # never
+	ai_chance = {
+		factor = 90
+		}
+		name = ukraine.12.a
+			add_stability = 0.10
+			UKR = {
+					create_wargoal = {
+						type = puppet_wargoal_focus
+						target = POL
+					}
+					country_event = ukraine.15
+				}
+	}
+	option = { #well ig srry im kinda shy
+	ai_chance = {
+		factor = 10
+		}
+		name = ukraine.12.b
+			UKR = {
+					transfer_state = 93
+					transfer_state = 91
+					transfer_state = 89
+					transfer_state = 199
+					transfer_state = 201
+					country_event = ukraine.14
+
+				}
+	}
+}
+# ultimatium to romania
+country_event = {
+	id = ukraine.13
+	title = ukraine.13.t
+	desc = ukraine.13.d
+	picture = GFX_report_event_spr_solidify_the_frontlines
+
+	is_triggered_only = yes
+	
+	option = { # never
+	ai_chance = {
+		factor = 90
+		}
+		name = ukraine.13.a
+			add_stability = 0.10
+			UKR = {
+					create_wargoal = {
+						type = puppet_wargoal_focus
+						target = ROM
+					}
+					country_event = ukraine.15
+				}
+	}
+	option = { #well ig srry im kinda shy
+	ai_chance = {
+		factor = 10
+		}
+		name = ukraine.13.b
+			UKR = {
+					transfer_state = 198
+					transfer_state = 192
+					transfer_state = 766
+					country_event = ukraine.14
+
+				}
+	}
+}
+# they accepted
+country_event = {
+	id = ukraine.14
+	title = ukraine.14.t
+	desc = ukraine.14.d
+	picture = GFX_report_event_spr_solidify_the_frontlines
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ukraine.14.a
+			add_war_support = 0.10
+	}
+}
+# they refused
+country_event = {
+	id = ukraine.15
+	title = ukraine.15.t
+	desc = ukraine.15.d
+	picture = GFX_report_event_spr_solidify_the_frontlines
+
+	is_triggered_only = yes
+	
+	option = {
+	name = ukraine.15.a
+	}
+}

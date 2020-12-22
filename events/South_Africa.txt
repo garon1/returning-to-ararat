@@ -1,0 +1,56 @@
+###########################
+# South Africa Events
+###########################
+
+add_namespace = saf
+
+# 1936 political situation
+country_event = {
+	id = saf.1
+	title = saf.1.t
+	desc = saf.1.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	
+	option = { # 
+		name = saf.1.a
+		add_political_power = 10
+	}
+}
+#event for united turkic union since this stupid event wouldnt work in the taj game file
+country_event = {
+	id = saf.2
+	title = saf.2.t
+	desc = saf.2.d
+	picture = GFX_report_event_portugal_navy_mutiny_prisoners
+
+	is_triggered_only = yes
+	
+	option = { # we better fix this bitch
+	hidden_effect = {
+	set_country_flag = TAJ_peace2
+	}
+		name = saf.2.a
+		ai_chance = {
+			base = 10
+		}
+		TAJ = { transfer_state = 589 
+		transfer_state = 588
+		}
+
+	}
+	option = { # we better fix this bitch
+		name = saf.2.b
+		set_country_flag = TAJ_peace2
+		ai_chance = {
+			base = 90
+		}
+		TAJ = { create_wargoal = {
+					target = KAZ
+					type = annex_everything
+				}
+				declare_war_on = KAZ
+		 }
+	}
+}
