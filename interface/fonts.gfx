@@ -1,18 +1,26 @@
 
+
 bitmapfonts = {
 	### NORMAL
 
 	#Small debug font
 
 	bitmapfont = {
-		name = "garamond_12"
-		path = "gfx/fonts/garamond_12"
+		name = "newsfeed_title"
+		path = "gfx/fonts/newsfeed_title"
+		fontfiles = { 
+			"gfx/fonts/newsfeed_title"
+		}
 		color = 0xffffffff
 	}
 	
 	bitmapfont = {
 		name = "cw_3d_debug"
-		path = "gfx/fonts/garamond_12"
+		path = "gfx/fonts/newsfeed_title"
 		color = 0xffffffff
+		fontfiles = { 
+			"gfx/fonts/newsfeed_title"
+		}
+
 	}
 }

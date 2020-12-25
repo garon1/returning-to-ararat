@@ -7,7 +7,7 @@ state={
 	}
 
 	history={
-		owner = ARA
+		owner = ARQ
 		victory_points = {
 			2097 15 
 		}
@@ -18,12 +18,12 @@ state={
 			air_base = 4
 
 		}
-		add_core_of = ARA
+		add_core_of = ARQ
 
 	}
 
 	provinces={
-		78 2004 2097 3795 7977 7994 8001 10793 10876 12046 12413 12839 12855 
+		78 2004 2097 3795 7977 7994 10793 12046 12855 
 	}
 	manpower=2044165
 	buildings_max_level_factor=1.000

@@ -126,3 +126,23 @@ country_event = {
         }
 	}
 }
+#those hoes said yes
+country_event = {
+	id = germany.1004
+	title = germany.1004.t
+	desc = germany.1004.desc
+	picture = GFX_report_event_german_reichstag_gathering
+
+    fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = { #other countries say yes
+		name = germany.1004.a
+		ai_chance = {
+			base = 100
+		}
+		add_war_support = 0.20
+		add_stability = 0.20
+	}
+}

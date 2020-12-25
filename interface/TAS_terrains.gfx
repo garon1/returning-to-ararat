@@ -1,6 +1,56 @@
 spriteTypes = {
 
 spriteType = {
+    name = "GFX_terrain_hanoi"
+    textureFile = "gfx/interface/terrains/terrain_city_hanoi.dds"
+  }
+
+  spriteType = {
+    name = "GFX_terrain_hanoi_winter"
+    textureFile = "gfx/interface/terrains/terrain_city_hanoi.dds"
+  }
+
+  spriteType = {
+    name = "GFX_terrain_sivas"
+    textureFile = "gfx/interface/terrains/terrain_city_sivas.dds"
+  }
+
+  spriteType = {
+    name = "GFX_terrain_sivas_winter"
+    textureFile = "gfx/interface/terrains/terrain_city_sivas.dds"
+  }
+
+spriteType = {
+    name = "GFX_terrain_phnom_penh"
+    textureFile = "gfx/interface/terrains/terrain_city_phnom_penh.dds"
+  }
+
+  spriteType = {
+    name = "GFX_terrain_phnom_penh_winter"
+    textureFile = "gfx/interface/terrains/terrain_city_phnom_penh.dds"
+  }
+
+  spriteType = {
+    name = "GFX_terrain_saigon"
+    textureFile = "gfx/interface/terrains/terrain_city_saigon.dds"
+  }
+
+  spriteType = {
+    name = "GFX_terrain_saigon_winter"
+    textureFile = "gfx/interface/terrains/terrain_city_saigon.dds"
+  }
+
+  spriteType = {
+    name = "GFX_terrain_vientiane"
+    textureFile = "gfx/interface/terrains/terrain_city_vientiane.dds"
+  }
+
+  spriteType = {
+    name = "GFX_terrain_vientiane_winter"
+    textureFile = "gfx/interface/terrains/terrain_city_vientiane.dds"
+  }
+
+spriteType = {
     name = "GFX_terrain_split"
     textureFile = "gfx/interface/terrains/terrain_city_split.dds"
   }

@@ -1462,7 +1462,7 @@
 1461;7;19;248;sea;false;ocean;0
 1462;7;20;236;sea;false;ocean;0
 1463;7;21;60;land;false;hills;7
-1464;7;21;165;land;false;forest;6
+1464;7;21;165;land;false;vientiane;6
 1465;7;22;244;sea;false;ocean;0
 1466;7;23;232;sea;false;ocean;0
 1467;7;24;25;land;false;shushi;7
@@ -4073,7 +4073,7 @@
 4072;47;66;93;land;false;plains;6
 4073;47;66;143;land;true;suez;5
 4074;47;69;3;land;false;mountain;6
-4075;47;69;58;land;false;urban;6
+4075;47;69;58;land;false;hanoi;6
 4076;47;69;208;land;true;alexandria;5
 4077;47;72;23;land;false;plains;6
 4078;47;72;68;land;false;mountain;1
@@ -4399,7 +4399,7 @@
 4398;48;171;193;land;true;forest;2
 4399;48;174;53;land;true;jungle;6
 4400;48;174;158;land;false;plains;6
-4401;48;177;18;land;true;urban;6
+4401;48;177;18;land;true;saigon;6
 4402;48;177;73;land;false;plains;2
 4403;48;177;223;land;false;plains;6
 4404;48;180;38;land;true;hills;6
@@ -7374,7 +7374,7 @@
 7373;90;129;186;land;false;mountain;6
 7374;90;132;46;land;false;mountain;6
 7375;90;132;151;land;false;urban;6
-7376;90;135;11;land;false;plains;6
+7376;90;135;11;land;false;phnom_penh;6
 7377;90;135;66;land;true;mountain;1
 7378;90;135;216;land;false;mountain;4
 7379;90;138;31;land;true;hills;2
@@ -9775,7 +9775,7 @@
 9774;130;21;174;land;false;forest;2
 9775;130;24;34;land;false;hills;2
 9776;130;24;89;land;false;hills;6
-9777;130;24;139;land;false;hills;7
+9777;130;24;139;land;false;sivas;7
 9778;130;27;54;land;false;forest;1
 9779;130;27;99;land;false;hills;2
 9780;130;27;204;land;true;hills;1

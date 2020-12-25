@@ -1,4 +1,7 @@
-
+VIN_INC = {
+	color = rgb { 0 103 193 }
+	color_ui = rgb { 0 103 193 }
+}
 MAL_UK = {
     color = rgb { 201 56 93 }
     color_ui = rgb { 255 73 121 }

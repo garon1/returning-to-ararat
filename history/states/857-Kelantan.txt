@@ -13,10 +13,11 @@ state={
 
 	}
 
+	
+	manpower=250392
+	buildings_max_level_factor=1.000
+	state_category=rural
 	provinces={
 		1348 4355 7329 10227 12199 
 	}
-	manpower=50392
-	buildings_max_level_factor=1.000
-	state_category=rural
 }

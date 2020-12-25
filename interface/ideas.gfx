@@ -1,5 +1,57 @@
 
-spriteTypes = {	
+spriteTypes = {
+spriteType = {
+		name = "GFX_idea_PUA_women_working"
+		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+	}
+spriteType = {
+		name = "GFX_idea_PUA_guarentee_rights"
+		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+	}
+spriteType = {
+		name = "GFX_idea_PUA_new_education"
+		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+	}
+spriteType = {
+		name = "GFX_idea_PUA_national_unions"
+		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+	}
+spriteType = {
+		name = "GFX_idea_PUA_nationalization_industry"
+		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+	}	
+spriteType = {
+		name = "GFX_idea_PUA_american_class"
+		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+	}
+spriteType = {
+		name = "GFX_idea_PUA_civil_war_victory"
+		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+	}
+spriteType = {
+		name = "GFX_idea_VIN_interference"
+		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+	}
+spriteType = {
+		name = "GFX_idea_VIN_food_distribution"
+		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+	}
+spriteType = {
+		name = "GFX_idea_VIN_abolished_privatization"
+		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+	}
+spriteType = {
+		name = "GFX_idea_VIN_poor_construction2"
+		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_VIN_french_payments"
+		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+	}
+spriteType = {
+		name = "GFX_idea_VIN_poor_construction"
+		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+	}
 spriteType = {
 		name = "GFX_idea_CRO_croats"
 		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"

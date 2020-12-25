@@ -422,9 +422,14 @@ PAL = {
 	color_ui = rgb { 170  125  80 }
 }
 
+ARQ = {
+	color = rgb { 193 62 119 }
+	color_ui = rgb { 193 62 119 }
+}
+
 LEB = {
-	color = rgb { 130  150  60 }
-	color_ui = rgb { 130  150  60 }
+	color = rgb { 193 62 119 }
+	color_ui = rgb { 193 62 119 }
 }
 
 JOR = {
@@ -825,4 +830,8 @@ KUR = {
 IND = {
 	color = rgb { 124 209 255 }
 	color_ui = rgb { 124 209 255 }
+}
+GTA = {
+	color = rgb { 193 62 119 }
+	color_ui = rgb { 193 62 119 }
 }

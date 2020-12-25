@@ -89,6 +89,21 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
+set_autonomy = {
+		target = LEB
+		autonomous_state = autonomous_zone
+		freedom_level = 0.75
+	}
+set_autonomy = {
+		target = ARQ
+		autonomous_state = autonomous_zone
+		freedom_level = 0.75
+	}
+set_autonomy = {
+		target = GTA
+		autonomous_state = autonomous_zone
+		freedom_level = 0.75
+	}
 		
 create_country_leader = {
 	name = "Ali ibn Hussein"

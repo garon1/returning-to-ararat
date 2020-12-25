@@ -1,6 +1,6 @@
 ﻿capital = 671 #Hanoi
 
-oob = "VIE_1936"
+oob = "VIN_1936"
 
 set_research_slots = 3
 
@@ -63,6 +63,11 @@ if = {
 		basic_battery = 1
 		basic_torpedo = 1
 	}
+}
+
+add_ideas = {
+VIN_poor_construction
+VIN_french_payments	
 }
 
 set_politics = {

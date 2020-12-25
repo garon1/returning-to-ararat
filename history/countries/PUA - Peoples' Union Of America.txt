@@ -40,6 +40,9 @@ syndicalism = 45
 market_socialism = 20
 anarchism = 20
 }
+add_ideas = {
+	PUA_american_class
+}
 
 create_country_leader = {
 	

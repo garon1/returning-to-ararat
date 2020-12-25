@@ -1869,6 +1869,19 @@ country_event = {
 		release PUA
 		release CAL
 		release LOA
+		release COF
+		COF = {
+		transfer_state = 363
+		transfer_state = 362
+		transfer_state = 372
+		transfer_state = 364
+		transfer_state = 368
+		transfer_state = 367
+				transfer_state = 365
+				transfer_state = 366
+	 transfer_state = 371
+				transfer_state = 370
+				}
 			CAL = {
 	 transfer_state = 378
 				transfer_state = 385
@@ -1889,34 +1902,44 @@ country_event = {
 			375 = {
 			add_core_of = PUA
 			add_core_of = LOA
+			add_core_of = COF
 			}
 			374 = {
 			add_core_of = PUA
 			add_core_of = LOA
 			}
+			COF = {
+			load_oob = "COF_Civil_War"
+			}
 		370 = {
 				add_core_of = LOA 
 				add_core_of = PUA
+				add_core_of = COF
 			}
 			371 = {
 				add_core_of = LOA 
 				add_core_of = PUA
+				add_core_of = COF
 			}
 			364 = {
 				add_core_of = LOA 
 				add_core_of = PUA
+				add_core_of = COF
 			}
 			365 = {
 				add_core_of = LOA 
 				add_core_of = PUA
+				add_core_of = COF
 			}
 			366 = {
 				add_core_of = LOA 
 				add_core_of = PUA
+				add_core_of = COF
 			}
 			367 = {
 				add_core_of = LOA 
 				add_core_of = PUA
+				add_core_of = COF
 			}
 		LOA = { transfer_state = 379
 				transfer_state = 380
@@ -1931,6 +1954,7 @@ country_event = {
 			363 = {
 				add_core_of = LOA 
 				add_core_of = PUA
+				add_core_of = COF
 			}
 			362 = {
 				add_core_of = LOA 
@@ -1963,6 +1987,7 @@ country_event = {
 			372 = {
 				add_core_of = LOA 
 				add_core_of = PUA
+				add_core_of = COF
 			}
 			376 = {
 				add_core_of = LOA 
@@ -2211,6 +2236,19 @@ hidden = yes
 				add_core_of = TEX
 			}
   }
+  option = {
+    name = usa.71.b #accept
+    ai_chance = {
+      factor = 50
+    }
+    country_event = { id = usa.73 hours = 6 }
+    COF = {
+    transfer_state = 375
+    }
+    375 = {
+				add_core_of = COF
+			}
+  }
 }
 #non hidden event of texas (achieves independence)
 country_event = {
@@ -2232,7 +2270,7 @@ country_event = {
    add_political_power = -100
   }
 }
-#non hidden event of texas (goes with PUA)
+#non hidden event of texas (goes with COF)
 country_event = {
   id = usa.73
   title = usa.73.t

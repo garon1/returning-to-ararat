@@ -255,29 +255,4 @@ units = {
 		location = 6901  # Leon
 		division_template = "Brigada Legionario"
 	}
-	division = {
-		name = "45a Brigada Legionario"
-		location = 6901  # Leon
-		division_template = "Brigada Legionario"
-	}
-	division = {
-		name = "46a Brigada Legionario"
-		location = 6901  # Leon
-		division_template = "Brigada Legionario"
-	}
-	division = {
-		name = "47a Brigada Legionario"
-		location = 6901  # Galicia
-		division_template = "Brigada Legionario"
-	}
-	division = {
-		name = "48a Brigada Legionario"
-		location = 11779  # Galicia
-		division_template = "Brigada Legionario"
-	}
-	division = {
-		name = "53a Brigada Legionario"
-		location = 11812  # Sevilla
-		division_template = "Brigada Legionario"
-	}
 }

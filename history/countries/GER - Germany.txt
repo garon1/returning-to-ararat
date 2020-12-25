@@ -89,7 +89,7 @@ if = {
 }
 if = {
 	limit = {
-		has_dlc = "La Resismance"
+		has_dlc = "La Resistance"
 	}
 	set_technology = {
 		armored_car1 = 1
@@ -589,7 +589,7 @@ create_navy_leader = {
 
 if = {
 	limit = {
-		has_dlc = "La Resismance"
+		has_dlc = "La Resistance"
 	}
 	create_operative_leader = {
 		name = "Otto Skorzeny"

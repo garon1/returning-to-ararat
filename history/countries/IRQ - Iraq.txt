@@ -89,104 +89,49 @@ create_country_leader = {
 		#
 	}
 }
+
 create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	name = "Rashid Ali al-Gaylani"
+	desc = ""
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_fascism1.dds"
 	expire = "1965.1.1"
-	ideology = nationalism_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = social_liberal_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = totalitarianism_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = traditional_conservatism_subtype
+	ideology = fascism_ideology
 	traits = {
 		#
 	}
 }
 
 create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	name = "Yusuf Salman Yusuf"
+	desc = ""
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_navy_3.dds"
 	expire = "1965.1.1"
-	ideology = syndicalism_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = market_socialism_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = anarchism_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = monarchism_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = radical_socialism_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = market_liberal_subtype
+	ideology = leninism
 	traits = {
 		#
 	}
 }
 
-create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = social_democracy_subtype
-	traits = {
-		#
+1939.1.1 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		fascism = 30
+		neutrality = 70
+	}
+
+	create_country_leader = {
+		name = "Faisal II"
+		desc = "POLITICS_FAISAL_II_DESC"
+		picture = "gfx/leaders/JOR/Portrait_Arabia_Generic_land_1.dds"
+		expire = "1965.1.1"
+		ideology = despotism
+		traits = {
+			#
+		}
 	}
 }

@@ -159,6 +159,13 @@ ljubljana:0 "Ljubljana"
 podgorica:0 "Podgorica"
 skopje:0 "Skopje"
 split:0 "Split"
+phnom_penh:0 "Phnom Penh"
+saigon:0 "Saigon"
+vientiane:0 "Vientiane"
+hanoi:0 "Hanoi"
+
+
+
 
  UNIT_TERRAIN_MODIFIER:0 "Unit effects:"
  MOVEMENT_COST:0 "Movement cost within this terrain type x$VALUE|H$"

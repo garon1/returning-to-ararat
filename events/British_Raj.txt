@@ -811,6 +811,9 @@ country_event = {
 				KHA = {
 				transfer_state = 844
 				}
+				432 = {
+				add_core_of = BAN
+			}
 				431 = {
 				add_core_of = BAN
 			}

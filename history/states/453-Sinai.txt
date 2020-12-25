@@ -4,7 +4,8 @@ state={
 	name="STATE_453"
 
 	history={
-		owner = ARA
+set_demilitarized_zone = yes
+		owner = GTA
 		buildings = {
 			infrastructure = 2
 			dockyard = 1
@@ -14,7 +15,7 @@ state={
 
 		}
 		add_core_of = EGY
-		add_claim_by = ARA
+		add_core_of = GTA
 
 	}
 
