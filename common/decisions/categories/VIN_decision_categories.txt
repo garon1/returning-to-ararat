@@ -1,8 +1,0 @@
-VIN_indochinese_union = {
-	allowed = {
-		original_tag = VIN
-	}
-	visible = {
-		is_puppet = no
-	}
-}
