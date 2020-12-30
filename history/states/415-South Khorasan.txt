@@ -1,0 +1,25 @@
+
+state={
+	id=415
+	name="STATE_415"
+
+	history={
+		owner = BAR
+		buildings = {
+			infrastructure = 2
+
+		}
+		victory_points = {
+			1948 1 
+		}
+		add_core_of = BAR
+
+	}
+
+	provinces={
+		1948 2017 2078 2101 4949 5020 5064 
+	}
+	manpower=40293
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

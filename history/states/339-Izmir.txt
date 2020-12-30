@@ -1,0 +1,35 @@
+
+state={
+	id=339
+	name="STATE_339"
+	resources={
+		chromium=50.000
+	}
+
+	history={
+		owner = ANA
+		victory_points = {
+			4112 5 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			air_base = 2
+			4112 = {
+				naval_base = 5
+
+			}
+
+		}
+		add_core_of = ANA
+		add_claim_by = GRE
+
+	}
+
+	provinces={
+		785 928 3927 6992 9921 9929 11898 
+	}
+	manpower=811755
+	buildings_max_level_factor=1.000
+	state_category=town
+}

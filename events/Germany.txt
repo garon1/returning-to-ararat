@@ -1,0 +1,148 @@
+﻿###########################
+# German Events
+###########################
+
+add_namespace = germany
+#Sozialistische Internationale
+country_event = {
+	id = germany.1002
+	title = germany.1002.t
+	desc = germany.1002.desc
+	picture = GFX_report_event_german_reichstag_gathering	
+	trigger = {
+	has_completed_focus = GER_syndaclist_international
+	}
+
+	mean_time_to_happen = { days = 2 }
+option = { #other countries say no
+		name = germany.1002.b
+		ai_chance = {
+			base = 20
+		}
+	}
+	option = { #other countries say yes
+		name = germany.1002.a
+		ai_chance = {
+			base = 80
+		}
+		GER = {country_event = germany.1003}
+		add_stability = 0.08
+		URG = {
+             country_event = germany.1003
+        }
+       PAR = {
+             country_event = germany.1003
+        }
+        HAI = {
+             country_event = germany.1003
+        }
+        CAU = {
+             country_event = germany.1003
+        }
+        BOL = {
+             country_event = germany.1003
+        }
+         CHO = {
+             country_event = germany.1003
+        }
+         TAJ = {
+             country_event = germany.1003
+        }
+         ECU = {
+             country_event = germany.1003
+        }
+		SIK = {
+             country_event = germany.1003
+        }
+	}
+}
+#those hoes said yes
+country_event = {
+	id = germany.1003
+	title = germany.1003.t
+	desc = germany.1003.desc
+	picture = GFX_report_event_german_reichstag_gathering
+
+    fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = { #other countries say yes
+		name = germany.1003.a
+		ai_chance = {
+			base = 100
+		}
+		hidden_effect = {
+				news_event = { hours = 6 id = news.339 }
+			}
+		add_war_support = 0.10
+		add_stability = 0.10
+		add_political_power = 200
+		
+		URG = {
+             add_war_support = 0.10
+		add_stability = 0.10
+		add_political_power = 200
+        }
+       PAR = {
+             add_war_support = 0.10
+		add_stability = 0.10
+		add_political_power = 200
+        }
+        HAI = {
+             add_war_support = 0.10
+		add_stability = 0.10
+		add_political_power = 200
+        }
+        CAU = {
+             add_war_support = 0.10
+		add_stability = 0.10
+		add_political_power = 200
+        }
+        BOL = {
+             add_war_support = 0.10
+		add_stability = 0.10
+		add_political_power = 200
+        }
+         CHO = {
+             add_war_support = 0.10
+		add_stability = 0.10
+		add_political_power = 200
+        }
+         TAJ = {
+             add_war_support = 0.10
+		add_stability = 0.10
+		add_political_power = 200
+        }
+         ECU = {
+             add_war_support = 0.10
+		add_stability = 0.10
+		add_political_power = 200
+        }
+		SIK = {
+             add_war_support = 0.10
+		add_stability = 0.10
+		add_political_power = 200
+        }
+	}
+}
+#those hoes said yes
+country_event = {
+	id = germany.1004
+	title = germany.1004.t
+	desc = germany.1004.desc
+	picture = GFX_report_event_german_reichstag_gathering
+
+    fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = { #other countries say yes
+		name = germany.1004.a
+		ai_chance = {
+			base = 100
+		}
+		add_war_support = 0.20
+		add_stability = 0.20
+	}
+}

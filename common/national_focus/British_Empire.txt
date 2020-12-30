@@ -1,0 +1,1327 @@
+focus_tree = {
+	id = British_Empire
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BRE
+		}
+	}
+	default = no
+	focus = {
+		id = BRE_civil_war_victory
+		icon = GFX_goal_unknown
+		cost = 7.00
+		available = {
+		has_country_flag = BRE_won
+		}
+		x = 15
+		y = 0
+		completion_reward = {
+		country_event = bre.1
+		}
+
+	}
+	focus = {
+		id = BRE_begin_expansionism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		x = 25
+		y = 0
+		available = {
+		has_country_flag = BRE_done
+		}
+		completion_reward = {
+		add_ideas = BRE_expansion
+		}
+
+	}
+	focus = {
+		id = BRE_industrial
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 6
+		y = 0
+		completion_reward = {
+					add_stability = 0.05
+				}
+
+	}
+	focus = {
+		id = BRE_army
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 33
+		y = 0
+		completion_reward = {
+					army_experience = 10
+				}
+
+	}
+	focus = {
+		id = BRE_naval_awakening
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 41
+		y = 0
+		completion_reward = {
+					navy_experience = 25
+				}
+
+	}
+	focus = {
+		id = BRE_air_focus
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 48
+		y = 0
+		completion_reward = {
+					add_ideas = HUN_indigenous_designs
+				}
+
+	}
+	focus = {
+		id = BRE_con1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRE_industrial
+		}
+		x = 1
+		y = 1
+		completion_reward = {
+					122 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = BRE_con2
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRE_industrial
+		}
+		x = 4
+		y = 1
+		completion_reward = {
+					128 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = BRE_infra
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRE_industrial
+		}
+		x = 6
+		y = 1
+		completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 0
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 0
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 1
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = BRE_pro1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRE_industrial
+		}
+		x = 8
+		y = 1
+		completion_reward = {
+					338 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = BRE_pro2
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRE_industrial
+		}
+		x = 11
+		y = 1
+		completion_reward = {
+					126 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = BRE_secret
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRE_con1
+		}
+		prerequisite = {
+			focus = BRE_con2
+		}
+		prerequisite = {
+			focus = BRE_infra
+		}
+		prerequisite = {
+			focus = BRE_pro1
+		}
+		prerequisite = {
+			focus = BRE_pro2
+		}
+		x = 4
+		y = 2
+		completion_reward = {
+					add_tech_bonus = {
+							name = secret_bonus
+							bonus = 0.5
+							uses = 4
+							category = electronics
+							category = nuclear
+							category = rocketry
+						}
+				}
+
+	}
+	focus = {
+		id = BRE_research
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRE_con1
+		}
+		prerequisite = {
+			focus = BRE_con2
+		}
+		prerequisite = {
+			focus = BRE_infra
+		}
+		prerequisite = {
+			focus = BRE_pro1
+		}
+		prerequisite = {
+			focus = BRE_pro2
+		}
+		x = 6
+		y = 2
+		completion_reward = {
+		add_research_slot = 1
+		}
+
+	}
+	focus = {
+		id = BRE_nuclear
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRE_pro2
+		}
+		prerequisite = {
+			focus = BRE_pro1
+		}
+		prerequisite = {
+			focus = BRE_infra
+		}
+		prerequisite = {
+			focus = BRE_con2
+		}
+		prerequisite = {
+			focus = BRE_con1
+		}
+		x = 8
+		y = 2
+		completion_reward = {
+					add_tech_bonus = {
+							name = secret_bonus
+							bonus = 0.5
+							uses = 4
+							category = electronics
+							category = nuclear
+							category = rocketry
+						}
+				}
+
+	}
+	focus = {
+		id = BRE_begin_anti_democracy
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = BRE_civil_war_victory
+		}
+		x = 15
+		y = 1
+		completion_reward = {
+		add_popularity = { ideology = traditional_conservatism popularity = 0.15 }
+		}
+
+	}
+	focus = {
+		id = BRE_arrest_democrats
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = BRE_begin_anti_democracy
+		}
+		x = 12
+		y = 2
+		completion_reward = {
+		country_event = bre.2
+		}
+
+	}
+	focus = {
+		id = BRE_cleanse_country
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = BRE_arrest_democrats
+		}
+		x = 12
+		y = 3
+		completion_reward = {
+		country_event = bre.3
+		}
+
+	}
+	focus = {
+		id = BRE_try_royal_family
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = BRE_begin_anti_democracy
+		}
+		x = 18
+		y = 2
+		completion_reward = {
+		country_event = bre.4
+		}
+
+	}
+	focus = {
+		id = BRE_russian_ties
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = BRE_arrest_democrats
+			focus = BRE_try_royal_family
+		}
+		x = 15
+		y = 3
+		completion_reward = {
+SOV = {
+							add_opinion_modifier = {
+									target = BRE
+									modifier = huge_increase
+								}
+						}
+		BRE = {
+							add_opinion_modifier = {
+									target = SOV
+									modifier = huge_increase
+								}
+						}
+		}
+
+	}
+	focus = {
+		id = BRE_help_community
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = BRE_try_royal_family
+		}
+		x = 18
+		y = 3
+		completion_reward = {
+		add_stability = 0.1
+		}
+
+	}
+	focus = {
+		id = BRE_union_irredentism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = BRE_cleanse_country
+		}
+		prerequisite = {
+			focus = BRE_russian_ties
+		}
+		prerequisite = {
+			focus = BRE_help_community
+		}
+		x = 15
+		y = 4
+		completion_reward = {
+		WLS = {
+			remove_state_core = 122
+			}
+		SCO = {
+			remove_state_core = 120
+			remove_state_core = 136
+			remove_state_core = 133
+			remove_state_core = 121
+			}
+		}
+
+	}
+	focus = {
+		id = BRE_war_propaganda
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = BRE_begin_expansionism
+		}
+		x = 23
+		y = 1
+		completion_reward = {
+		add_war_support = 0.2
+		}
+
+	}
+	focus = {
+		id = BRE_great_state
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = BRE_begin_expansionism
+		}
+		x = 27
+		y = 1
+		completion_reward = {
+					133 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = BRE_greatness
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = BRE_war_propaganda
+		}
+		prerequisite = {
+			focus = BRE_great_state
+		}
+		x = 25
+		y = 2
+		completion_reward = {
+		add_political_power = 200
+		}
+
+	}
+	focus = {
+		id = BRE_take_india
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = BRE_greatness
+		}
+		x = 22
+		y = 3
+		completion_reward = {
+		if = {
+				limit = {
+					country_exists = BAN
+				}
+				declare_war_on = {
+					target = BAN
+					type = annex_everything
+				}
+			}
+		if = {
+				limit = {
+					country_exists = KHA
+				}
+				declare_war_on = {
+					target = KHA
+					type = annex_everything
+				}
+			}
+		if = {
+				limit = {
+					country_exists = KHU
+				}
+				declare_war_on = {
+					target = KHU
+					type = annex_everything
+				}
+			}
+
+		if = {
+				limit = {
+					country_exists = IND
+				}
+				declare_war_on = {
+					target = IND
+					type = annex_everything
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = BRE_take_africa
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = BRE_greatness
+		}
+		x = 24
+		y = 3
+		completion_reward = {
+		if = {
+				limit = {
+					country_exists = KEN
+				}
+				declare_war_on = {
+					target = KEN
+					type = annex_everything
+				}
+			}
+		if = {
+				limit = {
+					country_exists = UGA
+				}
+				declare_war_on = {
+					target = UGA
+					type = annex_everything
+				}
+			}
+		if = {
+				limit = {
+					country_exists = TAN
+				}
+				declare_war_on = {
+					target = TAN
+					type = annex_everything
+				}
+			}
+		if = {
+				limit = {
+					country_exists = ARA
+				}
+				declare_war_on = {
+					target = ARA
+					type = annex_everything
+				}
+			}
+		if = {
+				limit = {
+					country_exists = EGY
+				}
+				declare_war_on = {
+					target = EGY
+					type = annex_everything
+				}
+			}
+
+		if = {
+				limit = {
+					country_exists = NGA
+				}
+				declare_war_on = {
+					target = NGA
+					type = annex_everything
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = BRE_take_pacific
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = BRE_greatness
+		}
+		x = 26
+		y = 3
+		completion_reward = {
+		if = {
+				limit = {
+					country_exists = JAP
+				}
+				declare_war_on = {
+					target = JAP
+					type = annex_everything
+				}
+			}
+		if = {
+				limit = {
+					country_exists = SIA
+				}
+				declare_war_on = {
+					target = SIA
+					type = annex_everything
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = BRE_take_caribbean
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = BRE_greatness
+		}
+		x = 28
+		y = 3
+		completion_reward = {
+		if = {
+				limit = {
+					country_exists = ARG
+				}
+				declare_war_on = {
+					target = ARG
+					type = annex_everything
+				}
+			}
+		if = {
+				limit = {
+					country_exists = VEN
+				}
+				declare_war_on = {
+					target = VEN
+					type = annex_everything
+				}
+			}
+		if = {
+				limit = {
+					country_exists = JAM
+				}
+				declare_war_on = {
+					target = JAM
+					type = annex_everything
+				}
+			}
+		if = {
+				limit = {
+					country_exists = BAH
+				}
+				declare_war_on = {
+					target = BAH
+					type = annex_everything
+				}
+			}
+
+		if = {
+				limit = {
+					country_exists = CAU
+				}
+				declare_war_on = {
+					target = CAU
+					type = annex_everything
+				}
+			}
+		}
+
+
+	}
+	focus = {
+		id = BRE_infantry
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRE_army
+		}
+		x = 31
+		y = 1
+		completion_reward = {
+					add_tech_bonus = {
+							name = infantry_artillery_bonus
+							bonus = 1.0
+							uses = 1
+							category = infantry_weapons
+						}
+				}
+
+	}
+	focus = {
+		id = BRE_artillery
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRE_infantry
+		}
+		x = 31
+		y = 2
+		completion_reward = {
+					add_tech_bonus = {
+							name = infantry_artillery_bonus
+							bonus = 1.0
+							uses = 1
+							category = infantry_weapons
+						}
+				}
+
+	}
+	focus = {
+		id = BRE_mobile_tanks
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRE_artillery
+		}
+		x = 31
+		y = 3
+		completion_reward = {
+					custom_effect_tooltip = available_designer
+				}
+
+	}
+	focus = {
+		id = BRE_special_forces
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRE_mobile_tanks
+		}
+		x = 31
+		y = 4
+		completion_reward = {
+					add_ideas = special_forces
+					add_tech_bonus = {
+							name = special_forces_bonus
+							bonus = 1.0
+							uses = 1
+							technology = paratroopers
+							technology = paratroopers2
+							technology = marines
+							technology = marines2
+							technology = tech_mountaineers
+							technology = tech_mountaineers2
+						}
+				}
+
+	}
+	focus = {
+		id = BRE_doctorine
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRE_army
+		}
+		x = 33
+		y = 1
+		completion_reward = {
+					army_experience = 5
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 1.0
+							uses = 1
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = BRE_doctorine2
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRE_doctorine
+		}
+		x = 33
+		y = 2
+		completion_reward = {
+					army_experience = 5
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 1.0
+							uses = 1
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = BRE_assault
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRE_doctorine2
+		}
+		x = 33
+		y = 3
+		completion_reward = {
+					add_ideas = HUN_assault_gun_focus
+				}
+
+	}
+	focus = {
+		id = BRE_mobile
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRE_assault
+		}
+		x = 33
+		y = 4
+		completion_reward = {
+					add_tech_bonus = {
+							name = HUN_mobile_focus
+							bonus = 1.0
+							uses = 1
+							category = cat_mobile_warfare
+						}
+				}
+
+	}
+	focus = {
+		id = BRE_defense
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRE_army
+		}
+		x = 35
+		y = 1
+		completion_reward = {
+					army_experience = 5
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 1.0
+							uses = 1
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = BRE_fortify
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRE_defense
+		}
+		x = 35
+		y = 2
+		completion_reward = {
+					127 = {
+							add_building_construction = {
+									type = coastal_bunker
+									province = 3501
+									level = 2
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = coastal_bunker
+									province = 13070
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = BRE_mechanization
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRE_fortify
+		}
+		x = 35
+		y = 3
+		completion_reward = {
+					add_tech_bonus = {
+							name = motorized_bonus
+							ahead_reduction = 2
+							uses = 1
+							category = motorized_equipment
+						}
+				}
+
+	}
+	focus = {
+		id = BRE_armor
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRE_mechanization
+		}
+		x = 35
+		y = 4
+		completion_reward = {
+					add_tech_bonus = {
+							name = armor_bonus
+							bonus = 1.0
+							uses = 2
+							category = armor
+						}
+				}
+
+	}
+	focus = {
+		id = BRE_flexible
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRE_naval_awakening
+		}
+		x = 38
+		y = 1
+		completion_reward = {
+					add_tech_bonus = {
+							name = sub_op_bonus
+							bonus = 1.0
+							uses = 2
+							technology = convoy_interdiction_ti
+							technology = unrestricted_submarine_warfare
+							technology = wolfpacks
+							technology = advanced_submarine_warfare
+							technology = combined_operations_raiding
+						}
+				}
+
+	}
+	focus = {
+		id = BRE_submarine
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRE_flexible
+		}
+		x = 38
+		y = 2
+		completion_reward = {
+					add_tech_bonus = {
+							name = ss_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = ss_tech
+						}
+				}
+
+
+	}
+	focus = {
+		id = BRE_destroyer
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRE_submarine
+		}
+		x = 38
+		y = 3
+		completion_reward = {
+					add_tech_bonus = {
+							name = dd_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = dd_tech
+						}
+				}
+
+	}
+	focus = {
+		id = BRE_coast
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRE_naval_awakening
+		}
+		x = 41
+		y = 1
+		completion_reward = {
+					navy_experience = 25
+					if = {
+							limit = {
+									NOT = {
+											any_owned_state = {
+													dockyard > 0
+													free_building_slots = {
+															building = dockyard
+															size > 2
+															include_locked = yes
+														}
+												}
+										}
+									any_owned_state = {
+											is_coastal = yes
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											is_coastal = yes
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = dockyard
+											level = 3
+											instant_build = yes
+										}
+								}
+							set_country_flag = naval_effort_built
+						}
+					if = {
+							limit = {
+									NOT = {
+											has_country_flag = naval_effort_built
+										}
+									any_owned_state = {
+											dockyard > 0
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											dockyard > 0
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = dockyard
+											level = 3
+											instant_build = yes
+										}
+								}
+							set_country_flag = naval_effort_built
+						}
+					if = {
+							limit = {
+									NOT = {
+											has_country_flag = naval_effort_built
+										}
+									NOT = {
+											any_owned_state = {
+													free_building_slots = {
+															building = dockyard
+															size > 2
+															include_locked = yes
+														}
+												}
+										}
+								}
+							random_state = {
+									limit = {
+											controller = {
+													tag = ROOT
+												}
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = dockyard
+											level = 3
+											instant_build = yes
+										}
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = BRE_large
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRE_naval_awakening
+		}
+		x = 44
+		y = 1
+		completion_reward = {
+					add_tech_bonus = {
+							name = fleet_in_being_bonus
+							bonus = 1.0
+							uses = 2
+							category = fleet_in_being_tree
+						}
+				}
+
+	}
+	focus = {
+		id = BRE_cruiser
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRE_large
+		}
+		x = 44
+		y = 2
+		completion_reward = {
+					add_tech_bonus = {
+							name = cr_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = cl_tech
+							category = ca_tech
+						}
+				}
+
+	}
+	focus = {
+		id = BRE_capital
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRE_cruiser
+		}
+		x = 44
+		y = 3
+		completion_reward = {
+					navy_experience = 25
+					add_tech_bonus = {
+							name = capital_ships_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = bc_tech
+							category = bb_tech
+							category = cv_tech
+						}
+				}
+
+	}
+	focus = {
+		id = BRE_heavy
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRE_air_focus
+		}
+		x = 47
+		y = 1
+		completion_reward = {
+					add_tech_bonus = {
+							name = HUN_heavy_fighter_effort
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							technology = heavy_fighter1
+							technology = heavy_fighter2
+							technology = heavy_fighter3
+						}
+				}
+
+	}
+	focus = {
+		id = BRE_tactical
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRE_heavy
+		}
+		x = 47
+		y = 2
+		completion_reward = {
+					add_tech_bonus = {
+							name = HUN_tac_focus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = tactical_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = BRE_done_with_cleanse
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = BRE_union_irredentism
+		}
+		x = 15
+		y = 5
+		completion_reward = {
+		add_popularity = { ideology = nationalism popularity = 1 }
+		hidden_effect = {
+		set_country_flag = BRE_done
+		}
+		}
+
+
+	}
+	focus = {
+		id = BRE_army1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRE_special_forces
+		}
+		prerequisite = {
+			focus = BRE_mobile
+		}
+		prerequisite = {
+			focus = BRE_armor
+		}
+		x = 33
+		y = 5
+		completion_reward = {
+					army_experience = 10
+				}
+
+	}
+	focus = {
+		id = BRE_light
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRE_air_focus
+		}
+		x = 49
+		y = 1
+		completion_reward = {
+					add_tech_bonus = {
+							name = HUN_light_fighter_effort
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							technology = early_fighter
+							technology = fighter1
+							technology = fighter2
+							technology = fighter3
+						}
+				}
+
+	}
+	focus = {
+		id = BRE_cas
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRE_light
+		}
+		x = 49
+		y = 2
+		completion_reward = {
+					add_tech_bonus = {
+							name = CAS_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = cas_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = BRE_air
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRE_tactical
+		}
+		prerequisite = {
+			focus = BRE_cas
+		}
+		x = 48
+		y = 3
+		completion_reward = {
+					army_experience = 10
+				}
+
+	}
+}

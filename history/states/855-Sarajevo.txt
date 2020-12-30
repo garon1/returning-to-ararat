@@ -1,0 +1,24 @@
+
+state={
+	id=855
+	name="STATE_855"
+
+	history={
+		owner = YUG
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 1
+		}
+		add_core_of = YUG
+		add_claim_by = CRO
+
+	}
+	manpower=2000000
+	state_category=town
+
+	provinces={
+		606 6799 11741 11899 
+	}
+	
+}

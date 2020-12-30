@@ -1,0 +1,1404 @@
+focus_tree = {
+	id = Legion_of_america
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = LOA
+		}
+	}
+	default = no
+	focus = {
+		id = LOA_civil_war_victory
+		icon = GFX_goal_unknown
+		cost = 7.00
+		x = 9
+		y = 0
+		available = {
+		has_country_flag = LOA_won
+		}
+		completion_reward = {
+		add_political_power = 100
+		}
+
+	}
+	focus = {
+		id = LOA_army
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 19
+		y = 0
+		completion_reward = {
+					army_experience = 15
+				}
+
+	}
+	focus = {
+		id = LOA_industrial
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 28
+		y = 0
+		completion_reward = {
+					add_stability = 0.05
+				}
+
+	}
+	focus = {
+		id = LOA_naval_awakening
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 38
+		y = 0
+		completion_reward = {
+					navy_experience = 25
+				}
+
+	}
+	focus = {
+		id = LOA_air_focus
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 2
+		y = 0
+		completion_reward = {
+					add_ideas = HUN_indigenous_designs
+				}
+
+	}
+	focus = {
+		id = LOA_heavy
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_air_focus
+		}
+		x = 1
+		y = 1
+		completion_reward = {
+					add_tech_bonus = {
+							name = HUN_heavy_fighter_effort
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							technology = heavy_fighter1
+							technology = heavy_fighter2
+							technology = heavy_fighter3
+						}
+				}
+
+	}
+	focus = {
+		id = LOA_tactical
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_heavy
+		}
+		x = 1
+		y = 2
+		completion_reward = {
+					add_tech_bonus = {
+							name = HUN_tac_focus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = tactical_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = LOA_light
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_air_focus
+		}
+		x = 3
+		y = 1
+
+	}
+	focus = {
+		id = LOA_cas
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_light
+		}
+		x = 3
+		y = 2
+		completion_reward = {
+					add_tech_bonus = {
+							name = HUN_light_fighter_effort
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							technology = early_fighter
+							technology = fighter1
+							technology = fighter2
+							technology = fighter3
+						}
+				}
+
+	}
+	focus = {
+		id = LOA_air
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_tactical
+		}
+		prerequisite = {
+			focus = LOA_cas
+		}
+		x = 2
+		y = 3
+		completion_reward = {
+					air_experience = 5
+				}
+
+	}
+	focus = {
+		id = LOA_reconstruction
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_civil_war_victory
+		}
+		x = 9
+		y = 1
+		completion_reward = {
+		if = {
+		limit = {
+					has_idea = LOA_recovering
+				}
+				remove_ideas = LOA_recovering
+				add_ideas = LOA_recovering1
+		}
+		}
+		
+
+	}
+	focus = {
+		id = LOA_try_syndies
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_reconstruction
+		}
+		x = 6
+		y = 2
+		completion_reward = {
+		country_event = loa.2
+		}
+
+	}
+	focus = {
+		id = LOA_purge_syndies
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_try_syndies
+		}
+		x = 5
+		y = 3
+		completion_reward = {
+		remove_ideas = LOA_syndicalists
+		}
+
+	}
+	focus = {
+		id = LOA_try_federalists
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_reconstruction
+		}
+		x = 9
+		y = 2
+		completion_reward = {
+		country_event = loa.4
+		}
+
+	}
+	focus = {
+		id = LOA_purge_federalists
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_try_federalists
+		}
+		x = 9
+		y = 3
+		completion_reward = {
+		remove_ideas = LOA_federalists
+		}
+
+	}
+	focus = {
+		id = LOA_try_confederates
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_reconstruction
+		}
+		x = 12
+		y = 2
+		completion_reward = {
+		country_event = loa.3
+		}
+
+	}
+	focus = {
+		id = LOA_stop_confederate_resistance
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_try_confederates
+		}
+		x = 14
+		y = 3
+		completion_reward = {
+		remove_ideas = LOA_confederates
+		}
+
+	}
+	focus = {
+		id = LOA_reconstruct_population
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_purge_syndies
+		}
+		prerequisite = {
+			focus = LOA_purge_federalists
+		}
+		prerequisite = {
+			focus = LOA_stop_confederate_resistance
+		}
+		x = 9
+		y = 4
+		completion_reward = {
+		if = {
+		limit = {
+					has_idea = LOA_recovering1
+				}
+				remove_ideas = LOA_recovering1
+				add_ideas = LOA_recovering2
+		}
+		}
+
+	}
+	focus = {
+		id = LOA_civil_war_statues
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_reconstruct_population
+		}
+		x = 7
+		y = 5
+		completion_reward = {
+		add_war_support = 0.10
+		}
+
+	}
+	focus = {
+		id = LOA_food_rations
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_reconstruct_population
+		}
+		x = 11
+		y = 5
+		completion_reward = {
+		add_ideas = LOA_rations
+		}
+
+	}
+	focus = {
+		id = LOA_infantry
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_army
+		}
+		x = 17
+		y = 1
+		completion_reward = {
+					add_tech_bonus = {
+							name = infantry_artillery_bonus
+							bonus = 1.0
+							uses = 1
+							category = infantry_weapons
+						}
+				}
+
+	}
+	focus = {
+		id = LOA_artillery
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_infantry
+		}
+		x = 17
+		y = 2
+		completion_reward = {
+					add_tech_bonus = {
+							name = infantry_artillery_bonus
+							bonus = 1.0
+							uses = 1
+							category = infantry_weapons
+						}
+				}
+
+	}
+	focus = {
+		id = LOA_mobile_tanks
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_artillery
+		}
+		x = 17
+		y = 3
+		completion_reward = {
+					custom_effect_tooltip = available_designer
+				}
+
+	}
+	focus = {
+		id = LOA_special_forces
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_mobile_tanks
+		}
+		x = 17
+		y = 4
+		completion_reward = {
+					add_ideas = special_forces
+					add_tech_bonus = {
+							name = special_forces_bonus
+							bonus = 1.0
+							uses = 1
+							technology = paratroopers
+							technology = paratroopers2
+							technology = marines
+							technology = marines2
+							technology = tech_mountaineers
+							technology = tech_mountaineers2
+						}
+				}
+
+	}
+	focus = {
+		id = LOA_doctorine
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_army
+		}
+		x = 19
+		y = 1
+		completion_reward = {
+					army_experience = 5
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 1.0
+							uses = 1
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = LOA_doctorine2
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_doctorine
+		}
+		x = 19
+		y = 2
+		completion_reward = {
+					army_experience = 5
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 1.0
+							uses = 1
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = LOA_assault
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_doctorine2
+		}
+		x = 19
+		y = 3
+		completion_reward = {
+					add_ideas = HUN_assault_gun_focus
+				}
+
+	}
+	focus = {
+		id = LOA_mobile
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_assault
+		}
+		x = 19
+		y = 4
+		completion_reward = {
+					add_tech_bonus = {
+							name = HUN_mobile_focus
+							bonus = 1.0
+							uses = 1
+							category = cat_mobile_warfare
+						}
+				}
+
+	}
+	focus = {
+		id = LOA_defense
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_army
+		}
+		x = 21
+		y = 1
+		completion_reward = {
+					army_experience = 5
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 1.0
+							uses = 1
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = LOA_fortify
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_defense
+		}
+		x = 21
+		y = 2
+		completion_reward = {
+				359 = {
+							add_building_construction = {
+									type = coastal_bunker
+									province = 11900
+									level = 2
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = coastal_bunker
+									province = 11740
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = LOA_mechanization
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_fortify
+		}
+		x = 21
+		y = 3
+		completion_reward = {
+					add_tech_bonus = {
+							name = motorized_bonus
+							ahead_reduction = 2
+							uses = 1
+							category = motorized_equipment
+						}
+				}
+
+	}
+	focus = {
+		id = LOA_armor
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_mechanization
+		}
+		x = 21
+		y = 4
+		completion_reward = {
+					add_tech_bonus = {
+							name = armor_bonus
+							bonus = 1.0
+							uses = 2
+							category = armor
+						}
+				}
+
+	}
+	focus = {
+		id = LOA_army1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_special_forces
+		}
+		prerequisite = {
+			focus = LOA_mobile
+		}
+		prerequisite = {
+			focus = LOA_armor
+		}
+		x = 19
+		y = 5
+		completion_reward = {
+					army_experience = 15
+				}
+
+	}
+	focus = {
+		id = LOA_con1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_industrial
+		}
+		x = 24
+		y = 1
+		completion_reward = {
+					360 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = LOA_con2
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_industrial
+		}
+		x = 26
+		y = 1
+		completion_reward = {
+					379 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = LOA_con3
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_con1
+		}
+		prerequisite = {
+			focus = LOA_con2
+		}
+		x = 24
+		y = 2
+		completion_reward = {
+					385 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = LOA_con4
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_con1
+		}
+		prerequisite = {
+			focus = LOA_con2
+		}
+		x = 26
+		y = 2
+		completion_reward = {
+					384 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = LOA_infra
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_industrial
+		}
+		x = 28
+		y = 1
+		completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 0
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 0
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 1
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = LOA_infra2
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_infra
+		}
+		x = 28
+		y = 2
+		completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 0
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 0
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 1
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = LOA_pro1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_industrial
+		}
+		x = 30
+		y = 1
+		completion_reward = {
+					383 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = LOA_pro2
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_industrial
+		}
+		x = 33
+		y = 1
+		completion_reward = {
+					384 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = LOA_pro3
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_pro1
+		}
+		prerequisite = {
+			focus = LOA_pro2
+		}
+		x = 30
+		y = 2
+		completion_reward = {
+					385 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = LOA_pro4
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = LOA_pro1
+		}
+		prerequisite = {
+			focus = LOA_pro2
+		}
+		x = 33
+		y = 2
+		completion_reward = {
+				386 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = LOA_nuclear
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_con3
+		}
+		prerequisite = {
+			focus = LOA_con4
+		}
+		prerequisite = {
+			focus = LOA_infra2
+		}
+		prerequisite = {
+			focus = LOA_pro3
+		}
+		prerequisite = {
+			focus = LOA_pro4
+		}
+		x = 30
+		y = 3
+		completion_reward = {
+					add_tech_bonus = {
+							name = nuclear_bonus
+							ahead_reduction = 0.5
+							category = nuclear
+						}
+				}
+
+	}
+	focus = {
+		id = LOA_secret
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_con3
+		}
+		prerequisite = {
+			focus = LOA_con4
+		}
+		prerequisite = {
+			focus = LOA_infra2
+		}
+		prerequisite = {
+			focus = LOA_pro3
+		}
+		prerequisite = {
+			focus = LOA_pro4
+		}
+		x = 26
+		y = 3
+		completion_reward = {
+					add_tech_bonus = {
+							name = secret_bonus
+							bonus = 0.5
+							uses = 4
+							category = electronics
+							category = nuclear
+							category = rocketry
+						}
+				}
+
+	}
+	focus = {
+		id = LOA_research
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_pro4
+		}
+		prerequisite = {
+			focus = LOA_pro3
+		}
+		prerequisite = {
+			focus = LOA_infra2
+		}
+		prerequisite = {
+			focus = LOA_con4
+		}
+		prerequisite = {
+			focus = LOA_con3
+		}
+		x = 28
+		y = 3
+		completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = LOA_flexible
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_naval_awakening
+		}
+		x = 36
+		y = 1
+		completion_reward = {
+					add_tech_bonus = {
+							name = sub_op_bonus
+							bonus = 1.0
+							uses = 2
+							technology = convoy_interdiction_ti
+							technology = unrestricted_submarine_warfare
+							technology = wolfpacks
+							technology = advanced_submarine_warfare
+							technology = combined_operations_raiding
+						}
+				}
+
+	}
+	focus = {
+		id = LOA_destroyer
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_flexible
+		}
+		x = 36
+		y = 2
+		completion_reward = {
+					add_tech_bonus = {
+							name = dd_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = dd_tech
+						}
+				}
+
+	}
+	focus = {
+		id = LOA_submarine
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_destroyer
+		}
+		x = 36
+		y = 3
+		completion_reward = {
+					add_tech_bonus = {
+							name = ss_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = ss_tech
+						}
+				}
+
+	}
+	focus = {
+		id = LOA_coast
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_naval_awakening
+		}
+		x = 38
+		y = 1
+		completion_reward = {
+					navy_experience = 25
+					if = {
+							limit = {
+									NOT = {
+											any_owned_state = {
+													dockyard > 0
+													free_building_slots = {
+															building = dockyard
+															size > 2
+															include_locked = yes
+														}
+												}
+										}
+									any_owned_state = {
+											is_coastal = yes
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											is_coastal = yes
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = dockyard
+											level = 3
+											instant_build = yes
+										}
+								}
+							set_country_flag = naval_effort_built
+						}
+					if = {
+							limit = {
+									NOT = {
+											has_country_flag = naval_effort_built
+										}
+									any_owned_state = {
+											dockyard > 0
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											dockyard > 0
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = dockyard
+											level = 3
+											instant_build = yes
+										}
+								}
+							set_country_flag = naval_effort_built
+						}
+					if = {
+							limit = {
+									NOT = {
+											has_country_flag = naval_effort_built
+										}
+									NOT = {
+											any_owned_state = {
+													free_building_slots = {
+															building = dockyard
+															size > 2
+															include_locked = yes
+														}
+												}
+										}
+								}
+							random_state = {
+									limit = {
+											controller = {
+													tag = ROOT
+												}
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = dockyard
+											level = 3
+											instant_build = yes
+										}
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = LOA_honor_heritage
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_civil_war_statues
+		}
+		x = 7
+		y = 6
+		completion_reward = {
+		add_war_support = 0.15
+		}
+
+	}
+	focus = {
+		id = LOA_bring_water_to_populace
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_food_rations
+		}
+		x = 11
+		y = 6
+		completion_reward = {
+		add_ideas = LOA_water
+		}
+
+	}
+	focus = {
+		id = LOA_industrialize_homeland
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_reconstruct_population
+		}
+		x = 9
+		y = 6
+		completion_reward = {
+					386 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = LOA_reconstruction_done
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_honor_heritage
+		}
+		prerequisite = {
+			focus = LOA_industrialize_homeland
+		}
+		prerequisite = {
+			focus = LOA_bring_water_to_populace
+		}
+		x = 9
+		y = 7
+		completion_reward = {
+		remove_ideas = LOA_reconstruction2
+		if = {
+		limit = {
+					has_idea = LOA_reconstruction2
+				}
+				remove_ideas = LOA_reconstruction2
+		}
+		}
+
+	}
+	focus = {
+		id = LOA_stay_in_lane
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_reconstruction_done
+		}
+		x = 9
+		y = 8
+		completion_reward = {
+		add_ideas = neutrality_idea
+		}
+
+	}
+	focus = {
+		id = LOA_exert_influence
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_reconstruction_done
+		}
+		x = 11
+		y = 8
+		completion_reward = {
+		add_ideas = militarism_focus
+		}
+
+	}
+	focus = {
+		id = LOA_join_russia
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_stay_in_lane
+			focus = LOA_exert_influence
+		}
+		x = 9
+		y = 9
+		completion_reward = {
+		SOV = {
+	    country_event = generic.2
+		}
+		}
+
+	}
+	focus = {
+		id = LOA_bring_canada
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_exert_influence
+		}
+		x = 13
+		y = 9
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = CAN
+				expire = 0
+			}
+		}
+
+	}
+	focus = {
+		id = LOA_bring_mexico
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_bring_canada
+		}
+		x = 12
+		y = 10
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = MEX
+				expire = 0
+			}
+		}
+
+	}
+	focus = {
+		id = LOA_bring_caribbean
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_bring_canada
+		}
+		x = 14
+		y = 10
+		completion_reward = {
+		create_wargoal = {
+				type = annex_everything
+				target = CUB
+				expire = 0
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = BAH
+				expire = 0
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = JAM
+				expire = 0
+			}
+			}
+
+	}
+	focus = {
+		id = LOA_large
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_naval_awakening
+		}
+		x = 40
+		y = 1
+		completion_reward = {
+					add_tech_bonus = {
+							name = fleet_in_being_bonus
+							bonus = 1.0
+							uses = 2
+							category = fleet_in_being_tree
+						}
+				}
+
+	}
+	focus = {
+		id = LOA_cruiser
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_large
+		}
+		x = 40
+		y = 2
+		completion_reward = {
+					add_tech_bonus = {
+							name = cr_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = cl_tech
+							category = ca_tech
+						}
+				}
+
+	}
+	focus = {
+		id = LOA_capital
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_cruiser
+		}
+		x = 40
+		y = 3
+		completion_reward = {
+					navy_experience = 25
+					add_tech_bonus = {
+							name = capital_ships_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = bc_tech
+							category = bb_tech
+							category = cv_tech
+						}
+				}
+
+
+	}
+}

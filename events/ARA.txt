@@ -1,0 +1,381 @@
+add_namespace = arabia
+
+# Spanish Civil War
+country_event = {
+    id = arabia.1
+    title = arabia.1.t
+    desc = arabia.1.d
+    picture = GFX_report_event_vienna_award_negotiations
+    
+    is_triggered_only = yes
+    
+    option = {
+    ai_chance = {
+            factor = 50
+            }
+        name = arabia.1.a
+        if = {
+                limit = {
+                        NOT = {
+                                has_global_flag = spanish_civil_war
+                            }
+                    }
+                custom_effect_tooltip = POR_spanish_republic_tt
+            }
+        SPD = {
+                add_opinion_modifier = {
+                        target = POR
+                        modifier = POR_helped_in_civil_war
+                    }
+                add_manpower = 10000
+            }
+        add_ideas = POR_volunteers_in_the_war_republican
+        add_manpower = -10000
+        hidden_effect = {
+                add_equipment_to_stockpile = {
+                        type = infantry_equipment
+                        amount = 2000
+                    }
+                send_equipment = {
+                        equipment = infantry_equipment
+                        amount = 2000
+                        target = SPD
+                    }
+            }
+        custom_effect_tooltip = POR_support_the_spanish_republic_effect_tooltip_tt
+        set_rule = {
+                can_send_volunteers = yes
+            }
+    }
+    option = { # Agree
+        name = arabia.1.b
+        ai_chance = {
+            factor = 50
+            }
+        }
+}
+# Giving
+country_event = {
+    id = arabia.2
+    title = arabia.2.t
+    desc = arabia.2.d
+    picture = GFX_report_event_vienna_award_negotiations
+    
+    is_triggered_only = yes
+    
+    option = {
+    ai_chance = {
+            factor = 100
+            }
+        name = arabia.2.a
+      ARM = {
+                   add_opinion_modifier = { target = ARM modifier = ROM_a_deal_with_the_devil }
+            ARM = { add_opinion_modifier = { target = ROOT modifier = ROM_a_deal_with_the_devil } }
+            random_owned_controlled_state = {
+                limit = {
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 0
+                        include_locked = yes
+                    }
+                    OR = {
+                        is_in_home_area = yes
+                        NOT = {
+                            owner = {
+                                any_owned_state = {
+                                    free_building_slots = {
+                                        building = industrial_complex
+                                        size > 0
+                                        include_locked = yes
+                                    }
+                                    is_in_home_area = yes
+                                }
+                            }
+                        }
+                    }
+                }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+      
+            }
+        
+                
+                 KUR = {
+                 random_owned_controlled_state = {
+                limit = {
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 0
+                        include_locked = yes
+                    }
+                    OR = {
+                        is_in_home_area = yes
+                        NOT = {
+                            owner = {
+                                any_owned_state = {
+                                    free_building_slots = {
+                                        building = industrial_complex
+                                        size > 0
+                                        include_locked = yes
+                                    }
+                                    is_in_home_area = yes
+                                }
+                            }
+                        }
+                    }
+                }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+                    add_opinion_modifier = { target = KUR modifier = ROM_a_deal_with_the_devil }
+            KUR = { add_opinion_modifier = { target = ROOT modifier = ROM_a_deal_with_the_devil } }
+                }
+                 ASS = {
+                random_owned_controlled_state = {
+                limit = {
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 0
+                        include_locked = yes
+                    }
+                    OR = {
+                        is_in_home_area = yes
+                        NOT = {
+                            owner = {
+                                any_owned_state = {
+                                    free_building_slots = {
+                                        building = industrial_complex
+                                        size > 0
+                                        include_locked = yes
+                                    }
+                                    is_in_home_area = yes
+                                }
+                            }
+                        }
+                    }
+                }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+                    add_opinion_modifier = { target = ASS modifier = ROM_a_deal_with_the_devil }
+            ASS = { add_opinion_modifier = { target = ROOT modifier = ROM_a_deal_with_the_devil } }
+                }
+                 GRE = {
+                 random_owned_controlled_state = {
+                limit = {
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 0
+                        include_locked = yes
+                    }
+                    OR = {
+                        is_in_home_area = yes
+                        NOT = {
+                            owner = {
+                                any_owned_state = {
+                                    free_building_slots = {
+                                        building = industrial_complex
+                                        size > 0
+                                        include_locked = yes
+                                    }
+                                    is_in_home_area = yes
+                                }
+                            }
+                        }
+                    }
+                }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+                   add_opinion_modifier = { target = GRE modifier = ROM_a_deal_with_the_devil }
+            GRE = { add_opinion_modifier = { target = ROOT modifier = ROM_a_deal_with_the_devil } }
+                }
+                EGY= {
+                random_owned_controlled_state = {
+                limit = {
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 0
+                        include_locked = yes
+                    }
+                    OR = {
+                        is_in_home_area = yes
+                        NOT = {
+                            owner = {
+                                any_owned_state = {
+                                    free_building_slots = {
+                                        building = industrial_complex
+                                        size > 0
+                                        include_locked = yes
+                                    }
+                                    is_in_home_area = yes
+                                }
+                            }
+                        }
+                    }
+                }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+                   add_opinion_modifier = { target = EGY modifier = ROM_a_deal_with_the_devil }
+            EGY = { add_opinion_modifier = { target = ROOT modifier = ROM_a_deal_with_the_devil } }
+                }
+
+    }
+}
+# Sinai Returned
+country_event = {
+    id = arabia.3
+    title = arabia.3.t
+    desc = arabia.3.d
+    picture = GFX_report_event_vienna_award_negotiations
+    
+    is_triggered_only = yes
+    
+    option = {
+    ai_chance = {
+            factor = 100
+            }
+        name = arabia.3.a
+       EGY = {
+            transfer_state = 453
+        }
+    }
+}
+# Propose Caliphate
+country_event = {
+    id = arabia.4
+    title = arabia.4.t
+    desc = arabia.4.d
+    picture = GFX_report_event_vienna_award_negotiations
+    
+    is_triggered_only = yes
+    
+    option = {
+    ai_chance = {
+            factor = 80
+            }
+        name = arabia.4.a
+        news_event = { hours = 6 id = news.341 }
+      hidden_effect = {
+            
+            }
+        set_cosmetic_tag = ARA_UNIFIED_neutrality
+    }
+    option = {
+    ai_chance = {
+            factor = 20
+            }
+        name = arabia.4.b
+       
+    }
+}
+# Jewish Homeland And Suez
+country_event = {
+    id = arabia.5
+    title = arabia.5.t
+    desc = arabia.5.d
+    picture = GFX_report_event_vienna_award_negotiations
+    
+    is_triggered_only = yes
+    
+    #Establish Autonomous Homeland But Keep Suez
+    option = {
+    ai_chance = {
+            factor = 20
+            }
+        name = arabia.5.a
+     add_war_support = -0.05
+      release = ISR
+        puppet = ISR
+        ISR = {
+          add_ideas = ISR_jewish_homeland
+          }
+    }
+    #Establish Jewish Homeland And Give Suez
+    option = {
+    ai_chance = {
+            factor = 70
+            }
+        name = arabia.5.b
+        release = ISR
+        puppet = ISR
+        ISR = { 
+          add_ideas = ISR_jewish_homeland
+          }
+          EGY = {
+            transfer_state = 453
+        }
+
+       
+    }
+    #Keep Both
+    option = {
+    ai_chance = {
+            factor = 10
+            }
+        name = arabia.5.c
+        add_war_support = -0.05
+        add_stability = -0.05
+       
+    }
+}
+# Pro-Fascist Riots
+country_event = {
+    id = arabia.6
+    title = arabia.6.t
+    desc = arabia.6.d
+    picture = GFX_report_event_vienna_award_negotiations
+    
+    is_triggered_only = yes
+    
+    option = {
+    ai_chance = {
+            factor = 80
+            }
+            add_named_threat = { threat = 0.5 name = generic.15.t }
+        name = arabia.6.a
+      add_ideas = nationalist_influence
+     
+    }
+}
+# Pro-Fascist Riots
+country_event = {
+    id = arabia.7
+    title = arabia.7.t
+    desc = arabia.7.d
+    picture = GFX_report_event_vienna_award_negotiations
+    
+    is_triggered_only = yes
+    
+    option = {
+    ai_chance = {
+            factor = 80
+            }
+            add_named_threat = { threat = 2 name = generic.15.t }
+        name = arabia.7.a
+            set_politics = { ruling_party = nationalism }
+     
+    }
+}

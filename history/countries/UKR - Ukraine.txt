@@ -1,0 +1,255 @@
+﻿capital = 202 #Kiev
+
+oob = "UKR_1936"
+
+set_research_slots = 3
+
+country_event = {
+	id = tas_political.1
+	hours = 6
+}
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_military_police = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	paratroopers = 1
+	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1  # PLACEHOLDER
+	#basic_heavy_tank = 1  # PLACEHOLDER
+	#basic_medium_tank = 1 # PLACEHOLDER
+	early_fighter = 1
+	fighter1 = 1
+	early_bomber = 1
+	strategic_bomber1 = 1
+	naval_bomber1 = 1
+	mass_assault = 1
+	fleet_in_being = 1
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		early_battlecruiser = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		mtg_transport = 1
+		basic_battery = 1
+		basic_torpedo = 1
+	}
+}
+set_stability = 0.30
+set_war_support = 0.20
+add_ideas = {
+	UKR_uneducated_population
+	UKR_rough_past
+	UKR_not_industrialized
+}
+set_politics = {
+		ruling_party = traditional_conservatism
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+set_popularities = {
+	monarchism = 5
+radical_socialism = 2
+social_democracy = 11
+market_liberal = 6
+social_liberal = 8
+traditional_conservatism = 37
+totalitarianism = 6
+syndicalism = 3
+market_socialism = 7
+nationalism = 8
+anarchism = 7
+}
+create_country_leader = {
+	name = "Dmytro Dontsov"
+	picture = "Portrait_Ukraine_Dmitri_Dontsov.dds"
+	expire = "1965.1.1"
+	ideology = traditional_conservatism_subtype
+	traits = {
+		conservative_nationalist_lar		
+	}
+}
+create_country_leader = {
+	name = "Yurii Lapchynsky"
+	picture = "Portrait_Ukraine_Yurii_Lapchynsky.dds"
+	expire = "1965.1.1"
+	ideology = anarchism_subtype
+}
+
+create_country_leader = {
+	name = "Oleksander Shumsky"
+	picture = "Portrait_Ukraine_Oleksander_Shumsky.dds"
+	expire = "1965.1.1"
+	ideology = radical_socialism_subtype
+}
+
+create_country_leader = {
+	name = "Volodymyr Vynnychenko"
+	picture = "Portrait_UKR_Volodymyr_Vynnychenko.dds"
+	expire = "1965.1.1"
+	ideology = market_socialism_subtype
+}
+
+
+
+create_country_leader = {
+	name = "Pavlo Skoropadskyi"
+	picture = "Portrait_Ukraine_Pavlo_Skoropadsky.dds"
+	expire = "1965.1.1"
+	ideology = totalitarianism_subtype
+}
+
+create_country_leader = {
+	name = "Vasyl"
+	desc = "POLITICS_VASYL_DESC"
+	picture = "Portrait_UKR_Vasyl_Habsburg.dds"
+	expire = "1965.1.1"
+	ideology = traditional_conservatism_subtype
+}
+
+create_country_leader = {
+	name = "Pavlo Skoropadskyi"
+	picture = "Portrait_Ukraine_Pavlo_Skoropadsky.dds"
+	expire = "1965.1.1"
+	ideology = totalitarianism_subtype
+}
+
+create_country_leader = {
+	name = "Vasyl"
+	desc = "POLITICS_VASYL_DESC"
+	picture = "Portrait_UKR_Vasyl_Habsburg.dds"
+	expire = "1965.1.1"
+	ideology = totalitarianism_subtype
+}
+
+create_field_marshal = {
+	name = "Pavlo Skoropadskyi"
+	picture = "Portrait_Ukraine_Pavlo_Skoropadsky.dds"
+	traits = { organizer thorough_planner old_guard cavalry_officer }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Symon Petliura"
+	picture = "Portrait_Ukraine_Symon_Petliura.dds"
+	traits = { trickster politically_connected }
+	skill = 3
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Yevhen Konovalets"
+	picture = "Portrait_Ukraine_Yevhen_Konovalets.dds"
+	traits = { winter_specialist hill_fighter politically_connected }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Hnat Stefaniv"
+	picture = "Portrait_Ukraine_Hnat_Stefaniv.dds"
+	traits = { commando organizer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Andriy Melnyk"
+	picture = "Portrait_Ukraine_Andriy_Melnyk.dds"
+	traits = { trait_engineer organizer thorough_planner }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Dmytro Vitovsky"
+	picture = "Portrait_Ukraine_Dmytro_Vitovsky.dds"
+	traits = { trait_engineer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Mykhailo Omelianovych-Pavlenko"
+	picture = "Portrait_Ukraine_Mykhailo_Omelianovych_Pavlenko.dds"
+	traits = { fortress_buster }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 1
+}
+
+create_navy_leader = {
+	name = "Andriy Pokrovsky"
+	picture = "Portrait_Ukraine_Andriy_Pokrovsky.dds"
+	traits = { old_guard_navy superior_tactician }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	maneuvering_skill = 2
+	coordination_skill = 3
+}
+
+create_navy_leader = {
+	name = "Sviatoslav Shramchenko"
+	picture = "Portrait_Ukraine_Sviatoslav_Shramchenko.dds"
+	traits = { spotter }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
+}
+
+
+

@@ -1,0 +1,188 @@
+division_template = {
+	name = "Infantry Division"	
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+}
+division_template = {
+	name = "Cavalry Division"  
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Mountaineer-Division"
+
+
+
+	regiments = {
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }	
+		mountaineers = { x = 2 y = 1 }	
+		mountaineers = { x = 2 y = 2 }	
+		mountaineers = { x = 3 y = 0 }	
+		mountaineers = { x = 3 y = 1 }	
+		mountaineers = { x = 3 y = 2 }	
+	}
+	
+	support = {
+        engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Light Armor-Division"  	
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }      # Recon consisted of ACs, motorcycle inf, cavalry
+	}
+}
+
+units = {
+division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 7280
+		division_template = "Light Armor-Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 12319
+		division_template = "Light Armor-Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 4529
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10204
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10317
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 4401
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		name = "Cavalry"
+		location = 1248
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		name = "Cavalry"
+		location = 4075
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		name = "Cavalry"
+		location = 4341
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		name = "Cavalry"
+		location = 1248
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		name = "Cavalry"
+		location = 4075
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		name = "Cavalry"
+		location = 4341
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+
+	##### No notable navy #####
+}
+
+##### No notable air forces #####
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "VEN"
+		}
+		requested_factories = 1
+		progress = 0.89
+		efficiency = 100
+	}
+}

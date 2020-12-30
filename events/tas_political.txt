@@ -1,0 +1,17 @@
+add_namespace = tas_political
+
+#beginning event
+	country_event = { 
+	id = tas_political.1
+	title = tas_political.1.t
+	desc = tas_political.1.d
+	picture = #yas wig kaween
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # good
+		name = tas_political.1.a
+		}
+	}

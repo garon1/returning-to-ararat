@@ -1,0 +1,18 @@
+﻿
+units= {
+
+	##### NAVAL UNITS #####
+	### Türk Donanmasi ###
+	fleet = {				
+		task_force = {				
+			name = "Filotilla Denizalti Kücük"			
+			location = 11881 # Samsun
+			ship = { name = "TCG Birinci Inönü" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TUR version_name = "Birinci Inönü Class" } } }		
+			ship = { name = "TCG Ikinci Inönü" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TUR version_name = "Birinci Inönü Class" } } }		
+			ship = { name = "TCG Dumlupinar" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = TUR version_name = "Dumlupinar Class" } } }
+			ship = { name = "TCG Sakarya" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TUR version_name = "Sakarya Class" } } }
+			ship = { name = "TCG Gür" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TUR version_name = "Sakarya Class" } } }
+		}				
+	}
+} 
+

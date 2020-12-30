@@ -1,0 +1,35 @@
+
+state={
+	id=813
+	name="STATE_813"
+
+	history={
+		owner = ARM
+		victory_points = {
+			10403 1 
+		}
+victory_points = {
+			11753 5
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			dockyard = 1
+			11753 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = ARM
+		add_claim_by = GEO
+
+	}
+
+	provinces={
+		7454 10403 11753 
+	}
+	manpower=155394
+	buildings_max_level_factor=1.000
+	state_category=town
+}

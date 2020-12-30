@@ -1,0 +1,118 @@
+ideas = {
+
+	country = {
+	VIN_french_payments = {
+			picture = usa_great_depression_3
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			political_power_gain = -0.15
+				political_power_cost = 0.15
+				industrial_capacity_factory = -0.10
+					stability_factor = -0.15
+			}
+		}
+		VIN_interference = {
+			picture = usa_great_depression_3
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+						compliance_growth_on_our_occupied_states = -0.05
+						occupation_cost = 0.05
+						resistance_growth_on_our_occupied_states = 0.05
+			}
+		}
+		VIN_food_distribution = {
+			picture = usa_great_depression_3
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+						industrial_capacity_factory = 0.05
+					industry_repair_factor = 0.1
+					stability_factor = 0.01
+			}
+		}
+		VIN_abolished_privatization = {
+			picture = usa_great_depression_3
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+						line_change_production_efficiency_factor = 0.1
+			}
+		}
+		VIN_poor_construction2 = {
+			picture = usa_great_depression_3
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+					industrial_capacity_factory = -0.2
+					industry_repair_factor = 0.35
+					stability_factor = -0.2
+			}
+		}
+		VIN_poor_construction = {
+			picture = usa_great_depression_3
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+					industrial_capacity_factory = -0.3
+					industry_repair_factor = 0.3
+					stability_factor = -0.3
+			}
+		}
+	}
+}

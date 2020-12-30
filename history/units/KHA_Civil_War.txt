@@ -1,0 +1,83 @@
+division_template = {
+	name = "Infantry Division"
+	division_names_group = KHA_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+division_template = {
+	name = "District Garrison"			# Represents precursors to KHAian Infantry Divisions (district divisions)
+	division_names_group = KHA_GAR_01
+										# Has older equipment, lower experience
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Armored-Division"
+	division_names_group = KHA_ARM_01
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+units = {
+	division = {
+		name = "43a Infantry Division"
+		location = 12822
+		division_template = "Armored-Division"
+	}
+	division = {
+		name = "43a Infantry Division"
+		location = 10729
+		division_template = "Armored-Division"
+	}
+	division = {
+		name = "43a Infantry Division"
+		location = 12822
+		division_template = "Armored-Division"
+	}
+	division = {
+		name = "43a Infantry Division"
+		location = 12822
+		division_template = "Armored-Division"
+	}
+	division = {
+		name = "43a Infantry Division"
+		location = 12868  
+		division_template = "Armored-Division"
+	}
+	division = {
+		name = "43a Infantry Division"
+		location = 2032
+		division_template = "Armored-Division"
+	}
+	division = {
+		name = "43a Infantry Division"
+		location = 5157
+		division_template = "Armored-Division"
+	}
+	division = {
+		name = "43a Infantry Division"
+		location = 1898
+		division_template = "Armored-Division"
+	}
+}

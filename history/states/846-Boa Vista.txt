@@ -1,0 +1,19 @@
+state={
+	id=846
+	name="STATE_846"
+state_category=enclave
+manpower=7500
+	provinces={
+		5083 5214 
+	}
+	history={
+		add_core_of = BRA
+		add_claim_by = VEN
+		owner = BRA
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+}

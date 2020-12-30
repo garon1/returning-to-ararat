@@ -1,0 +1,119 @@
+#Category allowed for VIN
+PUA_international_affairs = {
+PUA_hand_over_panama = {
+
+		icon = jap_conquer_china
+
+		available = {
+			controls_state = 685
+				controls_state = 304
+		}
+
+		visible = {
+		controls_state = 685
+				controls_state = 304
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 25
+
+		complete_effect = {
+		CAU = {
+		transfer_state = 685
+		transfer_state = 304
+		}
+
+		}
+	}
+
+		PUA_take_texas = {
+
+		icon = jap_conquer_china
+
+		available = {
+		controls_state = 386
+		controls_state = 371
+		controls_state = 362
+		controls_state = 361
+		
+		}
+
+		visible = {
+		controls_state = 386
+		controls_state = 371
+		controls_state = 362
+		controls_state = 361
+		}
+
+		fire_only_once = yes
+
+		days_remove = 0
+		days_re_enable = 30
+
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+
+		complete_effect = {
+			if = {
+				limit = {
+					TEX = {
+					controls_state = 375
+					}
+				}
+			declare_war_on = {
+					target = TEX
+					type = annex_everything
+				}
+		}
+	}
+}
+
+	PUA_take_california = {
+
+		icon = jap_conquer_china
+
+		available = {
+		controls_state = 386
+		controls_state = 371
+		controls_state = 362
+		controls_state = 361
+		
+		}
+
+		visible = {
+		controls_state = 386
+		controls_state = 371
+		controls_state = 362
+		controls_state = 361
+		}
+
+		fire_only_once = yes
+
+		days_remove = 0
+		days_re_enable = 30
+
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+
+		complete_effect = {
+			if = {
+				limit = {
+					CAL = {
+					controls_state = 378
+					}
+				}
+			declare_war_on = {
+					target = CAL
+					type = annex_everything
+				}
+		}
+	}
+}
