@@ -12,7 +12,7 @@ focus_tree = {
 	default = no
 	focus = {
 		id = ITA_popular_front
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_intelligence_exchange
 		cost = 7.00
 		mutually_exclusive = {
 			focus = ITA_national_front
@@ -27,7 +27,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_national_front
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_diplomatic_treaty
 		cost = 7.00
 		mutually_exclusive = {
 			focus = ITA_popular_front
@@ -42,7 +42,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_industrial
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_cavalry
 		cost = 5.00
 		x = 5
 		y = 0
@@ -53,7 +53,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_army
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_allies_build_infantry
 		cost = 5.00
 		x = 44
 		y = 0
@@ -64,7 +64,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_naval_awakening5
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 5.00
 		x = 40
 		y = 5
@@ -75,7 +75,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_air_focus
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_build_airforce
 		cost = 5.00
 		x = 30
 		y = 6
@@ -86,7 +86,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_con1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_industrial
@@ -107,7 +107,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_con2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_industrial
@@ -128,7 +128,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_con4
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civilian
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_con1
@@ -152,7 +152,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_con3
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civilian
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_con1
@@ -176,7 +176,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_pro1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_industrial
@@ -197,7 +197,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_pro2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_industrial
@@ -218,7 +218,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_pro3
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_pro1
@@ -242,7 +242,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_pro4
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_pro1
@@ -266,7 +266,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_nuclear
-		icon = GFX_goal_unknown
+		icon = GFX_focus_wonderweapons
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_con4
@@ -293,7 +293,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_research3
-		icon = GFX_goal_unknown
+		icon = GFX_focus_research
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_con4
@@ -316,7 +316,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_secret
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_secret_weapon
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_con4
@@ -346,7 +346,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_keep_king
-		icon = GFX_goal_unknown
+		icon = GFX_focus_rom_royal_dictatorship
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_popular_front
@@ -364,7 +364,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_speed_war_production
-		icon = GFX_goal_unknown
+		icon = GFX_goal_anti_comintern_pact
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_keep_king
@@ -407,7 +407,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_focus_on_people
-		icon = GFX_goal_unknown
+		icon = GFX_focus_TUR_ratify_the_six_arrows
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_speed_war_production
@@ -428,7 +428,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_why_we_fight
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_propaganda
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_focus_on_people
@@ -442,7 +442,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_strength_of_empire
-		icon = GFX_goal_unknown
+		icon = GFX_focus_BUL_the_third_bulgarian_empire
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_why_we_fight
@@ -456,7 +456,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_hold_onto_colonies
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ger_oppose_hitler
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_strength_of_empire
@@ -474,7 +474,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_national_glory
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_strike_at_democracy1
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_hold_onto_colonies
@@ -495,7 +495,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_democraticism
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_strike_at_democracy3
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_popular_front
@@ -513,7 +513,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_enact_democratic_reforms
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_concessions
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_democraticism
@@ -527,7 +527,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_ban_communist_groups
-		icon = GFX_goal_unknown
+		icon = GFX_focus_eng_liberate_the_home_of_marx
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_democraticism
@@ -542,7 +542,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_new_conscription_laws
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_little_entente
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_enact_democratic_reforms
@@ -557,7 +557,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_give_autonomy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_treaty
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_strength_of_empire
@@ -582,7 +582,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_womens_suffrage
-		icon = GFX_goal_unknown
+		icon = GFX_focus_hol_the_only_man_in_the_dutch_government
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_give_autonomy
@@ -596,7 +596,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_remove_claims
-		icon = GFX_goal_unknown
+		icon = GFX_focus_hol_war_on_pacifism
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_womens_suffrage
@@ -614,7 +614,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_stay_with_france
-		icon = GFX_goal_unknown
+		icon = GFX_focus_chi_reach_out_to_france
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_remove_claims
@@ -629,7 +629,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_draft_constitution
-		icon = GFX_goal_unknown
+		icon = GFX_focus_renounce_the_treaty_of_triannon
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_enact_democratic_reforms
@@ -647,7 +647,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_become_democratic
-		icon = GFX_goal_unknown
+		icon = GFX_focus_focus_fra_down_marianne
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_new_conscription_laws
@@ -667,7 +667,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_open_economy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_hol_prepare_the_inundation_lines
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_become_democratic
@@ -681,7 +681,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_new_education_system
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_military_academy
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_open_economy
@@ -695,7 +695,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_unified
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_home_defense
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_open_economy
@@ -710,7 +710,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_promise_people_greatness
-		icon = GFX_goal_unknown
+		icon = GFX_focus_eng_imperial_federation
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_new_education_system
@@ -727,7 +727,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_give_powers_to_unions
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_soviet_construction
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_national_front
@@ -748,7 +748,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_fund_workers
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_national_unity
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_give_powers_to_unions
@@ -762,7 +762,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_stop_segregation
-		icon = GFX_goal_unknown
+		icon = GFX_focus_rom_handle_king
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_give_powers_to_unions
@@ -777,7 +777,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_indoctrination
-		icon = GFX_goal_unknown
+		icon = GFX_focus_prc_infiltration
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_fund_workers
@@ -795,7 +795,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_foreign_policy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_TUR_reconfigure_turkish_foreign_policy
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_give_powers_to_unions
@@ -809,7 +809,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_add_research_slot
-		icon = GFX_goal_unknown
+		icon = GFX_focus_research2
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_fund_workers
@@ -826,7 +826,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_militarism_focus
-		icon = GFX_goal_unknown
+		icon = GFX_focus_eng_global_defense
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_add_research_slot
@@ -847,7 +847,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_stop_traditional_values
-		icon = GFX_goal_unknown
+		icon = GFX_focus_por_luso_tropicalism
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_foreign_policy
@@ -873,7 +873,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_revolutionary_zeal
-		icon = GFX_goal_unknown
+		icon = GFX_goal_support_fourth_int
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_indoctrination
@@ -893,7 +893,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_civil_war
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_alliance
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_militarism_focus
@@ -915,7 +915,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_heavy
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_fighter
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_air_focus
@@ -937,7 +937,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_tactical
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_bomber
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_heavy
@@ -957,7 +957,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_crackdown_on_enemies
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_demand_territory
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_national_front
@@ -975,7 +975,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_stay_conservative
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_dangerous_deal
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_crackdown_on_enemies
@@ -989,7 +989,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_put_pressure_on_king
-		icon = GFX_goal_unknown
+		icon = GFX_focus_spa_eliminate_the_carlists
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_crackdown_on_enemies
@@ -1006,7 +1006,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_anti_decadence
-		icon = GFX_goal_unknown
+		icon = GFX_focus_rom_parties_end
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_stay_conservative
@@ -1024,7 +1024,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_privatize_economy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_the_giant_wakes
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_crackdown_on_enemies
@@ -1050,7 +1050,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_rallies
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_strike_at_democracy2
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_put_pressure_on_king
@@ -1065,7 +1065,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_encourage_entrepeneurship
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_industry_1
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_privatize_economy
@@ -1079,7 +1079,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_march_on_rome
-		icon = GFX_goal_unknown
+		icon = GFX_focus_eng_expose_the_belly_of_the_bear
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_anti_decadence
@@ -1099,7 +1099,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_close_to_russia
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ger_strike_at_the_source
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_march_on_rome
@@ -1124,7 +1124,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_ban_counter_revolution
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ger_bulwark_against_bolshevism
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_march_on_rome
@@ -1141,7 +1141,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_join_russia
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GRE_reviving_the_double_headed_eagle
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_close_to_russia
@@ -1160,7 +1160,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_become_rome
-		icon = GFX_goal_unknown
+		icon = GFX_focus_spr_masters_of_our_own_fate
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_join_russia
@@ -1174,7 +1174,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_take_algeria
-		icon = GFX_goal_unknown
+		icon = GFX_focus_attack_france
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_become_rome
@@ -1192,7 +1192,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_attack_albania
-		icon = GFX_goal_unknown
+		icon = GFX_focus_RAJ_indian_gurkhas
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_become_rome
@@ -1210,7 +1210,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_take_arabia
-		icon = GFX_goal_unknown
+		icon = GFX_focus_TUR_misak_i_milli
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_attack_albania
@@ -1231,7 +1231,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_flexible
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_build_navy
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_naval_awakening5
@@ -1254,7 +1254,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_submarine
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_submarine
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_flexible
@@ -1274,7 +1274,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_destroyer
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_destroyer
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_submarine
@@ -1294,7 +1294,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_coast
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_coastal_fort
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_naval_awakening5
@@ -1408,7 +1408,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_infantry
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_axis_build_infantry
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_army
@@ -1428,7 +1428,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_artillery
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_artillery2
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_infantry
@@ -1448,7 +1448,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_mobile_tanks
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_tanks
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_artillery
@@ -1462,7 +1462,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_special_forces
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_special_forces
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_mobile_tanks
@@ -1487,7 +1487,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_large
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_doctrines_tactics
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_naval_awakening5
@@ -1506,7 +1506,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_cruiser
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_cruiser
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_large
@@ -1527,7 +1527,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_capital
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_battleship
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_cruiser
@@ -1550,7 +1550,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_doctorine
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_doctrines
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_army
@@ -1570,7 +1570,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_doctorine2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_doctrines
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_doctorine
@@ -1590,7 +1590,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_assault
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_amphibious_assault
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_doctorine2
@@ -1604,7 +1604,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_mobile
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_production
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_assault
@@ -1623,7 +1623,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_service_overseas
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GRE_a_land_of_mountains
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_national_glory
@@ -1640,7 +1640,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_set_up_our_sphere
-		icon = GFX_goal_unknown
+		icon = GFX_focus_TUR_the_montreux_convention
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_service_overseas
@@ -1654,7 +1654,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_ask_iberia
-		icon = GFX_goal_unknown
+		icon = GFX_focus_spr_war_of_independence
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_set_up_our_sphere
@@ -1673,7 +1673,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_destroy_other_parties
-		icon = GFX_goal_unknown
+		icon = GFX_focus_TUR_purge_the_kemalists
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_civil_war
@@ -1690,7 +1690,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_militarism
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_aegean_sea_focus
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_destroy_other_parties
@@ -1704,7 +1704,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_begin_expansion
-		icon = GFX_goal_unknown
+		icon = GFX_focus_por_concordat
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_militarism
@@ -1719,7 +1719,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_germany
-		icon = GFX_goal_unknown
+		icon = GFX_focus_chi_mission_to_the_soviet_union
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_begin_expansion
@@ -1743,7 +1743,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_france
-		icon = GFX_goal_unknown
+		icon = GFX_focus_attack_france
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_germany
@@ -1768,7 +1768,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_yug
-		icon = GFX_goal_unknown
+		icon = GFX_focus_YUG_dissolve_serbia
 		cost = 7.00
 		bypass = {
 			YUG = {
@@ -1793,7 +1793,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_attack_egypt
-		icon = GFX_goal_unknown
+		icon = GFX_focus_BUL_the_unification_of_the_balkans
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_take_algeria
@@ -1814,7 +1814,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_constantinople
-		icon = GFX_goal_unknown
+		icon = GFX_focus_eng_move_to_secure_the_dominions
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_attack_egypt
@@ -1835,7 +1835,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_defense
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_small_arms
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_army
@@ -1855,7 +1855,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_fortify
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_military
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_defense
@@ -1908,7 +1908,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_mechanization
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_motorized
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_fortify
@@ -1927,7 +1927,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_armor
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_defence
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_mechanization
@@ -1946,7 +1946,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_army2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_allies_build_infantry
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_special_forces
@@ -1966,7 +1966,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_light
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_fighter2
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_air_focus
@@ -1989,7 +1989,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_CAS
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_CAS
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_light
@@ -2009,7 +2009,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_air
-		icon = GFX_goal_unknown
+		icon = GFX_focus_eng_special_air_service
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_tactical

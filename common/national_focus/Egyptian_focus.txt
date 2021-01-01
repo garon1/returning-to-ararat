@@ -10,7 +10,7 @@ focus_tree = {
 	default = no
 	focus = {
 		id = EGY_political_direction
-		icon = GFX_goal_unknown
+		icon = GFX_focus_eng_imperial_federation
 		cost = 7.00
 		x = 11
 		y = 0
@@ -22,7 +22,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_begin_anti_colonialism
-		icon = GFX_goal_unknown
+		icon = GFX_focus_AST_never_gallipoli
 		cost = 7.00
 		x = 16
 		y = 0
@@ -38,7 +38,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_industrial
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_cavalry
 		cost = 5.00
 		x = 4
 		y = 0
@@ -49,7 +49,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_army
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_allies_build_infantry
 		cost = 5.00
 		x = 23
 		y = 0
@@ -60,7 +60,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_navy_awakening
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 5.00
 		x = 3
 		y = 4
@@ -71,7 +71,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_air_focus
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_build_airforce
 		cost = 5.00
 		x = 30
 		y = 0
@@ -82,7 +82,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_con1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5.00
 		prerequisite = {
 			focus = EGY_industrial
@@ -103,7 +103,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_con2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5.00
 		prerequisite = {
 			focus = EGY_industrial
@@ -124,7 +124,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_con3
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civilian
 		cost = 5.00
 		prerequisite = {
 			focus = EGY_con1
@@ -148,7 +148,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_flexible
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_build_navy
 		cost = 5.00
 		prerequisite = {
 			focus = EGY_navy_awakening
@@ -171,7 +171,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_submarine
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_submarine
 		cost = 5.00
 		prerequisite = {
 			focus = EGY_flexible
@@ -191,7 +191,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_con4
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civilian
 		cost = 5.00
 		prerequisite = {
 			focus = EGY_con1
@@ -215,7 +215,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_coastal_forts
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_coastal_fort
 		cost = 5.00
 		prerequisite = {
 			focus = EGY_navy_awakening
@@ -329,7 +329,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_infrastructure
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_infrastructure
 		cost = 5.00
 		prerequisite = {
 			focus = EGY_industrial
@@ -396,7 +396,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_infra2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_infrastructure
 		cost = 5.00
 		prerequisite = {
 			focus = EGY_infrastructure
@@ -463,7 +463,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_large
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_doctrines_tactics
 		cost = 5.00
 		prerequisite = {
 			focus = EGY_navy_awakening
@@ -482,7 +482,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_cruiser
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_cruiser
 		cost = 5.00
 		prerequisite = {
 			focus = EGY_large
@@ -503,7 +503,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_pro1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
 			focus = EGY_industrial
@@ -524,7 +524,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_pro2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
 			focus = EGY_industrial
@@ -545,7 +545,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_pro3
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
 			focus = EGY_pro1
@@ -569,7 +569,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_pro4
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
 			focus = EGY_pro1
@@ -593,7 +593,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_research
-		icon = GFX_goal_unknown
+		icon = GFX_focus_research
 		cost = 7.00
 		prerequisite = {
 			focus = EGY_con3
@@ -619,7 +619,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_nuclear
-		icon = GFX_goal_unknown
+		icon = GFX_focus_wonderweapons
 		cost = 5.00
 		prerequisite = {
 			focus = EGY_con3
@@ -649,7 +649,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_reforms
-		icon = GFX_goal_unknown
+		icon = GFX_focus_BUL_support_macedonian_organizations
 		cost = 7.00
 		prerequisite = {
 			focus = EGY_political_direction
@@ -663,7 +663,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_reform_classes
-		icon = GFX_goal_unknown
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
 		cost = 7.00
 		prerequisite = {
 			focus = EGY_reforms
@@ -678,7 +678,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_reform_school_system
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_military_academy
 		cost = 7.00
 		prerequisite = {
 			focus = EGY_reform_classes
@@ -692,7 +692,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_help_rural_community
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_self_management
 		cost = 7.00
 		prerequisite = {
 			focus = EGY_reform_classes
@@ -719,7 +719,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_for_our_community
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_the_giant_wakes
 		cost = 5.00
 		prerequisite = {
 			focus = EGY_reform_school_system
@@ -749,7 +749,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_dismantle_propaganda
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_propaganda
 		cost = 7.00
 		prerequisite = {
 			focus = EGY_reforms
@@ -763,7 +763,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_citizenship
-		icon = GFX_goal_unknown
+		icon = GFX_focus_hol_the_foundations_of_defense
 		cost = 7.00
 		prerequisite = {
 			focus = EGY_dismantle_propaganda
@@ -777,7 +777,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_publish_anti_colonialist_works
-		icon = GFX_goal_unknown
+		icon = GFX_focus_eng_bring_the_dominions_back_into_the_fold
 		cost = 7.00
 		prerequisite = {
 			focus = EGY_dismantle_propaganda
@@ -825,7 +825,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_entrepenurship
-		icon = GFX_goal_unknown
+		icon = GFX_focus_secret_rearmament
 		cost = 7.00
 		prerequisite = {
 			focus = EGY_citizenship
@@ -842,7 +842,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_political_unity
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_support_the_left_right
 		cost = 7.00
 		prerequisite = {
 			focus = EGY_for_our_community
@@ -859,7 +859,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_progressive_focus
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_strike_at_democracy3
 		cost = 7.00
 		prerequisite = {
 			focus = EGY_political_unity
@@ -877,7 +877,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_bring_more_members
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_monarchy_2
 		cost = 7.00
 		prerequisite = {
 			focus = EGY_begin_anti_colonialism
@@ -896,7 +896,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_fortify_our_border
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_provoke_border_clashes
 		cost = 7.00
 		prerequisite = {
 			focus = EGY_bring_more_members
@@ -929,7 +929,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_mobilization
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_combined_arms
 		cost = 7.00
 		prerequisite = {
 			focus = EGY_begin_anti_colonialism
@@ -943,7 +943,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_bring_ethiopia
-		icon = GFX_goal_unknown
+		icon = GFX_focus_eng_expose_the_belly_of_the_bear
 		cost = 7.00
 		prerequisite = {
 			focus = EGY_begin_anti_colonialism
@@ -962,7 +962,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_supply_country
-		icon = GFX_goal_unknown
+		icon = GFX_focus_hol_abandon_the_gold_standard
 		cost = 7.00
 		prerequisite = {
 			focus = EGY_bring_ethiopia
@@ -983,7 +983,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_propaganda
-		icon = GFX_goal_unknown
+		icon = GFX_focus_hol_war_on_pacifism
 		cost = 7.00
 		prerequisite = {
 			focus = EGY_fortify_our_border
@@ -1000,7 +1000,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_distribute_radios_to_military
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_concessions
 		cost = 7.00
 		prerequisite = {
 			focus = EGY_supply_country
@@ -1022,7 +1022,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_call_for_liberation
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_manpower
 		cost = 7.00
 		prerequisite = {
 			focus = EGY_propaganda
@@ -1039,7 +1039,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_infantry
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_axis_build_infantry
 		cost = 5.00
 		prerequisite = {
 			focus = EGY_army
@@ -1058,7 +1058,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_artillery
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_artillery2
 		cost = 5.00
 		prerequisite = {
 			focus = EGY_infantry
@@ -1077,7 +1077,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_mobile_tanks
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_tanks
 		cost = 5.00
 		prerequisite = {
 			focus = EGY_artillery
@@ -1091,7 +1091,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_special_forces
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_special_forces
 		cost = 5.00
 		prerequisite = {
 			focus = EGY_mobile_tanks
@@ -1116,7 +1116,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_doctorine
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_doctrines
 		cost = 5.00
 		prerequisite = {
 			focus = EGY_army
@@ -1136,7 +1136,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_doctorine2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_doctrines
 		cost = 5.00
 		prerequisite = {
 			focus = EGY_doctorine
@@ -1156,7 +1156,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_assault
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_amphibious_assault
 		cost = 5.00
 		prerequisite = {
 			focus = EGY_doctorine2
@@ -1170,7 +1170,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_mobile
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_production
 		cost = 5.00
 		prerequisite = {
 			focus = EGY_assault
@@ -1189,7 +1189,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_defense
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_small_arms
 		cost = 5.00
 		prerequisite = {
 			focus = EGY_army
@@ -1209,7 +1209,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_fortify
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_military
 		cost = 5.00
 		prerequisite = {
 			focus = EGY_defense
@@ -1236,7 +1236,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_mechanization
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_motorized
 		cost = 5.00
 		prerequisite = {
 			focus = EGY_fortify
@@ -1255,7 +1255,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_armor
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_defence
 		cost = 5.00
 		prerequisite = {
 			focus = EGY_mechanization
@@ -1274,7 +1274,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_army_experience
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_allies_build_infantry
 		cost = 5.00
 		prerequisite = {
 			focus = EGY_special_forces
@@ -1294,7 +1294,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_heavy
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_fighter
 		cost = 5.00
 		prerequisite = {
 			focus = EGY_air_focus
@@ -1316,7 +1316,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_tactical
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_bomber
 		cost = 5.00
 		prerequisite = {
 			focus = EGY_heavy
@@ -1336,7 +1336,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_stay_conservative
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_home_defense
 		cost = 7.00
 		prerequisite = {
 			focus = EGY_political_unity
@@ -1354,7 +1354,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_dont_delay_problem
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_black_sea_focus
 		cost = 7.00
 		prerequisite = {
 			focus = EGY_stay_conservative
@@ -1371,7 +1371,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_start_coups
-		icon = GFX_goal_unknown
+		icon = GFX_focus_eng_expose_the_belly_of_the_bear
 		cost = 7.00
 		prerequisite = {
 			focus = EGY_call_for_liberation
@@ -1385,7 +1385,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_secret
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_secret_weapon
 		cost = 5.00
 		prerequisite = {
 			focus = EGY_con3
@@ -1418,7 +1418,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_destroyer
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_destroyer
 		cost = 5.00
 		prerequisite = {
 			focus = EGY_submarine
@@ -1438,7 +1438,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_capital
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_battleship
 		cost = 5.00
 		prerequisite = {
 			focus = EGY_cruiser
@@ -1461,7 +1461,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_light
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_fighter2
 		cost = 5.00
 		prerequisite = {
 			focus = EGY_air_focus
@@ -1484,7 +1484,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_cas1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_CAS
 		cost = 5.00
 		prerequisite = {
 			focus = EGY_light
@@ -1504,7 +1504,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_air
-		icon = GFX_goal_unknown
+		icon = GFX_focus_eng_special_air_service
 		cost = 5.00
 		prerequisite = {
 			focus = EGY_tactical

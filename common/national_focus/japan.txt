@@ -10,7 +10,7 @@ focus_tree = {
 	default = no
 	focus = {
 		id = JAP_let_radicals_take_over
-		icon = GFX_goal_unknown
+		icon = GFX_focus_BUL_condemn_macedonian_organizations
 		cost = 7.00
 		mutually_exclusive = {
 			focus = JAP_stay_as_we_are
@@ -27,7 +27,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_stay_as_we_are
-		icon = GFX_goal_unknown
+		icon = GFX_focus_chi_collaboration_with_the_japanese
 		cost = 7.00
 		mutually_exclusive = {
 			focus = JAP_let_radicals_take_over
@@ -44,7 +44,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_industrial
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_cavalry
 		cost = 5.00
 		x = 14
 		y = 8
@@ -55,7 +55,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_army
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_allies_build_infantry
 		cost = 5.00
 		x = 28
 		y = 0
@@ -66,7 +66,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_naval_awakening
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 5.00
 		x = 25
 		y = 6
@@ -78,7 +78,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_air_focus
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_build_airforce
 		cost = 5.00
 		x = 37
 		y = 0
@@ -89,7 +89,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_address_nation1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_treaty
 		cost = 7.00
 		prerequisite = {
 			focus = JAP_let_radicals_take_over
@@ -106,7 +106,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_privatization
-		icon = GFX_goal_unknown
+		icon = GFX_focus_mex_privatisation
 		cost = 7.00
 		prerequisite = {
 			focus = JAP_address_nation1
@@ -121,7 +121,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_expel_unions
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_war_with_comintern
 		cost = 7.00
 		prerequisite = {
 			focus = JAP_privatization
@@ -135,7 +135,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_militarize_public
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_occypy_states_ongoing_war
 		cost = 7.00
 		prerequisite = {
 			focus = JAP_address_nation1
@@ -149,7 +149,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_militarize_puppets
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_political_pressure
 		cost = 7.00
 		prerequisite = {
 			focus = JAP_militarize_public
@@ -192,7 +192,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_new_school_system
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_more_territorial_claims
 		cost = 7.00
 		prerequisite = {
 			focus = JAP_address_nation1
@@ -206,7 +206,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_assimilate_non_japanese
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_dangerous_deal
 		cost = 7.00
 		prerequisite = {
 			focus = JAP_new_school_system
@@ -220,7 +220,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_destabilize_china
-		icon = GFX_goal_unknown
+		icon = GFX_focus_chi_one_china_policy
 		cost = 7.00
 		prerequisite = {
 			focus = JAP_expel_unions
@@ -242,7 +242,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_athiest_state
-		icon = GFX_goal_unknown
+		icon = GFX_focus_mex_triumph_over_the_cristeros
 		cost = 7.00
 		prerequisite = {
 			focus = JAP_destabilize_china
@@ -256,7 +256,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_denounce_russia
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_provoke_border_clashes
 		cost = 7.00
 		prerequisite = {
 			focus = JAP_destabilize_china
@@ -272,7 +272,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_address_nation
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_strike_at_democracy2
 		cost = 7.00
 		prerequisite = {
 			focus = JAP_stay_as_we_are
@@ -286,7 +286,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_allow_free_alchohol
-		icon = GFX_goal_unknown
+		icon = GFX_focus_TUR_ratify_the_six_arrows
 		cost = 7.00
 		prerequisite = {
 			focus = JAP_address_nation
@@ -300,7 +300,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_legalize_drugs
-		icon = GFX_goal_unknown
+		icon = GFX_goal_continuous_boost_freedom
 		cost = 7.00
 		prerequisite = {
 			focus = JAP_allow_free_alchohol
@@ -314,7 +314,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_become_anti_kempatai
-		icon = GFX_goal_unknown
+		icon = GFX_focus_TUR_purge_the_kemalists
 		cost = 7.00
 		prerequisite = {
 			focus = JAP_address_nation
@@ -328,7 +328,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_kempatai_raids
-		icon = GFX_goal_unknown
+		icon = GFX_goal_anti_comintern_pact
 		cost = 7.00
 		prerequisite = {
 			focus = JAP_become_anti_kempatai
@@ -346,7 +346,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_provide_jobs
-		icon = GFX_goal_unknown
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
 		cost = 7.00
 		prerequisite = {
 			focus = JAP_legalize_drugs
@@ -363,7 +363,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_integrate_minorities_to_edu
-		icon = GFX_goal_unknown
+		icon = GFX_focus_jap_spiritual_mobilization
 		cost = 7.00
 		prerequisite = {
 			focus = JAP_address_nation
@@ -377,7 +377,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_protect_minorities
-		icon = GFX_goal_unknown
+		icon = GFX_focus_jap_pacific_guardian
 		cost = 7.00
 		prerequisite = {
 			focus = JAP_integrate_minorities_to_edu
@@ -391,7 +391,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_mine_minerals
-		icon = GFX_goal_unknown
+		icon = GFX_focus_usa_reestablish_the_gold_standard
 		cost = 7.00
 		prerequisite = {
 			focus = JAP_legalize_drugs
@@ -411,7 +411,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_protect_empire
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_japanese_imperial_glory
 		cost = 7.00
 		prerequisite = {
 			focus = JAP_kempatai_raids
@@ -425,7 +425,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_integrate_manchuria
-		icon = GFX_goal_unknown
+		icon = GFX_focus_jap_manchurian_project
 		cost = 7.00
 		prerequisite = {
 			focus = JAP_provide_jobs
@@ -444,7 +444,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_integrate_siberia
-		icon = GFX_goal_unknown
+		icon = GFX_focus_jap_manchurian_project
 		cost = 0.00
 		prerequisite = {
 			focus = JAP_provide_jobs
@@ -469,7 +469,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_flexible
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_build_navy
 		cost = 5.00
 		prerequisite = {
 			focus = JAP_naval_awakening
@@ -492,7 +492,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_submarine
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_submarine
 		cost = 5.00
 		prerequisite = {
 			focus = JAP_flexible
@@ -512,7 +512,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_destroyer
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_destroyer
 		cost = 5.00
 		prerequisite = {
 			focus = JAP_submarine
@@ -532,7 +532,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_infantry
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_axis_build_infantry
 		cost = 5.00
 		prerequisite = {
 			focus = JAP_army
@@ -550,7 +550,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_artillery
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_artillery2
 		cost = 5.00
 		prerequisite = {
 			focus = JAP_infantry
@@ -569,7 +569,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_mobile_tanks
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_tanks
 		cost = 5.00
 		prerequisite = {
 			focus = JAP_artillery
@@ -583,7 +583,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_special_forces
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_special_forces
 		cost = 5.00
 		prerequisite = {
 			focus = JAP_mobile_tanks
@@ -608,7 +608,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_coast
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_coastal_fort
 		cost = 5.00
 		prerequisite = {
 			focus = JAP_naval_awakening
@@ -722,7 +722,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_large
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_doctrines_tactics
 		cost = 5.00
 		prerequisite = {
 			focus = JAP_naval_awakening
@@ -741,7 +741,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_cruiser
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_cruiser
 		cost = 5.00
 		prerequisite = {
 			focus = JAP_large
@@ -763,7 +763,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_capital
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_battleship
 		cost = 5.00
 		prerequisite = {
 			focus = JAP_cruiser
@@ -786,7 +786,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_doctrine
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_doctrines
 		cost = 5.00
 		prerequisite = {
 			focus = JAP_army
@@ -806,7 +806,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_doctorine1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_doctrines
 		cost = 5.00
 		prerequisite = {
 			focus = JAP_doctrine
@@ -826,7 +826,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_assault
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_amphibious_assault
 		cost = 5.00
 		prerequisite = {
 			focus = JAP_doctorine1
@@ -840,7 +840,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_mobile
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_production
 		cost = 5.00
 		prerequisite = {
 			focus = JAP_assault
@@ -859,7 +859,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_defense
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_small_arms
 		cost = 5.00
 		prerequisite = {
 			focus = JAP_army
@@ -879,7 +879,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_fortify
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_military
 		cost = 5.00
 		prerequisite = {
 			focus = JAP_defense
@@ -906,7 +906,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_mechanization
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_motorized
 		cost = 5.00
 		prerequisite = {
 			focus = JAP_fortify
@@ -925,7 +925,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_armor
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_defence
 		cost = 5.00
 		prerequisite = {
 			focus = JAP_mechanization
@@ -944,7 +944,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_army1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_allies_build_infantry
 		cost = 5.00
 		prerequisite = {
 			focus = JAP_special_forces
@@ -964,7 +964,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_heavy
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_fighter
 		cost = 5.00
 		prerequisite = {
 			focus = JAP_air_focus
@@ -986,7 +986,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_tactical
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_bomber
 		cost = 5.00
 		prerequisite = {
 			focus = JAP_heavy
@@ -1006,7 +1006,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_integrate_malaysia
-		icon = GFX_goal_unknown
+		icon = GFX_focus_jap_manchurian_project
 		cost = 7.00
 		prerequisite = {
 			focus = JAP_provide_jobs
@@ -1025,7 +1025,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_integrate_menjiang
-		icon = GFX_goal_unknown
+		icon = GFX_focus_jap_manchurian_project
 		cost = 7.00
 		prerequisite = {
 			focus = JAP_provide_jobs
@@ -1047,7 +1047,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_strike_south_doctorine
-		icon = GFX_goal_unknown
+		icon = GFX_focus_jap_strike_south
 		cost = 7.00
 		prerequisite = {
 			focus = JAP_integrate_manchuria
@@ -1099,7 +1099,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_colonize_china
-		icon = GFX_goal_unknown
+		icon = GFX_focus_jap_cast_the_die
 		cost = 7.00
 		prerequisite = {
 			focus = JAP_integrate_china
@@ -1138,7 +1138,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_sign_non_aggression_pact_with_usa
-		icon = GFX_goal_unknown
+		icon = GFX_focus_usa_recruit_the_free_corps
 		cost = 7.00
 		prerequisite = {
 			focus = JAP_strike_south_doctorine
@@ -1161,7 +1161,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_attack_america
-		icon = GFX_goal_unknown
+		icon = GFX_focus_usa_focus_on_europe
 		cost = 15.00
 		prerequisite = {
 			focus = JAP_strike_south_doctorine
@@ -1179,7 +1179,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_take_pacific
-		icon = GFX_goal_unknown
+		icon = GFX_focus_AST_war_japan
 		cost = 7.00
 		prerequisite = {
 			focus = JAP_sign_non_aggression_pact_with_usa
@@ -1216,7 +1216,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_public_reform
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_diplomatic_treaty
 		cost = 7.00
 		prerequisite = {
 			focus = JAP_destabilize_china
@@ -1230,7 +1230,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_announce_ambitions
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_strike_at_democracy2
 		cost = 7.00
 		prerequisite = {
 			focus = JAP_athiest_state
@@ -1256,7 +1256,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_all_out_war
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ger_oppose_hitler
 		cost = 17.00
 		prerequisite = {
 			focus = JAP_announce_ambitions
@@ -1320,7 +1320,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_con1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5.00
 		prerequisite = {
 			focus = JAP_industrial
@@ -1341,7 +1341,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_con2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5.00
 		prerequisite = {
 			focus = JAP_industrial
@@ -1362,7 +1362,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_con3
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civilian
 		cost = 0.00
 		prerequisite = {
 			focus = JAP_con1
@@ -1386,7 +1386,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_con4
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civilian
 		cost = 5.00
 		prerequisite = {
 			focus = JAP_con1
@@ -1410,7 +1410,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_pro1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
 			focus = JAP_industrial
@@ -1431,7 +1431,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_pro2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
 			focus = JAP_industrial
@@ -1452,7 +1452,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_pro3
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
 			focus = JAP_pro1
@@ -1476,7 +1476,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_pro4
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
 			focus = JAP_pro1
@@ -1500,7 +1500,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_nuclear
-		icon = GFX_goal_unknown
+		icon = GFX_focus_wonderweapons
 		cost = 5.00
 		prerequisite = {
 			focus = JAP_con4
@@ -1528,7 +1528,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_research
-		icon = GFX_goal_unknown
+		icon = GFX_focus_research
 		cost = 5.00
 		prerequisite = {
 			focus = JAP_con4
@@ -1551,7 +1551,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_secret
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_secret_weapon
 		cost = 5.00
 		prerequisite = {
 			focus = JAP_con4
@@ -1581,7 +1581,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_light
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_fighter2
 		cost = 5.00
 		prerequisite = {
 			focus = JAP_air_focus
@@ -1604,7 +1604,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_CAS
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_CAS
 		cost = 5.00
 		prerequisite = {
 			focus = JAP_light
@@ -1624,7 +1624,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_air
-		icon = GFX_goal_unknown
+		icon = GFX_focus_eng_special_air_service
 		cost = 5.00
 		prerequisite = {
 			focus = JAP_tactical

@@ -17,7 +17,7 @@ focus_tree = {
 	default = no
 	focus = {
 		id = USA_implement_reforms1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_usa_recruit_the_free_corps
 		cost = 7.00
 		x = 11
 		y = 0
@@ -32,7 +32,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_philippines_won_war1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_eng_crush_the_dream
 		cost = 7.00
 		mutually_exclusive = {
 			focus = USA_stay_isolationist1
@@ -53,7 +53,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_stay_isolationist1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_usa_voter_registration_act
 		cost = 7.00
 		mutually_exclusive = {
 			focus = USA_philippines_won_war1
@@ -71,7 +71,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_army_modernization1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_allies_build_infantry
 		cost = 5.00
 		x = 27
 		y = 0
@@ -83,7 +83,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_industrial1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_cavalry
 		cost = 5.00
 		x = 34
 		y = 0
@@ -99,7 +99,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_air_force1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_build_airforce
 		cost = 5.00
 		x = 3
 		y = 1
@@ -110,7 +110,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_final_adjustments1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_up_joan_of_arc
 		prerequisite = {
 			focus = USA_stregthen_government1
 		}
@@ -124,7 +124,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_navy1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 5.00
 		x = 42
 		y = 0
@@ -135,7 +135,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_fighter1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_fighter
 		cost = 5.00
 		prerequisite = {
 			focus = USA_air_force1
@@ -160,7 +160,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_CAS1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_CAS
 		cost = 5.00
 		prerequisite = {
 			focus = USA_fighter1
@@ -180,7 +180,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_navy_base1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_coastal_fort
 		cost = 5.00
 		prerequisite = {
 			focus = USA_air_force1
@@ -262,7 +262,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_anti_air1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_air_defense
 		cost = 5.00
 		prerequisite = {
 			focus = USA_navy_base1
@@ -285,7 +285,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_bomber1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_bomber
 		cost = 5.00
 		prerequisite = {
 			focus = USA_air_force1
@@ -307,7 +307,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_NAV1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_carrier
 		cost = 5.00
 		prerequisite = {
 			focus = USA_bomber1
@@ -327,7 +327,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_rocket1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_rocketry
 		cost = 5.00
 		prerequisite = {
 			focus = USA_anti_air1
@@ -353,7 +353,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_change_economy1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_spa_the_spanish_miracle
 		cost = 7.00
 		prerequisite = {
 			focus = USA_implement_reforms1
@@ -372,7 +372,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_speech1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_usa_guarantee_the_american_dream
 		cost = 7.00
 		prerequisite = {
 			focus = USA_change_economy1
@@ -386,7 +386,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_freedom_of_religon1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_anschluss
 		cost = 7.00
 		prerequisite = {
 			focus = USA_speech1
@@ -400,7 +400,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_school_changes1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_military_academy
 		cost = 7.00
 		prerequisite = {
 			focus = USA_freedom_of_religon1
@@ -414,7 +414,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_change_labour1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_steel
 		cost = 7.00
 		prerequisite = {
 			focus = USA_school_changes1
@@ -428,7 +428,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_defend_public1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_industry_3
 		cost = 7.00
 		prerequisite = {
 			focus = USA_change_labour1
@@ -523,7 +523,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_prepare_for_war1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_little_entente
 		cost = 7.00
 		prerequisite = {
 			focus = USA_implement_reforms1
@@ -542,7 +542,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_asssemble_country1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_combined_arms
 		cost = 7.00
 		prerequisite = {
 			focus = USA_prepare_for_war1
@@ -560,7 +560,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_mobilize_for_war1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_hol_war_on_pacifism
 		cost = 7.00
 		prerequisite = {
 			focus = USA_asssemble_country1
@@ -578,7 +578,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_new_nation1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_usa_union_representation_act
 		cost = 7.00
 		prerequisite = {
 			focus = USA_philippines_won_war1
@@ -596,7 +596,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_interventionism1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_forceful_treaty
 		cost = 7.00
 		prerequisite = {
 			focus = USA_new_nation1
@@ -615,7 +615,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_road_to_war1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_usa_tank_destroyer_doctrine
 		cost = 7.00
 		prerequisite = {
 			focus = USA_interventionism1
@@ -633,7 +633,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_imperialism1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_mex_privatisation
 		cost = 7.00
 		prerequisite = {
 			focus = USA_road_to_war1
@@ -654,7 +654,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_caribbean1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_self_management
 		cost = 15.00
 		prerequisite = {
 			focus = USA_imperialism1
@@ -698,7 +698,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_mexico1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_mex_redeem_aztlan
 		cost = 7.00
 		prerequisite = {
 			focus = USA_imperialism1
@@ -727,7 +727,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_take_reds_down1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_prc_agrarian_socialism
 		cost = 7.00
 		prerequisite = {
 			focus = USA_imperialism1
@@ -760,7 +760,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_happy_public1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_strike_at_democracy3
 		cost = 7.00
 		prerequisite = {
 			focus = USA_stay_isolationist1
@@ -776,7 +776,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_guarentee_liberties1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_focus_fra_down_marianne
 		cost = 7.00
 		prerequisite = {
 			focus = USA_happy_public1
@@ -791,7 +791,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_eliminate_the_threat1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_attack_soviet
 		cost = 7.00
 		prerequisite = {
 			focus = USA_guarentee_liberties1
@@ -812,7 +812,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_topple_syndicalism1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_soviet_politics
 		cost = 7.00
 		prerequisite = {
 			focus = USA_eliminate_the_threat1
@@ -854,7 +854,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_motorization1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_motorized
 		cost = 5.00
 		prerequisite = {
 			focus = USA_army_modernization1
@@ -872,7 +872,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_armor1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_defence
 		cost = 5.00
 		prerequisite = {
 			focus = USA_motorization1
@@ -891,7 +891,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_tank1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_tanks
 		cost = 5.00
 		prerequisite = {
 			focus = USA_armor1
@@ -910,7 +910,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_land1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_doctrines
 		cost = 5.00
 		prerequisite = {
 			focus = USA_army_modernization1
@@ -930,7 +930,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_doctorine1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_doctrines
 		cost = 5.00
 		prerequisite = {
 			focus = USA_land1
@@ -950,7 +950,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_protect1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_build_tank
 		cost = 5.00
 		prerequisite = {
 			focus = USA_doctorine1
@@ -965,7 +965,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_infantry1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_axis_build_infantry
 		cost = 5.00
 		prerequisite = {
 			focus = USA_army_modernization1
@@ -984,7 +984,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_artillery1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_artillery2
 		cost = 5.00
 		prerequisite = {
 			focus = USA_infantry1
@@ -1003,7 +1003,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_decryption1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_provoke_border_clashes
 		cost = 5.00
 		prerequisite = {
 			focus = USA_artillery1
@@ -1034,7 +1034,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_manhattan_project1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_wonderweapons
 		cost = 5.00
 		prerequisite = {
 			focus = USA_protect1
@@ -1058,7 +1058,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_civilian.5
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5.00
 		prerequisite = {
 			focus = USA_industrial1
@@ -1087,7 +1087,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_civilian2.5
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5.00
 		prerequisite = {
 			focus = USA_civilian.5
@@ -1124,7 +1124,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_industrial2.5
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5.00
 		prerequisite = {
 			focus = USA_industrial1
@@ -1143,7 +1143,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_armament2.5
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
 			focus = USA_civilian2.5
@@ -1175,7 +1175,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_infra2.5
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_infrastructure
 		cost = 5.00
 		prerequisite = {
 			focus = USA_industrial2.5
@@ -1242,7 +1242,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_civilian3.5
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5.00
 		prerequisite = {
 			focus = USA_industrial1
@@ -1271,7 +1271,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_civilian4.5
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5.00
 		prerequisite = {
 			focus = USA_civilian3.5
@@ -1308,7 +1308,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_infrastructure.5
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_infrastructure
 		cost = 5.00
 		prerequisite = {
 			focus = USA_civilian4.5
@@ -1378,7 +1378,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_re-armament.5
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 7.00
 		prerequisite = {
 			focus = USA_civilian4.5
@@ -1410,7 +1410,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_secret1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_secret_weapon
 		cost = 5.00
 		prerequisite = {
 			focus = USA_re-armament.5
@@ -1440,7 +1440,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_research
-		icon = GFX_goal_unknown
+		icon = GFX_focus_research
 		cost = 7.00
 		prerequisite = {
 			focus = USA_re-armament.5
@@ -1463,7 +1463,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_flexible1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_build_navy
 		cost = 5.00
 		prerequisite = {
 			focus = USA_navy1
@@ -1490,7 +1490,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_submarine1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_submarine
 		cost = 5.00
 		prerequisite = {
 			focus = USA_flexible1
@@ -1510,7 +1510,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_destroyer1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_destroyer
 		cost = 5.00
 		prerequisite = {
 			focus = USA_submarine1
@@ -1530,7 +1530,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_rally_public1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_mex_soldaderas
 		cost = 7.00
 		prerequisite = {
 			focus = USA_mobilize_for_war1
@@ -1544,7 +1544,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_stregthen_government1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_mex_arrest_general_cedillo
 		cost = 7.00
 		prerequisite = {
 			focus = USA_rally_public1
@@ -1561,7 +1561,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_choose_path1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_TUR_the_sun_language_theory
 		cost = 7.00
 		prerequisite = {
 			focus = USA_defend_public1
@@ -1576,7 +1576,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_japan1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_attack_japan
 		cost = 7.00
 		prerequisite = {
 			focus = USA_imperialism1
@@ -1604,7 +1604,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_final_touches1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_AST_never_gallipoli
 		cost = 7.00
 		prerequisite = {
 			focus = USA_mexico1
@@ -1652,7 +1652,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_large1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_doctrines_tactics
 		cost = 5.00
 		prerequisite = {
 			focus = USA_navy1
@@ -1675,7 +1675,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_cruiser1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_cruiser
 		cost = 5.00
 		prerequisite = {
 			focus = USA_large1
@@ -1696,7 +1696,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_capital1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_battleship
 		cost = 5.00
 		prerequisite = {
 			focus = USA_cruiser1
