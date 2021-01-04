@@ -10,7 +10,7 @@ focus_tree = {
 	default = no
 	focus = {
 		id = PUA_civil_war_victory
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ger_great_red_menace
 		cost = 7.00
 		x = 13
 		y = 0
@@ -24,7 +24,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PUA_army
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_allies_build_infantry
 		cost = 5.00
 		x = 27
 		y = 0
@@ -35,7 +35,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PUA_industrial
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_cavalry
 		cost = 5.00
 		x = 36
 		y = 0
@@ -46,7 +46,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_navy
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 5.00
 		x = 46
 		y = 0
@@ -57,7 +57,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_air_focus
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_build_airforce
 		cost = 5.00
 		x = 21
 		y = 0
@@ -68,7 +68,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_bring_america_to_communism
-		icon = GFX_goal_unknown
+		icon = GFX_focus_eng_crush_the_dream
 		cost = 7.00
 		prerequisite = {
 			focus = PUA_civil_war_victory
@@ -85,7 +85,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_destroy_class_in_america
-		icon = GFX_goal_unknown
+		icon = GFX_focus_BUL_destroy_the_zveno
 		cost = 7.00
 		prerequisite = {
 			focus = PUA_bring_america_to_communism
@@ -99,7 +99,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_uplift_poor
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_concessions
 		cost = 7.00
 		prerequisite = {
 			focus = PUA_destroy_class_in_america
@@ -113,7 +113,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_nationalize_industry
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_aluminum
 		cost = 7.00
 		prerequisite = {
 			focus = PUA_bring_america_to_communism
@@ -127,7 +127,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_stop_brainwashing
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_strike_at_democracy3
 		cost = 7.00
 		prerequisite = {
 			focus = PUA_destroy_class_in_america
@@ -142,7 +142,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_nationalize_agriculture
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_soviet_politics
 		cost = 7.00
 		prerequisite = {
 			focus = PUA_nationalize_industry
@@ -156,7 +156,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_organize_national_unions
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_support_the_left_right
 		cost = 5.00
 		prerequisite = {
 			focus = PUA_uplift_poor
@@ -176,7 +176,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_question_government
-		icon = GFX_goal_unknown
+		icon = GFX_focus_hun_assassinate_horthy
 		cost = 7.00
 		prerequisite = {
 			focus = PUA_civil_war_victory
@@ -190,7 +190,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_hold_elections
-		icon = GFX_goal_unknown
+		icon = GFX_focus_hol_the_foundations_of_defense
 		cost = 7.00
 		prerequisite = {
 			focus = PUA_question_government
@@ -204,7 +204,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_hold_constitutional_convention
-		icon = GFX_goal_unknown
+		icon = GFX_focus_man_claim_the_mandate_of_heaven
 		cost = 7.00
 		prerequisite = {
 			focus = PUA_hold_elections
@@ -218,7 +218,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_bring_change_and_reforms
-		icon = GFX_goal_unknown
+		icon = GFX_focus_por_workers_of_iberia
 		cost = 7.00
 		prerequisite = {
 			focus = PUA_civil_war_victory
@@ -232,7 +232,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_change_school_system
-		icon = GFX_goal_unknown
+		icon = GFX_focus_spa_the_war_of_vengeance
 		cost = 7.00
 		prerequisite = {
 			focus = PUA_bring_change_and_reforms
@@ -246,7 +246,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_encourage_workers_unity
-		icon = GFX_goal_unknown
+		icon = GFX_focus_spr_class_war
 		cost = 7.00
 		prerequisite = {
 			focus = PUA_bring_change_and_reforms
@@ -260,7 +260,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_allow_equal_rights
-		icon = GFX_goal_unknown
+		icon = GFX_focus_spr_no_pasaran
 		cost = 7.00
 		prerequisite = {
 			focus = PUA_change_school_system
@@ -277,7 +277,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_encourage_women_to_work
-		icon = GFX_goal_unknown
+		icon = GFX_focus_mex_soldaderas
 		cost = 7.00
 		prerequisite = {
 			focus = PUA_change_school_system
@@ -294,7 +294,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_establish_international_relations
-		icon = GFX_goal_unknown
+		icon = GFX_focus_chi_mission_to_the_soviet_union
 		cost = 7.00
 		prerequisite = {
 			focus = PUA_encourage_women_to_work
@@ -331,7 +331,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_stay_with_germany
-		icon = GFX_goal_unknown
+		icon = GFX_focus_chi_mission_to_the_soviet_union
 		cost = 7.00
 		prerequisite = {
 			focus = PUA_establish_international_relations
@@ -364,7 +364,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_create_new_alliance
-		icon = GFX_goal_unknown
+		icon = GFX_focus_chi_cooperation_with_the_communists
 		cost = 7.00
 		prerequisite = {
 			focus = PUA_establish_international_relations
@@ -382,7 +382,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_attack_mexico
-		icon = GFX_goal_unknown
+		icon = GFX_focus_attack_mexico
 		cost = 7.00
 		prerequisite = {
 			focus = PUA_stay_with_germany
@@ -406,7 +406,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_attack_canada
-		icon = GFX_goal_unknown
+		icon = GFX_focus_attack_canada
 		cost = 7.00
 		prerequisite = {
 			focus = PUA_stay_with_germany
@@ -430,7 +430,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_heavy
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_fighter
 		cost = 5.00
 		prerequisite = {
 			focus = PUA_air_focus
@@ -452,7 +452,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_tactical
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_bomber
 		cost = 5.00
 		prerequisite = {
 			focus = PUA_heavy
@@ -472,7 +472,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_bring_communism_to_caribbean
-		icon = GFX_goal_unknown
+		icon = GFX_focus_focus_fra_fascist_threat
 		cost = 7.00
 		prerequisite = {
 			focus = PUA_stay_with_germany
@@ -486,19 +486,17 @@ completion_reward = {
 							target = CUB
 							expire = 0
 						}
-					completion_reward = {
-							create_wargoal = {
+						create_wargoal = {
 									type = topple_government
 									target = DOM
 									expire = 0
 								}
-						}
 				}
 
 	}
 	focus = {
 		id = PUA_light
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_fighter2
 		cost = 5.00
 		prerequisite = {
 			focus = PUA_air_focus
@@ -521,7 +519,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_cas
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_CAS
 		cost = 5.00
 		prerequisite = {
 			focus = PUA_light
@@ -541,7 +539,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_air
-		icon = GFX_goal_unknown
+		icon = GFX_focus_eng_special_air_service
 		cost = 5.00
 		prerequisite = {
 			focus = PUA_tactical
@@ -558,7 +556,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_infantry
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_axis_build_infantry
 		cost = 5.00
 		prerequisite = {
 			focus = PUA_army
@@ -577,7 +575,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_artillery
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_artillery2
 		cost = 5.00
 		prerequisite = {
 			focus = PUA_infantry
@@ -596,7 +594,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_mobile_tanks
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_tanks
 		cost = 5.00
 		prerequisite = {
 			focus = PUA_artillery
@@ -610,7 +608,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_special_forces
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_special_forces
 		cost = 5.00
 		prerequisite = {
 			focus = PUA_mobile_tanks
@@ -635,7 +633,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_doctorine
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_doctrines
 		cost = 5.00
 		prerequisite = {
 			focus = PUA_army
@@ -655,7 +653,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_doctorine2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_doctrines
 		cost = 5.00
 		prerequisite = {
 			focus = PUA_doctorine
@@ -675,7 +673,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_assault
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_amphibious_assault
 		cost = 5.00
 		prerequisite = {
 			focus = PUA_doctorine2
@@ -689,7 +687,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_mobile
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_production
 		cost = 5.00
 		prerequisite = {
 			focus = PUA_assault
@@ -708,7 +706,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_defense
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_small_arms
 		cost = 5.00
 		prerequisite = {
 			focus = PUA_army
@@ -729,7 +727,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_fortify
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_military
 		cost = 5.00
 		prerequisite = {
 			focus = PUA_defense
@@ -756,7 +754,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_mechanization
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_motorized
 		cost = 5.00
 		prerequisite = {
 			focus = PUA_fortify
@@ -776,7 +774,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_armor
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_defence
 		cost = 5.00
 		prerequisite = {
 			focus = PUA_mechanization
@@ -795,7 +793,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_army1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_allies_build_infantry
 		cost = 5.00
 		prerequisite = {
 			focus = PUA_special_forces
@@ -815,13 +813,16 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_con1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5.00
 		prerequisite = {
 			focus = PUA_industrial
 		}
 		x = 32
 		y = 1
+		available = {
+		controls_state = 357
+		}
 		completion_reward = {
 					357 = {
 							add_extra_state_shared_building_slots = 1
@@ -836,13 +837,16 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_con2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5.00
 		prerequisite = {
 			focus = PUA_industrial
 		}
 		x = 34
 		y = 1
+		available = {
+		controls_state = 358
+		}
 		completion_reward = {
 					358 = {
 							add_extra_state_shared_building_slots = 1
@@ -857,7 +861,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_con3
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civilian
 		cost = 5.00
 		prerequisite = {
 			focus = PUA_con1
@@ -867,6 +871,9 @@ completion_reward = {
 		}
 		prerequisite = {
 			focus = PUA_con2
+		}
+		available = {
+		controls_state = 359
 		}
 		x = 32
 		y = 2
@@ -884,7 +891,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_con4
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civilian
 		cost = 5.00
 		prerequisite = {
 			focus = PUA_con1
@@ -894,6 +901,9 @@ completion_reward = {
 		}
 		x = 34
 		y = 2
+		available = {
+		controls_state = 360
+		}
 		completion_reward = {
 					360 = {
 							add_extra_state_shared_building_slots = 1
@@ -908,7 +918,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_infra
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_infrastructure
 		cost = 5.00
 		prerequisite = {
 			focus = PUA_industrial
@@ -975,7 +985,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_infra2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_infrastructure
 		cost = 5.00
 		prerequisite = {
 			focus = PUA_infra
@@ -1042,7 +1052,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_pro1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
 			focus = PUA_industrial
@@ -1063,13 +1073,16 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_pro2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
 			focus = PUA_industrial
 		}
 		x = 40
 		y = 1
+		available = {
+		controls_state = 261
+		}
 		completion_reward = {
 					261 = {
 							add_extra_state_shared_building_slots = 1
@@ -1084,7 +1097,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_pro3
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
 			focus = PUA_pro1
@@ -1094,6 +1107,9 @@ completion_reward = {
 		}
 		x = 38
 		y = 2
+		available = {
+		controls_state = 375
+		}
 		completion_reward = {
 					375 = {
 							add_extra_state_shared_building_slots = 1
@@ -1108,7 +1124,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_pro4
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
 			focus = PUA_pro1
@@ -1118,6 +1134,9 @@ completion_reward = {
 		}
 		x = 40
 		y = 2
+		available = {
+		controls_state = 358
+		}
 		completion_reward = {
 					358 = {
 							add_extra_state_shared_building_slots = 1
@@ -1132,7 +1151,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_nuclear
-		icon = GFX_goal_unknown
+		icon = GFX_focus_wonderweapons
 		cost = 5.00
 		prerequisite = {
 			focus = PUA_pro4
@@ -1162,7 +1181,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_secret
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_secret_weapon
 		cost = 5.00
 		prerequisite = {
 			focus = PUA_con3
@@ -1195,7 +1214,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_research
-		icon = GFX_goal_unknown
+		icon = GFX_focus_research
 		cost = 5.00
 		prerequisite = {
 			focus = PUA_con3
@@ -1221,7 +1240,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_flexible
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_build_navy
 		cost = 5.00
 		prerequisite = {
 			focus = PUA_navy
@@ -1244,7 +1263,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_submarine
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_submarine
 		cost = 5.00
 		prerequisite = {
 			focus = PUA_flexible
@@ -1264,7 +1283,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_destroyer
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_destroyer
 		cost = 5.00
 		prerequisite = {
 			focus = PUA_submarine
@@ -1284,7 +1303,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_coast
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_coastal_fort
 		cost = 5.00
 		prerequisite = {
 			focus = PUA_navy
@@ -1398,7 +1417,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_export_revolution_to_south_america
-		icon = GFX_goal_unknown
+		icon = GFX_focus_focus_fra_revolution_utmost
 		cost = 7.00
 		prerequisite = {
 			focus = PUA_attack_canada
@@ -1437,7 +1456,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_large
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_doctrines_tactics
 		cost = 5.00
 		prerequisite = {
 			focus = PUA_navy
@@ -1456,7 +1475,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_cruiser
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_cruiser
 		cost = 5.00
 		prerequisite = {
 			focus = PUA_large
@@ -1477,7 +1496,7 @@ completion_reward = {
 	}
 	focus = {
 		id = PUA_capital
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_battleship
 		cost = 5.00
 		prerequisite = {
 			focus = PUA_cruiser

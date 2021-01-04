@@ -39,7 +39,7 @@ create_country_leader = {
 	desc = "POLITICS_ÉAMON_DE_VALERA_DESC"
 	picture = "Portrait_Ireland_Eamon_de_Valera.dds"
 	expire = "1965.1.1"
-	ideology = traditional_conservatism_subtype
+	ideology = social_democracy_subtype
 	traits = {
 		#
 	}
@@ -72,12 +72,112 @@ create_country_leader = {
 	desc = "POLITICS_JAMES_LARKIN_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = social_democracy_subtype
+	ideology = traditional_conservatism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = nationalism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = totalitarianism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = traditional_conservatism_subtype
 	traits = {
 		#
 	}
 }
 
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = syndicalism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = market_socialism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = anarchism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = monarchism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = radical_socialism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = market_liberal_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = social_democracy_subtype
+	traits = {
+		#
+	}
+}
 create_corps_commander = {
 	name = "Michael Costello"
 	portrait_path = "gfx/leaders/ENG/Portrait_Britain_Generic_land_4.dds"

@@ -10,7 +10,7 @@ focus_tree = {
 	default = no
 	focus = {
 		id = TAJ_national_remilitarization
-		icon = GFX_goal_unknown
+		icon = GFX_focus_por_workers_of_iberia
 		cost = 7.00
 		x = 16
 		y = 0
@@ -28,7 +28,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TAJ_improve_forces
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_secret_weapon
 		cost = 7.00
 		prerequisite = {
 			focus = TAJ_national_remilitarization
@@ -53,7 +53,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TAJ_establish_TMR_trade
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_soviet_construction
 		cost = 7.00
 		prerequisite = {
 			focus = TAJ_national_remilitarization
@@ -80,7 +80,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TAJ_form_expeditions
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_wolf_pack
 		cost = 7.00
 		prerequisite = {
 			focus = TAJ_improve_forces
@@ -100,7 +100,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TAJ_improved_army
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_more_territorial_claims
 		cost = 7.00
 		prerequisite = {
 			focus = TAJ_improve_forces
@@ -117,7 +117,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TAJ_promote_unrest
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_dangerous_deal
 		cost = 7.00
 		prerequisite = {
 			focus = TAJ_national_remilitarization
@@ -139,7 +139,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TAJ_german_turkic_research
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_socialist_science
 		cost = 7.00
 		prerequisite = {
 			focus = TAJ_establish_TMR_trade
@@ -159,7 +159,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TAJ_expedition_to_russia
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_alliance
 		cost = 7.00
 		prerequisite = {
 			focus = TAJ_form_expeditions
@@ -186,7 +186,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TAJ_military_ET_pact
-		icon = GFX_goal_unknown
+		icon = GFX_goal_anti_comintern_pact
 		cost = 7.00
 		prerequisite = {
 			focus = TAJ_form_expeditions
@@ -208,7 +208,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TAJ_kaz_expedition
-		icon = GFX_goal_unknown
+		icon = GFX_focus_TUR_turanist_ambition
 		cost = 7.00
 		prerequisite = {
 			focus = TAJ_form_expeditions
@@ -235,7 +235,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TAJ_encourage_PUA
-		icon = GFX_goal_unknown
+		icon = GFX_focus_usa_tank_destroyer_doctrine
 		cost = 7.00
 		prerequisite = {
 			focus = TAJ_expedition_to_russia
@@ -248,14 +248,20 @@ focus_tree = {
 		}
 		x = 14
 		y = 4
+		available = {
+		PUA = {
+		exists = yes
+		}
+		}
 			completion_reward = {
 					country_event = turkunion.2
 				}
+		
 
 	}
 	focus = {
 		id = TAJ_expedition_to_usa
-		icon = GFX_goal_unknown
+		icon = GFX_focus_usa_guarantee_the_american_dream
 		cost = 7.00
 		prerequisite = {
 			focus = TAJ_encourage_PUA
@@ -276,7 +282,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TAJ_promote_new_ideas
-		icon = GFX_goal_unknown
+		icon = GFX_focus_prc_maoism
 		cost = 7.00
 		prerequisite = {
 			focus = TAJ_expedition_to_russia
@@ -309,7 +315,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TAJ_closed_economy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_usa_voter_registration_act
 		cost = 7.00
 		prerequisite = {
 			focus = TAJ_promote_new_ideas
@@ -323,7 +329,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TAJ_begin_war
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_provoke_border_clashes
 		cost = 7.00
 		prerequisite = {
 			focus = TAJ_bring_greatness
@@ -340,7 +346,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TAJ_bring_greatness
-		icon = GFX_goal_unknown
+		icon = GFX_focus_RAJ_indian_gentlemen_offcers
 		cost = 7.00
 		prerequisite = {
 			focus = TAJ_expedition_to_usa
@@ -359,7 +365,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TAJ_why_we_fight
-		icon = GFX_goal_unknown
+		icon = GFX_focus_RAJ_lions_of_the_great_war
 		cost = 20.00
 		prerequisite = {
 			focus = TAJ_bring_greatness
@@ -396,7 +402,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TAJ_take_turkmenistan
-		icon = GFX_goal_unknown
+		icon = GFX_focus_hol_war_on_pacifism
 		cost = 7.00
 		prerequisite = {
 			focus = TAJ_why_we_fight
@@ -415,7 +421,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TAJ_annex_kaz
-		icon = GFX_goal_unknown
+		icon = GFX_goal_poland_goal
 		cost = 7.00
 		prerequisite = {
 			focus = TAJ_take_turkmenistan

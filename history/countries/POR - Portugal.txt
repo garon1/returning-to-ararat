@@ -133,7 +133,7 @@ if = {
 		desc = "POLITICS_BENTO_GONCALVES_DESC"
 		picture = "gfx/leaders/POR/portrait_por_bento_goncalves.dds"
 		expire = "1965.1.1"
-		ideology = marxism
+		ideology = radical_socialism_subtype
 		traits = {
 			veteran_communist
 		}
@@ -170,6 +170,81 @@ if = {
 		}
 	}
 	
+
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = totalitarianism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = traditional_conservatism_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = syndicalism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = market_socialism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = anarchism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = radical_socialism_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = social_democracy_subtype
+	traits = {
+		#
+	}
+}
 	
 	create_field_marshal = {
 		name = "José Vicente de Freitas"

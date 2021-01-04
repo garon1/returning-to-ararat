@@ -41,10 +41,7 @@ VIN_unite_indochina = {
 					type = annex_everything
 				}
 			}
-			declare_war_on = {
-					target = LAO
-					type = annex_everything
-				}
+
 
 		}
 	}

@@ -10,7 +10,7 @@ focus_tree = {
 	default = no
 	focus = {
 		id = CRO_political_power
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_support_the_left_right
 		cost = 7.00
 		x = 14
 		y = 0
@@ -21,7 +21,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_army
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_allies_build_infantry
 		cost = 5.00
 		x = 32
 		y = 0
@@ -32,7 +32,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_industrial
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_cavalry
 		cost = 5.00
 		x = 35
 		y = 6
@@ -43,7 +43,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_navy_awakening
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 5.00
 		x = 41
 		y = 0
@@ -61,7 +61,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_air_focus
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_build_airforce
 		cost = 5.00
 		x = 41
 		y = 4
@@ -72,7 +72,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_no_more_nationalism
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GRE_reviving_the_spartan_warrior_spirit
 		cost = 7.00
 		prerequisite = {
 			focus = CRO_political_power
@@ -86,7 +86,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_constitutional_convention
-		icon = GFX_goal_unknown
+		icon = GFX_focus_hol_the_foundations_of_defense
 		cost = 7.00
 		prerequisite = {
 			focus = CRO_no_more_nationalism
@@ -100,7 +100,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_democracy_triumphs
-		icon = GFX_goal_unknown
+		icon = GFX_focus_hol_united_netherlands
 		cost = 7.00
 		prerequisite = {
 			focus = CRO_constitutional_convention
@@ -120,7 +120,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_stray_russia
-		icon = GFX_goal_unknown
+		icon = GFX_focus_spa_eliminate_the_carlists
 		cost = 7.00
 		prerequisite = {
 			focus = CRO_democracy_triumphs
@@ -137,7 +137,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_join_allies
-		icon = GFX_goal_unknown
+		icon = GFX_focus_befriend_italy
 		cost = 7.00
 		prerequisite = {
 			focus = CRO_stray_russia
@@ -149,7 +149,7 @@ focus_tree = {
 		x = 4
 		y = 5
 		completion_reward = {
-		FRA = {
+		ITA = {
 		country_event = generic.2
 		}
 		
@@ -158,7 +158,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_new_alliance
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_propaganda
 		cost = 7.00
 		prerequisite = {
 			focus = CRO_stray_russia
@@ -181,7 +181,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_try_war_criminals
-		icon = GFX_goal_unknown
+		icon = GFX_focus_mex_arrest_general_cedillo
 		cost = 7.00
 		prerequisite = {
 			focus = CRO_democracy_triumphs
@@ -195,7 +195,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_instability_fixed
-		icon = GFX_goal_unknown
+		icon = GFX_focus_por_limited_self_rule
 		cost = 7.00
 		prerequisite = {
 			focus = CRO_try_war_criminals
@@ -209,11 +209,11 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_deconsription
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_self_management
 		cost = 7.00
 		prerequisite = {
 			focus = CRO_new_alliance
-			focus = CRO_public_announcment
+			focus = CRO_instability_fixed
 		}
 		x = 8
 		y = 6
@@ -224,7 +224,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_stay_as_we_are
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_commonwealth_build_infantry
 		cost = 7.00
 		prerequisite = {
 			focus = CRO_political_power
@@ -241,7 +241,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_promote_capitalism
-		icon = GFX_goal_unknown
+		icon = GFX_focus_hol_abandon_the_gold_standard
 		cost = 7.00
 		prerequisite = {
 			focus = CRO_stay_as_we_are
@@ -255,7 +255,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_punish_communists
-		icon = GFX_goal_unknown
+		icon = GFX_focus_hol_legacy_of_the_de_zeven_provincien_mutiny
 		cost = 7.00
 		prerequisite = {
 			focus = CRO_promote_capitalism
@@ -268,7 +268,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_militarism
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_political_pressure
 		cost = 7.00
 		prerequisite = {
 			focus = CRO_stay_as_we_are
@@ -282,7 +282,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_include_far_right_groups
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_forceful_treaty
 		cost = 7.00
 		prerequisite = {
 			focus = CRO_stay_as_we_are
@@ -303,7 +303,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_croatian_dreams
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_position_armies
 		cost = 7.00
 		prerequisite = {
 			focus = CRO_punish_communists
@@ -320,7 +320,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_embargo_serbia
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_neutrality_focus
 		cost = 7.00
 		prerequisite = {
 			focus = CRO_militarism
@@ -337,7 +337,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_strengthen_war_industry
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_territory_or_war
 		cost = 7.00
 		prerequisite = {
 			focus = CRO_include_far_right_groups
@@ -361,7 +361,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_ethnostate
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_wolf_pack
 		cost = 7.00
 		prerequisite = {
 			focus = CRO_croatian_dreams
@@ -387,7 +387,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_forge_own_path
-		icon = GFX_goal_unknown
+		icon = GFX_goal_tripartite_pact
 		cost = 7.00
 		prerequisite = {
 			focus = CRO_political_power
@@ -401,7 +401,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_question_status_quo
-		icon = GFX_goal_unknown
+		icon = GFX_focus_RAJ_lions_of_the_great_war
 		cost = 7.00
 		prerequisite = {
 			focus = CRO_forge_own_path
@@ -415,7 +415,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_be_with_russia
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ger_reichskommisariats
 		cost = 7.00
 		prerequisite = {
 			focus = CRO_question_status_quo
@@ -444,7 +444,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_create_alliance
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ger_return_of_the_kaiser
 		cost = 7.00
 		prerequisite = {
 			focus = CRO_question_status_quo
@@ -462,7 +462,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_settle_croats
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_military_academy
 		cost = 7.00
 		prerequisite = {
 			focus = CRO_be_with_russia
@@ -477,7 +477,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_better_research
-		icon = GFX_goal_unknown
+		icon = GFX_focus_research2
 		cost = 7.00
 		prerequisite = {
 			focus = CRO_settle_croats
@@ -491,7 +491,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_promote_culture
-		icon = GFX_goal_unknown
+		icon = GFX_focus_focus_fra_third_empire
 		cost = 7.00
 		prerequisite = {
 			focus = CRO_settle_croats
@@ -505,7 +505,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_honor_history
-		icon = GFX_goal_unknown
+		icon = GFX_focus_focus_fra_liberte_egalite_solidarite
 		cost = 7.00
 		prerequisite = {
 			focus = CRO_settle_croats
@@ -522,7 +522,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_self_actualization
-		icon = GFX_goal_unknown
+		icon = GFX_focus_BUL_the_third_bulgarian_empire
 		cost = 7.00
 		prerequisite = {
 			focus = CRO_better_research
@@ -542,7 +542,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_demand_bosnia
-		icon = GFX_goal_unknown
+		icon = GFX_focus_YUG_safeguard_bosnia
 		cost = 7.00
 		prerequisite = {
 			focus = CRO_self_actualization
@@ -563,7 +563,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_bosnia_diplomatically
-		icon = GFX_goal_unknown
+		icon = GFX_focus_YUG_safeguard_bosnia
 		cost = 7.00
 		prerequisite = {
 			focus = CRO_self_actualization
@@ -586,7 +586,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_infantry
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_axis_build_infantry
 		cost = 5.00
 		prerequisite = {
 			focus = CRO_army
@@ -605,7 +605,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_artillery
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_artillery2
 		cost = 7.00
 		prerequisite = {
 			focus = CRO_infantry
@@ -624,7 +624,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_mobile_tanks
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_tanks
 		cost = 5.00
 		prerequisite = {
 			focus = CRO_artillery
@@ -638,7 +638,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_special_forces
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_special_forces
 		cost = 5.00
 		prerequisite = {
 			focus = CRO_mobile_tanks
@@ -663,7 +663,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_con1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5.00
 		prerequisite = {
 			focus = CRO_industrial
@@ -684,7 +684,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_doctorine
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_doctrines
 		cost = 5.00
 		prerequisite = {
 			focus = CRO_army
@@ -704,7 +704,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_doctorine2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_doctrines
 		cost = 5.00
 		prerequisite = {
 			focus = CRO_doctorine
@@ -724,7 +724,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_assault
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_amphibious_assault
 		cost = 5.00
 		prerequisite = {
 			focus = CRO_doctorine2
@@ -738,7 +738,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_mobile
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_production
 		cost = 5.00
 		prerequisite = {
 			focus = CRO_assault
@@ -757,7 +757,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_con2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5.00
 		prerequisite = {
 			focus = CRO_industrial
@@ -778,7 +778,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_defense
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_small_arms
 		cost = 5.00
 		prerequisite = {
 			focus = CRO_army
@@ -798,7 +798,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_fortify
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_military
 		cost = 5.00
 		prerequisite = {
 			focus = CRO_defense
@@ -825,7 +825,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_mechanization
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_motorized
 		cost = 5.00
 		prerequisite = {
 			focus = CRO_fortify
@@ -844,7 +844,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_armor
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_defence
 		cost = 5.00
 		prerequisite = {
 			focus = CRO_mechanization
@@ -862,8 +862,8 @@ focus_tree = {
 
 	}
 	focus = {
-		id = CRO_army
-		icon = GFX_goal_unknown
+		id = CRO_army1
+		icon = GFX_goal_generic_allies_build_infantry
 		cost = 5.00
 		prerequisite = {
 			focus = CRO_special_forces
@@ -883,7 +883,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_infra
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_infrastructure
 		cost = 5.00
 		prerequisite = {
 			focus = CRO_industrial
@@ -950,7 +950,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_pro1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
 			focus = CRO_industrial
@@ -971,7 +971,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_flexible
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_build_navy
 		cost = 5.00
 		prerequisite = {
 			focus = CRO_navy_awakening
@@ -994,7 +994,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_submarine
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_submarine
 		cost = 5.00
 		prerequisite = {
 			focus = CRO_flexible
@@ -1014,7 +1014,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_destroyer
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_destroyer
 		cost = 5.00
 		prerequisite = {
 			focus = CRO_submarine
@@ -1034,7 +1034,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_pro2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
 			focus = CRO_industrial
@@ -1055,7 +1055,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_heavy
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_fighter
 		cost = 5.00
 		prerequisite = {
 			focus = CRO_air_focus
@@ -1066,7 +1066,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_tactical
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_bomber
 		cost = 5.00
 		prerequisite = {
 			focus = CRO_heavy
@@ -1088,7 +1088,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_coast
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_coastal_fort
 		cost = 0.00
 		prerequisite = {
 			focus = CRO_navy_awakening
@@ -1099,7 +1099,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_light
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_fighter2
 		cost = 5.00
 		prerequisite = {
 			focus = CRO_air_focus
@@ -1122,7 +1122,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_cas
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_CAS
 		cost = 5.00
 		prerequisite = {
 			focus = CRO_light
@@ -1142,7 +1142,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_air
-		icon = GFX_goal_unknown
+		icon = GFX_focus_eng_special_air_service
 		cost = 5.00
 		prerequisite = {
 			focus = CRO_tactical
@@ -1159,7 +1159,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_apologize_serbs
-		icon = GFX_goal_unknown
+		icon = GFX_focus_invite_yugoslavia
 		cost = 7.00
 		prerequisite = {
 			focus = CRO_democracy_triumphs
@@ -1176,7 +1176,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_compensate_serbs
-		icon = GFX_goal_unknown
+		icon = GFX_focus_man_claim_the_mandate_of_heaven
 		cost = 7.00
 		prerequisite = {
 			focus = CRO_apologize_serbs
@@ -1190,7 +1190,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_desegregate_serbs
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_alliance
 		cost = 7.00
 		prerequisite = {
 			focus = CRO_compensate_serbs
@@ -1207,7 +1207,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_bosnian_question
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_more_territorial_claims
 		cost = 7.00
 		prerequisite = {
 			focus = CRO_desegregate_serbs
@@ -1226,7 +1226,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_empire
-		icon = GFX_goal_unknown
+		icon = GFX_focus_up_joan_of_arc
 		cost = 7.00
 		prerequisite = {
 			focus = CRO_ethnostate
@@ -1243,16 +1243,16 @@ focus_tree = {
 			804 = {
 				add_core_of = CRO
 			}
-			 hidden_effect = { id = news.389 hours = 6}
+			 hidden_effect = {
+			 news_event = {
+			 id = news.389 hours = 6
+			 } 
+			}
 		}
-
-
-		
-
 	}
 	focus = {
 		id = CRO_demand_dalmatia
-		icon = GFX_goal_unknown
+		icon = GFX_focus_usa_attack_italy
 		cost = 7.00
 		prerequisite = {
 			focus = CRO_self_actualization
@@ -1268,7 +1268,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_nuclear
-		icon = GFX_goal_unknown
+		icon = GFX_focus_wonderweapons
 		cost = 5.00
 		prerequisite = {
 			focus = CRO_con1
@@ -1298,7 +1298,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_research
-		icon = GFX_goal_unknown
+		icon = GFX_focus_research
 		cost = 5.00
 		prerequisite = {
 			focus = CRO_con1
@@ -1324,7 +1324,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_secret
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_secret_weapon
 		cost = 5.00
 		prerequisite = {
 			focus = CRO_con1
@@ -1357,7 +1357,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_large
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_doctrines_tactics
 		cost = 5.00
 		prerequisite = {
 			focus = CRO_navy_awakening
@@ -1376,7 +1376,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_cruiser
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_cruiser
 		cost = 5.00
 		prerequisite = {
 			focus = CRO_large
@@ -1397,7 +1397,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRO_capital
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_navy_battleship2
 		cost = 5.00
 		prerequisite = {
 			focus = CRO_cruiser

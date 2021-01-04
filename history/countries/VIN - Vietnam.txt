@@ -117,6 +117,13 @@ create_country_leader = {
 	desc = "POLITICS_NGUYEN_AN_NINH_DESC"
 	picture = "gfx/leaders/VIE/Portrait_INC_Nguyen_An_Ninh.tga"
 	expire = "1974.8.25"
+	ideology = anarchism_subtype
+}
+create_country_leader = {
+	name = "Nguyen An Ninh"
+	desc = "POLITICS_NGUYEN_AN_NINH_DESC"
+	picture = "gfx/leaders/VIE/Portrait_INC_Nguyen_An_Ninh.tga"
+	expire = "1974.8.25"
 	ideology = radical_socialism_subtype
 }
 create_country_leader = {
@@ -124,7 +131,7 @@ create_country_leader = {
 	desc = "POLITICS_NGUYEN_TAI_HOC_DESC"
 	picture = "gfx/leaders/VIE/Portrait_INC_Nguyen_Tai_Hoc.tga"
 	expire = "1977.6.19"
-	ideology = social_democrat_subtype
+	ideology = social_democracy_subtype
 }
 create_country_leader = {
 	name = "Bui Quang Chieu"
@@ -142,36 +149,25 @@ create_country_leader = {
 	name = "Bui Quang Chieu"
 	picture = "gfx/leaders/VIE/Portrait_INC_Bui_Quang_Chieu.tga"
 	expire = "1962.1.11"
-	ideology = social_conservative_subtype
+	ideology = traditional_conservatism_subtype
 }
 create_country_leader = {
 	name = "Truong Tu Anh"
 	picture = "gfx/leaders/VIE/Portrait_INC_Truong_Tu_Anh.tga"
 	expire = "1946.12.5"
-	ideology = authoritarian_democrat_subtype
+	ideology = totalitarianism_subtype
 }
 create_country_leader = {
 	name = "Truong Tu Anh"
 	picture = "gfx/leaders/VIE/Portrait_INC_Truong_Tu_Anh.tga"
 	expire = "1946.12.5"
-	ideology = paternal_autocrat_subtype
+	ideology = monarchism_subtype
 }
 create_country_leader = {
 	name = "Truong Tu Anh"
 	picture = "gfx/leaders/VIE/Portrait_INC_Truong_Tu_Anh.tga"
 	expire = "1946.12.5"
-	ideology = national_populism_subtype
-}
-
-
-create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-	expire = "1965.1.1"
 	ideology = nationalism_subtype
-	traits = {
-		#
-	}
 }
 create_country_leader = {
 		name = "Jonas Lote"

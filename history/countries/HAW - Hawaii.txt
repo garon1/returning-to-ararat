@@ -44,7 +44,7 @@ set_convoys = 20
 	}
 }
 set_politics = {
-	ruling_party = social_liberalism
+	ruling_party = social_liberal
 	last_election = "1936.1.1"
 	elections_allowed = no
 }
@@ -52,7 +52,7 @@ set_popularities = {
 	social_democracy = 38
 	nationalism = 6
 	syndicalism = 6
-	social_liberalism = 50
+	social_liberal = 50
 }
 
 create_country_leader = {

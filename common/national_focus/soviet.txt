@@ -12,7 +12,7 @@ focus_tree = {
 	default = no
 	focus = {
 		id = SOV_glory
-		icon = GFX_goal_unknown
+		icon = GFX_goal_support_fascism
 		cost = 7.00
 		x = 28
 		y = 0
@@ -23,7 +23,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_army
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_allies_build_infantry
 		cost = 5.00
 		x = 13
 		y = 0
@@ -34,7 +34,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_industrial
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_cavalry
 		cost = 5.00
 		x = 4
 		y = 0
@@ -45,7 +45,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_naval_awakening
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 5.00
 		x = 21
 		y = 4
@@ -56,7 +56,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_air
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_build_airforce
 		cost = 5.00
 		x = 19
 		y = 0
@@ -67,7 +67,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_con1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5.00
 		prerequisite = {
 			focus = SOV_industrial
@@ -88,7 +88,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_con2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5.00
 		prerequisite = {
 			focus = SOV_industrial
@@ -109,7 +109,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_con3
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5.00
 		prerequisite = {
 			focus = SOV_con1
@@ -133,7 +133,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_con4
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5.00
 		prerequisite = {
 			focus = SOV_con1
@@ -157,7 +157,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_infrastructure
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_infrastructure
 		cost = 5.00
 		prerequisite = {
 			focus = SOV_industrial
@@ -224,7 +224,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_infrastructure2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_infrastructure
 		cost = 5.00
 		prerequisite = {
 			focus = SOV_infrastructure
@@ -291,7 +291,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_pro1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
 			focus = SOV_industrial
@@ -312,7 +312,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_pro2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
 			focus = SOV_industrial
@@ -333,7 +333,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_pro3
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
 			focus = SOV_pro1
@@ -357,7 +357,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_pro4
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
 			focus = SOV_pro1
@@ -381,7 +381,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_research
-		icon = GFX_goal_unknown
+		icon = GFX_focus_research
 		cost = 7.00
 		prerequisite = {
 			focus = SOV_con3
@@ -407,7 +407,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_nuclear
-		icon = GFX_goal_unknown
+		icon = GFX_focus_wonderweapons
 		cost = 5.00
 		prerequisite = {
 			focus = SOV_con3
@@ -440,7 +440,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_secret
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_secret_weapon
 		cost = 5.00
 		prerequisite = {
 			focus = SOV_con3
@@ -476,7 +476,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_infantry
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_axis_build_infantry
 		cost = 5.00
 		prerequisite = {
 			focus = SOV_army
@@ -496,7 +496,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_artillery
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_artillery2
 		cost = 5.00
 		prerequisite = {
 			focus = SOV_infantry
@@ -516,7 +516,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_mobile_tanks
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_tanks
 		cost = 5.00
 		prerequisite = {
 			focus = SOV_artillery
@@ -530,7 +530,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_special_forces
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_special_forces
 		cost = 5.00
 		prerequisite = {
 			focus = SOV_mobile_tanks
@@ -555,7 +555,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_doctorine
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_doctrines
 		cost = 5.00
 		prerequisite = {
 			focus = SOV_army
@@ -575,7 +575,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_doctorine2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_doctrines
 		cost = 5.00
 		prerequisite = {
 			focus = GER_doctorine
@@ -595,7 +595,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_assault
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_amphibious_assault
 		cost = 5.00
 		prerequisite = {
 			focus = GER_doctorine2
@@ -609,7 +609,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_mobile
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_production
 		cost = 5.00
 		prerequisite = {
 			focus = SOV_assault
@@ -628,7 +628,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_defense
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_small_arms
 		cost = 5.00
 		prerequisite = {
 			focus = SOV_army
@@ -648,7 +648,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_fortify4
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_military
 		cost = 5.00
 		prerequisite = {
 			focus = SOV_defense
@@ -701,7 +701,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_mechanization
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_motorized
 		cost = 5.00
 		prerequisite = {
 			focus = SOV_fortify4
@@ -720,7 +720,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_armor
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_defence
 		cost = 5.00
 		prerequisite = {
 			focus = SOV_mechanization
@@ -739,7 +739,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_army1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_allies_build_infantry
 		cost = 5.00
 		prerequisite = {
 			focus = SOV_special_forces
@@ -759,7 +759,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_heavy
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_fighter
 		cost = 5.00
 		prerequisite = {
 			focus = SOV_air
@@ -781,7 +781,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_tactical
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_bomber
 		cost = 5.00
 		prerequisite = {
 			focus = SOV_heavy
@@ -801,7 +801,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_light
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_fighter2
 		cost = 5.00
 		prerequisite = {
 			focus = SOV_air
@@ -824,7 +824,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_cas
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_CAS
 		cost = 5.00
 		prerequisite = {
 			focus = SOV_light
@@ -844,7 +844,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_air2
-		icon = GFX_goal_unknown
+		icon = GFX_focus_eng_special_air_service
 		cost = 5.00
 		prerequisite = {
 			focus = SOV_air
@@ -864,7 +864,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_coast
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_coastal_fort
 		cost = 5.00
 		prerequisite = {
 			focus = SOV_naval_awakening
@@ -978,7 +978,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_propaganda
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_forceful_treaty
 		cost = 7.00
 		prerequisite = {
 			focus = SOV_glory
@@ -992,7 +992,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_large
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_doctrines_tactics
 		cost = 5.00
 		prerequisite = {
 			focus = SOV_naval_awakening
@@ -1011,7 +1011,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_cruiser
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_cruiser
 		cost = 5.00
 		prerequisite = {
 			focus = SOV_large
@@ -1032,7 +1032,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_capital
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_navy_battleship2
 		cost = 5.00
 		prerequisite = {
 			focus = SOV_cruiser
@@ -1055,7 +1055,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_espionage
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_intelligence_exchange
 		cost = 7.00
 		prerequisite = {
 			focus = SOV_propaganda
@@ -1069,7 +1069,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_prepare_for_war
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_political_pressure
 		cost = 7.00
 		prerequisite = {
 			focus = SOV_glory
@@ -1083,7 +1083,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_adaptation
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_defence
 		cost = 7.00
 		prerequisite = {
 			focus = SOV_prepare_for_war
@@ -1097,7 +1097,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_mobilization_law
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_military_deal
 		cost = 7.00
 		prerequisite = {
 			focus = SOV_espionage
@@ -1114,7 +1114,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_speed_up
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_industry_3
 		cost = 7.00
 		prerequisite = {
 			focus = SOV_prepare_for_war
@@ -1135,7 +1135,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_border_fortify
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_industry_1
 		cost = 7.00
 		prerequisite = {
 			focus = SOV_glory
@@ -1176,7 +1176,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_militarized_schools1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_manpower
 		cost = 7.00
 		prerequisite = {
 			focus = SOV_border_fortify
@@ -1190,7 +1190,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_reassure_public
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_concessions
 		cost = 7.00
 		prerequisite = {
 			focus = SOV_militarized_schools1
@@ -1208,7 +1208,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_remove_poorness
-		icon = GFX_goal_unknown
+		icon = GFX_focus_focus_fra_fascist_threat
 		cost = 7.00
 		prerequisite = {
 			focus = SOV_mobilization_law
@@ -1225,7 +1225,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_announce_ambitions
-		icon = GFX_goal_unknown
+		icon = GFX_focus_eng_global_defense
 		cost = 7.00
 		prerequisite = {
 			focus = SOV_remove_poorness
@@ -1245,7 +1245,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_strike_europe
-		icon = GFX_goal_unknown
+		icon = GFX_focus_BUL_condemn_macedonian_organizations
 		cost = 7.00
 		prerequisite = {
 			focus = SOV_announce_ambitions
@@ -1286,7 +1286,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_strike_asia
-		icon = GFX_goal_unknown
+		icon = GFX_focus_chi_one_china_policy
 		cost = 7.00
 		prerequisite = {
 			focus = SOV_announce_ambitions
@@ -1327,7 +1327,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_strike_union_east
-		icon = GFX_goal_unknown
+		icon = GFX_goal_poland_goal
 		cost = 7.00
 		prerequisite = {
 			focus = SOV_strike_europe
@@ -1345,7 +1345,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_take_down_UCA
-		icon = GFX_goal_unknown
+		icon = GFX_focus_eng_chiefs_of_staff_committee
 		cost = 7.00
 		prerequisite = {
 			focus = SOV_strike_europe
@@ -1363,7 +1363,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_strike_kaz
-		icon = GFX_goal_unknown
+		icon = GFX_focus_focus_fra_maquis
 		cost = 7.00
 		prerequisite = {
 			focus = SOV_strike_asia
@@ -1381,7 +1381,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_annex_japan
-		icon = GFX_goal_unknown
+		icon = GFX_focus_attack_japan
 		cost = 7.00
 		prerequisite = {
 			focus = SOV_strike_asia
@@ -1399,7 +1399,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_annex_DOWA
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_attack_kurdistan
 		cost = 7.00
 		prerequisite = {
 			focus = SOV_strike_kaz
@@ -1420,7 +1420,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_annex_greece
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_attack_greece
 		cost = 7.00
 		prerequisite = {
 			focus = SOV_strike_union_east
@@ -1442,7 +1442,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_annex_TAJ
-		icon = GFX_goal_unknown
+		icon = GFX_focus_attack_soviet
 		cost = 7.00
 		prerequisite = {
 			focus = SOV_strike_kaz
@@ -1463,7 +1463,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_flexible
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_build_navy
 		cost = 5.00
 		prerequisite = {
 			focus = SOV_naval_awakening
@@ -1486,7 +1486,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_flexible1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_submarine
 		cost = 5.00
 		prerequisite = {
 			focus = SOV_flexible
@@ -1506,7 +1506,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_destroyer
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_destroyer
 		cost = 5.00
 		prerequisite = {
 			focus = SOV_flexible1

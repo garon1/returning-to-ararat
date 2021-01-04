@@ -2,203 +2,203 @@
 spriteTypes = {
 spriteType = {
 		name = "GFX_idea_dont_join_faction"
-		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+		texturefile = "gfx/interface/ideas/idea_ig_faben.dds"
 	}
 spriteType = {
 		name = "GFX_idea_LOA_reconstruction2"
-		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+		texturefile = "gfx/interface/ideas/idea_hun_treaty_of_trianon.dds"
 	}
 spriteType = {
 		name = "GFX_idea_LOA_water"
-		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+		texturefile = "gfx/interface/ideas/idea_por_hydroelectric_power.dds"
 	}
 spriteType = {
 		name = "GFX_idea_LOA_rations"
-		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+		texturefile = "gfx/interface/ideas/spr_torchbearers_of_tomorrow.dds"
 	}
 spriteType = {
 		name = "GFX_idea_LOA_recovering2"
-		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+		texturefile = "gfx/interface/ideas/triumphant_will.dds"
 	}
 spriteType = {
 		name = "GFX_idea_LOA_recovering1"
-		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+		texturefile = "gfx/interface/ideas/the_war_to_end_all_wars.dds"
 	}
 spriteType = {
 		name = "GFX_idea_LOA_recovering"
-		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+		texturefile = "gfx/interface/ideas/spr_collectivized_society.dds"
 	}
 spriteType = {
 		name = "GFX_idea_LOA_syndicalists"
-		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+		texturefile = "gfx/interface/ideas/idea_chi_war_of_resistance3.dds"
 	}
 spriteType = {
 		name = "GFX_idea_LOA_federalists"
-		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+		texturefile = "gfx/interface/ideas/idea_chi_war_of_resistance2.dds"
 	}
 spriteType = {
 		name = "GFX_idea_LOA_confederates"
-		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+		texturefile = "gfx/interface/ideas/idea_chi_war_of_resistance.dds"
 	}
 spriteType = {
 		name = "GFX_idea_BRE_expansion"
-		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+		texturefile = "gfx/interface/ideas/idea_eng_steady_as_she_goes.dds"
 	}
 spriteType = {
 		name = "GFX_idea_BRE_oswald_mosley"
-		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+		texturefile = "gfx/interface/ideas/idea_eng_the_kings_party.dds"
 	}
 spriteType = {
 		name = "GFX_idea_BRE_militaristic"
-		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+		texturefile = "gfx/interface/ideas/idea_por_volunteers_in_the_war.dds"
 	}
 spriteType = {
 		name = "GFX_idea_PUA_women_working"
-		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+		texturefile = "gfx/interface/ideas/idea_por_volunteers_in_the_war2.dds"
 	}
 spriteType = {
 		name = "GFX_idea_PUA_guarentee_rights"
-		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+		texturefile = "gfx/interface/ideas/idea_undisturbed_isolation.dds"
 	}
 spriteType = {
 		name = "GFX_idea_PUA_new_education"
-		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+		texturefile = "gfx/interface/ideas/idea_gre_schachtplan.dds"
 	}
 spriteType = {
 		name = "GFX_idea_PUA_national_unions"
-		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+		texturefile = "gfx/interface/ideas/idea_usa_desegregation_1.dds"
 	}
 spriteType = {
 		name = "GFX_idea_PUA_nationalization_industry"
-		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+		texturefile = "gfx/interface/ideas/idea_usa_magic.dds"
 	}	
 spriteType = {
 		name = "GFX_idea_PUA_american_class"
-		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+		texturefile = "gfx/interface/ideas/idea_usa_great_depression_3.dds"
 	}
 spriteType = {
 		name = "GFX_idea_PUA_civil_war_victory"
-		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+		texturefile = "gfx/interface/ideas/idea_chi_war_of_resistance.dds"
 	}
 spriteType = {
 		name = "GFX_idea_VIN_interference"
-		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+		texturefile = "gfx/interface/ideas/idea_chi_war_of_resistance3.dds"
 	}
 spriteType = {
 		name = "GFX_idea_VIN_food_distribution"
-		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+		texturefile = "gfx/interface/ideas/idea_tur_golden_age_of_the_wolf.dds"
 	}
 spriteType = {
 		name = "GFX_idea_VIN_abolished_privatization"
-		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+		texturefile = "gfx/interface/ideas/idea_tur_disorganised_armed_forces.dds"
 	}
 spriteType = {
 		name = "GFX_idea_VIN_poor_construction2"
-		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+		texturefile = "gfx/interface/ideas/spr_subvert_soviet_control.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_VIN_french_payments"
-		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+		texturefile = "gfx/interface/ideas/idea_gre_debt_to_the_ifc.dds"
 	}
 spriteType = {
 		name = "GFX_idea_VIN_poor_construction"
-		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+		texturefile = "gfx/interface/ideas/idea_generic_industrial_concern_1.dds"
 	}
 spriteType = {
 		name = "GFX_idea_CRO_croats"
-		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+		texturefile = "gfx/interface/ideas/idea_prc_low_popular_support2.dds"
 	}
 spriteType = {
 		name = "GFX_idea_CRO_changes"
-		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+		texturefile = "gfx/interface/ideas/FRA_scw_intervention_nationalists_focus.dds"
 	}
 spriteType = {
 		name = "GFX_idea_CRO_dreams"
-		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+		texturefile = "gfx/interface/ideas/FRA_national_mobilization_focus.dds"
 	}
 spriteType = {
 		name = "GFX_idea_CRO_deconscription"
-		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+		texturefile = "gfx/interface/ideas/idea_tfv_can_conscription_crisis.dds"
 	}
 spriteType = {
 		name = "GFX_idea_CRO_nationalism"
-		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+		texturefile = "gfx/interface/ideas/idea_rom_balkan_dominance.dds"
 	}
 spriteType = {
 		name = "GFX_idea_CRO_serb_guerillas"
-		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+		texturefile = "gfx/interface/ideas/idea_mex_revolutionary_army.dds"
 	}
 spriteType = {
 		name = "GFX_idea_CRO_divided"
-		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+		texturefile = "gfx/interface/ideas/idea_mex_politicised_army_2.dds"
 	}
 spriteType = {
 		name = "GFX_idea_CHL_abolish_unions"
-		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+		texturefile = "gfx/interface/ideas/idea_jap_interservice_rivalry_navy_strengthened.dds"
 	}
 spriteType = {
 		name = "GFX_idea_CHL_police"
-		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+		texturefile = "gfx/interface/ideas/idea_low_economic_mobilisation.dds"
 	}
 spriteType = {
 		name = "GFX_idea_CHL_blackshirts"
-		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+		texturefile = "gfx/interface/ideas/idea_generic_fascism_drift_2.dds"
 	}
 spriteType = {
 		name = "GFX_idea_CHL_change"
-		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+		texturefile = "gfx/interface/ideas/idea_isolation.dds"
 	}
 spriteType = {
 		name = "GFX_idea_CHL_healthcare"
-		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+		texturefile = "gfx/interface/ideas/idea_hol_shell_shocked_spectator.dds"
 	}
 spriteType = {
 		name = "GFX_idea_CHL_currency_reforms"
-		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+		texturefile = "gfx/interface/ideas/idea_hol_the_foundations_of_defense.dds"
 	}
 spriteType = {
 		name = "GFX_idea_UCA_russian_colossus"
-		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+		texturefile = "gfx/interface/ideas/idea_hol_depillarization.dds"
 	}
 spriteType = {
 		name = "GFX_idea_UCA_diversity"
-		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+		texturefile = "gfx/interface/ideas/idea_generic_reserve_divisions.dds"
 	}
 spriteType = {
 		name = "GFX_idea_UCA_circassian_repatriation"
-		texturefile = "gfx/interface/ideas/fourth_international.dds"
+		texturefile = "gfx/interface/ideas/idea_prc_low_popular_support3.dds"
 	}
 spriteType = {
 		name = "GFX_idea_USA_civil_war"
-		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+		texturefile = "gfx/interface/ideas/spa_recovering_from_the_civil_war.dds"
 	}
 spriteType = {
 		name = "GFX_idea_GER_will"
-		texturefile = "gfx/interface/ideas/idea_generic_electronics_concern_3.dds"
+		texturefile = "gfx/interface/ideas/idea_gre_agricultural_communes.dds"
 	}
 spriteType = {
 		name = "GFX_idea_GER_syndicalist_economy"
-		texturefile = "gfx/interface/ideas/fourth_international.dds"
+		texturefile = "gfx/interface/ideas/idea_generic_communist_army.dds"
 	}
 spriteType = {
 		name = "GFX_idea_JAP_for_puppets"
-		texturefile = "gfx/interface/ideas/idea_chi_warlord_integration.dds"
+		texturefile = "gfx/interface/ideas/idea_generic_army_war_college.dds"
 	}
 spriteType = {
 		name = "GFX_idea_JAP_mining"
-		texturefile = "gfx/interface/ideas/idea_chi_warlord_integration.dds"
+		texturefile = "gfx/interface/ideas/idea_generic_central_management.dds"
 	}
 spriteType = {
 		name = "GFX_idea_JAP_better_economy"
-		texturefile = "gfx/interface/ideas/idea_chi_warlord_integration.dds"
+		texturefile = "gfx/interface/ideas/idea_civilian_economy.dds"
 	}
 spriteType = {
 		name = "GFX_idea_JAP_free_drugs"
-		texturefile = "gfx/interface/ideas/idea_chi_warlord_integration.dds"
+		texturefile = "gfx/interface/ideas/idea_generic_deal_with_the_devil2.dds"
 	}
 spriteType = {
 		name = "GFX_idea_JAP_free_alchohol"
-		texturefile = "gfx/interface/ideas/generic_spy_political.dds"
+		texturefile = "gfx/interface/ideas/idea_generic_artillery_manufacturer_2.dds"
 	}
 spriteType = {
 		name = "GFX_idea_JAP_CHI_destabilization"

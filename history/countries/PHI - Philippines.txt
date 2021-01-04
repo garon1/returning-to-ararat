@@ -77,7 +77,7 @@ create_country_leader = {
 	name = "Elpidio Quirino"
 	picture = "gfx/leaders/PHI/Portrait_Philippines_Elpidio_Quirino.tga"
 	expire = "1960.1.1"
-	ideology = social_conservative_subtype
+	ideology = social_democracy_subtype
 }
 create_country_leader = {
 	name = "J. Antonio Araneta"
@@ -107,5 +107,20 @@ create_country_leader = {
 	name = "Crisanto Evangelista"
 	picture = "gfx/leaders/PHI/Portrait_Philippines_Crisanto_Evangelista.tga"
 	expire = "1960.1.1"
-	ideology = syndicalist_subtype
+	ideology = syndicalism_subtype
+}
+create_country_leader = {
+	name = "Crisanto Evangelista"
+	picture = "gfx/leaders/PHI/Portrait_Philippines_Crisanto_Evangelista.tga"
+	expire = "1960.1.1"
+	ideology = anarchism_subtype
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = monarchism_subtype
+	traits = {
+		#
+	}
 }

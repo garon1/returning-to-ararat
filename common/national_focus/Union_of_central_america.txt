@@ -10,7 +10,7 @@ focus_tree = {
 	default = no
 	focus = {
 		id = CAU_position_in_world
-		icon = GFX_goal_unknown
+		icon = GFX_focus_focus_fra_revolution_utmost
 		cost = 5.00
 		x = 9
 		y = 0
@@ -21,7 +21,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_begin_mobilization
-		icon = GFX_goal_unknown
+		icon = GFX_focus_chi_army_reform
 		cost = 7.00
 		x = 15
 		y = 6
@@ -37,7 +37,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_industrial
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_cavalry
 		cost = 5.00
 		x = 7
 		y = 11
@@ -48,7 +48,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_army
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_allies_build_infantry
 		cost = 5.00
 		x = 17
 		y = 10
@@ -59,7 +59,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_navy_awakening
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 5.00
 		x = 25
 		y = 0
@@ -70,7 +70,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_air_focus
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_build_airforce
 		cost = 5.00
 		x = 22
 		y = 4
@@ -81,7 +81,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_establish_politics
-		icon = GFX_goal_unknown
+		icon = GFX_focus_eng_expose_the_belly_of_the_bear
 		cost = 7.00
 		prerequisite = {
 			focus = CAU_position_in_world
@@ -102,7 +102,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_haiti_pact
-		icon = GFX_goal_unknown
+		icon = GFX_focus_chi_proclaim_rival_government
 		cost = 7.00
 		prerequisite = {
 			focus = CAU_establish_politics
@@ -121,7 +121,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_assist_research
-		icon = GFX_goal_unknown
+		icon = GFX_goal_continuous_research
 		cost = 7.00
 		prerequisite = {
 			focus = CAU_haiti_pact
@@ -138,7 +138,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_taj_distribute_karl_marx
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_soviet_politics
 		cost = 7.00
 		prerequisite = {
 			focus = CAU_assist_research
@@ -161,7 +161,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_ecuador_help
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ger_great_red_menace
 		cost = 7.00
 		prerequisite = {
 			focus = CAU_taj_distribute_karl_marx
@@ -180,7 +180,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_con2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5.00
 		prerequisite = {
 			focus = CAU_industrial
@@ -201,7 +201,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_con1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5.00
 		prerequisite = {
 			focus = CAU_industrial
@@ -222,7 +222,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_con4
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civilian
 		cost = 5.00
 		prerequisite = {
 			focus = CAU_con1
@@ -246,7 +246,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_infrastructure1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_infrastructure
 		cost = 5.00
 		prerequisite = {
 			focus = CAU_industrial
@@ -313,7 +313,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_infrastructure
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_infrastructure
 		cost = 5.00
 		prerequisite = {
 			focus = CAU_infrastructure1
@@ -380,7 +380,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_con3
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civilian
 		cost = 5.00
 		prerequisite = {
 			focus = CAU_con1
@@ -404,7 +404,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_root_out_opposition
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_military_mission
 		cost = 7.00
 		prerequisite = {
 			focus = CAU_establish_politics
@@ -421,7 +421,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_mandate_karl_marx
-		icon = GFX_goal_unknown
+		icon = GFX_focus_spr_unify_the_london_bureau
 		cost = 7.00
 		prerequisite = {
 			focus = CAU_root_out_opposition
@@ -435,7 +435,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_paramilitarism
-		icon = GFX_goal_unknown
+		icon = GFX_focus_hol_war_on_pacifism
 		cost = 7.00
 		prerequisite = {
 			focus = CAU_mandate_karl_marx
@@ -449,7 +449,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_pro1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
 			focus = CAU_industrial
@@ -470,7 +470,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_pro2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
 			focus = CAU_industrial
@@ -491,7 +491,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_pro3
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
 			focus = CAU_pro1
@@ -515,7 +515,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_youth
-		icon = GFX_goal_unknown
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
 		cost = 7.00
 		prerequisite = {
 			focus = CAU_paramilitarism
@@ -533,7 +533,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_pro4
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
 			focus = CAU_pro1
@@ -557,7 +557,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_nuclear
-		icon = GFX_goal_unknown
+		icon = GFX_focus_wonderweapons
 		cost = 5.00
 		prerequisite = {
 			focus = CAU_con3
@@ -587,7 +587,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_secret
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_secret_weapon
 		cost = 5.00
 		prerequisite = {
 			focus = CAU_con3
@@ -620,7 +620,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_research
-		icon = GFX_goal_unknown
+		icon = GFX_focus_research
 		cost = 5.00
 		prerequisite = {
 			focus = CAU_con3
@@ -646,7 +646,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_establish_homeland
-		icon = GFX_goal_unknown
+		icon = GFX_focus_usa_guarantee_the_american_dream
 		cost = 7.00
 		prerequisite = {
 			focus = CAU_position_in_world
@@ -670,7 +670,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_agricultural_collectivation
-		icon = GFX_goal_unknown
+		icon = GFX_focus_usa_reestablish_the_gold_standard
 		cost = 7.00
 		prerequisite = {
 			focus = CAU_establish_homeland
@@ -684,7 +684,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_choose_industry
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_industry_3
 		cost = 7.00
 		prerequisite = {
 			focus = CAU_agricultural_collectivation
@@ -698,7 +698,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_bonus_speed
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_socialist_science
 		cost = 7.00
 		prerequisite = {
 			focus = CAU_choose_industry
@@ -712,7 +712,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_call_for_revolution
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_provoke_border_clashes
 		cost = 7.00
 		prerequisite = {
 			focus = CAU_begin_mobilization
@@ -726,7 +726,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_build_military_factories
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_military_sphere
 		cost = 7.00
 		prerequisite = {
 			focus = CAU_bonus_speed
@@ -756,7 +756,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_expand_power
-		icon = GFX_goal_unknown
+		icon = GFX_focus_hol_legacy_of_the_de_zeven_provincien_mutiny
 		cost = 7.00
 		prerequisite = {
 			focus = CAU_call_for_revolution
@@ -770,7 +770,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_infantry
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_axis_build_infantry
 		cost = 5.00
 		prerequisite = {
 			focus = CAU_army
@@ -789,7 +789,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_artillery
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_artillery2
 		cost = 5.00
 		prerequisite = {
 			focus = CAU_infantry
@@ -808,7 +808,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_mobile_tanks
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_tanks
 		cost = 5.00
 		prerequisite = {
 			focus = CAU_artillery
@@ -822,7 +822,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_special_forces
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_special_forces
 		cost = 5.00
 		prerequisite = {
 			focus = CAU_mobile_tanks
@@ -847,7 +847,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_infantry0
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_commonwealth_build_infantry
 		cost = 7.00
 		prerequisite = {
 			focus = CAU_establish_homeland
@@ -862,7 +862,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_railway
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_infrastructure
 		cost = 7.00
 		prerequisite = {
 			focus = CAU_infantry0
@@ -896,7 +896,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_militarism
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_infrastructure
 		cost = 7.00
 		prerequisite = {
 			focus = CAU_begin_mobilization
@@ -910,7 +910,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_why_we_fight
-		icon = GFX_goal_unknown
+		icon = GFX_focus_prc_agrarian_socialism
 		cost = 7.00
 		prerequisite = {
 			focus = CAU_militarism
@@ -937,7 +937,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_incident_at_canal
-		icon = GFX_goal_unknown
+		icon = GFX_focus_spa_the_war_of_vengeance
 		cost = 7.00
 		prerequisite = {
 			focus = CAU_expand_power
@@ -965,7 +965,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_civilian_factories
-		icon = GFX_goal_unknown
+		icon = GFX_focus_spa_the_spanish_miracle
 		cost = 7.00
 		prerequisite = {
 			focus = CAU_infantry0
@@ -991,7 +991,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_expand_resources
-		icon = GFX_goal_unknown
+		icon = GFX_focus_spr_class_war
 		cost = 7.00
 		prerequisite = {
 			focus = CAU_railway
@@ -1043,7 +1043,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_electronics
-		icon = GFX_goal_unknown
+		icon = GFX_focus_secret_rearmament
 		cost = 7.00
 		prerequisite = {
 			focus = CAU_expand_resources
@@ -1062,7 +1062,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_ready_lets_go
-		icon = GFX_goal_unknown
+		icon = GFX_focus_TUR_reform_the_balkan_pact
 		cost = 7.00
 		prerequisite = {
 			focus = CAU_ecuador_help
@@ -1079,7 +1079,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_doctorine
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_doctrines
 		cost = 5.00
 		prerequisite = {
 			focus = CAU_army
@@ -1100,7 +1100,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_doctorine2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_doctrines
 		cost = 5.00
 		prerequisite = {
 			focus = CAU_doctorine
@@ -1120,7 +1120,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_assault
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_amphibious_assault
 		cost = 5.00
 		prerequisite = {
 			focus = CAU_doctorine2
@@ -1134,7 +1134,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_mobile
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_production
 		cost = 5.00
 		prerequisite = {
 			focus = CAU_assault
@@ -1153,7 +1153,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_heavy
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_fighter
 		cost = 5.00
 		prerequisite = {
 			focus = CAU_air_focus
@@ -1175,7 +1175,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_tactical
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_bomber
 		cost = 5.00
 		prerequisite = {
 			focus = CAU_heavy
@@ -1195,7 +1195,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_defense
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_small_arms
 		cost = 5.00
 		prerequisite = {
 			focus = CAU_army
@@ -1215,7 +1215,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_coastal_defense
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_military
 		cost = 5.00
 		prerequisite = {
 			focus = CAU_defense
@@ -1242,7 +1242,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_mechanization
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_motorized
 		cost = 5.00
 		prerequisite = {
 			focus = CAU_coastal_defense
@@ -1261,7 +1261,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_armor
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_defence
 		cost = 5.00
 		prerequisite = {
 			focus = CAU_mechanization
@@ -1280,7 +1280,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_flexible
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_build_navy
 		cost = 5.00
 		prerequisite = {
 			focus = CAU_navy_awakening
@@ -1303,7 +1303,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_submarine
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_submarine
 		cost = 5.00
 		prerequisite = {
 			focus = CAU_flexible
@@ -1323,7 +1323,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_destroyer
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_destroyer
 		cost = 5.00
 		prerequisite = {
 			focus = CAU_submarine
@@ -1343,7 +1343,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_light
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_fighter2
 		cost = 5.00
 		prerequisite = {
 			focus = CAU_air_focus
@@ -1366,7 +1366,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_cas1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_CAS
 		cost = 5.00
 		prerequisite = {
 			focus = CAU_light
@@ -1386,7 +1386,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_air
-		icon = GFX_goal_unknown
+		icon = GFX_focus_eng_special_air_service
 		cost = 5.00
 		prerequisite = {
 			focus = CAU_tactical
@@ -1403,7 +1403,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_coast
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_coastal_fort
 		cost = 5.00
 		prerequisite = {
 			focus = CAU_navy_awakening
@@ -1517,7 +1517,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_large_navy
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_doctrines_tactics
 		cost = 5.00
 		prerequisite = {
 			focus = CAU_navy_awakening
@@ -1536,7 +1536,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_cruiser
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_cruiser
 		cost = 5.00
 		prerequisite = {
 			focus = CAU_large_navy
@@ -1557,7 +1557,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAU_capital
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_battleship
 		cost = 5.00
 		prerequisite = {
 			focus = CAU_cruiser
@@ -1580,7 +1580,7 @@ focus_tree = {
 }
 	focus = {
 		id = CAU_arm_experience
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_allies_build_infantry
 		cost = 5.00
 		prerequisite = {
 			focus = CAU_special_forces

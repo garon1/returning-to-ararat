@@ -16,6 +16,14 @@ country_event = {
 	hours = 6
 }
 
+create_faction = "Defense Of The East"
+add_to_faction = UKR
+add_to_faction = CZE
+add_to_faction = ROM
+add_to_faction = SLO
+add_to_faction = FIN
+add_to_faction = EST
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -221,6 +229,28 @@ create_country_leader = {
 	desc = "POLITICS_WLADYSLAW_GOMULKA_DESC"
 	picture = "Portrait_Poland_Wladyslaw_Gomulka.dds"
 	expire = "1965.1.1"
+	ideology = radical_socialism_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Władysław Gomułka"
+	desc = "POLITICS_WLADYSLAW_GOMULKA_DESC"
+	picture = "Portrait_Poland_Wladyslaw_Gomulka.dds"
+	expire = "1965.1.1"
+	ideology = anarchism_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Władysław Gomułka"
+	desc = "POLITICS_WLADYSLAW_GOMULKA_DESC"
+	picture = "Portrait_Poland_Wladyslaw_Gomulka.dds"
+	expire = "1965.1.1"
 	ideology = syndicalism_subtype
 	traits = {
 		#
@@ -233,6 +263,97 @@ create_country_leader = {
 	picture = "GFX_POL_wincenty_witos"
 	expire = "1965.1.1"
 	ideology = traditional_conservatism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = nationalism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = totalitarianism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = syndicalism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = market_socialism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = anarchism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = monarchism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = radical_socialism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = market_liberal_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = social_democracy_subtype
 	traits = {
 		#
 	}

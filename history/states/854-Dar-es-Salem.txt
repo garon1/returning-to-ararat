@@ -7,9 +7,16 @@ state={
 	manpower=5000938
 	state_category=town
 	history={
+victory_points = {
+			2196 1 
+		}
 		owner = BAF
 		buildings = {
 			infrastructure = 2
+2196 = {
+				naval_base = 2
+
+			}
 		}
 		add_core_of = TZN
 

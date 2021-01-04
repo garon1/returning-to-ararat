@@ -17,7 +17,7 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	market_liberalism = 35
+	market_liberal = 35
 	nationalism = 25
 	radical_socialism = 30
 	totalitarianism = 10

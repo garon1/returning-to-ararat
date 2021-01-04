@@ -10,7 +10,7 @@ focus_tree = {
 	default = no
 	focus = {
 		id = LOA_civil_war_victory
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ger_reichskommisariats
 		cost = 7.00
 		x = 9
 		y = 0
@@ -24,7 +24,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_army
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_allies_build_infantry
 		cost = 5.00
 		x = 19
 		y = 0
@@ -35,7 +35,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_industrial
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_cavalry
 		cost = 5.00
 		x = 28
 		y = 0
@@ -46,7 +46,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_naval_awakening
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 5.00
 		x = 38
 		y = 0
@@ -57,7 +57,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_air_focus
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_build_airforce
 		cost = 5.00
 		x = 2
 		y = 0
@@ -68,7 +68,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_heavy
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_fighter
 		cost = 5.00
 		prerequisite = {
 			focus = LOA_air_focus
@@ -90,7 +90,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_tactical
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_bomber
 		cost = 5.00
 		prerequisite = {
 			focus = LOA_heavy
@@ -110,7 +110,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_light
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_fighter2
 		cost = 5.00
 		prerequisite = {
 			focus = LOA_air_focus
@@ -121,7 +121,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_cas
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_CAS
 		cost = 5.00
 		prerequisite = {
 			focus = LOA_light
@@ -144,7 +144,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_air
-		icon = GFX_goal_unknown
+		icon = GFX_focus_eng_special_air_service
 		cost = 5.00
 		prerequisite = {
 			focus = LOA_tactical
@@ -161,7 +161,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_reconstruction
-		icon = GFX_goal_unknown
+		icon = GFX_goal_continuous_boost_freedom
 		cost = 7.00
 		prerequisite = {
 			focus = LOA_civil_war_victory
@@ -182,7 +182,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_try_syndies
-		icon = GFX_goal_unknown
+		icon = GFX_focus_mex_arrest_general_cedillo
 		cost = 7.00
 		prerequisite = {
 			focus = LOA_reconstruction
@@ -196,7 +196,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_purge_syndies
-		icon = GFX_goal_unknown
+		icon = GFX_focus_hun_assassinate_horthy
 		cost = 7.00
 		prerequisite = {
 			focus = LOA_try_syndies
@@ -210,7 +210,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_try_federalists
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_strike_at_democracy2
 		cost = 7.00
 		prerequisite = {
 			focus = LOA_reconstruction
@@ -224,7 +224,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_purge_federalists
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ger_strike_at_the_source
 		cost = 7.00
 		prerequisite = {
 			focus = LOA_try_federalists
@@ -238,7 +238,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_try_confederates
-		icon = GFX_goal_unknown
+		icon = GFX_focus_usa_honor_the_confederacy
 		cost = 7.00
 		prerequisite = {
 			focus = LOA_reconstruction
@@ -252,7 +252,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_stop_confederate_resistance
-		icon = GFX_goal_unknown
+		icon = GFX_focus_usa_guarantee_the_american_dream
 		cost = 7.00
 		prerequisite = {
 			focus = LOA_try_confederates
@@ -266,7 +266,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_reconstruct_population
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_consumer_goods
 		cost = 7.00
 		prerequisite = {
 			focus = LOA_purge_syndies
@@ -292,7 +292,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_civil_war_statues
-		icon = GFX_goal_unknown
+		icon = GFX_focus_up_joan_of_arc
 		cost = 7.00
 		prerequisite = {
 			focus = LOA_reconstruct_population
@@ -306,7 +306,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_food_rations
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_concessions
 		cost = 7.00
 		prerequisite = {
 			focus = LOA_reconstruct_population
@@ -320,7 +320,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_infantry
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_axis_build_infantry
 		cost = 5.00
 		prerequisite = {
 			focus = LOA_army
@@ -339,7 +339,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_artillery
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_artillery2
 		cost = 5.00
 		prerequisite = {
 			focus = LOA_infantry
@@ -358,7 +358,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_mobile_tanks
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_tanks
 		cost = 5.00
 		prerequisite = {
 			focus = LOA_artillery
@@ -372,7 +372,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_special_forces
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_special_forces
 		cost = 7.00
 		prerequisite = {
 			focus = LOA_mobile_tanks
@@ -397,7 +397,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_doctorine
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_doctrines
 		cost = 5.00
 		prerequisite = {
 			focus = LOA_army
@@ -417,7 +417,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_doctorine2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_doctrines
 		cost = 5.00
 		prerequisite = {
 			focus = LOA_doctorine
@@ -437,7 +437,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_assault
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_amphibious_assault
 		cost = 5.00
 		prerequisite = {
 			focus = LOA_doctorine2
@@ -451,7 +451,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_mobile
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_production
 		cost = 5.00
 		prerequisite = {
 			focus = LOA_assault
@@ -470,7 +470,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_defense
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_small_arms
 		cost = 5.00
 		prerequisite = {
 			focus = LOA_army
@@ -490,7 +490,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_fortify
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_military
 		cost = 5.00
 		prerequisite = {
 			focus = LOA_defense
@@ -517,7 +517,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_mechanization
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_motorized
 		cost = 5.00
 		prerequisite = {
 			focus = LOA_fortify
@@ -536,7 +536,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_armor
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_defence
 		cost = 5.00
 		prerequisite = {
 			focus = LOA_mechanization
@@ -555,7 +555,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_army1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_allies_build_infantry
 		cost = 5.00
 		prerequisite = {
 			focus = LOA_special_forces
@@ -575,7 +575,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_con1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5.00
 		prerequisite = {
 			focus = LOA_industrial
@@ -596,7 +596,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_con2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5.00
 		prerequisite = {
 			focus = LOA_industrial
@@ -617,7 +617,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_con3
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5.00
 		prerequisite = {
 			focus = LOA_con1
@@ -641,7 +641,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_con4
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5.00
 		prerequisite = {
 			focus = LOA_con1
@@ -665,7 +665,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_infra
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_infrastructure
 		cost = 5.00
 		prerequisite = {
 			focus = LOA_industrial
@@ -732,7 +732,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_infra2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_infrastructure
 		cost = 5.00
 		prerequisite = {
 			focus = LOA_infra
@@ -799,7 +799,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_pro1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
 			focus = LOA_industrial
@@ -820,7 +820,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_pro2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
 			focus = LOA_industrial
@@ -841,7 +841,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_pro3
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
 			focus = LOA_pro1
@@ -865,7 +865,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_pro4
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 0.00
 		prerequisite = {
 			focus = LOA_pro1
@@ -889,7 +889,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_nuclear
-		icon = GFX_goal_unknown
+		icon = GFX_focus_wonderweapons
 		cost = 5.00
 		prerequisite = {
 			focus = LOA_con3
@@ -919,7 +919,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_secret
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_secret_weapon
 		cost = 5.00
 		prerequisite = {
 			focus = LOA_con3
@@ -952,7 +952,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_research
-		icon = GFX_goal_unknown
+		icon = GFX_focus_research
 		cost = 5.00
 		prerequisite = {
 			focus = LOA_pro4
@@ -978,7 +978,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_flexible
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_build_navy
 		cost = 5.00
 		prerequisite = {
 			focus = LOA_naval_awakening
@@ -1001,7 +1001,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_destroyer
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_destroyer
 		cost = 5.00
 		prerequisite = {
 			focus = LOA_flexible
@@ -1021,7 +1021,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_submarine
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_submarine
 		cost = 5.00
 		prerequisite = {
 			focus = LOA_destroyer
@@ -1041,7 +1041,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_coast
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_coastal_fort
 		cost = 5.00
 		prerequisite = {
 			focus = LOA_naval_awakening
@@ -1155,7 +1155,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_honor_heritage
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_military_mission
 		cost = 7.00
 		prerequisite = {
 			focus = LOA_civil_war_statues
@@ -1169,7 +1169,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_bring_water_to_populace
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_industry_1
 		cost = 7.00
 		prerequisite = {
 			focus = LOA_food_rations
@@ -1183,7 +1183,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_industrialize_homeland
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_industry_2
 		cost = 7.00
 		prerequisite = {
 			focus = LOA_reconstruct_population
@@ -1204,7 +1204,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_reconstruction_done
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_strike_at_democracy3
 		cost = 7.00
 		prerequisite = {
 			focus = LOA_honor_heritage
@@ -1230,7 +1230,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_stay_in_lane
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_neutrality_focus
 		cost = 7.00
 		prerequisite = {
 			focus = LOA_reconstruction_done
@@ -1244,7 +1244,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_exert_influence
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_propaganda
 		cost = 7.00
 		prerequisite = {
 			focus = LOA_reconstruction_done
@@ -1258,7 +1258,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_join_russia
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_political_pressure
 		cost = 7.00
 		prerequisite = {
 			focus = LOA_stay_in_lane
@@ -1275,7 +1275,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_bring_canada
-		icon = GFX_goal_unknown
+		icon = GFX_focus_attack_canada
 		cost = 7.00
 		prerequisite = {
 			focus = LOA_exert_influence
@@ -1293,7 +1293,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_bring_mexico
-		icon = GFX_goal_unknown
+		icon = GFX_focus_attack_mexico
 		cost = 7.00
 		prerequisite = {
 			focus = LOA_bring_canada
@@ -1311,7 +1311,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_bring_caribbean
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_production
 		cost = 7.00
 		prerequisite = {
 			focus = LOA_bring_canada
@@ -1339,7 +1339,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_large
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_doctrines_tactics
 		cost = 5.00
 		prerequisite = {
 			focus = LOA_naval_awakening
@@ -1358,7 +1358,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_cruiser
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_cruiser
 		cost = 5.00
 		prerequisite = {
 			focus = LOA_large
@@ -1379,7 +1379,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LOA_capital
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_navy_battleship2
 		cost = 5.00
 		prerequisite = {
 			focus = LOA_cruiser

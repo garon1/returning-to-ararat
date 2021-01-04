@@ -391,12 +391,12 @@ focus_tree = {
 			completion_reward = {
 					add_opinion_modifier = {
 							target = ARM
-							modifier = social_democracy_leanings_good
+							modifier = democratic_leanings_good
 						}
 					ARM = {
 							add_opinion_modifier = {
 									target = GEO
-									modifier = social_democracy_leanings_good
+									modifier = democratic_leanings_good
 								}
 						}
 				}
@@ -1416,6 +1416,18 @@ focus_tree = {
 		icon = GFX_focus_wonderweapons
 		cost = 5.00
 		prerequisite = {
+			focus = GEO_con1
+		}
+		prerequisite = {
+			focus = GEO_con2
+		}
+		prerequisite = {
+			focus = GEO_pro1
+		}
+		prerequisite = {
+			focus = GEO_pro2
+		}
+		prerequisite = {
 			focus = GEO_infrastructure2
 		}
 		x = 39
@@ -1434,7 +1446,16 @@ focus_tree = {
 		icon = GFX_goal_generic_secret_weapon
 		cost = 5.00
 		prerequisite = {
-			focus = 
+			focus = GEO_con1
+		}
+		prerequisite = {
+			focus = GEO_con2
+		}
+		prerequisite = {
+			focus = GEO_pro1
+		}
+		prerequisite = {
+			focus = GEO_pro2
 		}
 		prerequisite = {
 			focus = GEO_infrastructure2
@@ -1458,13 +1479,19 @@ focus_tree = {
 		icon = GFX_focus_research
 		cost = 7.00
 		prerequisite = {
-			focus = 
+			focus = GEO_con1
+		}
+		prerequisite = {
+			focus = GEO_con2
+		}
+		prerequisite = {
+			focus = GEO_pro1
+		}
+		prerequisite = {
+			focus = GEO_pro2
 		}
 		prerequisite = {
 			focus = GEO_infrastructure2
-		}
-		prerequisite = {
-			focus = GEO_pro
 		}
 		x = 36
 		y = 3
@@ -1724,7 +1751,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GEO_capital
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_navy_battleship2
 		cost = 5.00
 		prerequisite = {
 			focus = GEO_cruiser
@@ -1747,7 +1774,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GEO_air
-		icon = GFX_goal_generic_navy_battleship
+		icon = GFX_focus_eng_special_air_service
 		cost = 5.00
 		prerequisite = {
 			focus = GEO_tactical

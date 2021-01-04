@@ -13,7 +13,7 @@ focus_tree = {
 	default = no
 	focus = {
 		id = GER_maintain_allies
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ger_great_red_menace
 		cost = 7.00
 		ai_will_do = {
 			factor = 1
@@ -58,7 +58,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_army
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_allies_build_infantry
 		cost = 5.00
 		x = 8
 		y = 0
@@ -69,7 +69,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_industrial
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_cavalry
 		cost = 5.00
 		x = 33
 		y = 0
@@ -80,7 +80,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_air_focus
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_build_airforce
 		cost = 5.00
 		x = 14
 		y = 0
@@ -91,7 +91,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_navy_awakening
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 5.00
 		x = 42
 		y = 0
@@ -102,7 +102,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_infantry
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_axis_build_infantry
 		cost = 5.00
 		prerequisite = {
 			focus = GER_army
@@ -122,7 +122,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_artillery
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_artillery2
 		cost = 5.00
 		prerequisite = {
 			focus = GER_infantry
@@ -142,7 +142,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_mobile_tanks
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_tanks
 		cost = 5.00
 		prerequisite = {
 			focus = GER_artillery
@@ -156,7 +156,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_special_forces
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_special_forces
 		cost = 5.00
 		prerequisite = {
 			focus = GER_mobile_tanks
@@ -181,7 +181,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_doctrine
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_doctrines
 		cost = 5.00
 		prerequisite = {
 			focus = GER_army
@@ -201,7 +201,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_doctrine2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_doctrines
 		cost = 5.00
 		prerequisite = {
 			focus = GER_doctrine
@@ -221,7 +221,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_assault
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_amphibious_assault
 		cost = 5.00
 		prerequisite = {
 			focus = GER_doctrine2
@@ -235,7 +235,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_mobile
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_production
 		cost = 5.00
 		prerequisite = {
 			focus = GER_assault
@@ -254,7 +254,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_defense1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_small_arms
 		cost = 5.00
 		prerequisite = {
 			focus = GER_army
@@ -274,7 +274,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_fortify3
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_military
 		cost = 5.00
 		prerequisite = {
 			focus = GER_defense1
@@ -327,7 +327,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_mechanization
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_motorized
 		cost = 5.00
 		prerequisite = {
 			focus = GER_fortify3
@@ -346,7 +346,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_armor
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_defence
 		cost = 5.00
 		prerequisite = {
 			focus = GER_mechanization
@@ -365,7 +365,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_army1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_allies_build_infantry
 		cost = 5.00
 		prerequisite = {
 			focus = GER_mobile
@@ -385,7 +385,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_heavy
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_fighter
 		cost = 5.00
 		prerequisite = {
 			focus = GER_air_focus
@@ -407,7 +407,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_tactical
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_bomber
 		cost = 5.00
 		prerequisite = {
 			focus = GER_heavy
@@ -427,7 +427,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_light
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_fighter2
 		cost = 5.00
 		prerequisite = {
 			focus = GER_air_focus
@@ -450,7 +450,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_cas1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_CAS
 		cost = 5.00
 		prerequisite = {
 			focus = GER_light
@@ -470,7 +470,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_air
-		icon = GFX_goal_unknown
+		icon = GFX_focus_eng_special_air_service
 		cost = 5.00
 		prerequisite = {
 			focus = GER_air_focus
@@ -490,7 +490,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_syndicalist_international
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_soviet_politics
 		cost = 7.00
 		prerequisite = {
 			focus = GER_maintain_allies
@@ -504,7 +504,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_begin_mobilization
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_military_mission
 		cost = 7.00
 		prerequisite = {
 			focus = GER_syndicalist_international
@@ -518,7 +518,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_agriculture
-		icon = GFX_goal_unknown
+		icon = GFX_focus_mex_privatisation
 		cost = 7.00
 		prerequisite = {
 			focus = GER_begin_mobilization
@@ -533,7 +533,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_harden_revolution
-		icon = GFX_goal_unknown
+		icon = GFX_focus_prc_proclaim_the_peoples_republic
 		cost = 7.00
 		prerequisite = {
 			focus = GER_agriculture
@@ -547,7 +547,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_appease_public
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_alliance
 		cost = 7.00
 		prerequisite = {
 			focus = GER_harden_revolution
@@ -561,7 +561,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_intervene_in_civil_war
-		icon = GFX_goal_unknown
+		icon = GFX_focus_spr_war_of_independence
 		cost = 7.00
 		prerequisite = {
 			focus = GER_maintain_allies
@@ -608,7 +608,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_invite_spain
-		icon = GFX_goal_unknown
+		icon = GFX_focus_spr_maintain_the_republic
 		cost = 7.00
 		prerequisite = {
 			focus = GER_intervene_in_civil_war
@@ -643,8 +643,8 @@ focus_tree = {
 
 	}
 	focus = {
-		id = GER_revolution_begin!
-		icon = GFX_goal_unknown
+		id = GER_revolution_begin
+		icon = GFX_focus_spr_anarchism_knows_no_borders
 		cost = 7.00
 		prerequisite = {
 			focus = GER_invite_spain
@@ -658,10 +658,10 @@ focus_tree = {
 	}
 	focus = {
 		id = "Influence The South"
-		icon = GFX_goal_unknown
+		icon = GFX_focus_TUR_reform_the_balkan_pact
 		cost = 11.00
 		prerequisite = {
-			focus = GER_revolution_begin!
+			focus = GER_revolution_begin
 		}
 		x = 18
 		y = 4
@@ -684,10 +684,10 @@ focus_tree = {
 	}
 	focus = {
 		id = "Influence Czechia"
-		icon = GFX_goal_unknown
+		icon = GFX_focus_focus_fra_national_resistance_council
 		cost = 11.00
 		prerequisite = {
-			focus = GER_revolution_begin!
+			focus = GER_revolution_begin
 		}
 		x = 22
 		y = 4
@@ -704,7 +704,7 @@ focus_tree = {
 	}
 	focus = {
 		id = "Maintain Status"
-		icon = GFX_goal_unknown
+		icon = GFX_focus_spr_class_war
 		cost = 7.00
 		prerequisite = {
 			focus = GER_maintain_allies
@@ -725,7 +725,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_fortify
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_military
 		cost = 7.00
 		prerequisite = {
 			focus = "Maintain Status"
@@ -757,7 +757,7 @@ focus_tree = {
 	}
 	focus = {
 		id = "Fortify The State"
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_military
 		cost = 7.00
 		prerequisite = {
 			focus = "Maintain Status"
@@ -789,7 +789,7 @@ focus_tree = {
 	}
 	focus = {
 		id = "Align Switzerland"
-		icon = GFX_goal_unknown
+		icon = GFX_focus_attack_switzerland
 		cost = 7.00
 		prerequisite = {
 			focus = "Fortify The State"
@@ -806,7 +806,7 @@ focus_tree = {
 	}
 	focus = {
 		id = "Cut Off Russia"
-		icon = GFX_goal_unknown
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
 		cost = 7.00
 		prerequisite = {
 			focus = "Align Switzerland"
@@ -823,7 +823,7 @@ focus_tree = {
 	}
 	focus = {
 		id = "Announce Ambitions"
-		icon = GFX_goal_unknown
+		icon = GFX_focus_usa_tank_destroyer_doctrine
 		cost = 7.00
 		prerequisite = {
 			focus = "Cut Off Russia"
@@ -837,7 +837,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_con1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5.00
 		prerequisite = {
 			focus = GER_industrial
@@ -858,7 +858,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_con2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5.00
 		prerequisite = {
 			focus = GER_industrial
@@ -879,7 +879,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_con3
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civilian
 		cost = 5.00
 		prerequisite = {
 			focus = GER_con2
@@ -903,7 +903,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_con4
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civilian
 		cost = 5.00
 		prerequisite = {
 			focus = GER_con2
@@ -927,7 +927,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_infrastructure
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_infrastructure
 		cost = 5.00
 		prerequisite = {
 			focus = GER_industrial
@@ -994,7 +994,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_infra2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_infrastructure
 		cost = 5.00
 		prerequisite = {
 			focus = GER_infrastructure
@@ -1061,7 +1061,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_pro1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
 			focus = GER_industrial
@@ -1082,7 +1082,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_pro2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
 			focus = GER_industrial
@@ -1103,7 +1103,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_pro3
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
 			focus = GER_pro2
@@ -1127,7 +1127,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_pro4
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
 			focus = GER_pro2
@@ -1151,7 +1151,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_secret
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_secret_weapon
 		cost = 5.00
 		prerequisite = {
 			focus = GER_con3
@@ -1184,7 +1184,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_nuclear
-		icon = GFX_goal_unknown
+		icon = GFX_focus_wonderweapons
 		cost = 5.00
 		prerequisite = {
 			focus = GER_con3
@@ -1214,7 +1214,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_research
-		icon = GFX_goal_unknown
+		icon = GFX_focus_research
 		cost = 7.00
 		prerequisite = {
 			focus = GER_con3
@@ -1240,7 +1240,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_flexible
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_build_navy
 		cost = 5.00
 		prerequisite = {
 			focus = GER_navy_awakening
@@ -1263,7 +1263,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_submarine
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_submarine
 		cost = 5.00
 		prerequisite = {
 			focus = GER_flexible
@@ -1283,7 +1283,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_destroyer
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_destroyer
 		cost = 5.00
 		prerequisite = {
 			focus = GER_submarine
@@ -1303,7 +1303,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_coast
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_coastal_fort
 		cost = 5.00
 		prerequisite = {
 			focus = GER_navy_awakening
@@ -1417,10 +1417,10 @@ focus_tree = {
 	}
 	focus = {
 		id = "Influence Denmark"
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_dangerous_deal
 		cost = 7.00
 		prerequisite = {
-			focus = GER_revolution_begin!
+			focus = GER_revolution_begin
 		}
 		x = 20
 		y = 4
@@ -1437,7 +1437,7 @@ focus_tree = {
 	}
 	focus = {
 		id = "Strike The Benelux"
-		icon = GFX_goal_unknown
+		icon = GFX_focus_eng_expose_the_belly_of_the_bear
 		cost = 13.00
 		prerequisite = {
 			focus = "Influence The South"
@@ -1468,7 +1468,7 @@ focus_tree = {
 	}
 	focus = {
 		id = "Attack France"
-		icon = GFX_goal_unknown
+		icon = GFX_focus_attack_france
 		cost = 11.00
 		prerequisite = {
 			focus = "Influence Czechia"
@@ -1486,7 +1486,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_large
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_doctrines_tactics
 		cost = 5.00
 		prerequisite = {
 			focus = GER_navy_awakening
@@ -1505,7 +1505,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_cruiser
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_cruiser
 		cost = 5.00
 		prerequisite = {
 			focus = GER_large
@@ -1526,7 +1526,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_capital
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_battleship
 		cost = 5.00
 		prerequisite = {
 			focus = GER_cruiser

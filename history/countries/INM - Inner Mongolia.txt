@@ -75,7 +75,7 @@ create_country_leader = {
 	desc = "POLITICS_UNENBAYAN_DESC"
 	picture = "Portrait_MON_Unenbayan.tga"
 	expire = "1965.1.1"
-	ideology = traditional_conservativism_subtype
+	ideology = traditional_conservatism_subtype
 	traits = {
 	}
 }

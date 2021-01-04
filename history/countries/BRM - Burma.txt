@@ -39,6 +39,33 @@ create_country_leader = {
 	}
 }
 create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = market_socialism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = anarchism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = monarchism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
 	name = "Than Thun"
 	picture = "gfx/leaders/Generic/Portrait_Asia_Generic_new_2.tga"
 	expire = "1965.1.1"
@@ -72,7 +99,7 @@ create_country_leader = {
 	name = "Kodaw Hmaing"
 	picture = "Portrait_Burma_Kodaw_Hmaing.tga"
 	expire = "1965.1.1"
-	ideology = traditional_conservative_subtype
+	ideology = traditional_conservatism_subtype
 }
 create_country_leader = {
 	name = "U Ba Pe"

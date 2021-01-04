@@ -10,7 +10,7 @@ focus_tree = {
 	default = no
 	focus = {
 		id = VIN_new_era
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_dangerous_deal
 		cost = 5.00
 		x = 22
 		y = 0
@@ -21,7 +21,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_army
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_allies_build_infantry
 		cost = 5.00
 		x = 4
 		y = 1
@@ -32,7 +32,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_industrial
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_cavalry
 		cost = 5.00
 		x = 39
 		y = 0
@@ -43,7 +43,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_navy_awakening
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 5.00
 		x = 48
 		y = 0
@@ -54,7 +54,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_air_focus
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_build_airforce
 		cost = 5.00
 		x = 54
 		y = 0
@@ -65,7 +65,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_infantry
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_axis_build_infantry
 		cost = 5.00
 		prerequisite = {
 			focus = VIN_army
@@ -84,7 +84,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_artillery
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_artillery2
 		cost = 5.00
 		prerequisite = {
 			focus = VIN_infantry
@@ -103,7 +103,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_mobile_tanks
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_tanks
 		cost = 5.00
 		prerequisite = {
 			focus = VIN_artillery
@@ -117,7 +117,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_special_forces
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_special_forces
 		cost = 5.00
 		prerequisite = {
 			focus = VIN_mobile_tanks
@@ -142,7 +142,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_doctorine
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_doctrines
 		cost = 5.00
 		prerequisite = {
 			focus = VIN_army
@@ -162,7 +162,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_doctorine2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_doctrines
 		cost = 5.00
 		prerequisite = {
 			focus = VIN_doctorine
@@ -182,7 +182,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_assault
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_amphibious_assault
 		cost = 5.00
 		prerequisite = {
 			focus = VIN_doctorine2
@@ -196,7 +196,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_mobile
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_production
 		cost = 5.00
 		prerequisite = {
 			focus = VIN_assault
@@ -215,7 +215,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_defense
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_small_arms
 		cost = 5.00
 		prerequisite = {
 			focus = VIN_army
@@ -235,7 +235,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_fortify
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_military
 		cost = 5.00
 		prerequisite = {
 			focus = VIN_defense
@@ -262,7 +262,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_mechanization
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_motorized
 		cost = 5.00
 		prerequisite = {
 			focus = VIN_fortify
@@ -281,7 +281,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_armor
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_defence
 		cost = 5.00
 		prerequisite = {
 			focus = VIN_mechanization
@@ -300,7 +300,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_army1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_allies_build_infantry
 		cost = 5.00
 		prerequisite = {
 			focus = VIN_special_forces
@@ -320,7 +320,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_begin_reconstruction
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civilian
 		cost = 7.00
 		prerequisite = {
 			focus = VIN_new_era
@@ -337,7 +337,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_encourage_farming
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_national_unity
 		cost = 7.00
 		prerequisite = {
 			focus = VIN_begin_reconstruction
@@ -355,7 +355,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_abolish_privitization
-		icon = GFX_goal_unknown
+		icon = GFX_focus_mex_privatisation
 		cost = 7.00
 		prerequisite = {
 			focus = VIN_encourage_farming
@@ -369,7 +369,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_distribute_food
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_the_giant_wakes
 		cost = 7.00
 		prerequisite = {
 			focus = VIN_begin_reconstruction
@@ -386,7 +386,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_celebrate_the_peoples_republic
-		icon = GFX_goal_unknown
+		icon = GFX_focus_focus_fra_revolution_utmost
 		cost = 7.00
 		prerequisite = {
 			focus = VIN_abolish_privitization
@@ -403,7 +403,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_encourage_conscription
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_little_entente
 		cost = 7.00
 		prerequisite = {
 			focus = VIN_celebrate_the_peoples_republic
@@ -417,7 +417,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_encourage_factory_working
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_tank_production
 		cost = 7.00
 		prerequisite = {
 			focus = VIN_begin_reconstruction
@@ -442,7 +442,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_strip_wealthy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_monarchy_1
 		cost = 7.00
 		prerequisite = {
 			focus = VIN_encourage_factory_working
@@ -457,7 +457,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_economic_regulation
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_treaty
 		cost = 7.00
 		prerequisite = {
 			focus = VIN_distribute_food
@@ -474,7 +474,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_legalization
-		icon = GFX_goal_unknown
+		icon = GFX_focus_mex_support_general_cedillo
 		cost = 7.00
 		prerequisite = {
 			focus = VIN_economic_regulation
@@ -488,7 +488,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_reconstruction_complete
-		icon = GFX_goal_unknown
+		icon = GFX_focus_NZL_bob_semple_tank
 		cost = 7.00
 		prerequisite = {
 			focus = VIN_encourage_conscription
@@ -503,7 +503,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_begin_decolonization
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_wolf_pack
 		cost = 7.00
 		prerequisite = {
 			focus = VIN_new_era
@@ -517,7 +517,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_vocalize_european_injustice
-		icon = GFX_goal_unknown
+		icon = GFX_focus_hol_united_netherlands
 		cost = 7.00
 		prerequisite = {
 			focus = VIN_begin_decolonization
@@ -548,7 +548,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_stop_french_payments
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_trade
 		cost = 7.00
 		prerequisite = {
 			focus = VIN_begin_decolonization
@@ -568,7 +568,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_stop_french_at_schools
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_military_academy
 		cost = 7.00
 		prerequisite = {
 			focus = VIN_vocalize_european_injustice
@@ -585,7 +585,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_support_resistance
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_support_the_left_right
 		cost = 7.00
 		prerequisite = {
 			focus = VIN_begin_decolonization
@@ -610,7 +610,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_deport_french_citizens
-		icon = GFX_goal_unknown
+		icon = GFX_focus_fra_french_union
 		cost = 7.00
 		prerequisite = {
 			focus = VIN_stop_french_payments
@@ -631,7 +631,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_new_education_curriculum
-		icon = GFX_goal_unknown
+		icon = GFX_focus_BUL_destroy_the_zveno
 		cost = 7.00
 		prerequisite = {
 			focus = VIN_stop_french_at_schools
@@ -648,7 +648,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_distribute_karl_marx
-		icon = GFX_goal_unknown
+		icon = GFX_focus_eng_liberate_the_home_of_marx
 		cost = 7.00
 		prerequisite = {
 			focus = VIN_begin_decolonization
@@ -662,7 +662,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_cut_ties_with_europe
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ger_great_red_menace
 		cost = 7.00
 		prerequisite = {
 			focus = VIN_support_resistance
@@ -714,7 +714,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_promote_socialist_nationalism
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ger_revive_kaiserreich
 		cost = 7.00
 		prerequisite = {
 			focus = VIN_deport_french_citizens
@@ -731,7 +731,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_decolonization_done
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GRE_reviving_the_double_headed_eagle
 		cost = 7.00
 		prerequisite = {
 			focus = VIN_new_education_curriculum
@@ -749,7 +749,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_communist_ambitions
-		icon = GFX_goal_unknown
+		icon = GFX_focus_prc_proclaim_the_peoples_republic
 		cost = 7.00
 		prerequisite = {
 			focus = VIN_reconstruction_complete
@@ -768,7 +768,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_pacify_cambodia
-		icon = GFX_goal_unknown
+		icon = GFX_focus_RAJ_indian_gentlemen_offcers
 		cost = 7.00
 		prerequisite = {
 			focus = VIN_communist_ambitions
@@ -784,7 +784,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_laos_claim
-		icon = GFX_goal_unknown
+		icon = GFX_focus_spa_save_the_alcazar
 		cost = 7.00
 		prerequisite = {
 			focus = VIN_communist_ambitions
@@ -801,7 +801,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_con1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5.00
 		prerequisite = {
 			focus = VIN_industrial
@@ -822,7 +822,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_pro1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
 			focus = VIN_con1
@@ -843,7 +843,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_infra
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_infrastructure
 		cost = 5.00
 		prerequisite = {
 			focus = VIN_industrial
@@ -910,7 +910,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_research
-		icon = GFX_goal_unknown
+		icon = GFX_focus_research
 		cost = 5.00
 		prerequisite = {
 			focus = VIN_pro1
@@ -927,7 +927,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_con2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5.00
 		prerequisite = {
 			focus = VIN_industrial
@@ -948,7 +948,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_pro2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
 			focus = VIN_con2
@@ -969,7 +969,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_secret
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_secret_weapon
 		cost = 5.00
 		prerequisite = {
 			focus = VIN_pro1
@@ -996,7 +996,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_nuclear
-		icon = GFX_goal_unknown
+		icon = GFX_focus_wonderweapons
 		cost = 5.00
 		prerequisite = {
 			focus = VIN_pro1
@@ -1020,7 +1020,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_flexible
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_build_navy
 		cost = 5.00
 		prerequisite = {
 			focus = VIN_navy_awakening
@@ -1043,7 +1043,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_submarine
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_submarine
 		cost = 5.00
 		prerequisite = {
 			focus = VIN_flexible
@@ -1063,7 +1063,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_destroyer
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_destroyer
 		cost = 5.00
 		prerequisite = {
 			focus = VIN_submarine
@@ -1083,7 +1083,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_coast
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_coastal_fort
 		cost = 5.00
 		prerequisite = {
 			focus = VIN_navy_awakening
@@ -1197,7 +1197,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_large
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_doctrines_tactics
 		cost = 5.00
 		prerequisite = {
 			focus = VIN_navy_awakening
@@ -1216,7 +1216,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_cruiser
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_cruiser
 		cost = 5.00
 		prerequisite = {
 			focus = VIN_large
@@ -1237,7 +1237,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_capital
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_navy_battleship2
 		cost = 5.00
 		prerequisite = {
 			focus = VIN_cruiser
@@ -1260,7 +1260,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_heavy
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_fighter
 		cost = 5.00
 		prerequisite = {
 			focus = VIN_air_focus
@@ -1282,7 +1282,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_tactical
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_bomber
 		cost = 5.00
 		prerequisite = {
 			focus = VIN_heavy
@@ -1302,7 +1302,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_form_indochinese_union
-		icon = GFX_goal_unknown
+		icon = GFX_focus_por_workers_of_iberia
 		cost = 7.00
 		
 		x = 23
@@ -1325,7 +1325,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_air
-		icon = GFX_goal_unknown
+		icon = GFX_focus_eng_special_air_service
 		cost = 5.00
 		prerequisite = {
 			focus = VIN_tactical
@@ -1342,7 +1342,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_light
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_fighter2
 		cost = 5.00
 		prerequisite = {
 			focus = VIN_air_focus
@@ -1365,7 +1365,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_cas
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_CAS
 		cost = 5.00
 		prerequisite = {
 			focus = VIN_light

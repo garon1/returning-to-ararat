@@ -93,12 +93,6 @@ add_offsite_building = {
 	level = 5
 }
 
-diplomatic_relation = {
-	country = LEP
-	relation = docking_rights
-	active = yes
-}
-
 set_politics = {
 	ruling_party = nationalism
 	last_election = "1930.11.9"
@@ -140,7 +134,7 @@ create_country_leader = {
 	desc = "POLITICS_PUYI_RESTORED_DESC"
 	picture = "Portrait_QNG_Puyi_Uniform.tga"
 	expire = "1965.1.1"
-	ideology = traditional_conservative_subtype
+	ideology = traditional_conservatism_subtype
 }
 create_country_leader = {
 	name = "Puyi"
@@ -155,6 +149,107 @@ create_country_leader = {
 	picture = "Portrait_QNG_Wu_Peifu.tga"
 	expire = "1965.1.1"
 	ideology = totalitarianism_subtype
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = nationalism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = totalitarianism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = traditional_conservatism_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = syndicalism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = market_socialism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = anarchism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = monarchism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = radical_socialism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = market_liberal_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = social_democracy_subtype
+	traits = {
+		#
+	}
 }
 create_country_leader = {
 	name = "Zhang Tianran"
@@ -172,7 +267,7 @@ create_field_marshal = {
 	traits = {
 		old_guard
 		politically_connected
-		brilliant_strategism
+		brilliant_strategist
 		war_hero
 	}
 	skill = 3
@@ -396,7 +491,6 @@ create_corps_commander = {
 	desc = "QNG_ZHANG_SHAOZENG_ARMY_DESC"
 	traits ={
 		politically_connected
-		artillery_officer
 	}
 	skill = 2
 	attack_skill = 2

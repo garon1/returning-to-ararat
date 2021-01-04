@@ -158,6 +158,61 @@ create_country_leader = {
 	desc = "POLITICS_AGUSTIN_PEDRO_JUSTO_DESC"
 	picture = "Portrait_Argentina_Agustin_Pedro_Justo.dds"
 	expire = "1965.1.1"
+	ideology = traditional_conservatism_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Agustín Pedro Justo"
+	desc = "POLITICS_AGUSTIN_PEDRO_JUSTO_DESC"
+	picture = "Portrait_Argentina_Agustin_Pedro_Justo.dds"
+	expire = "1965.1.1"
+	ideology = monarchism_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Agustín Pedro Justo"
+	desc = "POLITICS_AGUSTIN_PEDRO_JUSTO_DESC"
+	picture = "Portrait_Argentina_Agustin_Pedro_Justo.dds"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Agustín Pedro Justo"
+	desc = "POLITICS_AGUSTIN_PEDRO_JUSTO_DESC"
+	picture = "Portrait_Argentina_Agustin_Pedro_Justo.dds"
+	expire = "1965.1.1"
+	ideology = market_liberal_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Agustín Pedro Justo"
+	desc = "POLITICS_AGUSTIN_PEDRO_JUSTO_DESC"
+	picture = "Portrait_Argentina_Agustin_Pedro_Justo.dds"
+	expire = "1965.1.1"
+	ideology = social_democracy_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Agustín Pedro Justo"
+	desc = "POLITICS_AGUSTIN_PEDRO_JUSTO_DESC"
+	picture = "Portrait_Argentina_Agustin_Pedro_Justo.dds"
+	expire = "1965.1.1"
 	ideology = totalitarianism_subtype
 	traits = {
 		#
@@ -171,6 +226,28 @@ create_country_leader = {
 	picture = "gfx/leaders/South America/Portrait_South_America_Generic_3.dds"
 	expire = "1965.1.1"
 	ideology = nationalism_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Marcelo T. de Alvear"
+	desc = "POLITICS_MARCELO_ALVEAR_DESC"
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
+	expire = "1965.1.1"
+	ideology = syndicalism_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Marcelo T. de Alvear"
+	desc = "POLITICS_MARCELO_ALVEAR_DESC"
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
+	expire = "1965.1.1"
+	ideology = anarchism_subtype
 	traits = {
 		#
 	}
@@ -198,6 +275,7 @@ create_country_leader = {
 		#
 	}
 }
+
 
 create_field_marshal = {
 	name = "Arturo Rawson"

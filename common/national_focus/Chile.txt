@@ -10,7 +10,7 @@ focus_tree = {
 	default = no
 	focus = {
 		id = CHL_coup
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_strike_at_democracy2
 		cost = 7.00
 		x = 13
 		y = 0
@@ -24,7 +24,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_industrial
-		icon = GFX_goal_unknown
+		icon = GFX_oal_generic_cavalry
 		cost = 5.00
 		x = 30
 		y = 0
@@ -35,7 +35,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_army
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_allies_build_infantry
 		cost = 5.00
 		x = 28
 		y = 4
@@ -46,7 +46,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_naval_awakening
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 5.00
 		x = 20
 		y = 8
@@ -58,7 +58,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_air_focus
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_build_airforce
 		cost = 5.00
 		x = 9
 		y = 11
@@ -70,7 +70,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_democracy
-		icon = GFX_goal_unknown
+		icon = GFX_goal_support_democracy
 		cost = 7.00
 		prerequisite = {
 			focus = CHL_coup
@@ -91,7 +91,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_democratic_leaning
-		icon = GFX_goal_unknown
+		icon = GFX_focus_up_joan_of_arc
 		cost = 7.00
 		prerequisite = {
 			focus = CHL_democracy
@@ -112,7 +112,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_new_foreign_policy
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_consumer_goods
 		cost = 7.00
 		prerequisite = {
 			focus = CHL_democratic_leaning
@@ -134,7 +134,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_currency_reforms
-		icon = GFX_goal_unknown
+		icon = GFX_focus_fra_devalue_the_franc
 		cost = 7.00
 		prerequisite = {
 			focus = CHL_democratic_leaning
@@ -151,7 +151,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_native_american_autonomy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_spa_the_war_of_vengeance
 		cost = 7.00
 		prerequisite = {
 			focus = CHL_new_foreign_policy
@@ -167,7 +167,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_establish_radio
-		icon = GFX_goal_unknown
+		icon = GFX_focus_NZL_bob_semple_tank
 		cost = 7.00
 		prerequisite = {
 			focus = CHL_currency_reforms
@@ -185,7 +185,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_free_healthcare
-		icon = GFX_goal_unknown
+		icon = GFX_focus_BUL_destroy_the_zveno
 		cost = 7.00
 		prerequisite = {
 			focus = CHL_native_american_autonomy
@@ -202,7 +202,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_privatization_fullest
-		icon = GFX_goal_unknown
+		icon = GFX_focus_mex_privatisation
 		cost = 7.00
 		prerequisite = {
 			focus = CHL_democratic_leaning
@@ -210,13 +210,15 @@ focus_tree = {
 		x = 11
 		y = 3
 		completion_reward = {
-		add_extra_state_shared_building_slots = 2
-		}
+					507 = {
+							add_extra_state_shared_building_slots = 2
+						}
+				}
 
 	}
 	focus = {
 		id = CHL_navy_prescense
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_navy_battleship2
 		cost = 7.00
 		prerequisite = {
 			focus = CHL_currency_reforms
@@ -239,7 +241,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_war_propaganda
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_propaganda
 		cost = 7.00
 		prerequisite = {
 			focus = CHL_privatization_fullest
@@ -259,7 +261,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_reestablish_trade
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_national_unity
 		cost = 7.00
 		prerequisite = {
 			focus = CHL_navy_prescense
@@ -284,7 +286,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_united
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_demand_territory
 		cost = 7.00
 		prerequisite = {
 			focus = CHL_free_healthcare
@@ -294,14 +296,16 @@ focus_tree = {
 		}
 		x = 7
 		y = 6
-		CHO = {
+		completion_reward = {
+CHO = {
 		add_stability = -0.10
+		}
 		}
 
 	}
 	focus = {
 		id = CHL_nationalism
-		icon = GFX_goal_unknown
+		icon = GFX_goal_support_fascism
 		cost = 7.00
 		prerequisite = {
 			focus = CHL_coup
@@ -312,11 +316,17 @@ focus_tree = {
 		}
 		x = 18
 		y = 1
+		completion_reward = {
+		add_popularity = {
+					ideology = nationalism
+					popularity = 0.2
+				}
+		}
 
 	}
 	focus = {
 		id = CHL_begin_new_policy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_eng_expose_the_belly_of_the_bear
 		cost = 7.00
 		prerequisite = {
 			focus = CHL_nationalism
@@ -333,7 +343,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_form_blackshirts
-		icon = GFX_goal_unknown
+		icon = GFX_focus_eng_organise_the_blackshirts
 		cost = 7.00
 		prerequisite = {
 			focus = CHL_begin_new_policy
@@ -348,7 +358,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_nationalist_council
-		icon = GFX_goal_unknown
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
 		cost = 7.00
 		prerequisite = {
 			focus = CHL_form_blackshirts
@@ -362,7 +372,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_arm_police
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_defence
 		cost = 7.00
 		prerequisite = {
 			focus = CHL_begin_new_policy
@@ -376,7 +386,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_boyscouts
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construction2
 		cost = 7.00
 		prerequisite = {
 			focus = CHL_arm_police
@@ -390,7 +400,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_chilean_nationalism
-		icon = GFX_goal_unknown
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
 		cost = 7.00
 		prerequisite = {
 			focus = CHL_nationalist_council
@@ -405,7 +415,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_coast
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_coastal_fort
 		cost = 5.00
 		prerequisite = {
 			focus = CHL_naval_awakening
@@ -519,7 +529,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_supress_democracy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_usa_voter_registration_act
 		cost = 7.00
 		prerequisite = {
 			focus = CHL_begin_new_policy
@@ -540,7 +550,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_abolish_unions
-		icon = GFX_goal_unknown
+		icon = GFX_focus_spr_class_war
 		cost = 7.00
 		prerequisite = {
 			focus = CHL_supress_democracy
@@ -554,7 +564,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_forced_education
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_manpower
 		cost = 7.00
 		prerequisite = {
 			focus = CHL_boyscouts
@@ -569,7 +579,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_stay_with_moscow
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ger_strike_at_the_source
 		cost = 7.00
 		prerequisite = {
 			focus = CHL_chilean_nationalism
@@ -584,7 +594,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_create_new_alliance
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GRE_reviving_the_double_headed_eagle
 		cost = 7.00
 		prerequisite = {
 			focus = CHL_chilean_nationalism
@@ -613,7 +623,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_complete
-		icon = GFX_goal_unknown
+		icon = GFX_focus_hol_united_netherlands
 		cost = 7.00
 		prerequisite = {
 			focus = CHL_stay_with_moscow
@@ -628,7 +638,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_new_war_preparations
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_major_war
 		cost = 7.00
 		prerequisite = {
 			focus = CHL_united
@@ -650,7 +660,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_fatherland
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_dangerous_deal
 		cost = 7.00
 		prerequisite = {
 			focus = CHL_new_war_preparations
@@ -664,7 +674,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_fortify_border
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_military
 		cost = 7.00
 		prerequisite = {
 			focus = CHL_fatherland
@@ -691,7 +701,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_large
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_doctrines_tactics
 		cost = 5.00
 		prerequisite = {
 			focus = CHL_naval_awakening
@@ -710,7 +720,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_cruiser
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_cruiser
 		cost = 5.00
 		prerequisite = {
 			focus = CHL_cruiser
@@ -731,7 +741,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_capital
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_navy_battleship2
 		cost = 5.00
 		prerequisite = {
 			focus = CHL_cruiser
@@ -754,7 +764,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_con1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5.00
 		prerequisite = {
 			focus = CHL_industrial
@@ -775,7 +785,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_con2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5.00
 		prerequisite = {
 			focus = CHL_industrial
@@ -796,7 +806,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_infantry
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_axis_build_infantry
 		cost = 5.00
 		prerequisite = {
 			focus = CHL_army
@@ -815,7 +825,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_artillery
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_artillery2
 		cost = 5.00
 		prerequisite = {
 			focus = CHL_infantry
@@ -835,7 +845,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_mobile_tanks
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_tanks
 		cost = 5.00
 		prerequisite = {
 			focus = CHL_artillery
@@ -849,7 +859,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_special_forces
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_special_forces
 		cost = 5.00
 		prerequisite = {
 			focus = CHL_mobile_tanks
@@ -874,7 +884,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_doctorine
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_doctrines
 		cost = 5.00
 		prerequisite = {
 			focus = CHL_army
@@ -894,7 +904,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_doctorine2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_doctrines
 		cost = 5.00
 		prerequisite = {
 			focus = CHL_doctorine
@@ -914,7 +924,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_assault
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_amphibious_assault
 		cost = 5.00
 		prerequisite = {
 			focus = CHL_doctorine2
@@ -928,7 +938,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_mobile
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_production
 		cost = 5.00
 		prerequisite = {
 			focus = CHL_assault
@@ -947,7 +957,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_infra1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_infrastructure
 		cost = 5.00
 		prerequisite = {
 			focus = CHL_industrial
@@ -1014,7 +1024,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_infra2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_infrastructure
 		cost = 5.00
 		prerequisite = {
 			focus = CHL_infra1
@@ -1081,7 +1091,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_defense
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_small_arms
 		cost = 5.00
 		prerequisite = {
 			focus = CHL_army
@@ -1102,7 +1112,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_fortify
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_fortify_city
 		cost = 5.00
 		prerequisite = {
 			focus = CHL_defense
@@ -1129,7 +1139,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_mechanization
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_motorized
 		cost = 5.00
 		prerequisite = {
 			focus = CHL_fortify
@@ -1148,7 +1158,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_armor
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_defence
 		cost = 5.00
 		prerequisite = {
 			focus = CHL_mechanization
@@ -1167,18 +1177,28 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_pro1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
 			focus = CHL_industrial
 		}
 		x = 32
 		y = 1
+		completion_reward = {
+					279 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
 
 	}
 	focus = {
 		id = CHL_remake_constitution
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_intelligence_exchange
 		cost = 7.00
 		prerequisite = {
 			focus = CHL_new_war_preparations
@@ -1199,7 +1219,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_embargo_syndicalists
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_position_armies
 		cost = 7.00
 		prerequisite = {
 			focus = CHL_remake_constitution
@@ -1218,7 +1238,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_down_with_CHO
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_occupy_start_war
 		cost = 7.00
 		prerequisite = {
 			focus = CHL_fortify_border
@@ -1240,7 +1260,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_pro2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
 			focus = CHL_industrial
@@ -1261,19 +1281,16 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_research
-		icon = GFX_goal_unknown
+		icon = GFX_focus_research
 		cost = 5.00
-		prerequisite = {
-			focus = CHL_pro4
-		}
-		prerequisite = {
-			focus = CHL_pro3
-		}
 		prerequisite = {
 			focus = CHL_infra2
 		}
 		prerequisite = {
-			focus = CHL_con4
+			focus = CHL_con2
+		}
+		prerequisite = {
+			focus = CHL_pro2
 		}
 		x = 30
 		y = 3
@@ -1284,22 +1301,22 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_nuclear
-		icon = GFX_goal_unknown
+		icon = GFX_focus_wonderweapons
 		cost = 5.00
 		prerequisite = {
-			focus = CHL_con3
+			focus = CHL_con2
 		}
 		prerequisite = {
-			focus = CHL_con4
+			focus = CHL_con1
 		}
 		prerequisite = {
 			focus = CHL_infra2
 		}
 		prerequisite = {
-			focus = CHL_pro3
+			focus = CHL_pro1
 		}
 		prerequisite = {
-			focus = CHL_pro4
+			focus = CHL_pro2
 		}
 		x = 26
 		y = 3
@@ -1314,22 +1331,22 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_secret
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_secret_weapon
 		cost = 5.00
 		prerequisite = {
-			focus = CHL_con3
+			focus = CHL_con1
 		}
 		prerequisite = {
-			focus = CHL_con4
+			focus = CHL_con2
 		}
 		prerequisite = {
 			focus = CHL_infra2
 		}
 		prerequisite = {
-			focus = CHL_pro3
+			focus = CHL_pro1
 		}
 		prerequisite = {
-			focus = CHL_pro4
+			focus = CHL_pro2
 		}
 		x = 34
 		y = 3
@@ -1347,7 +1364,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_flexible
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_build_navy
 		cost = 5.00
 		prerequisite = {
 			focus = CHL_naval_awakening
@@ -1370,7 +1387,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_submarine
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_submarine
 		cost = 5.00
 		prerequisite = {
 			focus = CHL_flexible
@@ -1390,7 +1407,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_destroyer
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_destroyer
 		cost = 5.00
 		prerequisite = {
 			focus = CHL_submarine
@@ -1410,7 +1427,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_heavy
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_fighter
 		cost = 5.00
 		prerequisite = {
 			focus = CHL_air_focus
@@ -1432,7 +1449,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_light
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_fighter2
 		cost = 5.00
 		prerequisite = {
 			focus = CHL_air_focus
@@ -1455,7 +1472,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_tactical
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_bomber
 		cost = 5.00
 		prerequisite = {
 			focus = CHL_heavy
@@ -1475,7 +1492,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_cas
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_CAS
 		cost = 5.00
 		prerequisite = {
 			focus = CHL_light
@@ -1495,7 +1512,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHL_air
-		icon = GFX_goal_unknown
+		icon = GFX_focus_eng_special_air_service
 		cost = 5.00
 		prerequisite = {
 			focus = CHL_air_focus

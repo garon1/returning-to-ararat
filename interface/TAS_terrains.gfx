@@ -1,6 +1,26 @@
 spriteTypes = {
 
 spriteType = {
+    name = "GFX_terrain_ghars"
+    textureFile = "gfx/interface/terrains/terrain_city_ghars.dds"
+  }
+
+  spriteType = {
+    name = "GFX_terrain_ghars_winter"
+    textureFile = "gfx/interface/terrains/terrain_city_ghars.dds"
+  }
+
+  spriteType = {
+    name = "GFX_terrain_hakkari"
+    textureFile = "gfx/interface/terrains/terrain_city_hakkari.dds"
+  }
+
+  spriteType = {
+    name = "GFX_terrain_hakkari_winter"
+    textureFile = "gfx/interface/terrains/terrain_city_hakkari.dds"
+  }
+
+spriteType = {
     name = "GFX_terrain_hanoi"
     textureFile = "gfx/interface/terrains/terrain_city_hanoi.dds"
   }

@@ -10,7 +10,7 @@ focus_tree = {
 	default = no
 	focus = {
 		id = GRE_after_elections
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_alliance
 		cost = 7.00
 		x = 14
 		y = 0
@@ -23,7 +23,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_industrial
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_cavalry
 		cost = 5.00
 		x = 32
 		y = 0
@@ -34,7 +34,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_army
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_allies_build_infantry
 		cost = 5.00
 		x = 31
 		y = 3
@@ -45,7 +45,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_naval_awakening
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 5.00
 		x = 5
 		y = 12
@@ -56,7 +56,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_air_focus
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_build_airforce
 		cost = 5.00
 		x = 13
 		y = 10
@@ -67,7 +67,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_flexible
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_build_navy
 		cost = 5.00
 		prerequisite = {
 			focus = GRE_naval_awakening
@@ -90,7 +90,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_submarine
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_submarine
 		cost = 5.00
 		prerequisite = {
 			focus = GRE_flexible
@@ -110,7 +110,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_stay_on_course
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GRE_an_orthodox_state
 		cost = 7.00
 		prerequisite = {
 			focus = GRE_after_elections
@@ -130,7 +130,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_greece_for_all
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GRE_resurrecting_the_megali_idea
 		cost = 7.00
 		prerequisite = {
 			focus = GRE_stay_on_course
@@ -142,7 +142,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_industrialization
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GRE_reviving_the_spartan_warrior_spirit
 		cost = 7.00
 		prerequisite = {
 			focus = GRE_greece_for_all
@@ -156,7 +156,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_add_ports
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GRE_a_long_and_proud_tradition
 		cost = 7.00
 		prerequisite = {
 			focus = GRE_industrialization
@@ -187,7 +187,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_anatolian_funding
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GRE_following_in_the_footsteps_of_giants
 		cost = 7.00
 		prerequisite = {
 			focus = GRE_add_ports
@@ -204,7 +204,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_country_reforms
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GRE_a_land_of_mountains
 		cost = 7.00
 		prerequisite = {
 			focus = GRE_greece_for_all
@@ -218,7 +218,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_take_away_turkish_duties
-		icon = GFX_goal_unknown
+		icon = GFX_focus_TUR_purge_the_kemalists
 		cost = 7.00
 		prerequisite = {
 			focus = GRE_country_reforms
@@ -232,7 +232,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_convert_hagia_sophia
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_improve_relations
 		cost = 7.00
 		prerequisite = {
 			focus = GRE_anatolian_funding
@@ -249,7 +249,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_stay_with_DOWA
-		icon = GFX_goal_unknown
+		icon = GFX_focus_TUR_ratify_the_six_arrows
 		cost = 7.00
 		prerequisite = {
 			focus = GRE_convert_hagia_sophia
@@ -322,7 +322,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_bring_turkey
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_befriend_turkey
 		cost = 7.00
 		prerequisite = {
 			focus = GRE_stay_with_DOWA
@@ -341,7 +341,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_heavy
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_fighter
 		cost = 5.00
 		prerequisite = {
 			focus = GRE_air_focus
@@ -363,7 +363,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_tactical
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_bomber
 		cost = 5.00
 		prerequisite = {
 			focus = GRE_heavy
@@ -383,7 +383,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_bring_persia
-		icon = GFX_goal_unknown
+		icon = GFX_focus_TUR_support_the_golden_square
 		cost = 7.00
 		prerequisite = {
 			focus = GRE_stay_with_DOWA
@@ -402,7 +402,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_converge_communist
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_soviet_construction
 		cost = 7.00
 		prerequisite = {
 			focus = GRE_convert_hagia_sophia
@@ -416,7 +416,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_become_communist
-		icon = GFX_goal_unknown
+		icon = GFX_focus_chi_cooperation_with_the_communists
 		cost = 7.00
 		prerequisite = {
 			focus = GRE_converge_communist
@@ -425,7 +425,7 @@ focus_tree = {
 		y = 9
 			completion_reward = {
 					set_politics = {
-							ruling_party = communism
+							ruling_party = radical_socialism
 							elections_allowed = yes
 						}
 				}
@@ -433,7 +433,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_light
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_fighter2
 		cost = 5.00
 		prerequisite = {
 			focus = GRE_air_focus
@@ -456,7 +456,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_cas
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_CAS
 		cost = 5.00
 		prerequisite = {
 			focus = GRE_light
@@ -476,7 +476,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_air
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_battleship
 		cost = 5.00
 		prerequisite = {
 			focus = GRE_tactical
@@ -493,7 +493,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_converge_democratic
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_national_unity
 		cost = 7.00
 		prerequisite = {
 			focus = GRE_convert_hagia_sophia
@@ -507,7 +507,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_implement_new_change
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_propaganda
 		cost = 7.00
 		prerequisite = {
 			focus = GRE_after_elections
@@ -519,7 +519,7 @@ focus_tree = {
 				}
 			available = {
 					has_country_leader = {
-							name = "IoannisMetaxas"
+							name = "Ioannis Metaxas"
 							ruling_only = yes
 						}
 				}
@@ -527,7 +527,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_bosphorus_strait_question
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GRE_stage_an_incident_in_the_bosporus
 		cost = 7.00
 		prerequisite = {
 			focus = GRE_implement_new_change
@@ -541,7 +541,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_toward_true_democracy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_strike_at_democracy3
 		cost = 7.00
 		prerequisite = {
 			focus = GRE_converge_democratic
@@ -550,7 +550,7 @@ focus_tree = {
 		y = 8
 			completion_reward = {
 					set_politics = {
-							ruling_party = democratic
+							ruling_party = social_democracy
 							elections_allowed = yes
 						}
 				}
@@ -558,7 +558,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_conservative_market_decisions
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_consumer_goods
 		cost = 7.00
 		prerequisite = {
 			focus = GRE_bosphorus_strait_question
@@ -576,7 +576,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_liberal_market
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construction
 		cost = 7.00
 		prerequisite = {
 			focus = GRE_bosphorus_strait_question
@@ -595,7 +595,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_privatize_economy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_mex_privatisation
 		cost = 7.00
 		prerequisite = {
 			focus = GRE_conservative_market_decisions
@@ -610,7 +610,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_leave_faction
-		icon = GFX_goal_unknown
+		icon = GFX_focus_hol_continue_the_war_in_batavia
 		cost = 7.00
 		prerequisite = {
 			focus = GRE_convert_hagia_sophia
@@ -624,7 +624,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_on_our_own
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GRE_reviving_the_double_headed_eagle
 		cost = 7.00
 		prerequisite = {
 			focus = GRE_leave_faction
@@ -638,7 +638,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_invite_yugoslavia
-		icon = GFX_goal_unknown
+		icon = GFX_focus_invite_yugoslavia
 		cost = 7.00
 		prerequisite = {
 			focus = GRE_on_our_own
@@ -657,7 +657,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_ioannis_metaxas
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GRE_metaxism
 		cost = 7.00
 		prerequisite = {
 			focus = GRE_conservative_market_decisions
@@ -672,7 +672,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_stop_communism
-		icon = GFX_goal_unknown
+		icon = GFX_goal_tfv_burn_the_royal_portraits
 		cost = 7.00
 		prerequisite = {
 			focus = GRE_privatize_economy
@@ -687,7 +687,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_become_fully_nationalist
-		icon = GFX_goal_unknown
+		icon = GFX_focus_eng_move_to_secure_the_dominions
 		cost = 7.00
 		prerequisite = {
 			focus = GRE_stop_communism
@@ -709,7 +709,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_integrate_the_turks
-		icon = GFX_goal_unknown
+		icon = GFX_focus_TUR_the_montreux_convention
 		cost = 7.00
 		prerequisite = {
 			focus = GRE_become_fully_nationalist
@@ -723,7 +723,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_join_russia
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_strike_at_democracy1
 		cost = 7.00
 		prerequisite = {
 			focus = GRE_become_fully_nationalist
@@ -739,7 +739,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_rebuke_peace
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_military_mission
 		cost = 7.00
 		prerequisite = {
 			focus = GRE_become_fully_nationalist
@@ -756,7 +756,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_invite_bulgaria
-		icon = GFX_goal_unknown
+		icon = GFX_focus_BUL_promote_bulgarian_nationalism
 		cost = 7.00
 		prerequisite = {
 			focus = GRE_on_our_own
@@ -778,7 +778,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_con1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5.00
 		prerequisite = {
 			focus = GRE_industrial
@@ -799,7 +799,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_con2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5.00
 		prerequisite = {
 			focus = GRE_industrial
@@ -820,7 +820,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_con3
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5.00
 		prerequisite = {
 			focus = GRE_con1
@@ -844,7 +844,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_infantry
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_axis_build_infantry
 		cost = 5.00
 		prerequisite = {
 			focus = GRE_army
@@ -863,7 +863,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_artillery
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_artillery2
 		cost = 5.00
 		prerequisite = {
 			focus = GRE_infantry
@@ -882,7 +882,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_mobile_tanks
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_tanks
 		cost = 5.00
 		prerequisite = {
 			focus = GRE_artillery
@@ -896,7 +896,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_special_forces
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_special_forces
 		cost = 5.00
 		prerequisite = {
 			focus = GRE_mobile_tanks
@@ -921,7 +921,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_con4
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5.00
 		prerequisite = {
 			focus = GRE_con1
@@ -945,7 +945,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_infrastructure
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_infrastructure
 		cost = 5.00
 		prerequisite = {
 			focus = GRE_industrial
@@ -1012,7 +1012,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_infrastructure1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_infrastructure
 		cost = 5.00
 		prerequisite = {
 			focus = GRE_infrastructure
@@ -1079,7 +1079,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_doctorine.5
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_doctrines
 		cost = 5.00
 		prerequisite = {
 			focus = GRE_army
@@ -1099,7 +1099,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_doctorine
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_doctrines
 		cost = 5.00
 		prerequisite = {
 			focus = GRE_doctorine.5
@@ -1119,7 +1119,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_assault
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_amphibious_assault
 		cost = 5.00
 		prerequisite = {
 			focus = GRE_doctorine
@@ -1133,7 +1133,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_mobile
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_production
 		cost = 5.00
 		prerequisite = {
 			focus = GRE_assault
@@ -1152,7 +1152,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_pro1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
 			focus = GRE_industrial
@@ -1173,7 +1173,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_pro2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
 			focus = GRE_industrial
@@ -1194,7 +1194,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_pro3
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
 			focus = GRE_pro1
@@ -1218,7 +1218,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_defense
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_small_arms
 		cost = 5.00
 		prerequisite = {
 			focus = GRE_army
@@ -1238,7 +1238,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_fortify
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_fortify_city
 		cost = 5.00
 		prerequisite = {
 			focus = GRE_defense
@@ -1265,7 +1265,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_mechanizaton
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_motorized
 		cost = 5.00
 		prerequisite = {
 			focus = GRE_fortify
@@ -1284,7 +1284,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_armor
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_defence
 		cost = 5.00
 		prerequisite = {
 			focus = GRE_mechanizaton
@@ -1303,7 +1303,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_army_experience
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_allies_build_infantry
 		cost = 5.00
 		prerequisite = {
 			focus = GRE_special_forces
@@ -1323,7 +1323,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_pro4
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 0.00
 		prerequisite = {
 			focus = GRE_pro1
@@ -1347,7 +1347,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_destroyer
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_destroyer
 		cost = 5.00
 		prerequisite = {
 			focus = GRE_submarine
@@ -1367,7 +1367,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_large
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_doctrines_tactics
 		cost = 5.00
 		prerequisite = {
 			focus = GRE_naval_awakening
@@ -1386,7 +1386,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_cruiser
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_cruiser
 		cost = 5.00
 		prerequisite = {
 			focus = GRE_large
@@ -1407,7 +1407,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_capital
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_navy_battleship2
 		cost = 5.00
 		prerequisite = {
 			focus = GRE_cruiser
@@ -1430,7 +1430,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_navy_forts
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_coastal_fort
 		cost = 5.00
 		prerequisite = {
 			focus = GRE_naval_awakening

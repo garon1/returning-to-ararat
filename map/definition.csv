@@ -787,7 +787,7 @@
 786;4;0;248;sea;true;ocean;0
 787;4;2;236;sea;false;ocean;0
 788;4;3;50;land;true;plains;2
-789;4;3;95;land;false;hills;7
+789;4;3;95;land;false;ghars;7
 790;4;3;200;land;false;plains;1
 791;4;4;244;sea;false;ocean;0
 792;4;6;15;land;true;beirut;7
@@ -10470,7 +10470,7 @@
 10469;133;153;24;land;false;plains;6
 10470;133;153;174;land;false;desert;6
 10471;133;156;89;land;false;mountain;6
-10472;133;156;139;land;false;plains;7
+10472;133;156;139;land;false;hills;7
 10473;133;156;194;land;false;desert;4
 10474;133;159;54;land;false;hills;6
 10475;133;159;159;land;true;plains;4
@@ -12474,7 +12474,7 @@
 12473;175;183;87;land;false;urban;7
 12474;175;183;137;land;false;desert;6
 12475;175;183;192;land;false;forest;6
-12476;175;186;52;land;false;hills;7
+12476;175;186;52;land;false;hakkari;7
 12477;175;186;157;land;true;hills;3
 12478;175;189;17;land;false;plains;6
 12479;175;189;72;land;false;forest;3

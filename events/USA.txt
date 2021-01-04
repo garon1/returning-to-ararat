@@ -2066,6 +2066,225 @@ country_event = {
 		
 		}
 	}
+	option = {
+		name = usa.67.b
+		trigger = { is_ai = no }
+		add_named_threat = { threat = 5 name = generic.15.t }
+		custom_effect_tooltip = USA_second_civil_war
+		set_country_flag = USA_second_civil_war1
+		hidden_effect = {
+		USA = {
+		country_event = {  hours = 12 id = USA.74 }
+		country_event = { days = 3 id = USA.71 }
+		country_event = { days = 15 id = USA.69 }
+		}
+		add_ideas = USA_civil_war
+		set_country_flag = amcivwar
+		USA = {
+		add_stability = -0.55
+		}
+		release PUA
+			375 = {
+			add_core_of = PUA
+			add_core_of = LOA
+			add_core_of = COF
+			}
+			374 = {
+			add_core_of = PUA
+			add_core_of = LOA
+			}
+		370 = {
+				add_core_of = LOA 
+				add_core_of = PUA
+				add_core_of = COF
+			}
+			371 = {
+				add_core_of = LOA 
+				add_core_of = PUA
+				add_core_of = COF
+			}
+			364 = {
+				add_core_of = LOA 
+				add_core_of = PUA
+				add_core_of = COF
+			}
+			365 = {
+				add_core_of = LOA 
+				add_core_of = PUA
+				add_core_of = COF
+			}
+			366 = {
+				add_core_of = LOA 
+				add_core_of = PUA
+				add_core_of = COF
+			}
+			367 = {
+				add_core_of = LOA 
+				add_core_of = PUA
+				add_core_of = COF
+			}
+			363 = {
+				add_core_of = LOA 
+				add_core_of = PUA
+				add_core_of = COF
+			}
+			362 = {
+				add_core_of = LOA 
+				add_core_of = PUA
+			}
+			369 = {
+				add_core_of = LOA 
+				add_core_of = PUA
+			}
+			361 = {
+				add_core_of = LOA
+				 add_core_of = PUA
+			}
+			359 = {
+				add_core_of = LOA 
+				add_core_of = PUA
+			}
+			358 = {
+				add_core_of = LOA
+				 add_core_of = PUA
+			}
+			357 = {
+				add_core_of = LOA 
+				add_core_of = PUA
+			}
+			360 = {
+				add_core_of = LOA 
+				add_core_of = PUA
+			}
+			372 = {
+				add_core_of = LOA 
+				add_core_of = PUA
+				add_core_of = COF
+			}
+			376 = {
+				add_core_of = LOA 
+				add_core_of = PUA
+			}
+			377 = {
+				add_core_of = LOA
+				 add_core_of = PUA
+			}
+			379 = {
+				add_core_of = LOA 
+				add_core_of = PUA
+			}
+			380 = {
+				add_core_of = LOA 
+				add_core_of = PUA
+			}
+			373 = {
+				add_core_of = LOA 
+				add_core_of = PUA
+			}
+			381 = {
+				add_core_of = LOA 
+				add_core_of = PUA
+			}
+			382 = {
+				add_core_of = LOA 
+				add_core_of = PUA
+			}
+			383 = {
+				add_core_of = LOA 
+				add_core_of = PUA
+			}
+			384 = {
+				add_core_of = LOA 
+				add_core_of = PUA
+			}
+			385 = {
+				add_core_of = LOA
+				add_core_of = PUA
+				add_core_of = CAL
+			}
+			386 = {
+				add_core_of = LOA 
+				add_core_of = PUA
+			}
+			387 = {
+				add_core_of = LOA 
+				add_core_of = PUA
+			}
+			388 = {
+				add_core_of = LOA
+				 add_core_of = PUA
+			}
+			389 = {
+				add_core_of = LOA 
+				add_core_of = PUA
+			}
+			390 = {
+				add_core_of = LOA 
+				add_core_of = PUA
+			}
+			391 = {
+				add_core_of = LOA 
+				add_core_of = PUA
+			}
+			392 = {
+				add_core_of = LOA
+				 add_core_of = PUA
+			}
+			393 = {
+				add_core_of = LOA 
+				add_core_of = PUA
+			}
+			394 = {
+				add_core_of = LOA 
+				add_core_of = PUA
+			}
+			395 = {
+				add_core_of = LOA 
+				add_core_of = PUA
+			}
+			261 = {
+				add_core_of = LOA 
+				add_core_of = PUA
+			}
+			368 = {
+				add_core_of = LOA 
+				add_core_of = PUA
+			}
+			396 = {
+				add_core_of = LOA 
+				add_core_of = PUA
+			}
+			378 = {
+				add_core_of = PUA
+				add_core_of = LOA 
+				add_core_of = CAL
+			}
+		PUA = { transfer_state = 359
+		transfer_state = 360
+		transfer_state = 358
+		transfer_state = 357
+		transfer_state = 261
+		transfer_state = 393
+				}	
+			PUA = {
+					add_civil_war_target = USA
+				
+			set_equipment_fraction = 0.5
+			set_stability = 0.9
+			set_war_support = 0.8
+			add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 3000
+					producer = PUA
+				}
+			load_oob = "PUA_Civil_War"
+			}
+		PUA = {
+			set_country_flag = choice_made
+			change_tag_from = ROOT
+			}
+		}
+	}	
 }
 #ultimatium fails and america declares war
 country_event = {
@@ -2084,6 +2303,7 @@ trigger = {
 	option = {
 		name = usa.68.a 
 		hidden_effect = {
+		set_country_flag = USA_civil_war1
 			news_event = { id = news.360 days = 2 }
 		}
 		ai_chance = {
@@ -2306,7 +2526,45 @@ country_event = {
 			load_oob = "LOA_Civil_War"
 			}
 		}	
+		option = { # Second American Civil War
+		name = usa.74.b
+		ai_chance = {
+			factor = 100
+		}
+		hidden_effect = {
+		country_event = {  hours = 12 id = USA.75 }
 	}
+		LOA = { transfer_state = 379
+				transfer_state = 380
+				transfer_state = 387
+				transfer_state = 386
+				transfer_state = 388
+				transfer_state = 381
+				transfer_state = 390
+				transfer_state = 389
+				transfer_state = 382
+		
+				}
+			
+				LOA = {
+					add_civil_war_target = USA
+				
+			set_equipment_fraction = 0.5
+			set_stability = 0.9
+			set_war_support = 0.8
+			add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 2000
+					producer = LOA
+				}
+			load_oob = "LOA_Civil_War"
+		    LOA = {
+			set_country_flag = choice_made
+			change_tag_from = ROOT
+			}
+			}
+		}
+}
 #confederates take up arms
 country_event = {
 	id = usa.75
@@ -2325,6 +2583,8 @@ country_event = {
 		hidden_effect = {
 		news_event = { hours = 6 id = news.363 }
 	}
+	set_country_flag = choice_made
+			change_tag_from = ROOT
 		COF = {
 		transfer_state = 363
 		transfer_state = 362
@@ -2353,9 +2613,48 @@ country_event = {
 					producer = COF
 				}
 			}
-		}	
-	}
-	#confederates take up arms
+		}
+		option = {
+		name = usa.75.b
+		trigger = { is_ai = no }
+		hidden_effect = {
+		news_event = { hours = 6 id = news.363 }
+		}
+		COF = {
+		transfer_state = 363
+		transfer_state = 362
+		transfer_state = 372
+		transfer_state = 364
+		transfer_state = 368
+		transfer_state = 367
+				transfer_state = 365
+				transfer_state = 366
+	 transfer_state = 371
+				transfer_state = 370
+				}
+				COF = {
+			load_oob = "COF_Civil_War"
+			}
+			COF = {
+			set_country_flag = choice_made
+			change_tag_from = ROOT
+			}
+				COF = {
+					add_civil_war_target = USA
+				
+			set_equipment_fraction = 0.5
+			set_stability = 0.9
+			set_war_support = 0.8
+			add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 2000
+					producer = COF
+				}
+			}
+		}
+	}	
+
+		#confederates take up arms
 country_event = {
 	id = usa.76
 	title = usa.76.t

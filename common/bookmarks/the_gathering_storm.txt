@@ -9,18 +9,22 @@ bookmarks = {
 		
 		"CAU"={
 			history = "CAU_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = syndicalism
 			ideas = {
-				
+				CAU_newly_born
+				CAU_spread_revolution
+				CAU_national_unity
 			}
 			focuses = {
-				
+				CAU_incident_at_canal
+				CAU_call_for_revolution
+				CAU_why_we_fight
 			}
 		}
 		
 		"USA"={
 			history = "USA_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = traditional_conservatism
 			ideas = {
 				home_of_the_free
 				great_depression
@@ -28,13 +32,13 @@ bookmarks = {
 			}
 			focuses = {
 				USA_new_nation1
-				USA_topple_communism1
+				USA_topple_syndicalism1
 				USA_interventionism1
 			}
 		}
 		"GER"={
 			history = "GER_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = syndicalism
 			ideas = {
 				GER_national_revitalization2
 				GER_syndicalist_economy
@@ -42,27 +46,27 @@ bookmarks = {
 			}
 			focuses = {
 				GER_maintain_allies
-				GER_syndaclist_international
-				GER_revolution_begin!
+				GER_syndicalist_international
+				GER_revolution_begin
 			}
 		}
 		"JAP"={
 			history = "JAP_GATHERING_STORM_DESC"
-			ideology = fascism
+			ideology = monarchism
 			ideas = {
 				state_shintoism
 				JAP_zaibatsus
 				JAP_militarism
 			}	
 			focuses = {
-				JAP_the_zero
-				JAP_warrior_spirit
-				JAP_strike_on_the_southern_resource_area
+				JAP_stay_as_we_are
+				JAP_sign_non_aggression_pact_with_usa
+				JAP_announce_ambitions
 			}			
 		}
 		"SOV"={
 			history = "SOV_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = nationalism
 			ideas = {
 				trotskyite_plot
 				home_of_revolution
@@ -80,33 +84,51 @@ bookmarks = {
 
 
 		# minors from DLC ####
-		"POL"={
-		minor = yes
-			history = "POL_GATHERING_STORM_DESC"
-			ideology = neutrality
+		"CHL"={
+			minor = yes
+			history = "CHL_GATHERING_STORM_DESC"
+			ideology = totalitarianism
 			ideas = {
-				
 			}
 			focuses = {
-				POL_liberalism
-				POL_draw_closer_to_france
-				POL_seek_accommodation_with_russia
+				CHL_down_with_CHO
+				CHL_embargo_syndicalists
+				CHL_complete
 			}
 		}
-		
-		"ARM"={
+		"CRO"={
 			minor = yes
-			history = "ARM_GATHERING_STORM_DESC"
-			ideology = neutrality
+			history = "CRO_GATHERING_STORM_DESC"
+			ideology = nationalism
 			ideas = {
+				CRO_nationalism 
+				CRO_serb_guerillas 
+				CRO_divided
 			}
 			focuses = {
+				CRO_stay_as_we_are
+				CRO_militarism
+				CRO_demand_bosnia
+			}
+		}
+		"VIN"={
+			minor = yes
+			history = "VIN_GATHERING_STORM_DESC"
+			ideology = syndicalism
+			ideas = {
+				VIN_poor_construction
+				VIN_french_payments
+			}
+			focuses = {
+				VIN_form_indochinese_union
+				VIN_communist_ambitions
+				VIN_decolonization_done
 			}
 		}
 		"UCA"={
 			minor = yes
 			history = "UCA_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = market_liberal
 			ideas = {
 				UCA_circassian_repatriation
 				UCA_diversity
@@ -117,22 +139,10 @@ bookmarks = {
 				UCA_prepare_war
 			}
 		}
-		"SAF"={
-			minor = yes
-			history = "SAF_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				SAF_anti_colonialist
-				SAF_desegregation
-				SAF_african_union
-			}
-			focuses = {
-			}
-		}
 		"RAJ"={
 			minor = yes
 			history = "RAJ_GATHERING_STORM_DESC"
-			ideology = neutrality
+			ideology = traditional_conservatism
 			ideas = {
 				RAJ_agrarian_society
 				RAJ_princely_states
@@ -146,7 +156,7 @@ bookmarks = {
 		"GRE"={
 			minor = yes
 			history = "GRE_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = social_liberal
 			ideas = {
 				GRE_split_country
 				GRE_industrializing_society
@@ -161,7 +171,7 @@ bookmarks = {
 		"ARA"={
 			minor = yes
 			history = "ARA_GATHERING_STORM_DESC"
-			ideology = neutrality
+			ideology = monarchism
 			ideas = {
 				ARA_unified_people
 				ARA_oil
@@ -176,7 +186,7 @@ bookmarks = {
 		"ROM"={
 			minor = yes
 			history = "ROM_GATHERING_STORM_DESC"
-			ideology = neutrality
+			ideology = market_liberal
 			ideas = {
 				ROM_king_carol_ii_hedonist
 				neutrality_idea
@@ -191,7 +201,7 @@ bookmarks = {
 		"YUG"={
 			minor = yes
 			history = "YUG_GATHERING_STORM_DESC"
-			ideology = neutrality
+			ideology = totalitarianism
 			ideas = {
 				anti_german_military
 				YUG_idea_croatian_opposition
@@ -206,7 +216,7 @@ bookmarks = {
 		"CHI"={
 			minor = yes
 			history = "CHI_GATHERING_STORM_DESC"
-			ideology = neutrality
+			ideology = totalitarianism
 			ideas = {
 				CHI_army_corruption_1
 				CHI_hyper_inflation_1
@@ -221,7 +231,7 @@ bookmarks = {
 		"EGY"={
 			minor = yes
 			history = "EGY_GATHERING_STORM_DESC"
-			ideology = neutrality
+			ideology = monarchism
 			ideas = {
 				EGY_united
 				EGY_anti_british
@@ -236,7 +246,7 @@ bookmarks = {
 		"MAN"={
 			minor = yes
 			history = "MAN_GATHERING_STORM_DESC"
-			ideology = fascism
+			ideology = nationalism
 			ideas = {
 				MAN_banditry
 				MAN_kwantung_veto
@@ -252,7 +262,7 @@ bookmarks = {
 		"HAI"={
 			minor = yes
 			history = "HAITI_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = syndicalism
 			ideas = {
 			}
 			focuses = {
@@ -261,7 +271,7 @@ bookmarks = {
 		"TAJ"={
 			minor = yes
 			history = "TAJIKISTAN_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = anarchism
 			ideas = {
 			TAJ_closed_economy
 			TAJ_strong_will
@@ -273,7 +283,7 @@ bookmarks = {
 		"BOL"={
 			minor = yes
 			history = "BOLIVIA_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = radical_socialism
 			ideas = {
 			}
 			focuses = {
@@ -293,7 +303,7 @@ bookmarks = {
 		"ITA"={
 			minor = yes
 			history = "ITALY_GATHERING_STORM_DESC"
-			ideology = neutrality
+			ideology = monarchism
 			ideas = {
 			}
 			focuses = {
@@ -315,7 +325,7 @@ bookmarks = {
 		"MEX"={
 			minor = yes
 			history = "MEXICO_GATHERING_STORM_DESC"
-			ideology = neutrality
+			ideology = social_liberal
 			ideas = {
 				MEX_church_power_2
 				MEX_politicised_army
