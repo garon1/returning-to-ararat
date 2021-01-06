@@ -49,7 +49,7 @@ country_event = {
 	}
 }
 set_politics = {
-	ruling_party = social_democracy
+	ruling_party = social_liberal
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -76,8 +76,8 @@ create_country_leader = {
 	}
 }
 create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+		name = "Marcus Garvey" ####credit to america ablaze reddit for the portrait
+	picture = "gfx/leaders/JAM//JAM.tga"
 	expire = "1965.1.1"
 	ideology = social_liberal_subtype
 	traits = {

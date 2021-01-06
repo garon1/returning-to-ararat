@@ -52,7 +52,7 @@ set_autonomy = {
 	}
 }
 set_politics = {
-	ruling_party = traditional_conservatism
+	ruling_party = social_liberal
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -61,8 +61,8 @@ set_popularities = {
 radical_socialism = 2
 social_democracy = 18
 market_liberal = 15
-social_liberal = 9
-traditional_conservatism = 35
+social_liberal = 35
+traditional_conservatism = 9
 totalitarianism = 6
 syndicalism = 2
 market_socialism = 4
@@ -90,8 +90,8 @@ create_country_leader = {
 	}
 }
 create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+		name = "Alikhan Bukeikhanov"
+	picture = "Portrait_TMS_Alikhan_Bukeikhanov.tga"
 	expire = "1965.1.1"
 	ideology = social_liberal_subtype
 	traits = {

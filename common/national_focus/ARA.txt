@@ -1921,7 +1921,7 @@ focus_tree = {
 								}
 							add_opinion_modifier = {
 									target = ROOT
-									modifier = FRA_leftist_rhetoric_nationalism
+									modifier = FRA_leftist_rhetoric_fascism
 								}
 						}
 				}

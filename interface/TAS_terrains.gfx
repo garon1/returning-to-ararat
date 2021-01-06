@@ -1,6 +1,46 @@
 spriteTypes = {
 
 spriteType = {
+    name = "GFX_terrain_herat"
+    textureFile = "gfx/interface/terrains/terrain_city_herat.dds"
+  }
+
+  spriteType = {
+    name = "GFX_terrain_herat_winter"
+    textureFile = "gfx/interface/terrains/terrain_city_herat.dds"
+  }
+
+  spriteType = {
+    name = "GFX_terrain_kandahar"
+    textureFile = "gfx/interface/terrains/terrain_city_kandahar.dds"
+  }
+
+  spriteType = {
+    name = "GFX_terrain_kandahar_winter"
+    textureFile = "gfx/interface/terrains/terrain_city_kandahar.dds"
+  }
+
+spriteType = {
+    name = "GFX_terrain_kabul"
+    textureFile = "gfx/interface/terrains/terrain_city_kabul.dds"
+  }
+
+  spriteType = {
+    name = "GFX_terrain_kabul_winter"
+    textureFile = "gfx/interface/terrains/terrain_city_kabul.dds"
+  }
+
+spriteType = {
+    name = "GFX_terrain_quetta"
+    textureFile = "gfx/interface/terrains/terrain_city_quetta.dds"
+  }
+
+  spriteType = {
+    name = "GFX_terrain_quetta_winter"
+    textureFile = "gfx/interface/terrains/terrain_city_quetta.dds"
+  }
+
+spriteType = {
     name = "GFX_terrain_ghars"
     textureFile = "gfx/interface/terrains/terrain_city_ghars.dds"
   }

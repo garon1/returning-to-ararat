@@ -31,7 +31,7 @@ set_technology = {
 }
 set_autonomy = {
 		target = ANA
-		autonomous_state = autonomy_integrated_puppet
+		autonomous_state = autonomous_zone
 		freedom_level = 0.1
 	}
 if = {
@@ -125,15 +125,6 @@ create_country_leader = {
 		name = "Jonas Lote"
 	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = social_liberal_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-	expire = "1965.1.1"
 	ideology = totalitarianism_subtype
 	traits = {
 		#
@@ -144,16 +135,6 @@ create_country_leader = {
 	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
 	expire = "1965.1.1"
 	ideology = traditional_conservatism_subtype
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = syndicalism_subtype
 	traits = {
 		#
 	}

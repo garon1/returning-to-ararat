@@ -71,10 +71,10 @@ market_socialism = 5
 nationalism = 10
 }
 create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+		name = "Sir Abubakar Tafawa Balewa"
+	picture = "gfx/leaders/NGA/NGA.tga"
 	expire = "1965.1.1"
-	ideology = nationalism_subtype
+	ideology = social_democracy_subtype
 	traits = {
 		#
 	}
@@ -157,16 +157,6 @@ create_country_leader = {
 	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
 	expire = "1965.1.1"
 	ideology = market_liberal_subtype
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = social_democracy_subtype
 	traits = {
 		#
 	}

@@ -8,6 +8,6 @@ tags={
 	"Gameplay"
 }
 picture="thumbnail.png"
-name="TAS"
+name="Trouble At Sasoun"
 supported_version="1.10.*"
 remote_file_id="2347630050"

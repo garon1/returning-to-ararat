@@ -50,6 +50,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_autonomy_autonomous_zone"
+		textureFile = "gfx/interface/autonomy/autonomous_zone.dds"
+	}
+
+	spriteType = {
 		name = "GFX_autonomy_annex_icon"
 		textureFile = "gfx/interface/autonomy/autonomy_annex_icon.dds"
 	}

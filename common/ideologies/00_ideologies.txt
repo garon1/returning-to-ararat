@@ -537,12 +537,12 @@ ideologies = {
 			nationalism_subtype = {}
 		}
 		dynamic_faction_names = {
-			"FACTION_NAME_nationalism_1"
-			"FACTION_NAME_nationalism_2"
-			"FACTION_NAME_nationalism_3"
-			"FACTION_NAME_nationalism_4"
-			"FACTION_NAME_nationalism_5"
-			"FACTION_NAME_nationalism_6"
+			"FACTION_NAME_NATIONALISM_1"
+			"FACTION_NAME_NATIONALISM_2"
+			"FACTION_NAME_NATIONALISM_3"
+			"FACTION_NAME_NATIONALISM_4"
+			"FACTION_NAME_NATIONALISM_5"
+			"FACTION_NAME_NATIONALISM_6"
 		}
 		color = { 22 22 21 }
 		rules = {

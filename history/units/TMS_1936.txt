@@ -1,6 +1,5 @@
 division_template = {
-	name = "Infantry"				# Represents: German-trained divisions (better equipment than rest),
-	division_names_group = TMS_INF_01
+	name = "Infantry"		
 									# 	as well as two-division infantry corps (generally poorly-equipped militias),
 	regiments = {					#	and local militia groups.
 		infantry = { x = 0 y = 0 }	# Note: Chinese divisions were brigade-sized compared other nations' armies
@@ -12,8 +11,7 @@ division_template = {
 	priority = 0 # garrison
 }
 division_template = {
-	name = "Sanjiao Jun"			# Represents three-division infantry corps (generally poorly-equipped militias)
-	division_names_group = TMS_INF_01
+	name = "Sanjiao Jun"		
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -25,8 +23,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Qibing Jun"		# Represents two-division cavalry corps (generally poorly-equipped)
-	division_names_group = TMS_CAV_01
+	name = "Qibing Jun"
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }

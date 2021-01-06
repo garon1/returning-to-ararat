@@ -2971,7 +2971,6 @@ country_event = {
 			}
 			SOV = { 
 				country_event = { id = bftb_greece.33 days = 1 }
-				unlock_decision_tooltip = SOV_set_up_puppet_state_in_turkey
 			}
 		}
 	}
@@ -3003,7 +3002,6 @@ country_event = {
 			limit = { 
 				original_tag = SOV
 			}
-			unlock_decision_tooltip = SOV_set_up_puppet_state_in_turkey
 			add_to_faction = GRE
 		}
 		hidden_effect = {

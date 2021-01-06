@@ -12,10 +12,6 @@ add_core_of = VIN
 		}
 		buildings = {
 			infrastructure = 1
-			7432 = {
-				naval_base = 1
-
-			}
 
 		}
 

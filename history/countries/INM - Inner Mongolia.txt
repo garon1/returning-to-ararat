@@ -98,24 +98,6 @@ create_country_leader = {
 	}
 }
 
-### Field Marshals ###
-create_field_marshal = {
-	name = "Roman von Ungern-Sternberg"
-	desc = "POLITICS_STERNBERG_ARMY_DESC"
-	portrait_path = "gfx/leaders/MON/Portrait_MON_Sternberg.tga"
-	traits = {
-		harsh_leader
-		aggressive_assaulter
-		cavalry_leader
-	}
-	skill = 3
-	attack_skill = 4
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 3
-	id = 1157
-}
-
 create_field_marshal = { #
 	name = "Manlaibaatar Damdinsüren"
 	desc = "POLITICS_MANLAIBAATAR_DAMDINSUREN_DESC"

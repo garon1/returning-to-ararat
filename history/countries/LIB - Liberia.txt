@@ -110,16 +110,6 @@ create_country_leader = {
 		name = "Jonas Lote"
 	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = traditional_conservatism_subtype
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-	expire = "1965.1.1"
 	ideology = syndicalism_subtype
 	traits = {
 		#
@@ -183,7 +173,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Edwin Barclay"
 	desc = "POLITICS_EDWIN_BARCLAY_DESC"
-	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_2.dds"
+	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_1.dds"
 	expire = "1965.1.1"
 	ideology = traditional_conservatism_subtype
 	traits = {

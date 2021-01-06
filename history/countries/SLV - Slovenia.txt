@@ -30,36 +30,9 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	monarchism = 5
-radical_socialism = 1
-social_democracy = 45
-market_liberal = 10
-social_liberal = 10
-traditional_conservatism = 8
-totalitarianism = 5
-syndicalism = 1
-market_socialism = 5
-nationalism = 10
-anarchism = 1
-}
-
-create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = social_democracy_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = nationalism_subtype
-	traits = {
-		#
-	}
+	traditional_conservatism = 30
+radical_socialism = 10
+social_democracy = 60
 }
 create_country_leader = {
 		name = "Jonas Lote"
@@ -145,8 +118,8 @@ create_country_leader = {
 }
 
 create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+		name = "Anton Korošec"
+	picture = "gfx/leaders/SLV/SLV.tga"
 	expire = "1965.1.1"
 	ideology = social_democracy_subtype
 	traits = {

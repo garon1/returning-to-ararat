@@ -846,7 +846,7 @@ country_event = {
 					popularity = -0.1
 				}
 				GER = { 
-			add_opinion_modifier = { target = JAP modifier = disbanded_unions }
+			add_opinion_modifier = { target = JAP modifier = condemn_aggression }
 		}
 
 	}

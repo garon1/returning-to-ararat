@@ -10,7 +10,10 @@ state={
 		add_core_of = PRC
 		buildings = {
 			infrastructure = 2
+5007 = {
+				bunker = 2
 
+			}
 		}
 		1938.10.25 = {
 			controller = JAP

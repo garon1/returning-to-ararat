@@ -67,33 +67,15 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = social_democracy
 	last_election = "1935.10.27"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 96
-	fascism = 2
-	communism = 2
-}
-
-1939.1.1 = {
-	#next election october 39
-	set_popularities = {
-		democratic = 95
-		fascism = 2
-		communism = 3
-	}
-}
-create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = nationalism_subtype
-	traits = {
-		#
-	}
+	social_democracy = 96
+	nationalism = 2
+	market_socialism = 2
 }
 create_country_leader = {
 		name = "Jonas Lote"
@@ -117,26 +99,7 @@ create_country_leader = {
 		name = "Jonas Lote"
 	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = traditional_conservatism_subtype
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-	expire = "1965.1.1"
 	ideology = syndicalism_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = market_socialism_subtype
 	traits = {
 		#
 	}
@@ -178,16 +141,6 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = social_democracy_subtype
-	traits = {
-		#
-	}
-}
-
 add_ideas = {
 	neutrality_idea	
 	limited_conscription
@@ -200,7 +153,7 @@ create_country_leader = {
 	desc = "POLITICS_FEDERAL_COUNCIL_DESC"
 	picture = "Portrait_Switzerland_Federal_council.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = social_democracy_subtype
 	traits = {
 		#
 	}
@@ -211,7 +164,7 @@ create_country_leader = {
 	desc = "POLITICS_ERNST_BEGUIN_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = traditional_conservatism_subtype
 	traits = {
 		#
 	}
@@ -222,7 +175,7 @@ create_country_leader = {
 	desc = "POLITICS_MAX_LEO_KELLER_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds" 
 	expire = "1965.1.1"
-	ideology = nazism
+	ideology = nationalism_subtype
 	traits = {
 		#
 	}
@@ -233,7 +186,7 @@ create_country_leader = {
 	desc = "POLITICS_FRITZ_PLATTEN_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = market_socialism_subtype
 	traits = {
 		#
 	}

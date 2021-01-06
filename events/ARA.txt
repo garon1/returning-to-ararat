@@ -277,9 +277,8 @@ country_event = {
             factor = 80
             }
         name = arabia.4.a
-        news_event = { hours = 6 id = news.341 }
       hidden_effect = {
-            
+            news_event = { hours = 6 id = news.341 }
             }
         set_cosmetic_tag = ARA_UNIFIED_neutrality
     }

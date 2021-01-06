@@ -1,4 +1,8 @@
 #reload countrycolors
+AFE = {
+	color = rgb { 175 52 83 }
+	color_ui = rgb { 175 52 83 }
+}
 BRE = {
 	color = rgb { 0 198 198 }
 	color_ui = rgb { 229 104 205 }
@@ -81,8 +85,8 @@ FIR = {
 }
 	
 BAR = {
-	color = rgb { 181 163 16}
-	color_ui = rgb { 181 163 16}
+	color = rgb { 96 0 193}
+	color_ui = rgb { 96 0 193}
 }
 UCA = {
 	color = rgb { 240 190 131 }

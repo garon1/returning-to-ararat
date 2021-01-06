@@ -192,7 +192,7 @@ traditional_conservatism = 9
 totalitarianism = 1
 syndicalism = 2
 market_socialism = 2
-nationalism = 5
+nationalism = 9
 anarchism = 1
 }
 create_country_leader = {

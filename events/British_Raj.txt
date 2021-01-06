@@ -803,6 +803,7 @@ country_event = {
 
 		hidden_effect = {
 		news_event = { days = 2 id = news.367 }
+		country_event = { days = 5 id = raj.216 }
 		add_named_threat = { threat = 4 name = generic.15.t }
 			BRM = {
 				transfer_state = 288
@@ -829,7 +830,6 @@ country_event = {
 			}
 				KHU = {
 				transfer_state = 445
-				transfer_state = 442
 				transfer_state = 443
 				transfer_state = 787
 				transfer_state = 441
@@ -963,5 +963,48 @@ fire_only_once = yes
       factor = 100
     }
     country_event = {days = 200 id = britain.25}
+  }
+}
+#afghan civil war
+country_event = {
+  id = raj.216
+  title = raj.216.t
+  desc = raj.216.d
+  picture = GFX_report_event_indian_soldiers
+
+is_triggered_only = yes
+  
+  #well, we are fucked
+  option = {
+   name = raj.216.a
+    ai_chance = {
+      factor = 100
+    }
+   add_named_threat = { threat = 8 name = generic.15.t }
+		news_event = { hours = 8 id = news.392 }
+			AFG = {
+	 transfer_state = 267
+				}
+				AFG = {
+					add_civil_war_target = AFE
+				
+			set_equipment_fraction = 0.5
+			set_stability = 0.9
+			set_war_support = 0.8
+			add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 1000
+					producer = AFG
+				}
+			load_oob = "AFG_1936"
+			}
+			AFE = {
+		add_stability = -0.2
+		declare_war_on = {
+					    target = AFG
+					    type = civil_war
+					}
+
+		    }
   }
 }

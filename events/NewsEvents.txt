@@ -14736,6 +14736,37 @@ news_event = {
 
   }
 }
+#afghanistan uprising
+news_event = {
+  id = news.392
+  title = news.392.title
+  desc = news.392.desc
+  picture = GFX_news_event_chinese_soldiers_city_ruin
+  
+  major = yes
+  is_triggered_only = yes
+  option = {
+    name = news.392.a
+    trigger = {
+      NOT = {
+        TAG = ENG
+        TAG = AFG
+      }
+    }
+  }
+  option = {
+    name = news.392.b
+    trigger = {
+     TAG = ENG
+    TAG = AFG
+    }
+
+  }
+}
+
+
+
+
 
 
 

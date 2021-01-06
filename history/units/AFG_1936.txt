@@ -1,8 +1,6 @@
 ﻿division_template = {
 	name = "Royal Guard"
 
-	division_names_group = AFG_ARM_01
-
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -18,9 +16,7 @@
 	priority = 2
 }
 division_template = {
-	name = "Militia"				# Militia units (lowest experience, oldest equipment)
-
-	division_names_group = AFG_GAR_01
+	name = "Militia"
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -34,7 +30,61 @@ division_template = {
 }
 
 units = {
-	#Royal Afghani Army
+division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12831
+		division_template = "Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 5082
+		division_template = "Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 8090
+		division_template = "Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10737
+		division_template = "Royal Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10737
+		division_template = "Royal Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
 	
 
 }

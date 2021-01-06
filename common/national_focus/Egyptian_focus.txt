@@ -1357,10 +1357,7 @@ focus_tree = {
 		icon = GFX_focus_generic_black_sea_focus
 		cost = 7.00
 		prerequisite = {
-			focus = EGY_stay_conservative
-		}
-		prerequisite = {
-			focus = EGY_progressive_focus
+			focus = EGY_stay_conservative focus = EGY_progressive_focus
 		}
 		x = 9
 		y = 7

@@ -14,10 +14,6 @@ set_technology = {
 
 add_ideas = {
 }
-country_event = {
-	id = tas_political.1
-	hours = 6
-}
 set_stability = 0.5
 set_war_support = 0.25
 

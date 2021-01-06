@@ -17,7 +17,7 @@ country_event = {
 }
 
 set_research_slots = 3
-set_stability = 0.5
+set_stability = 0.3
 
 
 # Starting tech
@@ -192,15 +192,6 @@ create_country_leader = {
 	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
 	expire = "1965.1.1"
 	ideology = syndicalism_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = market_socialism_subtype
 	traits = {
 		#
 	}

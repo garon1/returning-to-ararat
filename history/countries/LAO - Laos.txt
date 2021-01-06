@@ -87,8 +87,8 @@ radical_socialism = 35
 syndicalism = 65
 }
 create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+		name = "Souphanouvong"
+	picture = "Portrait_Laos_Souphanouvong.tga"
 	expire = "1965.1.1"
 	ideology = syndicalism_subtype
 	traits = {
@@ -127,16 +127,6 @@ create_country_leader = {
 	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
 	expire = "1965.1.1"
 	ideology = traditional_conservatism_subtype
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = syndicalism_subtype
 	traits = {
 		#
 	}

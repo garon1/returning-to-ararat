@@ -71,11 +71,16 @@ if = {
 		transport = 1
 	}
 }
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
 	set_technology = {
+	early_submarine = 1
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		early_battlecruiser = 1
+		early_carrier = 1
+		transport = 1
 		basic_naval_mines = 1
 		submarine_mine_laying = 1
 		early_ship_hull_light = 1
@@ -101,10 +106,6 @@ if = {
 		improved_secondary_battery = 1
 		basic_fire_control_system = 1
 	}
-	add_ideas = MTG_naval_treaty_adherent
-	set_global_flag = MTG_second_london_conference
-	set_global_flag = { flag = MTG_naval_treaty_signatories value = 5 }
-}
 
 if = {
 	limit = {
@@ -164,11 +165,6 @@ set_autonomy = {
 		freedom_level = 0.4
 	}
 	set_autonomy = {
-		target = AFG
-		autonomous_state = autonomy_integrated_puppet
-		freedom_level = 0.4
-	}
-	set_autonomy = {
 		target = CAN
 		autonomous_state = autonomy_dominion
 		freedom_level = 0.8
@@ -178,6 +174,11 @@ set_autonomy = {
 		target = AST
 		autonomous_state = autonomy_dominion
 		freedom_level = 0.8
+	}
+set_autonomy = {
+		target = AFE
+		autonomous_state = autonomy_colony
+		freedom_level = 0.4
 	}
 	set_autonomy = {
 		target = BAF

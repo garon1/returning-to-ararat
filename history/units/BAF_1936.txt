@@ -1,6 +1,5 @@
 division_template = {
 	name = "Infantry Division"
-	division_names_group = "BAF_INF_01"
 	regiments = {
 		militia = { x = 0 y = 0 }
 		militia = { x = 0 y = 1 }
@@ -14,7 +13,6 @@ division_template = {
 
 division_template = {
 	name = "Cavalry Division"
-	division_names_group = "BAF_CAV_01"
 	is_locked = yes
 	regiments = {
 		cavalry = { x = 0 y = 0 }
@@ -26,7 +24,6 @@ division_template = {
 }
 division_template = {
 	name = "National Guard"
-	division_names_group = "BAF_INF_01"
 	is_locked = yes
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -39,7 +36,6 @@ division_template = {
 
 division_template = {
 	name = "Experimental Armor Brigade"
-	division_names_group = "BAF_ARM_01"
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -55,7 +51,6 @@ division_template = {
 
 division_template = {
 	name = "National Infantry Division"
-	division_names_group = "BAF_INF_01"
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -75,7 +70,6 @@ division_template = {
 
 division_template = {
 	name = "National Cavalry Division"
-	division_names_group = "BAF_CAV_01"
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }

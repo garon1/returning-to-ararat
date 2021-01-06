@@ -6,6 +6,62 @@ categories =  {
 
 	###CITIES
 
+	kandahar = {
+		color = { 155 0 255 }
+		movement_cost = 1.4
+		ai_terrain_importance_factor = 6.0
+		sound_type = plains
+
+		units = {
+			attack = -0.5
+			#movement = -0.2
+		}
+
+		enemy_army_bonus_air_superiority_factor = -0.50
+	}
+
+	kabul = {
+		color = { 155 0 255 }
+		movement_cost = 1.4
+		ai_terrain_importance_factor = 6.0
+		sound_type = plains
+
+		units = {
+			attack = -0.5
+			#movement = -0.2
+		}
+
+		enemy_army_bonus_air_superiority_factor = -0.50
+	}
+
+	quetta = {
+		color = { 155 0 255 }
+		movement_cost = 1.4
+		ai_terrain_importance_factor = 6.0
+		sound_type = plains
+
+		units = {
+			attack = -0.5
+			#movement = -0.2
+		}
+
+		enemy_army_bonus_air_superiority_factor = -0.50
+	}
+
+	herat = {
+		color = { 155 0 255 }
+		movement_cost = 1.4
+		ai_terrain_importance_factor = 6.0
+		sound_type = plains
+
+		units = {
+			attack = -0.5
+			#movement = -0.2
+		}
+
+		enemy_army_bonus_air_superiority_factor = -0.50
+	}
+
 	antalya = {
 		color = { 155 0 255 }
 		movement_cost = 1.4
