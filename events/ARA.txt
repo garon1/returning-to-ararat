@@ -5,7 +5,7 @@ country_event = {
     id = arabia.1
     title = arabia.1.t
     desc = arabia.1.d
-    picture = GFX_report_event_vienna_award_negotiations
+    picture = GFX_report_event_spr_spanish_civil_war
     
     is_triggered_only = yes
     
@@ -59,7 +59,7 @@ country_event = {
     id = arabia.2
     title = arabia.2.t
     desc = arabia.2.d
-    picture = GFX_report_event_vienna_award_negotiations
+    picture = GFX_report_event_hitler_croatia_handshake
     
     is_triggered_only = yes
     
@@ -249,7 +249,7 @@ country_event = {
     id = arabia.3
     title = arabia.3.t
     desc = arabia.3.d
-    picture = GFX_report_event_vienna_award_negotiations
+    picture = GFX_report_event_gre_megali_conference_signing
     
     is_triggered_only = yes
     
@@ -268,7 +268,7 @@ country_event = {
     id = arabia.4
     title = arabia.4.t
     desc = arabia.4.d
-    picture = GFX_report_event_vienna_award_negotiations
+    picture = GFX_report_event_tur_sultan_in_istanbul
     
     is_triggered_only = yes
     

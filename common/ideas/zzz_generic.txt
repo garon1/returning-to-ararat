@@ -208,7 +208,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_syndicalism_drift_bonus
+			picture = generic_communism_drift_bonus
 			
 			modifier = {
 				syndicalism_drift = 0.1
@@ -299,7 +299,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_syndicalism_drift_bonus
+			picture = generic_communism_drift_bonus
 			
 			modifier = {
 				syndicalism_drift = 0.1
@@ -319,7 +319,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_syndicalism_drift_bonus
+			picture = generic_communism_drift_bonus
 			
 			modifier = {
 				syndicalism_drift = 0.1
@@ -1117,7 +1117,7 @@ ideas = {
 			allowed = {
 				NOT = { OR = { tag = GER tag = ENG tag = SOV original_tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = CZE tag = ROM tag = CHI tag = MAN tag = MEX tag = HOL original_tag = SPR } }
 				NOT = {
-					has_available_idea_with_traits = { idea = syndicalist_revolutionary limit = 1 }
+					has_available_idea_with_traits = { idea = communist_revolutionary limit = 1 }
 				}
 				if = {
 					limit = { has_dlc = "Battle for the Bosporus" }

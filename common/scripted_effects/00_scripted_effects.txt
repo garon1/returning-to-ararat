@@ -957,11 +957,11 @@ abandon_colony_tag = {
 	}
 }
 
-#Should remove any and all fascist foreign influence, to be updated
-remove_fascist_spirits_effect = {
+#Should remove any and all nationalist foreign influence, to be updated
+remove_nationalist_spirits_effect = {
 	if = {
-		limit = { has_idea = fascist_influence }
-		remove_ideas = fascist_influence
+		limit = { has_idea = nationalist_influence }
+		remove_ideas = nationalist_influence
 	}
 	if = {
 		limit = { has_idea = american_influence_drift_fascism }

@@ -4921,144 +4921,6 @@ news_event = {
 	}
 }
 
-# Germany Breaks Molotov-Ribbentrop Pact
-news_event = {
-	id = news.153
-	title = news.153.t
-	desc = news.153.d
-	picture = GFX_news_event_german_inspect_troops
-	
-	major = yes
-
-	trigger = {
-		SOV = {
-			has_defensive_war_with = GER
-			has_opinion_modifier = MR_pact
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 2
-	}
-
-	immediate = {
-		hidden_effect = {
-			SOV = { 
-				remove_opinion_modifier = { target = GER modifier = MR_pact }
-				remove_ideas = SOV_molotov_ribbentrop_pact
-			}
-			GER = { remove_opinion_modifier = { target = SOV modifier = MR_pact } }
-			every_other_country = {
-				limit = { has_opinion_modifier = MR_pact_fascists }
-				remove_opinion_modifier = { target = GER modifier = MR_pact_fascists }
-			}
-		}
-	}
-	
-	option = {
-		name = news.153.a
-		trigger = {
-			NOT = {
-				TAG = GER
-				TAG = SOV
-				is_in_faction_with = SOV
-			}
-		}
-		if = {
-			limit = {
-				original_tag = ENG
-				has_government = communism
-				has_country_leader = {
-					name = "Rajani Palme Dutt"
-					ruling_only = yes
-				}
-			}
-			create_country_leader = {
-				name = "Harry Pollitt"
-				desc = "POLITICS_HARRY_POLLITT_DESC"
-				picture = "portrait_eng_harry_pollitt.dds"
-				expire = "1965.1.1"
-				ideology = leninism
-				traits = {
-					staunch_stalinist
-				}
-			}
-		}
-	}
-	option = {
-		name = news.153.b
-		trigger = { TAG = GER }
-	}
-	option = {
-		name = news.153.c
-		trigger = { 
-			OR = {
-				TAG = SOV
-				is_in_faction_with = SOV
-			}
-		}
-	}
-}
-
-# USSR Breaks Molotov-Ribbentrop Pact
-news_event = {
-	id = news.154
-	title = news.154.t
-	desc = news.154.d
-	picture = GFX_news_event_006
-	
-	major = yes
-
-	trigger = {
-		GER = {
-			has_defensive_war_with = SOV
-			has_opinion_modifier = MR_pact
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 2
-	}
-
-	immediate = {
-		hidden_effect = {
-			SOV = { 
-				remove_opinion_modifier = { target = GER modifier = MR_pact }
-				remove_ideas = SOV_molotov_ribbentrop_pact
-			}
-			GER = { remove_opinion_modifier = { target = SOV modifier = MR_pact } }
-			every_other_country = {
-				limit = { has_opinion_modifier = MR_pact_fascists }
-				remove_opinion_modifier = { target = GER modifier = MR_pact_fascists }
-			}
-		}
-	}
-	
-	option = {
-		name = news.153.a
-		trigger = {
-			NOT = {
-				TAG = GER
-				TAG = SOV
-				is_in_faction_with = GER
-			}
-		}
-	}
-	option = {
-		name = news.154.b
-		trigger = {
-			OR = {
-				TAG = GER
-				is_in_faction_with = GER
-			}
-		}
-	}
-	option = {
-		name = news.154.c
-		trigger = { TAG = SOV }
-	}
-}
-
 # Germany declares war without having remilitarized Rhineland. Which then happens.
 news_event = {
 	id = news.155
@@ -14276,7 +14138,7 @@ news_event = {
 	id = news.369
 	title = news.369.title
 	desc = news.369.desc
-	picture = GFX_news_event_generic_riot
+	picture = GFX_news_event_strasbourg
 	
 	major = yes
 	is_triggered_only = yes
@@ -14299,7 +14161,7 @@ news_event = {
 	id = news.370
 	title = news.370.title
 	desc = news.370.desc
-	picture = GFX_news_event_generic_riot
+	picture = GFX_news_event_polish_army
 	
 	major = yes
 	is_triggered_only = yes
@@ -14322,7 +14184,7 @@ news_event = {
 	id = news.371
 	title = news.371.title
 	desc = news.371.desc
-	picture = GFX_news_event_generic_riot
+	picture = GFX_news_event_bose_meeting
 	
 	major = yes
 	is_triggered_only = yes
@@ -14348,7 +14210,7 @@ news_event = {
 	id = news.372
 	title = news.372.title
 	desc = news.372.desc
-	picture = GFX_news_event_generic_riot
+	picture = GFX_news_event_tsar_boris
 	
 	major = yes
 	is_triggered_only = yes
@@ -14372,7 +14234,7 @@ news_event = {
   id = news.373
   title = news.373.title
   desc = news.373.desc
-  picture = GFX_news_event_generic_riot
+  picture = GFX_news_event_battle_for_the_bosporus
   
   major = yes
   is_triggered_only = yes
@@ -14396,7 +14258,7 @@ news_event = {
   id = news.374
   title = news.374.title
   desc = news.374.desc
-  picture = GFX_news_event_generic_riot
+  picture = GFX_news_event_south_africa_patrol
   
   major = yes
   is_triggered_only = yes
@@ -14422,7 +14284,7 @@ news_event = {
   id = news.375
   title = news.375.title
   desc = news.375.desc
-  picture = GFX_news_event_generic_riot
+  picture = GFX_news_event_soviet_soldiers_ruins
   
   major = yes
   fire_only_once = yes
@@ -14453,7 +14315,7 @@ news_event = {
   id = news.376
   title = news.376.title
   desc = news.376.desc
-  picture = GFX_news_event_generic_riot
+  picture = GFX_news_event_soviet_soldiers_ruins
   
   major = yes
   fire_only_once = yes
@@ -14484,7 +14346,7 @@ news_event = {
   id = news.377
   title = news.377.title
   desc = news.377.desc
-  picture = GFX_news_event_generic_riot
+  picture = GFX_news_event_soviet_soldiers_ruins
   
   major = yes
   fire_only_once = yes
@@ -14515,7 +14377,7 @@ news_event = {
   id = news.378
   title = news.378.title
   desc = news.378.desc
-  picture = GFX_news_event_generic_riot
+  picture = GFX_news_event_soviet_soldiers_ruins
   
   major = yes
   fire_only_once = yes
@@ -14546,7 +14408,7 @@ news_event = {
   id = news.379
   title = news.379.title
   desc = news.379.desc
-  picture = GFX_news_event_generic_riot
+  picture = GFX_news_event_soviet_soldiers_ruins
   
   major = yes
   fire_only_once = yes
@@ -14578,7 +14440,7 @@ news_event = {
   id = news.380
   title = news.380.title
   desc = news.380.desc
-  picture = GFX_news_event_generic_riot
+  picture = GFX_news_event_soviet_soldiers_ruins
   
   major = yes
   fire_only_once = yes
@@ -14609,7 +14471,7 @@ news_event = {
   id = news.381
   title = news.381.title
   desc = news.381.desc
-  picture = GFX_news_event_generic_riot
+  picture = GFX_news_event_tank_factory
   
   major = yes
   is_triggered_only = yes
@@ -14633,7 +14495,7 @@ news_event = {
   id = news.382
   title = news.382.title
   desc = news.382.desc
-  picture = GFX_news_event_generic_riot
+  picture = GFX_news_event_worker_protests
   
   major = yes
   is_triggered_only = yes
@@ -14657,7 +14519,7 @@ news_event = {
   id = news.383
   title = news.383.title
   desc = news.383.desc
-  picture = GFX_news_event_generic_riot
+  picture = GFX_news_event_yugoslav_coup
   
   major = yes
   is_triggered_only = yes
@@ -14681,7 +14543,7 @@ news_event = {
   id = news.384
   title = news.384.title
   desc = news.384.desc
-  picture = GFX_news_event_generic_riot
+  picture = GFX_news_event_worker_protests
   
   major = yes
   is_triggered_only = yes
@@ -14705,7 +14567,7 @@ news_event = {
   id = news.385
   title = news.385.title
   desc = news.385.desc
-  picture = GFX_news_event_generic_riot
+  picture = GFX_news_event_ast_transfer_singapore
   
   major = yes
   is_triggered_only = yes
@@ -14729,7 +14591,7 @@ news_event = {
   id = news.386
   title = news.386.title
   desc = news.386.desc
-  picture = GFX_news_event_generic_riot
+  picture = GFX_news_event_banovina_croatia
   
   major = yes
   is_triggered_only = yes
@@ -14753,7 +14615,7 @@ news_event = {
   id = news.387
   title = news.387.title
   desc = news.387.desc
-  picture = GFX_news_event_generic_riot
+  picture = GFX_news_event_cze_little_entente
   
   major = yes
   is_triggered_only = yes
@@ -14779,7 +14641,7 @@ news_event = {
   id = news.388
   title = news.388.title
   desc = news.388.desc
-  picture = GFX_news_event_generic_riot
+  picture = GFX_news_event_fascist_gathering
   
   major = yes
   is_triggered_only = yes

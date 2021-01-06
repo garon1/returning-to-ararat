@@ -16,7 +16,7 @@ country_event = {
 	option = {
 		name = poland.1.a
 		ai_chance = { factor = 10 }
-		add_ideas = fascist_influence
+		add_ideas = nationalist_influence
 		add_state_claim = 198
 		add_state_claim = 199
 		add_state_claim = 201

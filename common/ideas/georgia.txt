@@ -93,7 +93,7 @@ GEO_oppression = {
 				political_power_factor = -0.05			
 			}
 		}
-GEO_fascism = {
+GEO_nationalism = {
 			
 			
 			allowed = {

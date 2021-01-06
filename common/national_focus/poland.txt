@@ -1892,7 +1892,7 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			add_timed_idea = {
-				idea = fascist_influence
+				idea = nationalist_influence
 				days = 720
 			}
 			#Increases Fascist Support
@@ -1927,7 +1927,7 @@
 		prerequisite = { focus = POL_go_right }
 		available = {
 			country_exists = GER
-			GER = { has_government = fascism }
+			GER = { has_government = nationalism }
 		}
 		
 		x = 0

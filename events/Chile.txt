@@ -4,7 +4,7 @@ country_event = {
 	id = chile.1
 	title = chile.1.t
 	desc = chile.1.d
-	picture = GFX_report_event_chinese_army_training
+	picture = GFX_report_event_gre_greek_cavalry
 	
 	is_triggered_only = yes
 	
@@ -18,7 +18,7 @@ country_event = {
 	id = chile.2
 	title = chile.2.t
 	desc = chile.2.d
-	picture = GFX_report_event_chinese_army_training
+	picture = GFX_report_event_generic_strike
 	
 	is_triggered_only = yes
 	
@@ -53,7 +53,7 @@ country_event = {
   id = chile.3
   title = chile.3.t
   desc = chile.3.d
-  picture = GFX_report_event_chinese_army_training
+  picture = GFX_report_event_FDR_speech
   hidden = yes
   is_triggered_only = yes
   
@@ -91,10 +91,10 @@ country_event = {
   }
     option = { #nationalism prevails
     name = chile.3.b
-    hidden_effect = {
     ai_chance = {
-			factor = 10
-		}
+      factor = 10
+    }
+    hidden_effect = {
     retire_country_leader = yes
     complete_national_focus = CHL_nationalism
     news_event = { id = news.383 hours = 6 }
@@ -120,10 +120,10 @@ country_event = {
   }
   option = { #social democracy prevails
     name = chile.3.c
+     ai_chance = {
+      factor = 30
+    }
     hidden_effect = {
-    ai_chance = {
-			factor = 30
-		}
     retire_country_leader = yes
     news_event = { id = news.384 hours = 6 }
     complete_national_focus = CHL_democracy
@@ -154,7 +154,7 @@ country_event = {
   id = chile.4
   title = chile.4.t
   desc = chile.4.d
-  picture = GFX_report_event_chinese_army_training
+  picture = GFX_report_event_generic_military_parade
   
   is_triggered_only = yes
   
@@ -182,7 +182,7 @@ country_event = {
   id = chile.5
   title = chile.5.t
   desc = chile.5.d
-  picture = GFX_report_event_chinese_army_training
+  picture = GFX_report_event_ast_army
   
   is_triggered_only = yes
   
@@ -197,7 +197,7 @@ country_event = {
   id = chile.6
   title = chile.6.t
   desc = chile.6.d
-  picture = GFX_report_event_chinese_army_training
+  picture = GFX_report_event_vienna_award_hungary
   
   is_triggered_only = yes
   
@@ -222,7 +222,7 @@ country_event = {
   id = chile.7
   title = chile.7.t
   desc = chile.7.d
-  picture = GFX_report_event_chinese_army_training
+  picture = GFX_report_event_aid_pact
   
   is_triggered_only = yes
   

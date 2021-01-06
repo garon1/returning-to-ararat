@@ -10,7 +10,7 @@ country_event = {
 	desc = germany.1002.desc
 	picture = GFX_report_event_german_reichstag_gathering	
 	trigger = {
-	has_completed_focus = GER_syndaclist_international
+	has_completed_focus = GER_syndicalist_international
 	}
 
 	mean_time_to_happen = { days = 2 }

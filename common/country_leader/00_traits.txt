@@ -1959,6 +1959,17 @@ leader_traits = {
 			}
 		}
 	}
+
+	social_democracy_reformer = {
+		random = no
+		# Boosts Democracy
+		sprite = 13
+		social_democracy_drift = 0.1
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
 	
 	democratic_reformer = {
 		random = no
@@ -1968,6 +1979,21 @@ leader_traits = {
 		
 		ai_will_do = {
 			factor = 0
+		}
+	}
+
+	nationalist_demagogue = {
+		random = no
+		# Boosts Fascism
+		sprite = 13
+		nationalism_drift = 0.1
+		
+		ai_will_do = {
+			factor = 1
+			modifier = { 
+				not = { has_completed_focus = USA_america_first }
+				factor = 0
+			}
 		}
 	}
 	

@@ -52,7 +52,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				fascism_drift = 0.05
+				nationalism_drift = 0.05
 			}
 		}
 
@@ -130,8 +130,8 @@ ideas = {
 			allowed_civil_war = {
 				NOT = {
 					OR = {
-						has_government = communism
-						has_government = fascism
+						has_government = anarchism
+						has_government = nationalism
 					}
 				}
 			}
@@ -178,8 +178,8 @@ ideas = {
 			allowed_civil_war = {
 				NOT = {
 					OR = {
-						has_government = communism
-						has_government = fascism
+						has_government = anarchism
+						has_government = nationalism
 					}
 				}
 			}
@@ -202,8 +202,8 @@ ideas = {
 			allowed_civil_war = {
 				NOT = {
 					OR = {
-						has_government = communism
-						has_government = fascism
+						has_government = anarchism
+						has_government = nationalism
 					}
 				}
 			}
@@ -226,8 +226,8 @@ ideas = {
 			allowed_civil_war = {
 				NOT = {
 					OR = {
-						has_government = communism
-						has_government = fascism
+						has_government = anarchism
+						has_government = nationalism
 					}
 				}
 			}
@@ -251,8 +251,8 @@ ideas = {
 			allowed_civil_war = {
 				NOT = {
 					OR = {
-						has_government = communism
-						has_government = fascism
+						has_government = anarchism
+						has_government = nationalism
 					}
 				}
 			}
@@ -277,8 +277,8 @@ ideas = {
 			allowed_civil_war = {
 				NOT = {
 					OR = {
-						has_government = communism
-						has_government = fascism
+						has_government = anarchism
+						has_government = nationalism
 					}
 				}
 			}
@@ -301,59 +301,59 @@ ideas = {
 
 			allowed_civil_war = {
 				OR = {
-					has_government = communism
-					has_government = fascism
+					has_government = anarchism
+					has_government = nationalism
 				}
 			}
 
 			removal_cost = -1
 
 			modifier = {
-				democratic_drift = -0.02
-				neutrality_drift = -0.02
+				traditional_conservatism_drift = -0.02
+				totalitarianism_drift = -0.02
 			}
 		}
 
-		RAJ_all_india_forward_bloc_fascism = {
+		RAJ_all_india_forward_bloc_nationalism = {
 
-			picture = raj_all_india_forward_bloc_fascism
+			picture = raj_all_india_forward_bloc_nationalism
 
 			allowed = {
 				original_tag = RAJ
 			}
 
 			allowed_civil_war = {
-				has_government = fascism
+				has_government = nationalism
 			}
 
 			removal_cost = -1
 
 			modifier = {
-				democratic_drift = -0.02
-				neutrality_drift = -0.02
-				fascism_drift = 0.03
+				traditional_conservatism_drift = -0.02
+				totalitarianism_drift = -0.02
+				nationalism_drift = 0.03
 				autonomy_gain = 0.5
 			}
 		}
 
-		RAJ_all_india_forward_bloc_communism = {
+		RAJ_all_india_forward_bloc_anarchism = {
 
-			picture = raj_all_india_forward_bloc_communism
+			picture = raj_all_india_forward_bloc_anarchism
 
 			allowed = {
 				original_tag = RAJ
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				has_government = anarchism
 			}
 
 			removal_cost = -1
 
 			modifier = {
-				democratic_drift = -0.02
-				neutrality_drift = -0.02
-				communism_drift = 0.03
+				traditional_conservatism_drift = -0.02
+				totalitarianism_drift = -0.02
+				anarchism_drift = 0.03
 				autonomy_gain = 0.5
 			}
 		}
@@ -388,8 +388,8 @@ ideas = {
 			allowed_civil_war = {
 				NOT = {
 					OR = {
-						has_government = communism
-						has_government = fascism
+						has_government = anarchism
+						has_government = nationalism
 					}
 				}
 			}
@@ -461,7 +461,7 @@ ideas = {
 			
 			do_effect = {
 				NOT = {
-					has_government = communism
+					has_government = anarchism
 				}
 			}
 			
@@ -494,7 +494,7 @@ ideas = {
 				
 			do_effect = {
 				NOT = {
-					has_government = fascism
+					has_government = nationalism
 				}
 			}
 		

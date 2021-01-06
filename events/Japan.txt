@@ -885,15 +885,15 @@ country_event = {
 }
 # new changes after the coup failed
 country_event = {
-	id = japan.26
-	title = japan.26.t
-	desc = japan.26.d
+	id = japan.27
+	title = japan.27.t
+	desc = japan.27.d
 	picture = GFX_japan_battle_flag
 	
 	is_triggered_only = yes
 	
 	option = {#weeeeeeee
-		name = japan.26.a
+		name = japan.27.a
 
 	}
 }

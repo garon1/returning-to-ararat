@@ -2005,7 +2005,6 @@ political_actions = {
 					value = 0.66
 				}				
 			}
-			remove_fascist_spirits_effect = yes
 			custom_effect_tooltip = ban_fascist_party_tt
 			add_stability = ban_ideology_var
 		}

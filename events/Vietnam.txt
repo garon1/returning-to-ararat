@@ -6,7 +6,7 @@ country_event = {
 	id = vietnam.1
 	title = vietnam.1.t
 	desc = vietnam.1.d
-	picture = GFX_report_event_chinese_soldiers_01
+	picture = GFX_report_event_soviet_tank_parade
 
 	is_triggered_only = yes
 	
@@ -20,7 +20,7 @@ country_event = {
 	id = vietnam.2
 	title = vietnam.2.t
 	desc = vietnam.2.d
-	picture = GFX_report_event_chinese_soldiers_01
+	picture = GFX_report_event_soviet_purge_officers_01
 
 	is_triggered_only = yes
 	
@@ -35,7 +35,7 @@ country_event = {
 	id = vietnam.3
 	title = vietnam.3.t
 	desc = vietnam.3.d
-	picture = GFX_report_event_chinese_soldiers_01
+	picture = GFX_report_event_poland_rejects
 
 	is_triggered_only = yes
 	

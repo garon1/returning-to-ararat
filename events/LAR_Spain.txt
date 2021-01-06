@@ -4061,7 +4061,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 0
-				has_completed_focus = POR_strict_totalitarianism_in_the_spanish_civil_war
+				has_completed_focus = POR_strict_neutrality_in_the_spanish_civil_war
 			}
 		}
 		add_manpower = -20000

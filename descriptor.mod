@@ -1,7 +1,13 @@
 version="v.1.10.*"
 tags={
 	"Alternative History"
+	"Map"
+	"Military"
+	"National Focuses"
+	"Events"
+	"Gameplay"
 }
-name="OTT"
+picture="thumbnail.png"
+name="TAS"
 supported_version="1.10.*"
-remote_file_id="2325255928"
+remote_file_id="2347630050"

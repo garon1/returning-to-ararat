@@ -224,7 +224,7 @@ focus_tree = {
 		x = 4
 		y = 5
 			completion_reward = {
-					add_ideas = social_democracy_influence
+					add_ideas = democratic_influence
 				}
 
 	}
@@ -1921,7 +1921,7 @@ focus_tree = {
 								}
 							add_opinion_modifier = {
 									target = ROOT
-									modifier = FRA_leftist_rhetoric_fascism
+									modifier = FRA_leftist_rhetoric_nationalism
 								}
 						}
 				}

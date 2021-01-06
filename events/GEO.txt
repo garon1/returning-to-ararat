@@ -118,20 +118,18 @@ country_event = {
 	trigger = {
         TAG = GEO
         AND = {
-       stability < 0.20
+         has_stability > 0.20
         }
     }
 	is_triggered_only = yes
 
 	option = {#yes
 		name = georgia.6.a
-add_named_threat = { threat = 2 name = generic.15 }
+		add_named_threat = { threat = 2 name = generic.15 }
 				start_civil_war = {
-					ideology = communism
+					ideology = anarchism
 					size = 0.3
-				}
-			
-		
+				}		
 	}
 }
 #kill him

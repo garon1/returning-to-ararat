@@ -6,7 +6,7 @@ country_event = {
 	id = pua.1
 	title = pua.1.t
 	desc = pua.1.d
-	picture = GFX_report_event_INC_mass
+	picture = GFX_report_event_saf_soldiers
 
 	is_triggered_only = yes
 
@@ -21,7 +21,7 @@ country_event = {
 	id = pua.2
 	title = pua.2.t
 	desc = pua.2.d
-	picture = GFX_report_event_INC_mass
+	picture = GFX_report_event_korean_war_march
 
 	is_triggered_only = yes
 
@@ -37,7 +37,7 @@ country_event = {
 	id = pua.3
 	title = pua.3.t
 	desc = pua.3.d
-	picture = GFX_report_event_INC_mass
+	picture = GFX_report_event_election_vote
 
 	is_triggered_only = yes
 
@@ -106,7 +106,7 @@ country_event = {
 	id = pua.5
 	title = pua.5.t
 	desc = pua.5.d
-	picture = GFX_report_event_INC_mass
+	picture = GFX_report_event_china_flying_tigers
 
 	is_triggered_only = yes
 
@@ -132,7 +132,7 @@ country_event = {
 	id = pua.6
 	title = pua.6.t
 	desc = pua.6.d
-	picture = GFX_report_event_INC_mass
+	picture = GFX_report_event_china_flying_tigers
 
 	is_triggered_only = yes
 
@@ -158,7 +158,7 @@ country_event = {
 	id = pua.7
 	title = pua.7.t
 	desc = pua.7.d
-	picture = GFX_report_event_INC_mass
+	picture = GFX_report_event_china_flying_tigers
 
 	is_triggered_only = yes
 
@@ -184,7 +184,7 @@ country_event = {
 	id = pua.8
 	title = pua.8.t
 	desc = pua.8.d
-	picture = GFX_report_event_INC_mass
+	picture = GFX_report_event_china_flying_tigers
 
 	is_triggered_only = yes
 
@@ -210,7 +210,7 @@ country_event = {
 	id = pua.9
 	title = pua.9.t
 	desc = pua.9.d
-	picture = GFX_report_event_INC_mass
+	picture = GFX_report_event_bul_boris_military
 
 	is_triggered_only = yes
 
@@ -246,9 +246,12 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-	USA = { has_capitulated = yes }
-	LOA = { has_capitulated = yes }
-	COF = { has_capitulated = yes }
+	PUA = {
+	controls_state = 361
+	controls_state = 363
+	controls_state = 371
+	controls_state = 386
+	}
 	}
 
 	option = { # good

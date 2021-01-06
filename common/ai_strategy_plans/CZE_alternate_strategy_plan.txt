@@ -197,7 +197,7 @@ CZE_alternate_strategy_plan_fascist = {
 		CZE_german_leanings
 		CZE_favor_czechs_3
 		CZE_deliver_sudetenland
-		CZE_czech_fascism
+		CZE_czech_nationalism
 		CZE_military_research_institute
 		CZE_exclude_the_slovaks
 		CZE_arms_exports_1

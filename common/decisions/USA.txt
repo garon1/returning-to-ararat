@@ -2029,13 +2029,6 @@ USA_intervention_mandate = {
 				has_war = yes
 				factor = 0
 			}
-			modifier = {
-				OR = {
-					GER = { has_completed_focus = GER_danzig_or_war }
-					JAP = { has_completed_focus = JAP_intervene_in_china }
-				}
-				factor = 10
-			}
 		}
 		remove_effect = {
 			create_wargoal = {

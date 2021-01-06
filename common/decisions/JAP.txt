@@ -1,4 +1,415 @@
 #Category allowed for JAP
+#Category allowed for JAP
+JAP_intervene_in_china = {
+	JAP_pressure_france = { 
+
+		available = {
+			16 = { NOT = { is_controlled_by = FRA } } #Paris has fallen
+			286 = { 
+				CONTROLLER = { 
+					NOT = {
+						has_war_with = ROOT
+						is_in_faction_with = ROOT
+					}
+				} 
+			}
+			670 = { 
+				CONTROLLER = { 
+					NOT = {
+						has_war_with = ROOT
+						is_in_faction_with = ROOT
+					}
+				} 
+			}
+			671 = { 
+				CONTROLLER = { 
+					NOT = {
+						has_war_with = ROOT
+						is_in_faction_with = ROOT
+					}
+				} 
+			}
+			custom_trigger_tooltip = {
+				tooltip = demand_indochina_focus_tt
+				OR = {
+					286 = { 
+						CONTROLLER = { 
+							OR = { 
+								tag = FRA 
+								is_subject_of = FRA
+							} 
+						}
+					}
+					670 = { 
+						CONTROLLER = { 
+							OR = { 
+								tag = FRA 
+								is_subject_of = FRA
+							} 
+						}
+					}
+					671 = { 
+						CONTROLLER = { 
+							OR = { 
+								tag = FRA 
+								is_subject_of = FRA
+							} 
+						}
+					}
+				}
+			}
+		}
+
+		visible = {
+			has_completed_focus = JAP_take_pacific
+		}
+
+		fire_only_once = yes
+
+
+		modifier = {
+
+		}
+
+		cost = 75
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 0
+				FRA = { has_war = no }
+			}			
+			modifier = {
+				factor = 3
+				FRA = { has_war = yes } 
+				strength_ratio = {
+					tag = FRA
+					ratio > 0.9
+				}
+			}
+			
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					FRA = {
+						OR = {
+							controls_state = 671
+							671 = { CONTROLLER = { is_subject_of = FRA } }
+							controls_state = 670
+							670 = { CONTROLLER = { is_subject_of = FRA } }
+							controls_state = 286
+							286 = { CONTROLLER = { is_subject_of = FRA } }
+						}
+					}
+				}
+				FRA = { country_event = { id = france.1 } }
+			}
+		}
+	}
+
+    JAP_expansion6 = {
+
+    icon = jap_conquer_china
+
+visible = {
+			has_completed_focus = JAP_all_out_war
+			HAW = {
+    exists = yes
+    }
+
+		}
+    ai_will_do = {
+      factor = 100
+    }
+    
+    available = {
+      NOT = {
+        has_non_aggression_pact_with = HAW
+      }
+      NOT = {
+        has_war_with = HAW
+      }
+    }
+
+    cost = 1
+    
+    fire_only_once = yes
+
+    complete_effect = {
+      declare_war_on = {
+					target = HAW
+					type = puppet_wargoal_focus
+				}
+      
+    }
+    
+  }
+
+  JAP_expansion5 = {
+ visible = {
+    BRM = {
+    exists = yes
+    has_completed_focus = JAP_all_out_war
+    }
+}
+    icon jap_conquer_china
+
+    ai_will_do = {
+      factor = 100
+    }
+    
+    available = {
+      NOT = {
+        has_non_aggression_pact_with = BRM
+      }
+      NOT = {
+        has_war_with = BRM
+      }
+    }
+
+    cost = 1
+    
+    fire_only_once = yes
+
+    complete_effect = {
+      declare_war_on = {
+					target = BRM
+					type = puppet_wargoal_focus
+				}
+			}
+      
+    }
+    
+  
+
+  JAP_expansion4 = {
+visible = {
+			has_completed_focus = JAP_all_out_war
+			PHI = {
+    exists = yes
+    }
+
+		}
+    icon jap_conquer_china
+
+    ai_will_do = {
+      factor = 100
+    }
+    
+    available = {
+      NOT = {
+        has_non_aggression_pact_with = PHI
+      }
+      NOT = {
+        has_war_with = PHI
+      }
+    }
+
+    cost = 1
+    
+    fire_only_once = yes
+
+    complete_effect = {
+      declare_war_on = {
+					target = PHI
+					type = annex_everything
+				}
+      
+    }
+    
+  }
+
+
+  JAP_expansion3 = {
+visible = {
+			has_completed_focus = JAP_all_out_war
+			RAJ = {
+    exists = yes
+    }
+
+		}
+    icon jap_conquer_china
+
+    ai_will_do = {
+      factor = 100
+    }
+    
+    available = {
+      NOT = {
+        has_non_aggression_pact_with = RAJ
+      }
+      NOT = {
+        has_war_with = RAJ
+      }
+    }
+
+    cost = 1
+    
+    fire_only_once = yes
+
+    complete_effect = {
+      declare_war_on = {
+					target = RAJ
+					type = puppet_wargoal_focus
+				}
+      
+    }
+    
+  }
+
+  JAP_expansion2 = {
+visible = {
+			has_completed_focus = JAP_all_out_war
+			USA = {
+    exists = yes
+    }
+
+		}
+    icon jap_conquer_china
+
+    ai_will_do = {
+      factor = 100
+    }
+    
+    available = {
+      NOT = {
+        has_non_aggression_pact_with = USA
+      }
+      NOT = {
+        has_war_with = FRA
+      }
+    }
+
+    cost = 1
+    
+    fire_only_once = yes
+
+    complete_effect = {
+      declare_war_on = {
+					target = IND
+					type = puppet_wargoal_focus
+				}
+      
+    }
+    
+  }
+
+JAP_expansion1 = {
+visible = {
+			has_completed_focus = JAP_all_out_war
+			USA = {
+    exists = yes
+    }
+
+		}
+    icon jap_conquer_china
+
+    ai_will_do = {
+      factor = 100
+    }
+    
+    available = {
+      NOT = {
+        has_non_aggression_pact_with = USA
+      }
+      NOT = {
+        has_war_with = FRA
+      }
+    }
+
+    cost = 1
+    
+    fire_only_once = yes
+
+    complete_effect = {
+      declare_war_on = {
+					target = INS
+					type = puppet_wargoal_focus
+				}
+      }
+    
+  }
+
+JAP_expansion = {
+visible = {
+			has_completed_focus = JAP_all_out_war
+		}
+    icon jap_conquer_china
+
+    ai_will_do = {
+      factor = 100
+    }
+
+    visible = {
+    }
+    
+    available = {
+      NOT = {
+        has_non_aggression_pact_with = FRA
+      }
+      NOT = {
+        has_war_with = FRA
+      }
+    }
+
+    cost = 1
+    
+    fire_only_once = yes
+     complete_effect = {
+			if = {
+				limit = {
+					FRA = {
+						OR = {
+							controls_state = 671
+							671 = { CONTROLLER = { is_subject_of = FRA } }
+							controls_state = 670
+							670 = { CONTROLLER = { is_subject_of = FRA } }
+							controls_state = 286
+							286 = { CONTROLLER = { is_subject_of = FRA } }
+						}
+					}
+				}
+				FRA = { country_event = { id = france.1 } }
+			}
+		} 
+  }
+
+JAP_attack_china = {
+visible = {
+      date > 1938.2.5
+    }
+    icon jap_conquer_china
+
+    ai_will_do = {
+      factor = 100
+    }
+    
+    available = {
+      NOT = {
+        has_non_aggression_pact_with = CHI
+      }
+      NOT = {
+        has_war_with = CHI
+      }
+    }
+
+    cost = 1
+    
+    fire_only_once = yes
+
+    complete_effect = {
+      CHI = {
+      country_event = { days = 15 id = japan.23 }
+      }
+      
+    }
+    
+  }
+}
+
+
 JAP_intervene_in_china = {
 
 	JAP_china_step_up_war_effort = {
@@ -1460,7 +1871,6 @@ operations = {
 
 		visible = {
 			is_in_faction_with = GER
-			GER = { has_completed_focus = GER_mol_rib_pact }
 			GER = { NOT = { has_war_with = SOV } }
 			NOT = { has_war_with = SOV }
 			##########_preemptive_war

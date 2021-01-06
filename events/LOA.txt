@@ -37,7 +37,7 @@ country_event = {
 	id = loa.2
 	title = loa.2.t
 	desc = loa.2.d
-	picture = GFX_report_event_indian_soldiers
+	picture = GFX_report_event_tur_cakmak_general_staff
 
 	is_triggered_only = yes
 	
@@ -63,7 +63,7 @@ country_event = {
 	id = loa.3
 	title = loa.3.t
 	desc = loa.3.d
-	picture = GFX_report_event_indian_soldiers
+	picture = GFX_report_event_tur_cakmak_general_staff
 
 	is_triggered_only = yes
 	
@@ -89,7 +89,7 @@ country_event = {
 	id = loa.4
 	title = loa.4.t
 	desc = loa.4.d
-	picture = GFX_report_event_indian_soldiers
+	picture = GFX_report_event_tur_cakmak_general_staff
 
 	is_triggered_only = yes
 	

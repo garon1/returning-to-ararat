@@ -462,15 +462,15 @@ RAJ_enforce_loyalty = {
 	}
 	if = {
 		limit = {
-			has_idea = RAJ_all_india_forward_bloc_fascism
+			has_idea = RAJ_all_india_forward_bloc_nationalism
 		}
-		remove_ideas = RAJ_all_india_forward_bloc_fascism
+		remove_ideas = RAJ_all_india_forward_bloc_nationalism
 	}
 	if = {
 		limit = {
-			has_idea = RAJ_all_india_forward_bloc_communism
+			has_idea = RAJ_all_india_forward_bloc_anarchism
 		}
-		remove_ideas = RAJ_all_india_forward_bloc_communism
+		remove_ideas = RAJ_all_india_forward_bloc_anarchism
 	}
 	if = {
 		limit = {

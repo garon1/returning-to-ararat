@@ -6643,7 +6643,7 @@ ENG_move_to_secure_the_dominions = {
 			FROM = {
 				set_politics = { ruling_party = fascism elections_allowed = no }
 				add_popularity = { ideology = fascism popularity = 0.2 }
-				add_timed_idea = { idea = fascist_influence days = 730 }
+				add_timed_idea = { idea = nationalist_influence days = 730 }
 				CAN_enforce_loyalty = yes
 				country_event = { id = mtg_britain.65 }
 			}
@@ -6922,7 +6922,7 @@ ENG_move_to_secure_the_dominions = {
 			FROM = {
 				set_politics = { ruling_party = fascism elections_allowed = no }
 				add_popularity = { ideology = fascism popularity = 0.2 }
-				add_timed_idea = { idea = fascist_influence days = 730 }
+				add_timed_idea = { idea = nationalist_influence days = 730 }
 				SAF_enforce_loyalty = yes
 				country_event = { id = mtg_britain.65 }
 			}
@@ -7300,7 +7300,7 @@ ENG_move_to_secure_the_dominions = {
 			FROM = {
 				set_politics = { ruling_party = fascism elections_allowed = no }
 				add_popularity = { ideology = fascism popularity = 0.2 }
-				add_timed_idea = { idea = fascist_influence days = 730 }
+				add_timed_idea = { idea = nationalist_influence days = 730 }
 				RAJ_enforce_loyalty = yes
 				country_event = { id = mtg_britain.65 }
 			}
@@ -7611,7 +7611,7 @@ ENG_move_to_secure_the_dominions = {
 			FROM = {
 				set_politics = { ruling_party = fascism elections_allowed = no }
 				add_popularity = { ideology = fascism popularity = 0.2 }
-				add_timed_idea = { idea = fascist_influence days = 730 }
+				add_timed_idea = { idea = nationalist_influence days = 730 }
 				AST_enforce_loyalty = yes
 				country_event = { id = mtg_britain.65 }
 			}
@@ -7882,7 +7882,7 @@ ENG_move_to_secure_the_dominions = {
 			FROM = {
 				set_politics = { ruling_party = fascism elections_allowed = no }
 				add_popularity = { ideology = fascism popularity = 0.2 }
-				add_timed_idea = { idea = fascist_influence days = 730 }
+				add_timed_idea = { idea = nationalist_influence days = 730 }
 				NZL_enforce_loyalty = yes
 				country_event = { id = mtg_britain.65 }
 			}

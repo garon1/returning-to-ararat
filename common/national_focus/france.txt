@@ -4415,7 +4415,7 @@
 				}
 				add_opinion_modifier = { 
 					target = ROOT 
-					modifier =  FRA_leftist_rhetoric_syndicalism
+					modifier =  FRA_leftist_rhetoric_communism
 				}
 			}
 			every_other_country = {
@@ -4435,7 +4435,7 @@
 				}
 				add_opinion_modifier = { 
 					target = ROOT 
-					modifier = FRA_leftist_rhetoric_nationalism
+					modifier = FRA_leftist_rhetoric_fascism
 				}
 			}
 		}
@@ -4686,7 +4686,7 @@
 				multiply_temp_variable = { FRA_democracy = -1 }
 				add_popularity = { ideology = democratic popularity = FRA_democracy }
 			}
-			FRA_syndicalism_riot_effect = yes
+			FRA_communism_riot_effect = yes
 		}
 	}	
 	focus = {
@@ -5335,7 +5335,7 @@
 				desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
 				picture = GFX_portrait_fra_francois_de_la_rocque
 				expire = "1965.1.1"
-				ideology = nationalism_ideology
+				ideology = nationalism_subtype
 				traits = {
 					retired_officer
 				}
@@ -6254,7 +6254,7 @@
 				}
 				add_opinion_modifier = { 
 					target = ROOT 
-					modifier =  FRA_right_wing_rhetoric_nationalism
+					modifier =  FRA_right_wing_rhetoric_fascism
 				}
 			}
 			every_other_country = {
@@ -6274,7 +6274,7 @@
 				}
 				add_opinion_modifier = { 
 					target = ROOT 
-					modifier = FRA_right_wing_rhetoric_syndicalism
+					modifier = FRA_right_wing_rhetoric_communism
 				}
 			}			
 		}

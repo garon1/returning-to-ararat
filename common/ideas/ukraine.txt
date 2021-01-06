@@ -101,7 +101,7 @@ ideas = {
 				original_tag = UKR
 			}
 			
-			traits = { social_democracy_reformer }
+			traits = { democratic_reformer }
 
 			do_effect = {
 				NOT = {

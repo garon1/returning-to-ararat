@@ -107,8 +107,8 @@ PUA_civil_war_victory = {
 			removal_cost = -1
 			
 			modifier = {
-					-political_power_gain = 0.05
-					weekly_stability = -0.01
+					political_power_gain = -0.05
+					stability_weekly = -0.01
 			}
 		}
 	}

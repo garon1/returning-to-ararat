@@ -2046,7 +2046,7 @@ POR_iberian_summit = {
 							country_exists = SPD
 							SPD = {
 								is_in_faction = no
-								has_completed_focus = SPA_maintain_the_second_republic
+								has_completed_focus = SPR_maintain_the_second_republic
 								has_government = democratic
 							}
 						}
@@ -2063,7 +2063,7 @@ POR_iberian_summit = {
 				AND = {
 					tag = SPD
 					is_in_faction = no
-					has_completed_focus = SPA_maintain_the_second_republic
+					has_completed_focus = SPR_maintain_the_second_republic
 					has_government = democratic
 					country_exists = POR
 				}

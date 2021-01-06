@@ -5,7 +5,7 @@ country_event = {
 	id = bre.1
 	title = bre.1.t	
 	desc = bre.1.desc	#
-	picture = GFX_report_event_fighters
+	picture = GFX_report_event_eng_good_blackshirt_march
 	
 	is_triggered_only = yes
 	
@@ -20,7 +20,7 @@ country_event = {
 	id = bre.2
 	title = bre.2.t	
 	desc = bre.2.desc	#
-	picture = GFX_report_event_fighters
+	picture = GFX_report_event_soviet_purge_trial
 	
 	is_triggered_only = yes
 	
@@ -36,7 +36,7 @@ country_event = {
 	id = bre.3
 	title = bre.3.t	
 	desc = bre.3.desc	#
-	picture = GFX_report_event_fighters
+	picture = GFX_report_event_soviet_purge_trial
 	
 	is_triggered_only = yes
 	
@@ -50,7 +50,7 @@ country_event = {
 	id = bre.4
 	title = bre.4.t	
 	desc = bre.4.desc	#
-	picture = GFX_report_event_fighters
+	picture = GFX_report_event_eng_royal_family
 	
 	is_triggered_only = yes
 	

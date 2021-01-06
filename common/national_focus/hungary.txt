@@ -172,7 +172,7 @@ focus_tree = {
 		id = HUN_invite_the_habsburg_prince
 		icon = GFX_goal_generic_dangerous_deal
 		prerequisite = { focus = HUN_elect_a_king }
-		mutually_exclusive = { focus =  HUN_elect_a_social_democracy_king }
+		mutually_exclusive = { focus =  HUN_elect_a_democratic_king }
 		mutually_exclusive = { focus =  HUN_elect_a_fascist_king }
 		x = -3
 		y = 1
@@ -744,7 +744,7 @@ focus_tree = {
 	############################
 
 	focus = {
-		id = HUN_elect_a_social_democracy_king
+		id = HUN_elect_a_democratic_king
 		icon = GFX_focus_generic_home_defense
 		prerequisite = { focus = HUN_elect_a_king }
 		mutually_exclusive = { focus =  HUN_elect_a_fascist_king }
@@ -774,7 +774,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			swap_ideas = {
-				add_idea = HUN_hungarian_monarchy_social_democracy
+				add_idea = HUN_hungarian_monarchy_democratic
 				remove_idea = HUN_hungarian_monarchy_2
 			}
 			add_ideas = HUN_dynastic_ties
@@ -816,10 +816,10 @@ focus_tree = {
 	focus = {
 		id = HUN_responsible_government
 		icon = GFX_goal_support_democracy
-		prerequisite = { focus = HUN_elect_a_social_democracy_king }
+		prerequisite = { focus = HUN_elect_a_democratic_king }
 		x = 0
 		y = 1
-		relative_position_id = HUN_elect_a_social_democracy_king
+		relative_position_id = HUN_elect_a_democratic_king
 
 		cost = 10
 
@@ -846,7 +846,7 @@ focus_tree = {
 
 			swap_ideas = {
 				add_idea = HUN_his_majestys_government
-				remove_idea = HUN_hungarian_monarchy_social_democracy
+				remove_idea = HUN_hungarian_monarchy_democratic
 			}
 		}
 	}
@@ -857,7 +857,7 @@ focus_tree = {
 		prerequisite = { focus = HUN_responsible_government }
 		x = 0
 		y = 2
-		relative_position_id = HUN_elect_a_social_democracy_king
+		relative_position_id = HUN_elect_a_democratic_king
 
 		cost = 10
 
@@ -927,7 +927,7 @@ focus_tree = {
 		mutually_exclusive = { focus = HUN_the_balkan_pact }
 		x = -1
 		y = 3
-		relative_position_id = HUN_elect_a_social_democracy_king
+		relative_position_id = HUN_elect_a_democratic_king
 
 		cost = 10
 
@@ -986,7 +986,7 @@ focus_tree = {
 				ENG = { country_event = generic.2 }
 			}
 			else = {
-				get_best_alliance_match_social_democracy_effect = yes
+				get_best_alliance_match_democratic_effect = yes
 				var:best_leader = {
 					country_event = generic.2
 				}
@@ -1001,7 +1001,7 @@ focus_tree = {
 		mutually_exclusive = { focus = HUN_join_allies }
 		x = 1
 		y = 3
-		relative_position_id = HUN_elect_a_social_democracy_king
+		relative_position_id = HUN_elect_a_democratic_king
 
 		cost = 10
 
@@ -1033,7 +1033,7 @@ focus_tree = {
 		prerequisite = { focus = HUN_the_balkan_pact }
 		x = 1
 		y = 4
-		relative_position_id = HUN_elect_a_social_democracy_king
+		relative_position_id = HUN_elect_a_democratic_king
 
 		cost = 10
 
@@ -1067,7 +1067,7 @@ focus_tree = {
 		prerequisite = { focus = HUN_join_allies }
 		x = -1
 		y = 4
-		relative_position_id = HUN_elect_a_social_democracy_king
+		relative_position_id = HUN_elect_a_democratic_king
 
 		cost = 10
 
@@ -1108,7 +1108,7 @@ focus_tree = {
 		id = HUN_elect_a_fascist_king
 		icon = GFX_goal_molotov_ribbentrop_pact
 		prerequisite = { focus = HUN_elect_a_king }
-		mutually_exclusive = { focus =  HUN_elect_a_social_democracy_king }
+		mutually_exclusive = { focus =  HUN_elect_a_democratic_king }
 		mutually_exclusive = { focus =  HUN_invite_the_habsburg_prince }
 		x = 3
 		y = 1
@@ -1270,7 +1270,7 @@ focus_tree = {
 					desc = "POLITICS_MIKLOS_HORTHY_DESC"
 					picture = "Portrait_Hungary_Miklos_Horthy.dds"
 					expire = "1965.1.1"
-					ideology = nationalism_ideology
+					ideology = nationalism_subtype
 					traits = {
 						anti_communist
 					}
@@ -2254,7 +2254,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			swap_ideas = {
-				add_idea = HUN_interventionism_radical_socialism
+				add_idea = HUN_interventionism_communism
 				remove_idea = HUN_interventionism
 			}
 		}
@@ -2450,7 +2450,7 @@ focus_tree = {
 				}
 			}
 			else = {
-				get_best_alliance_match_radical_socialism_effect = yes
+				get_best_alliance_match_communism_effect = yes
 				var:best_leader = {
 					country_event = generic.2
 				}

@@ -60,6 +60,9 @@ MEX_category_military_issues = {
 			}
 			NOT = {
 				is_in_faction_with = USA
+				USA = {
+				has_country_flag = USA_civil_war1
+				}
 			}
 			NOT = {
 				controls_state = 376
@@ -67,6 +70,7 @@ MEX_category_military_issues = {
 			}
 			USA = {
 				owns_state = 377
+				has_country_flag = amcivwar
 			}
 			PUA = {
 				owns_state = 358
@@ -79,6 +83,9 @@ MEX_category_military_issues = {
 			}
 			NOT = {
 				has_war_with = USA
+				USA = {
+				has_country_flag = USA_civil_war1
+				}
 			}
 			NOT = {
 				is_in_faction_with = USA
@@ -86,6 +93,7 @@ MEX_category_military_issues = {
 			USA = {
 				owns_state = 377
 				owns_state = 376
+				has_country_flag = amcivwar
 			}
 			PUA = {
 				owns_state = 358
