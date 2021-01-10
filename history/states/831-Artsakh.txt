@@ -1,0 +1,26 @@
+
+state={
+	id=831
+	name="STATE_831"
+manpower=150859
+	state_category=town
+	history={
+		owner = ARM
+		victory_points = {
+			9715 10 
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+		add_core_of = ARM
+		add_claim_by = AZR
+
+	}
+
+	provinces={
+		1467 9715 
+	}
+}

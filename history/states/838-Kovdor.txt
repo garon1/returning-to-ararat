@@ -1,0 +1,21 @@
+state={
+	id=838
+	name="STATE_838"
+	provinces={
+		15 74 80 142 2998 6098 6175 9074 9119 9123 9198 9203 11181 
+	}
+	history={
+		owner = FIN
+		
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+
+		}
+		add_core_of = SOV
+
+
+	}
+	manpower=20394
+	state_category=rural
+}

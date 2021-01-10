@@ -1,0 +1,17 @@
+state={
+	id=862
+	name="STATE_862"
+	provinces={
+		6763 
+	}
+		history = {
+		owner = AZR
+		add_core_of = AZR
+		add_claim_by = GEO
+		buildings = {
+			infrastructure = 1
+		}
+	}
+manpower = 60493
+	state_category =rural
+}

@@ -1,0 +1,26 @@
+
+state={
+	id=833
+	name="STATE_833"
+
+	history={
+		owner = ARM
+		victory_points = {
+			9702 1 
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = ARM
+		add_claim_by = GEO
+
+	}
+
+	provinces={
+		6669 9702 
+	}
+	manpower=120394
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

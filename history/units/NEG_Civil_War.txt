@@ -1,0 +1,152 @@
+division_template = {
+	name = "Home Guard"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }  # US Hvy Field Arty consisted of 2 Bns, 155mm howitzers
+		engineer = { x = 0 y = 1 }   # US Eng Rgt consisted of 2 Bns
+	}
+}
+division_template = {
+	name = "National Garrison Brigade" 
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   
+	}
+	priority = 0
+}
+division_template = {
+	name = "Cavalry Division"  
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 1 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }      # US Cav Recon consisted of 52 ACs, 13 L Arm
+		engineer = { x = 0 y = 1 }   # US Eng Bn
+	}
+}
+
+units = {
+division = {
+		name = "43a Home Guard"
+		location = 6732
+		division_template = "National Garrison Brigade"
+	}
+	division = {
+		name = "43a Home Guard"
+		location = 6732
+		division_template = "National Garrison Brigade"
+	}
+	division = {
+		name = "43a Home Guard"
+		location = 12459
+		division_template = "National Garrison Brigade"
+	}
+	division = {
+		name = "43a Home Guard"
+		location = 12459 
+		division_template = "National Garrison Brigade"
+	}
+	division = {
+		name = "43a Home Guard"
+		location = 9832 
+		division_template = "National Garrison Brigade"
+	}
+	division = {
+		name = "43a Home Guard"
+		location = 9832 
+		division_template = "National Garrison Brigade"
+	}
+	division = {
+		name = "43a Home Guard"
+		location = 12221 
+		division_template = "Cavalry Division"
+	}
+	division = {
+		name = "43a Home Guard"
+		location = 12221  
+		division_template = "Cavalry Division"
+	}
+	division = {
+		name = "44a Home Guard"
+		location = 4445  
+		division_template = "Cavalry Division"
+	}
+	division = {
+		name = "44a Home Guard"
+		location = 4445  
+		division_template = "Cavalry Division"
+	}
+division = {
+		name = "43a Home Guard"
+		location = 6732
+		division_template = "National Garrison Brigade"
+	}
+	division = {
+		name = "43a Home Guard"
+		location = 6732
+		division_template = "National Garrison Brigade"
+	}
+	division = {
+		name = "43a Home Guard"
+		location = 12459
+		division_template = "National Garrison Brigade"
+	}
+	division = {
+		name = "43a Home Guard"
+		location = 12459 
+		division_template = "National Garrison Brigade"
+	}
+	division = {
+		name = "43a Home Guard"
+		location = 9832 
+		division_template = "National Garrison Brigade"
+	}
+	division = {
+		name = "43a Home Guard"
+		location = 9832 
+		division_template = "National Garrison Brigade"
+	}
+	division = {
+		name = "43a Home Guard"
+		location = 12221 
+		division_template = "Cavalry Division"
+	}
+	division = {
+		name = "43a Home Guard"
+		location = 12221  
+		division_template = "Cavalry Division"
+	}
+	division = {
+		name = "44a Home Guard"
+		location = 4445  
+		division_template = "Cavalry Division"
+	}
+	division = {
+		name = "44a Home Guard"
+		location = 4445  
+		division_template = "Cavalry Division"
+	}
+}

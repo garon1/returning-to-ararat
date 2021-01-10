@@ -1,0 +1,277 @@
+capital = 854
+
+set_oob = "BAF_1936"
+country_event = {
+	id = tas_political.1
+	hours = 6
+}
+
+set_research_slots = 4
+
+set_stability = 0.6
+set_war_support = 0.1
+546 = {
+	start_resistance = yes
+	set_compliance = 1
+	set_resistance = 25
+	set_garrison_strength = 1.0
+}
+547 = {
+	start_resistance = yes
+	set_compliance = 1
+	set_resistance = 25
+	set_garrison_strength = 1.0
+}
+558 = {
+	start_resistance = yes
+	set_compliance = 1
+	set_resistance = 25
+	set_garrison_strength = 1.0
+}
+
+548 = {
+	start_resistance = yes
+	set_compliance = 1
+	set_resistance = 25
+	set_garrison_strength = 1.0
+}
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	basic_light_tank = 1
+	#improved_light_tank = 1  # PLACEHOLDER
+	#basic_heavy_tank = 1  # PLACEHOLDER
+	#basic_medium_tank = 1 # PLACEHOLDER
+	early_fighter = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	CAS1 = 1
+	
+	trench_warfare = 1
+
+	
+	fleet_in_being = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+	fuel_silos = 1
+	fuel_refining = 1
+}
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		early_battlecruiser = 1
+		early_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		smoke_generator = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_secondary_battery = 1
+		basic_fire_control_system = 1
+	}
+	add_ideas = MTG_naval_treaty_adherent
+	set_global_flag = MTG_second_london_conference
+	set_global_flag = { flag = MTG_naval_treaty_signatories value = 5 }
+}
+	
+
+set_convoys = 800
+
+set_politics = {
+	ruling_party = traditional_conservatism
+	last_election = "1935.11.14"
+	election_frequency = 48
+	elections_allowed = yes ##suspended through duration of war, which is handled via event
+}
+set_popularities = {
+traditional_conservatism = 60
+totalitarianism = 17
+syndicalism = 1
+market_socialism = 1
+nationalism = 20
+anarchism = 1
+}
+
+create_country_leader = {
+	name = "Winston Churchill"
+	desc = "POLITICS_WINSTON_CHURCHILL_DESC"
+	picture = "Portrait_British_Africa_Winston_Churchill.dds"
+	expire = "1965.1.1"
+	ideology = traditional_conservatism_subtype
+	traits = {
+		#traits here need to also be added to events britain.9 and britain.10. Don't ask why.
+	}
+}
+
+
+create_country_leader = {
+	name = "Stanley Baldwin"
+	desc = "POLITICS_STANLEY_BALDWIN_DESC"
+	picture = "gfx//leaders//BAF//Portrait_Britain_Stanley_Baldwin.dds"
+	expire = "1938.1.1"
+	ideology = social_liberal_subtype
+	traits = {
+		conservative_grandee
+	}
+}
+
+#create_country_leader = {
+#	name = "Neville Chamberlain"
+#	desc = "POLITICS_NEVILLE_CHAMBERLAIN_DESC"
+#	picture = "Portrait_Britain_Neville_Chamberlain.dds"
+#	expire = "1965.1.1"
+#	ideology = liberalism
+#	traits = {
+#		
+#	}
+#}
+
+create_country_leader = {
+	name = "Oswald Mosley"
+	desc = "POLITICS_OSWALD_MOSLEY_DESC"
+	picture = "Portrait_Britain_Oswald_Mosley.dds"
+	expire = "1965.1.1"
+	ideology = nationalism_subtype
+	traits = {
+		champion_of_peace_1
+		economic_reformer
+	}
+}
+create_country_leader = {
+	name = "Oswald Mosley"
+	desc = "POLITICS_OSWALD_MOSLEY_DESC"
+	picture = "Portrait_Britain_Oswald_Mosley.dds"
+	expire = "1965.1.1"
+	ideology = totalitarianism_subtype
+	traits = {
+		champion_of_peace_1
+		economic_reformer
+	}
+}
+create_country_leader = {
+	name = "Oswald Mosley"
+	desc = "POLITICS_OSWALD_MOSLEY_DESC"
+	picture = "Portrait_Britain_Oswald_Mosley.dds"
+	expire = "1965.1.1"
+	ideology = social_democracy_subtype
+	traits = {
+		champion_of_peace_1
+		economic_reformer
+	}
+}
+create_country_leader = {
+	name = "Harry Pollitt"
+	desc = "POLITICS_HARRY_POLLITT_DESC"
+	picture = "portrait_BAF_harry_pollitt.dds"
+	expire = "1965.1.1"
+	ideology = market_socialism_subtype
+	traits = {
+		staunch_stalinist
+	}
+}
+create_country_leader = {
+	name = "Harry Pollitt"
+	desc = "POLITICS_HARRY_POLLITT_DESC"
+	picture = "portrait_BAF_harry_pollitt.dds"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
+	traits = {
+		staunch_stalinist
+	}
+}
+create_country_leader = {
+	name = "Harry Pollitt"
+	desc = "POLITICS_HARRY_POLLITT_DESC"
+	picture = "portrait_BAF_harry_pollitt.dds"
+	expire = "1965.1.1"
+	ideology = market_liberal_subtype
+	traits = {
+		staunch_stalinist
+	}
+}
+create_country_leader = {
+	name = "Harry Pollitt"
+	desc = "POLITICS_HARRY_POLLITT_DESC"
+	picture = "portrait_BAF_harry_pollitt.dds"
+	expire = "1965.1.1"
+	ideology = syndicalism_subtype
+	traits = {
+		staunch_stalinist
+	}
+}
+create_country_leader = {
+	name = "Harry Pollitt"
+	desc = "POLITICS_HARRY_POLLITT_DESC"
+	picture = "portrait_BAF_harry_pollitt.dds"
+	expire = "1965.1.1"
+	ideology = anarchism_subtype
+	traits = {
+		staunch_stalinist
+	}
+}
+create_country_leader = {
+	name = "Harry Pollitt"
+	desc = "POLITICS_HARRY_POLLITT_DESC"
+	picture = "portrait_BAF_harry_pollitt.dds"
+	expire = "1965.1.1"
+	ideology = radical_socialism_subtype
+	traits = {
+		staunch_stalinist
+	}
+}
+#create_country_leader = {
+#	name = "Rajani Palme Dutt"
+#	desc = "POLITICS_PALME_DUTT_DESC"
+#	picture = "Portrait_Britain_Palme_Dutt.dds"
+#	expire = "1965.1.1"
+#	ideology = leninism
+#	traits = {
+#		
+#	}
+#}
+

@@ -1,0 +1,15 @@
+add_namespace = tas_political
+
+# Propose Caliphate
+country_event = {
+    id = tas_political.1
+    title = tas_political.1.t
+    desc = tas_political.1.d
+    picture = GFX_report_event_tur_sultan_in_istanbul
+   
+  is_triggered_only = yes
+  
+    option = {
+        name = tas_political.1.a
+    }
+}
