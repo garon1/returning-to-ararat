@@ -2,10 +2,13 @@
 ETH_territorial_gains = {
 ETH_declare_war_on_france = {
 
-		icon = jap_conquer_china
+		icon = decision_ita_claim_yugo_1
 
 		available = {
 		date > 1938.1.1
+		ETH = {
+		exists = yes
+		}
 		}
 
 		visible = {
@@ -29,10 +32,13 @@ ETH_declare_war_on_france = {
 	}
 ETH_declare_war_on_italy = {
 
-		icon = jap_conquer_china
+		icon = decision_spr_political_assassination
 
 		available = {
 		date < 1940.1.1
+		ETH = {
+		exists = yes
+		}
 		}
 
 		visible = {
@@ -48,7 +54,7 @@ ETH_declare_war_on_italy = {
 
 		complete_effect = {
 			declare_war_on = {
-					target = ETH
+					target = ITA
 					type = annex_everything
 				}
 

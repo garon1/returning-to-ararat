@@ -1,3 +1,118 @@
+FRA_colonial_decision = {
+FRA_NOT_decolonize = {
+visible = {
+date > 1939.2.1
+	}
+    icon decision_category_hol_obtain_foreign_colonial_investments
+
+    ai_will_do = {
+      factor = 70
+    }
+    
+    available = {
+     date > 1939.2.1
+    }
+
+    cost = 1
+    
+    fire_only_once = yes
+
+    complete_effect = {
+     hidden_effect = {
+					news_event = {
+					id = news.394 days = 1
+					}		
+					country_event = {
+					id = france.35 days = 40
+					}
+					country_event = {
+					id = france.36 days = 40
+					}
+				add_popularity = {
+				ideology = nationalism
+				popularity = 0.15
+			}
+		add_stability = -0.15	
+     }
+      
+    }
+    
+  }
+FRA_decolonize = {
+visible = {
+date > 1939.2.1
+	}
+    icon decision_category_eng_organize_the_blackshirts
+
+    ai_will_do = {
+      factor = 30
+    }
+    
+    available = {
+     date > 1939.2.1
+    }
+
+    cost = 1
+    
+    fire_only_once = yes
+
+    complete_effect = {
+     hidden_effect = {
+      release = CAR
+					puppet = CAR
+     release = TOG
+					puppet = TOG
+     release = DAH
+					puppet = DAH
+     release = CMR
+					puppet = CMR
+     release = VOL
+					puppet = VOL
+     release = GNA
+					puppet = GNA
+     release = IVO
+					puppet = IVO
+     release = RCG
+					puppet = RCG
+     release = GAB
+					puppet = GAB
+     release = CHA
+					puppet = CHA
+      release = NGR
+					puppet = NGR
+      release = MLI
+					puppet = MLI
+      release = MRT
+					puppet = MRT
+      release = SEN
+					puppet = SEN
+     release = MOR
+					puppet = MOR
+     release = TUN
+					puppet = TUN
+				release = ALG
+					puppet = ALG
+					news_event = {
+					id = news.393 days = 1
+					}		
+					country_event = {
+					id = france.35 days = 40
+					}
+					country_event = {
+					id = france.36 days = 40
+					}
+				add_popularity = {
+				ideology = syndicalism
+				popularity = 0.15
+			}
+		add_stability = -0.15
+     }
+      
+    }
+    
+  }
+}
+
 FRA_vichy_france = {
 
 	FRA_scuttle_the_fleet = {
@@ -879,7 +994,7 @@ FRA_spanish_intervention_category = {
 		}
 
 		complete_effect = {
-			#This is not optimal, but it generates a beautiful tooltip
+			#This is not optiMLI, but it generates a beautiful tooltip
 			if = {
 				limit = { FROM = { tag = SPD } }
 				set_country_flag = supports_SPD_flag

@@ -331,51 +331,6 @@ visible = {
       }
     
   }
-
-JAP_expansion = {
-visible = {
-			has_completed_focus = JAP_all_out_war
-		}
-    icon jap_conquer_china
-
-    ai_will_do = {
-      factor = 100
-    }
-
-    visible = {
-    }
-    
-    available = {
-      NOT = {
-        has_non_aggression_pact_with = FRA
-      }
-      NOT = {
-        has_war_with = FRA
-      }
-    }
-
-    cost = 1
-    
-    fire_only_once = yes
-     complete_effect = {
-			if = {
-				limit = {
-					FRA = {
-						OR = {
-							controls_state = 671
-							671 = { CONTROLLER = { is_subject_of = FRA } }
-							controls_state = 670
-							670 = { CONTROLLER = { is_subject_of = FRA } }
-							controls_state = 286
-							286 = { CONTROLLER = { is_subject_of = FRA } }
-						}
-					}
-				}
-				FRA = { country_event = { id = france.1 } }
-			}
-		} 
-  }
-
 JAP_attack_china = {
 visible = {
       date > 1938.2.5

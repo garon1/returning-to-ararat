@@ -1,0 +1,916 @@
+focus_tree = {
+	id = Persia
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = PER
+		}
+	}
+	default = no
+	focus = {
+		id = PER_kill_shah
+		icon = GFX_goal_unknown
+		cost = 7.00
+		mutually_exclusive = {
+			focus = PER_protect_shah
+		}
+		x = 14
+		y = 0
+		completion_reward = {
+		country_event = persia.5
+		}
+
+	}
+	focus = {
+		id = PER_protect_shah
+		icon = GFX_goal_unknown
+		cost = 7.00
+		mutually_exclusive = {
+			focus = PER_kill_shah
+		}
+		x = 27
+		y = 0
+		completion_reward = {
+		country_event = persia.6
+		}
+
+	}
+	focus = {
+		id = PER_for_glory
+		icon = GFX_goal_unknown
+		cost = 7.00
+		x = 24
+		y = 7
+		completion_reward = {
+		add_ideas = PER_nationalism
+		}
+
+	}
+	focus = {
+		id = PER_modernization
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 39
+		y = 0
+		completion_reward = {
+					army_experience = 10
+				}
+
+	}
+	focus = {
+		id = PER_hold_elections
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PER_kill_shah
+		}
+		x = 14
+		y = 1
+		completion_reward = {
+		country_event = persia.7
+		}
+
+	}
+	focus = {
+		id = PER_liberals_are_elected
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PER_hold_elections
+		}
+		available = {
+		has_country_flag = PER_liberalstt
+		}
+		x = 7
+		y = 2
+		completion_reward = {
+		add_popularity = {
+		ideology = social_liberal
+		popularity = 0.3
+		}
+		}
+
+	}
+	focus = {
+		id = PER_islamic_reforms
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PER_liberals_are_elected
+		}
+		x = 5
+		y = 3
+		completion_reward = {
+		add_ideas = PER_islamic_reforms
+		}
+
+	}
+	focus = {
+		id = PER_social_reforms
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PER_liberals_are_elected
+		}
+		x = 9
+		y = 3
+		completion_reward = {
+		country_event = persia.12
+		}
+
+	}
+	focus = {
+		id = PER_allow_freedom_of_speech
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PER_social_reforms
+		}
+		x = 9
+		y = 4
+		completion_reward = {
+		add_ideas = PER_speech
+		}
+
+	}
+	focus = {
+		id = PER_grant_autonomous_regions
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PER_allow_freedom_of_speech
+		}
+		x = 9
+		y = 5
+		completion_reward = {
+		remove_ideas = PER_ethnic_conflict
+		}
+
+	}
+	focus = {
+		id = PER_nationalism_elected
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PER_hold_elections
+		}
+		available = {
+		has_country_flag = PER_nationalismtt
+		}
+		x = 14
+		y = 2
+		completion_reward = {
+		add_popularity = {
+		ideology = nationalism
+		popularity = 0.3
+		}
+		}
+
+	}
+	focus = {
+		id = PER_uproot_press
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PER_nationalism_elected
+		}
+		x = 12
+		y = 3
+		completion_reward = {
+		add_stability = -0.09
+		add_war_support = 0.09
+		}
+
+	}
+	focus = {
+		id = PER_imperial_glory
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PER_uproot_press
+		}
+		x = 12
+		y = 4
+		completion_reward = {
+		country_event = persia.13
+		}
+
+	}
+	focus = {
+		id = PER_pan_persianism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PER_imperial_glory
+		}
+		x = 12
+		y = 5
+		completion_reward = {
+		420 = {
+				add_core_of = PER
+			}
+			419 = {
+				add_core_of = PER
+			}
+		861 = {
+				add_core_of = PER
+			}
+			860 = {
+				add_core_of = PER
+			}
+		}
+
+	}
+	focus = {
+		id = PER_no_securalization
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PER_nationalism_elected
+		}
+		x = 16
+		y = 3
+		completion_reward = {
+		add_political_power = -180
+		add_stability = -0.1
+		}
+
+	}
+	focus = {
+		id = PER_forceful_assimilation
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PER_no_securalization
+		}
+		x = 16
+		y = 4
+		completion_reward = {
+		add_ideas = PER_minorities
+		}
+
+	}
+	focus = {
+		id = PER_take_care_of_problem
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PER_forceful_assimilation
+		}
+		x = 16
+		y = 5
+		completion_reward = {
+		420 = {
+				remove_core_of = AZR
+			}
+			419 = {
+				remove_core_of = AZR
+			}
+		861 = {
+				remove_core_of = ASS
+			}
+			860 = {
+				remove_core_of = ASS
+			}
+		}
+
+	}
+	focus = {
+		id = PER_one_for_all
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PER_pan_persianism
+		}
+		prerequisite = {
+			focus = PER_take_care_of_problem
+		}
+		x = 14
+		y = 6
+		completion_reward = {
+		add_popularity = {
+		ideology = nationalism
+		popularity = 0.30
+		}
+		add_stability = 0.15
+		add_war_support = 0.15
+	}
+}
+	focus = {
+		id = PER_socialists_are_elected
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PER_hold_elections
+		}
+		x = 21
+		y = 2
+		completion_reward = {
+		add_popularity = {
+		ideology = radical_socialism
+		popularity = 0.30
+		}
+	}
+
+	}
+	focus = {
+		id = PER_purge_capitalism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PER_socialists_are_elected
+		}
+		x = 19
+		y = 3
+		completion_reward = {
+		add_ideas = PER_purge_capitalism
+		}
+
+	}
+	focus = {
+		id = PER_uplift_peasants
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PER_purge_capitalism
+		}
+		x = 19
+		y = 4
+		completion_reward = {
+		add_ideas = { FRA_agricultural_collectivization }
+		}
+
+	}
+	focus = {
+		id = PER_exile_aristocrats
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PER_uplift_peasants
+		}
+		x = 19
+		y = 5
+		completion_reward = {
+		add_stability = 0.05
+		add_manpower = -10000
+		}
+
+	}
+	focus = {
+		id = PER_demands_to_azerbaijan
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PER_for_glory
+		}
+		x = 22
+		y = 8
+		completion_reward = {
+		AZR = {
+		country_event = persia.14
+			}
+		}
+	}
+	focus = {
+		id = PER_join_germany
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PER_socialists_are_elected
+		}
+		x = 23
+		y = 3
+		completion_reward = {
+		GER = {
+		country_event = generic.2
+		}
+		}
+
+	}
+	focus = {
+		id = PER_our_place_in_world
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PER_join_germany
+		}
+		x = 23
+		y = 4
+		completion_reward = {
+		KUR = {
+		add_popularity = {
+		ideology = radical_socialism
+		popularity = 0.1
+				}
+			}
+			ASS = {
+		add_popularity = {
+		ideology = radical_socialism
+		popularity = 0.1
+				}
+			}
+			ARM = {
+		add_popularity = {
+		ideology = radical_socialism
+		popularity = 0.1
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = PER_we_are_whole
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PER_our_place_in_world
+		}
+		x = 23
+		y = 5
+		completion_reward = {
+		420 = {
+				add_core_of = PER
+			}
+			419 = {
+				add_core_of = PER
+			}
+		861 = {
+				add_core_of = PER
+			}
+			860 = {
+				add_core_of = PER
+			}
+		}
+
+	}
+	focus = {
+		id = PER_a_socialist_persia
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PER_exile_aristocrats
+		}
+		prerequisite = {
+			focus = PER_we_are_whole
+		}
+		x = 21
+		y = 6
+		completion_reward = {
+		add_popularity = {
+		ideology = radical_socialism
+		popularity = 0.30
+		}
+		add_stability = 0.15
+		add_war_support = 0.15
+	}
+
+	}
+	focus = {
+		id = PER_demand_armenia
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PER_for_glory
+		}
+		x = 25
+		y = 8
+		completion_reward = {
+		PER = {
+ 	create_wargoal = {
+						type = annex_everything
+						target = ARM
+						expire = 0
+					}
+ 		}
+		}
+
+	}
+	focus = {
+		id = PER_monarchism_prevails
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PER_protect_shah
+		}
+		x = 28
+		y = 1
+		completion_reward = {
+		add_popularity = {
+		ideology = monarchism
+		popularity = 0.30
+		}
+		}
+
+	}
+	focus = {
+		id = PER_keep_republicans
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PER_monarchism_prevails
+		}
+		mutually_exclusive = {
+			focus = PER_absolutism
+			focus = PER_absolutism
+		}
+		x = 26
+		y = 2
+		completion_reward = {
+		country_event = persia.17
+		}
+
+	}
+	focus = {
+		id = PER_stop_political_divide
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PER_keep_republicans
+		}
+		x = 26
+		y = 3
+		completion_reward = {
+		remove_ideas = PER_political_clashes
+		}
+
+	}
+	focus = {
+		id = PER_reach_across_nation
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PER_stop_political_divide
+		}
+		x = 26
+		y = 4
+		completion_reward = {
+		remove_ideas = PER_ethnic_conflicts
+		}
+
+	}
+	focus = {
+		id = PER_constitutional_monarchy
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PER_reach_across_nation
+		}
+		x = 26
+		y = 5
+		completion_reward = {
+		country_event = persia.18
+		}
+
+	}
+	focus = {
+		id = PER_absolutism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PER_monarchism_prevails
+		}
+		mutually_exclusive = {
+			focus = PER_keep_republicans
+			focus = PER_keep_republicans
+		}
+		x = 30
+		y = 2
+		completion_reward = {
+		country_event = persia.19
+		}
+
+	}
+	focus = {
+		id = PER_call_to_past
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PER_absolutism
+		}
+		x = 30
+		y = 3
+
+	}
+	focus = {
+		id = PER_realize_ambitions
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PER_call_to_past
+		}
+		x = 30
+		y = 4
+
+	}
+	focus = {
+		id = PER_west_asia_is_ours
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PER_realize_ambitions
+		}
+		x = 30
+		y = 5
+
+	}
+	focus = {
+		id = PER_reinvigorate_glory_days
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PER_constitutional_monarchy
+			focus = PER_west_asia_is_ours
+		}
+		x = 28
+		y = 6
+
+	}
+	focus = {
+		id = PER_industrial_modernization
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PER_modernization
+		}
+		x = 35
+		y = 1
+
+	}
+	focus = {
+		id = PER_arament
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PER_industrial_modernization
+		}
+		x = 33
+		y = 2
+
+	}
+	focus = {
+		id = PER_military_factories
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PER_arament
+		}
+		x = 34
+		y = 3
+
+	}
+	focus = {
+		id = PER_infrastructure
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PER_industrial_modernization
+		}
+		x = 37
+		y = 2
+
+	}
+	focus = {
+		id = PER_railroads
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PER_infrastructure
+		}
+		x = 36
+		y = 3
+
+	}
+	focus = {
+		id = PER_indusrial_complexes
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PER_military_factories
+		}
+		prerequisite = {
+			focus = PER_railroads
+		}
+		x = 35
+		y = 4
+
+	}
+	focus = {
+		id = PER_update_navy
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PER_modernization
+		}
+		x = 40
+		y = 1
+
+	}
+	focus = {
+		id = PER_improve_indian_fleet
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PER_update_navy
+		}
+		x = 39
+		y = 2
+
+	}
+	focus = {
+		id = PER_invest_in_submarines
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PER_improve_indian_fleet
+		}
+		x = 39
+		y = 3
+
+	}
+	focus = {
+		id = PER_baluch_port
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PER_update_navy
+		}
+		x = 41
+		y = 2
+
+	}
+	focus = {
+		id = PER_set_up_destroyers
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PER_baluch_port
+		}
+		x = 41
+		y = 3
+
+	}
+	focus = {
+		id = PER_mighty_fleet
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PER_invest_in_submarines
+		}
+		prerequisite = {
+			focus = PER_set_up_destroyers
+		}
+		x = 40
+		y = 4
+
+	}
+	focus = {
+		id = PER_army_modernization
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PER_modernization
+		}
+		x = 45
+		y = 1
+
+	}
+	focus = {
+		id = PER_land_expansion
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PER_army_modernization
+		}
+		x = 43
+		y = 2
+
+	}
+	focus = {
+		id = PER_modern_equipment
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PER_land_expansion
+		}
+		x = 44
+		y = 3
+
+	}
+	focus = {
+		id = PER_armor_improvement
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PER_army_modernization
+		}
+		x = 47
+		y = 2
+
+	}
+	focus = {
+		id = PER_mechanization
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PER_armor_improvement
+		}
+		x = 46
+		y = 3
+
+	}
+	focus = {
+		id = PER_special_forces
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PER_modern_equipment
+		}
+		prerequisite = {
+			focus = PER_mechanization
+		}
+		x = 45
+		y = 4
+
+	}
+	focus = {
+		id = PER_allow_hijab_freedom
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PER_islamic_reforms
+		}
+		x = 5
+		y = 4
+
+	}
+	focus = {
+		id = PER_separate_church_and_state
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PER_allow_hijab_freedom
+		}
+		x = 5
+		y = 5
+
+	}
+	focus = {
+		id = PER_legacy
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PER_separate_church_and_state
+		}
+		prerequisite = {
+			focus = PER_grant_autonomous_regions
+		}
+		x = 7
+		y = 6
+
+	}
+	focus = {
+		id = PER_demand_kurdistan
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PER_for_glory
+		}
+		x = 28
+		y = 8
+
+	}
+	focus = {
+		id = PER_look_to_central_asia
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PER_for_glory
+		}
+		x = 24
+		y = 9
+
+	}
+	focus = {
+		id = PER_unite_afghanistan
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PER_for_glory
+		}
+		x = 27
+		y = 9
+
+	}
+	focus = {
+		id = PER_demand_georgia
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PER_for_glory
+		}
+		x = 22
+		y = 9
+
+	}
+}

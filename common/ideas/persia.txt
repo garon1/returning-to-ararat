@@ -1,0 +1,170 @@
+ideas = {
+
+
+country = {
+PER_islamic_reforms = {
+		
+		
+		allowed = {
+			always = no
+		}
+		
+		removal_cost = -1
+
+		picture = idea_generic_limited_exports
+	
+			modifier = {
+				research_speed_factor = 0.03
+				party_popularity_stability_factor = 0.1
+			}
+		}
+PER_nationalism1 = {
+		
+		
+		allowed = {
+			always = no
+		}
+		
+		removal_cost = -1
+
+		picture = idea_generic_limited_exports
+	
+			modifier = {
+				generate_wargoal_tension = -0.3
+				justify_war_goal_time = -0.3
+			}
+		}
+PER_purge_capitalism = {
+		
+		
+		allowed = {
+			always = no
+		}
+		
+		removal_cost = -1
+
+		picture = idea_generic_limited_exports
+	
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				radical_socialism_drift = 0.03
+			}
+		}
+PER_minorities = {
+		
+		
+		allowed = {
+			always = no
+		}
+		
+		removal_cost = -1
+
+		picture = idea_generic_limited_exports
+	
+			modifier = {
+				compliance_growth_on_our_occupied_states = 0.5
+			}
+		}
+PER_speech = {
+		
+		
+		allowed = {
+			always = no
+		}
+		
+		removal_cost = -1
+
+		picture = idea_generic_limited_exports
+	
+			modifier = {
+				political_power_cost = -0.05
+				stability_weekly = 0.03
+			}
+		}
+PER_backward_reforms = {
+		
+		
+		allowed = {
+			always = no
+		}
+		
+		removal_cost = -1
+
+		picture = idea_generic_limited_exports
+	
+			modifier = {
+				production_speed_industrial_complex_factor = -0.1
+				production_oil_factor = -0.1 
+			}
+		}
+
+		PER_political_clashes1 = {
+		
+		
+		allowed = {
+			always = no
+		}
+		
+		removal_cost = -1
+
+		picture = idea_generic_purge
+	
+			modifier = {
+				conscription_factor = -0.01
+				consumer_goods_factor = -0.05
+			}
+		}
+
+PER_political_clashes = {
+		
+		
+		allowed = {
+			always = no
+		}
+		
+		removal_cost = -1
+
+		picture = idea_generic_purge
+	
+			modifier = {
+				conscription_factor = -0.02
+				consumer_goods_factor = -0.1
+			}
+		}
+
+PER_ethnic_conflict = {
+		
+		
+		allowed = {
+			always = no
+		}
+		
+		removal_cost = -1
+
+		picture = idea_jap_interservice_rivalry_army_dominant
+	
+			modifier = {
+					political_power_cost = 0.1
+						stability_factor = -0.3
+
+			}
+		}
+
+PER_rise_of_nationalism = {
+		
+		
+		allowed = {
+			always = no
+		}
+		
+		removal_cost = -1
+
+		picture = idea_hun_hungarian_monarchy_habsburg
+	
+			modifier = {
+				weekly_war_support_factor = 0.05
+				nationalism_acceptance = 50
+			}
+		}
+	}
+}

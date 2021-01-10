@@ -135,7 +135,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_militarize_public
-		icon = GFX_goal_generic_occypy_states_ongoing_war
+		icon = GFX_goal_generic_occupy_states_ongoing_war
 		cost = 7.00
 		prerequisite = {
 			focus = JAP_address_nation1
@@ -1070,7 +1070,7 @@ completion_reward = {
 	}
 	focus = {
 		id = JAP_integrate_china
-		icon = GFX_goal_unknown
+		icon = GFX_focus_chi_united_front
 		cost = 7.00
 		prerequisite = {
 			focus = JAP_integrate_manchuria

@@ -341,7 +341,7 @@ bookmarks = {
 		"ASS"={
 			minor = yes
 			history = "ASSYRIA_GATHERING_STORM_DESC"
-			ideology = neutrality
+			ideology = traditional_conservatism
 			ideas = {
 			}
 			focuses = {
@@ -351,7 +351,7 @@ bookmarks = {
 		"SPR"={
 			minor = yes
 			history = "SPAIN_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = traditional_conservatism
 			ideas = {
 				SPR_military_disloyalty
 				SPA_carlism_1
@@ -367,7 +367,7 @@ bookmarks = {
 		"POR"={
 			minor = yes
 			history = "PORTUGAL_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = monarchism
 			ideas = {
 				POR_unstable_republic
 				POR_unreliable_army
@@ -376,6 +376,23 @@ bookmarks = {
 				POR_estado_novo
 				POR_workers_of_iberia_unite
 				POR_luso_tropicalism
+			}
+		}
+
+		"PER"={
+			minor = yes
+			history = "PERSIA_GATHERING_STORM_DESC"
+			ideology = monarchism
+			ideas = {
+				PER_political_clashes
+				PER_rise_of_nationalism
+				PER_ethnic_conflict
+				PER_backward_reforms
+			}
+			focuses = {
+				PER_protect_shah
+				PER_reinvigorate_glory_days
+				PER_for_glory
 			}
 		}
 		

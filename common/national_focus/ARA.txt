@@ -12,9 +12,6 @@ focus_tree = {
 		id = ARA_decision
 		icon = GFX_focus_generic_manpower
 		cost = 7.00
-		prerequisite = {
-			focus = ARA_bring_revolution
-		}
 		x = 14
 		y = 0
 			completion_reward = {
@@ -26,6 +23,9 @@ focus_tree = {
 		id = ARA_destroy_colonialism
 		icon = GFX_focus_attack_britain
 		cost = 7.00
+		prerequisite = {
+			focus = ARA_bring_revolution
+		}
 		x = 19
 		y = 10
 			completion_reward = {

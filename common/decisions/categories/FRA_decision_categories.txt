@@ -8,6 +8,14 @@ FRA_vichy_france = {
 		original_tag = FRA
 	}
 }
+FRA_colonial_decision = {
+	allowed = {
+		original_tag = FRA
+	}
+	visible = {
+		date > 1936.2.1
+	}
+}
 
 FRA_spanish_intervention_category = {
 	allowed = {
