@@ -1,0 +1,22 @@
+state={
+	id=865
+	name="STATE_865"
+	provinces={
+		12434 4473
+	}
+	history={
+		owner = PER
+		add_core_of = AZR
+		victory_points = {
+			12434 2 
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+manpower=67849
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

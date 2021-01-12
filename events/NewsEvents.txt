@@ -14913,7 +14913,31 @@ news_event = {
 
   }
 }
+#persia becomes constitutional monarchy
+news_event = {
+  id = news.399
+  title = news.399.title
+  desc = news.399.desc
+  picture = GFX_news_event_persia
+  
+  major = yes
+  is_triggered_only = yes
+  option = {
+    name = news.399.a
+    trigger = {
+      NOT = {
+        TAG = PER
+      }
+    }
+  }
+  option = {
+    name = news.399.b
+    trigger = {
+    TAG = PER
+    }
 
+  }
+}
 
 
 

@@ -4,9 +4,9 @@ state={
 	name="STATE_833"
 
 	history={
-		owner = ARM
+		owner = GEO
 		victory_points = {
-			9702 1 
+		     6669 1 
 		}
 		buildings = {
 			infrastructure = 1
@@ -18,7 +18,7 @@ state={
 	}
 
 	provinces={
-		6669 9702 
+		3656 6669 
 	}
 	manpower=120394
 	buildings_max_level_factor=1.000

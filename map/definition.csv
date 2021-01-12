@@ -1534,7 +1534,7 @@
 1533;7;78;210;land;false;jungle;6
 1534;7;81;70;land;false;plains;2
 1535;7;81;175;land;false;plains;6
-1536;7;84;35;land;false;plains;7
+1536;7;84;35;land;false;shirvan;7
 1537;7;84;90;land;false;mountain;4
 1538;7;84;140;land;false;forest;6
 1539;7;87;0;land;false;mountain;7
@@ -3654,7 +3654,7 @@
 3653;45;45;223;land;true;batum;7
 3654;45;48;83;land;false;hills;1
 3655;45;48;133;land;false;plains;1
-3656;45;48;188;land;false;hills;7
+3656;45;48;188;land;false;akhaltsikhe;7
 3657;45;51;48;land;false;mountain;1
 3658;45;51;153;land;false;hills;7
 3659;45;51;198;land;false;plains;1
@@ -11615,7 +11615,7 @@
 11614;171;63;92;land;false;mountain;1
 11615;171;63;142;land;false;mountain;1
 11616;171;66;2;land;true;plains;1
-11617;171;66;57;land;true;mountain;1
+11617;171;66;57;land;true;sokhumi;1
 11618;171;66;207;land;false;mountain;1
 11619;171;69;22;land;false;forest;1
 11620;171;69;172;land;false;mountain;1

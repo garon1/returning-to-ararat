@@ -1,6 +1,36 @@
 spriteTypes = {
 
 spriteType = {
+    name = "GFX_terrain_sokhumi"
+    textureFile = "gfx/interface/terrains/terrain_city_sokhumi.dds"
+  }
+
+  spriteType = {
+    name = "GFX_terrain_sokhumi_winter"
+    textureFile = "gfx/interface/terrains/terrain_city_sokhumi.dds"
+  }
+
+spriteType = {
+    name = "GFX_terrain_shirvan"
+    textureFile = "gfx/interface/terrains/terrain_city_shirvan.dds"
+  }
+
+  spriteType = {
+    name = "GFX_terrain_shirvan_winter"
+    textureFile = "gfx/interface/terrains/terrain_city_shirvan.dds"
+  }
+
+spriteType = {
+    name = "GFX_terrain_akhaltsikhe"
+    textureFile = "gfx/interface/terrains/terrain_city_akhaltsikhe.dds"
+  }
+
+  spriteType = {
+    name = "GFX_terrain_akhaltsikhe_winter"
+    textureFile = "gfx/interface/terrains/terrain_city_akhaltsikhe.dds"
+  }
+
+spriteType = {
     name = "GFX_terrain_tabriz"
     textureFile = "gfx/interface/terrains/terrain_city_tabriz.dds"
   }

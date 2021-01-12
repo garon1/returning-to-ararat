@@ -5,6 +5,45 @@
 categories =  {
 
 	###CITIES
+sokhumi = {
+		color = { 155 0 255 }
+		movement_cost = 1.4
+		ai_terrain_importance_factor = 6.0
+		sound_type = plains
+
+		units = {
+			attack = -0.5
+			#movement = -0.2
+		}
+
+		enemy_army_bonus_air_superiority_factor = -0.50
+	}
+shirvan = {
+		color = { 155 0 255 }
+		movement_cost = 1.4
+		ai_terrain_importance_factor = 6.0
+		sound_type = plains
+
+		units = {
+			attack = -0.5
+			#movement = -0.2
+		}
+
+		enemy_army_bonus_air_superiority_factor = -0.50
+	}
+akhaltsikhe = {
+		color = { 155 0 255 }
+		movement_cost = 1.4
+		ai_terrain_importance_factor = 6.0
+		sound_type = plains
+
+		units = {
+			attack = -0.5
+			#movement = -0.2
+		}
+
+		enemy_army_bonus_air_superiority_factor = -0.50
+	}
 
 	tabriz = {
 		color = { 155 0 255 }

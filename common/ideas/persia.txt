@@ -34,6 +34,37 @@ PER_nationalism1 = {
 				justify_war_goal_time = -0.3
 			}
 		}
+		PER_legacy = {
+		
+		
+		allowed = {
+			always = no
+		}
+		
+		removal_cost = -1
+
+		picture = idea_generic_limited_exports
+	
+			modifier = {
+				enemy_declare_war_tension = 0.5
+				justify_war_goal_time = -0.3
+			}
+		}
+	PER_arament = {
+		
+		
+		allowed = {
+			always = no
+		}
+		
+		removal_cost = -1
+
+		picture = idea_generic_limited_exports
+	
+			modifier = {
+				production_speed_industrial_complex_factor = 0.15
+			}
+		}
 PER_purge_capitalism = {
 		
 		

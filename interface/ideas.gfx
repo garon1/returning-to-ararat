@@ -1,6 +1,14 @@
 
 spriteTypes = {
 spriteType = {
+		name = "GFX_idea_PER_legacy"
+		texturefile = "gfx/interface/ideas/idea_chi_army_corruption3.dds"
+	}
+spriteType = {
+		name = "GFX_idea_PER_arament"
+		texturefile = "gfx/interface/ideas/idea_can_wartime_prices_and_trade_board.dds"
+	}
+spriteType = {
 		name = "GFX_idea_PER_purge_capitalism"
 		texturefile = "gfx/interface/ideas/generic_intel_bonus.dds"
 	}

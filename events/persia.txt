@@ -109,6 +109,7 @@ country_event = { #shah dies
 		
 	hidden_effect = {
 	news_event = { id = news.398 hours = 8 }
+	set_country_flag = shah_dead
 			PER = { 
 				add_opinion_modifier = {
 					target = AZR
@@ -183,6 +184,7 @@ hidden = yes
 		election_frequency = 48
 		elections_allowed = no
 	}
+	set_country_flag = PER_nationalismtt
 		create_country_leader = {
 		name = "Bahram Ariana"
 		picture = "Portrait_Persia_Bahram_Aryiana.tga"
@@ -196,6 +198,7 @@ hidden = yes
 		ai_chance = {
 		factor = 33
 		}
+		set_country_flag = PER_liberalstt
 		country_event = persia.10
 		retire_country_leader = yes
 		set_politics = {
@@ -217,6 +220,7 @@ hidden = yes
 		ai_chance = {
 		factor = 33
 		}
+		set_country_flag = PER_socialismtt
 		retire_country_leader = yes
 		set_politics = {
 		ruling_party = radical_socialism
@@ -402,13 +406,24 @@ country_event = { #constitutional monarchy has been established
 
   option = { #we accept demands
     name = persia.18.a
- 	}
+ 	
  	set_cosmetic_tag = PER_CON
+ 	hidden_effect = {
+ 	news_event = { id = news.399 hours = 12 }
+ 	set_country_flag = PER_constitutional
+ 	}
  	set_politics = {
-		ruling_party = totalitarianism
+		ruling_party = traditional_conservatism
 		last_election = "1936.1.1"
 		election_frequency = 48
 		elections_allowed = yes
+		}
+		create_country_leader = {
+	name = "Ahmad Qavām"
+	picture = "Portrait_Persia_Ahmad_Qavam.tga"
+	expire = "1965.1.1"
+	ideology = traditional_conservatism_subtype
+}
 	}
 }
 country_event = { #monarchy stays absolutist
@@ -423,12 +438,71 @@ country_event = { #monarchy stays absolutist
 
   option = { #we accept demands
     name = persia.19.a
- 	}
+ 	
  	add_stability = -0.15
  	set_politics = {
 		ruling_party = totalitarianism
 		last_election = "1936.1.1"
 		election_frequency = 48
 		elections_allowed = no
+		}
+		create_country_leader = {
+	name = "Reza Shah Pahlavi"
+	desc = "POLITICS_REZA_SHAH_PAHLAVI_DESC"
+	picture = "Portrait_Iran_Reza_Shah_Pahlavi.dds"
+	expire = "1965.1.1"
+	ideology = totalitarianism_subtype
+	traits = {
+		#
+	}
+}
+	}
+}
+country_event = { #shah dies in 1941
+  id = persia.20
+  title = persia.20.t
+  desc = persia.20.d
+  picture = GFX_report_event_persia6
+
+  trigger = {
+NOT = {
+	has_country_flag = shah_dead
+	}
+	date > 1941.8.16
+	date < 1941.9.16
+}
+  
+
+  fire_only_once = yes
+
+  option = { #we accept demands
+    name = persia.20.a
+    kill_country_leader = yes
+    if = {
+    limit = {
+    has_government = totalitarianism
+    NOT = {
+    has_country_flag = PER_constitutional
+    }
+    }
+    create_country_leader = {
+	name = "Mohammad Reza Pahlavi"
+	desc = "POLITICS_MOHAMMAD_REZA_PAHLAVI_DESC"
+	picture = "Portrait_Persia_Mohammad_Reza_Pahlavi.tga"
+	expire = "1965.1.1"
+	ideology = totalitarianism_subtype
+	traits = {
+		#
+	  		}
+		}
+  }
+	}
+	option = { #we accept demands
+    name = persia.20.b
+    if = {
+    limit = {
+    has_country_flag = PER_constitutional
+    }
+  }
 	}
 }

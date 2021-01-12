@@ -190,9 +190,9 @@ create_country_leader = {
 	}
 }
 create_country_leader = {
-    name = "Adam Stankievič"
+    name = "Sardar Homayoun"
     desc = ""
-    picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+    picture = "Portrait_Persia_Sardar_Homayoun.tga"
     expire = "1965.1.1"
     ideology = totalitarianism_subtype
     traits = {

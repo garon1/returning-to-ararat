@@ -40,6 +40,12 @@ focus_tree = {
 		id = PER_for_glory
 		icon = GFX_goal_unknown
 		cost = 7.00
+		prerequisite = {
+			focus = PER_reinvigorate_glory_days
+			focus = PER_a_socialist_persia
+			focus = PER_one_for_all
+			focus = PER_legacy
+		}
 		x = 24
 		y = 7
 		completion_reward = {
@@ -306,6 +312,9 @@ focus_tree = {
 		}
 		x = 21
 		y = 2
+		available = {
+		has_country_flag = PER_socialismtt
+		}
 		completion_reward = {
 		add_popularity = {
 		ideology = radical_socialism
@@ -482,7 +491,7 @@ focus_tree = {
 						target = ARM
 						expire = 0
 					}
- 		}
+ 			}
 		}
 
 	}
@@ -590,6 +599,9 @@ focus_tree = {
 		}
 		x = 30
 		y = 3
+		completion_reward = {
+		add_war_support = 0.20
+		}
 
 	}
 	focus = {
@@ -601,6 +613,20 @@ focus_tree = {
 		}
 		x = 30
 		y = 4
+		completion_reward = {
+		837 = {
+				add_claim_by = PER
+			}
+			864 = {
+				add_claim_by = PER
+			}
+		800 = {
+				add_claim_by = PER
+			}
+			352 = {
+				add_claim_by = PER
+			}
+		}
 
 	}
 	focus = {
@@ -612,6 +638,26 @@ focus_tree = {
 		}
 		x = 30
 		y = 5
+		completion_reward = {
+		PER = { 
+				add_opinion_modifier = {
+					target = AZR
+					modifier = sanctions_relations
+				}
+			}
+			PER = { 
+				add_opinion_modifier = {
+					target = KUR
+					modifier = sanctions_relations
+				}
+			}
+			PER = { 
+				add_opinion_modifier = {
+					target = ARM
+					modifier = sanctions_relations
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -624,6 +670,18 @@ focus_tree = {
 		}
 		x = 28
 		y = 6
+		completion_reward = {
+		add_popularity = {
+		ideology = totalitarianism
+		popularity = 0.15
+		}
+		add_popularity = {
+		ideology = monarchism
+		popularity = 0.15
+		}
+		add_stability = 0.15
+		add_war_support = 0.15
+	}
 
 	}
 	focus = {
@@ -635,6 +693,16 @@ focus_tree = {
 		}
 		x = 35
 		y = 1
+		completion_reward = {
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+		}
 
 	}
 	focus = {
@@ -646,6 +714,9 @@ focus_tree = {
 		}
 		x = 33
 		y = 2
+		completion_reward = {
+		add_ideas = PER_arament
+		}
 
 	}
 	focus = {
@@ -657,6 +728,16 @@ focus_tree = {
 		}
 		x = 34
 		y = 3
+		completion_reward = {
+					444 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
 
 	}
 	focus = {
@@ -668,6 +749,22 @@ focus_tree = {
 		}
 		x = 37
 		y = 2
+		completion_reward = {
+					410 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					414 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
 
 	}
 	focus = {
@@ -679,6 +776,36 @@ focus_tree = {
 		}
 		x = 36
 		y = 3
+		completion_reward = {
+		411 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					266 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					417 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					419 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
 
 	}
 	focus = {
@@ -693,6 +820,16 @@ focus_tree = {
 		}
 		x = 35
 		y = 4
+		completion_reward = {
+					413 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
 
 	}
 	focus = {
@@ -704,6 +841,14 @@ focus_tree = {
 		}
 		x = 40
 		y = 1
+		completion_reward = {
+					add_tech_bonus = {
+							name = fleet_in_being_bonus
+							bonus = 1.0
+							uses = 2
+							category = fleet_in_being_tree
+						}
+				}
 
 	}
 	focus = {
@@ -715,6 +860,16 @@ focus_tree = {
 		}
 		x = 39
 		y = 2
+		completion_reward = { 
+				410 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard		
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
 
 	}
 	focus = {
@@ -726,6 +881,15 @@ focus_tree = {
 		}
 		x = 39
 		y = 3
+		completion_reward = {
+					add_tech_bonus = {
+							name = ss_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = ss_tech
+						}
+				}
 
 	}
 	focus = {
@@ -737,6 +901,16 @@ focus_tree = {
 		}
 		x = 41
 		y = 2
+		completion_reward = { 
+				444 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard		
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
 
 	}
 	focus = {
@@ -748,6 +922,15 @@ focus_tree = {
 		}
 		x = 41
 		y = 3
+		completion_reward = {
+					add_tech_bonus = {
+							name = dd_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = dd_tech
+						}
+				}
 
 	}
 	focus = {
@@ -762,6 +945,9 @@ focus_tree = {
 		}
 		x = 40
 		y = 4
+		completion_reward = {
+					navy_experience = 25
+				}
 
 	}
 	focus = {
@@ -773,6 +959,9 @@ focus_tree = {
 		}
 		x = 45
 		y = 1
+		completion_reward = {
+	     army_experience = 20
+		}
 
 	}
 	focus = {
@@ -784,6 +973,15 @@ focus_tree = {
 		}
 		x = 43
 		y = 2
+		completion_reward = {
+					army_experience = 5
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 1.0
+							uses = 1
+							category = land_doctrine
+						}
+				}
 
 	}
 	focus = {
@@ -795,6 +993,9 @@ focus_tree = {
 		}
 		x = 44
 		y = 3
+		completion_reward = {
+					add_ideas = HUN_assault_gun_focus
+				}
 
 	}
 	focus = {
@@ -806,6 +1007,14 @@ focus_tree = {
 		}
 		x = 47
 		y = 2
+		completion_reward = {
+					add_tech_bonus = {
+							name = armor_bonus
+							bonus = 1.0
+							uses = 2
+							category = armor
+						}
+				}
 
 	}
 	focus = {
@@ -817,6 +1026,14 @@ focus_tree = {
 		}
 		x = 46
 		y = 3
+		completion_reward = {
+					add_tech_bonus = {
+							name = motorized_bonus
+							ahead_reduction = 2
+							uses = 1
+							category = motorized_equipment
+						}
+				}
 
 	}
 	focus = {
@@ -831,6 +1048,20 @@ focus_tree = {
 		}
 		x = 45
 		y = 4
+		completion_reward = {
+					add_ideas = special_forces
+					add_tech_bonus = {
+							name = special_forces_bonus
+							bonus = 1.0
+							uses = 1
+							technology = paratroopers
+							technology = paratroopers2
+							technology = marines
+							technology = marines2
+							technology = tech_mountaineers
+							technology = tech_mountaineers2
+						}
+				}
 
 	}
 	focus = {
@@ -842,6 +1073,9 @@ focus_tree = {
 		}
 		x = 5
 		y = 4
+		completion_reward = {
+		add_stability = 0.10
+		}
 
 	}
 	focus = {
@@ -853,6 +1087,12 @@ focus_tree = {
 		}
 		x = 5
 		y = 5
+		completion_reward = {
+		add_popularity = {
+		ideology = nationalism
+		popularity = -0.1
+		}
+		}
 
 	}
 	focus = {
@@ -867,6 +1107,9 @@ focus_tree = {
 		}
 		x = 7
 		y = 6
+		completion_reward = {
+		add_ideas = PER_legacy
+		}
 
 	}
 	focus = {
@@ -878,6 +1121,15 @@ focus_tree = {
 		}
 		x = 28
 		y = 8
+		completion_reward = {
+		PER = {
+ 	create_wargoal = {
+						type = annex_everything
+						target = KUR
+						expire = 0
+					}
+ 			}
+		}
 
 	}
 	focus = {
@@ -889,6 +1141,15 @@ focus_tree = {
 		}
 		x = 24
 		y = 9
+		completion_reward = {
+		PER = {
+ 	create_wargoal = {
+						type = annex_everything
+						target = TMS
+						expire = 0
+					}
+ 			}
+		}
 
 	}
 	focus = {
@@ -900,6 +1161,33 @@ focus_tree = {
 		}
 		x = 27
 		y = 9
+		completion_reward = {
+		BAR = {
+		create_wargoal = {
+						type = annex_everything
+						target = FIR
+						expire = 0
+						}
+						if = {
+						limit = { AFG = {exists = yes}
+							}
+							create_wargoal = {
+						type = annex_everything
+						target = AFG
+						expire = 0
+					}
+						}
+						if = {
+						limit = { AFE {exists = yes}
+							}
+							create_wargoal = {
+						type = annex_everything
+						target = AFE
+						expire = 0
+					}
+						}
+ 			}
+		}
 
 	}
 	focus = {
@@ -911,6 +1199,17 @@ focus_tree = {
 		}
 		x = 22
 		y = 9
+		completion_reward = {
+		if = {
+						limit = { GEO {exists = yes}
+							}
+							create_wargoal = {
+						type = annex_everything
+						target = GEO
+						expire = 0
+					}
+						}
+		}
 
 	}
 }
