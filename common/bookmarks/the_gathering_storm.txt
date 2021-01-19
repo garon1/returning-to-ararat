@@ -66,6 +66,15 @@ bookmarks = {
 		}
 		"SOV"={
 			history = "SOV_GATHERING_STORM_DESC"
+			ideology = radical_socialism
+			ideas = {
+			}
+			focuses = {
+			}	
+		}
+
+		"RUS"={
+			history = "RUS_GATHERING_STORM_DESC"
 			ideology = nationalism
 			ideas = {
 				trotskyite_plot
@@ -393,6 +402,22 @@ bookmarks = {
 				PER_protect_shah
 				PER_reinvigorate_glory_days
 				PER_for_glory
+			}
+		}
+
+		"AZR"={
+			minor = yes
+			history = "AZR_GATHERING_STORM_DESC"
+			ideology = monarchism
+			ideas = {
+				AZR_UCA
+				AZR_mad_at_neighbors
+				AZR_liberalization
+			}
+			focuses = {
+				AZR_social_liberals_elected
+				AZR_end_treaty_grozny
+				AZR_proclaim_empire
 			}
 		}
 		

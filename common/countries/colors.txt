@@ -1,4 +1,8 @@
 #reload countrycolors
+RUS = {
+	color = rgb { 0 114 221 }
+	color_ui = rgb { 0 114 221 }
+}
 AFE = {
 	color = rgb { 175 52 83 }
 	color_ui = rgb { 175 52 83 }
@@ -56,8 +60,8 @@ SIB = {
 	color_ui = rgb { 61 155 231 }
 }
 SOV = {
-	color = rgb { 0 114 221 }
-	color_ui = rgb { 0 114 221 }
+	color = rgb { 170 0 0 }
+	color_ui = rgb { 170 0 0 }
 }
 CHO = {
 	color = rgb { 153 123 107 }

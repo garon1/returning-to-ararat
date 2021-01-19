@@ -1,4 +1,10 @@
 ﻿l_english:
+    AZR_sultan:0 "Azerbaijani Sultanate"
+  AZR_sultan_ADJ:0 "Azerbaijani"
+  AZR_sultan_DEF:0 "The Sultanate of Azerbaijan"
+  AZR_empire:0 "Azerbaijani Empire"
+  AZR_empire_ADJ:0 "Azerbaijani"
+  AZR_empire_DEF:0 "The Empire of Azerbaijan"
   RUS_SOV_communism_autonomy_integrated_puppet:0 "Russian SFSR"
  ARM_SOV_communism_autonomy_dominion:0 "Armenian SSR"
  ARM_SOV_communism_autonomy_colony:0 "Armenian SSR"

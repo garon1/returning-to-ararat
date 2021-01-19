@@ -1,0 +1,307 @@
+AZR_form_greater_azerbaijan = {
+
+resettle_azeris = {
+
+		priority = 50
+
+		icon = eng_ally_imperialist_coup
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_stability < 0.5
+			}
+			modifier = {
+				factor = 10
+				has_stability < 0.3
+			}
+			modifier = {
+				factor = 10
+				has_stability < 0.2
+			}
+		}
+
+		allowed = { 
+			original_tag = "AZR"
+			
+		
+		}
+
+		available = {
+
+			original_tag = "AZR"
+			
+		
+		}
+
+		days_remove = 7
+
+		days_re_enable = 120
+
+		visible = {
+			original_tag = "AZR"
+		}
+
+		cost = 50
+
+		complete_effect = {
+			country_event = azr.28
+		}
+	}
+
+AZR_rename_cities = { 
+
+		priority = 50
+
+		icon = eng_ally_imperialist_coup
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_stability < 0.5
+			}
+			modifier = {
+				factor = 10
+				has_stability < 0.3
+			}
+			modifier = {
+				factor = 10
+				has_stability < 0.2
+			}
+		}
+
+		allowed = { 
+			original_tag = "AZR"
+			
+		
+		}
+
+		available = {
+
+			original_tag = "AZR"
+			
+		
+		}
+
+		days_remove = 7
+
+		days_re_enable = 120
+
+		visible = {
+			original_tag = "AZR"
+		}
+
+		cost = 50
+
+		complete_effect = {
+			set_country_flag = BUL_internal_affairs_ongoing_flag
+		}
+
+		modifier = {
+			political_power_gain = -0.5
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				random_list =  {
+					70 = {
+					}
+					20 = {
+						set_country_flag = BUL_a_royal_visit_extra_success_flag
+					}
+					10 = {
+						set_country_flag = BUL_a_royal_visit_failure_flag
+					}
+				}
+			}
+			country_event = { id = bftb_bulgaria_tsar_boris.1 }
+			clr_country_flag = BUL_internal_affairs_ongoing_flag
+		}
+	}
+
+annex_persian_lands = {
+
+		priority = 50
+
+		icon = eng_ally_imperialist_coup
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_stability < 0.5
+			}
+			modifier = {
+				factor = 10
+				has_stability < 0.3
+			}
+			modifier = {
+				factor = 10
+				has_stability < 0.2
+			}
+		}
+
+		allowed = { 
+			original_tag = "AZR"
+			
+		
+		}
+
+		available = {
+
+			original_tag = "AZR"
+			
+		
+			has_country_flag = GRE_attending_megali_convention
+		}
+
+		days_remove = 7
+
+		days_re_enable = 120
+
+		visible = {
+			original_tag = "AZR"
+		}
+
+		cost = 50
+
+		complete_effect = {
+			create_wargoal = {
+				type = take_state
+				target = PER
+				expire = 0
+				generator = { 419 420 865 }
+			}
+			declare_war_on = {
+				target = PER
+				type = take_state
+				expire = 0
+				generator = { 419 420 }
+			}
+		}
+	}
+
+annex_georgian_lands = {
+
+		priority = 50
+
+		icon = eng_ally_imperialist_coup
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_stability < 0.5
+			}
+			modifier = {
+				factor = 10
+				has_stability < 0.3
+			}
+			modifier = {
+				factor = 10
+				has_stability < 0.2
+			}
+		}
+
+		allowed = { 
+			original_tag = "AZR"
+			
+		
+		}
+
+		available = {
+			original_tag = "AZR"
+			
+		
+		}
+
+		days_remove = 7
+
+		days_re_enable = 120
+
+		visible = {
+			original_tag = "AZR"
+		}
+
+		cost = 50
+
+		complete_effect = {
+			create_wargoal = {
+				type = take_state
+				target = GEO
+				expire = 0
+				generator = { 231 }
+			}
+			declare_war_on = {
+				target = GEO
+				type = take_state
+				expire = 0
+				generator = { 231 }
+			}
+		}
+	}
+
+
+	annex_armenian_lands = {
+
+		priority = 50
+
+		icon = eng_ally_imperialist_coup
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_stability < 0.5
+			}
+			modifier = {
+				factor = 10
+				has_stability < 0.3
+			}
+			modifier = {
+				factor = 10
+				has_stability < 0.2
+			}
+		}
+
+		allowed = { 
+			original_tag = "AZR"
+			
+		
+		}
+
+		available = {
+
+			original_tag = "AZR"
+			
+		
+		}
+
+		days_remove = 7
+
+		days_re_enable = 120
+
+		visible = {
+			original_tag = "AZR"
+		}
+
+		cost = 50
+
+		complete_effect = {
+			create_wargoal = {
+				type = take_state
+				target = ARM
+				expire = 0
+				generator = { 818 819 842 831 }
+			}
+			declare_war_on = {
+				target = ARM
+				type = take_state
+				expire = 0
+				generator = { 818 819 842 831 }
+			}
+		}
+	}
+}

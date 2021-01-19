@@ -15,8 +15,8 @@ country_event = {
 }
 
 set_research_slots = 3
-set_stability = 0.5
-set_war_support = 0.7
+set_stability = 0.45
+set_war_support = 0.8
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -90,28 +90,16 @@ if = {
 set_convoys = 50
 
 set_politics = {
-	ruling_party = nationalism
+	ruling_party = radical_socialism
 	last_election = "1933.7.1"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 set_popularities = {
-	monarchism = 8
-traditional_conservatism = 22
-nationalism = 70
+market_socialism = 8
+syndicalism = 22
+radical_socialism = 70
 }
-
-create_faction = "Moscow Pact"
-add_to_faction = SOV
-add_to_faction = PRU
-add_to_faction = UZB
-add_to_faction = ALB
-add_to_faction = BUL
-add_to_faction = LAT
-add_to_faction = HUN
-add_to_faction = DOM
-add_to_faction = CHL
-add_to_faction = CRO
 
 add_ideas = {
 	SOV_angry
@@ -119,9 +107,36 @@ add_ideas = {
 }
 
 create_country_leader = {
+	name = "Karl Radek"
+	desc = "POLITICS_KARL_RADEK_DESC"
+	picture = "Portrait_SOV_Karl_Radek.tga"
+	expire = "1965.1.1"
+	ideology = market_socialism_subtype
+}
+
+create_country_leader = {
+	name = "Aleksandra Kollontay"
+	desc = "POLITICS_ALEXANDRA_KOLLONTAI_DESC"
+	picture = "Portrait_SOV_Aleksandra_Kollontai.dds"
+	expire = "1965.1.1"
+	ideology = radical_socialism_subtype
+	female = yes
+}
+
+create_country_leader = {
+	name = "Aleksey Rykov"
+	desc = "POLITICS_ALEKSEY_RYKOV_DESC"
+	picture = "Portrait_SOV_Aleksey_Rykov.dds"
+	expire = "1965.1.1"
+	ideology = syndicalism_subtype
+	traits = {
+		
+	}
+}
+create_country_leader = {
 	name = "Konstantin Rodzaevsky"
 	desc = "POLITICS_KONSTANTIN_RODZAEVSKY_DESC"
-	picture = "Portrait_Soviet_Konstantin_Rodzaevsky.dds"
+	picture = "Portrait_Russia_Konstantin_Rodzaevsky.dds"
 	expire = "1953.3.1"
 	ideology = nationalism_subtype
 	traits = {
@@ -155,25 +170,6 @@ create_country_leader = {
 		#
 	}
 }
-
-create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = syndicalism_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = market_socialism_subtype
-	traits = {
-		#
-	}
-}
 create_country_leader = {
 		name = "Jonas Lote"
 	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
@@ -188,15 +184,6 @@ create_country_leader = {
 	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
 	expire = "1965.1.1"
 	ideology = monarchism_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = radical_socialism_subtype
 	traits = {
 		#
 	}
@@ -236,10 +223,6 @@ add_namespace = {
 	name = "unit_leader_sov"
 	type = unit_leader
 }
-set_autonomy = {
-		target = QNG
-		autonomous_state = autonomy_puppet
-	}
 create_corps_commander = {
 	name = "Georgy Zhukov"
 	id = 410

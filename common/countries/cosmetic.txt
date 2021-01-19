@@ -1,3 +1,11 @@
+AZR_sultan = {
+	color = rgb { 112 46 204 }
+	color_ui = rgb {112 46 204 }
+}
+AZR_empire = {
+	color = rgb { 206 51 167 }
+	color_ui = rgb { 206 51 167 }
+}
 VIN_INC = {
 	color = rgb { 0 103 193 }
 	color_ui = rgb { 0 103 193 }

@@ -2734,7 +2734,6 @@ form_persian_empire_category = {
 		}
 	}
 }
-
 form_byzantine_empire_category = {
 
 	form_byzantine_empire = {

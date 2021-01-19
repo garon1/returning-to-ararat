@@ -78,63 +78,85 @@ ARM_decrease_revolt_risk = {
 	}
 }
 
-ARM_set_authority_autonomous_region_medium = {
-	custom_effect_tooltip = ARM_authority_medium
+ARM_set_authority_kavat_low = {
+	custom_effect_tooltip = ARM_kavat
+	hidden_effect = {
+		set_variable = { ARM_authority_level = 1 }
+		if = {
+			limit = { is_owned_by = ARM }
+			if = {
+				limit = {
+					has_dynamic_modifier = { modifier = kavat }
+				}
+				remove_dynamic_modifier = { modifier = kavat }
+			}
+			if = {
+				limit = {
+					NOT = { has_dynamic_modifier = { modifier = kavat } }
+				}
+				add_dynamic_modifier = { modifier = kavat }
+			}
+		}
+	}
+}
+
+ARM_set_authority_kavat_medium = {
+	custom_effect_tooltip = ARM_kavat
 	hidden_effect = {
 		set_variable = { ARM_authority_level = 2 }
 		if = {
 			limit = { is_owned_by = ARM }
 			if = {
 				limit = {
-					has_dynamic_modifier = { modifier = autonomous_region }
+					has_dynamic_modifier = { modifier = kavat }
 				}
-				remove_dynamic_modifier = { modifier = autonomous_region }
+				remove_dynamic_modifier = { modifier = kavat }
 			}
 			if = {
 				limit = {
-					NOT = { has_dynamic_modifier = { modifier = autonomous_region } }
+					NOT = { has_dynamic_modifier = { modifier = kavat } }
 				}
-				add_dynamic_modifier = { modifier = autonomous_region }
+				add_dynamic_modifier = { modifier = kavat }
 			}
 		}
 	}
 }
 
-ARM_set_authority_autonomous_region_high = {
+ARM_set_authority_kavat_high = {
 	hidden_effect = {
 		set_variable = { ARM_authority_level = 3 }
 		if = {
 			limit = { is_owned_by = ARM }
 			if = {
 				limit = {
-					has_dynamic_modifier = { modifier = autonomous_region }
+					has_dynamic_modifier = { modifier = kavat }
 				}
-				remove_dynamic_modifier = { modifier = autonomous_region }
+				remove_dynamic_modifier = { modifier = kavat }
 			}
 			if = {
 				limit = {
-					has_dynamic_modifier = { modifier = autonomous_region }
+					has_dynamic_modifier = { modifier = kavat }
 				}
-				remove_dynamic_modifier = { modifier = autonomous_region }
+				remove_dynamic_modifier = { modifier = kavat }
 			}
 		}
 	}
 }
 
-ARM_increase_authority_autonomous_region = {
+ARM_increase_authority_kavat = {
 	hidden_effect = {
 		if = {
-			limit = { ARM_is_autonomous_region = yes }
-			ARM_set_authority_autonomous_region_medium = yes
+			limit = { ARM_is_kavat = yes }
+			ARM_set_authority_kavat_medium = yes
 		}
 		else = {
-			ARM_set_authority_autonomous_region_high = yes
+			ARM_set_authority_kavat_high = yes
 		}
 	}
 	ARM_evaluate_centralisation = yes
 }
 
-ARM_decrease_authority_autonomous_region = {
+ARM_decrease_authority_kavat = {
 	hidden_effect = {
 		if = {
 			limit = { ARM_is_armenian_province = yes }

@@ -138,6 +138,7 @@ add_to_faction = SIK
 add_to_faction = PAR
 add_to_faction = URG
 add_to_faction = VIN
+add_to_faction = SOV
 
 add_ideas = {
 GER_national_revitalization2

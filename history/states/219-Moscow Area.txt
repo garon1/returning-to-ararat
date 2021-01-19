@@ -9,7 +9,7 @@ manpower=335992
 	buildings_max_level_factor=1.000
 	state_category=megalopolis
 	history={
-		owner = SOV
+		owner = RUS
 		victory_points = {
 			6380 50 
 		}
@@ -21,6 +21,7 @@ manpower=335992
 
 		}
 		add_core_of = SOV
+add_core_of = RUS
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 4

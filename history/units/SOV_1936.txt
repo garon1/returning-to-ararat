@@ -126,8 +126,150 @@ division_template = {
 
 ##### OOB #####
 units = {
-	##### Severno-Zapadnoe TVD (North West Theatre) -- Archangelsk #####				
-	# 1ya Strelkoviy Korpus			
+
+division = {
+		#name = "Strelkovaya Diviziya"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 3008
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+division = {
+		#name = "Gornostrelkovaya Diviziya"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 11159
+		division_template = "Gornostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+division = {
+		#name = "Motostrelkovaya Diviziya"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 9197
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+division = {
+		#name = "Kavaleriyskaya Diviziya"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 3140
+		division_template = "Kavaleriyskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+division = {
+		#name = "Strelkovaya Diviziya"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 3008
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+division = {
+		#name = "Gornostrelkovaya Diviziya"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 11159
+		division_template = "Gornostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+division = {
+		#name = "Motostrelkovaya Diviziya"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 9197
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+division = {
+		#name = "Kavaleriyskaya Diviziya"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 3140
+		division_template = "Kavaleriyskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+division = {
+		#name = "Mekhanizirovaniy Korpus"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 3151
+		division_template = "Mekhanizirovaniy Korpus"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+division = {
+		#name = "Vozdushno-Desantnaya Brigada"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 3151
+		division_template = "Vozdushno-Desantnaya Brigada"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}	
+
+division = {
+		#name = "Vozdushno-Desantnaya Brigada"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 3151
+		division_template = "Vozdushno-Desantnaya Brigada"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
 	
 }
 		

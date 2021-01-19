@@ -65,9 +65,15 @@ if = {
 }
 set_politics = {
 	ruling_party = social_liberal
-	last_election = "1936.1.1"
+	last_election = "1933.1.1"
 	election_frequency = 48
 	elections_allowed = yes
+}
+add_ideas = {
+	AZR_mad_at_neighbors
+	AZR_liberalization
+	AZR_armenian_greivences
+	AZR_UCA
 }
 set_popularities = {
 radical_socialism = 5

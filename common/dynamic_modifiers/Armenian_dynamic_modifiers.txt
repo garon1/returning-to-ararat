@@ -5,6 +5,14 @@ millet_mektepleri_dynamic_modifier = {
 	research_speed_factor = var_millet_mektepleri
 }
 
+kavat_stability_dynamic_modifier = {
+	stability_factor = var_state_stability
+	war_support_factor = var_state_martial_law
+
+	resistance_damage_to_garrison = -1
+	resistance_garrison_penetration_chance = -1
+}
+
 centralisation_dynamic_modifier = {
 	icon = "GFX_idea_man_five_year_plan_tank"
 
@@ -42,6 +50,13 @@ autonomous_region = {
 	local_building_slots_factor = -0.75
 	state_resources_factor = -0.75
 	state_production_speed_buildings_factor = -0.20
+}
+
+kavat = {
+	recruitable_population_factor = -0.50
+	local_building_slots_factor = -0.50
+	state_resources_factor = -0.50
+	state_production_speed_buildings_factor = -0.10
 }
 
 high_revolt_risk = {
