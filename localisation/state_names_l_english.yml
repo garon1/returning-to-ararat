@@ -848,7 +848,7 @@
  STATE_847:0 "Phnom Penh"
  STATE_848:0 "Nam Pouy"
  STATE_849:0 "Shan"
- STATE_850:0 "STATE_850"
+ STATE_850:0 "Inner Mongolia"
  STATE_851:0 "Abuja"
  STATE_852:0 "Kasama"
  STATE_853:0 "Mombasa"
@@ -864,3 +864,4 @@
  STATE_863:0 "Ganja"
  STATE_864:0 "Shirvan"
  STATE_865:0 "Lankaran"
+ STATE_866:0 "Kazakh-Shamshadin"

@@ -106,7 +106,10 @@ country_event = { #shah dies
 		election_frequency = 48
 		elections_allowed = no
 	}
-		
+		add_popularity = {
+		popularity = 100
+		ideology = totalitarianism
+		}
 	hidden_effect = {
 	news_event = { id = news.398 hours = 8 }
 	set_country_flag = shah_dead

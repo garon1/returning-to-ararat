@@ -49,7 +49,13 @@ focus_tree = {
 		x = 24
 		y = 7
 		completion_reward = {
-		add_ideas = PER_nationalism
+		PER = {
+ 	create_wargoal = {
+						type = annex_everything
+						target = ARQ
+						expire = 0
+					}
+ 			}
 		}
 
 	}
@@ -88,6 +94,13 @@ focus_tree = {
 		available = {
 		has_country_flag = PER_liberalstt
 		}
+		mutually_exclusive = {
+			focus = PER_nationalism_elected
+
+		}
+		mutually_exclusive = {
+			focus = PER_socialists_are_elected
+		}
 		x = 7
 		y = 2
 		completion_reward = {
@@ -99,7 +112,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = PER_islamic_reforms
+		id = PER_islamic_reforms1
 		icon = GFX_goal_unknown
 		cost = 7.00
 		prerequisite = {
@@ -164,6 +177,14 @@ focus_tree = {
 		available = {
 		has_country_flag = PER_nationalismtt
 		}
+		mutually_exclusive = {
+			focus = PER_liberals_are_elected
+
+		}
+		mutually_exclusive = {
+			focus = PER_socialists_are_elected
+		}
+
 		x = 14
 		y = 2
 		completion_reward = {
@@ -244,7 +265,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = PER_forceful_assimilation
+		id = PER_minorities
 		icon = GFX_goal_unknown
 		cost = 7.00
 		prerequisite = {
@@ -262,7 +283,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 7.00
 		prerequisite = {
-			focus = PER_forceful_assimilation
+			focus = PER_minorities
 		}
 		x = 16
 		y = 5
@@ -312,6 +333,13 @@ focus_tree = {
 		}
 		x = 21
 		y = 2
+		mutually_exclusive = {
+			focus = PER_nationalism_elected
+
+		}
+		mutually_exclusive = {
+			focus = PER_liberals_are_elected
+		}
 		available = {
 		has_country_flag = PER_socialismtt
 		}
@@ -1069,7 +1097,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 7.00
 		prerequisite = {
-			focus = PER_islamic_reforms
+			focus = PER_islamic_reforms1
 		}
 		x = 5
 		y = 4
@@ -1199,6 +1227,7 @@ focus_tree = {
 		}
 		x = 22
 		y = 9
+		available_if_capitulated = no
 		completion_reward = {
 		if = {
 						limit = { GEO {exists = yes}
@@ -1213,3 +1242,4 @@ focus_tree = {
 
 	}
 }
+

@@ -4,9 +4,10 @@ state={
 	name="STATE_443"
 
 	history={
-		owner = RAJ
+		owner = AFE
 		add_core_of = IND
-add_core_of = KHU
+		add_core_of = KHU
+add_core_of = AFG
 		victory_points = {
 			3456 3 
 		}
@@ -19,12 +20,11 @@ add_core_of = KHU
 			}
 
 		}
-		
 
 	}
 
 	provinces={
-		1061 1190 3456 4003 4110 7020 7049 7084 10108 
+		3456 7049 10108 10735 
 	}
 	manpower=3887000
 	buildings_max_level_factor=1.000

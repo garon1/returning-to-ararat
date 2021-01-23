@@ -7,11 +7,9 @@ AZR_form_greater_azerbaijan = {
 
 	allowed = {
 		original_tag = "AZR"
-		has_country_flag = AZR_reforms_finished
 	}
 
 	visible = {
 	original_tag = "AZR"
-	has_country_flag = AZR_reforms_finished
 	}
 }

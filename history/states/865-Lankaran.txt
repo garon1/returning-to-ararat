@@ -8,7 +8,7 @@ state={
 		owner = PER
 		add_core_of = AZR
 		victory_points = {
-			12434 2 
+			4473 2 
 		}
 		buildings = {
 			infrastructure = 1

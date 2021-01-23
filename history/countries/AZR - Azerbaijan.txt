@@ -45,6 +45,14 @@ if = {
 	}
 }
 country_event = {
+	id = azr.1
+	days = 360
+}
+country_event = {
+	id = azr.30
+	hours = 6
+}
+country_event = {
 	id = tas_political.1
 	hours = 6
 }
@@ -82,15 +90,6 @@ social_liberal = 75
 traditional_conservatism = 15
 }
 create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = nationalism_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
 		name = "Mammad Amin Rasulzadeh"
 	picture = "Portrait_Azerbaijan_Rasulzade.tga"
 	expire = "1965.1.1"
@@ -100,91 +99,73 @@ create_country_leader = {
 	}
 }
 create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = traditional_conservatism_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	name = "Mir Jafar Baghirov"
+	picture = "Portrait_Azerbaijan_Mir_Jafar_Baghirov.tga"
 	expire = "1965.1.1"
 	ideology = market_socialism_subtype
-	traits = {
-		#
-	}
 }
+
 create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	name = "Aliheydar Garayev"
+	picture = "Portrait_Azerbaijan_Aliheydar_Garayev.tga"
 	expire = "1965.1.1"
 	ideology = anarchism_subtype
-	traits = {
-		#
-	}
 }
+
 create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	name = "Aliheydar Garayev"
+	picture = "Portrait_Azerbaijan_Aliheydar_Garayev.tga"
 	expire = "1965.1.1"
-	ideology = monarchism_subtype
-	traits = {
-		#
-	}
+	ideology = syndicalism_subtype
 }
+
 create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	name = "Alsan bey Sefikurdski"
+	picture = "Portrait_Azerbaijan_Alsan_bey_Sefikurdski.tga"
 	expire = "1965.1.1"
 	ideology = radical_socialism_subtype
-	traits = {
-		#
-	}
 }
 
 create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	name = "Javad bey Malikyaganov"
+	picture = "Portrait_Azerbaijan_Javad_bey_Malikyaganov.tga"
 	expire = "1965.1.1"
 	ideology = social_democracy_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Mir Jafar Baghirov"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	expire = "1953.3.1"
-	ideology = syndicalism_subtype
-	traits = {
-		
-	}
 }
 
 create_country_leader = {
-	name = "Mammad Amin Rasulzade"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-	expire = "1953.3.1"
-	ideology = traditional_conservatism_subtype
-	traits = {
-		
-	}
+	name = "Yevsey Gindes"
+	picture = "Potrait_Azerbaijan_Yevsey_Gindes.tga"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
 }
 
 create_country_leader = {
-	name = "Gara Garabeyov"
-	desc = ""
-	picture = "gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
-	expire = "1953.3.1"
+	name = "Behbud Khan Javanshir"
+	picture = "Portrait_Azerbaijan_Behbud_Khan_Javanshir.tga"
+	expire = "1965.1.1"
 	ideology = market_liberal_subtype
-	traits = {
-		
-	}
+}
+
+create_country_leader = {
+	name = "Mammad Yusif Jafarov"
+	picture = "Portrait_Azerbaijan_Mammad_Yusif_Jafarov.tga"
+	expire = "1965.1.1"
+	ideology = traditional_conservatism_subtype
+}
+
+create_country_leader = {
+	name = "Ali-Agha Shikhlinski"
+	picture = "Portrait_Azerbaijan_Ali_Agha_Shikhlinski.tga"
+	expire = "1965.1.1"
+	ideology = totalitarianism_subtype
+}
+
+create_country_leader = {
+	name = "Qara Qarabeyov"
+	picture = "Portrait_Azerbaijan_Qara_Qarabeyov.tga"
+	expire = "1965.1.1"
+	ideology = monarchism_subtype
 }
 
 

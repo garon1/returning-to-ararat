@@ -87,6 +87,20 @@ bookmarks = {
 			}	
 		}
 
+		"QNG"={
+			history = "QNG_GATHERING_STORM_DESC"
+			ideology = monarchism
+			ideas = {
+				#trotskyite_plot
+				#home_of_revolution
+			}
+			focuses = {
+				#SOV_glory
+				#SOV_strike_europe
+				#SOV_strike_asia
+			}	
+		}
+
 		"---"={
 			history = "OTHER_GATHERING_STORM_DESC"
 		}

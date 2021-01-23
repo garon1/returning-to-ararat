@@ -174,8 +174,13 @@ focus_tree = {
 		x = 5
 		y = 4
 		completion_reward = {
+		remove_ideas = AZR_liberalization
 		add_popularity = {
-		popularity = -0.1
+		popularity = -0.2
+		ideology = market_liberal
+			}
+		add_popularity = {
+		popularity = -0.2
 		ideology = social_liberal
 			}
 		}
@@ -211,6 +216,9 @@ focus_tree = {
 		prerequisite = {
 			focus = AZR_host_constitutional_convention
 		}
+		mutually_exclusive = {
+			focus = AZR_stay_with_uca
+		}
 		x = 7
 		y = 5
 		completion_reward = {
@@ -230,6 +238,9 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = AZR_host_constitutional_convention
+		}
+		mutually_exclusive = {
+			focus = AZR_break_alliance
 		}
 		x = 3
 		y = 5
@@ -255,6 +266,9 @@ focus_tree = {
 			focus = AZR_stay_with_uca
 			focus = AZR_break_alliance
 		}
+		mutually_exclusive = {
+			focus = AZR_proclaim_caliph
+		}
 		x = 4
 		y = 6
 		available_if_capitulated = no
@@ -268,6 +282,9 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 7.00
 		available_if_capitulated = no
+		mutually_exclusive = {
+			focus = AZR_proclaim_empire
+		}
 		prerequisite = {
 			focus = AZR_stay_with_uca
 			focus = AZR_break_alliance
@@ -437,7 +454,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AZR_welfare_state
+		id = AZR_welfare
 		icon = GFX_goal_unknown
 		cost = 7.00
 		prerequisite = {
@@ -479,7 +496,7 @@ focus_tree = {
 		}
 		available_if_capitulated = no
 		prerequisite = {
-			focus = AZR_welfare_state
+			focus = AZR_welfare
 		}
 		x = 12
 		y = 6
@@ -510,7 +527,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AZR_print_karl_marx
+		id = AZR_marx
 		icon = GFX_goal_unknown
 		cost = 7.00
 		prerequisite = {
@@ -568,7 +585,7 @@ focus_tree = {
 			focus = AZR_german_closeness
 		}
 		prerequisite = {
-			focus = AZR_print_karl_marx
+			focus = AZR_marx
 		}
 		prerequisite = {
 			focus = AZR_sway_masses
@@ -587,7 +604,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 7.00
 		prerequisite = {
-			focus = AZR_print_karl_marx
+			focus = AZR_marx
 		}
 		prerequisite = {
 			focus = AZR_german_closeness
@@ -607,7 +624,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 7.00
 		prerequisite = {
-			focus = AZR_print_karl_marx
+			focus = AZR_marx
 		}
 		prerequisite = {
 			focus = AZR_german_closeness
@@ -633,7 +650,7 @@ focus_tree = {
 			focus = AZR_german_closeness
 		}
 		prerequisite = {
-			focus = AZR_print_karl_marx
+			focus = AZR_marx
 		}
 		x = 25
 		y = 3
@@ -644,7 +661,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AZR_promote_human_potential
+		id = AZR_human_potential
 		icon = GFX_goal_unknown
 		cost = 7.00
 		prerequisite = {
@@ -690,7 +707,7 @@ focus_tree = {
 			focus = AZR_german_army_experience
 		}
 		prerequisite = {
-			focus = AZR_promote_human_potential
+			focus = AZR_human_potential
 		}
 		x = 20
 		y = 5
@@ -717,11 +734,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AZR_rid_the_old
+		id = AZR_rid_old
 		icon = GFX_goal_unknown
 		cost = 7.00
 		prerequisite = {
-			focus = AZR_promote_human_potential
+			focus = AZR_human_potential
 		}
 		prerequisite = {
 			focus = AZR_learn_from_previous_revolutions
@@ -741,7 +758,7 @@ focus_tree = {
 			focus = AZR_fight_last_man_mentality
 		}
 		prerequisite = {
-			focus = AZR_rid_the_old
+			focus = AZR_rid_old
 		}
 		x = 21
 		y = 6
@@ -853,7 +870,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AZR_technological_breakthroughs
+		id = AZR_technological
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
@@ -874,7 +891,7 @@ focus_tree = {
 			focus = AZR_georgian_forts
 		}
 		prerequisite = {
-			focus = AZR_technological_breakthroughs
+			focus = AZR_technological
 		}
 		prerequisite = {
 			focus = AZR_complete_civilian_industry
@@ -907,7 +924,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = AZR_endorse_military_buildup
+		id = AZR_buildup
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
@@ -925,17 +942,19 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = AZR_endorse_military_buildup
+			focus = AZR_buildup
 		}
 		x = 37
 		y = 4
 		completion_reward = {
+		229 = {
 			add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
 					level = 1
 					instant_build = yes
 				}
+		}
 		}
 
 	}
@@ -1002,7 +1021,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AZR_on_defense
+		id = AZR_defense
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
@@ -1023,7 +1042,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = AZR_on_defense
+			focus = AZR_defense
 		}
 		x = 39
 		y = 3
@@ -1057,7 +1076,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AZR_on_offense
+		id = AZR_offense
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
@@ -1078,7 +1097,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = AZR_on_offense
+			focus = AZR_offense
 		}
 		x = 43
 		y = 3

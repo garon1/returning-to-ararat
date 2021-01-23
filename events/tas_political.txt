@@ -1,6 +1,6 @@
 add_namespace = tas_political
 
-# Propose Caliphate
+#beginning event
 country_event = {
     id = tas_political.1
     title = tas_political.1.t
@@ -11,5 +11,22 @@ country_event = {
   
     option = {
         name = tas_political.1.a
+    }
+    option = {
+        name = tas_political.1.b
+        country_event = tas_political.2
+    }
+}
+#beginning event
+country_event = {
+    id = tas_political.2
+    title = tas_political.2.t
+    desc = tas_political.2.d
+    picture = GFX_report_event_tur_sultan_in_istanbul
+   
+  is_triggered_only = yes
+  
+    option = {
+        name = tas_political.2.a
     }
 }

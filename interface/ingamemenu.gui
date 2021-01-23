@@ -53,7 +53,7 @@ guiTypes = {
 			buttonFont = "hoi_24header"
 			clicksound = click_default
 			oversound = ui_menu_over
-			web_link = "https://trouble-at-sasoun.fandom.com/wiki/Timelines"
+			web_link = ""
 		}
 		
 		buttonType = {
@@ -87,59 +87,59 @@ guiTypes = {
 			oversound = ui_menu_over
 		}
 
-		### Discord, Forum, Steam and Twitter links
-		ButtonType = { #Actually Discord
+		## facebook etc.
+		ButtonType = {
 			name = "homepage_button"
-			position = { x = 79 y = 349 }
+			position = { x = 59 y = 349 }
 			quadTextureSprite ="homepage"
 			clicksound = click_default
 			pdx_tooltip = "MENU_HOMEPAGE"
-			web_link = "https://discord.gg/TETdhUnykk"
 		}
-		ButtonType = { #Actually Forum
+		ButtonType = {
 			name = "forum_button"
-			position = { x = 119 y = 349 }
+			position = { x = 99 y = 349 }
 			quadTextureSprite ="forum"
 			clicksound = click_default
 			pdx_tooltip = "MENU_FORUM"
-			web_link = "http://forum.paradoxplaza.com/forum/forumdisplay.php?844-Hearts-of-Iron-IV"
+			web_link = "https://forum.paradoxplaza.com/forum/index.php?forums/hearts-of-iron-iv.844/"
 		}
-		ButtonType = { #Actually Steam
+		ButtonType = {
 			name = "facebook_button"
-			position = { x = 159 y = 349 }
+			position = { x = 139 y = 349 }
 			quadTextureSprite ="facebook"
 			clicksound = click_default
 			pdx_tooltip = "MENU_FACEBOOK"
-			web_link = "https://steamcommunity.com/sharedfiles/filedetails/?id=2347630050"
-		}	
-		ButtonType = { #Actually Twitter
+			web_link = "https://www.facebook.com/Heartsofiron"
+		}			
+		
+		ButtonType = {
 			name = "twitter_button"
-			position = { x = 199 y = 349 }
+			position = { x = 179 y = 349 }
 			quadTextureSprite ="twitter"
-			clicksound = click_default
+			#clicksound = click_default
 			pdx_tooltip = "MENU_TWITTER"
-			web_link = "https://trouble-at-sasoun.fandom.com/wiki/Timelines"
+			web_link = "https://twitter.com/hoi_game"
 		}
-		ButtonType = { #Sent far far away because we don't want you
+		
+		ButtonType = {
 			name = "privacy_policy_button"
-			position = { x = 10000 y = 10000 }
+			position = { x = 219 y = 349 }
 			quadTextureSprite ="privacy"
 			#clicksound = click_default
 			pdx_tooltip = "MENU_PRIVACY_POLICY"
 		}
 
-		ButtonType = { ### From vanilla probably gonna blow up at some point ###
+		ButtonType = {
 			name = "achievements_button"
 			position = { x = 259 y = 349 }
 			quadTextureSprite ="achievements"
 			pdx_tooltip = "MENU_ACHIEVEMENTS"
 		}
-
 	}
-
+	
 	containerWindowType = {
 		name ="ingamemenu_load"
-		position = { x = -210 y = -250 }	
+		position = { x = -236 y = -270 }
 		size = { width = 420 height = 500}
 		Orientation = center
 
@@ -269,7 +269,7 @@ guiTypes = {
 	
 	containerWindowType = {
 		name ="ingamemenu_save"
-		position = { x=-210 y =-250 }	
+		position = { x = -236 y = -270 }
 		size = { width = 420 height = 500}
 		Orientation = center
 		

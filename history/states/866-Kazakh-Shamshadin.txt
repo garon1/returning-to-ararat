@@ -1,0 +1,18 @@
+state={
+	id=866
+	name="STATE_866"
+	provinces={
+		11708 
+	}
+	history={
+		owner = ARM
+		add_core_of = ARM
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+manpower=20293
+	state_category=enclave
+}

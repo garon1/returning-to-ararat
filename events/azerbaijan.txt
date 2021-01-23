@@ -5,7 +5,7 @@ country_event = {
 	id = azr.1
 	title = azr.1.t
 	desc = azr.1.d
-	picture = GFX_report_event_azr1
+	picture = GFX_Capture28
 
 	is_triggered_only = yes
 	
@@ -97,7 +97,6 @@ country_event = {
 		
 		country_event = azr.4
 		}
-	}
 	option = {#yes
 		name = azr.3.b
 		ai_chance = {
@@ -105,7 +104,7 @@ country_event = {
 		}
 		
 		country_event = azr.5
-		}
+		
 		set_politics = {
 		ruling_party = market_liberal
 		last_election = "1936.1.1"
@@ -117,15 +116,17 @@ country_event = {
 	picture = "Portrait_Azerbaijan_Behbud_Khan_Javanshir.tga"
 	expire = "1965.1.1"
 	ideology = market_liberal_subtype
-}
+		}
 	}
 }
+	
+
 #liberal president stays
 country_event = {
 	id = azr.4
 	title = azr.4.t
 	desc = azr.4.d
-	picture = GFX_report_event_azr2
+	picture = GFX_Capture5
 
 	is_triggered_only = yes
 	
@@ -139,7 +140,7 @@ country_event = {
 	id = azr.5
 	title = azr.5.t
 	desc = azr.5.d
-	picture = GFX_report_event_azr2
+	picture = GFX_Capture5
 
 	is_triggered_only = yes
 	
@@ -154,7 +155,7 @@ country_event = {
 	id = azr.6
 	title = azr.6.t
 	desc = azr.6.d
-	picture = GFX_report_event_azr2
+	picture = GFX_Capture5
 
 	is_triggered_only = yes
 	
@@ -168,7 +169,7 @@ country_event = {
 	id = azr.7
 	title = azr.7.t
 	desc = azr.7.d
-	picture = GFX_report_event_azr2
+	picture = GFX_Capture5
 
 	is_triggered_only = yes
 	
@@ -181,7 +182,7 @@ country_event = { #elections are closed
 	id = azr.8
 	title = azr.8.t
 	desc = azr.8.d
-	picture = GFX_report_event_election_vote
+	picture = GFX_Capture10
 	is_triggered_only = yes
 
 	fire_only_once = yes
@@ -204,7 +205,7 @@ country_event = {
 	id = azr.9
 	title = azr.9.t
 	desc = azr.9.d
-	picture = GFX_report_event_azr3
+	picture = GFX_Capture8
 
 	is_triggered_only = yes
 	
@@ -229,7 +230,7 @@ country_event = {
 	id = azr.10
 	title = azr.10.t
 	desc = azr.10.d
-	picture = GFX_report_event_azr4
+	picture = GFX_Capture25
 
 	is_triggered_only = yes
 	
@@ -245,7 +246,7 @@ country_event = {
 		}
 	
 	option = {
-		name = azr.10.a#we dont accept
+		name = azr.10.b#we dont accept
 		ai_chance = {
 		factor = 70
 		}
@@ -261,7 +262,7 @@ country_event = {
 	id = azr.11
 	title = azr.11.t
 	desc = azr.11.d
-	picture = GFX_report_event_azr4
+	picture = GFX_Capture25
 
 	is_triggered_only = yes
 	
@@ -285,7 +286,7 @@ country_event = {
 	id = azr.12
 	title = azr.12.t
 	desc = azr.12.d
-	picture = GFX_report_event_azr4
+	picture = GFX_Capture25
 
 	is_triggered_only = yes
 	
@@ -309,7 +310,7 @@ country_event = {
 	id = azr.13
 	title = azr.13.t
 	desc = azr.13.d
-	picture = GFX_report_event_azr4
+	picture = GFX_Capture7
 
 	is_triggered_only = yes
 	
@@ -328,7 +329,7 @@ country_event = {
 	id = azr.14
 	title = azr.14.t
 	desc = azr.14.d
-	picture = GFX_report_event_azr4
+	picture = GFX_Capture5
 
 	is_triggered_only = yes
 	
@@ -351,7 +352,7 @@ country_event = {
 	id = azr.15
 	title = azr.15.t
 	desc = azr.15.d
-	picture = GFX_report_event_azr4
+	picture = GFX_Capture9
 
 	is_triggered_only = yes
 	
@@ -381,7 +382,7 @@ country_event = {
 	id = azr.16
 	title = azr.16.t
 	desc = azr.16.d
-	picture = GFX_report_event_azr4
+	picture = GFX_Capture17
 
 	is_triggered_only = yes
 	
@@ -411,7 +412,7 @@ country_event = {
 	id = azr.17
 	title = azr.17.t
 	desc = azr.17.d
-	picture = GFX_report_event_azr4
+	picture = GFX_Capture11
 
 	is_triggered_only = yes
 	
@@ -431,7 +432,7 @@ country_event = {
 	id = azr.18
 	title = azr.18.t
 	desc = azr.18.d
-	picture = GFX_report_event_azr4
+	picture = GFX_Capture1
 
 	is_triggered_only = yes
 	
@@ -449,7 +450,7 @@ country_event = {
 	id = azr.19
 	title = azr.19.t
 	desc = azr.19.d
-	picture = GFX_report_event_azr4
+	picture = GFX_Capture6
 
 	is_triggered_only = yes
 	
@@ -467,7 +468,7 @@ country_event = {
 	id = azr.20
 	title = azr.20.t
 	desc = azr.20.d
-	picture = GFX_report_event_azr4
+	picture = GFX_Capture14
 
 	is_triggered_only = yes
 	
@@ -488,7 +489,7 @@ country_event = {
 						}
 		}
 	option = {
-		name = azr.20.a #we dont accept
+		name = azr.20.b #we dont accept
 		ai_chance = {
 		factor = 60
 		}
@@ -509,7 +510,7 @@ country_event = {
 	id = azr.21
 	title = azr.21.t
 	desc = azr.21.d
-	picture = GFX_report_event_azr4
+	picture = GFX_Capture22
 
 	is_triggered_only = yes
 	
@@ -546,7 +547,7 @@ country_event = {
 	id = azr.22
 	title = azr.22.t
 	desc = azr.22.d
-	picture = GFX_report_event_azr4
+	picture = GFX_Capture2
 
 	is_triggered_only = yes
 	
@@ -597,7 +598,7 @@ country_event = {
 	id = azr.23
 	title = azr.23.t
 	desc = azr.23.d
-	picture = GFX_report_event_azr4
+	picture = GFX_Capture2
 
 	is_triggered_only = yes
 	
@@ -610,7 +611,7 @@ country_event = {
 	id = azr.24
 	title = azr.24.t
 	desc = azr.24.d
-	picture = GFX_report_event_azr4
+	picture = GFX_Capture0
 
 	is_triggered_only = yes
 	
@@ -647,7 +648,7 @@ country_event = {
 	id = azr.25
 	title = azr.25.t
 	desc = azr.25.d
-	picture = GFX_report_event_azr4
+	picture = GFX_Capture0
 
 	is_triggered_only = yes
 	
@@ -694,7 +695,7 @@ country_event = {
 	id = azr.26
 	title = azr.26.t
 	desc = azr.26.d
-	picture = GFX_report_event_azr4
+	picture = GFX_Capture0
 
 	is_triggered_only = yes
 	
@@ -707,7 +708,7 @@ country_event = {
 	id = azr.27
 	title = azr.27.t
 	desc = azr.27.d
-	picture = GFX_report_event_azr4
+	picture = GFX_Capture3
 
 	is_triggered_only = yes
 	
@@ -733,7 +734,7 @@ country_event = {
 	id = azr.28
 	title = azr.28.t
 	desc = azr.28.d
-	picture = GFX_report_event_azr4
+	picture = GFX_download
 
 	is_triggered_only = yes
 	
@@ -747,14 +748,27 @@ country_event = {
 	id = azr.29
 	title = azr.29.t
 	desc = azr.29.d
-	picture = GFX_report_event_azr4
+	picture = GFX_Capture24
 
 	is_triggered_only = yes
 	
 	option = {
 		name = azr.29.a
 		add_research_slot = 1
-		set_country_flag = GRE_attending_megali_convention
+		set_country_flag = AZR_reforms_finished
 	}
 }
+#beginning event
+country_event = {
+	id = azr.30
+	title = azr.30.t
+	desc = azr.30.d
+	picture = GFX_Capture20
 
+	is_triggered_only = yes
+	
+	option = {
+		name = azr.30.a
+		add_political_power = 30
+	}
+}

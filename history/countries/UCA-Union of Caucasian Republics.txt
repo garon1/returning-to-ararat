@@ -1,4 +1,4 @@
-capital = 234
+capital = 232
 
 oob = "UCA_1936"
 

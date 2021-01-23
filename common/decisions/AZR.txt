@@ -23,6 +23,7 @@ resettle_azeris = {
 		}
 
 		allowed = { 
+			has_country_flag = AZR_reforms_finished
 			original_tag = "AZR"
 			
 		
@@ -30,6 +31,7 @@ resettle_azeris = {
 
 		available = {
 
+			has_country_flag = AZR_reforms_finished
 			original_tag = "AZR"
 			
 		
@@ -40,6 +42,7 @@ resettle_azeris = {
 		days_re_enable = 120
 
 		visible = {
+			has_country_flag = AZR_reforms_finished
 			original_tag = "AZR"
 		}
 
@@ -56,33 +59,14 @@ AZR_rename_cities = {
 
 		icon = eng_ally_imperialist_coup
 
-		ai_will_do = {
-			base = 0
-			modifier = {
-				add = 1
-				has_stability < 0.5
-			}
-			modifier = {
-				factor = 10
-				has_stability < 0.3
-			}
-			modifier = {
-				factor = 10
-				has_stability < 0.2
-			}
-		}
-
 		allowed = { 
+			has_country_flag = AZR_reforms_finished
 			original_tag = "AZR"
-			
-		
 		}
 
 		available = {
-
+has_country_flag = AZR_reforms_finished
 			original_tag = "AZR"
-			
-		
 		}
 
 		days_remove = 7
@@ -90,6 +74,7 @@ AZR_rename_cities = {
 		days_re_enable = 120
 
 		visible = {
+			has_country_flag = AZR_reforms_finished
 			original_tag = "AZR"
 		}
 
@@ -144,17 +129,13 @@ annex_persian_lands = {
 		}
 
 		allowed = { 
+			has_country_flag = AZR_reforms_finished
 			original_tag = "AZR"
-			
-		
 		}
 
 		available = {
-
+			has_country_flag = AZR_reforms_finished
 			original_tag = "AZR"
-			
-		
-			has_country_flag = GRE_attending_megali_convention
 		}
 
 		days_remove = 7
@@ -162,6 +143,7 @@ annex_persian_lands = {
 		days_re_enable = 120
 
 		visible = {
+			has_country_flag = AZR_reforms_finished
 			original_tag = "AZR"
 		}
 
@@ -206,15 +188,13 @@ annex_georgian_lands = {
 		}
 
 		allowed = { 
+		has_country_flag = AZR_reforms_finished
 			original_tag = "AZR"
-			
-		
 		}
 
 		available = {
+		has_country_flag = AZR_reforms_finished
 			original_tag = "AZR"
-			
-		
 		}
 
 		days_remove = 7
@@ -222,6 +202,7 @@ annex_georgian_lands = {
 		days_re_enable = 120
 
 		visible = {
+			has_country_flag = AZR_reforms_finished
 			original_tag = "AZR"
 		}
 
@@ -267,16 +248,15 @@ annex_georgian_lands = {
 		}
 
 		allowed = { 
+			has_country_flag = AZR_reforms_finished
 			original_tag = "AZR"
-			
-		
+		has_country_flag = AZR_reforms_finished
 		}
 
 		available = {
-
+has_country_flag = AZR_reforms_finished
+			has_country_flag = AZR_reforms_finished
 			original_tag = "AZR"
-			
-		
 		}
 
 		days_remove = 7
@@ -284,6 +264,7 @@ annex_georgian_lands = {
 		days_re_enable = 120
 
 		visible = {
+			has_country_flag = AZR_reforms_finished
 			original_tag = "AZR"
 		}
 
@@ -294,13 +275,13 @@ annex_georgian_lands = {
 				type = take_state
 				target = ARM
 				expire = 0
-				generator = { 818 819 842 831 }
+				generator = { 818 819 842 831 866 }
 			}
 			declare_war_on = {
 				target = ARM
 				type = take_state
 				expire = 0
-				generator = { 818 819 842 831 }
+				generator = { 818 819 842 831 866 }
 			}
 		}
 	}

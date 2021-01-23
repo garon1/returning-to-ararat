@@ -5,7 +5,7 @@ state={
 
 	history={
 		owner = ARM
-victory_points = {
+		victory_points = {
 			12441 1 
 		}
 		victory_points = {
@@ -22,7 +22,7 @@ victory_points = {
 	}
 
 	provinces={
-		3564 11708 12320 12441 12450 13123 
+		3564 12320 12441 12450 13123 
 	}
 	manpower=1250082
 	buildings_max_level_factor=1.000

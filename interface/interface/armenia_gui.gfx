@@ -1,0 +1,67 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ARM_Infopanel_bg"
+		texturefile = "gfx/interface/gui/Armenia/ARM_Info_Panel_bg.tga"
+	}
+	spriteType = {
+		name = "GFX_ARM_People"
+		texturefile = "gfx/interface/gui/armenia/ARM_People.tga"
+	}
+	spriteType = {
+		name = "GFX_ARM_People_Revolt"
+		texturefile = "gfx/interface/gui/Armenia/ARM_People_Revolt.tga"
+	}
+	spriteType = {
+		name = "GFX_ARM_CENTRALISM"
+		texturefile = "gfx/interface/gui/Armenia/ARM_CENTRALISM.tga"
+	}
+	spriteType = {
+		name = "GFX_ARM_NATIONAL"
+		texturefile = "gfx/interface/gui/Armenia/ARM_NATIONAL.tga"
+	}
+	spriteType = {
+		name = "GFX_ARM_Authority"
+		texturefile = "gfx/interface/gui/Armenia/ARM_Authority.dds"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_ARM_Proposal_Box"
+		texturefile = "gfx/interface/gui/Armenia/ARM_Proposal_Box.tga"
+	}
+	spriteType = {
+		name = "GFX_nee_ability_bar"
+		texturefile = "gfx/interface/gui/nee_ability_bar.tga"
+	}
+	spriteType = {
+		name = "GFX_ARM_recruit_irregulars"
+		texturefile = "gfx/interface/gui/Armenia/ARM_recruit_irregulars.tga"
+	}
+	spriteType = {
+		name = "GFX_ARM_bribe_local"
+		texturefile = "gfx/interface/gui/Armenia/ARM_bribe_local.tga"
+	}
+	spriteType = {
+		name = "GFX_ARM_martial_law"
+		texturefile = "gfx/interface/gui/Armenia/ARM_martial_law.tga"
+	}
+	spriteType = {
+		name = "GFX_ARM_increase_tax_burden"
+		texturefile = "gfx/interface/gui/Armenia/ARM_increase_tax_burden.tga"
+	}
+	spriteType = {
+		name = "GFX_ARM_loosen_tax_burden"
+		texturefile = "gfx/interface/gui/Armenia/ARM_loosen_tax_burden.tga"
+	}
+	spriteType = {
+		name = "GFX_ARM_crush_corruption"
+		texturefile = "gfx/interface/gui/Armenia/ARM_crush_corruption.tga"
+	}
+	spriteType = {
+		name = "GFX_ARM_focus_relief"
+		texturefile = "gfx/interface/gui/Armenia/ARM_focus_relief.tga"
+	}
+	spriteType = {
+		name = "GFX_ARM_purge_disloyal_elements"
+		texturefile = "gfx/interface/gui/Armenia/ARM_purge_disloyal_elements.tga"
+	}
+}

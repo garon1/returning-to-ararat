@@ -413,7 +413,7 @@ guiTypes = {
 				textureFile = ""
 				font = "hoi_18mbs"
 				borderSize = {x = 0 y = 0}
-				text = "kr_government_grouping"
+				text = "GOVERNMENT"
 				maxWidth = 340
 				format = left
 			}
@@ -501,7 +501,7 @@ guiTypes = {
 			containerWindowType = {
 				name ="factions_list_container"
 				position = { x = -185 y = 46 }
-				size = { width = 438 height = 124 }
+				size = { width = 438 height = 136 }
 				verticalScrollbar = "right_vertical_slider"
 
 				background = {

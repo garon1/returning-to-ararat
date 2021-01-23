@@ -45,35 +45,36 @@ set_popularities = {
 nationalism = 19
 }
 create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	name = "Bahram Ariana"
+	picture = "Portrait_Persia_Bahram_Aryiana.tga"
 	expire = "1965.1.1"
 	ideology = nationalism_subtype
-	traits = {
-		#
-	}
 }
+
 create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = social_liberal_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	name = "Ahmad Shah Qajar"
+	picture = "Portrait_Persia_Ahmad_Shah_Qajar.tga"
 	expire = "1965.1.1"
 	ideology = totalitarianism_subtype
-	traits = {
-		#
-	}
 }
+
 create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	name = "Ahmad Shah Qajar"
+	picture = "Portrait_Persia_Ahmad_Shah_Qajar.tga"
+	expire = "1965.1.1"
+	ideology = totalitarianism_subtype
+}
+
+create_country_leader = {
+	name = "Ahmad Qavām"
+	picture = "Portrait_Persia_Ahmad_Qavam.tga"
+	expire = "1965.1.1"
+	ideology = traditional_conservatism_subtype
+}
+
+create_country_leader = {
+	name = "Ahmad Shah Qajar"
+	picture = "Portrait_Persia_Ahmad_Shah_Qajar.tga"
 	expire = "1965.1.1"
 	ideology = traditional_conservatism_subtype
 	traits = {
@@ -82,44 +83,8 @@ create_country_leader = {
 }
 
 create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = syndicalism_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = market_socialism_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = anarchism_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = radical_socialism_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	name = "Mohammad Ali Foroughi Zoka-ol-Molk"
+	picture = "Portrait_Persia_Mohammad_Ali_Foroughi.tga"
 	expire = "1965.1.1"
 	ideology = market_liberal_subtype
 	traits = {
@@ -128,10 +93,80 @@ create_country_leader = {
 }
 
 create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	name = "Ahmad Shah Qajar"
+	picture = "Portrait_Persia_Ahmad_Shah_Qajar.tga"
+	expire = "1965.1.1"
+	ideology = market_liberal_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Mohammad Mosaddegh"
+	picture = "Portrait_Persia_Mohammad_Mosaddegh.tga"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ahmad Shah Qajar"
+	picture = "Portrait_Persia_Ahmad_Shah_Qajar.tga"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Sayyed Hasan Taqizadeh"
+	picture = "Portrait_Persia_Sayyed_Hasan_Taqizadeh.tga"
 	expire = "1965.1.1"
 	ideology = social_democracy_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ahmad Shah Qajar"
+	picture = "Portrait_Persia_Ahmad_Shah_Qajar.tga"
+	expire = "1965.1.1"
+	ideology = social_democracy_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Iraj Eskandari"
+	picture = "Portrait_Persia_Iraj_Eskandari.tga"
+	expire = "1965.1.1"
+	ideology = radical_socialism_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ja'far Pishevari"
+	picture = "Portrait_Persia_Ja'far_Pishevari.tga"
+	expire = "1965.1.1"
+	ideology = syndicalism_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Avetis Soltanzadeh"
+	picture = "Portrait_Persia_Avetis_Soltanzade.tga"
+	expire = "1965.1.1"
+	ideology = market_socialism_subtype
 	traits = {
 		#
 	}
