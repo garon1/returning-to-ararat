@@ -45,6 +45,22 @@ if = {
 	}
 }
 country_event = {
+	id = azr.31
+	days = 150
+}
+country_event = {
+	id = azr.33
+	days = 450
+}
+country_event = {
+	id = azr.33
+	days = 50
+}
+country_event = {
+	id = azr.32
+	days = 100
+}
+country_event = {
 	id = azr.1
 	days = 360
 }
@@ -160,6 +176,12 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = totalitarianism_subtype
 }
+create_country_leader = {
+	name = "Ali-Agha Shikhlinski"
+	picture = "Portrait_Azerbaijan_Ali_Agha_Shikhlinski.tga"
+	expire = "1965.1.1"
+	ideology = nationalism_subtype
+}
 
 create_country_leader = {
 	name = "Qara Qarabeyov"
@@ -172,7 +194,7 @@ create_country_leader = {
 ### Field Marshals ###
 create_field_marshal = {
 	name = "Ali-Agha Shikhlinski"
-	portrait_path = "gfx/leaders/AZE/Portrait_Azerbaijan_Ali_Agha_Shikhlinski.tga"
+	portrait_path = "gfx/leaders/AZR/Portrait_Azerbaijan_Ali_Agha_Shikhlinski.tga"
 	traits = {
 		old_guard
 		defensive_doctrine

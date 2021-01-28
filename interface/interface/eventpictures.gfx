@@ -1,5 +1,49 @@
 spriteTypes = {
 spriteType = {
+		name = "GFX_report_event_arm_turks"
+		texturefile = "gfx/event_pictures/report_event_arm_turks.dds"
+	}
+spriteType = {
+		name = "GFX_news_event_greater_azerbaijan"
+		texturefile = "gfx/event_pictures/news_event_greater_azerbaijan.dds"
+	}
+spriteType = {
+		name = "GFX_news_event_azerbaijan_liberal_purge"
+		texturefile = "gfx/event_pictures/news_event_azerbaijan_liberal_purge.dds"
+	}
+spriteType = {
+		name = "GFX_news_event_azerbaijan_is_sultanate"
+		texturefile = "gfx/event_pictures/news_event_azerbaijan_is_sultanate.dds"
+	}
+spriteType = {
+		name = "GFX_news_event_azerbaijan_is_empire"
+		texturefile = "gfx/event_pictures/news_event_azerbaijan_is_empire.dds"
+	}
+spriteType = {
+		name = "GFX_news_event_baku_bombing"
+		texturefile = "gfx/event_pictures/news_event_baku_bombing.dds"
+	}
+spriteType = {
+		name = "GFX_Capture34"
+		texturefile = "gfx/event_pictures/Capture34.dds"
+	}
+spriteType = {
+		name = "GFX_Capture33"
+		texturefile = "gfx/event_pictures/Capture33.dds"
+	}
+spriteType = {
+		name = "GFX_Capture32"
+		texturefile = "gfx/event_pictures/Capture32.dds"
+	}
+spriteType = {
+		name = "GFX_Capture31"
+		texturefile = "gfx/event_pictures/Capture31.dds"
+	}
+spriteType = {
+		name = "GFX_Capture30"
+		texturefile = "gfx/event_pictures/Capture30.dds"
+	}
+spriteType = {
 		name = "GFX_Capture29"
 		texturefile = "gfx/event_pictures/Capture29.dds"
 	}

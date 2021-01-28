@@ -61,6 +61,11 @@ country_event = {
 	hours = 6
 }
 
+country_event = {
+	id = arm.1
+	days = 200
+}
+
 set_popularities = {
 	totalitarianism = 60
 	syndicalism = 3

@@ -1,0 +1,94 @@
+add_namespace = arm
+#civil war
+country_event = {
+    id = arm.1
+    title = arm.1.t
+    desc = arm.1.d
+    picture = GFX_report_event_arm_turks
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = arm.1.a
+        add_named_threat = { threat = 3 name = generic.15.t }
+        hidden_effect = {
+        news_event = { hours = 4 id = news.406 }
+        set_country_flag = armcivwar
+        ARM = {
+        add_stability = -0.4
+        }
+            799 = {
+                
+                add_core_of = SIV
+            }
+            349 = {
+                
+                 add_core_of = SIV
+            }
+            350 = {
+                
+                add_core_of = SIV
+            }
+            344 = {
+                
+                add_core_of = SIV
+            }
+            819 = {
+                
+                add_core_of = SIV
+            }
+            814 = {
+                
+                add_core_of = SIV
+            }
+            815 = {
+                
+                add_core_of = SIV
+            }
+            813 = {
+                
+                add_core_of = SIV
+            }
+            352 = {
+                
+                add_core_of = SIV
+            }
+            800 = {
+                
+                add_core_of = SIV
+            }
+            353 = {
+                add_core_of = SIV
+                
+            }
+        SIV = { transfer_state = 799
+        transfer_state = 344
+        transfer_state = 349
+        transfer_state = 350
+        transfer_state = 815
+                }   
+                ARM = {
+                 declare_war_on = {
+                        target = SIV
+                        type = civil_war
+                    }
+                }
+
+            SIV = {
+                    add_civil_war_target = ARM
+                
+            set_equipment_fraction = 0.5
+            set_stability = 0.2
+            set_war_support = 0.8
+            add_equipment_to_stockpile = {
+                    type = infantry_equipment_1
+                    amount = 3000
+                    producer = SIV
+                }
+            load_oob = "SIV_Civil_War"
+            }
+        
+        }
+    }
+    }
+}

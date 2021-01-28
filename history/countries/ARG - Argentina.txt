@@ -53,8 +53,6 @@ if = {
 	}
 }
 
-set_country_flag = monroe_doctrine
-
 1939.1.1 = {
 
 	add_political_power = 1198
@@ -134,23 +132,15 @@ set_country_flag = monroe_doctrine
 
 set_convoys = 120
 set_politics = {
-	ruling_party = totalitarianism
+	ruling_party = anarchism
 	last_election = "1931.11.8"
 	election_frequency = 72
 	elections_allowed = yes
 }
 set_popularities = {
-	monarchism = 2
-radical_socialism = 1
-social_democracy = 5
-market_liberal = 5
-social_liberal = 5
-traditional_conservatism = 11
-totalitarianism = 47
-syndicalism = 2
-market_socialism = 5
-nationalism = 13
-anarchism = 4
+radical_socialism = 20
+syndicalism = 40
+anarchism = 40
 }
 
 create_country_leader = {

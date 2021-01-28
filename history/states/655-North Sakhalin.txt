@@ -9,6 +9,7 @@ state={
 		owner = JAP
 		add_core_of = JAP
 		add_claim_by = SOV
+add_claim_by = RUS
 		buildings = {
 			infrastructure = 3
 			air_base = 1

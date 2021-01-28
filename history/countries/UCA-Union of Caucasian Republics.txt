@@ -92,9 +92,9 @@ nationalism = 1
 anarchism = 10
 }
 create_country_leader = {
-    name = "Nikolai Baratov"
+    name = "Tapa Chermoev"
     desc = ""
-    picture = "gfx/leaders/UCA/nikolai-baratov.dds"
+    picture = "Portrait_UCA_Tapa_Chermoev.dds"
     expire = "1965.1.1"
     ideology = market_liberal_subtype
     traits = {

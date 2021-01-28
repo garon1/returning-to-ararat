@@ -10,7 +10,7 @@ focus_tree = {
 	default = no
 	focus = {
 		id = AZR_election
-		icon = GFX_goal_unknown
+		icon = GFX_focus_eng_special_air_service
 		cost = 7.00
 		x = 12
 		y = 0
@@ -25,7 +25,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_prepare_for_war
-		icon = GFX_goal_unknown
+		icon = GFX_focus_focus_fra_maquis
 		cost = 5.00
 		x = 41
 		y = 0
@@ -37,7 +37,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_right_wing_wins
-		icon = GFX_goal_unknown
+		icon = GFX_focus_BUL_cooperate_with_the_zveno
 		cost = 7.00
 		prerequisite = {
 			focus = AZR_election
@@ -58,7 +58,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_strip_voting_rights
-		icon = GFX_goal_unknown
+		icon = GFX_focus_usa_voter_registration_act
 		cost = 7.00
 		prerequisite = {
 			focus = AZR_right_wing_wins
@@ -72,7 +72,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_stop_economic_regulation
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_industry_1
 		cost = 7.00
 		prerequisite = {
 			focus = AZR_right_wing_wins
@@ -88,7 +88,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_stop_armenian_trade
-		icon = GFX_goal_unknown
+		icon = GFX_focus_arm_flag_armenia
 		cost = 7.00
 		prerequisite = {
 			focus = AZR_strip_voting_rights
@@ -105,7 +105,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_free_the_market
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_tungsten
 		cost = 7.00
 		prerequisite = {
 			focus = AZR_stop_armenian_trade
@@ -121,7 +121,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_encourage_radicalism
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_strike_at_democracy2
 		cost = 7.00
 		prerequisite = {
 			focus = AZR_right_wing_wins
@@ -137,7 +137,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_encourage_azeri_rebels
-		icon = GFX_goal_unknown
+		icon = GFX_focus_arm_flag_azerbaijan2
 		cost = 7.00
 		prerequisite = {
 			focus = AZR_stop_economic_regulation
@@ -163,7 +163,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_discourage_liberals
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_manpower
 		cost = 7.00
 		prerequisite = {
 			focus = AZR_stop_armenian_trade
@@ -175,6 +175,7 @@ focus_tree = {
 		y = 4
 		completion_reward = {
 		remove_ideas = AZR_liberalization
+		country_event = azr.9
 		add_popularity = {
 		popularity = -0.2
 		ideology = market_liberal
@@ -188,7 +189,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_host_constitutional_convention
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_treaty
 		cost = 7.00
 		prerequisite = {
 			focus = AZR_stop_armenian_trade
@@ -205,7 +206,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_break_alliance
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ger_oppose_hitler
 		cost = 7.00
 		prerequisite = {
 			focus = AZR_free_the_market
@@ -228,7 +229,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_stay_with_uca
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_major_alliance
 		cost = 7.00
 		prerequisite = {
 			focus = AZR_free_the_market
@@ -260,7 +261,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_proclaim_empire
-		icon = GFX_goal_unknown
+		icon = GFX_focus_focus_fra_third_empire
 		cost = 7.00
 		prerequisite = {
 			focus = AZR_stay_with_uca
@@ -279,7 +280,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_proclaim_caliph
-		icon = GFX_goal_unknown
+		icon = GFX_focus_BUL_the_third_bulgarian_empire
 		cost = 7.00
 		available_if_capitulated = no
 		mutually_exclusive = {
@@ -298,7 +299,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_social_liberals_elected
-		icon = GFX_goal_unknown
+		icon = GFX_focus_hol_the_foundations_of_defense
 		cost = 7.00
 		prerequisite = {
 			focus = AZR_election
@@ -319,7 +320,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_end_treaty_grozny
-		icon = GFX_goal_unknown
+		icon = GFX_focus_rom_parties_end
 		cost = 7.00
 		prerequisite = {
 			focus = AZR_social_liberals_elected
@@ -336,7 +337,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_stay_with_treaty
-		icon = GFX_goal_unknown
+		icon = GFX_goal_anschluss
 		cost = 7.00
 		prerequisite = {
 			focus = AZR_social_liberals_elected
@@ -353,7 +354,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_prioritize_education
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_military_academy
 		cost = 7.00
 		prerequisite = {
 			focus = AZR_stay_with_treaty
@@ -368,7 +369,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_land_reforms
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_the_giant_wakes
 		cost = 7.00
 		prerequisite = {
 			focus = AZR_stay_with_treaty
@@ -390,7 +391,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_clean_slums
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_positive_trade_relations
 		cost = 7.00
 		prerequisite = {
 			focus = AZR_end_treaty_grozny
@@ -407,7 +408,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_reconcile_armenia
-		icon = GFX_goal_unknown
+		icon = GFX_focus_arm_agreement_armenia
 		cost = 7.00
 		prerequisite = {
 			focus = AZR_land_reforms
@@ -423,7 +424,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_invest_in_the_oil
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_oil_refinery
 		cost = 7.00
 		prerequisite = {
 			focus = AZR_land_reforms
@@ -439,7 +440,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_promote_religion
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_neutrality_focus
 		cost = 7.00
 		prerequisite = {
 			focus = AZR_land_reforms
@@ -455,7 +456,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_welfare
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_national_unity
 		cost = 7.00
 		prerequisite = {
 			focus = AZR_invest_in_the_oil
@@ -471,7 +472,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_geo_railway
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_build_tank
 		cost = 7.00
 		prerequisite = {
 			focus = AZR_invest_in_the_oil
@@ -489,7 +490,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_we_are_complete
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_intelligence_exchange
 		cost = 7.00
 		prerequisite = {
 			focus = AZR_geo_railway
@@ -507,7 +508,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_leftists_win
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_war_with_comintern
 		cost = 7.00
 		prerequisite = {
 			focus = AZR_election
@@ -528,7 +529,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_marx
-		icon = GFX_goal_unknown
+		icon = GFX_focus_eng_liberate_the_home_of_marx
 		cost = 7.00
 		prerequisite = {
 			focus = AZR_leftists_win
@@ -542,7 +543,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_german_closeness
-		icon = GFX_goal_unknown
+		icon = GFX_focus_chi_mission_to_the_soviet_union
 		cost = 7.00
 		prerequisite = {
 			focus = AZR_leftists_win
@@ -565,7 +566,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_sway_masses
-		icon = GFX_goal_unknown
+		icon = GFX_focus_eng_move_to_secure_the_dominions
 		cost = 7.00
 		prerequisite = {
 			focus = AZR_leftists_win
@@ -579,7 +580,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_join_germany
-		icon = GFX_goal_unknown
+		icon = GFX_focus_focus_fra_revolution_utmost
 		cost = 7.00
 		prerequisite = {
 			focus = AZR_german_closeness
@@ -601,7 +602,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_nationalize_oil
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_soviet_construction
 		cost = 7.00
 		prerequisite = {
 			focus = AZR_marx
@@ -621,7 +622,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_exile_and_strip_rich
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_soviet_politics
 		cost = 7.00
 		prerequisite = {
 			focus = AZR_marx
@@ -641,7 +642,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_enact_food_regulation
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_self_management
 		cost = 7.00
 		prerequisite = {
 			focus = AZR_sway_masses
@@ -662,7 +663,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_human_potential
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_little_entente
 		cost = 7.00
 		prerequisite = {
 			focus = AZR_nationalize_oil
@@ -679,7 +680,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_german_army_experience
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_socialist_science
 		cost = 7.00
 		prerequisite = {
 			focus = AZR_nationalize_oil
@@ -701,7 +702,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_fight_last_man_mentality
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_concessions
 		cost = 7.00
 		prerequisite = {
 			focus = AZR_german_army_experience
@@ -718,7 +719,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_learn_from_previous_revolutions
-		icon = GFX_goal_unknown
+		icon = GFX_focus_prc_agrarian_socialism
 		cost = 7.00
 		prerequisite = {
 			focus = AZR_nationalize_oil
@@ -735,7 +736,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_rid_old
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SAF_colonialist_crusade
 		cost = 7.00
 		prerequisite = {
 			focus = AZR_human_potential
@@ -752,7 +753,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_industrialize_fullest
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_position_armies
 		cost = 7.00
 		prerequisite = {
 			focus = AZR_fight_last_man_mentality
@@ -776,7 +777,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_devalue_currency
-		icon = GFX_goal_unknown
+		icon = GFX_focus_fra_devalue_the_franc
 		cost = 5.00
 		prerequisite = {
 			focus = AZR_prepare_for_war
@@ -790,7 +791,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_industrial_works
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construction2
 		cost = 5.00
 		prerequisite = {
 			focus = AZR_devalue_currency
@@ -809,7 +810,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_develop_railroads
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_infrastructure
 		cost = 5.00
 		prerequisite = {
 			focus = AZR_industrial_works
@@ -827,7 +828,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_forts
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_fortify_city
 		cost = 5.00
 		prerequisite = {
 			focus = AZR_develop_railroads
@@ -852,7 +853,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_complete_civilian_industry
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_industry_3
 		cost = 5.00
 		prerequisite = {
 			focus = AZR_industrial_works
@@ -871,7 +872,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_technological
-		icon = GFX_goal_unknown
+		icon = GFX_focus_research
 		cost = 5.00
 		prerequisite = {
 			focus = AZR_complete_civilian_industry
@@ -885,7 +886,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_invest_in_oil
-		icon = GFX_goal_unknown
+		icon = GFX_goal_demand_sudetenland
 		cost = 5.00
 		prerequisite = {
 			focus = AZR_georgian_forts
@@ -910,7 +911,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_extent_to_UCA
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_infrastructure
 		cost = 7.00
 		prerequisite = {
 			focus = AZR_forts
@@ -925,7 +926,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_buildup
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
 			focus = AZR_industrial_works
@@ -939,7 +940,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_complete_military_buildings
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_military_sphere
 		cost = 5.00
 		prerequisite = {
 			focus = AZR_buildup
@@ -954,13 +955,12 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
+			}
 		}
-		}
-
 	}
 	focus = {
 		id = AZR_develop_metropolitian
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_industry_2
 		cost = 5.00
 		prerequisite = {
 			focus = AZR_complete_civilian_industry
@@ -988,7 +988,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_world_trading
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_trade
 		cost = 5.00
 		prerequisite = {
 			focus = AZR_extent_to_UCA
@@ -1008,7 +1008,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_work_on_army
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_doctrines
 		cost = 5.00
 		prerequisite = {
 			focus = AZR_prepare_for_war
@@ -1022,7 +1022,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_defense
-		icon = GFX_goal_unknown
+		icon = GFX_focus_chi_army_reform
 		cost = 5.00
 		prerequisite = {
 			focus = AZR_work_on_army
@@ -1039,7 +1039,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_motorization
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_motorized
 		cost = 5.00
 		prerequisite = {
 			focus = AZR_defense
@@ -1058,7 +1058,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_mechanization
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_motorized
 		cost = 5.00
 		prerequisite = {
 			focus = AZR_motorization
@@ -1077,7 +1077,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_offense
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_tanks
 		cost = 5.00
 		prerequisite = {
 			focus = AZR_work_on_army
@@ -1094,7 +1094,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_infantry
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_small_arms
 		cost = 5.00
 		prerequisite = {
 			focus = AZR_offense
@@ -1113,7 +1113,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_fortify
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_army_tanks2
 		cost = 5.00
 		prerequisite = {
 			focus = AZR_infantry
@@ -1127,7 +1127,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_special_forces
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_special_forces
 		cost = 5.00
 		prerequisite = {
 			focus = AZR_mechanization
@@ -1152,7 +1152,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_work_on_air
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_doctrine
 		cost = 5.00
 		prerequisite = {
 			focus = AZR_prepare_for_war
@@ -1166,7 +1166,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_light_focus
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_fighter
 		cost = 5.00
 		prerequisite = {
 			focus = AZR_work_on_air
@@ -1194,7 +1194,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_air_manuvers
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_build_airforce
 		cost = 5.00
 		prerequisite = {
 			focus = AZR_light_focus
@@ -1208,7 +1208,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_long_range_models
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_production
 		cost = 5.00
 		prerequisite = {
 			focus = AZR_air_manuvers
@@ -1227,7 +1227,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_heavy_focus
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_bomber
 		cost = 5.00
 		prerequisite = {
 			focus = AZR_work_on_air
@@ -1255,7 +1255,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_tactical_bombers
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_fighter2
 		cost = 5.00
 		prerequisite = {
 			focus = AZR_heavy_focus
@@ -1277,7 +1277,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_invest_in_fighters
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_fighter
 		cost = 5.00
 		prerequisite = {
 			focus = AZR_tactical_bombers
@@ -1295,7 +1295,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_anti_air_guns
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_air_defense
 		cost = 5.00
 		prerequisite = {
 			focus = AZR_long_range_models
@@ -1316,7 +1316,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_work_on_navy
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_doctrines_tactics
 		cost = 5.00
 		prerequisite = {
 			focus = AZR_prepare_for_war
@@ -1336,7 +1336,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_navy_warfare
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_naval_bomber
 		cost = 5.00
 		prerequisite = {
 			focus = AZR_work_on_navy
@@ -1351,7 +1351,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_invest_in_submarines
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_submarine
 		cost = 5.00
 		prerequisite = {
 			focus = AZR_work_on_navy
@@ -1371,7 +1371,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_navy_doctorine_teaching
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_cruiser
 		cost = 5.00
 		prerequisite = {
 			focus = AZR_navy_warfare
@@ -1393,7 +1393,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_expand_our_navy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_navy_battleship2
 		cost = 5.00
 		prerequisite = {
 			focus = AZR_navy_warfare
@@ -1416,7 +1416,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_the_might_of_our_fleet
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 7.00
 		prerequisite = {
 			focus = AZR_navy_doctorine_teaching
@@ -1439,7 +1439,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_finish_the_state
-		icon = GFX_goal_unknown
+		icon = GFX_focus_arm_agreement_azerbaijan
 		cost = 7.00
 		prerequisite = {
 			focus = AZR_proclaim_empire
@@ -1454,7 +1454,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZR_marxism
-		icon = GFX_goal_unknown
+		icon = GFX_goal_anti_comintern_pact
 		cost = 7.00
 		prerequisite = {
 			focus = AZR_industrialize_fullest
@@ -1465,6 +1465,7 @@ focus_tree = {
 		completion_reward = {
 		hidden_effect = {
 		retire_country_leader = yes
+		set_country_flag = AZR_reforms_finished
 		}
 		set_politics = {
 		ruling_party = radical_socialism

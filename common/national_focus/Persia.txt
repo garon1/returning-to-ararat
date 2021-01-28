@@ -10,7 +10,7 @@ focus_tree = {
 	default = no
 	focus = {
 		id = PER_kill_shah
-		icon = GFX_goal_unknown
+		icon = GFX_focus_usa_tank_destroyer_doctrine
 		cost = 7.00
 		mutually_exclusive = {
 			focus = PER_protect_shah
@@ -24,7 +24,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_protect_shah
-		icon = GFX_goal_unknown
+		icon = GFX_focus_focus_fra_orleans_restoration
 		cost = 7.00
 		mutually_exclusive = {
 			focus = PER_kill_shah
@@ -38,7 +38,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_for_glory
-		icon = GFX_goal_unknown
+		icon = GFX_focus_focus_fra_fascist_threat
 		cost = 7.00
 		prerequisite = {
 			focus = PER_reinvigorate_glory_days
@@ -61,7 +61,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_modernization
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_army_tanks2
 		cost = 5.00
 		x = 39
 		y = 0
@@ -72,7 +72,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_hold_elections
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_concessions
 		cost = 7.00
 		prerequisite = {
 			focus = PER_kill_shah
@@ -86,7 +86,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_liberals_are_elected
-		icon = GFX_goal_unknown
+		icon = GFX_focus_spa_save_the_alcazar
 		cost = 7.00
 		prerequisite = {
 			focus = PER_hold_elections
@@ -107,13 +107,12 @@ focus_tree = {
 		add_popularity = {
 		ideology = social_liberal
 		popularity = 0.3
+			}	
 		}
-		}
-
 	}
 	focus = {
 		id = PER_islamic_reforms1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_TUR_loosen_the_laws_on_secularism
 		cost = 7.00
 		prerequisite = {
 			focus = PER_liberals_are_elected
@@ -127,7 +126,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_social_reforms
-		icon = GFX_goal_unknown
+		icon = GFX_focus_TUR_turanist_ambition
 		cost = 7.00
 		prerequisite = {
 			focus = PER_liberals_are_elected
@@ -141,7 +140,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_allow_freedom_of_speech
-		icon = GFX_goal_unknown
+		icon = GFX_focus_TUR_ratify_the_six_arrows
 		cost = 7.00
 		prerequisite = {
 			focus = PER_social_reforms
@@ -155,7 +154,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_grant_autonomous_regions
-		icon = GFX_goal_unknown
+		icon = GFX_focus_renounce_the_treaty_of_trianon
 		cost = 7.00
 		prerequisite = {
 			focus = PER_allow_freedom_of_speech
@@ -169,7 +168,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_nationalism_elected
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ger_reichskommisariats
 		cost = 7.00
 		prerequisite = {
 			focus = PER_hold_elections
@@ -197,7 +196,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_uproot_press
-		icon = GFX_goal_unknown
+		icon = GFX_focus_usa_voter_registration_act
 		cost = 7.00
 		prerequisite = {
 			focus = PER_nationalism_elected
@@ -212,7 +211,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_imperial_glory
-		icon = GFX_goal_unknown
+		icon = GFX_focus_por_portuguese_legion
 		cost = 7.00
 		prerequisite = {
 			focus = PER_uproot_press
@@ -226,7 +225,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_pan_persianism
-		icon = GFX_goal_unknown
+		icon = GFX_focus_spa_save_the_alcazar
 		cost = 7.00
 		prerequisite = {
 			focus = PER_imperial_glory
@@ -251,7 +250,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_no_securalization
-		icon = GFX_goal_unknown
+		icon = GFX_focus_TUR_the_sun_language_theory
 		cost = 7.00
 		prerequisite = {
 			focus = PER_nationalism_elected
@@ -266,7 +265,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_minorities
-		icon = GFX_goal_unknown
+		icon = GFX_focus_TUR_support_the_golden_square
 		cost = 7.00
 		prerequisite = {
 			focus = PER_no_securalization
@@ -280,7 +279,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_take_care_of_problem
-		icon = GFX_goal_unknown
+		icon = GFX_focus_up_joan_of_arc
 		cost = 7.00
 		prerequisite = {
 			focus = PER_minorities
@@ -305,7 +304,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_one_for_all
-		icon = GFX_goal_unknown
+		icon = GFX_focus_usa_tank_destroyer_doctrine
 		cost = 7.00
 		prerequisite = {
 			focus = PER_pan_persianism
@@ -326,7 +325,7 @@ focus_tree = {
 }
 	focus = {
 		id = PER_socialists_are_elected
-		icon = GFX_goal_unknown
+		icon = GFX_focus_spr_class_war
 		cost = 7.00
 		prerequisite = {
 			focus = PER_hold_elections
@@ -353,7 +352,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_purge_capitalism
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_strike_at_democracy3
 		cost = 7.00
 		prerequisite = {
 			focus = PER_socialists_are_elected
@@ -367,7 +366,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_uplift_peasants
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_support_the_left_right
 		cost = 7.00
 		prerequisite = {
 			focus = PER_purge_capitalism
@@ -381,7 +380,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_exile_aristocrats
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_monarchy_2
 		cost = 7.00
 		prerequisite = {
 			focus = PER_uplift_peasants
@@ -396,7 +395,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_demands_to_azerbaijan
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_military_mission
 		cost = 7.00
 		prerequisite = {
 			focus = PER_for_glory
@@ -411,7 +410,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_join_germany
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_soviet_politics
 		cost = 7.00
 		prerequisite = {
 			focus = PER_socialists_are_elected
@@ -427,7 +426,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_our_place_in_world
-		icon = GFX_goal_unknown
+		icon = GFX_focus_spr_anarchism_knows_no_borders
 		cost = 7.00
 		prerequisite = {
 			focus = PER_join_germany
@@ -458,7 +457,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_we_are_whole
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_self_management
 		cost = 7.00
 		prerequisite = {
 			focus = PER_our_place_in_world
@@ -483,7 +482,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_a_socialist_persia
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_soviet_politics
 		cost = 7.00
 		prerequisite = {
 			focus = PER_exile_aristocrats
@@ -505,7 +504,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_demand_armenia
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_strike_at_democracy1
 		cost = 7.00
 		prerequisite = {
 			focus = PER_for_glory
@@ -525,7 +524,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_monarchism_prevails
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_diplomatic_treaty
 		cost = 7.00
 		prerequisite = {
 			focus = PER_protect_shah
@@ -542,7 +541,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_keep_republicans
-		icon = GFX_goal_unknown
+		icon = GFX_focus_rom_handle_king
 		cost = 7.00
 		prerequisite = {
 			focus = PER_monarchism_prevails
@@ -560,7 +559,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_stop_political_divide
-		icon = GFX_goal_unknown
+		icon = GFX_focus_prc_infiltration
 		cost = 7.00
 		prerequisite = {
 			focus = PER_keep_republicans
@@ -574,7 +573,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_reach_across_nation
-		icon = GFX_goal_unknown
+		icon = GFX_goal_anti_comintern_pact
 		cost = 7.00
 		prerequisite = {
 			focus = PER_stop_political_divide
@@ -588,7 +587,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_constitutional_monarchy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_rom_parties_end
 		cost = 7.00
 		prerequisite = {
 			focus = PER_reach_across_nation
@@ -602,7 +601,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_absolutism
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_monarchy_1
 		cost = 7.00
 		prerequisite = {
 			focus = PER_monarchism_prevails
@@ -620,7 +619,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_call_to_past
-		icon = GFX_goal_unknown
+		icon = GFX_focus_man_claim_the_mandate_of_heaven
 		cost = 7.00
 		prerequisite = {
 			focus = PER_absolutism
@@ -634,7 +633,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_realize_ambitions
-		icon = GFX_goal_unknown
+		icon = GFX_goal_anschluss
 		cost = 7.00
 		prerequisite = {
 			focus = PER_call_to_past
@@ -659,7 +658,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_west_asia_is_ours
-		icon = GFX_goal_unknown
+		icon = GFX_focus_TUR_taking_over_defense_of_the_gulf
 		cost = 7.00
 		prerequisite = {
 			focus = PER_realize_ambitions
@@ -690,7 +689,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_reinvigorate_glory_days
-		icon = GFX_goal_unknown
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
 		cost = 7.00
 		prerequisite = {
 			focus = PER_constitutional_monarchy
@@ -714,7 +713,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_industrial_modernization
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civilian
 		cost = 5.00
 		prerequisite = {
 			focus = PER_modernization
@@ -735,7 +734,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_arament
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
 			focus = PER_industrial_modernization
@@ -749,7 +748,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_military_factories
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
 			focus = PER_arament
@@ -770,7 +769,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_infrastructure
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_infrastructure
 		cost = 5.00
 		prerequisite = {
 			focus = PER_industrial_modernization
@@ -797,7 +796,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_railroads
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_infrastructure
 		cost = 5.00
 		prerequisite = {
 			focus = PER_infrastructure
@@ -838,7 +837,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_indusrial_complexes
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5.00
 		prerequisite = {
 			focus = PER_military_factories
@@ -862,7 +861,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_update_navy
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 5.00
 		prerequisite = {
 			focus = PER_modernization
@@ -881,7 +880,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_improve_indian_fleet
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_doctrines_tactics
 		cost = 5.00
 		prerequisite = {
 			focus = PER_update_navy
@@ -902,7 +901,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_invest_in_submarines
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_submarine
 		cost = 5.00
 		prerequisite = {
 			focus = PER_improve_indian_fleet
@@ -922,7 +921,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_baluch_port
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_carrier
 		cost = 5.00
 		prerequisite = {
 			focus = PER_update_navy
@@ -943,7 +942,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_set_up_destroyers
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_destroyer
 		cost = 5.00
 		prerequisite = {
 			focus = PER_baluch_port
@@ -963,7 +962,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_mighty_fleet
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_battleship
 		cost = 5.00
 		prerequisite = {
 			focus = PER_invest_in_submarines
@@ -980,7 +979,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_army_modernization
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_doctrines
 		cost = 5.00
 		prerequisite = {
 			focus = PER_modernization
@@ -994,7 +993,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_land_expansion
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_position_armies
 		cost = 5.00
 		prerequisite = {
 			focus = PER_army_modernization
@@ -1014,7 +1013,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_modern_equipment
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_combined_arms
 		cost = 5.00
 		prerequisite = {
 			focus = PER_land_expansion
@@ -1028,7 +1027,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_armor_improvement
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_tanks
 		cost = 5.00
 		prerequisite = {
 			focus = PER_army_modernization
@@ -1047,7 +1046,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_mechanization
-		icon = GFX_goal_unknown
+		icon = GFX_focus_chi_army_reform
 		cost = 5.00
 		prerequisite = {
 			focus = PER_armor_improvement
@@ -1066,7 +1065,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_special_forces
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_special_forces
 		cost = 5.00
 		prerequisite = {
 			focus = PER_modern_equipment
@@ -1094,7 +1093,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_allow_hijab_freedom
-		icon = GFX_goal_unknown
+		icon = GFX_goal_molotov_ribbentrop_pact
 		cost = 7.00
 		prerequisite = {
 			focus = PER_islamic_reforms1
@@ -1108,7 +1107,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_separate_church_and_state
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_propaganda
 		cost = 7.00
 		prerequisite = {
 			focus = PER_allow_hijab_freedom
@@ -1125,7 +1124,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_legacy
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_territory_or_war
 		cost = 7.00
 		prerequisite = {
 			focus = PER_separate_church_and_state
@@ -1142,7 +1141,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_demand_kurdistan
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_attack_kurdistan
 		cost = 7.00
 		prerequisite = {
 			focus = PER_for_glory
@@ -1162,7 +1161,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_look_to_central_asia
-		icon = GFX_goal_unknown
+		icon = GFX_focus_TUR_reform_the_balkan_pact
 		cost = 7.00
 		prerequisite = {
 			focus = PER_for_glory
@@ -1182,7 +1181,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_unite_afghanistan
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_political_pressure
 		cost = 7.00
 		prerequisite = {
 			focus = PER_for_glory
@@ -1220,7 +1219,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_demand_georgia
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_demand_territory
 		cost = 7.00
 		prerequisite = {
 			focus = PER_for_glory

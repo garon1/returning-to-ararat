@@ -1,0 +1,393 @@
+focus_tree = {
+	id = Assyria
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ASS
+		}
+	}
+	default = no
+	focus = {
+		id = ASS_political_era
+		icon = GFX_goal_unknown
+		cost = 7.00
+		x = 19
+		y = 0
+
+	}
+	focus = {
+		id = ASS_industry
+		icon = GFX_goal_unknown
+		cost = 7.00
+		x = 5
+		y = 0
+
+	}
+	focus = {
+		id = ASS_infrastructure
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ASS_industry
+		}
+		x = 3
+		y = 1
+
+	}
+	focus = {
+		id = ASS_greater_assyria
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASS_political_era
+		}
+		mutually_exclusive = {
+			focus = ASS_stay_neutral
+		}
+		x = 15
+		y = 1
+
+	}
+	focus = {
+		id = ASS_assyrian_nationalism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASS_greater_assyria
+		}
+		x = 13
+		y = 2
+
+	}
+	focus = {
+		id = ASS_remember_the_past
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASS_assyrian_nationalism
+		}
+		x = 15
+		y = 3
+
+	}
+	focus = {
+		id = ASS_intervene_with_politics
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASS_greater_assyria
+		}
+		x = 19
+		y = 3
+
+	}
+	focus = {
+		id = ASS_honor_the_legacy
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASS_greater_assyria
+		}
+		x = 22
+		y = 3
+
+	}
+	focus = {
+		id = ASS_expand_assyrian_mosul
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASS_remember_the_past
+		}
+		prerequisite = {
+			focus = ASS_intervene_with_politics
+		}
+		prerequisite = {
+			focus = ASS_honor_the_legacy
+		}
+		x = 16
+		y = 4
+
+	}
+	focus = {
+		id = ASS_enact_militarization
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASS_intervene_with_politics
+		}
+		prerequisite = {
+			focus = ASS_honor_the_legacy
+		}
+		x = 19
+		y = 4
+
+	}
+	focus = {
+		id = ASS_rebuild_assur
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASS_greater_assyria
+		}
+		x = 21
+		y = 2
+
+	}
+	focus = {
+		id = ASS_cultural_celebrations
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASS_honor_the_legacy
+		}
+		x = 23
+		y = 4
+
+	}
+	focus = {
+		id = ASS_undergoe_assyrianization
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ASS_expand_assyrian_mosul
+		}
+		prerequisite = {
+			focus = ASS_enact_militarization
+		}
+		prerequisite = {
+			focus = ASS_cultural_celebrations
+		}
+		x = 21
+		y = 5
+
+	}
+	focus = {
+		id = ASS_military_coup
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASS_undergoe_assyrianization
+		}
+		x = 20
+		y = 6
+
+	}
+	focus = {
+		id = ASS_old_ambitions
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASS_undergoe_assyrianization
+		}
+		x = 22
+		y = 6
+
+	}
+	focus = {
+		id = ASS_stay_neutral
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASS_political_era
+		}
+		mutually_exclusive = {
+			focus = ASS_greater_assyria
+		}
+		x = 29
+		y = 1
+
+	}
+	focus = {
+		id = ASS_stay_democratized
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASS_stay_neutral
+		}
+		x = 31
+		y = 2
+
+	}
+	focus = {
+		id = ASS_solve_arab_question
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASS_stay_democratized
+		}
+		x = 30
+		y = 3
+
+	}
+	focus = {
+		id = ASS_stop_assyrian_riots
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASS_stay_democratized
+		}
+		x = 34
+		y = 3
+
+	}
+	focus = {
+		id = ASS_solve_kurdish_question
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASS_stay_democratized
+		}
+		x = 38
+		y = 3
+
+	}
+	focus = {
+		id = ASS_cultural_celebrations
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASS_solve_arab_question
+		}
+		prerequisite = {
+			focus = ASS_stop_assyrian_riots
+		}
+		prerequisite = {
+			focus = ASS_solve_kurdish_question
+		}
+		x = 33
+		y = 4
+
+	}
+	focus = {
+		id = ASS_develop_mosul
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASS_solve_arab_question
+		}
+		prerequisite = {
+			focus = ASS_stop_assyrian_riots
+		}
+		prerequisite = {
+			focus = ASS_solve_kurdish_question
+		}
+		x = 28
+		y = 4
+
+	}
+	focus = {
+		id = ASS_radio_stations
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASS_solve_arab_question
+		}
+		prerequisite = {
+			focus = ASS_stop_assyrian_riots
+		}
+		prerequisite = {
+			focus = ASS_solve_kurdish_question
+		}
+		x = 36
+		y = 4
+
+	}
+	focus = {
+		id = ASS_develop_resources
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASS_develop_mosul
+		}
+		prerequisite = {
+			focus = ASS_cultural_celebrations
+		}
+		prerequisite = {
+			focus = ASS_radio_stations
+		}
+		x = 33
+		y = 5
+
+	}
+	focus = {
+		id = ASS_rebuild_assur
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASS_develop_mosul
+		}
+		prerequisite = {
+			focus = ASS_cultural_celebrations
+		}
+		prerequisite = {
+			focus = ASS_radio_stations
+		}
+		x = 30
+		y = 5
+
+	}
+	focus = {
+		id = ASS_reformists
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASS_develop_mosul
+		}
+		prerequisite = {
+			focus = ASS_cultural_celebrations
+		}
+		prerequisite = {
+			focus = ASS_radio_stations
+		}
+		x = 38
+		y = 5
+
+	}
+	focus = {
+		id = ASS_threaten_kurdistan
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASS_military_coup
+		}
+		prerequisite = {
+			focus = ASS_old_ambitions
+		}
+		x = 19
+		y = 7
+
+	}
+	focus = {
+		id = ASS_infiltrate_persia
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASS_old_ambitions
+		}
+		prerequisite = {
+			focus = ASS_military_coup
+		}
+		x = 23
+		y = 7
+
+	}
+	focus = {
+		id = ASS_beacon_of_democracy
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASS_develop_resources
+		}
+		prerequisite = {
+			focus = ASS_reformists
+		}
+		prerequisite = {
+			focus = ASS_rebuild_assur
+		}
+		x = 39
+		y = 6
+
+	}
+}

@@ -8,7 +8,7 @@ state={
 	}
 
 	history={
-		owner = POL
+		owner = GER
 		victory_points = {
 			6282 5 
 		}
@@ -22,7 +22,6 @@ state={
 				naval_base = 1
 
 			}
-			
 			air_base = 3
 
 		}
@@ -31,7 +30,7 @@ state={
 	}
 
 	provinces={
-		6309 6334 6390 9252 9277 9306 9334 9361 11260 11288 11316 11343 11372 
+		6309 6334 6390 9277 9306 9334 9361 
 	}
 	manpower=1124417
 	buildings_max_level_factor=1.000

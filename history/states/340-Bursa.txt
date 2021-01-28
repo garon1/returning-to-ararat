@@ -18,6 +18,7 @@ state={
 		}
 		add_core_of = ANA
 		add_claim_by = GRE
+set_demilitarized_zone = yes
 
 	}
 

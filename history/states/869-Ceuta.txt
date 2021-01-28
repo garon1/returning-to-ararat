@@ -1,0 +1,27 @@
+state={
+	id=869
+	name="STATE_869"
+	provinces={
+		9945 
+	}
+	history={
+	victory_points = {
+			9945 3 
+		}
+		owner = SPR
+		add_core_of = RIF
+		add_core_of = MOR
+		buildings = {
+		industrial_complex = 1
+		air_base = 2
+		infrastructure = 2
+		9945 = {
+				naval_base = 3
+
+			}
+		}
+
+	}
+manpower=339930
+	state_category=town
+}

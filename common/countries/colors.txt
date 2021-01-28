@@ -1,4 +1,11 @@
-#reload countrycolors
+RIF = {
+	color = rgb { 175 146 42 }
+	color_ui = rgb { 175 146 42 }
+}
+KON = {
+	color = rgb { 102 173 149 }
+	color_ui = rgb { 102 173 149 }
+}
 RUS = {
 	color = rgb { 0 114 221 }
 	color_ui = rgb { 0 114 221 }
@@ -189,6 +196,10 @@ FIN = {
 	color = rgb { 205 212 228 }
 	color_ui = rgb { 255 255 255 }
 }
+SIV = {
+	color = rgb { 229 167 80 }
+	color_ui = rgb { 229 167 80 }
+}
 IRE = {
 	color = rgb { 80 159 90 }
 	color_ui = rgb { 104 207 117 }
@@ -202,8 +213,8 @@ AFG = {
 	color_ui = rgb { 83 208 217 }
 }
 ARG = {
-	color = rgb { 145 157 236 }
-	color_ui = rgb { 189 204 255 }
+	color = rgb { 196 0 0 }
+	color_ui = rgb { 196 0 0 }
 }
 AST = {
 	color = rgb { 57 143 97 }

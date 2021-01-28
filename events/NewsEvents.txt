@@ -14938,8 +14938,192 @@ news_event = {
 
   }
 }
+#ganja bombing
+news_event = {
+  id = news.400
+  title = news.400.title
+  desc = news.400.desc
+  picture = GFX_news_event_baku_bombing
+  
+  major = yes
+  is_triggered_only = yes
+  option = {
+    name = news.400.a
+    trigger = {
+      NOT = {
+        TAG = AZR
+      }
+    }
+  }
+  option = {
+    name = news.400.b
+    trigger = {
+    TAG = AZR
+    }
 
+  }
+}
+#azr is an empire
+news_event = {
+  id = news.401
+  title = news.401.title
+  desc = news.401.desc
+  picture = GFX_news_event_azerbaijan_is_empire
+  
+  major = yes
+  is_triggered_only = yes
+  option = {
+    name = news.401.a
+    trigger = {
+      NOT = {
+        TAG = AZR
+      }
+    }
+  }
+  option = {
+    name = news.401.b
+    trigger = {
+    TAG = AZR
+    }
 
+  }
+}
+#azr is a sultan
+news_event = {
+  id = news.402
+  title = news.402.title
+  desc = news.402.desc
+  picture = GFX_news_event_azerbaijan_is_sultanate
+  
+  major = yes
+  is_triggered_only = yes
+  option = {
+    name = news.402.a
+    trigger = {
+      NOT = {
+        TAG = AZR
+      }
+    }
+  }
+  option = {
+    name = news.402.b
+    trigger = {
+    TAG = AZR
+    }
 
+  }
+}
+#azr hunts liberals
+news_event = {
+  id = news.403
+  title = news.403.title
+  desc = news.403.desc
+  picture = GFX_news_event_azerbaijan_liberal_purge
+  
+  major = yes
+  is_triggered_only = yes
+  option = {
+    name = news.403.a
+    trigger = {
+      NOT = {
+        TAG = AZR
+      }
+    }
+  }
+  option = {
+    name = news.403.b
+    trigger = {
+    TAG = AZR
+    }
 
+  }
+}
+#azr reconciles to armenia
+news_event = {
+  id = news.404
+  title = news.404.title
+  desc = news.404.desc
+  picture = GFX_news_event_partition_of_india
+  
+  major = yes
+  is_triggered_only = yes
+  option = {
+    name = news.404.a
+    trigger = {
+      NOT = {
+        TAG = AZR
+      }
+    }
+  }
+  option = {
+    name = news.404.b
+    trigger = {
+    TAG = AZR
+    }
 
+  }
+}
+#azr becomes greater azerbaijan
+news_event = {
+  id = news.405
+  title = news.405.title
+  desc = news.405.desc
+  picture = GFX_news_event_greater_azerbaijan
+  
+  major = yes
+  fire_only_once = yes
+  trigger = {
+		862 = { is_owned_by = AZR }
+		863 = { is_owned_by = AZR }
+		864 = { is_owned_by = AZR }
+	    229 = { is_owned_by = AZR }
+	    865 = { is_owned_by = AZR }
+	    419 = { is_owned_by = AZR }
+	    420 = { is_owned_by = AZR }
+	    830 = { is_owned_by = AZR }
+	    842 = { is_owned_by = AZR }
+	    831 = { is_owned_by = AZR }
+	    818 = { is_owned_by = AZR }
+	    819 = { is_owned_by = AZR }
+  }
+  option = {
+    name = news.405.a
+    trigger = {
+      NOT = {
+        TAG = AZR
+      }
+    }
+  }
+  option = {
+    name = news.405.b
+    trigger = {
+    TAG = AZR
+    }
+
+  }
+}
+#azr reconciles to armenia
+news_event = {
+  id = news.406
+  title = news.406.title
+  desc = news.406.desc
+  picture = GFX_news_event_arm_civwar
+  
+  major = yes
+  is_triggered_only = yes
+  option = {
+    name = news.406.a
+    trigger = {
+      NOT = {
+        TAG = ARM
+      }
+    }
+  }
+  option = {
+    name = news.406.b
+    trigger = {
+    TAG = ARM
+    }
+
+  }
+}

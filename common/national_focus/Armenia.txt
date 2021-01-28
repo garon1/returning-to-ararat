@@ -1,0 +1,938 @@
+focus_tree = {
+	id = Armenia
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ARM
+		}
+	}
+	default = no
+	focus = {
+		id = ARM_military_budget
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 44
+		y = 0
+
+	}
+	focus = {
+		id = ARM_civil_war_victory
+		icon = GFX_goal_unknown
+		cost = 7.00
+		x = 20
+		y = 0
+
+	}
+	focus = {
+		id = ARM_begin_industrialization
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 29
+		y = 0
+
+	}
+	focus = {
+		id = ARM_final_decision_region
+		icon = GFX_goal_unknown
+		cost = 7.00
+		x = 32
+		y = 9
+
+	}
+	focus = {
+		id = ARM_evaluate_future
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_civil_war_victory
+		}
+		x = 20
+		y = 1
+
+	}
+	focus = {
+		id = ARM_hold_national_elections
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_evaluate_future
+		}
+		mutually_exclusive = {
+			focus = ARM_go_down_different_path
+		}
+		x = 16
+		y = 2
+
+	}
+	focus = {
+		id = ARM_democrats_elected
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_hold_national_elections
+		}
+		mutually_exclusive = {
+			focus = ARM_military_junta_stays
+		}
+		x = 11
+		y = 3
+
+	}
+	focus = {
+		id = ARM_reorganize_regions
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_democrats_elected
+		}
+		x = 9
+		y = 4
+
+	}
+	focus = {
+		id = ARM_aid_rural_communities
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_reorganize_regions
+		}
+		x = 8
+		y = 5
+
+	}
+	focus = {
+		id = ARM_increase_farmer_output
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_aid_rural_communities
+		}
+		x = 7
+		y = 6
+
+	}
+	focus = {
+		id = ARM_lower_taxes
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_democrats_elected
+		}
+		x = 14
+		y = 4
+
+	}
+	focus = {
+		id = ARM_construct_dams
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_lower_taxes
+		}
+		x = 12
+		y = 5
+
+	}
+	focus = {
+		id = ARM_democracy_with_socialism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_construct_dams
+		}
+		x = 13
+		y = 7
+
+	}
+	focus = {
+		id = ARM_military_junta_stays
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_hold_national_elections
+		}
+		mutually_exclusive = {
+			focus = ARM_democrats_elected
+		}
+		x = 20
+		y = 3
+
+	}
+	focus = {
+		id = ARM_establish_armenian_bank
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_democrats_elected
+			focus = ARM_military_junta_stays
+		}
+		x = 17
+		y = 4
+
+	}
+	focus = {
+		id = ARM_reorganize_agriculture
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_establish_armenian_bank
+		}
+		x = 16
+		y = 6
+
+	}
+	focus = {
+		id = ARM_encourage_investments
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_establish_armenian_bank
+		}
+		x = 20
+		y = 5
+
+	}
+	focus = {
+		id = ARM_limit_political_opposition
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_reorganize_agriculture
+		}
+		prerequisite = {
+			focus = ARM_encourage_investments
+		}
+		x = 19
+		y = 7
+
+	}
+	focus = {
+		id = ARM_state_propaganda
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_military_junta_stays
+		}
+		x = 22
+		y = 4
+
+	}
+	focus = {
+		id = ARM_pivot_to_past
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_state_propaganda
+		}
+		x = 24
+		y = 5
+
+	}
+	focus = {
+		id = ARM_increase_individualism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_pivot_to_past
+		}
+		x = 22
+		y = 6
+
+	}
+	focus = {
+		id = ARM_step_out_depression
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_increase_individualism
+		}
+		x = 21
+		y = 7
+
+	}
+	focus = {
+		id = ARM_go_down_different_path
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_evaluate_future
+		}
+		mutually_exclusive = {
+			focus = ARM_hold_national_elections
+		}
+		x = 24
+		y = 2
+
+	}
+	focus = {
+		id = ARM_fund_mineral_deposits
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_pivot_to_past
+		}
+		x = 26
+		y = 6
+
+	}
+	focus = {
+		id = ARM_stop_unionism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_increase_individualism
+		}
+		prerequisite = {
+			focus = ARM_fund_mineral_deposits
+		}
+		x = 24
+		y = 7
+
+	}
+	focus = {
+		id = ARM_fund_wealth
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ARM_fund_mineral_deposits
+		}
+		x = 27
+		y = 7
+
+	}
+	focus = {
+		id = ARM_form_base_politics
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_step_out_depression
+		}
+		prerequisite = {
+			focus = ARM_fund_wealth
+		}
+		prerequisite = {
+			focus = ARM_stop_unionism
+		}
+		x = 24
+		y = 8
+
+	}
+	focus = {
+		id = ARM_align_with_russia
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_go_down_different_path
+		}
+		mutually_exclusive = {
+			focus = ARM_align_with_germany
+		}
+		x = 27
+		y = 4
+
+	}
+	focus = {
+		id = ARM_ban_free_speech
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_align_with_russia
+		}
+		x = 30
+		y = 5
+
+	}
+	focus = {
+		id = ARM_ban_socialism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_ban_free_speech
+		}
+		x = 29
+		y = 6
+
+	}
+	focus = {
+		id = ARM_appoint_nationalists
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_ban_free_speech
+		}
+		x = 31
+		y = 6
+
+	}
+	focus = {
+		id = ARM_remember_the_past
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_ban_socialism
+		}
+		prerequisite = {
+			focus = ARM_appoint_nationalists
+		}
+		x = 29
+		y = 7
+
+	}
+	focus = {
+		id = ARM_migrate_azeris
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_ban_socialism
+		}
+		prerequisite = {
+			focus = ARM_appoint_nationalists
+		}
+		x = 31
+		y = 7
+
+	}
+	focus = {
+		id = ARM_coup_on_karin
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_remember_the_past
+		}
+		prerequisite = {
+			focus = ARM_migrate_azeris
+		}
+		x = 29
+		y = 8
+
+	}
+	focus = {
+		id = ARM_join_russia
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_coup_on_karin
+		}
+		x = 27
+		y = 9
+
+	}
+	focus = {
+		id = ARM_begin_centralization
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_final_decision_region
+		}
+		x = 32
+		y = 10
+
+	}
+	focus = {
+		id = ARM_pass_bill
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_begin_centralization
+		}
+		x = 29
+		y = 11
+
+	}
+	focus = {
+		id = ARM_population_question
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_begin_centralization
+		}
+		x = 32
+		y = 11
+
+	}
+	focus = {
+		id = ARM_conscription_crisis
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_pass_bill
+		}
+		prerequisite = {
+			focus = ARM_population_question
+		}
+		x = 30
+		y = 12
+
+	}
+	focus = {
+		id = ARM_establish_railroad
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_begin_industrialization
+		}
+		x = 31
+		y = 1
+
+	}
+	focus = {
+		id = ARM_prop_rural_areas
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_begin_industrialization
+		}
+		x = 33
+		y = 1
+
+	}
+	focus = {
+		id = ARM_balance_industry
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_establish_railroad
+		}
+		x = 33
+		y = 2
+
+	}
+	focus = {
+		id = ARM_align_with_germany
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_go_down_different_path
+		}
+		mutually_exclusive = {
+			focus = ARM_align_with_russia
+		}
+		x = 34
+		y = 3
+
+	}
+	focus = {
+		id = ARM_punish_private_investors
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_align_with_germany
+		}
+		x = 33
+		y = 4
+
+	}
+	focus = {
+		id = ARM_reorganize_schooling
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_punish_private_investors
+		}
+		x = 34
+		y = 6
+
+	}
+	focus = {
+		id = ARM_bring_anatolia
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_begin_centralization
+		}
+		x = 35
+		y = 11
+
+	}
+	focus = {
+		id = ARM_lift_autonomus_policies
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_population_question
+		}
+		prerequisite = {
+			focus = ARM_bring_anatolia
+		}
+		x = 34
+		y = 12
+
+	}
+	focus = {
+		id = ARM_military_arsenal
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_begin_industrialization
+		}
+		x = 35
+		y = 1
+
+	}
+	focus = {
+		id = ARM_extent_to_anatolia
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_prop_rural_areas
+		}
+		x = 35
+		y = 2
+
+	}
+	focus = {
+		id = ARM_communist_academy
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_align_with_germany
+		}
+		x = 35
+		y = 5
+
+	}
+	focus = {
+		id = ARM_invest_with_arm_factories
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_military_arsenal
+		}
+		x = 37
+		y = 2
+
+	}
+	focus = {
+		id = ARM_establish_militias
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_align_with_germany
+		}
+		x = 37
+		y = 4
+
+	}
+	focus = {
+		id = ARM_bring_communists
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_establish_militias
+		}
+		x = 37
+		y = 6
+
+	}
+	focus = {
+		id = ARM_become_socialist
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_reorganize_schooling
+		}
+		prerequisite = {
+			focus = ARM_communist_academy
+		}
+		prerequisite = {
+			focus = ARM_bring_communists
+		}
+		x = 36
+		y = 7
+
+	}
+	focus = {
+		id = ARM_industrial_growth
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_balance_industry
+		}
+		prerequisite = {
+			focus = ARM_extent_to_anatolia
+		}
+		prerequisite = {
+			focus = ARM_invest_with_arm_factories
+		}
+		x = 38
+		y = 3
+
+	}
+	focus = {
+		id = ARM_weigh_in_army
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARM_military_budget
+		}
+		x = 42
+		y = 1
+
+	}
+	focus = {
+		id = ARM_motorization
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARM_weigh_in_army
+		}
+		x = 40
+		y = 2
+
+	}
+	focus = {
+		id = ARM_bring_recruitment
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARM_motorization
+		}
+		x = 41
+		y = 3
+
+	}
+	focus = {
+		id = ARM_modern_guns
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARM_bring_recruitment
+		}
+		x = 39
+		y = 4
+
+	}
+	focus = {
+		id = ARM_supply_infantry
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARM_weigh_in_army
+		}
+		x = 44
+		y = 2
+
+	}
+	focus = {
+		id = ARM_supply_artillery
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARM_supply_infantry
+		}
+		x = 43
+		y = 3
+
+	}
+	focus = {
+		id = ARM_make_tanks
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARM_supply_artillery
+		}
+		x = 43
+		y = 4
+
+	}
+	focus = {
+		id = ARM_attrition
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARM_modern_guns
+		}
+		prerequisite = {
+			focus = ARM_make_tanks
+		}
+		x = 41
+		y = 5
+
+	}
+	focus = {
+		id = ARM_airforce_budget
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARM_military_budget
+		}
+		x = 48
+		y = 1
+
+	}
+	focus = {
+		id = ARM_new_fighters
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARM_airforce_budget
+		}
+		x = 46
+		y = 2
+
+	}
+	focus = {
+		id = ARM_air_bases
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARM_new_fighters
+		}
+		x = 45
+		y = 3
+
+	}
+	focus = {
+		id = ARM_air_support
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARM_airforce_budget
+		}
+		x = 50
+		y = 2
+
+	}
+	focus = {
+		id = ARM_anti_air
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARM_air_support
+		}
+		x = 50
+		y = 3
+
+	}
+	focus = {
+		id = ARM_expand_airforce
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARM_air_bases
+		}
+		prerequisite = {
+			focus = ARM_anti_air
+		}
+		x = 47
+		y = 4
+
+	}
+	focus = {
+		id = ARM_lift_up_navy
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARM_military_budget
+		}
+		x = 57
+		y = 1
+
+	}
+	focus = {
+		id = ARM_be_on_defense
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARM_lift_up_navy
+		}
+		x = 54
+		y = 2
+
+	}
+	focus = {
+		id = ARM_submarines
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARM_be_on_defense
+		}
+		x = 55
+		y = 3
+
+	}
+	focus = {
+		id = ARM_heavy_cruisers
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARM_submarines
+		}
+		x = 56
+		y = 4
+
+	}
+	focus = {
+		id = ARM_on_offense
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARM_lift_up_navy
+		}
+		x = 60
+		y = 2
+
+	}
+	focus = {
+		id = ARM_destroyers
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARM_on_offense
+		}
+		x = 59
+		y = 3
+
+	}
+	focus = {
+		id = ARM_bombers
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARM_destroyers
+		}
+		x = 58
+		y = 4
+
+	}
+	focus = {
+		id = ARM_womens_suffrage
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_increase_farmer_output
+		}
+		x = 9
+		y = 7
+
+	}
+	focus = {
+		id = ARM_armenian_democracy
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_womens_suffrage
+		}
+		prerequisite = {
+			focus = ARM_democracy_with_socialism
+		}
+		x = 11
+		y = 8
+
+	}
+	focus = {
+		id = ARM_integrate_armenia
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_conscription_crisis
+		}
+		prerequisite = {
+			focus = ARM_lift_autonomus_policies
+		}
+		x = 32
+		y = 13
+
+	}
+}

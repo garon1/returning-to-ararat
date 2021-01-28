@@ -111,7 +111,7 @@ country_event = { #shah dies
 		ideology = totalitarianism
 		}
 	hidden_effect = {
-	news_event = { id = news.398 hours = 8 }
+	news_event = { id = news.397 hours = 8 }
 	set_country_flag = shah_dead
 			PER = { 
 				add_opinion_modifier = {
@@ -143,6 +143,7 @@ country_event = { #shah doesnt dies
 
 	option = { #wig
 		name = persia.6.a
+		news_event = { id = news.398 hours = 8 }
 	}
 }
 country_event = { #elections are held

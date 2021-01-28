@@ -219,7 +219,9 @@ country_event = {
 		popularity = -0.15
 		ideology = market_liberal
 			}
-			
+			hidden_effect = {
+		news_event = { id = news.403 hours = 8 }
+		}
 			ARM = {
 			country_event = { id = azr.10 days = 3}
 			}
@@ -358,6 +360,9 @@ country_event = {
 	
 	option = {
 		name = azr.15.a #we accept
+		hidden_effect = {
+		news_event = { id = news.401 hours = 8 }
+		}
 		
 		AZR = {
 		set_cosmetic_tag = AZR_empire
@@ -388,7 +393,9 @@ country_event = {
 	
 	option = {
 		name = azr.16.a #we accept
-		
+		hidden_effect = {
+		news_event = { id = news.402 hours = 8 }
+		}
 		AZR = {
 		set_cosmetic_tag = AZR_sultan
 		818 = {
@@ -477,7 +484,9 @@ country_event = {
 		factor = 40
 		}
 		name = azr.20.a #we accept
-		
+		hidden_effect = {
+		news_event = { id = news.404 hours = 8 }
+		}
 		AZR = { add_opinion_modifier = {
 							target = ARM
 							modifier = medium_increase
@@ -715,18 +724,15 @@ country_event = {
 	option = {#stay liberalist
 		name = azr.27.a #damn them
 		ai_chance = {
-
 		factor = 50
 		}
+		set_country_flag = AZR_reforms_finished
 	}
 	option = {#stay liberalist but realize azeri ambitions
 		name = azr.27.b 
 		ai_chance = {
 		factor = 50
 		}
-		#unlock_decision_tooltip = {
-		#AZR_expansion
-		#	}
 	}
 }
 #resettle azeris
@@ -770,5 +776,92 @@ country_event = {
 	option = {
 		name = azr.30.a
 		add_political_power = 30
+	}
+}
+#################events just para azerbaijan for things like stability, world news etc etc etc
+#bombing in ganja
+country_event = {
+	id = azr.31
+	title = azr.31.t
+	desc = azr.31.d
+	picture = GFX_Capture32
+
+	is_triggered_only = yes
+	
+	option = {
+		name = azr.31.a
+		add_political_power = -150
+		add_stability = -0.15
+		hidden_effect = {
+		add_manpower = -100
+		news_event = { id = news.400 hours = 8 }
+		}
+	}
+}
+#syndicalists strike
+country_event = {
+	id = azr.32
+	title = azr.32.t
+	desc = azr.32.d
+	picture = GFX_Capture31
+
+	is_triggered_only = yes
+	
+	option = {#let them strike
+		name = azr.32.a
+		add_popularity = {
+		popularity = 0.1
+		ideology = radical_socialism
+		}
+		add_political_power = 50
+		add_stability = 0.05
+	}
+	option = {#crush it
+		name = azr.32.a
+		add_popularity = {
+		popularity = -0.1
+		ideology = radical_socialism
+		}
+		add_political_power = -50
+		add_stability = -0.05
+	}
+}
+#nationalists call for a military takeover
+country_event = {
+	id = azr.33
+	title = azr.33.t
+	desc = azr.33.d
+	picture = GFX_Capture3
+
+	is_triggered_only = yes
+	
+	option = {#let them strike
+		name = azr.33.a
+		add_popularity = {
+		popularity = 0.05
+		ideology = nationalism
+		}
+		add_political_power = -100
+		add_stability = -0.08
+	}
+}
+#book is published calling for armenia to be taken over
+country_event = {
+	id = azr.34
+	title = azr.34.t
+	desc = azr.34.d
+	picture = GFX_Capture31
+
+	is_triggered_only = yes
+	
+	option = {#let them strike
+		name = azr.34.a
+		add_popularity = {
+		popularity = 0.03
+		ideology = nationalism
+		}
+		add_political_power = 100
+		add_stability = 0.02
+		add_war_support = 0.12
 	}
 }

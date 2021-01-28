@@ -22,8 +22,8 @@ country_event = {
 		NOT = { has_global_flag = scw_over }
 		tag = SPR
 		NOT = { has_government = nationalism }
-		date > 1936.1.16 # Trigger at some point after 1936 elections
-		date < 1936.3.16
+		date > 1937.1.16 # Trigger at some point after 1936 elections
+		date < 1937.3.16
 	}
 
 	mean_time_to_happen = {
