@@ -560,6 +560,20 @@ focus_tree = {
 
 	}
 	focus = {
+		id = ARM_integrate_armenia
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_conscription_crisis
+		}
+		prerequisite = {
+			focus = ARM_lift_autonomus_policies
+		}
+		x = 32
+		y = 13
+
+	}
+	focus = {
 		id = ARM_military_arsenal
 		icon = GFX_goal_unknown
 		cost = 7.00
@@ -922,17 +936,14 @@ focus_tree = {
 
 	}
 	focus = {
-		id = ARM_integrate_armenia
+		id = ARM_finally_end_rivalries
 		icon = GFX_goal_unknown
 		cost = 7.00
 		prerequisite = {
-			focus = ARM_conscription_crisis
-		}
-		prerequisite = {
-			focus = ARM_lift_autonomus_policies
+			focus = ARM_integrate_armenia
 		}
 		x = 32
-		y = 13
+		y = 14
 
 	}
 }

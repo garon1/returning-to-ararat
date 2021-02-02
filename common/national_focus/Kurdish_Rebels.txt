@@ -1,0 +1,621 @@
+focus_tree = {
+	id = Kurdish_Rebels
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = KUD
+		}
+	}
+	default = no
+	focus = {
+		id = KUD_successful_rebellion
+		icon = GFX_goal_unknown
+		cost = 7.00
+		x = 11
+		y = 0
+
+	}
+	focus = {
+		id = KUD_military
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 24
+		y = 0
+
+	}
+	focus = {
+		id = KUD_implement_elections
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = KUD_successful_rebellion
+		}
+		x = 11
+		y = 1
+
+	}
+	focus = {
+		id = KUD_nationalists_win
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = KUD_implement_elections
+		}
+		x = 8
+		y = 2
+
+	}
+	focus = {
+		id = KUD_kurdification_policies
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = KUD_nationalists_win
+		}
+		x = 8
+		y = 3
+
+	}
+	focus = {
+		id = KUD_convert_churches
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = KUD_kurdification_policies
+		}
+		x = 6
+		y = 4
+
+	}
+	focus = {
+		id = KUD_ban_assyrian_in_schools
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = KUD_kurdification_policies
+		}
+		x = 8
+		y = 4
+
+	}
+	focus = {
+		id = KUD_resettlement
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = KUD_kurdification_policies
+		}
+		x = 10
+		y = 4
+
+	}
+	focus = {
+		id = KUD_uphold_nationalism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = KUD_convert_churches
+		}
+		prerequisite = {
+			focus = KUD_ban_assyrian_in_schools
+		}
+		prerequisite = {
+			focus = KUD_resettlement
+		}
+		x = 8
+		y = 5
+
+	}
+	focus = {
+		id = KUD_ban_communist_party
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = KUD_uphold_nationalism
+		}
+		x = 5
+		y = 6
+
+	}
+	focus = {
+		id = KUD_ban_elections
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = KUD_uphold_nationalism
+		}
+		x = 8
+		y = 6
+
+	}
+	focus = {
+		id = KUD_greater_kurdistan
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = KUD_uphold_nationalism
+		}
+		x = 11
+		y = 6
+
+	}
+	focus = {
+		id = KUD_denounce_assyria
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = KUD_ban_communist_party
+		}
+		prerequisite = {
+			focus = KUD_ban_elections
+		}
+		prerequisite = {
+			focus = KUD_greater_kurdistan
+		}
+		x = 10
+		y = 7
+
+	}
+	focus = {
+		id = KUD_unify_with_kur
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = KUD_denounce_assyria
+		}
+		x = 11
+		y = 8
+
+	}
+	focus = {
+		id = KUD_take_assyria
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = KUD_unify_with_kur
+		}
+		x = 9
+		y = 9
+
+	}
+	focus = {
+		id = KUD_take_persia_out
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = KUD_unify_with_kur
+		}
+		x = 11
+		y = 9
+
+	}
+	focus = {
+		id = KUD_liberals_win
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = KUD_implement_elections
+		}
+		x = 14
+		y = 2
+
+	}
+	focus = {
+		id = KUD_work_around_rocky_terrain
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = KUD_liberals_win
+		}
+		x = 14
+		y = 3
+
+	}
+	focus = {
+		id = KUD_create_infrastructure
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = KUD_work_around_rocky_terrain
+		}
+		x = 12
+		y = 4
+
+	}
+	focus = {
+		id = KUD_develop_bitlis
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = KUD_work_around_rocky_terrain
+		}
+		x = 16
+		y = 4
+
+	}
+	focus = {
+		id = KUD_respect_armenians
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = KUD_create_infrastructure
+		}
+		prerequisite = {
+			focus = KUD_develop_bitlis
+		}
+		x = 14
+		y = 5
+
+	}
+	focus = {
+		id = KUD_respect_turks
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = KUD_develop_bitlis
+		}
+		x = 16
+		y = 5
+
+	}
+	focus = {
+		id = KUD_respect_assyrians
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = KUD_create_infrastructure
+		}
+		x = 12
+		y = 5
+
+	}
+	focus = {
+		id = KUD_intersect_rebels
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = KUD_respect_armenians
+		}
+		prerequisite = {
+			focus = KUD_respect_turks
+		}
+		prerequisite = {
+			focus = KUD_respect_assyrians
+		}
+		x = 15
+		y = 6
+
+	}
+	focus = {
+		id = KUD_uphold_kurdish_values
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = KUD_respect_assyrians
+		}
+		prerequisite = {
+			focus = KUD_respect_armenians
+		}
+		prerequisite = {
+			focus = KUD_respect_turks
+		}
+		x = 13
+		y = 6
+
+	}
+	focus = {
+		id = KUD_religious_museums
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = KUD_uphold_kurdish_values
+		}
+		prerequisite = {
+			focus = KUD_intersect_rebels
+		}
+		x = 15
+		y = 7
+
+	}
+	focus = {
+		id = KUD_crackdown_corruption
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = KUD_uphold_kurdish_values
+		}
+		prerequisite = {
+			focus = KUD_intersect_rebels
+		}
+		x = 17
+		y = 7
+
+	}
+	focus = {
+		id = KUD_propose_exchange
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = KUD_uphold_kurdish_values
+		}
+		prerequisite = {
+			focus = KUD_intersect_rebels
+		}
+		x = 13
+		y = 7
+
+	}
+	focus = {
+		id = KUD_stay_our_own_state
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = KUD_crackdown_corruption
+		}
+		prerequisite = {
+			focus = KUD_propose_exchange
+		}
+		mutually_exclusive = {
+			focus = KUD_unity_with_kur
+		}
+		x = 16
+		y = 8
+
+	}
+	focus = {
+		id = KUD_unity_with_kur
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = KUD_crackdown_corruption
+		}
+		mutually_exclusive = {
+			focus = KUD_stay_our_own_state
+		}
+		x = 18
+		y = 8
+
+	}
+	focus = {
+		id = KUD_take_persia
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = KUD_stay_our_own_state
+			focus = KUD_unity_with_kur
+		}
+		x = 17
+		y = 9
+
+	}
+	focus = {
+		id = KUD_kurdish_freedom_fighters
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = KUD_military
+		}
+		x = 24
+		y = 1
+
+	}
+	focus = {
+		id = KUD_desert_equipment
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = KUD_kurdish_freedom_fighters
+		}
+		x = 19
+		y = 2
+
+	}
+	focus = {
+		id = KUD_learn_from_past
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = KUD_kurdish_freedom_fighters
+		}
+		x = 22
+		y = 2
+
+	}
+	focus = {
+		id = KUD_european_models
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = KUD_desert_equipment
+		}
+		prerequisite = {
+			focus = KUD_learn_from_past
+		}
+		x = 19
+		y = 3
+
+	}
+	focus = {
+		id = KUD_learn_from_americans
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = KUD_kurdish_freedom_fighters
+		}
+		x = 24
+		y = 2
+
+	}
+	focus = {
+		id = KUD_fight_mountain
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = KUD_desert_equipment
+		}
+		prerequisite = {
+			focus = KUD_learn_from_past
+		}
+		prerequisite = {
+			focus = KUD_learn_from_americans
+		}
+		x = 22
+		y = 3
+
+	}
+	focus = {
+		id = KUD_fighters
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = KUD_european_models
+			focus = KUD_fight_mountain
+		}
+		x = 19
+		y = 4
+
+	}
+	focus = {
+		id = KUD_airbase
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = KUD_fighters
+		}
+		x = 20
+		y = 5
+
+	}
+	focus = {
+		id = KUD_protect_homeland
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = KUD_airbase
+		}
+		x = 21
+		y = 6
+
+	}
+	focus = {
+		id = KUD_navy_bases
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = KUD_fight_mountain
+		}
+		prerequisite = {
+			focus = KUD_european_models
+		}
+		prerequisite = {
+			focus = KUD_learn_from_americans
+		}
+		x = 24
+		y = 4
+
+	}
+	focus = {
+		id = KUD_submarines
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = KUD_navy_bases
+		}
+		x = 23
+		y = 5
+
+	}
+	focus = {
+		id = KUD_cruisers
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = KUD_submarines
+		}
+		x = 23
+		y = 6
+
+	}
+	focus = {
+		id = KUD_fight_in_skies
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = KUD_airbase
+		}
+		x = 19
+		y = 6
+
+	}
+	focus = {
+		id = KUD_take_turkish_lands
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = KUD_unify_with_kur
+		}
+		x = 13
+		y = 9
+
+	}
+	focus = {
+		id = KUD_ethno_state
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = KUD_take_assyria
+		}
+		prerequisite = {
+			focus = KUD_take_persia_out
+		}
+		prerequisite = {
+			focus = KUD_take_turkish_lands
+		}
+		x = 11
+		y = 10
+
+	}
+	focus = {
+		id = KUD_battleships
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = KUD_navy_bases
+		}
+		x = 26
+		y = 5
+
+	}
+	focus = {
+		id = KUD_capital_ship_focus
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = KUD_battleships
+		}
+		x = 26
+		y = 6
+
+	}
+	focus = {
+		id = KUD_world_class_military
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = KUD_fight_in_skies
+		}
+		prerequisite = {
+			focus = KUD_protect_homeland
+		}
+		prerequisite = {
+			focus = KUD_cruisers
+		}
+		prerequisite = {
+			focus = KUD_capital_ship_focus
+		}
+		x = 23
+		y = 7
+
+	}
+}

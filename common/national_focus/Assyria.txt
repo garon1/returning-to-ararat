@@ -25,6 +25,14 @@ focus_tree = {
 
 	}
 	focus = {
+		id = ASS_fix_military
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 46
+		y = 0
+
+	}
+	focus = {
 		id = ASS_infrastructure
 		icon = GFX_goal_unknown
 		cost = 5.00
@@ -33,6 +41,78 @@ focus_tree = {
 		}
 		x = 3
 		y = 1
+
+	}
+	focus = {
+		id = ASS_infrastructure2
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ASS_infrastructure
+		}
+		x = 2
+		y = 2
+
+	}
+	focus = {
+		id = ASS_civilian1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ASS_industry
+		}
+		x = 5
+		y = 1
+
+	}
+	focus = {
+		id = ASS_resource_expansion
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ASS_civilian1
+		}
+		x = 5
+		y = 2
+
+	}
+	focus = {
+		id = ASS_military_fact
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASS_industry
+		}
+		x = 7
+		y = 1
+
+	}
+	focus = {
+		id = ASS_industrialize
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ASS_military_fact
+		}
+		x = 8
+		y = 2
+
+	}
+	focus = {
+		id = ASS_diaspora_funding
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ASS_infrastructure2
+		}
+		prerequisite = {
+			focus = ASS_resource_expansion
+		}
+		prerequisite = {
+			focus = ASS_industrialize
+		}
+		x = 5
+		y = 3
 
 	}
 	focus = {
@@ -89,7 +169,18 @@ focus_tree = {
 		prerequisite = {
 			focus = ASS_greater_assyria
 		}
-		x = 22
+		x = 24
+		y = 3
+
+	}
+	focus = {
+		id = ASS_rebuild_assur
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASS_greater_assyria
+		}
+		x = 21
 		y = 3
 
 	}
@@ -106,6 +197,9 @@ focus_tree = {
 		prerequisite = {
 			focus = ASS_honor_the_legacy
 		}
+		prerequisite = {
+			focus = ASS_rebuild_assur
+		}
 		x = 16
 		y = 4
 
@@ -120,19 +214,11 @@ focus_tree = {
 		prerequisite = {
 			focus = ASS_honor_the_legacy
 		}
+		prerequisite = {
+			focus = ASS_rebuild_assur
+		}
 		x = 19
 		y = 4
-
-	}
-	focus = {
-		id = ASS_rebuild_assur
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ASS_greater_assyria
-		}
-		x = 21
-		y = 2
 
 	}
 	focus = {
@@ -141,6 +227,9 @@ focus_tree = {
 		cost = 7.00
 		prerequisite = {
 			focus = ASS_honor_the_legacy
+		}
+		prerequisite = {
+			focus = ASS_rebuild_assur
 		}
 		x = 23
 		y = 4
@@ -295,6 +384,20 @@ focus_tree = {
 
 	}
 	focus = {
+		id = ASS_rebuild_assur1
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASS_develop_mosul
+		}
+		prerequisite = {
+			focus = ASS_radio_stations
+		}
+		x = 34
+		y = 5
+
+	}
+	focus = {
 		id = ASS_develop_resources
 		icon = GFX_goal_unknown
 		cost = 7.00
@@ -302,29 +405,9 @@ focus_tree = {
 			focus = ASS_develop_mosul
 		}
 		prerequisite = {
-			focus = ASS_cultural_celebrations
-		}
-		prerequisite = {
 			focus = ASS_radio_stations
 		}
-		x = 33
-		y = 5
-
-	}
-	focus = {
-		id = ASS_rebuild_assur
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ASS_develop_mosul
-		}
-		prerequisite = {
-			focus = ASS_cultural_celebrations
-		}
-		prerequisite = {
-			focus = ASS_radio_stations
-		}
-		x = 30
+		x = 36
 		y = 5
 
 	}
@@ -336,13 +419,77 @@ focus_tree = {
 			focus = ASS_develop_mosul
 		}
 		prerequisite = {
-			focus = ASS_cultural_celebrations
-		}
-		prerequisite = {
 			focus = ASS_radio_stations
 		}
 		x = 38
 		y = 5
+
+	}
+	focus = {
+		id = ASS_beacon_of_democracy
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASS_develop_resources
+		}
+		prerequisite = {
+			focus = ASS_reformists
+		}
+		prerequisite = {
+			focus = ASS_rebuild_assur1
+		}
+		x = 38
+		y = 6
+
+	}
+	focus = {
+		id = ASS_less_infantry_reliance
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ASS_fix_military
+		}
+		x = 46
+		y = 1
+
+	}
+	focus = {
+		id = ASS_motorization
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ASS_less_infantry_reliance
+		}
+		x = 45
+		y = 2
+
+	}
+	focus = {
+		id = ASS_artillery
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ASS_less_infantry_reliance
+		}
+		x = 47
+		y = 2
+
+	}
+	focus = {
+		id = ASS_tanks
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ASS_motorization
+		}
+		prerequisite = {
+			focus = ASS_artillery
+		}
+		mutually_exclusive = {
+			focus = ASS_light_tanks
+		}
+		x = 44
+		y = 3
 
 	}
 	focus = {
@@ -374,20 +521,100 @@ focus_tree = {
 
 	}
 	focus = {
-		id = ASS_beacon_of_democracy
+		id = ASS_light_tanks
 		icon = GFX_goal_unknown
-		cost = 7.00
+		cost = 5.00
 		prerequisite = {
-			focus = ASS_develop_resources
+			focus = ASS_artillery
 		}
 		prerequisite = {
-			focus = ASS_reformists
+			focus = ASS_motorization
 		}
+		mutually_exclusive = {
+			focus = ASS_tanks
+		}
+		x = 48
+		y = 3
+
+	}
+	focus = {
+		id = ASS_enable_motorization
+		icon = GFX_goal_unknown
+		cost = 5.00
 		prerequisite = {
-			focus = ASS_rebuild_assur
+			focus = ASS_tanks
+			focus = ASS_light_tanks
 		}
-		x = 39
+		x = 46
+		y = 4
+
+	}
+	focus = {
+		id = ASS_mainland_defense
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ASS_enable_motorization
+		}
+		mutually_exclusive = {
+			focus = ASS_defend_neighbors
+		}
+		x = 44
+		y = 5
+
+	}
+	focus = {
+		id = ASS_defend_neighbors
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ASS_enable_motorization
+		}
+		mutually_exclusive = {
+			focus = ASS_mainland_defense
+		}
+		x = 48
+		y = 5
+
+	}
+	focus = {
+		id = ASS_strategic_bombings
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ASS_mainland_defense
+			focus = ASS_defend_neighbors
+		}
+		x = 46
 		y = 6
+
+	}
+	focus = {
+		id = ASS_CAS
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ASS_strategic_bombings
+		}
+		mutually_exclusive = {
+			focus = ASS_heavy
+		}
+		x = 44
+		y = 7
+
+	}
+	focus = {
+		id = ASS_heavy
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ASS_strategic_bombings
+		}
+		mutually_exclusive = {
+			focus = ASS_CAS
+		}
+		x = 48
+		y = 7
 
 	}
 }

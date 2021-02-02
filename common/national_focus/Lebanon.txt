@@ -1,0 +1,518 @@
+focus_tree = {
+	id = Lebanon
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = LEB
+		}
+	}
+	default = no
+	focus = {
+		id = LEB_evaluate_our_position
+		icon = GFX_goal_unknown
+		cost = 7.00
+		x = 19
+		y = 0
+
+	}
+	focus = {
+		id = LEB_lebanese_natonalism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LEB_evaluate_our_position
+		}
+		x = 18
+		y = 1
+
+	}
+	focus = {
+		id = LEB_demand_autonomy
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LEB_evaluate_our_position
+		}
+		x = 20
+		y = 1
+
+	}
+	focus = {
+		id = LEB_declare_safe_haven
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LEB_lebanese_natonalism
+		}
+		prerequisite = {
+			focus = LEB_demand_autonomy
+		}
+		x = 19
+		y = 2
+
+	}
+	focus = {
+		id = LEB_declare_state_securalism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LEB_declare_safe_haven
+		}
+		x = 18
+		y = 3
+
+	}
+	focus = {
+		id = LEB_construct_lebanese_identity
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LEB_declare_safe_haven
+		}
+		x = 20
+		y = 3
+
+	}
+	focus = {
+		id = LEB_declare_independence
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LEB_declare_state_securalism
+		}
+		prerequisite = {
+			focus = LEB_construct_lebanese_identity
+		}
+		x = 19
+		y = 4
+
+	}
+	focus = {
+		id = LEB_improve_the_army
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LEB_declare_independence
+		}
+		x = 10
+		y = 5
+
+	}
+	focus = {
+		id = LEB_expand_infantry
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LEB_improve_the_army
+		}
+		x = 7
+		y = 6
+
+	}
+	focus = {
+		id = LEB_establish_artillery_divisions
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LEB_expand_infantry
+		}
+		x = 8
+		y = 7
+
+	}
+	focus = {
+		id = LEB_tanks
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LEB_improve_the_army
+		}
+		x = 13
+		y = 6
+
+	}
+	focus = {
+		id = LEB_invest_with_paratroops
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LEB_tanks
+		}
+		x = 12
+		y = 7
+
+	}
+	focus = {
+		id = LEB_independence_is_secured
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LEB_declare_independence
+		}
+		x = 19
+		y = 5
+
+	}
+	focus = {
+		id = LEB_international_support
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LEB_independence_is_secured
+		}
+		x = 16
+		y = 6
+
+	}
+	focus = {
+		id = LEB_jewish_immigration_question
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LEB_independence_is_secured
+		}
+		x = 19
+		y = 6
+
+	}
+	focus = {
+		id = LEB_sunni_question
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LEB_international_support
+		}
+		prerequisite = {
+			focus = LEB_jewish_immigration_question
+		}
+		x = 17
+		y = 7
+
+	}
+	focus = {
+		id = LEB_world_investments
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LEB_independence_is_secured
+		}
+		x = 22
+		y = 6
+
+	}
+	focus = {
+		id = LEB_settle_christianity
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LEB_jewish_immigration_question
+		}
+		prerequisite = {
+			focus = LEB_world_investments
+		}
+		x = 21
+		y = 7
+
+	}
+	focus = {
+		id = LEB_celebrate_independence_day
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LEB_sunni_question
+		}
+		prerequisite = {
+			focus = LEB_settle_christianity
+		}
+		x = 19
+		y = 8
+
+	}
+	focus = {
+		id = LEB_grant_women_suffrage
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LEB_sunni_question
+		}
+		prerequisite = {
+			focus = LEB_settle_christianity
+		}
+		x = 22
+		y = 8
+
+	}
+	focus = {
+		id = LEB_rebuild_damaged_churches
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LEB_celebrate_independence_day
+		}
+		prerequisite = {
+			focus = LEB_grant_women_suffrage
+		}
+		x = 20
+		y = 9
+
+	}
+	focus = {
+		id = LEB_create_navy
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LEB_declare_independence
+		}
+		x = 25
+		y = 5
+
+	}
+	focus = {
+		id = LEB_destroyers
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LEB_create_navy
+		}
+		x = 24
+		y = 6
+
+	}
+	focus = {
+		id = LEB_carriers
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LEB_destroyers
+		}
+		x = 23
+		y = 7
+
+	}
+	focus = {
+		id = LEB_cruisers
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LEB_create_navy
+		}
+		x = 26
+		y = 6
+
+	}
+	focus = {
+		id = LEB_develop_beirut_dockyards
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LEB_cruisers
+		}
+		x = 27
+		y = 7
+
+	}
+	focus = {
+		id = LEB_the_great_fleet
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LEB_carriers
+		}
+		prerequisite = {
+			focus = LEB_develop_beirut_dockyards
+		}
+		x = 25
+		y = 8
+
+	}
+	focus = {
+		id = LEB_new_airforce
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LEB_declare_independence
+		}
+		x = 31
+		y = 5
+
+	}
+	focus = {
+		id = LEB_learn_from_the_arabs
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LEB_new_airforce
+		}
+		x = 29
+		y = 6
+
+	}
+	focus = {
+		id = LEB_protect_homeland
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LEB_new_airforce
+		}
+		x = 31
+		y = 6
+
+	}
+	focus = {
+		id = LEB_classic_techniques
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LEB_new_airforce
+		}
+		x = 33
+		y = 6
+
+	}
+	focus = {
+		id = LEB_learn_from_great_war
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LEB_learn_from_the_arabs
+		}
+		prerequisite = {
+			focus = LEB_protect_homeland
+		}
+		prerequisite = {
+			focus = LEB_classic_techniques
+		}
+		x = 31
+		y = 7
+
+	}
+	focus = {
+		id = LEB_bomber_squardrons
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LEB_learn_from_great_war
+		}
+		x = 29
+		y = 8
+
+	}
+	focus = {
+		id = LEB_fighter_decision
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LEB_learn_from_great_war
+		}
+		x = 33
+		y = 8
+
+	}
+	focus = {
+		id = LEB_the_greatest_airforce
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LEB_bomber_squardrons
+		}
+		prerequisite = {
+			focus = LEB_fighter_decision
+		}
+		x = 31
+		y = 9
+
+	}
+	focus = {
+		id = LEB_research_initiative
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LEB_sunni_question
+		}
+		prerequisite = {
+			focus = LEB_settle_christianity
+		}
+		x = 16
+		y = 8
+
+	}
+	focus = {
+		id = LEB_create_new_constitution
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LEB_industrialize_economy
+		}
+		prerequisite = {
+			focus = LEB_rebuild_damaged_churches
+		}
+		x = 19
+		y = 10
+
+	}
+	focus = {
+		id = LEB_defend_our_borders
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LEB_improve_the_army
+		}
+		x = 10
+		y = 6
+
+	}
+	focus = {
+		id = LEB_develop_tactics
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LEB_defend_our_borders
+		}
+		x = 10
+		y = 7
+
+	}
+	focus = {
+		id = LEB_great_war_lessons
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LEB_establish_artillery_divisions
+		}
+		prerequisite = {
+			focus = LEB_develop_tactics
+		}
+		prerequisite = {
+			focus = LEB_invest_with_paratroops
+		}
+		x = 10
+		y = 8
+
+	}
+	focus = {
+		id = LEB_host_arab_congress
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LEB_create_new_constitution
+		}
+		x = 19
+		y = 11
+
+	}
+	focus = {
+		id = LEB_industrialize_economy
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LEB_research_initiative
+		}
+		prerequisite = {
+			focus = LEB_celebrate_independence_day
+		}
+		x = 18
+		y = 9
+
+	}
+}

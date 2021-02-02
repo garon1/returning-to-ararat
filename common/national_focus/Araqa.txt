@@ -1,0 +1,777 @@
+focus_tree = {
+	id = Araqa
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ARQ
+		}
+	}
+	default = no
+	focus = {
+		id = ARQ_stay_with_kingdom
+		icon = GFX_goal_unknown
+		cost = 7.00
+		mutually_exclusive = {
+			focus = ARQ_prepare_for_independence
+		}
+		x = 7
+		y = 0
+
+	}
+	focus = {
+		id = ARQ_prepare_for_independence
+		icon = GFX_goal_unknown
+		cost = 7.00
+		mutually_exclusive = {
+			focus = ARQ_stay_with_kingdom
+		}
+		x = 19
+		y = 0
+
+	}
+	focus = {
+		id = ARQ_we_can_military
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 39
+		y = 0
+
+	}
+	focus = {
+		id = ARQ_invest_in_industry
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 26
+		y = 0
+
+	}
+	focus = {
+		id = ARQ_propose_sunni_cooperation
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARQ_stay_with_kingdom
+		}
+		x = 8
+		y = 1
+
+	}
+	focus = {
+		id = ARQ_ask_kingdom_for_funding
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARQ_propose_sunni_cooperation
+		}
+		x = 9
+		y = 2
+
+	}
+	focus = {
+		id = ARQ_preserve_the_rivers
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARQ_ask_kingdom_for_funding
+		}
+		x = 7
+		y = 3
+
+	}
+	focus = {
+		id = ARQ_construct_new_cities
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARQ_preserve_the_rivers
+		}
+		x = 9
+		y = 4
+
+	}
+	focus = {
+		id = ARQ_pan_arabism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARQ_propose_sunni_cooperation
+		}
+		x = 13
+		y = 2
+
+	}
+	focus = {
+		id = ARQ_cultural_renaissance
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARQ_ask_kingdom_for_funding
+		}
+		prerequisite = {
+			focus = ARQ_pan_arabism
+		}
+		x = 11
+		y = 3
+
+	}
+	focus = {
+		id = ARQ_new_universities
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARQ_cultural_renaissance
+		}
+		x = 11
+		y = 4
+
+	}
+	focus = {
+		id = ARQ_shia_safety
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARQ_pan_arabism
+		}
+		x = 15
+		y = 3
+
+	}
+	focus = {
+		id = ARQ_baghdad_basra_railway
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARQ_shia_safety
+		}
+		x = 13
+		y = 4
+
+	}
+	focus = {
+		id = ARQ_progressive_ideals
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARQ_construct_new_cities
+		}
+		prerequisite = {
+			focus = ARQ_new_universities
+		}
+		prerequisite = {
+			focus = ARQ_baghdad_basra_railway
+		}
+		x = 10
+		y = 5
+
+	}
+	focus = {
+		id = ARQ_maintain_status_quo
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARQ_baghdad_basra_railway
+		}
+		prerequisite = {
+			focus = ARQ_new_universities
+		}
+		prerequisite = {
+			focus = ARQ_construct_new_cities
+		}
+		x = 12
+		y = 5
+
+	}
+	focus = {
+		id = ARQ_settle_questions
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARQ_progressive_ideals
+		}
+		prerequisite = {
+			focus = ARQ_maintain_status_quo
+		}
+		x = 11
+		y = 6
+
+	}
+	focus = {
+		id = ARQ_secret_accords
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARQ_prepare_for_independence
+		}
+		x = 20
+		y = 1
+
+	}
+	focus = {
+		id = ARQ_independence_is_achieved
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARQ_secret_accords
+		}
+		x = 20
+		y = 2
+
+	}
+	focus = {
+		id = ARQ_go_our_own_way
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARQ_independence_is_achieved
+		}
+		x = 19
+		y = 3
+
+	}
+	focus = {
+		id = ARQ_adopt_pan_arabism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARQ_independence_is_achieved
+		}
+		x = 21
+		y = 3
+
+	}
+	focus = {
+		id = ARQ_settle_migrants
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARQ_go_our_own_way
+		}
+		prerequisite = {
+			focus = ARQ_adopt_pan_arabism
+		}
+		x = 20
+		y = 4
+
+	}
+	focus = {
+		id = ARQ_shia_domination
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARQ_go_our_own_way
+		}
+		prerequisite = {
+			focus = ARQ_adopt_pan_arabism
+		}
+		x = 17
+		y = 4
+
+	}
+	focus = {
+		id = ARQ_protect_jewish_businesses
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARQ_go_our_own_way
+		}
+		prerequisite = {
+			focus = ARQ_adopt_pan_arabism
+		}
+		x = 23
+		y = 4
+
+	}
+	focus = {
+		id = ARQ_laws_against_sexism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARQ_shia_domination
+		}
+		prerequisite = {
+			focus = ARQ_settle_migrants
+		}
+		prerequisite = {
+			focus = ARQ_protect_jewish_businesses
+		}
+		x = 22
+		y = 5
+
+	}
+	focus = {
+		id = ARQ_family_laws
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARQ_shia_domination
+		}
+		prerequisite = {
+			focus = ARQ_settle_migrants
+		}
+		prerequisite = {
+			focus = ARQ_protect_jewish_businesses
+		}
+		x = 16
+		y = 5
+
+	}
+	focus = {
+		id = ARQ_implement_welfare
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARQ_protect_jewish_businesses
+		}
+		prerequisite = {
+			focus = ARQ_settle_migrants
+		}
+		prerequisite = {
+			focus = ARQ_shia_domination
+		}
+		x = 25
+		y = 5
+
+	}
+	focus = {
+		id = ARQ_conscription_policy
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARQ_laws_against_sexism
+		}
+		prerequisite = {
+			focus = ARQ_implement_welfare
+		}
+		x = 22
+		y = 6
+
+	}
+	focus = {
+		id = ARQ_more_intriget_techniques
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARQ_invest_in_industry
+		}
+		x = 23
+		y = 1
+
+	}
+	focus = {
+		id = ARQ_mine_for_resources
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARQ_more_intriget_techniques
+		}
+		x = 24
+		y = 2
+
+	}
+	focus = {
+		id = ARQ_build_industrial_arsenal
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARQ_invest_in_industry
+		}
+		x = 26
+		y = 1
+
+	}
+	focus = {
+		id = ARQ_civilian_factories
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARQ_build_industrial_arsenal
+		}
+		x = 26
+		y = 3
+
+	}
+	focus = {
+		id = ARQ_military_factories
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARQ_build_industrial_arsenal
+		}
+		x = 29
+		y = 3
+
+	}
+	focus = {
+		id = ARQ_build_infrastructure
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARQ_invest_in_industry
+		}
+		x = 28
+		y = 1
+
+	}
+	focus = {
+		id = ARQ_build_a_railway
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARQ_build_infrastructure
+		}
+		x = 30
+		y = 2
+
+	}
+	focus = {
+		id = ARQ_clean_slums
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARQ_mine_for_resources
+		}
+		prerequisite = {
+			focus = ARQ_civilian_factories
+		}
+		prerequisite = {
+			focus = ARQ_military_factories
+		}
+		prerequisite = {
+			focus = ARQ_build_a_railway
+		}
+		x = 27
+		y = 4
+
+	}
+	focus = {
+		id = ARQ_develop_a_navy
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARQ_we_can_military
+		}
+		x = 33
+		y = 1
+
+	}
+	focus = {
+		id = ARQ_undersea_combat
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARQ_develop_a_navy
+		}
+		mutually_exclusive = {
+			focus = ARQ_on_ground_combat
+		}
+		x = 32
+		y = 2
+
+	}
+	focus = {
+		id = ARQ_destroyers
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARQ_undersea_combat
+		}
+		x = 32
+		y = 3
+
+	}
+	focus = {
+		id = ARQ_capital_ships
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARQ_destroyers
+		}
+		x = 31
+		y = 4
+
+	}
+	focus = {
+		id = ARQ_on_ground_combat
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARQ_develop_a_navy
+		}
+		mutually_exclusive = {
+			focus = ARQ_undersea_combat
+		}
+		x = 34
+		y = 2
+
+	}
+	focus = {
+		id = ARQ_submarines
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARQ_on_ground_combat
+		}
+		x = 34
+		y = 3
+
+	}
+	focus = {
+		id = ARQ_naval_doctorine
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARQ_destroyers
+			focus = ARQ_submarines
+		}
+		x = 33
+		y = 4
+
+	}
+	focus = {
+		id = ARQ_carriers
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARQ_submarines
+		}
+		x = 35
+		y = 4
+
+	}
+	focus = {
+		id = ARQ_develop_an_army
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARQ_we_can_military
+		}
+		x = 39
+		y = 1
+
+	}
+	focus = {
+		id = ARQ_classical_military
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARQ_develop_an_army
+		}
+		x = 38
+		y = 2
+
+	}
+	focus = {
+		id = ARQ_infantry_artillery
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARQ_classical_military
+		}
+		x = 38
+		y = 3
+
+	}
+	focus = {
+		id = ARQ_new_ideas
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARQ_develop_an_army
+		}
+		x = 40
+		y = 2
+
+	}
+	focus = {
+		id = ARQ_motor_equipment
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARQ_new_ideas
+		}
+		x = 40
+		y = 3
+
+	}
+	focus = {
+		id = ARQ_ground_tactics
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARQ_infantry_artillery
+			focus = ARQ_motor_equipment
+		}
+		x = 37
+		y = 4
+
+	}
+	focus = {
+		id = ARQ_guerilla_tactics
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARQ_infantry_artillery
+			focus = ARQ_motor_equipment
+		}
+		x = 39
+		y = 4
+
+	}
+	focus = {
+		id = ARQ_tanks
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARQ_motor_equipment
+		}
+		x = 41
+		y = 4
+
+	}
+	focus = {
+		id = ARQ_develop_airforce
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARQ_we_can_military
+		}
+		x = 45
+		y = 1
+
+	}
+	focus = {
+		id = ARQ_intrigute_airforce
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARQ_develop_airforce
+		}
+		mutually_exclusive = {
+			focus = ARQ_air_superiority
+		}
+		x = 43
+		y = 2
+
+	}
+	focus = {
+		id = ARQ_fighters
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARQ_intrigute_airforce
+		}
+		x = 42
+		y = 3
+
+	}
+	focus = {
+		id = ARQ_air_ground
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARQ_intrigute_airforce
+		}
+		x = 44
+		y = 3
+
+	}
+	focus = {
+		id = ARQ_air_superiority
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARQ_develop_airforce
+		}
+		mutually_exclusive = {
+			focus = ARQ_intrigute_airforce
+		}
+		x = 47
+		y = 2
+
+	}
+	focus = {
+		id = ARQ_bombers
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARQ_air_superiority
+		}
+		x = 46
+		y = 3
+
+	}
+	focus = {
+		id = ARQ_sweeping_edu_reforms
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARQ_shia_domination
+		}
+		prerequisite = {
+			focus = ARQ_settle_migrants
+		}
+		prerequisite = {
+			focus = ARQ_protect_jewish_businesses
+		}
+		x = 19
+		y = 5
+
+	}
+	focus = {
+		id = ARQ_denounce_sunnis
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARQ_family_laws
+		}
+		prerequisite = {
+			focus = ARQ_sweeping_edu_reforms
+		}
+		x = 18
+		y = 6
+
+	}
+	focus = {
+		id = ARQ_we_will_survive
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARQ_denounce_sunnis
+		}
+		prerequisite = {
+			focus = ARQ_conscription_policy
+		}
+		x = 20
+		y = 7
+
+	}
+	focus = {
+		id = ARQ_heavy_fighters
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARQ_air_superiority
+		}
+		x = 48
+		y = 3
+
+	}
+	focus = {
+		id = ARQ_develop_basra
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARQ_naval_doctorine
+		}
+		prerequisite = {
+			focus = ARQ_capital_ships
+		}
+		prerequisite = {
+			focus = ARQ_carriers
+		}
+		x = 33
+		y = 5
+
+	}
+}
