@@ -1,5 +1,9 @@
 spriteTypes = {
 spriteType = {
+		name = "GFX_news_event_arm_civwar"
+		texturefile = "gfx/event_pictures/news_event_arm_civwar.dds"
+	}
+spriteType = {
 		name = "GFX_report_event_arm_turks"
 		texturefile = "gfx/event_pictures/report_event_arm_turks.dds"
 	}
@@ -158,10 +162,10 @@ spriteType = {
 spriteType = {
 		name = "GFX_Capture1"
 		texturefile = "gfx/event_pictures/Capture1.dds"
-		spriteType = {
+	}
+	spriteType = {
 		name = "GFX_Capture0"
 		texturefile = "gfx/event_pictures/Capture0.dds"
-	}
 	}
 spriteType = {
 		name = "GFX_download"

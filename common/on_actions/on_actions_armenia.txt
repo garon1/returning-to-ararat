@@ -29,12 +29,12 @@ on_actions = {
 			}
 			815 = { #Erzingan
 				set_state_flag = ARM_armenian
-				ARM_set_revolt_risk_low = yes
-				ARM_set_authority_kavat_low = yes
+				ARM_set_revolt_risk_none = yes
+				ARM_set_authority_kavat_none = yes
 			}
 			818 = {	#Zangezur
 				set_state_flag = ARM_armenianist
-				ARM_set_revolt_risk_low = yes
+				ARM_set_revolt_risk_none = yes
 				ARM_set_authority_kavat_medium = yes
 			}
 			819 = { #Aras
@@ -49,32 +49,32 @@ on_actions = {
 			}
 			350 = { #Malatya
 				set_state_flag = ARM_armenianist
-				ARM_set_revolt_risk_low = yes
+				ARM_set_revolt_risk_none = yes
 				ARM_set_authority_kavat_medium = yes
 			}
 			353 = {	#Karin
 				set_state_flag = ARM_armenianist
-				ARM_set_revolt_risk_low = yes
+				ARM_set_revolt_risk_none = yes
 				ARM_set_authority_kavat_medium = yes
 			}
 			813 = { #Lazistan
 				set_state_flag = ARM_armenian
-				ARM_set_revolt_risk_low = yes
-				ARM_set_authority_kavat_low = yes
+				ARM_set_revolt_risk_none = yes
+				ARM_set_authority_kavat_none = yes
 			}
 			349 = { #Sivas
 				set_state_flag = ARM_armenian
-				ARM_set_revolt_risk_low = yes
-				ARM_set_authority_kavat_low = yes
+				ARM_set_revolt_risk_none = yes
+				ARM_set_authority_kavat_none = yes
 			}
 			344 = {	#Adana
 				set_state_flag = ARM_armenian
-				ARM_set_revolt_risk_low = yes
+				ARM_set_revolt_risk_none = yes
 				ARM_set_authority_kavat_medum = yes
 			}
 			352 = { #South East Anatolia
-				ARM_set_revolt_risk_low = yes
-				ARM_set_authority_kavat_low = yes
+				ARM_set_revolt_risk_none = yes
+				ARM_set_authority_kavat_none = yes
 			}
 			230 = { #Erivan
 				ARM_set_revolt_risk_none = yes
@@ -82,13 +82,13 @@ on_actions = {
 			}
 			814 = { #Ghars
 				set_state_flag = ARM_armenian
-				ARM_set_revolt_risk_low = yes
+				ARM_set_revolt_risk_none = yes
 				ARM_set_authority_kavat_medium = yes
 			}
 			842 = {	#Lachin
 				set_state_flag = ARM_armenian
-				ARM_set_revolt_risk_low = yes
-				ARM_set_authority_kavat_low = yes
+				ARM_set_revolt_risk_none = yes
+				ARM_set_authority_kavat_none = yes
 			}
 			831 = {	#Karabakh
 				ARM_set_revolt_risk_none = yes

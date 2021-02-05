@@ -15127,3 +15127,29 @@ news_event = {
 
   }
 }
+#turkey reconciles with dowa
+news_event = {
+  id = news.407
+  title = news.407.title
+  desc = news.407.desc
+  picture = #########
+  
+  major = yes
+  is_triggered_only = yes
+  option = {
+    name = news.407.a
+    trigger = {
+      NOT = {
+        TAG = TUR
+        is_in_faction_with = ARA
+      }
+    }
+  }
+  option = {
+    name = news.407.b
+    trigger = {
+    TAG = TUR
+        is_in_faction_with = ARA
+    }
+  }
+}

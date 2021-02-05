@@ -1,6 +1,46 @@
 
 spriteTypes = {
 spriteType = {
+		name = "GFX_idea_GRE_turk_negotiations"
+		texturefile = "gfx/interface/ideas/idea_tur_varlik_vergisi.dds"
+	}
+spriteType = {
+		name = "GFX_idea_TUR_air_superiority"
+		texturefile = "gfx/interface/ideas/idea_north_american_aviation.dds"
+	}
+spriteType = {
+		name = "GFX_idea_TUR_ottoman_renaissance"
+		texturefile = "gfx/interface/ideas/idea_tur_funkplan.dds"
+	}
+spriteType = {
+		name = "GFX_idea_TUR_ottoman_renaissance"
+		texturefile = "gfx/interface/ideas/idea_tur_funkplan.dds"
+	}
+spriteType = {
+		name = "GFX_idea_TUR_leftist_appeal"
+		texturefile = "gfx/interface/ideas/FRA_national_mobilization_focus.dds"
+	}
+spriteType = {
+		name = "GFX_idea_TUR_expand_turkey"
+		texturefile = "gfx/interface/ideas/idea_tur_sectarian_troubles_kurdistan.dds"
+	}
+spriteType = {
+		name = "GFX_idea_TUR_preserve_homeland"
+		texturefile = "gfx/interface/ideas/idea_tur_sub_zero_survival_training.dds"
+	}
+spriteType = {
+		name = "GFX_idea_TUR_stable_republic"
+		texturefile = "gfx/interface/ideas/idea_tur_kemalist_army_officers_powerful_neutral.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_ottoman_legacy"
+		texturefile = "gfx/interface/ideas/idea_tur_petrol_ofisi.dds"
+	}
+spriteType = {
+		name = "GFX_idea_TUR_unstable_terrain"
+		texturefile = "gfx/interface/ideas/generic_production_bonus.dds"
+	}
+spriteType = {
 		name = "GFX_idea_AZR_devalue"
 		texturefile = "gfx/interface/ideas/fra_aeb.dds"
 	}
@@ -2289,28 +2329,6 @@ spriteType = {
 		name = "GFX_idea_USA_walter_krueger"
 		texturefile = "gfx/interface/ideas/USA_Walter_Krueger.dds"
 	}
-
-
-	
-
-	### TURKEY IDEAS
-	spriteType = {
-		name = "GFX_idea_sabiha_gocen"
-		texturefile = "gfx/interface/ideas/idea_sabiha_gocen.dds"
-	}	
-	
-	### SPAIN IDEAS
-	spriteType = {
-		name = "GFX_idea_francisco_franco"
-		texturefile = "gfx/interface/ideas/idea_francisco_franco.dds"
-	}
-
-	spriteType = {
-		name = "GFX_idea_dolores_ibarruri"
-		texturefile = "gfx/interface/ideas/idea_dolores_ibarruri.dds"
-	}
-
-	
 	### BRITISH IDEAS	
 	spriteType = {
 		name = "GFX_idea_george_v"

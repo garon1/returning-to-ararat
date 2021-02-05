@@ -4,6 +4,9 @@ state={
 	name="STATE_352"
 
 	history={
+victory_points = {
+			10497 5 
+		}
 		owner = ARM
 		buildings = {
 			infrastructure = 2

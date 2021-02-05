@@ -13,12 +13,19 @@ country_event = {
 	id = tas_political.1
 	hours = 6
 }
-
+country_event = {
+	id = turk.1
+	hours = 6
+}
 set_research_slots = 3
 
 add_ideas = {
 	limited_conscription
+	TUR_unstable_terrain
+	TUR_ottoman_legacy
+	TUR_stable_republic
 }
+
 
 set_technology = {
 	infantry_weapons = 1

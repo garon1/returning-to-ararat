@@ -1,0 +1,243 @@
+add_namespace = turk
+
+#beginning event
+country_event = {
+    id = turk.1
+    title = turk.1.t
+    desc = turk.1.d
+    picture = GFX_report_event_tur_sultan_in_istanbul
+   
+  is_triggered_only = yes
+  
+    option = {
+        name = turk.1.a
+        country_event = turk.2
+    }
+}
+#continue event
+country_event = {
+    id = turk.2
+    title = turk.2.t
+    desc = turk.2.d
+    picture = GFX_report_event_tur_sultan_in_istanbul
+   
+  is_triggered_only = yes
+  
+    option = {
+        name = turk.2.a
+    }
+}
+#dowa turkey 
+country_event = {
+    id = turk.3
+    title = turk.3.t
+    desc = turk.3.d
+    picture = GFX_report_event_gre_megali_conference_signing
+    
+    is_triggered_only = yes
+    
+    option = {
+    country_event = turk.4
+    }
+}
+# dowa event
+country_event = {
+    id = turk.4
+    title = turk.4.t
+    desc = turk.4.d
+    picture = GFX_report_event_gre_megali_conference_signing
+    
+    is_triggered_only = yes
+    
+    option = {
+    name = turk.4.a
+    if = {
+        limit = {
+        ANA = { is_in_faction_with = ARA }
+        }
+        TUR = {
+                add_opinion_modifier = {
+                    target = ANA
+                    modifier = large_increase
+                }
+            }
+        ANA = {
+                add_opinion_modifier = {
+                    target = TUR
+                    modifier = large_increase
+                }
+            }
+        }
+        if = {
+        limit = {
+        ARA = { is_in_faction = yes }
+        }
+        news_event = { id = news.407 hours = 8 }
+        TUR = {
+                add_opinion_modifier = {
+                    target = ARA
+                    modifier = large_increase
+                }
+                set_country_flag = TUR_ARA_DOWA_reconciliation`
+            }
+        ARA = {
+                add_opinion_modifier = {
+                    target = TUR
+                    modifier = large_increase
+                }
+            }
+        }
+        if = {
+        limit = {
+        ARM = { is_in_faction = yes }
+        }
+        TUR = {
+                add_opinion_modifier = {
+                    target = ARM
+                    modifier = large_increase
+                }
+            }
+        ARM = {
+                add_opinion_modifier = {
+                    target = TUR
+                    modifier = large_increase
+                }
+            }
+        }
+    }
+}
+#arabian reconciliation
+country_event = {
+    id = turk.5
+    title = turk.5.t
+    desc = turk.5.d
+    picture = GFX_report_event_tur_sultan_in_istanbul
+   
+  is_triggered_only = yes
+  
+    option = {
+        name = turk.5.a
+        TUR = {
+        add_manpower = -2000
+        send_equipment = {
+                type = fighter_equipment
+                amount = 2
+                target = ARA
+            }
+        }
+        TUR = {
+                add_opinion_modifier = {
+                    target = ARA
+                    modifier = medium_increase
+                }
+            }
+        ARA = {
+                add_opinion_modifier = {
+                    target = TUR
+                    modifier = medium_increase
+                }
+            }
+    }
+}
+#greek negotiations
+country_event = {
+    id = turk.5
+    title = turk.5.t
+    desc = turk.5.d
+    picture = GFX_report_event_tur_sultan_in_istanbul
+   
+  is_triggered_only = yes
+  
+    option = {
+        name = turk.5.a
+        TUR = {
+        add_manpower = -2000
+        send_equipment = {
+                type = fighter_equipment
+                amount = 2
+                target = ARA
+            }
+        }
+        TUR = {
+                add_opinion_modifier = {
+                    target = ARA
+                    modifier = medium_increase
+                }
+            }
+        ARA = {
+                add_opinion_modifier = {
+                    target = TUR
+                    modifier = medium_increase
+                }
+            }
+    }
+}
+#greek negotiations
+country_event = {
+    id = turk.6
+    title = turk.6.t
+    desc = turk.6.d
+    picture = ####################################
+   
+  is_triggered_only = yes
+  
+    option = {
+        name = turk.6.a
+        GRE = { send_equipment = {
+                type = artillery
+                amount = 2
+                target = TUR
+                }
+                add_timed_idea = {
+                idea = GRE_turk_negotiations
+                days = 20
+                }
+            }
+        TUR = {
+                add_opinion_modifier = {
+                    target = GRE 
+                    modifier = medium_increase
+                }
+                add_political_power = 100
+            }
+        GRE = {
+                add_opinion_modifier = {
+                    target = TUR
+                    modifier = medium_increase
+                }
+                add_political_power = 100
+            }
+        }
+    }
+#armenian negotiations
+country_event = {
+    id = turk.7
+    title = turk.7.t
+    desc = turk.7.d
+    picture = ####################################
+   
+  is_triggered_only = yes
+  
+    option = {
+        name = turk.7.a
+        ARM = {
+add_idea = {
+                idea = TUR_arm_border_open
+                }
+        }
+        TUR = {
+                add_opinion_modifier = {
+                    target = ARM 
+                    modifier = medium_increase
+                }
+                add_political_power = 100
+            }
+        ARM = {
+                add_opinion_modifier = {
+                    target = TUR
+                    modifier = medium_increase
+                }
+                add_political_power = 100
+            }
+    }
+}

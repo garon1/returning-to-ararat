@@ -857,4 +857,7 @@ IND = {
 GTA = {
 	color = rgb { 193 62 119 }
 	color_ui = rgb { 193 62 119 }
+KUD = {
+	color = rgb { 195 87 1 }
+	color_ui = rgb { 195 87 1 }
 }

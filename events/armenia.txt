@@ -50,17 +50,20 @@ country_event = {
                 add_core_of = SIV
             }
             352 = {
-                
+                add_core_of = KUD
                 add_core_of = SIV
             }
             800 = {
-                
+                add_core_of = KUD
                 add_core_of = SIV
             }
             353 = {
                 add_core_of = SIV
                 
             }
+            KUD = { 
+            transfer_state = 352
+                }  
         SIV = { transfer_state = 799
         transfer_state = 344
         transfer_state = 349
@@ -72,7 +75,25 @@ country_event = {
                         target = SIV
                         type = civil_war
                     }
+                    declare_war_on = {
+                        target = KUD
+                        type = civil_war
+                    }
                 }
+
+                KUD = {
+                    add_civil_war_target = ARM
+                
+            set_equipment_fraction = 0.5
+            set_stability = 0.2
+            set_war_support = 0.8
+            add_equipment_to_stockpile = {
+                    type = infantry_equipment_1
+                    amount = 3000
+                    producer = KUD
+                }
+            load_oob = "KUD_Civil_War"
+            }
 
             SIV = {
                     add_civil_war_target = ARM

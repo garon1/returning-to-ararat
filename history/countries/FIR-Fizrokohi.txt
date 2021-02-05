@@ -85,9 +85,9 @@ set_politics = {
 	elections_allowed = no
 }
 create_country_leader = {
-    name = "Vasil Zacharka"
+    name = "Mohammed Daoud Khan"
     desc = ""
-    picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+    picture = "gfx/leaders/AFG/Portrait_Afghan_Mohammed_Daoud_Khan.tga"
     expire = "1965.1.1"
     ideology = traditional_conservatism_subtype
     traits = {
