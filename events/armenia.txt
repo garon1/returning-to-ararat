@@ -107,9 +107,23 @@ country_event = {
                     producer = SIV
                 }
             load_oob = "SIV_Civil_War"
+                }
             }
-        
         }
     }
+}
+#civil war hidden event won by arm
+country_event = {
+    id = arm.2
+    title = arm.2.t
+    desc = arm.2.d
+    picture = GFX_report_event_arm_turks
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = arm.2.a
+        }
+        set_country_flag = ARM_war_won
     }
 }

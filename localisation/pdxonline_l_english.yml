@@ -167,8 +167,8 @@ ARM_High_Authority:0 "§YIntegrated Province§!"
 ARM_High_Authority_desc:0 "Although no state in Armenia is actually an Integrated Province, it has still be used and classified, to define when an Armenian province and/or state has been fully made a part of the Armenian nation. Even the state where the nation's capital is in (Karin), full pacification and full integration has only occured on two provinces: Erivan and Mountainous Karabakh. Enough integration had occured to the point where there is almost no resistance is in either two provinces. Despite this, the Armenian capital still remains in the Karin Kavat, due to how effective it has been to rule the country."
 
 
-KR_muslim_association_tooltip:0 "§YMember of the Association of Muslim Nations§!"
-KR_muslim_association_tooltip_desc:0 "§gAn international organisation to foster and strengthen the ties between the various nations following the Islamic faith, the Association of Muslim Nations is an Armenian initiative and consists of diplomatic, economic, social and cultural sub-organisations.§!"
+KR_muslim_association:0 "§YMember of the Association of Muslim Nations§!"
+KR_muslim_association:0 "§gAn international organisation to foster and strengthen the ties between the various nations following the Islamic faith, the Association of Muslim Nations is an Armenian initiative and consists of diplomatic, economic, social and cultural sub-organisations.§!"
 
 ### State Descriptions ###
 
@@ -200,3 +200,28 @@ ARM_Population_Erzurum:0 "Ethnic & Religious Demographics: Significant Christian
 ARM_Population_Erzurum_desc:0 "During the 1894 rebellion, Karin was a hotbed for Armenian rebels, and for decades earlier a hotbed for Armenian nationalism. After the Treaty of Baku was signed and ratified, the region of Karin went through a significant change. The Armenian population from 1900-1920 boomed while Turks, feeling pressure from the Russians and Armenians alike moved out in masse. Depopulated Muslim Turkish towns repopulated with Christian Armenians. By 1920, 55% of people in Karin were Armenians.\n\nAfter Armenians gained independence, Turks, especially in the peripheral regions of Eastern Anatolia rebelled to unify with Turkey. Infrastructure was damaged, railroads were blown up, which only made the war effort in the Caucasus harder and harder. After peace came, the Turkish rebels gradually faided until 1933 when rebels were thoroughly pushed underground. The same year, in 1933 the Armenian leader Garegin Nzhdeh decided to move the capital to Karin in order to have more control over the Armenian provinces from Shusha to Sivas.\n\nKarin is an economically and culturally important region of Armenia, not only serving as the nation's capital, but also is one of the fastest growing provinces in the entire country. Karin also is in the midst of industrializing, receiving heavy funds from the government."
 
 ARM_increase_revolt_risk_tt:0 "§Rincreases in revolt§!"
+########################## american gui
+confederate_support_low:0 "§GLow Confederate Support§!"
+confederate_support_low_tooltip:0 "The total amount of control Confederate governors and ideals have over Federalists and the Union state is relatively low. This state will remain mostly loyal to the Federalists."
+confederate_support_medium:0 "§YMedium Confederate Support§!"
+confederate_support_medium_tooltip:0 "The total amount of control Confederate governors and ideals have over Federalists and the Union state is more or less an even split. This state will remain neutral to the Federalists."
+confederate_support_high:0 "§RHigh Confederate Support§!"
+confederate_support_high_tooltip:0 "The total amount of control Confederate governors and ideals have over Federalists and the Union is very high. This state currently is not and will not stay loyal to the Union."
+confederate_support_total:0 "§Total Confederate Support§!"
+confederate_support_total_tooltip:0 "The total amount of control Confederate governors and ideals have over Federalists and the Union is absolute and total. The state is actively going against the Federalists and Unionists."
+american_leftist_support_low:0 "§GLow Leftist Support§!"
+american_leftist_support_low_tooltip:0 "The total amount of control Leftist governors and ideals have over Federalists and the Union state is relatively low. This state will remain mostly loyal to the Federalists."
+american_leftist_support_medium:0 "§YMedium Leftist Support§!"
+american_leftist_support_medium_tooltip:0 "The total amount of control Leftist governors and ideals have over Federalists and the Union state is more or less an even split. This state will remain neutral to the Federalists."
+american_leftist_support_high:0 "The total amount of control Leftist governors and ideals have over Federalists and the Union is very high. This state currently is not and will not stay loyal to the Union."
+american_leftist_support_high_tooltip:0 "§RHigh Leftist Support§!"
+american_leftist_support_total:0 "§Total Leftist Support§!"
+american_leftist_support_total_tooltip:0 "The total amount of control Leftist governors and ideals have over Federalists and the Union is absolute and total. The state is actively going against the Federalists and Unionists."
+american_legion_support_low:0 "§GLow Popularianist Support§!"
+american_legion_support_low_tooltip:0 "The total amount of control Popularianist governors and ideals have over Federalists and the Union state is relatively low. This state will remain mostly loyal to the Federalists."
+american_legion_support_medium:0 "§YMedium Popularianist Support§!"
+american_legion_support_medium_tooltip:0 "The total amount of control Popularianist governors and ideals have over Federalists and the Union state is more or less an even split. This state will remain neutral to the Federalists."
+american_legion_support_high:0 "§RHigh Popularianist Support§!"
+american_legion_support_high_tooltip:0 "The total amount of control Popularianist governors and ideals have over Federalists and the Union is very high. This state currently is not and will not stay loyal to the Union."
+american_legion_support_total:0 "§Total Popularianist Support§!"
+american_legion_support_total_tooltip:0 "The total amount of control Popularianist governors and ideals have over Federalists and the Union is absolute and total. The state is actively going against the Federalists and Unionists."

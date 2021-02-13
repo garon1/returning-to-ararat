@@ -8,10 +8,10 @@ state={
 	}
 
 	history={
-		owner = CHI
-		add_core_of = PRC
+		owner = GUO
 		add_core_of = CHI
-		add_core_of = PRC
+		add_core_of = QNG
+		add_core_of = GUO
 		victory_points = {
 			8049 3 
 		}
@@ -27,14 +27,13 @@ state={
 				bunker = 2
 
 			}
-			
 
 		}
 
 	}
 
 	provinces={
-		517 4939 8049 10733 12156 12356 
+		517 1647 4939 5025 8049 10733 12156 12356 
 	}
 	manpower=7006200
 	buildings_max_level_factor=1.000

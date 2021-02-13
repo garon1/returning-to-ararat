@@ -101,14 +101,15 @@ form_baltic_federation_category = {
 	}
 }
 
-form_ottoman_empire_category = {
+form_turan_category = {
 
 	icon = generic_formable_nations
 
-	picture = GFX_decision_cat_generic_ottoman_empire
+	picture = GFX_decision_cat_picture_form_turan
 
 	allowed = {
-		has_dlc = "Waking the Tiger"
+		#has_dlc = "#TODO"
+		has_completed_focus = TUR_turanist_ambition
 	}
 }
 
@@ -245,17 +246,6 @@ form_greater_greece_category = {
 	icon = generic_formable_nations
 
 	picture = GFX_decision_cat_picture_form_greater_greece
-
-	allowed = {
-		#has_dlc = "#TODO"
-	}
-}
-
-form_turan_category = {
-
-	icon = generic_formable_nations
-
-	picture = GFX_decision_cat_picture_form_turan
 
 	allowed = {
 		#has_dlc = "#TODO"

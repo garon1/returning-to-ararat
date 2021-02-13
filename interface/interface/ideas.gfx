@@ -1,16 +1,32 @@
 
 spriteTypes = {
 spriteType = {
+		name = "GFX_idea_TUR_disabled"
+		texturefile = "gfx/interface/ideas/idea_tur_second_five_year_plan_cakmak.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_war_prep"
+		texturefile = "gfx/interface/ideas/idea_tur_coordinated_balkan_armed_forces.dds"
+	}
+spriteType = {
+		name = "GFX_idea_TUR_europe_expeditions"
+		texturefile = "gfx/interface/ideas/idea_rom_carol_ii_hedonist.dds"
+	}
+spriteType = {
+		name = "GFX_idea_ITA_turkish_nationalism"
+		texturefile = "gfx/interface/ideas/FRA_national_mobilization_focus.dds"
+	}
+spriteType = {
+		name = "GFX_idea_ARA_turkmen"
+		texturefile = "gfx/interface/ideas/idea_tur_tdpa.dds"
+	}
+spriteType = {
 		name = "GFX_idea_GRE_turk_negotiations"
 		texturefile = "gfx/interface/ideas/idea_tur_varlik_vergisi.dds"
 	}
 spriteType = {
 		name = "GFX_idea_TUR_air_superiority"
 		texturefile = "gfx/interface/ideas/idea_north_american_aviation.dds"
-	}
-spriteType = {
-		name = "GFX_idea_TUR_ottoman_renaissance"
-		texturefile = "gfx/interface/ideas/idea_tur_funkplan.dds"
 	}
 spriteType = {
 		name = "GFX_idea_TUR_ottoman_renaissance"

@@ -1,6 +1,108 @@
 ideas = {
 
 	country = {
+	TUR_disabled = { 
+
+			allowed = {
+				original_tag = TUR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = tur_kemalist_army_officers_powerful_loyal
+				
+			removal_cost = -1
+				
+			modifier = {
+				conscription_factor = 0.01
+				production_factory_start_efficiency_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+	TUR_europe_expeditions = { 
+
+			allowed = {
+				original_tag = TUR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = tur_kemalist_army_officers_powerful_loyal
+				
+			removal_cost = -1
+				
+			modifier = {
+				industrial_capacity_factory = 0.1
+				industry_repair_factor = 0.1
+				research_speed_factor = 0.1
+			}
+		}
+	ITA_turkish_nationalism = { 
+
+			allowed = {
+				original_tag = TUR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = tur_kemalist_army_officers_powerful_loyal
+				
+			removal_cost = -1
+				
+			modifier = {
+				compliance_growth_on_our_occupied_states = -0.5
+				resistance_damage_to_garrison_on_our_occupied_states = 0.5
+				resistance_growth_on_our_occupied_states = 0.5
+			}
+		}
+		TUR_war_prep = { 
+
+			allowed = {
+				original_tag = TUR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = tur_kemalist_army_officers_powerful_loyal
+				
+			removal_cost = -1
+				
+			modifier = {
+				justify_war_goal_time = -0.3
+				war_support_weekly = 0.09
+				offensive_war_stability_factor = 0.3
+				conscription = 0.03
+				production_factory_efficiency_gain_factor = 0.3
+			}
+		}
+	ARA_turkmen = { 
+
+			allowed = {
+				original_tag = TUR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = tur_kemalist_army_officers_powerful_loyal
+				
+			removal_cost = -1
+				
+			modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = -0.05
+				add_stability = 0.09
+			}
+		}
 	GRE_turk_negotiations = { 
 
 			allowed = {
@@ -427,7 +529,7 @@ ideas = {
 			}
 
 			available = {
-				has_government = communism
+				has_government = radical_socialism
 			}
 			
 			traits = { revolutionary_author }

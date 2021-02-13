@@ -4,14 +4,10 @@ state={
 	name="STATE_453"
 
 	history={
-set_demilitarized_zone = yes
+		set_demilitarized_zone = yes
 		owner = GTA
 		buildings = {
-			infrastructure = 2
-			dockyard = 1
-			4073 = {
-				naval_base = 3
-			}
+			infrastructure = 1
 
 		}
 		add_core_of = EGY
@@ -20,9 +16,9 @@ set_demilitarized_zone = yes
 	}
 
 	provinces={
-		1112 4073 4161 9947 10002 10099 11922 11979 12073 
+		1112 4073 4161 10002 10099 11922 11979 12073 
 	}
-	manpower=115359
+	manpower=15359
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=rural
 }

@@ -1,3 +1,15 @@
+SIC = {
+	color = rgb { 159 198 188 }
+	color_ui = rgb { 159 198 188 }
+}
+GUI = {
+	color = rgb { 177 198 101 }
+	color_ui = rgb { 177 198 101 }
+	}
+GUO = {
+	color = rgb { 145 198 135 }
+	color_ui = rgb { 145 198 135 }
+}
 RIF = {
 	color = rgb { 175 146 42 }
 	color_ui = rgb { 175 146 42 }

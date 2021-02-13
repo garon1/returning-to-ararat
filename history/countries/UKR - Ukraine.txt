@@ -72,23 +72,19 @@ add_ideas = {
 	UKR_not_industrialized
 }
 set_politics = {
-		ruling_party = traditional_conservatism
+		ruling_party = anarchism
 		last_election = "1936.1.1"
 		election_frequency = 48
 		elections_allowed = yes
 	}
 set_popularities = {
-	monarchism = 5
-radical_socialism = 2
-social_democracy = 11
-market_liberal = 6
-social_liberal = 8
-traditional_conservatism = 37
-totalitarianism = 6
-syndicalism = 3
+radical_socialism = 10
+market_liberal = 5
+social_liberal = 5
+syndicalism = 5
 market_socialism = 7
 nationalism = 8
-anarchism = 7
+anarchism = 60
 }
 create_country_leader = {
 	name = "Dmytro Dontsov"
@@ -184,8 +180,8 @@ create_country_leader = {
 	}
 }
 create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+		name = "Nestor Makhno"
+	picture = "gfx/leaders/UKR/Portrait_UKR_Nestor_Makhno.dds"
 	expire = "1965.1.1"
 	ideology = anarchism_subtype
 	traits = {

@@ -9,6 +9,9 @@ manpower=150859
 		victory_points = {
 			9715 10 
 		}
+victory_points = {
+			1467 10 
+		}
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1

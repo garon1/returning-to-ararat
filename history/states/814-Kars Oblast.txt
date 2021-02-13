@@ -11,7 +11,7 @@ state={
 
 		}
 		victory_points = {
-		10472 1 
+		789 1 
 		}
 		add_core_of = ARM
 

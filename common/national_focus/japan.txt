@@ -1214,7 +1214,6 @@ completion_reward = {
 							id = "PHI"
 							value = 200
 						}
-					unlock_decision_tooltip = JAP_pressure_france
 				}
 
 	}

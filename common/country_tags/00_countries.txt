@@ -240,3 +240,7 @@ KON = "countries/Kon Republic.txt"
 SIV = "countries/Sivas.txt"
 RIF = "countries/Rif.txt"
 KUD = "countries/Kurdish Rebellion.txt"
+### china
+SIC = "countries/Sichuan.txt"
+GUI = "countries/Guizhou.txt"
+GUO = "countries/Guominjun.txt"
