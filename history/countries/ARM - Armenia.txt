@@ -30,6 +30,13 @@ set_technology = {
 	fleet_in_being = 1
 }
 
+add_ideas = {
+ARM_disunification
+ARM_garegin_nzdeh
+ARM_language_barrier
+ARM_militarist_mentality
+}
+
 set_technology = {
 		basic_naval_mines = 1
 		submarine_mine_laying = 1
@@ -60,9 +67,17 @@ country_event = {
 	id = tas_political.1
 	hours = 6
 }
-
+country_event = {
+	id = arm.16
+	hours = 6
+}
 country_event = {
 	id = arm.1
+	days = 200
+}
+
+country_event = {
+	id = arm.6
 	days = 200
 }
 

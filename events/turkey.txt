@@ -1,319 +1,176 @@
-add_namespace = turk
+add_namespace = turkrepublic
 
 #beginning event
 country_event = {
-    id = turk.1
-    title = turk.1.t
-    desc = turk.1.d
+    id = turkrepublic.1
+    title = turkrepublic.1.t
+    desc = turkrepublic.1.d
     picture = GFX_report_event_tur_sultan_in_istanbul
    
   is_triggered_only = yes
-  fire_only_once = yes
+
   
     option = {
-        name = turk.1.a
-        country_event = turk.2
+        name = turkrepublic.1.a
+        country_event = turkrepublic.2
     }
 }
 #continue event
 country_event = {
-    id = turk.2
-    title = turk.2.t
-    desc = turk.2.d
+    id = turkrepublic.2
+    title = turkrepublic.2.t
+    desc = turkrepublic.2.d
     picture = GFX_report_event_tur_sultan_in_istanbul
    
   is_triggered_only = yes
-  fire_only_once = yes
+
   
     option = {
-        name = turk.2.a
+        name = turkrepublic.2.a
     }
 }
-#dowa turkey 
+#dowa turkrepublicey 
 country_event = {
-    id = turk.3
-    title = turk.3.t
-    desc = turk.3.d
+    id = turkrepublic.3
+    title = turkrepublic.3.t
+    desc = turkrepublic.3.d
     picture = GFX_report_event_gre_megali_conference_signing
     
     is_triggered_only = yes
-  fire_only_once = yes
+
     
     option = {
-    country_event = turk.4
+    country_event = turkrepublic.4
     }
 }
 # dowa event
 country_event = {
-    id = turk.4
-    title = turk.4.t
-    desc = turk.4.d
+    id = turkrepublic.4
+    title = turkrepublic.4.t
+    desc = turkrepublic.4.d
     picture = GFX_report_event_gre_megali_conference_signing
     
     is_triggered_only = yes
-  fire_only_once = yes
+
     
     option = {
-    name = turk.4.a
-    if = {
-        limit = {
-        ANA = { is_in_faction_with = ARA }
-        }
-        TUR = {
-                add_opinion_modifier = {
-                    target = ANA
-                    modifier = large_increase
-                }
-            }
-        ANA = {
-                add_opinion_modifier = {
-                    target = TUR
-                    modifier = large_increase
-                }
-            }
-        }
-        if = {
-        limit = {
-        ARA = { is_in_faction = yes }
-        }
-        news_event = { id = news.407 hours = 8 }
-        TUR = {
-                add_opinion_modifier = {
-                    target = ARA
-                    modifier = large_increase
-                }
-                set_country_flag = TUR_ARA_DOWA_reconciliation
-            }
-        ARA = {
-                add_opinion_modifier = {
-                    target = TUR
-                    modifier = large_increase
-                }
-            }
-        }
-        if = {
-        limit = {
-        ARM = { is_in_faction = yes }
-        }
-        TUR = {
-                add_opinion_modifier = {
-                    target = ARM
-                    modifier = large_increase
-                }
-            }
-        ARM = {
-                add_opinion_modifier = {
-                    target = TUR
-                    modifier = large_increase
-                }
-            }
-        }
+    name = turkrepublic.4.a
     }
 }
-#arabian reconciliation
+#The Montreux Convention - Soviets Oppose turkrepublicish Remilitarisation of the Straits
 country_event = {
-    id = turk.5
-    title = turk.5.t
-    desc = turk.5.d
-    picture = GFX_report_event_tur_sultan_in_istanbul
-   
-  is_triggered_only = yes
-  fire_only_once = yes
-  
+    id = turkrepublic.5
+    title = turkrepublic.5.t
+    desc = turkrepublic.5.desc
+    picture = GFX_report_event_tur_cakmak_general_staff
+
+    is_triggered_only = yes
+    
     option = {
-        name = turk.5.a
-        TUR = {
-        add_manpower = -2000
-        send_equipment = {
-                type = fighter_equipment
-                amount = 2
-                target = ARA
-            }
-        }
-        TUR = {
-                add_opinion_modifier = {
-                    target = ARA
-                    modifier = medium_increase
-                }
-            }
-        ARA = {
-                add_opinion_modifier = {
-                    target = TUR
-                    modifier = medium_increase
-                }
-            }
+        name = turkrepublic.5.a
     }
+    option = {
+        name = turkrepublic.5.b 
+
+    }   
 }
-#greek negotiations
+#The Montreux Convention - Soviets Oppose turkrepublicish Remilitarisation of the Straits
 country_event = {
-    id = turk.5
-    title = turk.5.t
-    desc = turk.5.d
-    picture = GFX_report_event_tur_sultan_in_istanbul
-   
-  is_triggered_only = yes
-  fire_only_once = yes
-  
+    id = turkrepublic.6
+    title = turkrepublic.6.t
+    desc = turkrepublic.6.desc
+    picture = GFX_report_event_tur_cakmak_general_staff
+
+    is_triggered_only = yes
+    
     option = {
-        name = turk.5.a
-        TUR = {
-        add_manpower = -2000
-        send_equipment = {
-                type = fighter_equipment
-                amount = 2
-                target = ARA
-            }
-        }
-        TUR = {
-                add_opinion_modifier = {
-                    target = ARA
-                    modifier = medium_increase
-                }
-            }
-        ARA = {
-                add_opinion_modifier = {
-                    target = TUR
-                    modifier = medium_increase
-                }
-            }
+        name = turkrepublic.6.a
     }
+    option = {
+        name = turkrepublic.6.b 
+
+    }   
 }
-#greek negotiations
+
+#The Montreux Convention - Soviets Oppose turkrepublicish Remilitarisation of the Straits
 country_event = {
-    id = turk.6
-    title = turk.6.t
-    desc = turk.6.d
-    picture = ####################################
-   
-  is_triggered_only = yes
-  fire_only_once = yes
-  
+    id = turkrepublic.7
+    title = turkrepublic.7.t
+    desc = turkrepublic.7.desc
+    picture = GFX_report_event_tur_cakmak_general_staff
+
+    is_triggered_only = yes
+    
     option = {
-        name = turk.6.a
-        GRE = { send_equipment = {
-                type = artillery
-                amount = 2
-                target = TUR
-                }
-                add_timed_idea = {
-                idea = GRE_turk_negotiations
-                days = 20
-                }
-            }
-        TUR = {
-                add_opinion_modifier = {
-                    target = GRE 
-                    modifier = medium_increase
-                }
-                add_political_power = 100
-            }
-        GRE = {
-                add_opinion_modifier = {
-                    target = TUR
-                    modifier = medium_increase
-                }
-                add_political_power = 100
-            }
-        }
+        name = turkrepublic.7.a
     }
-#armenian negotiations
-country_event = {
-    id = turk.7
-    title = turk.7.t
-    desc = turk.7.d
-    picture = ####################################
-   
-  is_triggered_only = yes
-  fire_only_once = yes
-  
     option = {
-        name = turk.7.a
-        ARM = {
-add_idea = {
-                idea = TUR_arm_border_open
-                }
-        }
-        TUR = {
-                add_opinion_modifier = {
-                    target = ARM 
-                    modifier = medium_increase
-                }
-                add_political_power = 100
-            }
-        ARM = {
-                add_opinion_modifier = {
-                    target = TUR
-                    modifier = medium_increase
-                }
-                add_political_power = 100
-            }
-    }
+        name = turkrepublic.7.b 
+
+    }   
 }
 #arab negotiations
 country_event = {
-    id = turk.8
-    title = turk.8.t
-    desc = turk.8.d
-    picture = ####################################
+    id = turkrepublic.8
+    title = turkrepublic.8.t
+    desc = turkrepublic.8.d
+    picture = GFX_report_event_tur_sultan_in_istanbul
    
-  is_triggered_only = yes
-  fire_only_once = yes
+  is_triggered_only  yes
   
     option = {
-        name = turk.8.a
-        TUR = {
-                add_opinion_modifier = {
-                    target = ARA 
-                    modifier = medium_increase
-                }
-                add_political_power = 100
-            }
-        ARA = {
-                add_opinion_modifier = {
-                    target = TUR
-                    modifier = medium_increase
-                }
-                add_political_power = 100
-            }
-    }
+        name = turkrepublic.8.a
+
+        }
+    
+    option = {
+        name = turkrepublic.8.b
+        
+        }
 }
 #idea for railroad
 country_event = {
-    id = turk.9
-    title = turk.9.t
-    desc = turk.9.d
-    picture = ################################
+    id = turkrepublic.9
+    title = turkrepublic.9.t
+    desc = turkrepublic.9.d
+    picture = GFX_report_event_tur_sultan_in_istanbul
    
   is_triggered_only = yes
+
   fire_only_once = yes
+
+   trigger = { original_tag = TUR }
   
     option = {#yes
-        name = turk.9.a
+        name = turkrepublic.9.a
         ai_chance = {
         factor = 70
         }
-        country_event = turk.10
+        country_event = turkrepublic.10
     }
     option = {#no
-        name = turk.9.b
+        name = turkrepublic.9.b
         ai_chance = {
         factor = 30
         }
-        country_event = turk.11
+        country_event = turkrepublic.11
     }
 }
 #dowa railroad is built
 country_event = {
-    id = turk.10
-    title = turk.10.t
-    desc = turk.10.d
-    picture = ################################
+    id = turkrepublic.10
+    title = turkrepublic.10.t
+    desc = turkrepublic.10.d
+    picture = GFX_report_event_tur_sultan_in_istanbul
    
   is_triggered_only = yes
+
   fire_only_once = yes
+
+   trigger = { original_tag = TUR }
   
     option = {#yes
-        name = turk.10.a
+        name = turkrepublic.10.a
         49 = {
         add_building_construction = {
                                     type = infrastructure
@@ -381,94 +238,103 @@ country_event = {
 }
 #dowa says NO
 country_event = {
-    id = turk.11
-    title = turk.11.t
-    desc = turk.11.d
-    picture = ################################
+    id = turkrepublic.11
+    title = turkrepublic.11.t
+    desc = turkrepublic.11.d
+    picture = GFX_report_event_tur_sultan_in_istanbul
    
   is_triggered_only = yes
+
   fire_only_once = yes
+
+   trigger = { original_tag = TUR }
   
     option = {#yes
-        name = turk.11.a
-        country_event = turk.10
+        name = turkrepublic.11.a
+        country_event = turkrepublic.10
     }
     option = {#no
-        name = turk.11.b
+        name = turkrepublic.11.b
     }
 }
 #event to ask greece to aid anatolia
 country_event = {
-    id = turk.12
-    title = turk.12.t
-    desc = turk.12.d
-    picture = ################################
+    id = turkrepublic.12
+    title = turkrepublic.12.t
+    desc = turkrepublic.12.d
+    picture = GFX_report_event_tur_sultan_in_istanbul
    
   is_triggered_only = yes
+
   fire_only_once = yes
+
+   trigger = { original_tag = TUR }
   
     option = {#yes
-        name = turk.12.a
+        name = turkrepublic.12.a
         ai_chance = {
         factor = 45
         }
         TUR = {
-        country_event = turk.13
+        country_event = turkrepublic.13
         }
     }
     option = {#no
-        name = turk.12.b
+        name = turkrepublic.12.b
         ai_chance = {
         factor = 55
         }
         TUR = {
-        country_event = turk.14
+        country_event = turkrepublic.14
         }
     }
 }
 #greeece accepts
 country_event = {
-    id = turk.13
-    title = turk.13.t
-    desc = turk.13.d
-    picture = ################################
+    id = turkrepublic.13
+    title = turkrepublic.13.t
+    desc = turkrepublic.13.d
+    picture = GFX_report_event_tur_sultan_in_istanbul
    
   is_triggered_only = yes
+
   fire_only_once = yes
+
+   trigger = { original_tag = TUR }
   
     option = {#yes
-        name = turk.13.a
+        name = turkrepublic.13.a
         ANA = {
-        event = turk.15
+        event = turkrepublic.15
         }
     }
 }
 #greeece declines
 country_event = {
-    id = turk.14
-    title = turk.14.t
-    desc = turk.14.d
-    picture = ################################
+    id = turkrepublic.14
+    title = turkrepublic.14.t
+    desc = turkrepublic.14.d
+    picture = GFX_report_event_tur_sultan_in_istanbul
    
   is_triggered_only = yes
-  fire_only_once = yes
+
   
     option = {#yes
-        name = turk.14.a
+        name = turkrepublic.14.a
     }
 }
-#anatolia is helped by turkey
+#anatolia is helped by turkrepublicey
 country_event = {
-    id = turk.15
-    title = turk.15.t
-    desc = turk.15.d
-    picture = ################################
+    id = turkrepublic.15
+    title = turkrepublic.15.t
+    desc = turkrepublic.15.d
+    picture = GFX_report_event_tur_sultan_in_istanbul
    
   is_triggered_only = yes
-  fire_only_once = yes
+
   
     option = {#yes
-        name = turk.15.a
+        name = turkrepublic.15.a
         TUR = {
        add_political_power = -100
         add_stability = -0.07
@@ -494,82 +360,82 @@ country_event = {
         }
     }
 }
-#event to ask arabia to aid turkmens
+#event to ask arabia to aid turkrepublicmens
 country_event = {
-    id = turk.16
-    title = turk.16.t
-    desc = turk.16.d
-    picture = ################################
+    id = turkrepublic.16
+    title = turkrepublic.16.t
+    desc = turkrepublic.16.d
+    picture = GFX_report_event_tur_sultan_in_istanbul
    
   is_triggered_only = yes
-  fire_only_once = yes
+
   
     option = {#yes
-        name = turk.16.a
+        name = turkrepublic.16.a
         ai_chance = {
         factor = 45
         }
         TUR = {
-        country_event = turk.17
+        country_event = turkrepublic.17
         }
     }
     option = {#no
-        name = turk.16.b
+        name = turkrepublic.16.b
         ai_chance = {
         factor = 55
         }
         TUR = {
-        country_event = turk.18
+        country_event = turkrepublic.18
         }
     }
 }
-#no with turkmens
+#no with turkrepublicmens
 country_event = {
-    id = turk.17
-    title = turk.17.t
-    desc = turk.17.d
-    picture = ################################
+    id = turkrepublic.17
+    title = turkrepublic.17.t
+    desc = turkrepublic.17.d
+    picture = GFX_report_event_tur_sultan_in_istanbul
    
   is_triggered_only = yes
-  fire_only_once = yes
+
   
     option = {#yes
-        name = turk.17.a
+        name = turkrepublic.17.a
         ARA = {
-        add_ideas = {
-        ARA_turkmen
+        add_ideass = {
+        ARA_turkrepublicmen
             }
         }
     }
 }
-#no with turkmens
+#no with turkrepublicmens
 country_event = {
-    id = turk.18
-    title = turk.18.t
-    desc = turk.18.d
-    picture = ################################
+    id = turkrepublic.18
+    title = turkrepublic.18.t
+    desc = turkrepublic.18.d
+    picture = GFX_report_event_tur_sultan_in_istanbul
    
   is_triggered_only = yes
-  fire_only_once = yes
+
   
     option = {#yes
-        name = turk.18.a
+        name = turkrepublic.18.a
     }
 }
-#turkey protests italian claims
+#turkrepublicey protests italian claims
 country_event = {
-    id = turk.19
-    title = turk.19.t
-    desc = turk.19.d
-    picture = ################################
+    id = turkrepublic.19
+    title = turkrepublic.19.t
+    desc = turkrepublic.19.d
+    picture = GFX_report_event_tur_sultan_in_istanbul
    
   is_triggered_only = yes
-  fire_only_once = yes
+
   
     option = {#yes
-        name = turk.19.a
+        name = turkrepublic.19.a
         ITA = {
-        add_ideas = ITA_turkish_nationalism
+        add_ideass = ITA_turkrepublicish_nationalism
         }
         ITA = {
                 add_opinion_modifier = {
@@ -586,48 +452,48 @@ country_event = {
         }
     }
 }
-#turkey makes expeditions to europe
+#turkrepublicey makes expeditions to europe
 country_event = {
-    id = turk.20
-    title = turk.20.t
-    desc = turk.20.d
-    picture = ################################
+    id = turkrepublic.20
+    title = turkrepublic.20.t
+    desc = turkrepublic.20.d
+    picture = GFX_report_event_tur_sultan_in_istanbul
    
   is_triggered_only = yes
-  fire_only_once = yes
+
   
     option = {#yes
-        name = turk.20.a
-        add_ideas = TUR_europe_expeditions
+        name = turkrepublic.20.a
+        add_ideass = TUR_europe_expeditions
     }
 }
-#joint turkish european research initiative
+#joint turkrepublicish european research initiative
 country_event = {
-    id = turk.21
-    title = turk.21.t
-    desc = turk.21.d
-    picture = ################################
+    id = turkrepublic.21
+    title = turkrepublic.21.t
+    desc = turkrepublic.21.d
+    picture = GFX_report_event_tur_sultan_in_istanbul
    
   is_triggered_only = yes
-  fire_only_once = yes
+
   
     option = {#yes
-        name = turk.21.a
+        name = turkrepublic.21.a
         add_research_slot = 1
     }
 }
-#turkish leftist assembly
+#turkrepublicish leftist assembly
 country_event = {
-    id = turk.22
-    title = turk.22.t
-    desc = turk.22.d
-    picture = ################################
+    id = turkrepublic.22
+    title = turkrepublic.22.t
+    desc = turkrepublic.22.d
+    picture = GFX_report_event_tur_sultan_in_istanbul
    
   is_triggered_only = yes
-  fire_only_once = yes
+
   
     option = {#yes
-        name = turk.22.a
+        name = turkrepublic.22.a
         add_popularity = {
         popularity = 0.2
         ideology = radical_socialism
@@ -637,18 +503,18 @@ country_event = {
         add_stability = -0.1
     }
 }
-#turkish commie protest
+#turkrepublicish commie protest
 country_event = {
-    id = turk.23
-    title = turk.23.t
-    desc = turk.23.d
-    picture = ################################
+    id = turkrepublic.23
+    title = turkrepublic.23.t
+    desc = turkrepublic.23.d
+    picture = GFX_report_event_tur_sultan_in_istanbul
    
   is_triggered_only = yes
-  fire_only_once = yes
+
   
     option = {#yes
-        name = turk.23.a
+        name = turkrepublic.23.a
         add_popularity = {
         popularity = -0.1
         ideology = radical_socialism
@@ -658,18 +524,17 @@ country_event = {
         add_stability = -0.1
     }
 }
-#turkey comes back to ottomans
+#turkrepublicey comes back to ottomans
 country_event = {
-    id = turk.24
-    title = turk.24.t
-    desc = turk.24.d
-    picture = ################################
+    id = turkrepublic.24
+    title = turkrepublic.24.t
+    desc = turkrepublic.24.d
+    picture = GFX_report_event_tur_sultan_in_istanbul
    
   is_triggered_only = yes
-  fire_only_once = yes
   
     option = {
-        name = turk.24.a 
+        name = turkrepublic.24.a 
         hidden_effect = {
         add_stability = 0.15
         add_war_support = 0.15
@@ -700,16 +565,16 @@ country_event = {
 }
 #glory days event
 country_event = {
-    id = turk.25
-    title = turk.25.t
-    desc = turk.25.d
-    picture = ################################
+    id = turkrepublic.25
+    title = turkrepublic.25.t
+    desc = turkrepublic.25.d
+    picture = GFX_report_event_tur_sultan_in_istanbul
    
   is_triggered_only = yes
-  fire_only_once = yes
+
   
     option = {#yes
-        name = turk.25.a
+        name = turkrepublic.25.a
         add_popularity = {
         popularity = 0.09
         ideology = nationalism
@@ -739,16 +604,16 @@ country_event = {
 }
 #parties are purged
 country_event = {
-    id = turk.26
-    title = turk.26.t
-    desc = turk.26.d
-    picture = ################################
+    id = turkrepublic.26
+    title = turkrepublic.26.t
+    desc = turkrepublic.26.d
+    picture = GFX_report_event_tur_sultan_in_istanbul
    
   is_triggered_only = yes
-  fire_only_once = yes
+
   
     option = {#yes
-        name = turk.26.a
+        name = turkrepublic.26.a
         add_popularity = {
         popularity = 0.10
         ideology = nationalism
@@ -764,16 +629,16 @@ country_event = {
 }
 #the great republic
 country_event = {
-    id = turk.27
-    title = turk.27.t
-    desc = turk.27.d
-    picture = ################################
+    id = turkrepublic.27
+    title = turkrepublic.27.t
+    desc = turkrepublic.27.d
+    picture = GFX_report_event_tur_sultan_in_istanbul
    
   is_triggered_only = yes
-  fire_only_once = yes
+
   
     option = {#yes
-        name = turk.27.a
+        name = turkrepublic.27.a
         add_popularity = {
         popularity = 0.10
         ideology = social_democracy
@@ -786,16 +651,16 @@ country_event = {
 }
 #nationalist coup
 country_event = {
-    id = turk.28
-    title = turk.28.t
-    desc = turk.28.d
-    picture = ################################
+    id = turkrepublic.28
+    title = turkrepublic.28.t
+    desc = turkrepublic.28.d
+    picture = GFX_report_event_tur_sultan_in_istanbul
    
   is_triggered_only = yes
-  fire_only_once = yes
+
   
     option = {#yes
-        name = turk.28.a
+        name = turkrepublic.28.a
         add_popularity = {
         popularity = -0.10
         ideology = social_democracy
@@ -810,41 +675,41 @@ country_event = {
 }
 #russian closeness
 country_event = {
-    id = turk.29
-    title = turk.29.t
-    desc = turk.29.d
-    picture = ################################
+    id = turkrepublic.29
+    title = turkrepublic.29.t
+    desc = turkrepublic.29.d
+    picture = GFX_report_event_tur_sultan_in_istanbul
    
   is_triggered_only = yes
-  fire_only_once = yes
+
   
     option = {#yes
-        name = turk.29.a
+        name = turkrepublic.29.a
         ai_chance = {
         factor = 50
         }
-        country_event = turk.30
+        country_event = turkrepublic.30
     }
     option = {#no
-        name = turk.29.b
+        name = turkrepublic.29.b
         ai_chance = {
         factor = 50
         }
-        country_event = turk.31
+        country_event = turkrepublic.31
     }
 }
 #russia says yes
 country_event = {
-    id = turk.30
-    title = turk.30.t
-    desc = turk.30.d
-    picture = ################################
+    id = turkrepublic.30
+    title = turkrepublic.30.t
+    desc = turkrepublic.30.d
+    picture = GFX_report_event_tur_sultan_in_istanbul
    
   is_triggered_only = yes
-  fire_only_once = yes
+
   
     option = {#yes
-        name = turk.30.a
+        name = turkrepublic.30.a
         RUS = {
                 diplomatic_relation = {
                     country = TUR
@@ -856,16 +721,16 @@ country_event = {
 }
 #russia says no
 country_event = {
-    id = turk.31
-    title = turk.31.t
-    desc = turk.31.d
-    picture = ################################
+    id = turkrepublic.31
+    title = turkrepublic.31.t
+    desc = turkrepublic.31.d
+    picture = GFX_report_event_tur_sultan_in_istanbul
    
   is_triggered_only = yes
-  fire_only_once = yes
+
   
     option = {#no
-        name = turk.31.a
+        name = turkrepublic.31.a
         TUR = { add_opinion_modifier = {
                     target = RUS
                     modifier = medium_decrease
@@ -873,18 +738,18 @@ country_event = {
             }
     }
 }
-#monarchism is brought back to turkey
+#monarchism is brought back to turkrepublicey
 country_event = {
-    id = turk.32
-    title = turk.32.t
-    desc = turk.32.d
-    picture = ################################
+    id = turkrepublic.32
+    title = turkrepublic.32.t
+    desc = turkrepublic.32.d
+    picture = GFX_report_event_tur_sultan_in_istanbul
    
   is_triggered_only = yes
-  fire_only_once = yes
+
   
     option = {#no
-        name = turk.32.a
+        name = turkrepublic.32.a
         set_politics = {
                             ruling_party = monarchism
                             last_election = "1936.2.1"
@@ -895,16 +760,16 @@ country_event = {
 }
 #monarchism enacts new laws
 country_event = {
-    id = turk.33
-    title = turk.33.t
-    desc = turk.33.d
-    picture = ################################
+    id = turkrepublic.33
+    title = turkrepublic.33.t
+    desc = turkrepublic.33.d
+    picture = GFX_report_event_tur_sultan_in_istanbul
    
   is_triggered_only = yes
-  fire_only_once = yes
+
   
     option = {#no
-        name = turk.33.a
+        name = turkrepublic.33.a
         add_popularity = {
         popularity = 0.2
         ideology = monarchism
@@ -913,41 +778,41 @@ country_event = {
 }
 #look at russia
 country_event = {
-    id = turk.34
-    title = turk.34.t
-    desc = turk.34.d
-    picture = ################################
+    id = turkrepublic.34
+    title = turkrepublic.34.t
+    desc = turkrepublic.34.d
+    picture = GFX_report_event_tur_sultan_in_istanbul
    
   is_triggered_only = yes
-  fire_only_once = yes
+
   
     option = {#yes
-        name = turk.34.a
+        name = turkrepublic.34.a
         ai_chance = {
         40
         }
-        country_event = turk.35
+        country_event = turkrepublic.35
     }
     option = {#no
-        name = turk.34.b
+        name = turkrepublic.34.b
         ai_chance = {
         60
         }
-        country_event = turk.31
+        country_event = turkrepublic.31
     }
 }
 #russia agrees
 country_event = {
-    id = turk.35
-    title = turk.35.t
-    desc = turk.35.d
-    picture = ################################
+    id = turkrepublic.35
+    title = turkrepublic.35.t
+    desc = turkrepublic.35.d
+    picture = GFX_report_event_tur_sultan_in_istanbul
    
   is_triggered_only = yes
-  fire_only_once = yes
+
   
     option = {#yes
-        name = turk.35.a
+        name = turkrepublic.35.a
         ai_chance = {
         factor = 50
         }
@@ -956,7 +821,7 @@ country_event = {
         }
     }
     option = {#yes
-        name = turk.35.b
+        name = turkrepublic.35.b
         ai_chance = {
         factor = 50
         }   
@@ -971,31 +836,32 @@ country_event = {
 }
 #new constitution
 country_event = {
-    id = turk.36
-    title = turk.36.t
-    desc = turk.36.d
-    picture = ################################
+    id = turkrepublic.36
+    title = turkrepublic.36.t
+    desc = turkrepublic.36.d
+    picture = GFX_report_event_tur_sultan_in_istanbul
    
   is_triggered_only = yes
-  fire_only_once = yes
+
   
     option = {#yes
-        name = turk.36.a
+        name = turkrepublic.36.a
         add_political_power = 100
     }
 }
 #antakya incident
 country_event = {
-    id = turk.37
-    title = turk.37.t
-    desc = turk.37.d
-    picture = ################################
+    id = turkrepublic.37
+    title = turkrepublic.37.t
+    desc = turkrepublic.37.d
+    picture = GFX_report_event_tur_sultan_in_istanbul
    
   is_triggered_only = yes
-  fire_only_once = yes
+  fire_only_once = yes 
+  trigger = { original_tag = TUR }
   
     option = {#fine give them away
-        name = turk.37.a
+        name = turkrepublic.37.a
         ai_chance = {
         factor = 10
         }
@@ -1005,7 +871,7 @@ country_event = {
         }
     }
     option = {#give away 1 state but not all of them
-        name = turk.37.b
+        name = turkrepublic.37.b
         ai_chance = {
         factor = 15
         }
@@ -1014,7 +880,7 @@ country_event = {
         }
     }
     option = {#we wont let them get away, declare war!
-        name = turk.37.c
+        name = turkrepublic.37.c
         ai_chance = {
         factor = 75
         }
@@ -1026,16 +892,17 @@ country_event = {
 }
 #antakya incident
 country_event = {
-    id = turk.38
-    title = turk.38.t
-    desc = turk.38.d
-    picture = ################################
+    id = turkrepublic.38
+    title = turkrepublic.38.t
+    desc = turkrepublic.38.d
+    picture = GFX_report_event_tur_sultan_in_istanbul
    
   is_triggered_only = yes
-  fire_only_once = yes
+  fire_only_once = yes 
+  trigger = { original_tag = TUR }
   
     option = {#fine give them away
-        name = turk.38.a
+        name = turkrepublic.38.a
         add_stability = 0.1
         add_popularity = {
         ideology - social_democracy
@@ -1053,16 +920,15 @@ country_event = {
 }
 #homelessness is solved
 country_event = {
-    id = turk.39
-    title = turk.39.t
-    desc = turk.39.d
-    picture = ################################
+    id = turkrepublic.39
+    title = turkrepublic.39.t
+    desc = turkrepublic.39.d
+    picture = GFX_report_event_tur_sultan_in_istanbul
    
   is_triggered_only = yes
-  fire_only_once = yes
   
     option = {#fine give them away
-        name = turk.39.a
+        name = turkrepublic.39.a
         add_stability = 0.1
         add_political_power = 90
         }

@@ -422,7 +422,7 @@ bookmarks = {
 		"AZR"={
 			minor = yes
 			history = "AZR_GATHERING_STORM_DESC"
-			ideology = monarchism
+			ideology = social_liberal
 			ideas = {
 				AZR_UCA
 				AZR_mad_at_neighbors
@@ -432,6 +432,19 @@ bookmarks = {
 				AZR_social_liberals_elected
 				AZR_end_treaty_grozny
 				AZR_proclaim_empire
+			}
+		}
+
+		"ARM"={
+			minor = yes
+			history = "ARM_GATHERING_STORM_DESC"
+			ideology = totalitarianism
+			ideas = {
+			}
+			focuses = {
+				ARM_hold_national_elections
+				ARM_finally_end_rivalries
+				ARM_integrate_armenia
 			}
 		}
 		

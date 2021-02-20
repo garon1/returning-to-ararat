@@ -1,1054 +1,829 @@
-ARM_increase_revolt_risk = {
-	custom_effect_tooltip = ARM_increase_revolt_risk_tt
+# Kurdish State Pacified
+ARM_pacify_kurdish_state_effect = {
+	custom_effect_tooltip = ARM_pacify_kurdish_state_effect_tt
 	hidden_effect = {
-		add_to_variable = { ARM_revolt_risk = 1 }
-		clamp_variable = {
-			var = ARM_revolt_risk
-			min = 0
-			max = 5
-		}
-		if = {
-			limit = {
-				has_resistance = no
-				ARM_is_turkish_state = no
-				check_variable = { ARM_revolt_risk > 2 }
-				is_core_of = ARM
+		event_target:ARM_kurdish_state_event_target = {
+			if = { 	
+				limit = {
+					
+				}
+				
+				
+				add_resistance = -20
 			}
-			force_enable_resistance = {
-				occupier = ARM
+			else_if = { 	
+				limit = {
+					has_dynamic_modifier = { modifier = kurdish_separatism }
+				}
+				remove_dynamic_modifier = { modifier = kurdish_separatism }
+				
+				add_resistance = -20
 			}
-			start_resistance = yes
-			set_resistance = 10
-		}
-		if = {
-			limit = {
-				check_variable = { ARM_revolt_risk = 5 }
+			else_if = { 	
+				limit = {
+					has_dynamic_modifier = { modifier = kurdish_rebels }
+				}
+				remove_dynamic_modifier = { modifier = kurdish_rebels }
+				
+				add_resistance = -20
 			}
 			if = {
 				limit = {
-					has_dynamic_modifier = { modifier = high_revolt_risk }
+					event_target:ARM_kurdish_state_event_target = { 
+						NOT = { is_core_of = ARM }
+						compliance > 70
+					}
 				}
-				remove_dynamic_modifier = { modifier = high_revolt_risk }
+				event_target:ARM_kurdish_state_event_target = { ARM_integrate_kurdish_state_effect = yes }
 			}
-			add_dynamic_modifier = { modifier = very_high_revolt_risk }
 		}
-		else_if = {
-			limit = {
-				check_variable = { ARM_revolt_risk = 4 }
-			}
-			add_dynamic_modifier = { modifier = high_revolt_risk }
-		}
-		ARM_evaluate_stabillity_modifier = yes
 	}
 }
 
-ARM_decrease_revolt_risk = {
-	custom_effect_tooltip = ARM_decrease_revolt_risk_tt
+# Kurdish State Effect Downgraded
+ARM_placate_kurdish_state_effect = {
+	custom_effect_tooltip = ARM_placate_kurdish_state_effect_tt
 	hidden_effect = {
-		add_to_variable = { ARM_revolt_risk = -1 }
-		clamp_variable = {
-			var = ARM_revolt_risk
-			min = 0
-			max = 5
-		}
-		if = {
-			limit = {
-				has_resistance = yes
-				ARM_is_turkish_state = no
-				check_variable = { ARM_revolt_risk < 3 }
-				is_core_of = ARM
+		event_target:ARM_kurdish_state_event_target = {
+			if = { 	
+				limit = {
+					
+				}
+				
+				
 			}
-			cancel_resistance = yes
-			force_disable_resistance = { clear = yes }
-		}
-		if = {
-			limit = {
-				check_variable = { ARM_revolt_risk = 4 }
+			else_if = { 	
+				limit = {
+					has_dynamic_modifier = { modifier = kurdish_separatism }
+				}
+				remove_dynamic_modifier = { modifier = kurdish_separatism }
+				add_dynamic_modifier = { modifier = kurdish_agitation }
 			}
-			remove_dynamic_modifier = { modifier = very_high_revolt_risk }
-			add_dynamic_modifier = { modifier = high_revolt_risk }
-		}
-		else_if = {
-			limit = {
-				check_variable = { ARM_revolt_risk = 3 }
+			else_if = { 	
+				limit = {
+					has_dynamic_modifier = { modifier = kurdish_rebels }
+				}
+				remove_dynamic_modifier = { modifier = kurdish_rebels }
+				add_dynamic_modifier = { modifier = kurdish_separatism }
 			}
-			remove_dynamic_modifier = { modifier = high_revolt_risk }
 		}
-		ARM_evaluate_stabillity_modifier = yes
 	}
 }
 
-ARM_set_authority_kavat_low = {
-	custom_effect_tooltip = ARM_kavat
+# Kurdish State Pacified - Random Target
+ARM_pacify_random_kurdish_state_effect = {
+	custom_effect_tooltip = ARM_pacify_random_kurdish_state_effect_tt
 	hidden_effect = {
-		set_variable = { ARM_authority_level = 1 }
+		random_owned_state = {
+			limit = {
+				OR = {
+					has_dynamic_modifier = { modifier = kurdish_separatism }
+					has_dynamic_modifier = { modifier = kurdish_rebels }
+				}
+			}
+			save_event_target_as = ARM_kurdish_state_event_target
+		}
+		event_target:ARM_kurdish_state_event_target = {
+			if = { 	
+				limit = {
+					
+				}
+				
+				
+				add_resistance = -20
+			}
+			else_if = { 	
+				limit = {
+					has_dynamic_modifier = { modifier = kurdish_separatism }
+				}
+				remove_dynamic_modifier = { modifier = kurdish_separatism }
+				
+				add_resistance = -20
+			}
+			else_if = { 	
+				limit = {
+					has_dynamic_modifier = { modifier = kurdish_rebels }
+				}
+				remove_dynamic_modifier = { modifier = kurdish_rebels }
+				
+				add_resistance = -20
+			}
+			if = {
+				limit = {
+					event_target:ARM_kurdish_state_event_target = { 
+						NOT = { is_core_of = ARM }
+						compliance > 70
+					}
+				}
+				event_target:ARM_kurdish_state_event_target = { ARM_integrate_kurdish_state_effect = yes }
+			}
+		}
+	}
+}
+
+# Kurdish State Integration Forced
+ARM_integrate_kurdish_state_forced_effect = {
+	custom_effect_tooltip = ARM_integrate_kurdish_state_effect_tt
+	hidden_effect = {
+		event_target:ARM_kurdish_state_event_target = { 
+			add_core_of = ARM
+			remove_dynamic_modifier = { modifier = kurdish_separatism }
+			remove_dynamic_modifier = { modifier = kurdish_rebels }
+		}
+	}
+}
+
+# Kurdish State Agitated
+ARM_agitate_kurdish_state_effect = {
+	custom_effect_tooltip = ARM_agitate_kurdish_state_effect_tt
+	hidden_effect = {
+		event_target:ARM_kurdish_state_event_target = {
+			if = { 	
+				limit = {
+					has_dynamic_modifier = { modifier = kurdish_rebels }
+				}
+				add_resistance = 20
+			}
+			else_if = { 	
+				limit = {
+					has_dynamic_modifier = { modifier = kurdish_separatism }
+				}
+				remove_dynamic_modifier = { modifier = kurdish_separatism }
+				add_dynamic_modifier = { modifier = kurdish_rebels }
+				add_resistance = -20
+			}
+			else_if = { 	
+				limit = {
+					
+				}
+				
+				add_dynamic_modifier = { modifier = kurdish_separatism }
+				add_resistance = -20
+			}
+		}
+	}
+}
+
+# Kurdish State Agitated - New Target
+ARM_agitate_kurdish_state_random_target_effect = {
+	custom_effect_tooltip = ARM_agitate_kurdish_state_effect_tt
+	hidden_effect = {
+		random_owned_state = {
+			limit = {
+				OR = {
+					
+					has_dynamic_modifier = { modifier = kurdish_separatism }
+					has_dynamic_modifier = { modifier = kurdish_rebels }
+				}
+			}
+			save_event_target_as = ARM_kurdish_state_event_target
+		}
+		event_target:ARM_kurdish_state_event_target = {
+			if = { 	
+				limit = {
+					has_dynamic_modifier = { modifier = kurdish_rebels }
+				}
+				add_resistance = 20
+			}
+			else_if = { 	
+				limit = {
+					has_dynamic_modifier = { modifier = kurdish_separatism }
+				}
+				remove_dynamic_modifier = { modifier = kurdish_separatism }
+				add_dynamic_modifier = { modifier = kurdish_rebels }
+				add_resistance = -20
+			}
+			else_if = { 	
+				limit = {
+					
+				}
+				
+				add_dynamic_modifier = { modifier = kurdish_separatism }
+				add_resistance = -20
+			}
+		}
+	}
+}
+
+# Armenian Fundamentalist Influence Spread into State  - Random Target
+ARM_fundamentalist_influenced_random_state_effect = {
+	custom_effect_tooltip = ARM_fundamentalist_influenced_state_effect_tt
+	hidden_effect = {
+		random_owned_state = {
+			limit = {
+				AND = { 
+					has_state_flag = ARM_ideological_battleground_state
+					NOT = {
+						OR = { 
+							has_dynamic_modifier = { modifier = kemalist_loyalties }
+							has_dynamic_modifier = { modifier = kemalist_schemers }
+							has_dynamic_modifier = { modifier = conservative_opposition }
+							has_dynamic_modifier = { modifier = conservatists_placated }
+							has_dynamic_modifier = { modifier = conservative_insurgency }
+							has_dynamic_modifier = { modifier = conservatists_placated }
+						}
+					}
+				}
+			}
+			save_event_target_as = ARM_fundamentalist_state_event_target
+		}
+		event_target:ARM_fundamentalist_state_event_target = {
+			add_dynamic_modifier = { modifier = conservative_opposition }
+			clr_state_flag = ARM_ideological_battleground_state
+		}
+	}
+}
+
+# Turkish Fundamentalist State Modifiers Upgraded
+ARM_upgrade_liberalist_defiance_effect = {
+	custom_effect_tooltip = TUR_upgrade_liberalist_defiance_effect_tt
+	hidden_effect = {	
+		event_target:TUR_fundamentalist_state = {
+			else_if = { 	
+				limit = {
+					has_dynamic_modifier = { modifier = liberal_sedition }
+				}
+				remove_dynamic_modifier = { modifier = liberal_sedition }
+				add_dynamic_modifier = { modifier = liberal_insurgency }
+			}
+			else_if = {
+				limit = {
+					has_dynamic_modifier = { modifier = liberal_opposition }
+				}
+				remove_dynamic_modifier = { modifier = liberal_opposition }
+				add_dynamic_modifier = { modifier = liberal_insurgency }
+			}
+			else_if = { 	
+				limit = {
+					has_dynamic_modifier = { modifier = liberal_placated }
+				}
+				remove_dynamic_modifier = { modifier = liberal_placated }
+				add_dynamic_modifier = { modifier = liberal_insurgency }
+			}
+		}
+	}
+}
+
+# Armenian Fundamentalist State Modifiers Downgraded
+ARM_downgrade_liberalized_defiance_effect = {
+	custom_effect_tooltip = ARM_downgrade_liberalized_defiance_effect_tt
+	hidden_effect = {	
+		event_target:ARM_downgrade_liberalized_defiance_effect = {
+			if = { 	
+				limit = {
+					has_dynamic_modifier = { modifier = liberal_opposition }
+				}
+				remove_dynamic_modifier = { modifier = liberal_opposition }
+				add_dynamic_modifier = { modifier = liberal_placated }
+			}
+			else_if = { 	
+				limit = {
+					has_dynamic_modifier = { modifier = liberal_sedition }
+				}
+				remove_dynamic_modifier = { modifier = liberal_sedition }
+				add_dynamic_modifier = { modifier = liberal_placated }
+			}
+			else_if = { 	
+				limit = {
+					has_dynamic_modifier = { modifier = liberal_insurgency }
+				}
+				remove_dynamic_modifier = { modifier = liberal_insurgency }
+				add_dynamic_modifier = { modifier = liberal_sedition }
+			}
+		}
+	}
+}
+
+# Armenian Fundamentalist State Modifiers Downgraded
+ARM_downgrade_fundamentalist_defiance_effect = {
+	custom_effect_tooltip = ARM_downgrade_fundamentalist_defiance_effect_tt
+	hidden_effect = {	
+		event_target:ARM_fundamentalist_state = {
+			if = { 	
+				limit = {
+					has_dynamic_modifier = { modifier = conservative_opposition }
+				}
+				remove_dynamic_modifier = { modifier = conservative_opposition }
+				add_dynamic_modifier = { modifier = conservatists_placated }
+			}
+			else_if = { 	
+				limit = {
+					has_dynamic_modifier = { modifier = conservatists_placated }
+				}
+				remove_dynamic_modifier = { modifier = conservatists_placated }
+				add_dynamic_modifier = { modifier = conservative_opposition }
+			}
+			else_if = { 	
+				limit = {
+					has_dynamic_modifier = { modifier = conservative_insurgency }
+				}
+				remove_dynamic_modifier = { modifier = conservative_insurgency }
+				add_dynamic_modifier = { modifier = conservatists_placated }
+			}
+		}
+	}
+}
+
+# Armenian Fundamentalist State Modifiers Upgraded
+ARM_upgrade_fundamentalist_defiance_effect = {
+	custom_effect_tooltip = ARM_upgrade_fundamentalist_defiance_effect_tt
+	hidden_effect = {	
+		event_target:ARM_fundamentalist_state = {
+			if = { 	
+				limit = {
+					has_dynamic_modifier = { modifier = conservative_insurgency }
+				}
+				remove_core_of = ARM
+			}
+			else_if = { 	
+				limit = {
+					has_dynamic_modifier = { modifier = conservatists_placated }
+				}
+				remove_dynamic_modifier = { modifier = conservatists_placated }
+				add_dynamic_modifier = { modifier = conservative_insurgency }
+			}
+			else_if = {
+				limit = {
+					has_dynamic_modifier = { modifier = conservative_opposition }
+				}
+				remove_dynamic_modifier = { modifier = conservative_opposition }
+				add_dynamic_modifier = { modifier = conservatists_placated }
+			}
+			else_if = { 	
+				limit = {
+					has_dynamic_modifier = { modifier = conservatists_placated }
+				}
+				remove_dynamic_modifier = { modifier = conservatists_placated }
+				add_dynamic_modifier = { modifier = conservative_opposition }
+			}
+		}
+	}
+}
+
+# Armenian Fundamentalist State Modifiers Upgraded - Random Target
+ARM_upgrade_conservatist_defiance_effect = {
+	custom_effect_tooltip = ARM_upgrade_conservatist_defiance_effect_tt
+	hidden_effect = {
+		event_target:ARM_upgrade_conservatist_defiance_effect = {
+			if = { 	
+				limit = {
+					has_dynamic_modifier = { modifier = conservative_insurgency }
+				}
+				remove_core_of = ARM
+			}
+			else_if = { 	
+				limit = {
+					has_dynamic_modifier = { modifier = conservative_sedition }
+				}
+				remove_dynamic_modifier = { modifier = conservative_sedition }
+				add_dynamic_modifier = { modifier = conservative_insurgency }
+			}
+			else_if = { 	
+				limit = {
+					has_dynamic_modifier = { modifier = conservatists_placated }
+				}
+				remove_dynamic_modifier = { modifier = conservatists_placated }
+				add_dynamic_modifier = { modifier = conservative_insurgency }
+			}
+			else_if = {
+				limit = {
+					has_dynamic_modifier = { modifier = conservative_opposition }
+				}
+				remove_dynamic_modifier = { modifier = conservative_opposition }
+				add_dynamic_modifier = { modifier = conservative_insurgency }
+			}
+			else_if = { 	
+				limit = {
+					has_dynamic_modifier = { modifier = conservatists_placated }
+				}
+				remove_dynamic_modifier = { modifier = conservatists_placated }
+				add_dynamic_modifier = { modifier = conservative_insurgency }
+			}
+		}
+	}
+}
+
+# Armenian Fundamentalist State Modifiers Upgraded - Random Target
+ARM_upgrade_random_fundamentalist_defiance_effect = {
+	custom_effect_tooltip = ARM_upgrade_random_fundamentalist_defiance_effect_tt
+	hidden_effect = {	
+		random_owned_state = {
+			limit = {
+				OR = {
+					has_dynamic_modifier = { modifier = conservative_opposition }
+					has_dynamic_modifier = { modifier = conservatists_placated }
+					has_dynamic_modifier = { modifier = conservative_insurgency }
+				}
+			}
+			save_event_target_as = ARM_fundamentalist_state
+		}
+		event_target:ARM_fundamentalist_state = {
+			if = { 	
+				limit = {
+					has_dynamic_modifier = { modifier = conservative_insurgency }
+				}
+				remove_core_of = ARM
+			}
+			else_if = { 	
+				limit = {
+					has_dynamic_modifier = { modifier = conservatists_placated }
+				}
+				remove_dynamic_modifier = { modifier = conservatists_placated }
+				add_dynamic_modifier = { modifier = conservative_insurgency }
+			}
+			else_if = {
+				limit = {
+					has_dynamic_modifier = { modifier = conservative_opposition }
+				}
+				remove_dynamic_modifier = { modifier = conservative_opposition }
+				add_dynamic_modifier = { modifier = conservatists_placated }
+			}
+			else_if = { 	
+				limit = {
+					has_dynamic_modifier = { modifier = conservatists_placated }
+				}
+				remove_dynamic_modifier = { modifier = conservatists_placated }
+				add_dynamic_modifier = { modifier = conservative_opposition }
+			}
+		}
+	}
+}
+
+# Armenian Fundamentalist State Placated
+ARM_placate_fundamentalist_state_effect = {
+	custom_effect_tooltip = ARM_placate_fundamentalist_state_effect_tt
+	hidden_effect = {
+		event_target:ARM_fundamentalist_state = {
+			if = { 	
+				limit = {
+					has_dynamic_modifier = { modifier = conservative_opposition }
+				}
+				remove_dynamic_modifier = { modifier = conservative_opposition }
+				add_dynamic_modifier = { modifier = conservatists_placated }
+			}
+			else_if = { 	
+				limit = {
+					has_dynamic_modifier = { modifier = conservatists_placated }
+				}
+				remove_dynamic_modifier = { modifier = conservatists_placated }
+				add_dynamic_modifier = { modifier = conservatists_placated }
+			}
+			else_if = { 	
+				limit = {
+					has_dynamic_modifier = { modifier = conservative_insurgency }
+				}
+				remove_dynamic_modifier = { modifier = conservative_insurgency }
+				add_dynamic_modifier = { modifier = conservatists_placated }
+			}
+			if = {
+				limit = {
+					NOT = { is_core_of = ARM }
+				}
+				add_core_of = ARM
+			}
+		}
+	}
+}
+
+# Armenian Fundamentalist State Placated - New Event Target Applied
+ARM_placate_fundamentalist_state_random_target_effect = {
+	custom_effect_tooltip = ARM_placate_fundamentalist_state_effect_tt
+	hidden_effect = {
+		random_owned_state = {
+			limit = {
+				OR = {
+					has_dynamic_modifier = { modifier = conservative_opposition }
+					has_dynamic_modifier = { modifier = conservatists_placated }
+					has_dynamic_modifier = { modifier = conservative_insurgency }
+				}
+			}
+			save_event_target_as = ARM_fundamentalist_state
+		}
+		event_target:ARM_fundamentalist_state = {
+			if = { 	
+				limit = {
+					has_dynamic_modifier = { modifier = conservative_opposition }
+				}
+				remove_dynamic_modifier = { modifier = conservative_opposition }
+				add_dynamic_modifier = { modifier = conservatists_placated }
+			}
+			else_if = { 	
+				limit = {
+					has_dynamic_modifier = { modifier = conservatists_placated }
+				}
+				remove_dynamic_modifier = { modifier = conservatists_placated }
+				add_dynamic_modifier = { modifier = conservatists_placated }
+			}
+			else_if = { 	
+				limit = {
+					has_dynamic_modifier = { modifier = conservative_insurgency }
+				}
+				remove_dynamic_modifier = { modifier = conservative_insurgency }
+				add_dynamic_modifier = { modifier = conservatists_placated }
+			}
+			if = {
+				limit = {
+					event_target:ARM_fundamentalist_state = { NOT = { is_core_of = ARM } }
+				}
+				event_target:ARM_fundamentalist_state = { add_core_of = ARM }
+			}
+		}
+	}
+}
+
+# Armenian Fundamentalist State Placated - Every State
+ARM_placate_fundamentalist_state_all_targets_effect = {
+	custom_effect_tooltip = ARM_placate_fundamentalist_state_all_targets_effect_tt
+	hidden_effect = {
+		every_state = {
+			limit = {
+				AND = {
+					has_dynamic_modifier = { modifier = conservative_insurgency }
+					NOT = { is_core_of = ARM }
+				}
+			}
+			add_core_of = ARM
+		}
+		every_state = {
+			limit = {
+				THIS = { has_dynamic_modifier = { modifier = conservative_opposition } }
+			}
+			remove_dynamic_modifier = { modifier = conservative_opposition }
+			add_dynamic_modifier = { modifier = conservatists_placated }
+		}
+		every_state = {
+			limit = {
+				THIS = { has_dynamic_modifier = { modifier = conservatists_placated } }
+			}
+			remove_dynamic_modifier = { modifier = conservatists_placated }
+			add_dynamic_modifier = { modifier = conservatists_placated }
+		}
+		every_state = {
+			limit = {
+				THIS = { has_dynamic_modifier = { modifier = conservative_insurgency } }
+			}
+			remove_dynamic_modifier = { modifier = conservative_insurgency }
+			add_dynamic_modifier = { modifier = conservatists_placated }
+		}
+	}
+}
+
+ARM_kurdish_separatism = {
+	custom_effect_tooltip =  ARM_kurdish_separatism
+	hidden_effect = {
 		if = {
 			limit = { is_owned_by = ARM }
 			if = {
 				limit = {
-					has_dynamic_modifier = { modifier = kavat }
+					has_dynamic_modifier = { modifier = kurdish_separatism }
 				}
-				remove_dynamic_modifier = { modifier = kavat }
+				remove_dynamic_modifier = { modifier = kurdish_separatism }
 			}
 			if = {
 				limit = {
-					NOT = { has_dynamic_modifier = { modifier = kavat } }
+					NOT = { has_dynamic_modifier = { modifier = kurdish_separatism } }
 				}
-				add_dynamic_modifier = { modifier = kavat }
+				add_dynamic_modifier = { modifier = kurdish_separatism }
 			}
 		}
 	}
 }
-
-ARM_set_authority_kavat_medium = {
-	custom_effect_tooltip = ARM_kavat
+ARM_kurdish_rebels = {
+	custom_effect_tooltip =  ARM_kurdish_rebels
 	hidden_effect = {
-		set_variable = { ARM_authority_level = 2 }
 		if = {
 			limit = { is_owned_by = ARM }
 			if = {
 				limit = {
-					has_dynamic_modifier = { modifier = kavat }
+					has_dynamic_modifier = { modifier = kurdish_rebels }
 				}
-				remove_dynamic_modifier = { modifier = kavat }
+				remove_dynamic_modifier = { modifier = kurdish_rebels }
 			}
 			if = {
 				limit = {
-					NOT = { has_dynamic_modifier = { modifier = kavat } }
+					NOT = { has_dynamic_modifier = { modifier = kurdish_rebels } }
 				}
-				add_dynamic_modifier = { modifier = kavat }
+				add_dynamic_modifier = { modifier = kurdish_rebels }
 			}
 		}
 	}
 }
-
-ARM_set_authority_kavat_high = {
+ARM_turkish_rebels = {
+	custom_effect_tooltip = ARM_turkish_rebels
 	hidden_effect = {
-		set_variable = { ARM_authority_level = 3 }
 		if = {
 			limit = { is_owned_by = ARM }
 			if = {
 				limit = {
-					has_dynamic_modifier = { modifier = kavat }
+					has_dynamic_modifier = { modifier = turkish_rebels }
 				}
-				remove_dynamic_modifier = { modifier = kavat }
+				remove_dynamic_modifier = { modifier = turkish_rebels }
 			}
 			if = {
 				limit = {
-					has_dynamic_modifier = { modifier = kavat }
+					NOT = { has_dynamic_modifier = { modifier = turkish_rebels } }
 				}
-				remove_dynamic_modifier = { modifier = kavat }
+				add_dynamic_modifier = { modifier = turkish_rebels }
 			}
 		}
 	}
 }
-
-ARM_increase_authority_kavat = {
+ARM_turkish_separatism = {
+	custom_effect_tooltip = ARM_turkish_separatism
 	hidden_effect = {
 		if = {
-			limit = { ARM_is_kavat = yes }
-			ARM_set_authority_kavat_medium = yes
-		}
-		else = {
-			ARM_set_authority_kavat_high = yes
+			limit = { is_owned_by = ARM }
+			if = {
+				limit = {
+					has_dynamic_modifier = { modifier = turkish_separatism }
+				}
+				remove_dynamic_modifier = { modifier = turkish_separatism }
+			}
+			if = {
+				limit = {
+					NOT = { has_dynamic_modifier = { modifier = turkish_separatism } }
+				}
+				add_dynamic_modifier = { modifier = turkish_separatism }
+			}
 		}
 	}
-	ARM_evaluate_centralisation = yes
 }
-
-ARM_decrease_authority_kavat = {
+ARM_azerbaijani_separatism = {
+	custom_effect_tooltip = ARM_azerbaijani_separatism
 	hidden_effect = {
 		if = {
-			limit = { ARM_is_armenian_province = yes }
+			limit = { is_owned_by = ARM }
+			if = {
+				limit = {
+					has_dynamic_modifier = { modifier = azerbaijani_separatism }
+				}
+				remove_dynamic_modifier = { modifier = azerbaijani_separatism }
+			}
+			if = {
+				limit = {
+					NOT = { has_dynamic_modifier = { modifier = azerbaijani_separatism } }
+				}
+				add_dynamic_modifier = { modifier = azerbaijani_separatism }
+			}
 		}
 	}
-	ARM_evaluate_centralisation = yes
 }
-
-ARM_set_revolt_risk_none = {
-	set_variable = { ARM_revolt_risk = 0 }
+ARM_azerbaijani_rebels = {
+	custom_effect_tooltip = ARM_azerbaijani_rebels
 	hidden_effect = {
 		if = {
-			limit = {
-				has_dynamic_modifier = { modifier = high_revolt_risk }
+			limit = { is_owned_by = ARM }
+			if = {
+				limit = {
+					has_dynamic_modifier = { modifier = azerbaijani_rebels }
+				}
+				remove_dynamic_modifier = { modifier = azerbaijani_rebels }
 			}
-			remove_dynamic_modifier = { modifier = high_revolt_risk }
-		}
-		if = {
-			limit = {
-				has_dynamic_modifier = { modifier = very_high_revolt_risk }
+			if = {
+				limit = {
+					NOT = { has_dynamic_modifier = { modifier = azerbaijani_rebels } }
+				}
+				add_dynamic_modifier = { modifier = azerbaijani_rebels }
 			}
-			remove_dynamic_modifier = { modifier = very_high_revolt_risk }
 		}
-		if = {
-			limit = {
-				has_resistance = yes
-				ARM_is_turkish_state = no
-				is_core_of = ARM
-			}
-			cancel_resistance = yes
-			force_disable_resistance = { clear = yes }
-		}
-		ARM_evaluate_stabillity_modifier = yes
 	}
 }
-
-ARM_set_revolt_risk_very_low = {
-	set_variable = { ARM_revolt_risk = 1 }
+ARM_conservative_sedition = {
+	custom_effect_tooltip = ARM_conservative_sedition
 	hidden_effect = {
 		if = {
-			limit = {
-				has_resistance = yes
-				is_core_of = ARM
-				ARM_is_turkish_state = no
+			limit = { is_owned_by = ARM }
+			if = {
+				limit = {
+					has_dynamic_modifier = { modifier = conservative_sedition }
+				}
+				remove_dynamic_modifier = { modifier = conservative_sedition }
 			}
-			cancel_resistance = yes
-			force_disable_resistance = { clear = yes }
-		}
-		if = {
-			limit = {
-				has_dynamic_modifier = { modifier = high_revolt_risk }
+			if = {
+				limit = {
+					NOT = { has_dynamic_modifier = { modifier = conservative_sedition } }
+				}
+				add_dynamic_modifier = { modifier = conservative_sedition }
 			}
-			remove_dynamic_modifier = { modifier = high_revolt_risk }
 		}
-		if = {
-			limit = {
-				has_dynamic_modifier = { modifier = very_high_revolt_risk }
-			}
-			remove_dynamic_modifier = { modifier = very_high_revolt_risk }
-		}
-		if = {
-			limit = {
-				has_resistance = yes
-				ARM_is_turkish_state = no
-				is_core_of = ARM
-			}
-			cancel_resistance = yes
-			force_disable_resistance = { clear = yes }
-		}
-		ARM_evaluate_stabillity_modifier = yes
 	}
 }
-
-ARM_set_revolt_risk_low = {
-	set_variable = { ARM_revolt_risk = 2 }
+ARM_conservative_opposition = {
+	custom_effect_tooltip = ARM_conservative_opposition
 	hidden_effect = {
 		if = {
-			limit = {
-				has_dynamic_modifier = { modifier = high_revolt_risk }
+			limit = { is_owned_by = ARM }
+			if = {
+				limit = {
+					has_dynamic_modifier = { modifier = conservative_opposition }
+				}
+				remove_dynamic_modifier = { modifier = conservative_opposition }
 			}
-			remove_dynamic_modifier = { modifier = high_revolt_risk }
-		}
-		if = {
-			limit = {
-				has_dynamic_modifier = { modifier = very_high_revolt_risk }
+			if = {
+				limit = {
+					NOT = { has_dynamic_modifier = { modifier = conservative_opposition } }
+				}
+				add_dynamic_modifier = { modifier = conservative_opposition }
 			}
-			remove_dynamic_modifier = { modifier = very_high_revolt_risk }
 		}
-		if = {
-			limit = {
-				has_resistance = yes
-				ARM_is_turkish_state = no
-				is_core_of = ARM
-			}
-			cancel_resistance = yes
-			force_disable_resistance = { clear = yes }
-		}
-		ARM_evaluate_stabillity_modifier = yes
 	}
 }
-
-ARM_set_revolt_risk_medium = {
-	set_variable = { ARM_revolt_risk = 3 }
+ARM_conservatists_placated = {
+	custom_effect_tooltip = ARM_conservatists_placated
 	hidden_effect = {
 		if = {
-			limit = {
-				has_dynamic_modifier = { modifier = high_revolt_risk }
+			limit = { is_owned_by = ARM }
+			if = {
+				limit = {
+					has_dynamic_modifier = { modifier = conservatists_placated }
+				}
+				remove_dynamic_modifier = { modifier = conservatists_placated }
 			}
-			remove_dynamic_modifier = { modifier = high_revolt_risk }
+			if = {
+				limit = {
+					NOT = { has_dynamic_modifier = { modifier = conservatists_placated } }
+				}
+				add_dynamic_modifier = { modifier = conservatists_placated }
+			}
 		}
-		if = {
-			limit = {
-				has_dynamic_modifier = { modifier = very_high_revolt_risk }
-			}
-			remove_dynamic_modifier = { modifier = very_high_revolt_risk }
-		}
-		if = {
-			limit = {
-				has_resistance = no
-				ARM_is_turkish_state = no
-			}
-			force_enable_resistance = {
-				occupier = ARM
-			}
-			start_resistance = yes
-			set_resistance = 10
-		}
-		ARM_evaluate_stabillity_modifier = yes
 	}
 }
-
-ARM_set_revolt_risk_high = {
-	set_variable = { ARM_revolt_risk = 4 }
+ARM_conservative_insurgency = {
+	custom_effect_tooltip = ARM_conservative_insurgency
 	hidden_effect = {
 		if = {
-			limit = {
-				has_dynamic_modifier = { modifier = very_high_revolt_risk }
+			limit = { is_owned_by = ARM }
+			if = {
+				limit = {
+					has_dynamic_modifier = { modifier = conservative_insurgency }
+				}
+				remove_dynamic_modifier = { modifier = conservative_insurgency }
 			}
-			remove_dynamic_modifier = { modifier = very_high_revolt_risk }
+			if = {
+				limit = {
+					NOT = { has_dynamic_modifier = { modifier = conservative_insurgency } }
+				}
+				add_dynamic_modifier = { modifier = conservative_insurgency }
+			}
 		}
-		if = {
-			limit = {
-				NOT = { has_dynamic_modifier = { modifier = high_revolt_risk } }
-			}
-			add_dynamic_modifier = { modifier = high_revolt_risk }
-		}
-		if = {
-			limit = {
-				has_resistance = no
-				ARM_is_turkish_state = no
-			}
-			force_enable_resistance = {
-				occupier = ARM
-			}
-			start_resistance = yes
-			set_resistance = 10
-		}
-		ARM_evaluate_stabillity_modifier = yes
 	}
 }
-
-ARM_set_revolt_risk_very_high = {
-	set_variable = { ARM_revolt_risk = 5 }
+ARM_liberal_influence = {
+	custom_effect_tooltip = ARM_liberal_influence
 	hidden_effect = {
 		if = {
-			limit = {
-				has_dynamic_modifier = { modifier = high_revolt_risk }
-			}
-			remove_dynamic_modifier = { modifier = high_revolt_risk }
-		}
-		if = {
-			limit = {
-				NOT = { has_dynamic_modifier = { modifier = very_high_revolt_risk } }
-			}
-			add_dynamic_modifier = { modifier = very_high_revolt_risk }
-		}
-		if = {
-			limit = {
-				has_resistance = no
-				ARM_is_turkish_state = no
-			}
-			force_enable_resistance = {
-				occupier = ARM
-			}
-			start_resistance = yes
-			set_resistance = 10
-		}
-		ARM_evaluate_stabillity_modifier = yes
-	}
-}
-
-ARM_evaluate_stabillity_modifier = {
-	ARM = {
-		set_variable = { var_state_stability = 0 }
-		set_variable = { var_state_martial_law = 0 }
-		hidden_effect = {
-			every_owned_state = {
-				limit = { ARM_revolt_risk_low = yes }
-				if = {
-					limit = {
-						check_variable = { ARM_revolt_risk = 5 }
-					}
-					add_to_variable = { ARM.var_state_stability = -0.05 }
-				}
-				if = {
-					limit = {
-						check_variable = { ARM_revolt_risk = 4 }
-					}
-					add_to_variable = { ARM.var_state_stability = -0.03 }
-				}
-				else_if = {
-					limit = {
-						check_variable = { ARM_revolt_risk = 3 }
-					}
-					add_to_variable = { ARM.var_state_stability = -0.02 }
-				}
-				else_if = {
-					limit = {
-						check_variable = { ARM_revolt_risk = 2 }
-					}
-					add_to_variable = { ARM.var_state_stability = -0.01 }
-				}
-			}
-		}
-		force_update_dynamic_modifier = yes
-	}
-}
-
-ARM_evaluate_centralisation = {
-	ARM = {
-		set_variable = { centralisation = 0 }
-		for_each_scope_loop = {
-			array = ARM_Core_States
+			limit = { is_owned_by = ARM }
 			if = {
-				limit = { ARM_is_armenian_province = yes }
-				add_to_variable = { ARM.centralisation = 1 }
+				limit = {
+					has_dynamic_modifier = { modifier = liberal_influence }
+				}
+				remove_dynamic_modifier = { modifier = liberal_influence }
 			}
-		}
-		divide_variable = { centralisation = 100 }
-		force_update_dynamic_modifier = yes
-	}
-}
-
-ARM_evaluate_parliament_support = {
-	ARM = {
-		set_variable = {
-			parliament = representatives_support
-		}
-		divide_variable = {
-			var = parliament
-			value = 2000
-		}
-		force_update_dynamic_modifier = yes
-		if = {
-			limit = {
-				is_ai = yes
-				check_variable = {
-					representatives_support < 250
-				}				
-				has_country_flag = ARM_coalition_formed
-			}
-			country_event = ARMgui.3
-		}
-		hidden_effect = {
-			country_event = {
-				id = ARMlib.20
-				days = 30
+			if = {
+				limit = {
+					NOT = { has_dynamic_modifier = { modifier = liberal_influence } }
+				}
+				add_dynamic_modifier = { modifier = liberal_influence }
 			}
 		}
 	}
 }
-
-ARM_recalc_congress_icon_frames = {
-	set_temp_variable = { house_temp = representatives_support }
-	divide_temp_variable = { house_temp = representatives_total }
-	multiply_temp_variable = { house_temp = 21 }
-	if = {
-		limit = { check_variable = { house_temp > 0 } }
-		clamp_temp_variable = {
-			var = house_temp
-			min = 1
-			max = 21
-		}
-	}
-	else = {
-		set_temp_variable = { house_temp = 1 }
-	}
-	set_variable = { current_house_icon_frame = house_temp }
-}
-
-ARM_calc_coalition_strength = {
-	set_variable = {
-		var = representatives_support
-		value = 0
-	}
-	add_to_variable = {
-		var = representatives_support
-		value = nat_ara_sup_deputies
-	}
-	add_to_variable = {
-		var = representatives_support
-		value = nat_tur_sup_deputies
-	}
-	add_to_variable = {
-		var = representatives_support
-		value = con_sup_deputies
-	}
-	add_to_variable = {
-		var = representatives_support
-		value = ind_sup_deputies
-	}
-	if = {
-		limit = {
-			has_government = social_liberal
-		}
-		add_to_variable = {
-			var = representatives_support
-			value = hif_deputies
-		}
-	}
-	if = {
-		limit = {
-			has_country_flag = df_coalition
-		}
-		add_to_variable = {
-			var = representatives_support
-			value = odf_deputies
-		}
-	}
-	if = {
-		limit = {
-			has_government = market_liberal
-		}
-		add_to_variable = {
-			var = representatives_support
-			value = odf_deputies
-		}
-	}
-	if = {
-		limit = {
-			has_government = traditional_conservatism
-		}
-		add_to_variable = {
-			var = representatives_support
-			value = hif_deputies
-		}
-	}
-	clamp_variable = {
-		var = representatives_support
-		min = 0
-		max = representatives_total
-	}
-	ARM_recalc_congress_icon_frames = yes
-	ARM_evaluate_parliament_support = yes
-
-	### Fire conservative take-over event chain
+ARM_liberal_opposition = {
+	custom_effect_tooltip = ARM_liberal_opposition
 	hidden_effect = {
-		country_event = {
-			id = ARMsab.26
-			days = 30
-		}
-	}
-}
-
-ARM_launch_revolts = {
-	### Firing armenian Revolts
-	if = {
-		limit = {
-			OWNER = {
-				tag = ARM
-				ARM_cairo_pact_defeated = no
-			}
-		}
-
-		### Syria
 		if = {
-			limit = {
-				OR = {
-					state = 554
-					state = 455
-					state = 677
-					state = 995
-					state = 992
-				}
-			}
-			custom_effect_tooltip = ARM_resistance_syr_tt
+			limit = { is_owned_by = ARM }
 			if = {
 				limit = {
-					state = 554
+					has_dynamic_modifier = { modifier = liberal_opposition }
 				}
-				ARM = {
-					country_event = syrrev.1
-				}
+				remove_dynamic_modifier = { modifier = liberal_opposition }
 			}
 			if = {
 				limit = {
-					state = 455
+					NOT = { has_dynamic_modifier = { modifier = liberal_opposition } }
 				}
-				ARM = {
-					country_event = syrrev.3
-				}
-			}
-			else_if = {
-				limit = {
-					state = 677
-				}
-				ARM = {
-					country_event = syrrev.5
-				}
-			}
-			else_if = {
-				limit = {
-					state = 995
-				}
-				ARM = {
-					country_event = syrrev.6
-				}
-			}
-			else_if = {
-				limit = {
-					state = 992
-				}
-				ARM = {
-					country_event = syrrev.7
-				}
-			}
-		}
-
-		### Cyrenaica
-		else_if = {
-			limit = {
-				OR = {
-					state = 448
-					state = 273
-					state = 450
-					state = 663
-					state = 451
-					state = 1009
-				}
-			}
-			custom_effect_tooltip = ARM_resistance_lba_tt
-			if = {
-				limit = {
-					state = 448
-				}
-				ARM = {
-					country_event = librev.2
-				}
-			}
-			else_if = {
-				limit = {
-					state = 273
-				}
-				ARM = {
-					country_event = librev.1
-				}
-			}
-			else_if = {
-				limit = {
-					state = 450
-				}
-				ARM = {
-					country_event = librev.3
-				}
-			}
-			else_if = {
-				limit = {
-					OR = {
-						state = 663
-						state = 451
-						state = 1009
-					}
-				}
-				ARM = {
-					country_event = librev.4
-				}
-			}
-		}
-
-		### Greek Isles
-		else_if = {
-			limit = {
-				OR = {
-					state = 183
-					state = 164
-					state = 187
-				}
-			}
-			custom_effect_tooltip = ARM_resistance_cyp_tt
-			if = {
-				limit = {
-					state = 183
-				}
-				ARM = {
-					country_event = cyp.1
-				}
-			}
-			else_if = {
-				limit = {
-					state = 164
-				}
-				ARM = {
-					country_event = cyp.2
-				}
-			}
-			else_if = {
-				limit = {
-					state = 187
-				}
-				ARM = {
-					country_event = cyp.3
-				}
-			}
-		}
-
-		### Hejaz
-		else_if = {
-			limit = {
-				OR = {
-					state = 754
-					state = 679
-				}
-			}
-			custom_effect_tooltip = ARM_resistance_hej_tt
-			if = {
-				limit = {
-					state = 754
-				}
-				ARM = {
-					country_event = hejrev.2
-				}
-			}
-			else_if = {
-				limit = {
-					state = 679
-				}
-				ARM = {
-					country_event = hejrev.1
-				}
-			}
-		}
-
-		### Iraq
-		else_if = {
-			limit = {
-				state = 291
-			}
-			custom_effect_tooltip = ARM_resistance_irq_tt
-			ARM = {
-				country_event = irqrev.1
+				add_dynamic_modifier = { modifier = liberal_opposition }
 			}
 		}
 	}
 }
-
-ARM_set_up_suez_canal_zone = {
-	set_global_flag = SUEZ_SUCCESS
-	PAL = {
-		transfer_state = 753
-		remove_state_core = 453
-		remove_state_core = 454
-		set_cosmetic_tag = PAL_suez
-		set_politics = {
-			ruling_party = market_liberal
-			elections_allowed = no
-		}
-		create_country_leader = {
-			name = "François Charles-Roux"
-			picture = "Portrait_PAL_Francois_Charles_Roux.tga"
-			ideology = market_liberal_subtype
-		}
-		hidden_effect = {
-			load_focus_tree = Suez_Focus
-		}
-	}
-	if = {
-		limit = {
-			tag = ARM
-		}
-		every_country = {
-			limit = {
-				NOT = { has_war_with = ROOT }
-				OR = {
-					tag = ROOT
-					tag = GER
-					tag = AUS
-					tag = NFA
-					tag = CAN
-					tag = GBR
-					tag = ENT
-					tag = ARM
-					tag = SIC
-					tag = HOL
-					tag = BEL
-					tag = GRE
-				}
-			}
-			PAL = {
-				give_military_access = PREV
-			}
-			country_event = ARMfor.49
-		}
-	}
-	else = {
-		every_country = {
-			limit = {
-				NOT = { has_war_with = ROOT }
-				OR = {
-					tag = ROOT
-					tag = GER
-					tag = AUS
-					tag = NFA
-					tag = CAN
-					tag = GBR
-					tag = ENT
-					tag = ARM
-					tag = SIC
-					tag = HOL
-					tag = BEL
-					tag = GRE
-				}
-			}
-			PAL = {
-				give_military_access = PREV
-			}
-			country_event = ARMfor.49
-		}
-		clr_global_flag = SUEZ_CANAL_BLOCKED
-	}
-}
-
-### Calculate Deputy/PP rewards for every state
-calculate_state_values_ARM = {
-	every_state = {
-		limit = {
-			OR = {
-				### Conservative
-				state = 346 #Konya
-				state = 350 #Diyarbakir
-				state = 354 #Erzurum
-				state = 1000 #Kars-Igdir
-				state = 1001 #Lazistan
-				state = 352 #Van
-				state = 455 #Ma'an
-				state = 754 #Medina
-				state = 679 #Mecca
-				state = 273 #Fezzan
-				state = 451 #Ajdabiya
-				state = 663 #Jaghbub
-				state = 1009 #Kufra
-
-				### Turkish
-				state = 341 #Edirne
-				state = 773 #Istanbul
-				state = 347 #Gallipoli
-				state = 340 #Bursa
-				state = 339 #Izmir
-				state = 343 #Afyon
-				state = 342 #Mugla
-				state = 49 #Ankara
-				state = 356 #Kastamonu
-				state = 344 #Adana
-				state = 349 #Kirkuk
-				state = 1089 #Momchilgrad
-				state = 184 #Eastern Thrace
-
-				### Arab
-				state = 677 #Aleppo
-				state = 995 #Homs
-				state = 554 #Damascus
-				state = 992 #Haifa
-				state = 553 #Lebanon
-				state = 676 #Mosul
-				state = 291 #Baghdad
-				state = 448 #Tripolitania
-				state = 450 #Benghazi
-
-				### Independent
-				state = 187 #Aegean Islands
-				state = 164 #Dodecanese
-				state = 183 #Cyprus
-				state = 680 #Latakia
-				state = 345 #Sivas
-				state = 819 #Sulaymanyiah
-				state = 812 #Basra
-				state = 355 #Trabzon
-				state = 907 #Bahrain
-				state = 993 #Qatar
-				state = 658 #Abu Dhabi
-			}
-		}
-		# Calculate amount of added deputies
-		set_variable = { deputy_calculator = THIS.state_population }
-		divide_variable = { deputy_calculator = 100000 }
-		round_variable = deputy_calculator
-
-		# Calculate amount of added pp
-		set_variable = { pp_calculator = THIS.state_population }
-		divide_variable = { pp_calculator = 100000 }
-		multiply_variable = { pp_calculator = 2 }
-		round_variable = pp_calculator
-	}
-}
-
-ARM_russo_armenian_convention = {
-	### News Event 
-	news_event = worldnews.442
-
-	### NAP
-	diplomatic_relation = {
-		country = ARM
-		relation = non_aggression_pact
-	}
-
-	### Georgia
-	if = {
-		limit = {
-			has_global_flag = RUSSIAN_ARMOMAN_DEAL_GEO_PUPPET
-			can_declare_war_on = GEO
-		}
-	}
-
-	### Afghanistan
-	if = {
-		limit = {
-			can_declare_war_on = AFG
-			AFG = {
-				OR = {
-					is_subject = no
-					is_subject_of = ARM
-				}
-			}
-		}
-		AFG = { 
-			if = {
-				limit = { is_subject = yes }
-				overlord = {
-					set_autonomy = {
-						target = AFG
-						autonomy_state = autonomy_free
-					}
-				}
-			}
-			if = {
-				limit = { is_in_faction = yes }
-				leave_faction = yes
-			}
-		}
+ARM_liberal_sedition = {
+	custom_effect_tooltip = ARM_liberal_sedition
+	hidden_effect = {
 		if = {
-			limit = {
-				has_global_flag = RUSSIAN_ARMOMAN_DEAL_AFG_ANNEX
-			}
-		}
-		else_if = {
-			limit = {
-				has_global_flag = RUSSIAN_ARMOMAN_DEAL_AFG_PUPPET
-			}
-			AFG = {
-				country_event = { id = ARMfor.78 hours = 12 }
-			}
-		}
-	}
-
-	### Persia
-	if = {
-		limit = {
-			can_declare_war_on = PER
-			PER = {
-				OR = {
-					is_subject = no
-					is_subject_of = ARM
-				}
-			}
-		}
-		if = {
-			limit = { has_global_flag = RUSSIAN_ARMOMAN_DEAL_PER_BUFFER }
-			PER = {
-				country_event = { id = ARMfor.79 hours = 12 }
-			}
-		}
-		else_if = {
-			limit = { has_global_flag = RUSSIAN_ARMOMAN_DEAL_PER_SPLIT }
+			limit = { is_owned_by = ARM }
 			if = {
 				limit = {
-					PER = { is_subject = yes }
+					has_dynamic_modifier = { modifier = liberal_sedition }
 				}
-				PER = {
-					overlord = {
-						set_autonomy = {
-							target = PER
-							autonomy_state = autonomy_free
-						}
-					}
-					leave_faction = yes
-					every_owned_state = {
-						limit = {
-							OR = {
-								state = 413 #Khuzestan
-								state = 417 #Western Azerbaijan
-								state = 419 #Eastern Azerbaijan
-								state = 421 #Kurdistan
-							}
-						}
-						ARM = { transfer_state = PREV }
-					}
-				}
-				puppet = PER
-			}
-			else = {
-				ARM = {
-					add_state_claim = 413 #Khuzestan
-					add_state_claim = 417 #Western Azerbaijan
-					add_state_claim = 419 #Eastern Azerbaijan
-					add_state_claim = 421 #Kurdistan
-				}
-				hidden_effect = {
-					for_each_scope_loop = {
-						array = PER.core_states
-						if = {
-							limit = { NOT = { is_claimed_by = ARM } }
-							set_variable = { ambition_area_@ROOT = 1 }
-						}
-					}
-				}
-			}
-		}
-	}
-
-	### Azerbaijan
-	AZR = {
-		if = {
-			limit = { is_in_faction_with = ARM }
-			leave_faction = yes	
-		}
-		country_event = {
-			id = ARMfor.80
-			hours = 12
-		}
-	}
-
-	### London Straits Convention
-	if = {
-		limit = { has_global_flag = RUSSIAN_ARMOMAN_DEAL_STRAITS }
-		ARM = { give_military_access = ROOT }
-	}	
-
-	### Armenia
-	if = {
-		limit = { has_global_flag = RUSSIAN_ARMOMAN_DEAL_ARMENIA }
-		if = {
-			limit = {
-				can_declare_war_on = ARM
-				ARM = {
-					OR = {
-						is_subject = no
-						is_subject_of = ARM
-					}
-				}
+				remove_dynamic_modifier = { modifier = liberal_sedition }
 			}
 			if = {
 				limit = {
-					ARM = { is_subject = yes }
+					NOT = { has_dynamic_modifier = { modifier = liberal_sedition } }
 				}
-				annex_country = {
-					target = ARM
-					transfer_troops = no
-				}
-			}
-			else = {
-				ARM = {
-					country_event = {
-						id = ARMfor.78
-						hours = 12
-					}
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				ARM = { controls_state = 230 } #Yerevan
-			}
-			ARM = {
-				every_owned_state = {
-					limit = {
-						OR = {
-							state = 230
-							state = 1000
-							state = 1001
-						}
-					}
-					ROOT = { transfer_state = PREV }
-				}
+				add_dynamic_modifier = { modifier = liberal_sedition }
 			}
 		}
 	}

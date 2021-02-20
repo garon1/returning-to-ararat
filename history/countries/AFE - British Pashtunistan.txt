@@ -38,7 +38,6 @@ country_event = {
 set_stability = 0.2
 set_war_support = 0.1
 
-
 set_politics = {
 	ruling_party = totalitarianism
 	last_election = "1888.6.15"

@@ -1,6 +1,50 @@
 ##################used for basically all gui things because im lazy
 
 spriteTypes = {
+spriteType = {
+		name = "GFX_modifiers_afr_african_resistance"
+		texturefile = "gfx/interface/state_modifiers/modifiers_afr_african_resistance.dds"
+	}
+		spriteType = {
+		name = "GFX_modifiers_afr_african_guerillas"
+		texturefile = "gfx/interface/state_modifiers/modifiers_afr_african_guerillas.dds"
+	}
+spriteType = {
+		name = "GFX_modifiers_liberal_opposition"
+		texturefile = "gfx/interface/state_modifiers/modifiers_liberal_opposition.dds"
+	}
+		spriteType = {
+		name = "GFX_modifiers_liberal_influence"
+		texturefile = "gfx/interface/state_modifiers/modifiers_liberal_influence.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_conservative_opposition"
+		texturefile = "gfx/interface/state_modifiers/modifiers_conservative_opposition.dds"
+	}
+		spriteType = {
+		name = "GFX_modifiers_conservative_sedition"
+		texturefile = "gfx/interface/state_modifiers/modifiers_conservative_sedition.dds"
+	}
+		spriteType = {
+		name = "GFX_modifiers_conservative_insurgency"
+		texturefile = "gfx/interface/state_modifiers/modifiers_conservative_insurgency.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_azeri_separatism"
+		texturefile = "gfx/interface/state_modifiers/modifiers_azeri_separatism.dds"
+	}
+		spriteType = {
+		name = "GFX_modifiers_azeri_rebels"
+		texturefile = "gfx/interface/state_modifiers/modifiers_azeri_rebels.dds"
+	}
+		spriteType = {
+		name = "GFX_modifiers_turkish_separatism"
+		texturefile = "gfx/interface/state_modifiers/modifiers_turkish_separatism.dds"
+	}
+		spriteType = {
+		name = "GFX_modifiers_turkish_rebels"
+		texturefile = "gfx/interface/state_modifiers/modifiers_turkish_rebels.dds"
+	}
 	spriteType = {
 		name = "GFX_ARM_Infopanel_bg"
 		texturefile = "gfx/interface/gui/Armenia/ARM_Info_Panel_bg.tga"
@@ -15,11 +59,11 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_ARM_CENTRALISM"
-		texturefile = "gfx/interface/gui/Armenia/ARM_CENTRALISM.tga"
+		texturefile = "gfx/interface/gui/armenia/ARM_CENTRALISM.tga"
 	}
 	spriteType = {
 		name = "GFX_ARM_NATIONAL"
-		texturefile = "gfx/interface/gui/Armenia/ARM_NATIONAL.tga"
+		texturefile = "gfx/interface/gui/armenia/ARM_NATIONAL.tga"
 	}
 	spriteType = {
 		name = "GFX_ARM_Authority"

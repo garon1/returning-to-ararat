@@ -67,13 +67,13 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = social_democracy
+	ruling_party = syndicalism
 	last_election = "1935.10.27"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	social_democracy = 96
+	syndicalism = 96
 	nationalism = 2
 	market_socialism = 2
 }
@@ -96,8 +96,9 @@ create_country_leader = {
 	}
 }
 create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	name = "Federal Council"
+	desc = "POLITICS_FEDERAL_COUNCIL_DESC"
+	picture = "Portrait_Switzerland_Federal_council.dds"
 	expire = "1965.1.1"
 	ideology = syndicalism_subtype
 	traits = {

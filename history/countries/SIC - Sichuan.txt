@@ -1,4 +1,4 @@
-capital = 604
+capital = 605
 
 oob = "SIC_1936"
 
@@ -35,9 +35,9 @@ totalitarianism = 100
 }
 
 create_country_leader = {
-	name = "Ma Bufang"
+	name = "Yang Sen"
 	desc = ""
-	picture = "GFX_portrait_xsm_ma_bufang"
+	picture = "gfx/leaders/SIC/Portrait_SIC_Yang_Sen.tga"
 	expire = "1965.1.1"
 	ideology = totalitarianism_subtype
 	traits = {

@@ -6,7 +6,7 @@ country_event = {
     desc = arm.1.d
     picture = GFX_report_event_arm_turks
     
-    is_triggered_only = yes
+    is_triggered_only = yes   fire_only_once = yes trigger = { original_tag = ARM }
     
     option = {
         name = arm.1.a
@@ -111,7 +111,7 @@ country_event = {
             }
         }
     }
-}
+
 #civil war hidden event won by arm
 country_event = {
     id = arm.2
@@ -119,11 +119,671 @@ country_event = {
     desc = arm.2.d
     picture = GFX_report_event_arm_turks
     
-    is_triggered_only = yes
+      fire_only_once = yes trigger = { original_tag = ARM }
+    hidden = yes
+    trigger = {
+    NOT = {
+    country_exists = KUD
+    country_exists = SIV
+    }
+    has_country_flag = armcivwar
+}
     
     option = {
         name = arm.2.a
-        }
         set_country_flag = ARM_war_won
+        complete_national_focus = ARM_civil_war_victory
     }
 }
+#military budget evaluation
+country_event = {
+    id = arm.3
+    title = arm.3.t
+    desc = arm.3.d
+    picture = ##############################
+    
+    is_triggered_only = yes   fire_only_once = yes trigger = { original_tag = ARM }
+    
+    option = {#expand the budget, which allows for better research technology but less political power
+        name = arm.3.a
+        add_ideas = ARM_army_big
+    }
+    option = {#keep the budget smaller for more stability but less research
+        name = arm.3.b
+        add_to_variable = {
+                var = kur_integration_factor
+                value = 50
+            }
+    }
+}
+#garegin nzdeh retires
+country_event = {
+    id = arm.4
+    title = arm.4.t
+    desc = arm.4.d
+    picture = ##############################
+    
+    is_triggered_only = yes   fire_only_once = yes trigger = { original_tag = ARM }
+    
+    option = {
+        name = arm.4.a
+        add_stability = -0.05
+        hidden_effect = {
+        retire_country_leader = yes
+        set_politics = {
+    ruling_party = social_democracy
+    last_election = "1936.1.1"
+    election_frequency = 48
+    elections_allowed = no
+}
+create_country_leader = {
+    name = "Jaques Bagratuni"
+    desc = ""
+    picture = "Portrait_Armenia_Jaques_Bagratuni.dds"
+    expire = "1953.3.1"
+    ideology = social_democracy_subtype
+    traits = {
+        
+    }
+}
+        }
+        add_popularity = {
+            popularity = 0.3
+            ideology = social_democracy
+        }
+        add_popularity = {
+            popularity = 0.1
+            ideology = radical_socialism
+        }
+        add_popularity = {
+            popularity = 0.1
+            ideology = nationalism
+        }
+    }
+}
+#election event
+country_event = {
+    id = arm.5
+    title = arm.5.t
+    desc = arm.5.d
+    picture = ##############################
+    
+    is_triggered_only = yes   fire_only_once = yes trigger = { original_tag = ARM }
+    
+    option = {#elect social democrats
+        name = arm.5.a
+        complete_national_focus = ARM_democrats_elected
+        retire_country_leader = yes
+        create_country_leader = {
+    name = "Ruben Ter-Minasian"
+    desc = ""
+    picture = "Portrait_Armenia_Ruben_Ter-Minasian.dds"
+    expire = "1953.3.1"
+    ideology = social_democracy_subtype
+    traits = {
+        
+    }
+}
+    }
+     option = {#elect conservatists
+        name = arm.5.b
+        complete_national_focus = ARM_conservatists_elected
+        set_politics = {
+    ruling_party = traditional_conservatism
+    last_election = "1936.1.1"
+    election_frequency = 48
+    elections_allowed = no
+}
+        create_country_leader = {
+    name = "Hovannes Kajaznuni"
+    desc = ""
+    picture = "Portrait_Armenia_Hovhannes_Kajaznuni.dds"
+    expire = "1953.3.1"
+    ideology = traditional_conservatism_subtype
+    traits = {
+        
+              }
+         }
+    }
+}
+#opposition events before election that will determine who is elected, which national focus etc.
+
+#opposition to militarised state
+country_event = {
+    id = arm.6
+    title = arm.6.t
+    desc = arm.6.d
+    picture = ##############################
+    
+    is_triggered_only = yes   fire_only_once = yes trigger = { original_tag = ARM }
+    
+    option = {#reason with them
+        name = arm.6.a
+        ai_chance = {
+        factor = 40
+        }
+        set_country_flag = ARM_stabilize
+        add_stability = -0.1
+        hidden_effect = {
+        country_event = {
+            id = arm.7
+            days = 4
+            }
+        }
+    }
+    option = {#crush them
+        name = arm.6.a
+        ai_chance = {
+        factor = 40
+        }
+        set_country_flag = ARM_destabilize
+        add_popularity = {
+        popularity = -0.1
+        ideology = totalitarianism
+        }
+        hidden_effect = {
+        country_event = {
+            id = arm.7
+            days = 4
+            }
+        }
+    }
+}
+#farmers striking
+country_event = {
+    id = arm.7
+    title = arm.7.t
+    desc = arm.7.d
+    picture = ##############################
+    
+    is_triggered_only = yes   fire_only_once = yes trigger = { original_tag = ARM }
+    
+    option = {#put it down
+        name = arm.7.a
+        ai_chance = {
+        factor = 55
+        }
+        add_popularity = {
+        popularity = 0.05
+        ideology = radical_socialism
+        }
+        add_stability = -0.1
+        hidden_effect = {
+        country_event = {
+            id = arm.8
+            days = 7
+            }
+        }  
+    }
+    option = {#let them strike
+        name = arm.7.b
+        ai_chance = {
+        factor = 45
+        }
+        hidden_effect = {
+        country_event = {
+            id = arm.8
+            days = 7
+            }
+            add_popularity = {
+        popularity = 0.15
+        ideology = radical_socialism
+        }
+        add_popularity = {
+        popularity = 0.15
+        ideology = nationalism
+        }
+        }
+        add_stability = -0.05
+    }
+}
+#people demand to lower conscription
+country_event = {
+    id = arm.8
+    title = arm.8.t
+    desc = arm.8.d
+    picture = ##############################
+    
+    is_triggered_only = yes   fire_only_once = yes trigger = { original_tag = ARM }
+    
+    option = {#fine go with it
+        name = arm.8.a
+        ai_chance = {
+        factor = 35
+        }
+        #add the removal for the conscription idea
+        add_popularity = {
+        popularity = 0.05
+        ideology = radical_socialism
+        }
+        add_stability = 0.05  
+    }
+    option = {#never!
+        name = arm.8.b
+        ai_chance = {
+        factor = 65
+        }
+        hidden_effect = {
+            add_popularity = {
+        popularity = 0.15
+        ideology = radical_socialism
+        }
+         add_popularity = {
+        popularity = 0.15
+        ideology = nationalism
+        }
+        add_stability = -0.05
+        }
+    }
+}
+#farming aid
+country_event = {
+    id = arm.9
+    title = arm.9.t
+    desc = arm.9.d
+    picture = ##############################
+    
+    is_triggered_only = yes   fire_only_once = yes trigger = { original_tag = ARM }
+    
+    option = {
+        name = arm.9.a
+        add_stability = 0.05
+        add_popularity = {
+        popularity = 0.05
+        ideology = social_democracy
+        }
+    }
+}
+#mineral deposits
+country_event = {
+    id = arm.10
+    title = arm.10.t
+    desc = arm.10.d
+    picture = ##############################
+    
+    is_triggered_only = yes   fire_only_once = yes trigger = { original_tag = ARM }
+    
+    option = {
+        name = arm.10.a
+        add_political_power = 100
+        add_resource = {
+                type = steel
+                amount = 230
+                state = 811
+            }
+    }
+}
+#fund the wealthy
+country_event = {
+    id = arm.11
+    title = arm.11.t
+    desc = arm.11.d
+    picture = ##############################
+    
+    is_triggered_only = yes   fire_only_once = yes trigger = { original_tag = ARM }
+    
+    option = {
+        name = arm.11.a
+        add_political_power = -100
+        add_stability = -0.1
+        add_popularity = {
+        popularity = 0.09
+        ideology = traditional_conservatism
+        }
+    }
+}
+#russian relation improvement
+country_event = {
+    id = arm.12
+    title = arm.12.t
+    desc = arm.12.d
+    picture = ##############################
+    
+    is_triggered_only = yes   fire_only_once = yes trigger = { original_tag = ARM }
+    
+    option = {
+        name = arm.12.a
+        RUS = { add_opinion_modifier = { target = ARM modifier = small_increase } }
+        ARM = { add_opinion_modifier = { target = RUS modifier = small_increase } }
+    }
+}
+#german relation improvement
+country_event = {
+    id = arm.13
+    title = arm.13.t
+    desc = arm.13.d
+    picture = ##############################
+    
+    is_triggered_only = yes   fire_only_once = yes trigger = { original_tag = ARM }
+    
+    option = {
+        name = arm.13.a
+        GER = { add_opinion_modifier = { target = ARM modifier = small_increase } }
+        ARM = { add_opinion_modifier = { target = GER modifier = small_increase } }
+    }
+}
+#azeris in migration
+country_event = {
+    id = arm.14
+    title = arm.14.t
+    desc = arm.14.d
+    picture = ##############################
+    
+    is_triggered_only = yes   fire_only_once = yes trigger = { original_tag = ARM }
+    
+    option = {
+        name = arm.14.a
+        AZR = {
+        manpower = 100000
+        add_stability = -0.1
+        }
+        ARM = {
+        manpower = -100000
+        add_stability = -0.1
+        }
+    }
+}
+#coup in karin
+country_event = {
+    id = arm.15
+    title = arm.15.t
+    desc = arm.15.d
+    picture = ##############################
+    
+    is_triggered_only = yes   fire_only_once = yes trigger = { original_tag = ARM }
+    
+    option = {
+        name = arm.15.a
+        set_politics = {
+    ruling_party = nationalism
+    last_election = "1936.6.15"
+    election_frequency = 48
+    elections_allowed = no
+        }
+    }
+}
+#starting event
+country_event = {
+    id = arm.16
+    title = arm.16.t
+    desc = arm.16.d
+    picture = ##############################
+    
+    is_triggered_only = yes   fire_only_once = yes trigger = { original_tag = ARM }
+    
+    option = {
+        name = arm.16.a
+        country_event = arm.17
+        }
+    }
+#starting event
+country_event = {
+    id = arm.17
+    title = arm.17.t
+    desc = arm.17.d
+    picture = ##############################
+    
+    is_triggered_only = yes   fire_only_once = yes trigger = { original_tag = ARM }
+    
+    option = {
+        name = arm.17.a
+        add_political_power = 30
+        }
+    }
+#garegin nzdeh retires
+country_event = {
+    id = arm.18
+    title = arm.18.t
+    desc = arm.18.d
+    picture = ##############################
+    
+    is_triggered_only = yes   fire_only_once = yes trigger = { original_tag = ARM }
+    
+    option = {
+        name = arm.18.a
+        retire_country_leader = yes
+        set_politics = {
+    ruling_party = traditional_conservatism
+    last_election = "1937.6.15"
+    election_frequency = 48
+    elections_allowed = no
+}
+create_country_leader = {
+    name = "Karin Council"
+    desc = ""
+    picture = "gfx/leaders/ARM/Portrait_Armenia_Karin_Council.dds"
+    expire = "1965.1.1"
+    ideology = traditional_conservatism_subtype
+            }
+        }
+    }
+#armenian heros statues
+country_event = {
+    id = arm.19
+    title = arm.19.t
+    desc = arm.19.d
+    picture = ##############################
+    
+    is_triggered_only = yes   fire_only_once = yes trigger = { original_tag = ARM }
+    
+    option = {
+        name = arm.19.a
+        add_war_support = 0.05
+        add_political_power = 50
+        }
+    }
+#Tseghakronism event
+country_event = {
+    id = arm.20
+    title = arm.20.t
+    desc = arm.20.d
+    picture = ##############################
+    
+    is_triggered_only = yes   fire_only_once = yes trigger = { original_tag = ARM }
+    
+    option = {
+        name = arm.20.a
+        add_war_support = 0.1
+        add_political_power = 100
+        add_popularity = {
+        popularity = 0.08
+        ideology = nationalism
+            }
+        }
+    }
+    #women are granted suffrage
+country_event = {
+    id = arm.21
+    title = arm.21.t
+    desc = arm.21.d
+    picture = ##############################
+    
+    is_triggered_only = yes   fire_only_once = yes trigger = { original_tag = ARM }
+    
+    option = {
+        name = arm.21.a
+        add_war_support = 0.05
+        add_political_power = 75
+        add_popularity = {
+        popularity = 0.08
+        ideology = market_liberal
+            }
+        }
+    }
+#republic is celebrated
+country_event = {
+    id = arm.22
+    title = arm.22.t
+    desc = arm.22.d
+    picture = ##############################
+    
+    is_triggered_only = yes   fire_only_once = yes trigger = { original_tag = ARM }
+    
+    option = {
+        name = arm.22.a
+        add_war_support = 0.05
+        add_political_power = 75
+        add_popularity = {
+        popularity = 0.05
+        ideology = social_democracy
+            }
+        add_popularity = {
+        popularity = 0.05
+        ideology = social_liberal
+            }
+        add_popularity = {
+        popularity = 0.05
+        ideology = market_liberal
+            }
+        }
+    }
+    #new language initiatives
+country_event = {
+    id = arm.23
+    title = arm.23.t
+    desc = arm.23.d
+    picture = ##############################
+    
+    is_triggered_only = yes   fire_only_once = yes trigger = { original_tag = ARM }
+    
+    option = {
+        name = arm.23.a
+        remove_ideas = ARM_language_barrier
+        }
+    }
+#nationalists are banned
+country_event = {
+    id = arm.24
+    title = arm.24.t
+    desc = arm.24.d
+    picture = ##############################
+    
+    is_triggered_only = yes   fire_only_once = yes trigger = { original_tag = ARM }
+    
+    option = {
+        name = arm.24.a
+        add_war_support = -0.15
+        add_manpower = -200
+        add_popularity = {
+        popularity = -0.15
+        ideology = nationalism
+            }
+        }
+    }
+#we expand our interest towards germany
+country_event = {
+    id = arm.25
+    title = arm.25.t
+    desc = arm.25.d
+    picture = ##############################
+    
+    is_triggered_only = yes   fire_only_once = yes trigger = { original_tag = ARM }
+    
+    option = {
+        name = arm.25.a
+        ARM = {
+        add_popularity = {
+        popularity = 0.05
+        ideology = radical_socialism
+            }
+        }
+            ARM = {
+                            add_opinion_modifier = {
+                                    target = GER
+                                    modifier = small_increase
+                                }
+                        }
+                        GER = {
+                            add_opinion_modifier = {
+                                    target = ARM
+                                    modifier = small_increase
+                                }
+                        }
+        }
+    }
+#leftist council forms
+country_event = {
+    id = arm.26
+    title = arm.26.t
+    desc = arm.26.d
+    picture = ##############################
+    
+    is_triggered_only = yes   fire_only_once = yes trigger = { original_tag = ARM }
+    
+    option = {
+        name = arm.26.a
+        add_popularity = {
+        popularity = 0.1
+        ideology = radical_socialism
+            }
+            add_ideas = ARM_organized_leftists
+            random_owned_controlled_state = {
+                            limit = {
+                                    OR = {
+                                            has_dynamic_modifier = {
+                                                    modifier = liberal_opposition
+                                                }
+                                            has_dynamic_modifier = {
+                                                    modifier = liberal_sedition
+                                                }
+                                            has_dynamic_modifier = {
+                                                    modifier = liberal_insurgency
+                                                }
+                                        }
+                                }
+                            save_global_event_target_as =  ARM_upgrade_liberalist_defiance_effect
+                             ARM_upgrade_liberalist_defiance_effect = yes
+                        }
+                    random_owned_controlled_state = {
+                            limit = {
+                                    OR = {
+                                            has_dynamic_modifier = {
+                                                    modifier = liberal_opposition
+                                                }
+                                            has_dynamic_modifier = {
+                                                    modifier = liberal_sedition
+                                                }
+                                            has_dynamic_modifier = {
+                                                    modifier = liberal_insurgency
+                                                }
+                                        }
+                                }
+                            save_global_event_target_as =  ARM_upgrade_liberalist_defiance_effect
+                             ARM_upgrade_liberalist_defiance_effect = yes
+                        }
+                    random_owned_controlled_state = {
+                            limit = {
+                                    OR = {
+                                            has_dynamic_modifier = {
+                                                    modifier = liberal_opposition
+                                                }
+                                            has_dynamic_modifier = {
+                                                    modifier = liberal_sedition
+                                                }
+                                            has_dynamic_modifier = {
+                                                    modifier = liberal_insurgency
+                                                }
+                                        }
+                                }
+                            save_global_event_target_as =  ARM_upgrade_liberalist_defiance_effect
+                             ARM_upgrade_liberalist_defiance_effect = yes
+                        }
+                    random_owned_controlled_state = {
+                            limit = {
+                                    OR = {
+                                            has_dynamic_modifier = {
+                                                    modifier = liberal_opposition
+                                                }
+                                            has_dynamic_modifier = {
+                                                    modifier = liberal_sedition
+                                                }
+                                            has_dynamic_modifier = {
+                                                    modifier = liberal_insurgency
+                                                }
+                                        }
+                                }
+                            save_global_event_target_as = ARM_upgrade_liberalist_defiance_effect
+                            ARM_upgrade_liberalist_defiance_effect = yes
+                        }
+        }
+    }

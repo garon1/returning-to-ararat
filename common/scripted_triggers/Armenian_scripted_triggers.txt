@@ -1,269 +1,117 @@
-### state scope
-ARM_is_autonomous_region = {
-	check_variable = { ARM_authority_level = 2 }
-}
+#	Example:
+# 
+#	example_trigger = {
+#		tag = GER
+#		is_ai = no
+#	}
+#
+#
+#	In a script file:
+#
+#	trigger = {
+#		exampel_trigger = yes
+#	}
 
-ARM_is_armenian_province = {
-	check_variable = { ARM_authority_level = 3 }
-}
-
-ARM_revolt_risk_very_low = {
+ARM_cannot_form_collaboration_government = {
 	custom_trigger_tooltip = {
-		tooltip = ARM_revolt_risk_very_low
-		check_variable = { ARM_revolt_risk > 0 }
+		tooltip = ARN_cannot_form_collaboration_government_tt
+		AND = {
+			FROM = { original_tag = KUR }
+			original_tag = ARM
+		}
+		AND = {
+			FROM = { original_tag = AZR }
+			original_tag = ARM
+		}
+		AND = {
+			FROM = { original_tag = TUR }
+			original_tag = ARM
+		}
 	}
 }
 
-ARM_revolt_risk_low = {
+ARM_has_armenian_state_modifier = {
 	custom_trigger_tooltip = {
-		tooltip = ARM_revolt_risk_low
-		check_variable = { ARM_revolt_risk > 1 }
+		tooltip = TUR_has_turkish_state_modifier_tt
+		all_state = {
+			if = {
+				limit = {
+					NOT = { is_owned_by = TUR }
+					OR = {
+						has_dynamic_modifier = { modifier = kurdish_separatism }
+						has_dynamic_modifier = { modifier = kurdish_rebels }
+						has_dynamic_modifier = { modifier = azerbaijani_separatism }
+						has_dynamic_modifier = { modifier = azerbaijani_rebels }
+						has_dynamic_modifier = { modifier = turkish_separatism }
+						has_dynamic_modifier = { modifier = turkish_rebels }
+						has_dynamic_modifier = { modifier = conservative_opposition }
+						has_dynamic_modifier = { modifier = conservative_sedition }
+						has_dynamic_modifier = { modifier = conservative_insurgency }
+					}
+				}
+			}
+		}
 	}
 }
+}
 
-ARM_revolt_risk_medium = {
+ARM_is_hostile_kurdish_state = {
 	custom_trigger_tooltip = {
-		tooltip = ARM_revolt_risk_medium
-		check_variable = { ARM_revolt_risk > 2 }
+		tooltip = TUR_is_hostile_kurdish_state_tt
+		OR = {
+			AND = {
+				state = 800
+				OR = {
+					has_dynamic_modifier = { modifier = kurdish_separatism }
+					has_dynamic_modifier = { modifier = kurdish_rebels }
+				}
+			}
+			AND = {
+				state = 352
+				OR = {
+					has_dynamic_modifier = { modifier = kurdish_separatism }
+					has_dynamic_modifier = { modifier = kurdish_rebels }
+				}
+			}
+		}
 	}
 }
 
-ARM_revolt_risk_high = {
+ARM_is_friendly_kurdish_state = {
 	custom_trigger_tooltip = {
-		tooltip = ARM_revolt_risk_medium
-		check_variable = { ARM_revolt_risk > 3 }
+		tooltip = ARM_is_friendly_kurdish_state_tt
+		OR = {
+		AND = {
+				state = 800
+				compliance > 70
+				resistance < 30
+			}
+			AND = {
+				state = 352
+				compliance > 70
+				resistance < 30
+			}
+		}
 	}
 }
-
-ARM_revolt_risk_very_high = {
+ARM_is_friendly_turkish_state = {
 	custom_trigger_tooltip = {
-		tooltip = ARM_revolt_risk_medium
-		check_variable = { ARM_revolt_risk > 4 }
-	}
-}
-
-ARM_cannot_centralise_state = {
-	OR = {
-		state = 230 #Yerevan
-		state = 293 #Yemen
-		state = 413 #Khuzestan
-		state = 417 #Western Azerbaijan
-		state = 419 #Eastern Azerbaijan
-		state = 421 #Kurdistan
-		state = 659 #Aden
-		state = 752 #Hadhramaut
-		state = 982 #Asir
-	}
-}
-
-ARM_is_turkish_state = {
-	OR = {
-		state = 49 #Ankara
-		state = 184 #Western Thrace
-		state = 339 #Smyrna
-		state = 340 #Bursa
-		state = 341 #Adrianople
-		state = 342 #Mugla
-		state = 343 #Afyon
-		state = 344 #Adana
-		state = 345 #Sivas
-		state = 346 #Konya
-		state = 354 #Erzurum
-		state = 355 #Trebizond
-		state = 356 #Kastamonu
-		state = 773 #Constantinople
-		state = 1001 #Lazistan
-		state = 1089 #Kardzhali
-	}
-}
-
-ARM_is_syrian_state = {
-	OR = {
-		state = 454 #Jerusalem
-		state = 455 #Ma'an
-		state = 553 #Beirut
-		state = 554 #Syria
-		state = 677 #Aleppo
-		state = 680 #Latakia
-		state = 992 #Haifa
-		state = 995 #Homs
-	}
-}
-
-ARM_is_greek_state = {
-	OR = {
-		state = 164 #Dodecanese
-		state = 183 #Cyprus
-		state = 187 #Aegean Islands
-	}
-}
-
-ARM_is_kurdish_state = {
-	OR = {
-		state = 350 #Diyarbakir
-		state = 352 #Van
-		state = 819 #Sulaymaniyah
-		state = 1000 #Kars-Igdir
-	}
-}
-
-ARM_is_arabian_state = {
-	OR = {
-		state = 347 #Khasab
-		state = 656 #Al-Hasa
-		state = 658 #Abu Dhabi
-		state = 679 #Hejaz
-		state = 754 #Medina
-		state = 907 #Bahrain
-		state = 993 #Qatar
-	}
-}
-
-ARM_is_iraqi_state = {
-	OR = {
-		state = 291 #Baghdad
-		state = 349 #Kirkuk
-		state = 676 #Mosul
-		state = 812 #Basra
-	}
-}
-
-ARM_is_libyan_state = {
-	OR = {
-		state = 273 #Fezzan
-		state = 448 #Tripoli
-		state = 450 #Benghazi
-		state = 451 #Ajdabiya
-		state = 663 #Jaghbub
-		state = 1009 #Kufra
-	}
-}
-
-ARM_is_egyptian_state = {
-	OR = {
-		state = 446 #Cairo
-		state = 447 #Alexandria
-		state = 452 #Mersa Matruh
-		state = 453 #Sinai
-		state = 456 #Aswan
-		state = 457 #Eastern Desert
-		state = 552 #Western Desert
-		state = 1008 #Girga
-	}
-}
-
-ARM_has_unique_rebellion_event = {
-	is_owned_by = ARM
-	OR = {
-		state = 164 #Dodecanese
-		state = 183 #Cyprus
-		state = 187 #Aegean Islands
-		state = 273 #Fezzan
-		state = 291 #Baghdad
-		state = 448 #Tripoli
-		state = 450 #Benghazi
-		state = 451 #Ajdabiya
-		state = 455 #Ma'an
-		state = 554 #Syria
-		state = 663 #Jaghbub
-		state = 677 #Aleppo
-		state = 679 #Medina
-		state = 754 #Hejaz
-		state = 992 #Haifa
-		state = 995 #Homs
-		state = 1009 #Kufra
-	}
-}
-
-ARM_can_centralise = {
-	check_variable = { ARM_authority_level < 3 }
-	ARM_cannot_centralise_state = no
-	ARM_can_centralise_region = yes
-}
-
-ARM_can_centralise_region = {
-	if = {
-		limit = { ARM_is_autonomous_region = yes }
-		ARM_can_centralise_low = yes
-	}
-	else = {
-		ARM_can_centralise_medium = yes
-	}
-}
-
-ARM_can_centralise_low = {
-	if = {
-		limit = { ARM_is_syrian_state = yes }
-		check_variable = { ROOT.syr_integration_factor > 49 }
-	}
-	else_if = {
-		limit = { ARM_is_greek_state = yes }
-		check_variable = { ROOT.gre_integration_factor > 49 }
-	}
-	else_if = {
-		limit = { ARM_is_kurdish_state = yes }
-		check_variable = { ROOT.kur_integration_factor > 49 }
-	}
-	else_if = {
-		limit = { ARM_is_arabian_state = yes }
-		check_variable = { ROOT.hej_integration_factor > 49 }
-	}
-	else_if = {
-		limit = { ARM_is_iraqi_state = yes }
-		check_variable = { ROOT.irq_integration_factor > 49 }
-	}
-	else_if = {
-		limit = { ARM_is_libyan_state = yes }
-		check_variable = { ROOT.tri_integration_factor > 49 }
-	}
-	else_if = {
-		limit = { ARM_is_egyptian_state = yes }
-		check_variable = { ROOT.egy_integration_factor > 49 }
-	}
-}
-
-ARM_can_centralise_medium = {
-	if = {
-		limit = { ARM_is_syrian_state = yes }
-		check_variable = { ROOT.syr_integration_factor > 99 }
-	}
-	else_if = {
-		limit = { ARM_is_greek_state = yes }
-		check_variable = { ROOT.gre_integration_factor > 99 }
-	}
-	else_if = {
-		limit = { ARM_is_kurdish_state = yes }
-		check_variable = { ROOT.kur_integration_factor > 99 }
-	}
-	else_if = {
-		limit = { ARM_is_arabian_state = yes }
-		check_variable = { ROOT.hej_integration_factor > 99 }
-	}
-	else_if = {
-		limit = { ARM_is_iraqi_state = yes }
-		check_variable = { ROOT.irq_integration_factor > 99 }
-	}
-	else_if = {
-		limit = { ARM_is_libyan_state = yes }
-		check_variable = { ROOT.tri_integration_factor > 99 }
-	}
-	else_if = {
-		limit = { ARM_is_egyptian_state = yes }
-		check_variable = { ROOT.egy_integration_factor > 99 }
-	}
-}
-
-ARM_cairo_pact_defeated = {
-	OR = {
-		NOT = { country_exists = EGY }
-		has_subject = EGY
-	}
-	OR = {
-		NOT = { country_exists = PER }
-		has_subject = PER
-		ARM = {
-			NOT = {
-				has_war_with = PER
+		tooltip = ARM_is_friendly_kurdish_state_tt
+		OR = {
+		AND = {
+				state = 354
+				compliance > 70
+				resistance < 30
+			}
+			AND = {
+				state = 344
+				compliance > 70
+				resistance < 30
+			}
+			AND = {
+				state = 353
+				compliance > 70
+				resistance < 30
 			}
 		}
 	}

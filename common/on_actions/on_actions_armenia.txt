@@ -13,86 +13,56 @@ on_actions = {
 
 			#Setup the armenian mechanics
 			ARM = {
-				calculate_state_values_ARM = yes
-				calculate_state_values_ARM = yes
-			}	
-			ARM = {
-				add_manpower = 12000
-			}
-			every_state = {
-				set_state_flag = ARM_Can_Martial_Law
+				add_manpower = -6000
 			}
 			799 = {	#Hatay
-				set_state_flag = ARM_armenian
-				ARM_set_revolt_risk_none = yes
-				ARM_set_authority_kavat_medium = yes
 			}
 			815 = { #Erzingan
-				set_state_flag = ARM_armenian
-				ARM_set_revolt_risk_none = yes
-				ARM_set_authority_kavat_none = yes
+				ARM_turkish_separatism = yes
 			}
 			818 = {	#Zangezur
-				set_state_flag = ARM_armenianist
-				ARM_set_revolt_risk_none = yes
-				ARM_set_authority_kavat_medium = yes
+				ARM_conservative_opposition = yes
+				ARM_azerbaijani_separatism = yes
 			}
 			819 = { #Aras
-				set_state_flag = ARM_armenianist
-				ARM_set_revolt_risk_none = yes
-				ARM_set_authority_kavat_medium = yes
+				ARM_conservative_opposition = yes
+				ARM_azerbaijani_separatism = yes
 			}
 			800 = { #Van
-				set_state_flag = ARM_armenianist
-				ARM_set_revolt_risk_none = yes
-				ARM_set_authority_kavat_high = yes
+				ARM_kurdish_separatism = yes
 			}
 			350 = { #Malatya
-				set_state_flag = ARM_armenianist
-				ARM_set_revolt_risk_none = yes
-				ARM_set_authority_kavat_medium = yes
+				ARM_turkish_separatism = yes
 			}
 			353 = {	#Karin
-				set_state_flag = ARM_armenianist
-				ARM_set_revolt_risk_none = yes
-				ARM_set_authority_kavat_medium = yes
+				ARM_conservative_sedition = yes
+				ARM_turkish_separatism = yes
 			}
 			813 = { #Lazistan
-				set_state_flag = ARM_armenian
-				ARM_set_revolt_risk_none = yes
-				ARM_set_authority_kavat_none = yes
+				ARM_conservative_sedition = yes
+				ARM_turkish_separatism = yes
 			}
 			349 = { #Sivas
-				set_state_flag = ARM_armenian
-				ARM_set_revolt_risk_none = yes
-				ARM_set_authority_kavat_none = yes
+				ARM_turkish_separatism = yes
 			}
 			344 = {	#Adana
-				set_state_flag = ARM_armenian
-				ARM_set_revolt_risk_none = yes
-				ARM_set_authority_kavat_medum = yes
+				ARM_turkish_separatism = yes
+				ARM_liberal_opposition = yes
 			}
 			352 = { #South East Anatolia
-				ARM_set_revolt_risk_none = yes
-				ARM_set_authority_kavat_none = yes
+				ARM_kurdish_separatism = yes
 			}
 			230 = { #Erivan
-				ARM_set_revolt_risk_none = yes
-				ARM_set_authority_kavat_high = yes
+			ARM_liberal_opposition = yes
 			}
 			814 = { #Ghars
-				set_state_flag = ARM_armenian
-				ARM_set_revolt_risk_none = yes
-				ARM_set_authority_kavat_medium = yes
+				ARM_turkish_separatism = yes
 			}
 			842 = {	#Lachin
-				set_state_flag = ARM_armenian
-				ARM_set_revolt_risk_none = yes
-				ARM_set_authority_kavat_none = yes
+				ARM_azerbaijani_rebels = yes
 			}
 			831 = {	#Karabakh
-				ARM_set_revolt_risk_none = yes
-				ARM_set_authority_kavat_high = yes
+				ARM_conservative_sedition = yes
 			}
 		}
 	}

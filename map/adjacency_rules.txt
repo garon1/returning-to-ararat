@@ -129,7 +129,7 @@ adjacency_rule
 		trade = yes
 	}
 	
-	required_provinces = { 10904 }
+	required_provinces = { 10904 13238 }
 		
 	icon = 10904
 	offset = { 1 0 -6 }
@@ -220,6 +220,46 @@ adjacency_rule
 		
 	icon = 7617
 	offset = { -3 0 -2 }
+}
+
+#Gallipoli Strait
+adjacency_rule
+{
+	name = "GALLIPOLI_STRAIT"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	
+	required_provinces = { 849 9887 }
+	
+	icon = 849
+	offset = { -2 0 -9 }
 }
 
 #Turkish Straits

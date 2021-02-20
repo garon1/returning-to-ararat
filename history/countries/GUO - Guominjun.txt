@@ -1,4 +1,4 @@
-capital = 604
+capital = 622
 
 oob = "GUO_1936"
 
@@ -35,9 +35,9 @@ totalitarianism = 100
 }
 
 create_country_leader = {
-	name = "Ma Bufang"
+	name = "Feng Yuxiang"
 	desc = ""
-	picture = "GFX_portrait_xsm_ma_bufang"
+	picture = "gfx/leaders/GUO/Portrait_Guominjun_Feng_Yuxiang.tga"
 	expire = "1965.1.1"
 	ideology = totalitarianism_subtype
 	traits = {

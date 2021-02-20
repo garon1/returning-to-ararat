@@ -126,7 +126,10 @@ set_politics = {
 set_popularities = {
 syndicalism = 100
 }
-
+set_autonomy = {
+		target = SWI
+		autonomous_state = autonomy_integrated_puppet
+	}
 create_faction = "Combined Nations Of The People"
 add_to_faction = GER
 add_to_faction = HAI

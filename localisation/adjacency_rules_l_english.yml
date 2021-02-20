@@ -1,5 +1,6 @@
 ﻿l_english:
-  HORMOUZ_STRAIT:0 "Strait of Hormuz"
+ GALLIPOLI_STRAIT:0 "Gallipoli Strait"
+ HORMOUZ_STRAIT:0 "Strait of Hormuz"
  PERMISSION_CONTESTED:0 "Contested"
  PERMISSION_CONTESTED_DESC:0 "Due to the war of controllers: $SIDE1|H$ vs $SIDE2|H$"
  PERMISSION_ENEMY:0 "Enemy"

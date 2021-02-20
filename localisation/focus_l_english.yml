@@ -1,5 +1,12 @@
 ﻿l_english:
-
+TUR_upgrade_liberalist_defiance_effect_tt:0 "As the  §YArmenian§! government allows leftism to spread in the country, liberals have not taken this lightly and will actively §Roppose§! the current government."
+ARM_upgrade_conservatist_defiance_effect_tt:0 "As leftism begins to sway Armenian politics to be more left leaning, Armenian conservatives will begin §Rinsurgencies§! against the government."
+ARM_upgrade_random_fundamentalist_defiance_effect_tt:0 "Due to the liberalization of Hayastan, §YArmenian conservatives§! will act more §Raggressive§! towards the current government."
+ARM_placate_fundamentalist_state_all_targets_effect_tt:0 "§YArmenian conservatives§! will gradually begin to §Ycooperate§! more with the government."
+decisionstt:0 "Implement a decision here later."
+lib_compro:0 "Comprimising with liberals will allow the state modifiers to §Bdecrease§! their burden but it will cost §Rstability§! and §Rpolitical power.§!"
+armcivwar:0 "The armenian civil war has begun."
+ARM_war_won:0 "Armenia has won the civil war."
 AZR_promote_religion:0 "Promote Religious Tolerance"
 AZR_promote_religion_desc:0 "We need solidarity in Azerbaijan, now more than ever. Azerbaijan has always been a beacon of religious diversity, let us keep it that way."
 AZR_finish_the_state:0 "Perfect The State"

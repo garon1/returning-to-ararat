@@ -717,7 +717,7 @@ leader_traits = {
 		}
 	}	
 
-	fascist_sympathies = {
+	nationalist_sympathies = {
 		random = no		
 		nationalism_acceptance = 70
 

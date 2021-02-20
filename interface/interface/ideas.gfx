@@ -1,6 +1,90 @@
 
 spriteTypes = {
 spriteType = {
+		name = "GFX_idea_ARM_socialist_nationalism"
+		texturefile = "gfx/interface/ideas/idea_jap_interservice_rivalry_navy_strengthened.dds"
+	}
+spriteType = {
+		name = "GFX_idea_ARM_organized_leftists"
+		texturefile = "gfx/interface/ideas/idea_jap_the_unthinkable_option.dds"
+	}
+spriteType = {
+		name = "GFX_idea_ARM_organized_leftists"
+		texturefile = "gfx/interface/ideas/idea_hol_haven_of_tolerance.dds"
+	}
+spriteType = {
+		name = "GFX_idea_ARM_new_currency"
+		texturefile = "gfx/interface/ideas/generic_economic_increase.dds"
+	}
+spriteType = {
+		name = "GFX_idea_ARM_armenian_native_faith"
+		texturefile = "gfx/interface/ideas/idea_ast_abandon_the_westminster_system.dds"
+	}
+spriteType = {
+		name = "GFX_idea_ARM_stick_with_christian_identity"
+		texturefile = "gfx/interface/ideas/idea_ast_classify_aliens.dds"
+	}
+spriteType = {
+		name = "GFX_idea_ARM_strip_securalism"
+		texturefile = "gfx/interface/ideas/idea_ast_classify_aliens.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ARM_disunification1"
+		texturefile = "gfx/interface/ideas/fra_national_resistance_council.dds"
+	}
+spriteType = {
+		name = "GFX_idea_ARM_disunification"
+		texturefile = "gfx/interface/ideas/fra_national_resistance_council.dds"
+	}
+spriteType = {
+		name = "GFX_idea_ARM_garegin_nzdeh"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_arab_1.dds"
+	}
+spriteType = {
+		name = "GFX_idea_ARM_language_barrier"
+		texturefile = "gfx/interface/ideas/idea_gre_political_instability.dds"
+	}
+spriteType = {
+		name = "GFX_idea_ARM_militarist_mentality"
+		texturefile = "gfx/interface/ideas/idea_jap_militarism_shogun.dds"
+	}
+spriteType = {
+		name = "GFX_idea_ARM_remember_the_past"
+		texturefile = "gfx/interface/ideas/idea_chi_wargaming_division.dds"
+	}
+spriteType = {
+		name = "GFX_idea_ARM_increase_individualism"
+		texturefile = "gfx/interface/ideas/fra_down_marianne.dds"
+	}
+spriteType = {
+		name = "GFX_idea_ARM_limit_political_opposition"
+		texturefile = "gfx/interface/ideas/FRA_matignon_agreements.dds"
+	}
+spriteType = {
+		name = "GFX_idea_ARM_reorganize_agriculture"
+		texturefile = "gfx/interface/ideas/idea_generic_agrarian_reform.dds"
+	}
+spriteType = {
+		name = "GFX_idea_ARM_lower_taxes"
+		texturefile = "gfx/interface/ideas/generic_goods_red_bonus.dds"
+	}
+spriteType = {
+		name = "GFX_idea_ARM_increase_farmer_output"
+		texturefile = "gfx/interface/ideas/idea_generic_agrarian_society.dds"
+	}
+spriteType = {
+		name = "GFX_idea_ARM_industrialization"
+		texturefile = "gfx/interface/ideas/idea_man_five_year_plan_industry.dds"
+	}
+spriteType = {
+		name = "GFX_idea_ARM_army_big"
+		texturefile = "gfx/interface/ideas/idea_generic_armor.dds"
+	}
+spriteType = {
+		name = "GFX_idea_ARM_army_small"
+		texturefile = "gfx/interface/ideas/idea_generic_army_problems.dds"
+	}
+spriteType = {
 		name = "GFX_idea_TUR_disabled"
 		texturefile = "gfx/interface/ideas/idea_tur_second_five_year_plan_cakmak.dds"
 	}

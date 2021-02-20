@@ -1,13 +1,6 @@
 version="v.1.10.*"
 tags={
 	"Alternative History"
-	"Map"
-	"Military"
-	"National Focuses"
-	"Events"
-	"Gameplay"
 }
-picture="thumbnail.png"
-name="Trouble At Sasoun"
-supported_version="1.10.*"
-remote_file_id="2347630050"
+name="Returning To Ararat"
+supported_version="1.10.4"

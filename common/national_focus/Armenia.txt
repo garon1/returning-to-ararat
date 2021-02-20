@@ -9,679 +9,1238 @@ focus_tree = {
 	}
 	default = no
 	focus = {
-		id = ARM_military_budget
-		icon = GFX_goal_unknown
-		cost = 5.00
-		x = 44
-		y = 0
-
-	}
-	focus = {
-		id = ARM_civil_war_victory
+		id = ARM_victory_in_civil_war
 		icon = GFX_goal_unknown
 		cost = 7.00
-		x = 20
-		y = 0
-
-	}
-	focus = {
-		id = ARM_begin_industrialization
-		icon = GFX_goal_unknown
-		cost = 5.00
-		x = 29
-		y = 0
-
-	}
-	focus = {
-		id = ARM_final_decision_region
-		icon = GFX_goal_unknown
-		cost = 7.00
-		x = 32
-		y = 9
-
-	}
-	focus = {
-		id = ARM_evaluate_future
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_civil_war_victory
-		}
-		x = 20
-		y = 1
-
-	}
-	focus = {
-		id = ARM_hold_national_elections
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_evaluate_future
-		}
-		mutually_exclusive = {
-			focus = ARM_go_down_different_path
-		}
-		x = 16
-		y = 2
-
-	}
-	focus = {
-		id = ARM_democrats_elected
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_hold_national_elections
-		}
-		mutually_exclusive = {
-			focus = ARM_military_junta_stays
-		}
-		x = 11
-		y = 3
-
-	}
-	focus = {
-		id = ARM_reorganize_regions
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_democrats_elected
-		}
-		x = 9
-		y = 4
-
-	}
-	focus = {
-		id = ARM_aid_rural_communities
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_reorganize_regions
-		}
-		x = 8
-		y = 5
-
-	}
-	focus = {
-		id = ARM_increase_farmer_output
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_aid_rural_communities
-		}
-		x = 7
-		y = 6
-
-	}
-	focus = {
-		id = ARM_lower_taxes
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_democrats_elected
-		}
-		x = 14
-		y = 4
-
-	}
-	focus = {
-		id = ARM_construct_dams
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_lower_taxes
-		}
-		x = 12
-		y = 5
-
-	}
-	focus = {
-		id = ARM_democracy_with_socialism
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_construct_dams
-		}
-		x = 13
-		y = 7
-
-	}
-	focus = {
-		id = ARM_military_junta_stays
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_hold_national_elections
-		}
-		mutually_exclusive = {
-			focus = ARM_democrats_elected
-		}
-		x = 20
-		y = 3
-
-	}
-	focus = {
-		id = ARM_establish_armenian_bank
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_democrats_elected
-			focus = ARM_military_junta_stays
-		}
 		x = 17
-		y = 4
+		y = 0
+			available = {
+					always = no
+				}
 
 	}
 	focus = {
-		id = ARM_reorganize_agriculture
+		id = ARM_fix_army
 		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_establish_armenian_bank
-		}
-		x = 16
-		y = 6
+		cost = 5.00
+		x = 50
+		y = 0
+			completion_reward = {
+					country_event = arm.3
+				}
 
 	}
 	focus = {
-		id = ARM_encourage_investments
+		id = ARM_universities
 		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_establish_armenian_bank
-		}
-		x = 20
-		y = 5
-
-	}
-	focus = {
-		id = ARM_limit_political_opposition
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_reorganize_agriculture
-		}
-		prerequisite = {
-			focus = ARM_encourage_investments
-		}
-		x = 19
-		y = 7
-
-	}
-	focus = {
-		id = ARM_state_propaganda
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_military_junta_stays
-		}
-		x = 22
-		y = 4
-
-	}
-	focus = {
-		id = ARM_pivot_to_past
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_state_propaganda
-		}
-		x = 24
-		y = 5
-
-	}
-	focus = {
-		id = ARM_increase_individualism
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_pivot_to_past
-		}
-		x = 22
-		y = 6
-
-	}
-	focus = {
-		id = ARM_step_out_depression
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_increase_individualism
-		}
-		x = 21
-		y = 7
-
-	}
-	focus = {
-		id = ARM_go_down_different_path
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_evaluate_future
-		}
-		mutually_exclusive = {
-			focus = ARM_hold_national_elections
-		}
-		x = 24
-		y = 2
-
-	}
-	focus = {
-		id = ARM_fund_mineral_deposits
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_pivot_to_past
-		}
-		x = 26
-		y = 6
-
-	}
-	focus = {
-		id = ARM_stop_unionism
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_increase_individualism
-		}
-		prerequisite = {
-			focus = ARM_fund_mineral_deposits
-		}
-		x = 24
-		y = 7
-
-	}
-	focus = {
-		id = ARM_fund_wealth
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = ARM_fund_mineral_deposits
-		}
-		x = 27
-		y = 7
-
-	}
-	focus = {
-		id = ARM_form_base_politics
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_step_out_depression
-		}
-		prerequisite = {
-			focus = ARM_fund_wealth
-		}
-		prerequisite = {
-			focus = ARM_stop_unionism
-		}
-		x = 24
-		y = 8
-
-	}
-	focus = {
-		id = ARM_align_with_russia
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_go_down_different_path
-		}
-		mutually_exclusive = {
-			focus = ARM_align_with_germany
-		}
-		x = 27
-		y = 4
-
-	}
-	focus = {
-		id = ARM_ban_free_speech
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_align_with_russia
-		}
-		x = 30
-		y = 5
-
-	}
-	focus = {
-		id = ARM_ban_socialism
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_ban_free_speech
-		}
-		x = 29
-		y = 6
-
-	}
-	focus = {
-		id = ARM_appoint_nationalists
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_ban_free_speech
-		}
-		x = 31
-		y = 6
-
-	}
-	focus = {
-		id = ARM_remember_the_past
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_ban_socialism
-		}
-		prerequisite = {
-			focus = ARM_appoint_nationalists
-		}
-		x = 29
-		y = 7
-
-	}
-	focus = {
-		id = ARM_migrate_azeris
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_ban_socialism
-		}
-		prerequisite = {
-			focus = ARM_appoint_nationalists
-		}
-		x = 31
-		y = 7
-
-	}
-	focus = {
-		id = ARM_coup_on_karin
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_remember_the_past
-		}
-		prerequisite = {
-			focus = ARM_migrate_azeris
-		}
-		x = 29
-		y = 8
-
-	}
-	focus = {
-		id = ARM_join_russia
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_coup_on_karin
-		}
-		x = 27
-		y = 9
-
-	}
-	focus = {
-		id = ARM_begin_centralization
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_final_decision_region
-		}
-		x = 32
-		y = 10
-
-	}
-	focus = {
-		id = ARM_pass_bill
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_begin_centralization
-		}
-		x = 29
-		y = 11
-
-	}
-	focus = {
-		id = ARM_population_question
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_begin_centralization
-		}
-		x = 32
-		y = 11
-
-	}
-	focus = {
-		id = ARM_conscription_crisis
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_pass_bill
-		}
-		prerequisite = {
-			focus = ARM_population_question
-		}
-		x = 30
-		y = 12
-
-	}
-	focus = {
-		id = ARM_establish_railroad
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_begin_industrialization
-		}
-		x = 31
-		y = 1
-
-	}
-	focus = {
-		id = ARM_prop_rural_areas
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_begin_industrialization
-		}
-		x = 33
-		y = 1
-
-	}
-	focus = {
-		id = ARM_balance_industry
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_establish_railroad
-		}
-		x = 33
-		y = 2
-
-	}
-	focus = {
-		id = ARM_align_with_germany
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_go_down_different_path
-		}
-		mutually_exclusive = {
-			focus = ARM_align_with_russia
-		}
-		x = 34
-		y = 3
-
-	}
-	focus = {
-		id = ARM_punish_private_investors
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_align_with_germany
-		}
-		x = 33
-		y = 4
-
-	}
-	focus = {
-		id = ARM_reorganize_schooling
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_punish_private_investors
-		}
-		x = 34
-		y = 6
-
-	}
-	focus = {
-		id = ARM_bring_anatolia
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_begin_centralization
-		}
-		x = 35
-		y = 11
-
-	}
-	focus = {
-		id = ARM_lift_autonomus_policies
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_population_question
-		}
-		prerequisite = {
-			focus = ARM_bring_anatolia
-		}
-		x = 34
-		y = 12
-
-	}
-	focus = {
-		id = ARM_integrate_armenia
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_conscription_crisis
-		}
-		prerequisite = {
-			focus = ARM_lift_autonomus_policies
-		}
-		x = 32
-		y = 13
-
-	}
-	focus = {
-		id = ARM_military_arsenal
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_begin_industrialization
-		}
-		x = 35
-		y = 1
-
-	}
-	focus = {
-		id = ARM_extent_to_anatolia
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_prop_rural_areas
-		}
-		x = 35
-		y = 2
-
-	}
-	focus = {
-		id = ARM_communist_academy
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_align_with_germany
-		}
-		x = 35
-		y = 5
-
-	}
-	focus = {
-		id = ARM_invest_with_arm_factories
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_military_arsenal
-		}
-		x = 37
-		y = 2
-
-	}
-	focus = {
-		id = ARM_establish_militias
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_align_with_germany
-		}
-		x = 37
-		y = 4
-
-	}
-	focus = {
-		id = ARM_bring_communists
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_establish_militias
-		}
-		x = 37
-		y = 6
-
-	}
-	focus = {
-		id = ARM_become_socialist
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ARM_reorganize_schooling
-		}
-		prerequisite = {
-			focus = ARM_communist_academy
-		}
-		prerequisite = {
-			focus = ARM_bring_communists
-		}
+		cost = 5.00
 		x = 36
 		y = 7
 
 	}
 	focus = {
-		id = ARM_industrial_growth
+		id = ARM_garegin_nzdeh_retires
 		icon = GFX_goal_unknown
 		cost = 7.00
 		prerequisite = {
-			focus = ARM_balance_industry
+			focus = ARM_victory_in_civil_war
+		}
+		x = 17
+		y = 1
+			completion_reward = {
+					country_event = arm.18
+				}
+
+	}
+	focus = {
+		id = ARM_nationalist_path
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_garegin_nzdeh_retires
+		}
+		mutually_exclusive = {
+			focus = ARM_republican_path
+			focus = ARM_leftist_path
+		}
+		x = 6
+		y = 2
+			available = {
+					always = no
+				}
+
+	}
+	focus = {
+		id = ARM_crush_liberals
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_nationalist_path
+		}
+		mutually_exclusive = {
+			focus = ARM_liberal_comprimise
+		}
+		x = 3
+		y = 3
+			completion_reward = {
+					custom_effect_tooltip = decisionstt
+				}
+
+	}
+	focus = {
+		id = ARM_statues_for_heroes
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_nationalist_path
+		}
+		x = 12
+		y = 3
+			completion_reward = {
+					country_event = arm.19
+				}
+
+	}
+	focus = {
+		id = ARM_strip_securalism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_statues_for_heroes
+		}
+		x = 7
+		y = 4
+			completion_reward = {
+					add_ideas = ARM_strip_securalism
+				}
+
+	}
+	focus = {
+		id = ARM_liberal_comprimise
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_nationalist_path
+		}
+		mutually_exclusive = {
+			focus = ARM_crush_liberals
+		}
+		x = 8
+		y = 3
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									OR = {
+											has_dynamic_modifier = {
+													modifier = liberal_opposition
+												}
+											has_dynamic_modifier = {
+													modifier = liberal_placated
+												}
+											has_dynamic_modifier = {
+													modifier = liberal_insurgency
+												}
+										}
+								}
+							save_global_event_target_as = ARM_downgrade_liberalized_defiance_effect
+							ARM_downgrade_liberalized_defiance_effect = yes
+						}
+					random_owned_controlled_state = {
+							limit = {
+									OR = {
+											has_dynamic_modifier = {
+													modifier = liberal_opposition
+												}
+											has_dynamic_modifier = {
+													modifier = liberal_placated
+												}
+											has_dynamic_modifier = {
+													modifier = liberal_insurgency
+												}
+										}
+								}
+							save_global_event_target_as = ARM_downgrade_liberalized_defiance_effect
+							ARM_downgrade_liberalized_defiance_effect = yes
+						}
+				}
+
+	}
+	focus = {
+		id = ARM_stick_with_christian_identity
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_crush_liberals
+			focus = ARM_liberal_comprimise
+		}
+		x = 3
+		y = 4
+			completion_reward = {
+					add_ideas = ARM_stick_with_christian_identity
+					random_owned_controlled_state = {
+							limit = {
+									OR = {
+											has_dynamic_modifier = {
+													modifier = conservative_opposition
+												}
+											has_dynamic_modifier = {
+													modifier = conservatists_placated
+												}
+											has_dynamic_modifier = {
+													modifier = conservative_insurgency
+												}
+										}
+								}
+							save_global_event_target_as = ARM_fundamentalist_state
+							ARM_downgrade_fundamentalist_defiance_effect = yes
+						}
+				}
+
+	}
+	focus = {
+		id = ARM_armenian_nationalism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_stick_with_christian_identity
 		}
 		prerequisite = {
-			focus = ARM_extent_to_anatolia
+			focus = ARM_strip_securalism
+		}
+		x = 9
+		y = 5
+			completion_reward = {
+					if = {
+							limit = {
+									has_idea = ARM_garegin_nzdeh
+								}
+							remove_ideas = ARM_garegin_nzdeh
+							add_ideas = ARM_drastamat_kanayan
+						}
+					random_owned_controlled_state = {
+							limit = {
+									OR = {
+											has_dynamic_modifier = {
+													modifier = conservative_opposition
+												}
+											has_dynamic_modifier = {
+													modifier = conservatists_placated
+												}
+											has_dynamic_modifier = {
+													modifier = conservative_insurgency
+												}
+										}
+								}
+							save_global_event_target_as = ARM_fundamentalist_state
+							ARM_placate_fundamentalist_state_all_targets_effect = yes
+						}
+					random_owned_controlled_state = {
+							limit = {
+									OR = {
+											has_dynamic_modifier = {
+													modifier = conservative_opposition
+												}
+											has_dynamic_modifier = {
+													modifier = conservatists_placated
+												}
+											has_dynamic_modifier = {
+													modifier = conservative_insurgency
+												}
+										}
+								}
+							save_global_event_target_as = ARM_fundamentalist_state
+							ARM_placate_fundamentalist_state_all_targets_effect = yes
+						}
+					random_owned_controlled_state = {
+							limit = {
+									OR = {
+											has_dynamic_modifier = {
+													modifier = conservative_opposition
+												}
+											has_dynamic_modifier = {
+													modifier = conservatists_placated
+												}
+											has_dynamic_modifier = {
+													modifier = conservative_insurgency
+												}
+										}
+								}
+							save_global_event_target_as = ARM_fundamentalist_state
+							ARM_placate_fundamentalist_state_all_targets_effect = yes
+						}
+					random_owned_controlled_state = {
+							limit = {
+									OR = {
+											has_dynamic_modifier = {
+													modifier = conservative_opposition
+												}
+											has_dynamic_modifier = {
+													modifier = conservatists_placated
+												}
+											has_dynamic_modifier = {
+													modifier = conservative_insurgency
+												}
+										}
+								}
+							save_global_event_target_as = ARM_fundamentalist_state
+							ARM_placate_fundamentalist_state_all_targets_effect = yes
+						}
+				}
+
+	}
+	focus = {
+		id = ARM_armenian_native_faith
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_stick_with_christian_identity
 		}
 		prerequisite = {
-			focus = ARM_invest_with_arm_factories
+			focus = ARM_strip_securalism
+		}
+		x = 4
+		y = 5
+			completion_reward = {
+					if = {
+							limit = {
+									has_idea = ARM_stick_with_christian_identity
+								}
+							remove_ideas = ARM_stick_with_christian_identity
+							add_ideas = ARM_armenian_native_faith
+						}
+				}
+
+	}
+	focus = {
+		id = ARM_ethno_religious_practices
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_armenian_native_faith
+		}
+		x = 2
+		y = 6
+			completion_reward = {
+					if = {
+							limit = {
+									has_idea = ARM_disunification
+								}
+							remove_ideas = ARM_disunification
+						}
+					if = {
+							limit = {
+									has_idea = ARM_disunification1
+								}
+							remove_ideas = ARM_disunification1
+						}
+				}
+
+	}
+	focus = {
+		id = ARM_armenian_military_practices
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_armenian_native_faith
+		}
+		prerequisite = {
+			focus = ARM_armenian_nationalism
+		}
+		x = 7
+		y = 6
+			completion_reward = {
+					army_experience = 15
+					add_war_support = 0.1
+					add_popularity = {
+							popularity = 0.1
+							ideology = nationalism
+						}
+				}
+
+	}
+	focus = {
+		id = ARM_modern_hayk
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_armenian_nationalism
+		}
+		x = 11
+		y = 6
+			completion_reward = {
+					country_event = arm.20
+				}
+
+	}
+	focus = {
+		id = ARM_assimilation
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_ethno_religious_practices
+		}
+		prerequisite = {
+			focus = ARM_armenian_military_practices
+		}
+		prerequisite = {
+			focus = ARM_modern_hayk
+		}
+		x = 10
+		y = 7
+			completion_reward = {
+					custom_effect_tooltip = decisionstt
+				}
+
+	}
+	focus = {
+		id = ARM_republican_path
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_garegin_nzdeh_retires
+		}
+		mutually_exclusive = {
+			focus = ARM_nationalist_path
+			focus = ARM_leftist_path
+		}
+		x = 20
+		y = 2
+			available = {
+					always = no
+				}
+
+	}
+	focus = {
+		id = ARM_new_currency
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_republican_path
+		}
+		x = 15
+		y = 3
+			completion_reward = {
+					add_ideas = ARM_new_currency
+				}
+
+	}
+	focus = {
+		id = ARM_economic_policy
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_statues_for_heroes
+			focus = ARM_new_currency
+		}
+		x = 12
+		y = 4
+			completion_reward = {
+					add_ideas = free_trade
+					add_ideas = low_economic_mobilization
+				}
+
+	}
+	focus = {
+		id = ARM_establish_financial_wizards
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_economic_policy
+		}
+		x = 14
+		y = 5
+			completion_reward = {
+					custom_effect_tooltip = decisionstt
+				}
+
+	}
+	focus = {
+		id = ARM_industrialize
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ARM_establish_financial_wizards
+		}
+		x = 13
+		y = 6
+			completion_reward = {
+			230 = {
+				if = { 
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+					}
+				}	
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}			
+		}
+
+	}
+	focus = {
+		id = ARM_women_suffrage
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_republican_path
+		}
+		x = 21
+		y = 3
+			completion_reward = {
+					country_event = arm.21
+				}
+
+	}
+	focus = {
+		id = ARM_stop_conservatives
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_new_currency
+		}
+		prerequisite = {
+			focus = ARM_women_suffrage
+		}
+		x = 16
+		y = 4
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									OR = {
+											has_dynamic_modifier = {
+													modifier = conservative_opposition
+												}
+											has_dynamic_modifier = {
+													modifier = conservatists_placated
+												}
+											has_dynamic_modifier = {
+													modifier = conservative_insurgency
+												}
+										}
+								}
+							save_global_event_target_as = ARM_fundamentalist_state
+							ARM_upgrade_random_fundamentalist_defiance_effect = yes
+						}
+					random_owned_controlled_state = {
+							limit = {
+									OR = {
+											has_dynamic_modifier = {
+													modifier = conservative_opposition
+												}
+											has_dynamic_modifier = {
+													modifier = conservatists_placated
+												}
+											has_dynamic_modifier = {
+													modifier = conservative_insurgency
+												}
+										}
+								}
+							save_global_event_target_as = ARM_fundamentalist_state
+							ARM_upgrade_random_fundamentalist_defiance_effect = yes
+						}
+					random_owned_controlled_state = {
+							limit = {
+									OR = {
+											has_dynamic_modifier = {
+													modifier = conservative_opposition
+												}
+											has_dynamic_modifier = {
+													modifier = conservatists_placated
+												}
+											has_dynamic_modifier = {
+													modifier = conservative_insurgency
+												}
+										}
+								}
+							save_global_event_target_as = ARM_fundamentalist_state
+							ARM_upgrade_random_fundamentalist_defiance_effect = yes
+						}
+					random_owned_controlled_state = {
+							limit = {
+									OR = {
+											has_dynamic_modifier = {
+													modifier = conservative_opposition
+												}
+											has_dynamic_modifier = {
+													modifier = conservatists_placated
+												}
+											has_dynamic_modifier = {
+													modifier = conservative_insurgency
+												}
+										}
+								}
+							save_global_event_target_as = ARM_fundamentalist_state
+							ARM_upgrade_random_fundamentalist_defiance_effect = yes
+						}
+				}
+
+	}
+	focus = {
+		id = ARM_conservative_decision
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_stop_conservatives
+		}
+		x = 15
+		y = 6
+			completion_reward = {
+					custom_effect_tooltip = decisiontt
+				}
+
+	}
+	focus = {
+		id = ARM_brilliant_thinkers
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_women_suffrage
+		}
+		prerequisite = {
+			focus = ARM_new_currency
+		}
+		x = 20
+		y = 4
+			completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = ARM_invite_investments
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_brilliant_thinkers
+		}
+		x = 17
+		y = 5
+			completion_reward = {
+					custom_effect_tooltip = decisiontt
+				}
+
+	}
+	focus = {
+		id = ARM_mountain_friends
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_brilliant_thinkers
+		}
+		x = 21
+		y = 5
+			completion_reward = {
+					ARM = {
+							add_opinion_modifier = {
+									target = KUR
+									modifier = medium_increase
+								}
+						}
+					KUR = {
+							add_opinion_modifier = {
+									target = ARM
+									modifier = medium_increase
+								}
+						}
+					ARM = {
+							add_opinion_modifier = {
+									target = ASS
+									modifier = medium_increase
+								}
+						}
+					ASS = {
+							add_opinion_modifier = {
+									target = ARM
+									modifier = medium_increase
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = ARM_trash_militaristic_policy
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_invite_investments
+		}
+		prerequisite = {
+			focus = ARM_mountain_friends
+		}
+		x = 20
+		y = 6
+			completion_reward = {
+					add_stability = -0.05
+					add_war_support = -0.12
+					remove_ideas = ARM_militarist_mentality
+				}
+
+	}
+	focus = {
+		id = ARM_live_the_republic
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_trash_militaristic_policy
+		}
+		prerequisite = {
+			focus = ARM_conservative_decision
+		}
+		x = 20
+		y = 7
+			completion_reward = {
+					country_event = arm.22
+				}
+
+	}
+	focus = {
+		id = ARM_condemn_armenophobia
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_republican_path
+		}
+		x = 24
+		y = 3
+		completion_reward = {
+		add_stability = 0.07
+		ARM = {
+							add_opinion_modifier = {
+									target = AZR
+									modifier = medium_decrease
+								}
+						}
+						ARM = {
+							add_opinion_modifier = {
+									target = TUR
+									modifier = medium_decrease
+								}
+						}
+						TUR = {
+							add_opinion_modifier = {
+									target = ARM
+									modifier = medium_decrease
+								}
+						}
+					AZR = {
+							add_opinion_modifier = {
+									target = ARM
+									modifier = medium_decrease
+								}
+						}
+		}
+	}
+	focus = {
+		id = ARM_honor_heritage
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_condemn_armenophobia
+		}
+		x = 22
+		y = 4
+		completion_reward = {
+		if = {
+							limit = {
+									has_idea = ARM_disunification
+								}
+							remove_ideas = ARM_disunification
+						}
+						country_event = arm.23
+		}
+	}
+	focus = {
+		id = ARM_ban_nationalists
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_women_suffrage
+		}
+		prerequisite = {
+			focus = ARM_honor_heritage
+		}
+		x = 24
+		y = 5
+		completion_reward = {
+		country_event = arm.24
+		if = {
+							limit = {
+									has_idea = ARM_drastamat_kanayan
+								}
+							remove_ideas = ARM_drastamat_kanayan
+						}
+		if = {
+							limit = {
+									has_idea = ARM_garegin_nzdeh
+								}
+							remove_ideas = ARM_garegin_nzdeh
+						}
+		}
+	}
+	focus = {
+		id = ARM_leftist_path
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_garegin_nzdeh_retires
+		}
+		mutually_exclusive = {
+			focus = ARM_republican_path
+			focus = ARM_nationalist_path
+		}
+		x = 31
+		y = 2
+			available = {
+					always = no
+				}
+
+	}
+	focus = {
+		id = ARM_german_cooperation
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_leftist_path
+		}
+		x = 29
+		y = 3
+		bypass = {
+		GER = { 
+		has_government = syndicalism
+			}
+		}
+		completion_reward = {
+		GER = {
+		country_event = arm.25
+			}
+		}
+	}
+	focus = {
+		id = ARM_call_leftist_council
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_leftist_path
+		}
+		x = 33
+		y = 3
+		completion_reward = {
+		country_event = arm.26
+		}
+	}
+	focus = {
+		id = ARM_read_theory
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_german_cooperation
+		}
+		prerequisite = {
+			focus = ARM_call_leftist_council
+		}
+		x = 30
+		y = 4
+		completion_reward = {
+						random_owned_controlled_state = {
+							limit = {
+									OR = {
+											has_dynamic_modifier = {
+													modifier = conservative_opposition
+												}
+											has_dynamic_modifier = {
+													modifier = conservatists_placated
+												}
+											has_dynamic_modifier = {
+													modifier = conservative_insurgency
+												}
+										}
+								}
+							save_global_event_target_as = ARM_upgrade_conservatist_defiance_effect
+							ARM_upgrade_conservatist_defiance_effect = yes
+						}
+					random_owned_controlled_state = {
+							limit = {
+									OR = {
+											has_dynamic_modifier = {
+													modifier = conservative_opposition
+												}
+											has_dynamic_modifier = {
+													modifier = conservatists_placated
+												}
+											has_dynamic_modifier = {
+													modifier = conservative_insurgency
+												}
+										}
+								}
+							save_global_event_target_as = ARM_upgrade_conservatist_defiance_effect
+							ARM_upgrade_conservatist_defiance_effect = yes
+						}
+					random_owned_controlled_state = {
+							limit = {
+									OR = {
+											has_dynamic_modifier = {
+													modifier = conservative_opposition
+												}
+											has_dynamic_modifier = {
+													modifier = conservatists_placated
+												}
+											has_dynamic_modifier = {
+													modifier = conservative_insurgency
+												}
+										}
+								}
+							save_global_event_target_as = ARM_upgrade_conservatist_defiance_effect
+							ARM_upgrade_conservatist_defiance_effect = yes
+						}
+					random_owned_controlled_state = {
+							limit = {
+									OR = {
+											has_dynamic_modifier = {
+													modifier = conservative_opposition
+												}
+											has_dynamic_modifier = {
+													modifier = conservatists_placated
+												}
+											has_dynamic_modifier = {
+													modifier = conservative_insurgency
+												}
+										}
+								}
+							save_global_event_target_as = ARM_upgrade_conservatist_defiance_effect
+							ARM_upgrade_conservatist_defiance_effect = yes
+						}
+				}
+	}
+	focus = {
+		id = ARM_nationalize_major_industries
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_german_cooperation
+		}
+		prerequisite = {
+			focus = ARM_call_leftist_council
+		}
+		x = 25
+		y = 4
+		completion_reward = {
+		add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+		}
+	}
+	focus = {
+		id = ARM_securalized_church
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_german_cooperation
+		}
+		prerequisite = {
+			focus = ARM_call_leftist_council
+		}
+		x = 27
+		y = 4
+		completion_reward = {
+		add_ideas = ARM_securalized_church
+		}
+	}
+	focus = {
+		id = ARM_socialist_nationalism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_nationalize_major_industries
+		}
+		prerequisite = {
+			focus = ARM_securalized_church
+		}
+		prerequisite = {
+			focus = ARM_read_theory
+		}
+		mutually_exclusive = {
+			focus = ARM_honor_the_revolution
+		}
+		x = 29
+		y = 5
+		completion_reward = {
+						if = {
+							limit = {
+									has_idea = ARM_disunification
+								}
+							remove_ideas = ARM_disunification
+						}
+						add_popularity = {
+						popularity = 0.05
+						ideology = radical_socialism
+						}
+						add_war_support = 0.1
+						add_ideas = ARM_socialist_nationalism
+		}
+	}
+	focus = {
+		id = ARM_honor_the_revolution
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_nationalize_major_industries
+		}
+		prerequisite = {
+			focus = ARM_securalized_church
+		}
+		prerequisite = {
+			focus = ARM_read_theory
+		}
+		mutually_exclusive = {
+			focus = ARM_socialist_nationalism
+		}
+		x = 32
+		y = 5
+
+	}
+	focus = {
+		id = ARM_economic_focus
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_fix_army
+		}
+		prerequisite = {
+			focus = ARM_victory_in_civil_war
+		}
+		x = 38
+		y = 1
+
+	}
+	focus = {
+		id = ARM_fix_economic_depression
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARM_economic_focus
+		}
+		x = 38
+		y = 2
+
+	}
+	focus = {
+		id = ARM_agricultural_reforms
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARM_fix_economic_depression
+		}
+		x = 36
+		y = 3
+
+	}
+	focus = {
+		id = ARM_expand_erevan
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARM_agricultural_reforms
+		}
+		x = 34
+		y = 4
+
+	}
+	focus = {
+		id = ARM_oil_liquification
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARM_fix_economic_depression
 		}
 		x = 38
 		y = 3
 
 	}
 	focus = {
-		id = ARM_weigh_in_army
+		id = ARM_invite_foreigners_to_military
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = ARM_military_budget
+			focus = ARM_oil_liquification
+		}
+		x = 38
+		y = 4
+
+	}
+	focus = {
+		id = ARM_boost_tourism
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARM_agricultural_reforms
+		}
+		x = 36
+		y = 4
+
+	}
+	focus = {
+		id = ARM_adana_paris_of_east
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARM_fix_economic_depression
+		}
+		x = 41
+		y = 3
+
+	}
+	focus = {
+		id = ARM_mobilize_economy
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARM_oil_liquification
+		}
+		prerequisite = {
+			focus = ARM_adana_paris_of_east
+		}
+		x = 40
+		y = 4
+
+	}
+	focus = {
+		id = ARM_force_farmers_to_cities
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARM_boost_tourism
+		}
+		prerequisite = {
+			focus = ARM_invite_foreigners_to_military
+		}
+		prerequisite = {
+			focus = ARM_mobilize_economy
+		}
+		prerequisite = {
+			focus = ARM_expand_erevan
+		}
+		x = 38
+		y = 5
+		completion_reward = {
+					add_timed_idea = {
+							idea = GRE_rural_exodus
+							days = 280
+						}
+					add_stability = -0.10
+				}
+	}
+	focus = {
+		id = ARM_modern_navy
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARM_adana_paris_of_east
+		}
+		x = 44
+		y = 4
+
+	}
+	focus = {
+		id = ARM_meditaranean_expeditions
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARM_modern_navy
 		}
 		x = 42
+		y = 5
+
+	}
+	focus = {
+		id = ARM_shock_and_awe
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARM_modern_navy
+		}
+		x = 46
+		y = 5
+
+	}
+	focus = {
+		id = ARM_destroyers
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARM_shock_and_awe
+		}
+		x = 44
+		y = 6
+
+	}
+	focus = {
+		id = ARM_submarines
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARM_shock_and_awe
+		}
+		x = 47
+		y = 6
+
+	}
+	focus = {
+		id = ARM_navy_treaty
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARM_meditaranean_expeditions
+		}
+		prerequisite = {
+			focus = ARM_destroyers
+		}
+		prerequisite = {
+			focus = ARM_submarines
+		}
+		x = 44
+		y = 7
+
+	}
+	focus = {
+		id = ARM_learn_from_best
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARM_fix_army
+		}
+		x = 50
 		y = 1
+
+	}
+	focus = {
+		id = ARM_militias
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARM_learn_from_best
+		}
+		x = 50
+		y = 2
 
 	}
 	focus = {
@@ -689,20 +1248,9 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = ARM_weigh_in_army
+			focus = ARM_militias
 		}
-		x = 40
-		y = 2
-
-	}
-	focus = {
-		id = ARM_bring_recruitment
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = ARM_motorization
-		}
-		x = 41
+		x = 48
 		y = 3
 
 	}
@@ -711,78 +1259,90 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = ARM_bring_recruitment
+			focus = ARM_militias
 		}
-		x = 39
-		y = 4
-
-	}
-	focus = {
-		id = ARM_supply_infantry
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = ARM_weigh_in_army
-		}
-		x = 44
-		y = 2
-
-	}
-	focus = {
-		id = ARM_supply_artillery
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = ARM_supply_infantry
-		}
-		x = 43
+		x = 50
 		y = 3
 
 	}
 	focus = {
-		id = ARM_make_tanks
+		id = ARM_infantry
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = ARM_supply_artillery
+			focus = ARM_militias
 		}
-		x = 43
-		y = 4
+		x = 52
+		y = 3
 
 	}
 	focus = {
-		id = ARM_attrition
+		id = ARM_artillery
 		icon = GFX_goal_unknown
 		cost = 5.00
+		prerequisite = {
+			focus = ARM_motorization
+		}
 		prerequisite = {
 			focus = ARM_modern_guns
 		}
 		prerequisite = {
-			focus = ARM_make_tanks
+			focus = ARM_infantry
 		}
-		x = 41
+		x = 51
+		y = 4
+
+	}
+	focus = {
+		id = ARM_motorization
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARM_motorization
+		}
+		prerequisite = {
+			focus = ARM_modern_guns
+		}
+		prerequisite = {
+			focus = ARM_infantry
+		}
+		x = 49
+		y = 4
+
+	}
+	focus = {
+		id = ARM_new_budget
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARM_motorization
+		}
+		prerequisite = {
+			focus = ARM_artillery
+		}
+		x = 50
 		y = 5
 
 	}
 	focus = {
-		id = ARM_airforce_budget
+		id = ARM_new_air_force
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = ARM_military_budget
+			focus = ARM_fix_army
 		}
-		x = 48
+		x = 54
 		y = 1
 
 	}
 	focus = {
-		id = ARM_new_fighters
+		id = ARM_air_corps
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = ARM_airforce_budget
+			focus = ARM_new_air_force
 		}
-		x = 46
+		x = 56
 		y = 2
 
 	}
@@ -791,21 +1351,10 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = ARM_new_fighters
+			focus = ARM_air_corps
 		}
-		x = 45
+		x = 56
 		y = 3
-
-	}
-	focus = {
-		id = ARM_air_support
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = ARM_airforce_budget
-		}
-		x = 50
-		y = 2
 
 	}
 	focus = {
@@ -813,137 +1362,680 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = ARM_air_support
+			focus = ARM_air_bases
 		}
-		x = 50
-		y = 3
+		x = 54
+		y = 4
 
 	}
 	focus = {
-		id = ARM_expand_airforce
+		id = ARM_fighters
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
 			focus = ARM_air_bases
-		}
-		prerequisite = {
-			focus = ARM_anti_air
-		}
-		x = 47
-		y = 4
-
-	}
-	focus = {
-		id = ARM_lift_up_navy
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = ARM_military_budget
-		}
-		x = 57
-		y = 1
-
-	}
-	focus = {
-		id = ARM_be_on_defense
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = ARM_lift_up_navy
-		}
-		x = 54
-		y = 2
-
-	}
-	focus = {
-		id = ARM_submarines
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = ARM_be_on_defense
-		}
-		x = 55
-		y = 3
-
-	}
-	focus = {
-		id = ARM_heavy_cruisers
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = ARM_submarines
-		}
-		x = 56
-		y = 4
-
-	}
-	focus = {
-		id = ARM_on_offense
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = ARM_lift_up_navy
-		}
-		x = 60
-		y = 2
-
-	}
-	focus = {
-		id = ARM_destroyers
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = ARM_on_offense
-		}
-		x = 59
-		y = 3
-
-	}
-	focus = {
-		id = ARM_bombers
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = ARM_destroyers
 		}
 		x = 58
 		y = 4
 
 	}
 	focus = {
-		id = ARM_womens_suffrage
+		id = ARM_offense
 		icon = GFX_goal_unknown
-		cost = 7.00
+		cost = 5.00
 		prerequisite = {
-			focus = ARM_increase_farmer_output
+			focus = ARM_fighters
 		}
-		x = 9
-		y = 7
+		prerequisite = {
+			focus = ARM_anti_air
+		}
+		mutually_exclusive = {
+			focus = ARM_defense
+		}
+		x = 57
+		y = 5
 
 	}
 	focus = {
-		id = ARM_armenian_democracy
+		id = ARM_defense
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARM_anti_air
+		}
+		prerequisite = {
+			focus = ARM_fighters
+		}
+		mutually_exclusive = {
+			focus = ARM_offense
+		}
+		x = 55
+		y = 5
+
+	}
+	focus = {
+		id = ARM_air_budget
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARM_defense
+			focus = ARM_offense
+		}
+		x = 56
+		y = 6
+
+	}
+	focus = {
+		id = ARM_spies_in_west_asia
 		icon = GFX_goal_unknown
 		cost = 7.00
 		prerequisite = {
-			focus = ARM_womens_suffrage
+			focus = ARM_nationalize_major_industries
 		}
 		prerequisite = {
-			focus = ARM_democracy_with_socialism
+			focus = ARM_securalized_church
 		}
-		x = 11
+		prerequisite = {
+			focus = ARM_read_theory
+		}
+		x = 27
+		y = 5
+
+	}
+	focus = {
+		id = ARM_german_trade_relations
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_spies_in_west_asia
+			focus = ARM_socialist_nationalism
+			focus = ARM_honor_the_revolution
+		}
+		x = 25
+		y = 6
+
+	}
+	focus = {
+		id = ARM_clean_erivan
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_spies_in_west_asia
+			focus = ARM_socialist_nationalism
+			focus = ARM_honor_the_revolution
+		}
+		x = 28
+		y = 6
+
+	}
+	focus = {
+		id = ARM_new_foreign_policy
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_assimilation
+			focus = ARM_live_the_republic
+			focus = ARM_live_the_leftist_state
+		}
+		x = 18
 		y = 8
 
 	}
 	focus = {
-		id = ARM_finally_end_rivalries
+		id = ARM_live_the_leftist_state
 		icon = GFX_goal_unknown
 		cost = 7.00
 		prerequisite = {
-			focus = ARM_integrate_armenia
+			focus = ARM_german_trade_relations
 		}
-		x = 32
+		prerequisite = {
+			focus = ARM_clean_erivan
+		}
+		x = 26
+		y = 7
+
+	}
+	focus = {
+		id = ARM_approach_russia
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_new_foreign_policy
+		}
+		mutually_exclusive = {
+			focus = ARM_world_stage
+			focus = ARM_german_guarentee
+		}
+		x = 13
+		y = 9
+
+	}
+	focus = {
+		id = ARM_russian_military_experience
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_approach_russia
+		}
+		x = 11
+		y = 10
+
+	}
+	focus = {
+		id = ARM_air_trading
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_approach_russia
+		}
+		x = 15
+		y = 10
+
+	}
+	focus = {
+		id = ARM_leave_DOWA
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_russian_military_experience
+		}
+		prerequisite = {
+			focus = ARM_air_trading
+		}
+		mutually_exclusive = {
+			focus = ARM_stay_with_DOWA
+			focus = ARM_join_entente
+		}
+		x = 13
+		y = 11
+
+	}
+	focus = {
+		id = ARM_russian_economy
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_leave_DOWA
+		}
+		x = 12
+		y = 12
+
+	}
+	focus = {
+		id = ARM_honor_our_history_together
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_leave_DOWA
+		}
+		x = 14
+		y = 12
+
+	}
+	focus = {
+		id = ARM_join_russian_faction
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_russian_economy
+		}
+		prerequisite = {
+			focus = ARM_honor_our_history_together
+		}
+		x = 13
+		y = 13
+
+	}
+	focus = {
+		id = ARM_carve_out_caucasus
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_join_russian_faction
+		}
+		x = 12
 		y = 14
+
+	}
+	focus = {
+		id = ARM_our_own_ambitions
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_join_russian_faction
+		}
+		x = 14
+		y = 14
+
+	}
+	focus = {
+		id = ARM_world_stage
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_new_foreign_policy
+		}
+		mutually_exclusive = {
+			focus = ARM_approach_russia
+			focus = ARM_german_guarentee
+		}
+		x = 19
+		y = 9
+
+	}
+	focus = {
+		id = ARM_end_isolation
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_world_stage
+		}
+		x = 18
+		y = 10
+
+	}
+	focus = {
+		id = ARM_european_ministers
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_world_stage
+		}
+		x = 20
+		y = 10
+
+	}
+	focus = {
+		id = ARM_friendly_turkish_relations
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_end_isolation
+		}
+		prerequisite = {
+			focus = ARM_european_ministers
+		}
+		x = 18
+		y = 11
+
+	}
+	focus = {
+		id = ARM_west_asian_relations
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_end_isolation
+		}
+		prerequisite = {
+			focus = ARM_european_ministers
+		}
+		x = 20
+		y = 11
+
+	}
+	focus = {
+		id = ARM_anatolian_railway
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_friendly_turkish_relations
+		}
+		prerequisite = {
+			focus = ARM_west_asian_relations
+		}
+		x = 19
+		y = 12
+
+	}
+	focus = {
+		id = ARM_renew_turkish_nonaggression
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_friendly_turkish_relations
+		}
+		prerequisite = {
+			focus = ARM_west_asian_relations
+		}
+		x = 17
+		y = 12
+
+	}
+	focus = {
+		id = ARM_persian_relations
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_friendly_turkish_relations
+		}
+		prerequisite = {
+			focus = ARM_west_asian_relations
+		}
+		x = 21
+		y = 12
+
+	}
+	focus = {
+		id = ARM_alliance_question
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_renew_turkish_nonaggression
+		}
+		prerequisite = {
+			focus = ARM_anatolian_railway
+		}
+		prerequisite = {
+			focus = ARM_persian_relations
+		}
+		x = 19
+		y = 13
+
+	}
+	focus = {
+		id = ARM_leave_DOWA
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_alliance_question
+		}
+		x = 16
+		y = 14
+
+	}
+	focus = {
+		id = ARM_stay_with_DOWA
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_alliance_question
+		}
+		mutually_exclusive = {
+			focus = ARM_leave_DOWA
+			focus = ARM_create_alliance
+			focus = ARM_join_entente
+			focus = ARM_join_entente
+		}
+		x = 18
+		y = 14
+
+	}
+	focus = {
+		id = ARM_create_alliance
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_alliance_question
+		}
+		mutually_exclusive = {
+			focus = ARM_stay_with_DOWA
+			focus = ARM_join_entente
+			focus = ARM_join_entente
+		}
+		x = 20
+		y = 14
+
+	}
+	focus = {
+		id = ARM_join_entente
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_alliance_question
+		}
+		mutually_exclusive = {
+			focus = ARM_create_alliance
+			focus = ARM_create_alliance
+			focus = ARM_stay_with_DOWA
+			focus = ARM_leave_DOWA
+			focus = ARM_stay_with_DOWA
+		}
+		x = 22
+		y = 14
+
+	}
+	focus = {
+		id = ARM_territorial_question
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_leave_DOWA
+			focus = ARM_stay_with_DOWA
+			focus = ARM_create_alliance
+			focus = ARM_join_entente
+		}
+		x = 19
+		y = 15
+
+	}
+	focus = {
+		id = ARM_caucasus_conference
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_territorial_question
+		}
+		mutually_exclusive = {
+			focus = ARM_caucasus_conference
+		}
+		x = 17
+		y = 16
+
+	}
+	focus = {
+		id = ARM_georgian_question
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_caucasus_conference
+		}
+		x = 16
+		y = 17
+
+	}
+	focus = {
+		id = ARM_azeri_question
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_caucasus_conference
+		}
+		x = 18
+		y = 17
+
+	}
+	focus = {
+		id = ARM_german_guarentee
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_new_foreign_policy
+		}
+		mutually_exclusive = {
+			focus = ARM_world_stage
+			focus = ARM_approach_russia
+		}
+		x = 22
+		y = 9
+
+	}
+	focus = {
+		id = ARM_join_german_alliance
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_german_guarentee
+		}
+		mutually_exclusive = {
+			focus = ARM_new_alliance
+		}
+		x = 24
+		y = 10
+
+	}
+	focus = {
+		id = ARM_new_alliance
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_german_guarentee
+		}
+		mutually_exclusive = {
+			focus = ARM_join_german_alliance
+		}
+		x = 22
+		y = 10
+
+	}
+	focus = {
+		id = ARM_radicalism_in_others
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_new_alliance
+		}
+		x = 23
+		y = 11
+
+	}
+	focus = {
+		id = ARM_new_alliance_join
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_radicalism_in_others
+		}
+		x = 23
+		y = 12
+
+	}
+	focus = {
+		id = ARM_ukranian_research
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_new_alliance
+			focus = ARM_join_german_alliance
+		}
+		x = 25
+		y = 11
+
+	}
+	focus = {
+		id = ARM_revolution_parades
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_join_german_alliance
+		}
+		x = 28
+		y = 11
+
+	}
+	focus = {
+		id = ARM_sevastopol_dockyards
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_ukranian_research
+		}
+		x = 25
+		y = 12
+
+	}
+	focus = {
+		id = ARM_ally_with_balkan_commies
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_revolution_parades
+		}
+		x = 29
+		y = 12
+
+	}
+	focus = {
+		id = ARM_embargo_capitalists
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_new_alliance_join
+			focus = ARM_sevastopol_dockyards
+			focus = ARM_ally_with_balkan_commies
+		}
+		x = 25
+		y = 14
+
+	}
+	focus = {
+		id = ARM_caucasus_conference
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_territorial_question
+			focus = ARM_embargo_capitalists
+		}
+		mutually_exclusive = {
+			focus = ARM_caucasus_conference
+		}
+		x = 29
+		y = 16
+
+	}
+	focus = {
+		id = ARM_attack_caucasus
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ARM_caucasus_conference
+		}
+		x = 29
+		y = 17
+
+	}
+	focus = {
+		id = ARM_clean_slumns
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARM_boost_tourism
+		}
+		prerequisite = {
+			focus = ARM_invite_foreigners_to_military
+		}
+		prerequisite = {
+			focus = ARM_mobilize_economy
+		}
+		prerequisite = {
+			focus = ARM_expand_erevan
+		}
+		x = 36
+		y = 5
+
+	}
+	focus = {
+		id = ARM_clean_economy
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARM_clean_slumns
+		}
+		prerequisite = {
+			focus = ARM_force_farmers_to_cities
+		}
+		x = 37
+		y = 6
+
+	}
+	focus = {
+		id = ARM_restore_ani
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ARM_clean_economy
+		}
+		x = 38
+		y = 7
 
 	}
 }
