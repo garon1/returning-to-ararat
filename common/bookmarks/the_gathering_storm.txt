@@ -4,7 +4,7 @@ bookmarks = {
 		desc = "GATHERING_STORM_DESC"
 		date = 1936.1.1.12
 		picture = "GFX_select_date_1936"
-		default_country = "GER"
+		default_country = "ARM"
 		default = yes
 		
 		"CAU"={
@@ -363,9 +363,12 @@ bookmarks = {
 
 		"ASS"={
 			minor = yes
-			history = "ASSYRIA_GATHERING_STORM_DESC"
+			history = "ASS_GATHERING_STORM_DESC"
 			ideology = traditional_conservatism
 			ideas = {
+			ASS_ethnic_tensions
+			ASS_almost_no_industry
+			ASS_autonomous_provinces
 			}
 			focuses = {
 			}

@@ -1,3 +1,18 @@
+#Sevanavank Convention voting effects
+#Voted Aye!
+ROOT_voted_aye_in_sevanavank_convention_effect = {
+	custom_effect_tooltip = ROOT_voted_aye_megali_effect
+	hidden_effect = {	
+		add_to_variable = { var = global.convention_ayes value = 1 }
+	}
+}
+#Voted Nay!
+ROOT_voted_nay_in_sevanavank_convention_effect = {
+	custom_effect_tooltip = ROOT_voted_nay_megali_effect
+	hidden_effect = {	
+		add_to_variable = { var = global.convention_nays value = 1 }
+	}
+}
 # Kurdish State Pacified
 ARM_pacify_kurdish_state_effect = {
 	custom_effect_tooltip = ARM_pacify_kurdish_state_effect_tt
@@ -234,7 +249,7 @@ ARM_fundamentalist_influenced_random_state_effect = {
 	}
 }
 
-# Turkish Fundamentalist State Modifiers Upgraded
+# armenian Fundamentalist State Modifiers Upgraded
 ARM_upgrade_liberalist_defiance_effect = {
 	custom_effect_tooltip = TUR_upgrade_liberalist_defiance_effect_tt
 	hidden_effect = {	
@@ -688,6 +703,7 @@ ARM_azerbaijani_rebels = {
 		}
 	}
 }
+
 ARM_conservative_sedition = {
 	custom_effect_tooltip = ARM_conservative_sedition
 	hidden_effect = {
@@ -824,6 +840,131 @@ ARM_liberal_sedition = {
 					NOT = { has_dynamic_modifier = { modifier = liberal_sedition } }
 				}
 				add_dynamic_modifier = { modifier = liberal_sedition }
+			}
+		}
+	}
+}
+#####
+# Armenian Fundamentalist State Placated - New Event Target Applied
+ARM_placate_azeris_state_random_target_effect = {
+	custom_effect_tooltip = ARM_placate_fundamentalist_state_effect_tt
+	hidden_effect = {
+		random_owned_state = {
+			limit = {
+				OR = {
+					has_dynamic_modifier = { modifier = azerbaijani_rebels }
+					has_dynamic_modifier = { modifier = azerbaijani_separatism }
+				}
+			}
+			save_event_target_as = ARM_placate_azeris
+		}
+		event_target:ARM_placate_azeris = {
+			if = { 	
+				limit = {
+					has_dynamic_modifier = { modifier = azerbaijani_rebels }
+				}
+				remove_dynamic_modifier = { modifier = azerbaijani_rebels }
+				add_dynamic_modifier = { modifier =  ethnicities_placated }
+			}
+			else_if = { 	
+				limit = {
+					has_dynamic_modifier = { modifier = azerbaijani_separatism }
+				}
+				remove_dynamic_modifier = { modifier = azerbaijani_separatism }
+				add_dynamic_modifier = { modifier =  ethnicities_placated }
+			}
+		}
+	}
+}
+# Armenian turkish separatists State Placated - New Event Target Applied
+ARM_placate_ethnicities_state_random_target_effect = {
+	custom_effect_tooltip = ARM_placate_fundamentalist_state_effect_tt
+	hidden_effect = {
+		random_owned_state = {
+			limit = {
+				OR = {
+					has_dynamic_modifier = { modifier = turkish_rebels }
+					has_dynamic_modifier = { modifier = turkish_separatism }
+					has_dynamic_modifier = { modifier = azerbaijani_rebels }
+					has_dynamic_modifier = { modifier = azerbaijani_separatism }
+					has_dynamic_modifier = { modifier = kurdish_rebels }
+					has_dynamic_modifier = { modifier = kurdish_separatism }
+				}
+			}
+			save_event_target_as = ARM_placate_ethnicities
+		}
+		event_target:ARM_placate_ethnicities = {
+		if = { 	
+				limit = {
+					has_dynamic_modifier = { modifier = azerbaijani_rebels }
+				}
+				remove_dynamic_modifier = { modifier = azerbaijani_rebels }
+				add_dynamic_modifier = { modifier =  ethnicities_placated }
+			}
+			else_if = { 	
+				limit = {
+					has_dynamic_modifier = { modifier = azerbaijani_separatism }
+				}
+				remove_dynamic_modifier = { modifier = azerbaijani_separatism }
+				add_dynamic_modifier = { modifier =  ethnicities_placated }
+			}
+		if = { 	
+				limit = {
+					has_dynamic_modifier = { modifier = kurdish_rebels }
+				}
+				remove_dynamic_modifier = { modifier = kurdish_rebels }
+				add_dynamic_modifier = { modifier =  ethnicities_placated }
+			}
+			else_if = { 	
+				limit = {
+					has_dynamic_modifier = { modifier = kurdish_separatism }
+				}
+				remove_dynamic_modifier = { modifier = kurdish_separatism }
+				add_dynamic_modifier = { modifier =  ethnicities_placated }
+			}
+			if = { 	
+				limit = {
+					has_dynamic_modifier = { modifier = turkish_rebels }
+				}
+				remove_dynamic_modifier = { modifier = turkish_rebels }
+				add_dynamic_modifier = { modifier =  ethnicities_placated }
+			}
+			else_if = { 	
+				limit = {
+					has_dynamic_modifier = { modifier = turkish_separatism }
+				}
+				remove_dynamic_modifier = { modifier = turkish_separatism }
+				add_dynamic_modifier = { modifier =  ethnicities_placated }
+			}
+		}
+	}
+}
+ARM_placate_kurds_state_random_target_effect = {
+	custom_effect_tooltip = ARM_placate_fundamentalist_state_effect_tt
+	hidden_effect = {
+		random_owned_state = {
+			limit = {
+				OR = {
+					has_dynamic_modifier = { modifier = kurdish_rebels }
+					has_dynamic_modifier = { modifier = kurdish_separatism }
+				}
+			}
+			save_event_target_as = ARM_placate_turks
+		}
+		event_target:ARM_placate_turks = {
+			if = { 	
+				limit = {
+					has_dynamic_modifier = { modifier = kurdish_rebels }
+				}
+				remove_dynamic_modifier = { modifier = kurdish_rebels }
+				add_dynamic_modifier = { modifier =  ethnicities_placated }
+			}
+			else_if = { 	
+				limit = {
+					has_dynamic_modifier = { modifier = kurdish_separatism }
+				}
+				remove_dynamic_modifier = { modifier = kurdish_separatism }
+				add_dynamic_modifier = { modifier =  ethnicities_placated }
 			}
 		}
 	}

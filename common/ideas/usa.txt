@@ -22,6 +22,22 @@ ideas = {
 				local_resources_factor = -0.2
 			}
 		}
+		USA_resources = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				local_resources_factor = 0.15
+			}
+		}
 		great_depression_2 = {
 			picture = usa_great_depression_2
 			
@@ -41,6 +57,24 @@ ideas = {
 				conscription_factor = -0.4
 				join_faction_tension = 0.20
 				local_resources_factor = -0.15
+			}
+		}
+		USA_money_to_panama = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				compliance_growth_on_our_occupied_states = 0.05
+				occupation_cost = -0.05
+				resistance_growth_on_our_occupied_states = -0.05
 			}
 		}
 		great_depression_3 = {
@@ -64,6 +98,22 @@ ideas = {
 				local_resources_factor = -0.1
 			}
 		}
+		 USA_reimplement_nyc_bank = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.02
+				production_factory_max_efficiency_factor = 0.05
+				consumer_goods_factor = 0.05
+				production_speed_industrial_complex_factor = -0.05
+
+			}
+		}
 		USA_civil_war = {
 			picture = generic_production_bonus
 			
@@ -84,22 +134,6 @@ ideas = {
 				consumer_goods_factor = -0.10
 				production_speed_industrial_complex_factor = -0.15
 
-			}
-		}
-		USA_german_populace = {
-			picture = generic_production_bonus
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = democratic
-			}
-
-			removal_cost = -1
-			
-			modifier = {
 			}
 		}
 		USA_limited_intervention = {

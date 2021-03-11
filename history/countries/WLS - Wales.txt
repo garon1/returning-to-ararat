@@ -45,22 +45,55 @@ set_convoys = 20
 	}
 }
 set_politics = {
-	ruling_party = social_democracy
+	ruling_party = syndicalism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	monarchism = 5
-radical_socialism = 1
-social_democracy = 45
-market_liberal = 10
-social_liberal = 10
-traditional_conservatism = 8
-totalitarianism = 5
-syndicalism = 1
-market_socialism = 5
-nationalism = 10
+radical_socialism = 20
+syndicalism = 45
+market_socialism = 35
+}
+create_country_leader = {
+	name = "Niclas y Glais"
+	desc = "POLITICS_NICLAS_GLAIS_DESC"
+	picture = "gfx/leaders/WLS/Portrait_Wales_Niclas_y_Glais.tga"
+	expire = "1965.1.1"
+	ideology = syndicalism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Niclas y Glais"
+	desc = "POLITICS_NICLAS_GLAIS_DESC"
+	picture = "gfx/leaders/WLS/Portrait_Wales_Niclas_y_Glais.tga"
+	expire = "1965.1.1"
+	ideology = market_socialism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Niclas y Glais"
+	desc = "POLITICS_NICLAS_GLAIS_DESC"
+	picture = "gfx/leaders/WLS/Portrait_Wales_Niclas_y_Glais.tga"
+	expire = "1965.1.1"
+	ideology = anarchism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Niclas y Glais"
+	desc = "POLITICS_NICLAS_GLAIS_DESC"
+	picture = "gfx/leaders/WLS/Portrait_Wales_Niclas_y_Glais.tga"
+	expire = "1965.1.1"
+	ideology = radical_socialism_subtype
+	traits = {
+		#
+	}
 }
 create_country_leader = {
 		name = "Jonas Lote"
@@ -98,48 +131,11 @@ create_country_leader = {
 		#
 	}
 }
-
-create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = syndicalism_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = market_socialism_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = anarchism_subtype
-	traits = {
-		#
-	}
-}
 create_country_leader = {
 		name = "Jonas Lote"
 	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
 	expire = "1965.1.1"
 	ideology = monarchism_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = radical_socialism_subtype
 	traits = {
 		#
 	}

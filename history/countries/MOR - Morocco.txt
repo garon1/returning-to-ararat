@@ -54,7 +54,7 @@ set_convoys = 20
 
 
 set_politics = {
-	ruling_party = social_democracy
+	ruling_party = traditional_conservatism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -72,9 +72,11 @@ market_socialism = 5
 nationalism = 10
 }
 
+set_cosmetic_tag = FRA_MOR
+
 create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+		name = "Mohammed V"
+	picture = "gfx/leaders/MOR/Mohammed_V.tga"
 	expire = "1965.1.1"
 	ideology = nationalism_subtype
 	traits = {
@@ -82,8 +84,8 @@ create_country_leader = {
 	}
 }
 create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+		name = "Mohammed V"
+	picture = "gfx/leaders/MOR/Mohammed_V.tga"
 	expire = "1965.1.1"
 	ideology = social_liberal_subtype
 	traits = {
@@ -91,8 +93,8 @@ create_country_leader = {
 	}
 }
 create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+		name = "Mohammed V"
+	picture = "gfx/leaders/MOR/Mohammed_V.tga"
 	expire = "1965.1.1"
 	ideology = totalitarianism_subtype
 	traits = {
@@ -100,8 +102,8 @@ create_country_leader = {
 	}
 }
 create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+		name = "Mohammed V"
+	picture = "gfx/leaders/MOR/Mohammed_V.tga"
 	expire = "1965.1.1"
 	ideology = traditional_conservatism_subtype
 	traits = {
@@ -110,8 +112,8 @@ create_country_leader = {
 }
 
 create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+		name = "Mohammed V"
+	picture = "gfx/leaders/MOR/Mohammed_V.tga"
 	expire = "1965.1.1"
 	ideology = syndicalism_subtype
 	traits = {
@@ -119,8 +121,8 @@ create_country_leader = {
 	}
 }
 create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+		name = "Mohammed V"
+	picture = "gfx/leaders/MOR/Mohammed_V.tga"
 	expire = "1965.1.1"
 	ideology = market_socialism_subtype
 	traits = {
@@ -128,8 +130,8 @@ create_country_leader = {
 	}
 }
 create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+		name = "Mohammed V"
+	picture = "gfx/leaders/MOR/Mohammed_V.tga"
 	expire = "1965.1.1"
 	ideology = anarchism_subtype
 	traits = {
@@ -137,8 +139,8 @@ create_country_leader = {
 	}
 }
 create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+		name = "Mohammed V"
+	picture = "gfx/leaders/MOR/Mohammed_V.tga"
 	expire = "1965.1.1"
 	ideology = monarchism_subtype
 	traits = {
@@ -146,8 +148,8 @@ create_country_leader = {
 	}
 }
 create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+		name = "Mohammed V"
+	picture = "gfx/leaders/MOR/Mohammed_V.tga"
 	expire = "1965.1.1"
 	ideology = radical_socialism_subtype
 	traits = {
@@ -155,8 +157,8 @@ create_country_leader = {
 	}
 }
 create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+		name = "Mohammed V"
+	picture = "gfx/leaders/MOR/Mohammed_V.tga"
 	expire = "1965.1.1"
 	ideology = market_liberal_subtype
 	traits = {
@@ -165,8 +167,8 @@ create_country_leader = {
 }
 
 create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+		name = "Mohammed V"
+	picture = "gfx/leaders/MOR/Mohammed_V.tga"
 	expire = "1965.1.1"
 	ideology = social_democracy_subtype
 	traits = {

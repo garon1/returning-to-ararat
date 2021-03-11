@@ -273,8 +273,8 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Rudolf Rocker"
-	picture = "Portrait_Germany_Rudolf_Rocker_I.tga"
+	name = "Augustin Souchy"
+	picture = "Portrait_Germany_Augustin_Souchy.tga"
 	expire = "1965.1.1"
 	ideology = syndicalism_subtype
 }

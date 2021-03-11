@@ -1,0 +1,590 @@
+add_namespace = unista
+
+#beginning event
+country_event = {
+	id = unista.1
+	title = unista.1.t
+	desc = unista.1.d
+	picture = GFX_report_event_usa_british_sailors_destroyers###idk what happened but yeah
+
+	is_triggered_only = yes
+	
+	option = { #not cool
+		name = unista.1.a
+		country_event = unista.2
+	}
+}
+#beginning event
+country_event = {
+	id = unista.2
+	title = unista.2.t
+	desc = unista.2.d
+	picture = GFX_report_event_usa_british_sailors_destroyers###idk what happened but yeah
+
+	is_triggered_only = yes
+	
+	option = { #not cool
+		name = unista.2.a
+		add_political_power = 10
+		complete_national_focus = USA_a_new_america
+		set_variable = { american_ineffective_ruling = 0 }
+	}
+}
+########food prices rise
+#beginning event
+country_event = {
+	id = unista.3
+	title = unista.3.t
+	desc = unista.3.d
+	picture = GFX_report_event_usa_british_sailors_destroyers###idk what happened but yeah
+
+	is_triggered_only = yes
+	####(.a) will always be the better option for anyone wanting to cheat and win the reforms over
+	option = { #get everything under control, set prices
+		name = unista.3.a
+			hidden_effect = {
+		country_event = {
+				id = unista.4#it worked
+				days = 7
+			}
+			country_event = {
+				id = unista.6
+				days = 14
+			}
+		}
+	}
+	option = { #leave everything to the market!
+		name = unista.3.b
+		hidden_effect = {
+			country_event = {
+				id = unista.5#tensions escalate
+				days = 7
+			}
+			country_event = {
+				id = unista.6
+				days = 14
+			}
+		}
+	}
+}
+#setting prices worked!
+country_event = {
+	id = unista.4
+	title = unista.4.t
+	desc = unista.4.d
+	picture = GFX_report_event_usa_british_sailors_destroyers###idk what happened but yeah
+
+	is_triggered_only = yes
+	
+	option = { #good
+		name = unista.4.a
+		add_political_power = 15
+		add_to_variable = { american_ineffective_ruling = 1 }
+	}
+}
+#setting prices didnt work!
+country_event = {
+	id = unista.5
+	title = unista.5.t
+	desc = unista.5.d
+	picture = GFX_report_event_usa_british_sailors_destroyers###idk what happened but yeah
+
+	is_triggered_only = yes
+	
+	option = { #not good
+		name = unista.5.a
+		add_political_power = 15
+		add_to_variable = { american_ineffective_ruling = 5 }
+	}
+}
+#blackout in texas
+country_event = {
+	id = unista.6
+	title = unista.6.t
+	desc = unista.6.d
+	picture = GFX_report_event_usa_british_sailors_destroyers###idk what happened but yeah
+
+	is_triggered_only = yes
+	
+	option = { #we need to help the populace
+		name = unista.6.a
+		add_political_power = 15
+		add_to_variable = { american_ineffective_ruling = 1 }
+	}
+	option = { #man fuck texas theyre on their own (srry for vulgar language)
+		name = unista.6.b
+		add_political_power = -100
+		hidden_effect = {
+		country_event = {
+				id = unista.7
+				days = 2
+			}
+		}
+	}
+}
+#the texans revolt (why wouldnt they)
+country_event = {
+	id = unista.7
+	title = unista.7.t
+	desc = unista.7.d
+	picture = GFX_report_event_usa_british_sailors_destroyers###idk what happened but yeah
+
+	is_triggered_only = yes
+	
+	option = { #wwweeeeeellllllll ssssshhhhhhiiiiiiittttttt
+		name = unista.7.a
+		add_to_variable = { american_ineffective_ruling = 5 }
+		375 = {
+							limit = {
+									OR = {
+											has_dynamic_modifier = {
+													modifier = USA_general_confederate_support
+												}
+										}
+								}
+			save_global_event_target_as = USA_confederate_power_increases_to_high
+			USA_confederate_power_increases_to_high = yes
+		}
+	}
+}
+#syndies rally for support in new states
+country_event = {
+	id = unista.8
+	title = unista.8.t
+	desc = unista.8.d
+	picture = GFX_report_event_usa_british_sailors_destroyers###idk what happened but yeah
+
+	is_triggered_only = yes
+	
+	option = { #let them (not intervening wont lead to more violence)
+		name = unista.8.a
+		add_war_support = 0.05
+		add_stability = -0.05
+		add_to_variable = { american_ineffective_ruling = 1 }
+	}
+	option = { #shut it down (more violence draws the american public to the syndie cause)
+		name = unista.8.b
+		hidden_effect = {
+		add_to_variable = { american_ineffective_ruling = 5 }
+		394 = {
+							limit = {
+									OR = {
+											NOT = {
+											has_dynamic_modifier = {
+													modifier = USA_low_leftist_support 
+												}
+												has_dynamic_modifier = {
+													modifier = USA_general_leftist_support
+												}
+												has_dynamic_modifier = {
+													modifier = USA_high_leftist_support
+												}
+												has_dynamic_modifier = {
+													modifier = USA_leftist_governor_in_power
+												}
+											}
+										}
+								}
+			save_global_event_target_as = USA_low_leftist_support
+			USA_low_leftist_support = yes
+		}
+		391 = {
+							limit = {
+									OR = {
+											NOT = {
+											has_dynamic_modifier = {
+													modifier = USA_low_leftist_support 
+												}
+												has_dynamic_modifier = {
+													modifier = USA_general_leftist_support
+												}
+												has_dynamic_modifier = {
+													modifier = USA_high_leftist_support
+												}
+												has_dynamic_modifier = {
+													modifier = USA_leftist_governor_in_power
+												}
+											}
+										}
+								}
+			save_global_event_target_as = USA_low_leftist_support
+			USA_low_leftist_support = yes
+			}
+		}
+	}
+}
+#antisemetic pogroms in the west coast
+country_event = {
+	id = unista.9
+	title = unista.9.t
+	desc = unista.9.d
+	picture = GFX_report_event_usa_british_sailors_destroyers###idk what happened but yeah
+
+	is_triggered_only = yes
+	
+	option = { #STOP in the name of the law
+		name = unista.9.a
+		hidden_effect = {
+		add_political_power = 15
+		add_stability = 0.02
+		add_to_variable = { american_ineffective_ruling = 1 }
+		}
+	}
+	option = { #we cant do anything 
+		name = unista.9.b
+		add_to_variable = { american_ineffective_ruling = 5 }
+		hidden_effect = {
+		add_manpower = -50
+		add_stability = -0.05
+		add_political_power = -50
+		}
+	}
+}
+#protests in nyc
+country_event = {
+	id = unista.10
+	title = unista.10.t
+	desc = unista.10.d
+	picture = GFX_report_event_usa_british_sailors_destroyers###idk what happened but yeah
+
+	is_triggered_only = yes
+	
+	option = { #let them carry out their stupid little anti american charad
+		name = unista.10.a
+		add_political_power = 15
+		add_stability = 0.02
+		add_to_variable = { american_ineffective_ruling = 1 }
+	}
+	option = { #crack down 
+		name = unista.10.b
+		add_to_variable = { american_ineffective_ruling = 5 }
+		hidden_effect = {
+		add_manpower = -150
+		add_stability = -0.15
+		add_political_power = -50
+		country_event = {
+				id = unista.11
+				days = 15
+			}
+		}
+	}
+}
+#protests in nyc HUGELY escalate
+country_event = {
+	id = unista.11
+	title = unista.11.t
+	desc = unista.11.d
+	picture = GFX_report_event_usa_british_sailors_destroyers###idk what happened but yeah
+
+	is_triggered_only = yes
+	
+	option = { #let them carry out their stupid little anti american charad
+		name = unista.11.a
+		358 = {
+		damage_building = {
+				type = infrastructure
+				damage = 1.0
+			}
+		}
+		hidden_effect = {
+		add_political_power = -150
+		add_stability = -0.02
+		add_to_variable = { american_ineffective_ruling = 5 }
+		}
+	}
+}
+##########END OF ECONOMIC DEPRESSION EVENTS######################
+#now is where it gets rlly rlly and i mean SO F-ING JUICY#
+#hidden reforms bill
+country_event = {
+	id = unista.12
+	title = unista.12.t
+	desc = unista.12.d
+	picture = GFX_report_event_usa_british_sailors_destroyers###idk what happened but yeah
+
+	is_triggered_only = yes
+	hidden = yes
+	
+	option = { #the reform FAILS
+		name = unista.12.a
+		if = {
+				limit = {
+					check_variable = { var = american_ineffective_ruling value > 5 compare = greater_than_or_equals } 
+				}
+				country_event = unista.13
+			}
+			if = {
+				limit = {
+				NOT = {
+					check_variable = { var = american_ineffective_ruling value < 5 compare = greater_than_or_equals } 
+						}
+				}
+				country_event = unista.14
+			}
+	}
+}
+#reform FAILS
+country_event = {
+	id = unista.13
+	title = unista.13.t
+	desc = unista.13.d
+	picture = GFX_report_event_usa_british_sailors_destroyers###idk what happened but yeah
+
+	is_triggered_only = yes
+	
+	option = { #
+		name = unista.13.a
+		custom_effect_tooltip = USA_failed_reforms
+		hidden_effect = {
+		set_country_flag = USA_no_reforms_met
+		381 = {
+							limit = {
+									OR = {
+									has_dynamic_modifier = {
+													modifier = USA_general_legionist_support
+												}
+											NOT = {
+											has_dynamic_modifier = {
+													modifier = USA_low_legionist_support 
+												}
+												has_dynamic_modifier = {
+													modifier = USA_high_legionist_support
+												}
+												has_dynamic_modifier = {
+													modifier = USA_legionist_governor_in_power
+												}
+											}
+										}
+								}
+			save_global_event_target_as = USA_high_legionist_support
+			USA_high_legionist_support = yes
+			}
+		388 = {
+							limit = {
+									OR = {
+									has_dynamic_modifier = {
+													modifier = USA_general_legionist_support
+												}
+											NOT = {
+											has_dynamic_modifier = {
+													modifier = USA_low_legionist_support 
+												}
+												has_dynamic_modifier = {
+													modifier = USA_high_legionist_support
+												}
+												has_dynamic_modifier = {
+													modifier = USA_legionist_governor_in_power
+												}
+											}
+										}
+								}
+			save_global_event_target_as = USA_high_legionist_support
+			USA_high_legionist_support = yes
+			}
+		373 = {
+							limit = {
+									OR = {
+											NOT = {
+											has_dynamic_modifier = {
+													modifier = USA_low_leftist_support 
+												}
+												has_dynamic_modifier = {
+													modifier = USA_general_leftist_support
+												}
+												has_dynamic_modifier = {
+													modifier = USA_high_leftist_support
+												}
+												has_dynamic_modifier = {
+													modifier = USA_leftist_governor_in_power
+												}
+											}
+										}
+								}
+			save_global_event_target_as = USA_low_leftist_support
+			USA_low_leftist_support = yes
+			}
+			375 = {
+							limit = {
+									OR = {
+									has_dynamic_modifier = {
+													modifier = USA_general_confederate_support
+												}
+											NOT = {
+											has_dynamic_modifier = {
+													modifier = USA_low_confederate_support 
+												}
+												has_dynamic_modifier = {
+													modifier = USA_high_confederate_support
+												}
+												has_dynamic_modifier = {
+													modifier = USA_confederate_governor_in_power
+												}
+											}
+										}
+								}
+			save_global_event_target_as = USA_high_confederate_support
+			USA_high_confederate_support = yes
+			}
+			357 = {
+							limit = {
+									OR = {
+									has_dynamic_modifier = {
+													modifier = USA_general_leftist_support
+												}
+											NOT = {
+											has_dynamic_modifier = {
+													modifier = USA_low_leftist_support 
+												}
+												has_dynamic_modifier = {
+													modifier = USA_high_leftist_support
+												}
+												has_dynamic_modifier = {
+													modifier = USA_leftist_governor_in_power
+												}
+											}
+										}
+								}
+			save_global_event_target_as = USA_high_leftist_support
+			USA_high_leftist_support = yes
+			}
+			395 = {
+							limit = {
+									OR = {
+									has_dynamic_modifier = {
+													modifier = USA_general_leftist_support
+												}
+											NOT = {
+											has_dynamic_modifier = {
+													modifier = USA_low_leftist_support 
+												}
+												has_dynamic_modifier = {
+													modifier = USA_high_leftist_support
+												}
+												has_dynamic_modifier = {
+													modifier = USA_leftist_governor_in_power
+												}
+											}
+										}
+								}
+			save_global_event_target_as = USA_high_leftist_support
+			USA_high_leftist_support = yes
+			}
+
+		}
+	}
+}
+#reform SUCCEEDS
+country_event = {
+	id = unista.14
+	title = unista.14.t
+	desc = unista.14.d
+	picture = GFX_report_event_usa_british_sailors_destroyers###idk what happened but yeah
+
+	is_triggered_only = yes
+	
+	option = { #
+		name = unista.14.a
+		add_ideas = great_depression_2
+	}
+}
+#########END OF AMERICAN DEPRESSSION EVENTS#############################
+#alaskan oil is found
+country_event = {
+	id = unista.15
+	title = unista.15.t
+	desc = unista.15.d
+	picture = GFX_report_event_usa_british_sailors_destroyers###idk what happened but yeah
+
+	is_triggered_only = yes
+	
+	option = { #
+		name = unista.15.a
+		random_owned_controlled_state = {
+				prioritize = { 463 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+				}
+				add_resource = {
+					type = oil
+					amount = 1
+				}
+			}
+	}
+}
+#USA provides philippines with things
+country_event = {
+	id = unista.16
+	title = unista.16.t
+	desc = unista.16.d
+	picture = GFX_report_event_usa_british_sailors_destroyers###idk what happened but yeah
+
+	is_triggered_only = yes
+	
+	option = { #
+		name = unista.16.a
+		628 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+	}
+}
+#nyc bank is reimplemented and this is the event for socialists dealing with it
+country_event = {
+	id = unista.17
+	title = unista.17.t
+	desc = unista.17.d
+	picture = GFX_report_event_usa_british_sailors_destroyers###idk what happened but yeah
+
+	is_triggered_only = yes
+	
+	option = { #
+		name = unista.17.a
+		ai_chance = {
+		factor = 75
+		}
+		358 = {
+							limit = {
+									OR = {
+											has_dynamic_modifier = {
+													modifier = USA_high_leftist_support
+												}
+										}
+								}
+								country_event = unista.19
+						}
+	}
+	option = { #
+		name = unista.17.b
+		ai_chance = {
+		factor = 75
+		}
+		358 = {
+							limit = {
+									OR = {
+											has_dynamic_modifier = {
+													modifier = USA_high_leftist_support
+												}
+										}
+								}
+								country_event = unista.20
+						}
+	}
+}
+#nyc banks reopen
+country_event = {
+	id = unista.18
+	title = unista.18.t
+	desc = unista.18.d
+	picture = GFX_report_event_usa_british_sailors_destroyers###idk what happened but yeah
+
+	is_triggered_only = yes
+	
+	option = { #a new day for nyc
+		name = unista.18.a
+		add_stability = 0.1
+	}
+}

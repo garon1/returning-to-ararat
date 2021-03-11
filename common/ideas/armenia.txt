@@ -17,6 +17,23 @@ ARM_strip_securalism = {
 					nationalism_drift = 0.01
 			}
 		}
+		ARM_honor_the_revolution = {
+			
+			
+			allowed = {
+				original_tag = "ARM"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+						justify_war_goal_time = -0.5
+						annex_cost_factor = -0.3
+						conscription = 0.03
+			}
+		}
 		ARM_socialist_nationalism = {
 			
 			
@@ -49,6 +66,59 @@ ARM_strip_securalism = {
 					party_popularity_stability_factor = 0.05
 					stability_weekly = 0.02
 					political_power_cost = -0.05
+			}
+		}
+		ARM_clean_economy = {
+			
+			
+			allowed = {
+				original_tag = "ARM"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+					political_power_factor = 0.3
+					consumer_goods_factor = -0.1
+					stability_factor = 0.15
+			}
+		}
+		ARM_agricultural_reforms = {
+			
+			
+			allowed = {
+				original_tag = "ARM"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+					conscription = 0.01
+					civilian_factory_use = -3
+				consumer_goods_factor = 0.1
+				industry_repair_factor = 0.1
+			}
+		}
+		ARM_disunification2 = {
+			
+			
+			allowed = {
+				original_tag = "ARM"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+					party_popularity_stability_factor = 0.1
+					stability_weekly = 0.1
+					political_power_cost = -0.05
+					production_lack_of_resource_penalty_factor = -0.05
 			}
 		}
 		ARM_disunification1 = {
@@ -222,6 +292,75 @@ ARM_reorganize_agriculture = {
 					min_export = 0.3
 			}
 		}
+		ARM_end_isolation = {
+			
+			
+			allowed = {
+				original_tag = "ARM"
+			}
+
+			
+			
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.1
+				political_power_factor = 0.1
+				consumer_goods_factor = 0.2
+			}
+		}
+		ARM_russian_economy = {
+			
+			
+			allowed = {
+				original_tag = "ARM"
+			}
+
+			
+			
+			removal_cost = -1
+			targeted_modifier = {
+				tag = RUS
+				trade_cost_for_target_factor = -0.2
+				extra_trade_to_target_factor = 0.30
+			}
+		}
+		ARM_air_corps = {
+			
+			
+			allowed = {
+				original_tag = "ARM"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+					air_accidents_factor = -0.1
+					air_attack_factor = 0.2
+						air_fuel_consumption_factor = -0.3
+
+			}
+		}
+		ARM_militias = {
+			
+			
+			allowed = {
+				original_tag = "ARM"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+				max_fuel_factor = 0.1
+				minimum_training_level = -0.2
+				equipment_capture = 0.1
+				production_factory_start_efficiency_factor = 0.3
+
+			}
+		}
 ARM_army_big = {
 			
 			
@@ -345,6 +484,85 @@ ARM_army_big = {
 					nationalism_drift = 0.03
 			}
 		}
+ARM_universities = {
+			
+			
+			allowed = {
+				original_tag = "ARM"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+			research_speed_factor = 0.07
+			}
+		}
+ARM_UKR_research = {
+			
+			
+			allowed = {
+				original_tag = "ARM"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+			research_speed_factor = 0.15
+			}
+		}
+ARM_radicalism_in_other = {
+			
+			
+			allowed = {
+				original_tag = "ARM"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+				radical_socialism_drift = 0.03
+			}
+		}
+ARM_revanchism = {
+			
+			
+			allowed = {
+				original_tag = "ARM"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			targeted_modifier = {
+				tag = GEO
+				attack_bonus_against_cores = 0.4
+					defense_bonus_against = 0.4
+			}
+		}
+ARM_amped_resistance = {
+			
+			
+			allowed = {
+				original_tag = "ARM"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			targeted_modifier = {
+				tag = GEO
+				resistance_growth_on_our_occupied_states = 0.2
+				resistance_damage_to_garrison_on_our_occupied_states = 0.2
+			}
+		}
 ARM_army_small = {
 			
 			
@@ -380,6 +598,20 @@ ARM_army_small = {
 			}
 			
 			traits = { nationalist_sympathies }
+		}
+	ARM_aram_manukyan = {
+
+			picture = tur_nazim_hikmet
+				
+			allowed = {
+				original_tag = ARM
+			}
+
+			available = {
+				original_tag = ARM
+			}
+			
+			traits = { the_liberalist }
 		}
 	}
 }

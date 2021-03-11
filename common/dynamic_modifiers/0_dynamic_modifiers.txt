@@ -323,6 +323,17 @@ turkish_rebels = {
 	army_speed_factor_for_controller = -0.3
     disable_strategic_redeployment = 1
     }
+    ethnicities_placated = {
+    enable = { always = yes }
+
+    icon = GFX_modifiers_tur_kemalist_loyalties
+    
+    recruitable_population_factor = -0.02
+	local_building_slots_factor = -0.05
+	state_resources_factor = -0.05
+	state_production_speed_buildings_factor = -0.05
+	army_speed_factor_for_controller = -0.05
+    }
     kurdish_separatism = {
     enable = { always = yes }
 
@@ -409,4 +420,128 @@ african_guerillas = {
 	resistance_decay = -0.25
 	state_resources_factor = -0.33
 	disable_strategic_redeployment = 1
+}
+###AMERICAN MODIFIERS###################
+#LEGIONISTS#
+low_legionist_support = {
+	enable = { always = yes }
+
+	icon = GFX_american_legion_support
+	
+	political_power_factor = -0.05
+	stability_factor = -0.05
+	production_oil_factor = -0.05
+	production_speed_buildings_factor = -0.05
+}
+general_legionist_support = {
+	enable = { always = yes }
+
+	icon = GFX_american_legion_support
+	
+	political_power_factor = -0.1
+	stability_factor = -0.1
+	production_oil_factor = -0.1
+	production_speed_buildings_factor = -0.1
+}
+high_legionist_support = {
+	enable = { always = yes }
+
+	icon = GFX_american_legion_support
+	
+	political_power_factor = -0.15
+	stability_factor = -0.15
+	production_oil_factor = -0.15
+	production_speed_buildings_factor = -0.15
+}
+legionist_governor_in_power = {
+	enable = { always = yes }
+
+	icon = GFX_american_legion_support
+	
+	political_power_factor = -0.2
+	stability_factor = -0.2
+	production_oil_factor = -0.2
+	production_speed_buildings_factor = -0.2
+}
+#LEFTIST#
+low_leftist_support = {
+	enable = { always = yes }
+
+	icon = GFX_american_syndicalists_support
+	
+	political_power_factor = -0.05
+	stability_factor = -0.05
+	production_oil_factor = -0.05
+	production_speed_buildings_factor = -0.05
+}
+general_leftist_support = {
+	enable = { always = yes }
+
+	icon = GFX_american_syndicalists_support
+	
+	political_power_factor = -0.1
+	stability_factor = -0.1
+	production_oil_factor = -0.1
+	production_speed_buildings_factor = -0.1
+}
+high_leftist_support = {
+	enable = { always = yes }
+
+	icon = GFX_american_syndicalists_support
+	
+	political_power_factor = -0.15
+	stability_factor = -0.15
+	production_oil_factor = -0.15
+	production_speed_buildings_factor = -0.15
+}
+leftist_governor_in_power = {
+	enable = { always = yes }
+
+	icon = GFX_american_syndicalists_support
+	
+	political_power_factor = -0.2
+	stability_factor = -0.2
+	production_oil_factor = -0.2
+	production_speed_buildings_factor = -0.2
+}
+#CONFEDERATE#
+low_confederate_support = {
+	enable = { always = yes }
+
+	icon = GFX_american_confederate_support
+	
+	political_power_factor = -0.05
+	stability_factor = -0.05
+	production_oil_factor = -0.05
+	production_speed_buildings_factor = -0.05
+}
+general_confederate_support = {
+	enable = { always = yes }
+
+	icon = GFX_american_confederate_support
+	
+	political_power_factor = -0.1
+	stability_factor = -0.1
+	production_oil_factor = -0.1
+	production_speed_buildings_factor = -0.1
+}
+high_confederate_support = {
+	enable = { always = yes }
+
+	icon = GFX_american_confederate_support
+	
+	political_power_factor = -0.15
+	stability_factor = -0.15
+	production_oil_factor = -0.15
+	production_speed_buildings_factor = -0.15
+}
+confederate_governor_in_power = {
+	enable = { always = yes }
+
+	icon = GFX_american_confederate_support
+	
+	political_power_factor = -0.2
+	stability_factor = -0.2
+	production_oil_factor = -0.2
+	production_speed_buildings_factor = -0.2
 }

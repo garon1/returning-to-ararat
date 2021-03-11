@@ -1203,6 +1203,20 @@ leader_traits = {
 		political_power_gain = 0.05
 	}
 
+	the_liberalist = {
+		random = no
+		stability_factor = 0.05
+		economy_cost_factor = 0.15
+		consumer_goods_factor = 0.05
+		market_liberal_acceptance = 50
+		social_liberal_acceptance = 50
+		nationalism_acceptance = -25
+		syndicalism_acceptance = -25
+		market_socialism_acceptance = -25
+		radical_socialism_acceptance = -25
+		anarchism_acceptance = -25
+	}
+
 	the_banker = { #Tsouderos
 		random = no
 		stability_factor = 0.05

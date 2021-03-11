@@ -1,4 +1,4 @@
-﻿capital = 361
+﻿capital = 463
 
 oob = "USA_1936"
 if = {
@@ -8,13 +8,20 @@ if = {
 		set_naval_oob = "USA_1936_naval_legacy"
 	}
 }
-
+country_event = {
+	id = unista.1
+	hours = 6
+}
+country_event = {
+	id = unista.3
+	days = 10
+}
 country_event = {
 	id = tas_political.1
 	hours = 6
 }
-set_stability = 0.2
-set_war_support = 0
+set_stability = 0.04
+set_war_support = 0.02
 
 set_research_slots = 4
 set_variable = { var = senators_support value = 48 }
@@ -132,17 +139,17 @@ set_convoys = 500
 
 
 set_politics = {
-	ruling_party = traditional_conservatism
+	ruling_party = social_democracy
 	last_election = "1932.11.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
 radical_socialism = 15
-social_democracy = 9
+social_democracy = 19
 market_liberal = 10
 social_liberal = 10
-traditional_conservatism = 11
+traditional_conservatism = 1
 totalitarianism = 2
 syndicalism = 12
 market_socialism = 10
@@ -152,7 +159,7 @@ anarchism = 11
 
 add_ideas = {
 	undisturbed_isolation
-	USA_german_populace
+	great_depression
 	disarmed_nation
 	free_trade
 	home_of_the_free
@@ -166,11 +173,11 @@ set_autonomy = {
 }
 
 create_country_leader = {
-	name = "Franklin Delano Roosevelt"
+	name = "John Nance Garner"
 	desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
-	picture = "Portrait_USA_Franklin_Roosevelt.dds"
+	picture = "Portrait_USA_John_Nance_Garner.tga"
 	expire = "1947.1.1"
-	ideology = traditional_conservatism_subtype
+	ideology = social_democracy_subtype
 	traits = {
 		dislikes_germany
 	}
@@ -234,16 +241,6 @@ create_country_leader = {
 	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
 	expire = "1965.1.1"
 	ideology = market_liberal_subtype
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = social_democracy_subtype
 	traits = {
 		#
 	}

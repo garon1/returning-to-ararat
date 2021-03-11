@@ -116,7 +116,7 @@ country_event = {
     desc = turkrepublic.8.d
     picture = GFX_report_event_tur_sultan_in_istanbul
    
-  is_triggered_only  yes
+  is_triggered_only = yes
   
     option = {
         name = turkrepublic.8.a

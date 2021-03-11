@@ -1,3 +1,7 @@
+INT = {
+	color = rgb { 117 182 186 }
+	color_ui = rgb { 117 182 186 }
+}
 SIC = {
 	color = rgb { 159 198 188 }
 	color_ui = rgb { 159 198 188 }

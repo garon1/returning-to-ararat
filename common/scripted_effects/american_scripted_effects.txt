@@ -1,0 +1,260 @@
+USA_low_legionist_support = {
+	custom_effect_tooltip = USA_low_legionist_support
+	hidden_effect = {
+		if = {
+			limit = { is_owned_by = USA }
+			if = {
+				limit = {
+					has_dynamic_modifier = { modifier = low_legionist_support }
+				}
+				remove_dynamic_modifier = { modifier = low_legionist_support }
+			}
+			if = {
+				limit = {
+					NOT = { has_dynamic_modifier = { modifier = low_legionist_support } }
+				}
+				add_dynamic_modifier = { modifier = low_legionist_support }
+			}
+		}
+	}
+}
+USA_general_legionist_support = {
+	custom_effect_tooltip = USA_general_legionist_support
+	hidden_effect = {
+		if = {
+			limit = { is_owned_by = USA }
+			if = {
+				limit = {
+					has_dynamic_modifier = { modifier = general_legionist_support }
+				}
+				remove_dynamic_modifier = { modifier = general_legionist_support }
+			}
+			if = {
+				limit = {
+					NOT = { has_dynamic_modifier = { modifier = general_legionist_support } }
+				}
+				add_dynamic_modifier = { modifier = general_legionist_support }
+			}
+		}
+	}
+}
+USA_high_legionist_support = {
+	custom_effect_tooltip = USA_high_legionist_support
+	hidden_effect = {
+		if = {
+			limit = { is_owned_by = USA }
+			if = {
+				limit = {
+					has_dynamic_modifier = { modifier = high_legionist_support }
+				}
+				remove_dynamic_modifier = { modifier = high_legionist_support }
+			}
+			if = {
+				limit = {
+					NOT = { has_dynamic_modifier = { modifier = high_legionist_support } }
+				}
+				add_dynamic_modifier = { modifier = high_legionist_support }
+			}
+		}
+	}
+}
+USA_legionist_governor_in_power = {
+	custom_effect_tooltip = USA_legionist_governor_in_power
+	hidden_effect = {
+		if = {
+			limit = { is_owned_by = USA }
+			if = {
+				limit = {
+					has_dynamic_modifier = { modifier = legionist_governor_in_power }
+				}
+				remove_dynamic_modifier = { modifier = legionist_governor_in_power }
+			}
+			if = {
+				limit = {
+					NOT = { has_dynamic_modifier = { modifier = legionist_governor_in_power } }
+				}
+				add_dynamic_modifier = { modifier = legionist_governor_in_power }
+			}
+		}
+	}
+}
+USA_low_leftist_support = {
+	custom_effect_tooltip = USA_low_leftist_support
+	hidden_effect = {
+		if = {
+			limit = { is_owned_by = USA }
+			if = {
+				limit = {
+					has_dynamic_modifier = { modifier = low_leftist_support }
+				}
+				remove_dynamic_modifier = { modifier = low_leftist_support }
+			}
+			if = {
+				limit = {
+					NOT = { has_dynamic_modifier = { modifier = low_leftist_support } }
+				}
+				add_dynamic_modifier = { modifier = low_leftist_support }
+			}
+		}
+	}
+}
+USA_general_leftist_support = {
+	custom_effect_tooltip = USA_general_leftist_support
+	hidden_effect = {
+		if = {
+			limit = { is_owned_by = USA }
+			if = {
+				limit = {
+					has_dynamic_modifier = { modifier = general_leftist_support }
+				}
+				remove_dynamic_modifier = { modifier = general_leftist_support }
+			}
+			if = {
+				limit = {
+					NOT = { has_dynamic_modifier = { modifier = general_leftist_support } }
+				}
+				add_dynamic_modifier = { modifier = general_leftist_support }
+			}
+		}
+	}
+}
+USA_high_leftist_support = {
+	custom_effect_tooltip = USA_high_leftist_support
+	hidden_effect = {
+		if = {
+			limit = { is_owned_by = USA }
+			if = {
+				limit = {
+					has_dynamic_modifier = { modifier = high_leftist_support }
+				}
+				remove_dynamic_modifier = { modifier = high_leftist_support }
+			}
+			if = {
+				limit = {
+					NOT = { has_dynamic_modifier = { modifier = high_leftist_support } }
+				}
+				add_dynamic_modifier = { modifier = high_leftist_support }
+			}
+		}
+	}
+}
+USA_leftist_governor_in_power = {
+	custom_effect_tooltip = USA_leftist_governor_in_power
+	hidden_effect = {
+		if = {
+			limit = { is_owned_by = USA }
+			if = {
+				limit = {
+					has_dynamic_modifier = { modifier = leftist_governor_in_power }
+				}
+				remove_dynamic_modifier = { modifier = leftist_governor_in_power }
+			}
+			if = {
+				limit = {
+					NOT = { has_dynamic_modifier = { modifier = leftist_governor_in_power } }
+				}
+				add_dynamic_modifier = { modifier = leftist_governor_in_power }
+			}
+		}
+	}
+}
+USA_low_confederate_support = {
+	custom_effect_tooltip = USA_low_confederate_support
+	hidden_effect = {
+		if = {
+			limit = { is_owned_by = USA }
+			if = {
+				limit = {
+					has_dynamic_modifier = { modifier = low_confederate_support }
+				}
+				remove_dynamic_modifier = { modifier = low_confederate_support }
+			}
+			if = {
+				limit = {
+					NOT = { has_dynamic_modifier = { modifier = low_confederate_support } }
+				}
+				add_dynamic_modifier = { modifier = low_confederate_support }
+			}
+		}
+	}
+}
+USA_general_confederate_support = {
+	custom_effect_tooltip = USA_general_confederate_support
+	hidden_effect = {
+		if = {
+			limit = { is_owned_by = USA }
+			if = {
+				limit = {
+					has_dynamic_modifier = { modifier = general_confederate_support }
+				}
+				remove_dynamic_modifier = { modifier = general_confederate_support }
+			}
+			if = {
+				limit = {
+					NOT = { has_dynamic_modifier = { modifier = general_confederate_support } }
+				}
+				add_dynamic_modifier = { modifier = general_confederate_support }
+			}
+		}
+	}
+}
+USA_high_confederate_support = {
+	custom_effect_tooltip = USA_high_confederate_support
+	hidden_effect = {
+		if = {
+			limit = { is_owned_by = USA }
+			if = {
+				limit = {
+					has_dynamic_modifier = { modifier = high_confederate_support }
+				}
+				remove_dynamic_modifier = { modifier = high_confederate_support }
+			}
+			if = {
+				limit = {
+					NOT = { has_dynamic_modifier = { modifier = high_confederate_support } }
+				}
+				add_dynamic_modifier = { modifier = high_confederate_support }
+			}
+		}
+	}
+}
+USA_confederate_governor_in_power = {
+	custom_effect_tooltip = USA_confederate_governor_in_power
+	hidden_effect = {
+		if = {
+			limit = { is_owned_by = USA }
+			if = {
+				limit = {
+					has_dynamic_modifier = { modifier = confederate_governor_in_power }
+				}
+				remove_dynamic_modifier = { modifier = confederate_governor_in_power }
+			}
+			if = {
+				limit = {
+					NOT = { has_dynamic_modifier = { modifier = confederate_governor_in_power } }
+				}
+				add_dynamic_modifier = { modifier = confederate_governor_in_power }
+			}
+		}
+	}
+}
+USA_confederate_power_increases_to_high = {
+	custom_effect_tooltip = USA_confederate_power_increases_to_high
+	hidden_effect = {
+		if = {
+			limit = { is_owned_by = USA }
+			if = {
+				limit = {
+					has_dynamic_modifier = { modifier = USA_general_confederate_support }
+				}
+				remove_dynamic_modifier = { modifier = USA_general_confederate_support }
+			}
+			if = {
+				limit = {
+					NOT = { has_dynamic_modifier = { modifier = USA_high_confederate_support } }
+				}
+				add_dynamic_modifier = { modifier = USA_high_confederate_support }
+			}
+		}
+	}
+}

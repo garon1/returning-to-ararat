@@ -7,6 +7,7 @@ state={
 		add_core_of = CAM
 add_core_of = VIN
 		owner = VIN
+set_demilitarized_zone = yes
 		victory_points = {
 			7376 1 
 		}

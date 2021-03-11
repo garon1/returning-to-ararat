@@ -9,612 +9,1191 @@ focus_tree = {
 	}
 	default = no
 	focus = {
-		id = ASS_political_era
+		id = ASY_may_elections
 		icon = GFX_goal_unknown
 		cost = 7.00
-		x = 19
+		x = 14
 		y = 0
 
 	}
 	focus = {
-		id = ASS_industry
+		id = ASY_military_doctorines
 		icon = GFX_goal_unknown
-		cost = 7.00
-		x = 5
+		cost = 5.00
+		x = 45
 		y = 0
 
 	}
 	focus = {
-		id = ASS_fix_military
-		icon = GFX_goal_unknown
-		cost = 5.00
-		x = 46
-		y = 0
-
-	}
-	focus = {
-		id = ASS_infrastructure
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = ASS_industry
-		}
-		x = 3
-		y = 1
-
-	}
-	focus = {
-		id = ASS_infrastructure2
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = ASS_infrastructure
-		}
-		x = 2
-		y = 2
-
-	}
-	focus = {
-		id = ASS_civilian1
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = ASS_industry
-		}
-		x = 5
-		y = 1
-
-	}
-	focus = {
-		id = ASS_resource_expansion
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = ASS_civilian1
-		}
-		x = 5
-		y = 2
-
-	}
-	focus = {
-		id = ASS_military_fact
+		id = ASY_social_democrats_win
 		icon = GFX_goal_unknown
 		cost = 7.00
 		prerequisite = {
-			focus = ASS_industry
-		}
-		x = 7
-		y = 1
-
-	}
-	focus = {
-		id = ASS_industrialize
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = ASS_military_fact
-		}
-		x = 8
-		y = 2
-
-	}
-	focus = {
-		id = ASS_diaspora_funding
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = ASS_infrastructure2
-		}
-		prerequisite = {
-			focus = ASS_resource_expansion
-		}
-		prerequisite = {
-			focus = ASS_industrialize
-		}
-		x = 5
-		y = 3
-
-	}
-	focus = {
-		id = ASS_greater_assyria
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ASS_political_era
+			focus = ASY_may_elections
 		}
 		mutually_exclusive = {
-			focus = ASS_stay_neutral
+			focus = ASY_liberals_win
+			focus = ASY_give_conservatives_the_election
 		}
-		x = 15
+		x = 10
 		y = 1
 
 	}
 	focus = {
-		id = ASS_assyrian_nationalism
+		id = ASY_liberals_win
 		icon = GFX_goal_unknown
 		cost = 7.00
 		prerequisite = {
-			focus = ASS_greater_assyria
+			focus = ASY_may_elections
 		}
-		x = 13
+		mutually_exclusive = {
+			focus = ASY_social_democrats_win
+			focus = ASY_give_conservatives_the_election
+		}
+		x = 14
+		y = 1
+
+	}
+	focus = {
+		id = ASY_countrywide_liberalization
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_social_democrats_win
+			focus = ASY_liberals_win
+		}
+		x = 12
 		y = 2
 
 	}
 	focus = {
-		id = ASS_remember_the_past
+		id = ASY_promote_secular_nationalism
 		icon = GFX_goal_unknown
 		cost = 7.00
 		prerequisite = {
-			focus = ASS_assyrian_nationalism
+			focus = ASY_countrywide_liberalization
 		}
-		x = 15
+		x = 9
 		y = 3
 
 	}
 	focus = {
-		id = ASS_intervene_with_politics
+		id = ASY_standardize_kurdish
 		icon = GFX_goal_unknown
 		cost = 7.00
 		prerequisite = {
-			focus = ASS_greater_assyria
+			focus = ASY_promote_secular_nationalism
 		}
-		x = 19
-		y = 3
-
-	}
-	focus = {
-		id = ASS_honor_the_legacy
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ASS_greater_assyria
-		}
-		x = 24
-		y = 3
-
-	}
-	focus = {
-		id = ASS_rebuild_assur
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ASS_greater_assyria
-		}
-		x = 21
-		y = 3
-
-	}
-	focus = {
-		id = ASS_expand_assyrian_mosul
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ASS_remember_the_past
-		}
-		prerequisite = {
-			focus = ASS_intervene_with_politics
-		}
-		prerequisite = {
-			focus = ASS_honor_the_legacy
-		}
-		prerequisite = {
-			focus = ASS_rebuild_assur
-		}
-		x = 16
+		x = 8
 		y = 4
 
 	}
 	focus = {
-		id = ASS_enact_militarization
+		id = ASY_standardize_arabic
 		icon = GFX_goal_unknown
 		cost = 7.00
 		prerequisite = {
-			focus = ASS_intervene_with_politics
+			focus = ASY_promote_secular_nationalism
 		}
-		prerequisite = {
-			focus = ASS_honor_the_legacy
-		}
-		prerequisite = {
-			focus = ASS_rebuild_assur
-		}
-		x = 19
+		x = 10
 		y = 4
 
 	}
 	focus = {
-		id = ASS_cultural_celebrations
+		id = ASY_mult_lingual
 		icon = GFX_goal_unknown
 		cost = 7.00
 		prerequisite = {
-			focus = ASS_honor_the_legacy
+			focus = ASY_standardize_kurdish
 		}
 		prerequisite = {
-			focus = ASS_rebuild_assur
+			focus = ASY_standardize_arabic
 		}
-		x = 23
-		y = 4
-
-	}
-	focus = {
-		id = ASS_undergoe_assyrianization
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = ASS_expand_assyrian_mosul
-		}
-		prerequisite = {
-			focus = ASS_enact_militarization
-		}
-		prerequisite = {
-			focus = ASS_cultural_celebrations
-		}
-		x = 21
+		x = 7
 		y = 5
 
 	}
 	focus = {
-		id = ASS_military_coup
+		id = ASY_stop_mass_migrations
 		icon = GFX_goal_unknown
 		cost = 7.00
 		prerequisite = {
-			focus = ASS_undergoe_assyrianization
+			focus = ASY_countrywide_liberalization
 		}
-		x = 20
+		x = 15
+		y = 3
+
+	}
+	focus = {
+		id = ASY_autonomous_minorities
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_stop_mass_migrations
+		}
+		x = 13
+		y = 4
+
+	}
+	focus = {
+		id = ASY_assyria_first
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_autonomous_minorities
+		}
+		x = 11
+		y = 5
+
+	}
+	focus = {
+		id = ASY_integrate_the_masses
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_autonomous_minorities
+		}
+		x = 14
+		y = 5
+
+	}
+	focus = {
+		id = ASY_construct_assyrian_towns
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_assyria_first
+		}
+		prerequisite = {
+			focus = ASY_integrate_the_masses
+		}
+		x = 13
 		y = 6
 
 	}
 	focus = {
-		id = ASS_old_ambitions
+		id = ASY_limit_privatization
 		icon = GFX_goal_unknown
 		cost = 7.00
 		prerequisite = {
-			focus = ASS_undergoe_assyrianization
+			focus = ASY_liberals_win
+			focus = ASY_social_democrats_win
+		}
+		mutually_exclusive = {
+			focus = ASY_enact_private_acts
+		}
+		x = 18
+		y = 2
+
+	}
+	focus = {
+		id = ASY_national_infrastructure
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_limit_privatization
+		}
+		mutually_exclusive = {
+			focus = ASY_private_infrastructure_companies
+		}
+		x = 20
+		y = 3
+
+	}
+	focus = {
+		id = ASY_give_conservatives_the_election
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_may_elections
+		}
+		mutually_exclusive = {
+			focus = ASY_liberals_win
+			focus = ASY_social_democrats_win
+		}
+		x = 27
+		y = 1
+
+	}
+	focus = {
+		id = ASY_enact_private_acts
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_give_conservatives_the_election
+		}
+		mutually_exclusive = {
+			focus = ASY_limit_privatization
+		}
+		x = 21
+		y = 2
+
+	}
+	focus = {
+		id = ASY_oil_companies
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_limit_privatization
+			focus = ASY_enact_private_acts
+		}
+		x = 18
+		y = 3
+
+	}
+	focus = {
+		id = ASY_stay_with_DOWA
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_oil_companies
+		}
+		mutually_exclusive = {
+			focus = ASY_go_with_britain
+			focus = ASY_go_with_italy
+			focus = ASY_go_with_france
+		}
+		x = 15
+		y = 4
+
+	}
+	focus = {
+		id = ASY_go_with_britain
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_oil_companies
+		}
+		mutually_exclusive = {
+			focus = ASY_stay_with_DOWA
+			focus = ASY_go_with_italy
+			focus = ASY_go_with_france
+		}
+		x = 17
+		y = 4
+
+	}
+	focus = {
+		id = ASY_go_with_italy
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_oil_companies
+		}
+		mutually_exclusive = {
+			focus = ASY_go_with_britain
+			focus = ASY_stay_with_DOWA
+			focus = ASY_go_with_france
+		}
+		x = 19
+		y = 4
+
+	}
+	focus = {
+		id = ASY_go_with_france
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_oil_companies
+		}
+		mutually_exclusive = {
+			focus = ASY_go_with_britain
+			focus = ASY_go_with_italy
+			focus = ASY_stay_with_DOWA
+		}
+		x = 21
+		y = 4
+
+	}
+	focus = {
+		id = ASY_take_out_loans
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_go_with_italy
+			focus = ASY_go_with_britain
+			focus = ASY_go_with_france
+			focus = ASY_stay_with_DOWA
+		}
+		x = 20
+		y = 5
+
+	}
+	focus = {
+		id = ASY_private_infrastructure_companies
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_enact_private_acts
+		}
+		mutually_exclusive = {
+			focus = ASY_national_infrastructure
+		}
+		x = 22
+		y = 3
+
+	}
+	focus = {
+		id = ASY_our_cultural_revolution
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_private_infrastructure_companies
+		}
+		x = 23
+		y = 5
+
+	}
+	focus = {
+		id = ASY_research_boost
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_take_out_loans
+		}
+		prerequisite = {
+			focus = ASY_our_cultural_revolution
 		}
 		x = 22
 		y = 6
 
 	}
 	focus = {
-		id = ASS_stay_neutral
+		id = ASY_closer_to_european_imperialists
 		icon = GFX_goal_unknown
 		cost = 7.00
 		prerequisite = {
-			focus = ASS_political_era
+			focus = ASY_give_conservatives_the_election
 		}
-		mutually_exclusive = {
-			focus = ASS_greater_assyria
-		}
-		x = 29
-		y = 1
-
-	}
-	focus = {
-		id = ASS_stay_democratized
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ASS_stay_neutral
-		}
-		x = 31
+		x = 25
 		y = 2
 
 	}
 	focus = {
-		id = ASS_solve_arab_question
+		id = ASY_stay_with_our_neighbors
 		icon = GFX_goal_unknown
 		cost = 7.00
 		prerequisite = {
-			focus = ASS_stay_democratized
+			focus = ASY_closer_to_european_imperialists
+		}
+		mutually_exclusive = {
+			focus = ASY_european_closeness
+		}
+		x = 24
+		y = 3
+
+	}
+	focus = {
+		id = ASY_european_closeness
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_closer_to_european_imperialists
+		}
+		mutually_exclusive = {
+			focus = ASY_stay_with_our_neighbors
+		}
+		x = 26
+		y = 3
+
+	}
+	focus = {
+		id = ASY_approach_our_neighbors
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_stay_with_our_neighbors
+		}
+		prerequisite = {
+			focus = ASY_european_closeness
+		}
+		x = 25
+		y = 4
+
+	}
+	focus = {
+		id = ASY_ask_for_italy
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_european_closeness
+		}
+		x = 27
+		y = 4
+
+	}
+	focus = {
+		id = ASY_centralization_acts
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_give_conservatives_the_election
 		}
 		x = 30
-		y = 3
+		y = 2
 
 	}
 	focus = {
-		id = ASS_stop_assyrian_riots
+		id = ASY_clean_up_political_dissident
 		icon = GFX_goal_unknown
 		cost = 7.00
 		prerequisite = {
-			focus = ASS_stay_democratized
-		}
-		x = 34
-		y = 3
-
-	}
-	focus = {
-		id = ASS_solve_kurdish_question
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ASS_stay_democratized
-		}
-		x = 38
-		y = 3
-
-	}
-	focus = {
-		id = ASS_cultural_celebrations
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ASS_solve_arab_question
-		}
-		prerequisite = {
-			focus = ASS_stop_assyrian_riots
-		}
-		prerequisite = {
-			focus = ASS_solve_kurdish_question
-		}
-		x = 33
-		y = 4
-
-	}
-	focus = {
-		id = ASS_develop_mosul
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ASS_solve_arab_question
-		}
-		prerequisite = {
-			focus = ASS_stop_assyrian_riots
-		}
-		prerequisite = {
-			focus = ASS_solve_kurdish_question
+			focus = ASY_centralization_acts
 		}
 		x = 28
+		y = 3
+
+	}
+	focus = {
+		id = ASY_french_aid
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_european_closeness
+		}
+		x = 29
 		y = 4
 
 	}
 	focus = {
-		id = ASS_radio_stations
+		id = ASY_dont_allow_political_rivals
 		icon = GFX_goal_unknown
 		cost = 7.00
 		prerequisite = {
-			focus = ASS_solve_arab_question
+			focus = ASY_clean_up_political_dissident
 		}
-		prerequisite = {
-			focus = ASS_stop_assyrian_riots
-		}
-		prerequisite = {
-			focus = ASS_solve_kurdish_question
-		}
-		x = 36
+		x = 31
 		y = 4
 
 	}
 	focus = {
-		id = ASS_rebuild_assur1
+		id = ASY_political_purge
 		icon = GFX_goal_unknown
 		cost = 7.00
 		prerequisite = {
-			focus = ASS_develop_mosul
+			focus = ASY_dont_allow_political_rivals
 		}
-		prerequisite = {
-			focus = ASS_radio_stations
-		}
-		x = 34
+		x = 29
 		y = 5
 
 	}
 	focus = {
-		id = ASS_develop_resources
+		id = ASY_nomadic_situations
 		icon = GFX_goal_unknown
 		cost = 7.00
 		prerequisite = {
-			focus = ASS_develop_mosul
+			focus = ASY_centralization_acts
 		}
+		x = 32
+		y = 3
+
+	}
+	focus = {
+		id = ASY_strengthen_the_federation
+		icon = GFX_goal_unknown
+		cost = 7.00
 		prerequisite = {
-			focus = ASS_radio_stations
+			focus = ASY_nomadic_situations
 		}
-		x = 36
+		x = 31
 		y = 5
 
 	}
 	focus = {
-		id = ASS_reformists
+		id = ASY_promote_ethostate_nationalism
 		icon = GFX_goal_unknown
 		cost = 7.00
 		prerequisite = {
-			focus = ASS_develop_mosul
+			focus = ASY_political_purge
 		}
 		prerequisite = {
-			focus = ASS_radio_stations
+			focus = ASY_strengthen_the_federation
 		}
-		x = 38
-		y = 5
-
-	}
-	focus = {
-		id = ASS_beacon_of_democracy
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ASS_develop_resources
-		}
-		prerequisite = {
-			focus = ASS_reformists
-		}
-		prerequisite = {
-			focus = ASS_rebuild_assur1
-		}
-		x = 38
+		x = 30
 		y = 6
 
 	}
 	focus = {
-		id = ASS_less_infantry_reliance
+		id = ASY_review_ethnic_policies
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_give_conservatives_the_election
+		}
+		x = 34
+		y = 2
+
+	}
+	focus = {
+		id = ASY_reach_to_arabs
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_review_ethnic_policies
+		}
+		x = 35
+		y = 3
+
+	}
+	focus = {
+		id = ASY_reach_to_kurds
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_review_ethnic_policies
+		}
+		x = 37
+		y = 3
+
+	}
+	focus = {
+		id = ASY_assyria_for_assyrians
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_reach_to_arabs
+		}
+		prerequisite = {
+			focus = ASY_reach_to_kurds
+		}
+		x = 34
+		y = 4
+
+	}
+	focus = {
+		id = ASY_population_exchange
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_assyria_for_assyrians
+		}
+		x = 33
+		y = 5
+
+	}
+	focus = {
+		id = ASY_encourage_resettlement
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_assyria_for_assyrians
+		}
+		x = 35
+		y = 5
+
+	}
+	focus = {
+		id = ASY_appease_diaspora
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_population_exchange
+		}
+		prerequisite = {
+			focus = ASY_encourage_resettlement
+		}
+		x = 34
+		y = 6
+
+	}
+	focus = {
+		id = ASY_20th_century
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_promote_ethostate_nationalism
+		}
+		prerequisite = {
+			focus = ASY_appease_diaspora
+		}
+		mutually_exclusive = {
+			focus = ASY_russian_supplies
+		}
+		x = 28
+		y = 7
+
+	}
+	focus = {
+		id = ASY_russian_supplies
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_promote_ethostate_nationalism
+		}
+		prerequisite = {
+			focus = ASY_appease_diaspora
+		}
+		mutually_exclusive = {
+			focus = ASY_20th_century
+		}
+		x = 34
+		y = 7
+
+	}
+	focus = {
+		id = ASY_enable_fascist_politicians
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_russian_supplies
+		}
+		x = 34
+		y = 8
+
+	}
+	focus = {
+		id = ASY_allow_fascist_mobilization
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_enable_fascist_politicians
+		}
+		x = 36
+		y = 9
+
+	}
+	focus = {
+		id = ASY_reform_assyrian_militias
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = ASS_fix_military
+			focus = ASY_military_doctorines
 		}
-		x = 46
+		x = 42
 		y = 1
 
 	}
 	focus = {
-		id = ASS_motorization
+		id = ASY_militias_like_tactics
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = ASS_less_infantry_reliance
-		}
-		x = 45
-		y = 2
-
-	}
-	focus = {
-		id = ASS_artillery
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = ASS_less_infantry_reliance
-		}
-		x = 47
-		y = 2
-
-	}
-	focus = {
-		id = ASS_tanks
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = ASS_motorization
-		}
-		prerequisite = {
-			focus = ASS_artillery
+			focus = ASY_reform_assyrian_militias
 		}
 		mutually_exclusive = {
-			focus = ASS_light_tanks
+			focus = ASY_european_style_tactics
+		}
+		x = 40
+		y = 2
+
+	}
+	focus = {
+		id = ASY_european_style_tactics
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ASY_reform_assyrian_militias
+		}
+		mutually_exclusive = {
+			focus = ASY_militias_like_tactics
 		}
 		x = 44
-		y = 3
+		y = 2
 
 	}
 	focus = {
-		id = ASS_threaten_kurdistan
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ASS_military_coup
-		}
-		prerequisite = {
-			focus = ASS_old_ambitions
-		}
-		x = 19
-		y = 7
-
-	}
-	focus = {
-		id = ASS_infiltrate_persia
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ASS_old_ambitions
-		}
-		prerequisite = {
-			focus = ASS_military_coup
-		}
-		x = 23
-		y = 7
-
-	}
-	focus = {
-		id = ASS_light_tanks
+		id = ASY_import_british_equipment
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = ASS_artillery
-		}
-		prerequisite = {
-			focus = ASS_motorization
+			focus = ASY_militias_like_tactics
+			focus = ASY_european_style_tactics
 		}
 		mutually_exclusive = {
-			focus = ASS_tanks
+			focus = ASY_import_american_equipment
+			focus = ASY_import_german_equipment
 		}
-		x = 48
+		x = 42
 		y = 3
 
 	}
 	focus = {
-		id = ASS_enable_motorization
+		id = ASY_import_american_equipment
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = ASS_tanks
-			focus = ASS_light_tanks
+			focus = ASY_militias_like_tactics
+			focus = ASY_european_style_tactics
 		}
-		x = 46
+		mutually_exclusive = {
+			focus = ASY_import_british_equipment
+			focus = ASY_import_german_equipment
+		}
+		x = 39
+		y = 3
+
+	}
+	focus = {
+		id = ASY_import_german_equipment
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ASY_militias_like_tactics
+			focus = ASY_european_style_tactics
+		}
+		mutually_exclusive = {
+			focus = ASY_import_british_equipment
+			focus = ASY_import_american_equipment
+		}
+		x = 45
+		y = 3
+
+	}
+	focus = {
+		id = ASY_modern_vehicles
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ASY_import_american_equipment
+			focus = ASY_import_british_equipment
+			focus = ASY_import_german_equipment
+		}
+		x = 43
 		y = 4
 
 	}
 	focus = {
-		id = ASS_mainland_defense
+		id = ASY_military_radios
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = ASS_enable_motorization
+			focus = ASY_import_american_equipment
+			focus = ASY_import_british_equipment
+			focus = ASY_import_german_equipment
 		}
-		mutually_exclusive = {
-			focus = ASS_defend_neighbors
+		x = 41
+		y = 4
+
+	}
+	focus = {
+		id = ASY_new_and_improved_army
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ASY_military_radios
 		}
-		x = 44
+		prerequisite = {
+			focus = ASY_modern_vehicles
+		}
+		x = 42
 		y = 5
 
 	}
 	focus = {
-		id = ASS_defend_neighbors
+		id = ASY_new_air_force
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = ASS_enable_motorization
+			focus = ASY_military_doctorines
+		}
+		x = 49
+		y = 1
+
+	}
+	focus = {
+		id = ASY_construct_air_bases
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ASY_new_air_force
+		}
+		x = 49
+		y = 2
+
+	}
+	focus = {
+		id = ASY_destruction_tactics
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ASY_construct_air_bases
 		}
 		mutually_exclusive = {
-			focus = ASS_mainland_defense
+			focus = ASY_protection_tactics
 		}
 		x = 48
+		y = 3
+
+	}
+	focus = {
+		id = ASY_protection_tactics
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ASY_construct_air_bases
+		}
+		mutually_exclusive = {
+			focus = ASY_destruction_tactics
+		}
+		x = 50
+		y = 3
+
+	}
+	focus = {
+		id = ASY_bombers
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ASY_destruction_tactics
+			focus = ASY_protection_tactics
+		}
+		x = 49
+		y = 4
+
+	}
+	focus = {
+		id = ASY_improved_fighters
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ASY_destruction_tactics
+			focus = ASY_protection_tactics
+		}
+		x = 52
+		y = 4
+
+	}
+	focus = {
+		id = ASY_research_air_doctorine
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ASY_bombers
+		}
+		prerequisite = {
+			focus = ASY_improved_fighters
+		}
+		x = 50
 		y = 5
 
 	}
 	focus = {
-		id = ASS_strategic_bombings
+		id = ASY_condemn_ethnic_clashes
 		icon = GFX_goal_unknown
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
-			focus = ASS_mainland_defense
-			focus = ASS_defend_neighbors
+			focus = ASY_mult_lingual
 		}
-		x = 46
+		prerequisite = {
+			focus = ASY_assyria_first
+		}
+		x = 8
 		y = 6
 
 	}
 	focus = {
-		id = ASS_CAS
+		id = ASY_integrate_schools
 		icon = GFX_goal_unknown
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
-			focus = ASS_strategic_bombings
+			focus = ASY_assyria_first
 		}
-		mutually_exclusive = {
-			focus = ASS_heavy
+		prerequisite = {
+			focus = ASY_integrate_the_masses
 		}
-		x = 44
+		x = 10
+		y = 6
+
+	}
+	focus = {
+		id = ASY_mosul_paris_of_east
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_integrate_the_masses
+		}
+		prerequisite = {
+			focus = ASY_assyria_first
+		}
+		x = 17
+		y = 6
+
+	}
+	focus = {
+		id = ASY_new_constitution
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_condemn_ethnic_clashes
+		}
+		prerequisite = {
+			focus = ASY_integrate_schools
+		}
+		prerequisite = {
+			focus = ASY_construct_assyrian_towns
+		}
+		prerequisite = {
+			focus = ASY_mosul_paris_of_east
+		}
+		x = 15
 		y = 7
 
 	}
 	focus = {
-		id = ASS_heavy
+		id = ASY_nationalize_certain_industries
 		icon = GFX_goal_unknown
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
-			focus = ASS_strategic_bombings
+			focus = ASY_new_constitution
 		}
-		mutually_exclusive = {
-			focus = ASS_CAS
+		x = 14
+		y = 8
+
+	}
+	focus = {
+		id = ASY_permit_freedom_of_speech
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_new_constitution
 		}
-		x = 48
+		x = 16
+		y = 8
+
+	}
+	focus = {
+		id = ASY_new_criminal_justice_system
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_nationalize_certain_industries
+		}
+		prerequisite = {
+			focus = ASY_new_constitution
+		}
+		prerequisite = {
+			focus = ASY_permit_freedom_of_speech
+		}
+		x = 14
+		y = 9
+
+	}
+	focus = {
+		id = ASY_mosque_preservation
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_new_criminal_justice_system
+		}
+		x = 16
+		y = 10
+
+	}
+	focus = {
+		id = ASY_water_bill_plan
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_new_criminal_justice_system
+		}
+		x = 12
+		y = 10
+
+	}
+	focus = {
+		id = ASY_international_trading
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_take_out_loans
+		}
+		prerequisite = {
+			focus = ASY_our_cultural_revolution
+		}
+		x = 19
+		y = 6
+
+	}
+	focus = {
+		id = ASY_stay_with_status_quo
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_condemn_ethnic_clashes
+		}
+		prerequisite = {
+			focus = ASY_integrate_schools
+		}
+		prerequisite = {
+			focus = ASY_construct_assyrian_towns
+		}
+		prerequisite = {
+			focus = ASY_mosul_paris_of_east
+		}
+		x = 9
 		y = 7
+
+	}
+	focus = {
+		id = ASY_vilayet_system
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_water_bill_plan
+		}
+		prerequisite = {
+			focus = ASY_mosque_preservation
+		}
+		x = 14
+		y = 11
+
+	}
+	focus = {
+		id = ASY_give_marxists_a_seat
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_vilayet_system
+		}
+		x = 15
+		y = 12
+
+	}
+	focus = {
+		id = ASY_workers_unity
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_give_marxists_a_seat
+		}
+		x = 13
+		y = 13
+
+	}
+	focus = {
+		id = ASY_minimum_wage
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_workers_unity
+		}
+		x = 12
+		y = 14
+
+	}
+	focus = {
+		id = ASY_give_a_peasant_a_tool
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_give_marxists_a_seat
+		}
+		x = 15
+		y = 13
+
+	}
+	focus = {
+		id = ASY_womens_suffrage
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_give_a_peasant_a_tool
+		}
+		x = 15
+		y = 14
+
+	}
+	focus = {
+		id = ASY_marxist_industrialization
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_give_a_peasant_a_tool
+		}
+		x = 17
+		y = 14
+
+	}
+	focus = {
+		id = ASY_snap_elections
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_minimum_wage
+		}
+		prerequisite = {
+			focus = ASY_womens_suffrage
+		}
+		prerequisite = {
+			focus = ASY_marxist_industrialization
+		}
+		x = 13
+		y = 15
+
+	}
+	focus = {
+		id = ASY_repeal_religious_protection
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_russian_supplies
+		}
+		x = 30
+		y = 8
+
+	}
+	focus = {
+		id = ASY_no_room_for_minorities
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_repeal_religious_protection
+		}
+		x = 29
+		y = 9
+
+	}
+	focus = {
+		id = ASY_assyrian_irredentism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_repeal_religious_protection
+		}
+		x = 31
+		y = 9
+
+	}
+	focus = {
+		id = ASY_a_flag_in_every_home
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_enable_fascist_politicians
+		}
+		x = 33
+		y = 9
+
+	}
+	focus = {
+		id = ASY_officially_turn_fascist
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_no_room_for_minorities
+		}
+		prerequisite = {
+			focus = ASY_assyrian_irredentism
+		}
+		prerequisite = {
+			focus = ASY_a_flag_in_every_home
+		}
+		prerequisite = {
+			focus = ASY_allow_fascist_mobilization
+		}
+		x = 32
+		y = 10
+
+	}
+	focus = {
+		id = ASY_assyrian_expansion
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ASY_officially_turn_fascist
+		}
+		x = 32
+		y = 11
 
 	}
 }

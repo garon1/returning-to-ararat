@@ -2,6 +2,10 @@ TUR_ottoman_empire = {
 	color = rgb { 55 153 76 }
 	color_ui = rgb { 55 153 76 }
 }
+FRA_MOR = {
+	color = rgb { 59 0 255 }
+	color_ui = rgb { 59 0 255 }
+}
 AZR_sultan = {
 	color = rgb { 112 46 204 }
 	color_ui = rgb {112 46 204 }

@@ -137,6 +137,12 @@ give_guarantee = CZE
 give_guarantee = YUG
 give_guarantee = ROM
 
+set_autonomy = {
+		target = MOR
+		autonomous_state = autonomy_satellite
+		freedom_level = 0.75
+	}
+
 #Order matters here Daladier will start as leaders because added last
 create_country_leader = {
 	name = "Édouard Daladier"

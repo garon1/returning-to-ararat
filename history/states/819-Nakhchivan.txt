@@ -2,12 +2,15 @@ state={
 	id=819
 	name="STATE_819"
 	provinces={
-		6997 
+		6997 13241
 	}
 	history={
 		owner = ARM
 		buildings = {
 			infrastructure = 1
+		}
+		victory_points = {
+			6997 1
 		}
 		add_core_of = ARM
 		add_claim_by = AZR

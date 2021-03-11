@@ -1,6 +1,94 @@
 
 spriteTypes = {
 spriteType = {
+		name = "GFX_ASS_ethnic_tensions"
+		texturefile = "gfx/interface/ideas/anti_soviet_pact.dds"
+	}
+	spriteType = {
+		name = "GFX_ASS_almost_no_industry"
+		texturefile = "gfx/interface/ideas/FRA_fortification_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_ASS_autonomous_provinces"
+		texturefile = "gfx/interface/ideas/FRA_national_mobilization_focus.dds"
+	}
+spriteType = {
+		name = "GFX_USA_reimplement_nyc_bank"
+		texturefile = "gfx/interface/ideas/idea_tur_balkan_central_bank_wealthy_greece.dds"
+	}
+spriteType = {
+		name = "GFX_USA_reimplement_nyc_bank"
+		texturefile = "gfx/interface/ideas/idea_tur_balkan_central_bank_wealthy_greece.dds"
+	}
+spriteType = {
+		name = "GFX_USA_money_to_panama"
+		texturefile = "gfx/interface/ideas/generic_economic_increase.dds"
+	}
+spriteType = {
+		name = "GFX_USA_resources"
+		texturefile = "gfx/interface/ideas/idea_standard_oil_california.dds"
+	}
+spriteType = {
+		name = "GFX_american_syndicalists_support"
+		texturefile = "gfx/interface/state_modifiers/american_syndicalists_support.dds"
+	}
+spriteType = {
+		name = "GFX_american_legion_support"
+		texturefile = "gfx/interface/state_modifiers/american_legion_support.dds"
+	}
+spriteType = {
+		name = "GFX_american_confederate_support"
+		texturefile = "gfx/interface/state_modifiers/american_confederate_support.dds"
+	}
+spriteType = {
+		name = "GFX_idea_ARM_universities"
+		texturefile = "gfx/interface/ideas/idea_generic_reserve_divisions.dds"
+	}
+spriteType = {
+		name = "GFX_idea_ARM_UKR_research"
+		texturefile = "gfx/interface/ideas/idea_jap_duplicate_research.dds"
+	}
+spriteType = {
+		name = "GFX_idea_ARM_radicalism_in_other"
+		texturefile = "gfx/interface/ideas/FRA_scw_intervention_republicans_focus.dds"
+	}
+spriteType = {
+		name = "GFX_idea_ARM_revanchism"
+		texturefile = "gfx/interface/ideas/idea_jap_interservice_rivalry_army_strengthened.dds"
+	}
+spriteType = {
+		name = "GFX_idea_ARM_amped_resistance"
+		texturefile = "gfx/interface/ideas/spr_international_brigades.dds"
+	}
+spriteType = {
+		name = "GFX_idea_ARM_end_isolation"
+		texturefile = "gfx/interface/ideas/spr_international_brigades.dds"
+	}
+spriteType = {
+		name = "GFX_idea_ARM_russian_economy"
+		texturefile = "gfx/interface/ideas/SOV_scientist_defect.dds"
+	}
+spriteType = {
+		name = "GFX_idea_ARM_air_corps"
+		texturefile = "gfx/interface/ideas/idea_eng_special_air_service.dds"
+	}
+spriteType = {
+		name = "GFX_idea_ARM_militias"
+		texturefile = "gfx/interface/ideas/spa_la_division_azul.dds"
+	}
+spriteType = {
+		name = "GFX_idea_ARM_clean_economy"
+		texturefile = "gfx/interface/ideas/idea_hol_the_foundations_of_defense.dds"
+	}
+spriteType = {
+		name = "GFX_idea_ARM_agricultural_reforms"
+		texturefile = "gfx/interface/ideas/idea_generic_agrarian_reform.dds"
+	}
+spriteType = {
+		name = "GFX_idea_ARM_honor_the_revolution"
+		texturefile = "gfx/interface/ideas/spr_anarchist_society.dds"
+	}
+spriteType = {
 		name = "GFX_idea_ARM_socialist_nationalism"
 		texturefile = "gfx/interface/ideas/idea_jap_interservice_rivalry_navy_strengthened.dds"
 	}
@@ -27,6 +115,10 @@ spriteType = {
 spriteType = {
 		name = "GFX_idea_ARM_strip_securalism"
 		texturefile = "gfx/interface/ideas/idea_ast_classify_aliens.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ARM_disunification2"
+		texturefile = "gfx/interface/ideas/fra_national_resistance_council.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_ARM_disunification1"
