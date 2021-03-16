@@ -1,0 +1,248 @@
+add_namespace = chile
+#chilean history
+country_event = {
+	id = chile.1
+	title = chile.1.t
+	desc = chile.1.d
+	picture = GFX_report_event_gre_greek_cavalry
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = chile.1.a
+		add_political_power = -10
+	}
+}
+#chilean leader assassinated, provisinal government is made, elections are also made
+country_event = {
+	id = chile.2
+	title = chile.2.t
+	desc = chile.2.d
+	picture = GFX_report_event_generic_strike
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = chile.2.a
+		hidden_effect = {
+		complete_national_focus = CHL_coup
+		kill_country_leader = yes
+		news_event = { id = news.381 hours = 6 }
+		country_event = { id = chile.3 days = 40 }
+		set_politics = {
+	ruling_party = traditional_conservatism
+	last_election = "1936.1.30"
+	election_frequency = 72  #but 4 years after this one in 1938.
+	elections_allowed = no
+}
+		set_popularities = {
+		traditional_conservatism = 100
+		}
+		create_country_leader = {
+		
+	name = "Pedro Aguirre Cerda"
+	picture = "Portrait_Chile_Pedro_Cerda.tga"
+	expire = "1965.1.1"
+	ideology = traditional_conservatism_subtype
+			}
+		}
+	}
+}
+#chilean leader assassinated, provisinal government is made, elections are also made
+country_event = {
+  id = chile.3
+  title = chile.3.t
+  desc = chile.3.d
+  picture = GFX_report_event_FDR_speech
+  hidden = yes
+  is_triggered_only = yes
+  
+  option = { #democratic liberalism prevails
+    name = chile.3.a
+    ai_chance = {
+			factor = 60
+		}
+    hidden_effect = {
+    retire_country_leader = yes
+    news_event = { id = news.382 hours = 6 }
+    complete_national_focus = CHL_democracy
+    set_popularities = {
+    market_liberal = 40
+     market_socialism = 12
+     social_democracy = 30
+     totalitarianism = 1
+     social_liberal = 15
+     radical_socialism = 2
+    }
+    set_politics = {
+	ruling_party = market_liberal
+	last_election = "1936.1.30"
+	election_frequency = 72  #but 4 years after this one in 1938.
+	elections_allowed = yes
+}
+    create_country_leader = {
+  name = "Arturo Alessandri"
+  picture = "Portrait_Chile_Arturo_Alessandri_Palma.tga"
+  expire = "1965.1.1"
+  ideology = market_liberal_subtype
+  }
+
+    }
+  }
+    option = { #nationalism prevails
+    name = chile.3.b
+    ai_chance = {
+      factor = 10
+    }
+    hidden_effect = {
+    retire_country_leader = yes
+    complete_national_focus = CHL_nationalism
+    news_event = { id = news.383 hours = 6 }
+    set_popularities = {
+    nationalism = 70
+    social_democracy = 15
+    totalitarianism = 10
+    syndicalism = 5
+    }
+    set_politics = {
+	ruling_party = nationalism
+	last_election = "1936.1.30"
+	election_frequency = 72  #but 4 years after this one in 1938.
+	elections_allowed = no
+	}
+    create_country_leader = {
+  name = "Fransico Valderrama"
+  picture = "Portrait_CHL_Fransico_Javier_Dias_Valderrama.tga"
+  expire = "1965.1.1"
+  ideology = nationalism_subtype
+ 		}
+	}
+  }
+  option = { #social democracy prevails
+    name = chile.3.c
+     ai_chance = {
+      factor = 30
+    }
+    hidden_effect = {
+    retire_country_leader = yes
+    news_event = { id = news.384 hours = 6 }
+    complete_national_focus = CHL_democracy
+    set_popularities = {
+    nationalism = 14
+    social_democracy = 60
+    totalitarianism = 8
+    syndicalism = 6
+    anarchism = 12
+    }
+    set_politics = {
+	ruling_party = social_democracy
+	last_election = "1936.1.30"
+	election_frequency = 60  #but 4 years after this one in 1938.
+	elections_allowed = yes
+	}
+    create_country_leader = {
+  name = "Carlos Campo"
+  picture = "Portrait_Chile_Carlos_Campo.tga"
+  expire = "1965.1.1"
+  ideology = social_democracy_subtype
+ 		}
+	}
+  }
+}
+#indigenous autonomy
+country_event = {
+  id = chile.4
+  title = chile.4.t
+  desc = chile.4.d
+  picture = GFX_report_event_generic_military_parade
+  
+  is_triggered_only = yes
+  
+  option = {
+   ai_chance = {
+      factor = 70
+    }
+    name = chile.4.a
+    add_political_power = 100
+    add_stability = 0.05
+    add_war_support = 0.05
+  }
+  option = {
+    name = chile.4.b
+     ai_chance = {
+      factor = 30
+    }
+    add_political_power = -100
+    add_stability = -0.05
+    add_war_support = -0.05
+  }
+}
+#new policies
+country_event = {
+  id = chile.5
+  title = chile.5.t
+  desc = chile.5.d
+  picture = GFX_report_event_ast_army
+  
+  is_triggered_only = yes
+  
+  option = {
+    name = chile.5.a
+    add_stability = -0.05
+    add_war_support = 0.15
+  }
+}
+#chile stays with moscow
+country_event = {
+  id = chile.6
+  title = chile.6.t
+  desc = chile.6.d
+  picture = GFX_report_event_vienna_award_hungary
+  
+  is_triggered_only = yes
+  
+  option = {
+    name = chile.6.a
+   diplomatic_relation = {
+          country = SOV
+          relation = guarantee
+          active = yes
+        }
+        SOV = {
+        diplomatic_relation = {
+          country = CHL
+          relation = guarantee
+          active = yes
+        }
+      }
+  }
+}
+#chile creates new pact with south america
+country_event = {
+  id = chile.7
+  title = chile.7.t
+  desc = chile.7.d
+  picture = GFX_report_event_aid_pact
+  
+  is_triggered_only = yes
+  
+  option = {#yes
+  ai_chance = {
+      factor = 50
+    }
+    name = chile.7.a
+   CHL = {
+   create_faction = "South American Axis"
+   add_to_faction = ROOT
+   }
+   hidden_effect = {
+   news_event = { id = news.385 hours = 9 }
+   }
+  }
+  option = {#no
+  ai_chance = {
+      factor = 50
+    }
+    name = chile.7.a
+  }
+}

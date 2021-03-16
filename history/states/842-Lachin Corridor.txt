@@ -1,0 +1,19 @@
+state={
+	id=842
+	name="STATE_842"
+	provinces={
+		1539 
+	}
+	manpower=20938
+	state_category=rural
+	history={
+		owner = ARM
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = AZR
+add_core_of = ARM
+
+	}
+}

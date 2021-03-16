@@ -1,0 +1,324 @@
+ideas = {
+	# MILITARY
+country = {
+ASY_italian_dependency1 = {
+			
+			
+			allowed = {
+				original_tag = "ASS"
+			}
+
+			
+			
+			removal_cost = -1
+			targeted_modifier = {
+				tag = ITA
+				trade_cost_for_target_factor = -0.3
+				extra_trade_to_target_factor = 0.40
+			}
+			modifier = {
+				research_speed_factor = 0.15
+				min_export = 0.2
+				consumer_goods_factor = 0.2
+				production_speed_industrial_complex_factor = 0.2
+				repair_speed_arms_factory_factor = 0.2
+			}
+		}
+ASY_french_dependency1 = {
+			
+			
+			allowed = {
+				original_tag = "ASS"
+			}
+
+			
+			
+			removal_cost = -1
+			targeted_modifier = {
+				tag = FRA
+				trade_cost_for_target_factor = -0.3
+				extra_trade_to_target_factor = 0.40
+			}
+			modifier = {
+				research_speed_factor = 0.15
+				min_export = 0.2
+				consumer_goods_factor = 0.2
+				production_speed_industrial_complex_factor = 0.2
+				repair_speed_arms_factory_factor = 0.2
+			}
+		}
+ASY_british_dependency1 = {
+			
+			
+			allowed = {
+				original_tag = "ASS"
+			}
+
+			
+			
+			removal_cost = -1
+			targeted_modifier = {
+				tag = ENG
+				trade_cost_for_target_factor = -0.3
+				extra_trade_to_target_factor = 0.40
+			}
+			modifier = {
+				research_speed_factor = 0.15
+				min_export = 0.2
+				consumer_goods_factor = 0.2
+				production_speed_industrial_complex_factor = 0.2
+				repair_speed_arms_factory_factor = 0.2
+			}
+		}
+ASY_italian_dependency = {
+			
+			
+			allowed = {
+				original_tag = "ASS"
+			}
+
+			
+			
+			removal_cost = -1
+			targeted_modifier = {
+				tag = ITA
+				trade_cost_for_target_factor = -0.2
+				extra_trade_to_target_factor = 0.30
+			}
+			modifier = {
+				research_speed_factor = 0.1
+				min_export = 0.15
+				consumer_goods_factor = 0.15
+			}
+		}
+ASY_french_dependency = {
+			
+			
+			allowed = {
+				original_tag = "ASS"
+			}
+
+			
+			
+			removal_cost = -1
+			targeted_modifier = {
+				tag = FRA
+				trade_cost_for_target_factor = -0.2
+				extra_trade_to_target_factor = 0.30
+			}
+			modifier = {
+				research_speed_factor = 0.1
+				min_export = 0.15
+				consumer_goods_factor = 0.15
+			}
+		}
+ASY_british_dependency = {
+			
+			
+			allowed = {
+				original_tag = "ASS"
+			}
+
+			
+			
+			removal_cost = -1
+			targeted_modifier = {
+				tag = ENG
+				trade_cost_for_target_factor = -0.2
+				extra_trade_to_target_factor = 0.30
+			}
+			modifier = {
+				research_speed_factor = 0.1
+				min_export = 0.15
+				consumer_goods_factor = 0.15
+			}
+		}
+ASY_enact_private_acts = {
+			
+			
+			allowed = {
+				original_tag = "ASS"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = -0.1
+				min_export = 0.15
+				consumer_goods_factor = 0.15
+			}
+		}
+ASY_limit_privatization1 = {
+			
+			
+			allowed = {
+				original_tag = "ASS"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.05
+				min_export = -0.05
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.1
+			}
+		}
+ASY_assyria_first = {
+			
+			
+			allowed = {
+				original_tag = "ASS"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+			party_popularity_stability_factor = 0.15
+			political_power_gain = 0.09
+			war_support_weekly = 0.03
+			}
+		}
+ASY_liberalization_efforts = {
+			
+			
+			allowed = {
+				original_tag = "ASS"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.05
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = 0.1
+				political_power_cost = 0.05
+				stability_factor = -0.1
+			}
+		}
+		ASS_ethnic_tensions4 = {
+			
+			
+			allowed = {
+				original_tag = "ASS"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+			research_speed_factor = 0.1
+				stability_factor = 0.05
+			}
+		}
+		ASS_ethnic_tensions3 = {
+			
+			
+			allowed = {
+				original_tag = "ASS"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.05
+			}
+		}
+		ASS_ethnic_tensions2 = {
+			
+			
+			allowed = {
+				original_tag = "ASS"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 0.04
+				stability_factor = -0.10
+			}
+		}
+		ASS_ethnic_tensions1 = {
+			
+			
+			allowed = {
+				original_tag = "ASS"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = -0.025
+				political_power_cost = 0.07
+				stability_factor = -0.15
+			}
+		}
+ASS_ethnic_tensions = {
+			
+			
+			allowed = {
+				original_tag = "ASS"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = -0.05
+				political_power_cost = 0.1
+				stability_factor = -0.2
+			}
+		}
+		ASS_almost_no_industry = {
+			
+			
+			allowed = {
+				original_tag = "ASS"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+			license_infantry_eq_production_speed_factor = -0.2
+			war_support_factor = -0.2
+			max_fuel_factor = -0.2
+
+			}
+		}
+		ASS_autonomous_provinces = {
+			
+			
+			allowed = {
+				original_tag = "ASS"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+			production_factory_max_efficiency_factor = -0.1
+				conscription_factor = -0.01
+				}
+
+			}
+		}
+	}

@@ -1,0 +1,1058 @@
+TUR_restoration_project = {
+     TUR_restore_churches = {
+          visible = {
+          }
+          cost = 35
+          fire_only_once = yes
+          available = {
+          }
+          complete_effect = {
+          }
+          modifier = {
+          political_power_gain = 0.3
+          stability_weekly_factor = 0.3
+          }
+          days_remove = 100
+     }
+     TUR_restore_ancient_cities = {
+          visible = {
+          }
+          cost = 35
+          fire_only_once = yes
+          available = {
+          }
+          complete_effect = {
+          }
+          modifier = {
+          political_power_gain = -0.1
+          nationalism_drift = -0.01
+          }
+          days_remove = 100 
+     }
+          TUR_restore_non_turkish_sectors = {
+          visible = {
+          }
+          cost = 35
+          fire_only_once = yes
+          available = {
+          }
+          complete_effect = {
+          }
+          modifier = {
+          monthly_population = 0.01
+          war_support_weekly_factor = 0.1
+          }
+          days_remove = 100
+        }
+    }
+
+    
+    TUR_improve_the_army = {
+    TUR_army_coordination = {
+          visible = {
+        has_country_flag = TUR_army  }
+          fire_only_once = yes
+          available = { has_country_flag = TUR_army
+          }
+          complete_effect = {
+          }
+          modifier = {
+          army_morale = 10
+          }
+          days_remove = 35
+            }
+            TUR_land_doctorine = {
+          visible = {
+        has_country_flag = TUR_army  }
+          fire_only_once = yes
+          available = { has_country_flag = TUR_army
+          }
+          complete_effect = {
+          add_tech_bonus = {
+                name = TUR_refining_our_strategies
+                bonus = 1.0
+                uses = 2
+                category = land_doctrine
+            }
+          }
+            }
+            TUR_defensive_decision = {
+          visible = {
+        has_country_flag = TUR_army  }
+          fire_only_once = yes
+          available = { has_country_flag = TUR_army
+          }
+          complete_effect = {
+          add_tech_bonus = {
+                name = TUR_fortified_defensive_bases
+                bonus = 1.00
+                uses = 2
+                category = radar_tech
+            }
+            add_timed_idea = {
+                idea = TUR_emergency_deployment_of_defensive_bases
+                days = 720
+            }
+          }
+          days_remove = 100
+            }
+            TUR_utilize_terrain = {
+          visible = {
+        has_country_flag = TUR_army  }
+          cost = 35
+          fire_only_once = yes
+          available = { has_country_flag = TUR_army
+          }
+          complete_effect = {
+          remove_ideas = TUR_unstable_terrain
+          }
+          days_remove = 35
+            }
+            TUR_improve_traditional_ways = {
+          visible = {
+        has_country_flag = TUR_army  }
+          fire_only_once = yes
+          available = { has_country_flag = TUR_army
+          }
+          complete_effect = {
+          add_tech_bonus = {
+                name = TUR_embrace_military_tradition
+                bonus = 2.0
+                uses = 1
+                category = support_tech
+            }
+            add_tech_bonus = {
+                name = TUR_embrace_military_tradition
+                bonus = 1.5
+                uses = 1
+                category = recon_tech
+            }
+          }
+          modifier = {
+          }
+          days_remove = 35
+            }
+            TUR_armor_decision = {
+          visible = {
+        has_country_flag = TUR_army  }
+          cost = 35
+          fire_only_once = yes
+          available = { has_country_flag = TUR_army
+          }
+          complete_effect = {
+          }
+          modifier = {
+          army_armor_speed_factor = 0.5
+          }
+            }
+            TUR_modern_warfare = {
+          visible = {  }
+          fire_only_once = yes
+          available = {
+          }
+          complete_effect = {
+          set_country_flag = TUR_army
+          }
+          modifier = {
+          army_org = 10
+          }
+        }
+            TUR_motorization = {
+          visible = {
+        has_country_flag = TUR_army  }
+          cost = 35
+          fire_only_once = yes
+          available = { has_country_flag = TUR_army
+          }
+          complete_effect = {
+            add_tech_bonus = {
+                name = motorized_bonus
+                bonus = 3.0
+                technology = motorised_infantry
+            }
+        
+          }
+          days_remove = 100
+            }
+     TUR_modernization = {
+          visible = {
+        has_country_flag = TUR_army  }
+          cost = 35
+          fire_only_once = yes
+          available = { has_country_flag = TUR_army
+          }
+          complete_effect = {
+          }
+          modifier = {
+          equipment_upgrade_xp_cost = -0.5 
+          }
+          days_remove = 100
+            }
+        }
+    
+
+    TUR_ottoman_decisions = {
+    TUR_restore_european_order = {
+          visible = {
+          is_subject = no
+          }
+          cost = 35
+          fire_only_once = yes
+          available = {
+          has_state_flag = TUR_war_prep
+          is_subject = no
+          has_war = no
+          }
+          complete_effect = {
+          if = {
+          limit = {
+          ALB = {
+            exists = yes
+                 }
+             }
+             create_wargoal = {
+                            target = "ALB"
+                            type = annex_everything
+                            expire = 0
+                        }
+          }
+                        if = {
+          limit = {
+          CRO = {
+            exists = yes
+                 }
+             }
+             create_wargoal = {
+                            target = "CRO"
+                            type = annex_everything
+                            expire = 0
+                        }
+          }
+          if = {
+          limit = {
+          ROM = {
+            exists = yes
+                 }
+             }
+             create_wargoal = {
+                            target = "ROM"
+                            type = annex_everything
+                            expire = 0
+                        }
+          }
+                       if = {
+          limit = {
+          SER = {
+            exists = yes
+                 }
+             }
+             create_wargoal = {
+                            target = "SER"
+                            type = annex_everything
+                            expire = 0
+                        }
+          }
+                        if = {
+          limit = {
+          BUL = {
+            exists = yes
+                 }
+             }
+             create_wargoal = {
+                            target = "BUL"
+                            type = annex_everything
+                            expire = 0
+                        }
+                        set_country_flag = TUR_eur
+            }
+          }
+          days_remove = 10
+     }
+     TUR_restore_anatolian_order = {
+          visible = {
+          is_subject = no
+          }
+          cost = 35
+          fire_only_once = yes
+          available = {
+          has_state_flag = TUR_war_prep
+          is_subject = no
+          has_war = no
+          }
+          complete_effect = {
+          if = {
+          limit = {
+          ANA = {
+            exists = yes
+                 }
+             }
+             create_wargoal = {
+                            target = "ANA"
+                            type = annex_everything
+                            expire = 0
+                        }
+          }
+                        if = {
+          limit = {
+          GRE = {
+            exists = yes
+                 }
+             }
+             create_wargoal = {
+                            target = "GRE"
+                            type = annex_everything
+                            expire = 0
+                        }
+          }
+          if = {
+          limit = {
+          ARM = {
+            exists = yes
+                 }
+             }
+             create_wargoal = {
+                            target = "ARM"
+                            type = annex_everything
+                            expire = 0
+                        }
+          }
+                       if = {
+          limit = {
+          KUR = {
+            exists = yes
+                 }
+             }
+             create_wargoal = {
+                            target = "KUR"
+                            type = annex_everything
+                            expire = 0
+                        }
+          }
+          if = {
+          limit = {
+          EGY = {
+            exists = yes
+                 }
+             }
+             create_wargoal = {
+                            target = "EGY"
+                            type = annex_everything
+                            expire = 0
+                        }
+            }
+          if = {
+          limit = {
+          GTA = {
+            exists = yes
+            is_subject = no
+                 }
+             }
+             create_wargoal = {
+                            target = "GTA"
+                            type = annex_everything
+                            expire = 0
+                        }
+            }
+          if = {
+          limit = {
+          ARQ = {
+            exists = yes
+            is_subject = no
+                 }
+             }
+             create_wargoal = {
+                            target = "ARQ"
+                            type = annex_everything
+                            expire = 0
+                        }
+            }
+          if = {
+          limit = {
+          LEB = {
+            exists = yes
+            is_subject = no
+                 }
+             }
+             create_wargoal = {
+                            target = "LEB"
+                            type = annex_everything
+                            expire = 0
+                        }
+            }
+           if = {
+          limit = {
+          ARA = {
+            exists = yes
+                 }
+                 LEB = {
+            exists = yes
+            is_subject = yes
+                 }
+                 ARQ = {
+            exists = yes
+            is_subject = yes
+                 }
+             }
+             create_wargoal = {
+                            target = "ARQ"
+                            type = annex_everything
+                            expire = 0
+                        }
+             create_wargoal = {
+                            target = "LEB"
+                            type = annex_everything
+                            expire = 0
+                        }
+             create_wargoal = {
+                            target = "ARA"
+                            type = annex_everything
+                            expire = 0
+                        }
+            }
+                        if = {
+          limit = {
+          ASS = {
+            exists = yes
+                 }
+             }
+             create_wargoal = {
+                            target = "ASS"
+                            type = annex_everything
+                            expire = 0
+                        }
+            }
+          }
+          days_remove = 10
+     }
+     TUR_war_preparations = {
+          visible = {
+          is_subject = no
+          }
+          cost = 35
+          fire_only_once = yes
+          available = {
+          is_subject = no
+          has_war = no
+          }
+          complete_effect = {
+          set_state_flag = TUR_war_prep
+          add_ideas = TUR_war_prep
+          }
+          days_remove = 100 
+        }
+     TUR_restore_empire_order = {
+          visible = {
+          is_subject = no
+          has_war = no
+          }
+          cost = 35
+          fire_only_once = yes
+          available = {
+          is_subject = no
+          has_war = no
+          has_state_flag = TUR_war_prep
+          controls_state = 340
+          controls_state = 797
+          controls_state = 342
+          controls_state = 346
+          controls_state = 344
+          controls_state = 349
+          controls_state = 815
+          controls_state = 799
+          controls_state = 350
+          controls_state = 353
+          controls_state = 352
+          controls_state = 800
+          controls_state = 814
+          controls_state = 813
+          controls_state = 677
+          controls_state = 553
+          controls_state = 454
+          controls_state = 858
+          controls_state = 554
+          controls_state = 455
+          controls_state = 679
+          controls_state = 810
+          controls_state = 832
+          controls_state = 837
+          controls_state = 291
+          controls_state = 812
+          controls_state = 656
+          controls_state = 339
+          }
+          complete_effect = {
+        340  = { add_core_of = ROOT }
+        797  = { add_core_of = ROOT }
+        342  = { add_core_of = ROOT }
+        346  = { add_core_of = ROOT }
+        344  = { add_core_of = ROOT }
+        349  = { add_core_of = ROOT }
+        815  = { add_core_of = ROOT }
+        799  = { add_core_of = ROOT }
+        350  = { add_core_of = ROOT }
+        353  = { add_core_of = ROOT }
+        352  = { add_core_of = ROOT }
+        800  = { add_core_of = ROOT }
+        814  = { add_core_of = ROOT }
+        813  = { add_core_of = ROOT }
+        677  = { add_core_of = ROOT }
+        553  = { add_core_of = ROOT }
+        554  = { add_core_of = ROOT }
+        455  = { add_core_of = ROOT }
+        679  = { add_core_of = ROOT }
+        810  = { add_core_of = ROOT }
+        832  = { add_core_of = ROOT }
+        837  = { add_core_of = ROOT }
+        291  = { add_core_of = ROOT }
+        812  = { add_core_of = ROOT }
+        656  = { add_core_of = ROOT }
+         339 = { add_core_of = ROOT }
+          }
+          modifier = {
+          political_power_gain = -0.1
+          nationalism_drift = -0.01
+          }
+          days_remove = 100 
+        }
+    }
+
+    TUR_old_alliance = {
+     TUR_restore_central_powers = {
+          visible = {
+          }
+          cost = 35
+          fire_only_once = yes
+          available = {
+          }
+          complete_effect = {
+          create_faction = "The Central Powers"
+          set_country_flag = TUR_cen_pow
+          }
+          days_remove = 100
+     }
+     TUR_bring_nations_unto_the_fold = {
+          visible = {
+          }
+          cost = 35
+          fire_only_once = yes
+          available = {
+          has_country_flag = TUR_cen_pow
+          }
+          complete_effect = {
+          if = {
+          limit = {
+          BUL = {
+            exists = yes
+            is_subject = no
+            NOT = {
+            has_country_flag = TUR_eur
+            }
+                 }
+             }
+             BUL = {
+             country_event = generic.5
+             }
+            }
+          if = {
+          limit = {
+          AUS = {
+            exists = yes
+            is_subject = no
+                 }
+             }
+             AUS = {
+             country_event = generic.5
+             }
+            }
+          if = {
+          limit = {
+          HUN = {
+            exists = yes
+            is_subject = no
+                 }
+             }
+             HUN = {
+             country_event = generic.5
+             }
+            }
+          }
+          days_remove = 20 
+        }
+    }
+
+TUR_close_to_germanys = {
+TUR_improve_relations = {
+
+        icon = jap_conquer_china
+
+        fire_only_once = yes
+          available = {
+        original_tag = TUR
+        }
+
+        visible = {
+        original_tag = TUR
+        }
+
+        fire_only_once = yes
+
+        ai_will_do = {
+            factor = 100
+        }
+        cost = 35
+
+        complete_effect = {
+        TUR = {
+        diplomatic_relation = {
+                    country = GER
+                    relation = guarantee
+                    active = yes
+                }
+            }
+        GER = {
+        diplomatic_relation = {
+                    country = TUR
+                    relation = guarantee
+                    active = yes
+                }
+            }
+        }
+        days_remove = 2
+    }
+TUR_send_attaches = {
+
+        icon = jap_conquer_china
+
+        fire_only_once = yes
+          available = {
+        original_tag = TUR
+        }
+
+        visible = {
+        original_tag = TUR
+        }
+
+        fire_only_once = yes
+
+        ai_will_do = {
+            factor = 100
+        }
+        cost = 35
+
+        complete_effect = {
+        GER = {
+                add_opinion_modifier = {
+                    target = TUR
+                    modifier = attache_sent
+                }
+            }
+            TUR = {
+                add_opinion_modifier = {
+                    target = GER
+                    modifier = attache_sent
+                }
+            }
+        }
+        days_remove = 2
+    }
+TUR_join_germany = {
+
+        icon = jap_conquer_china
+
+        fire_only_once = yes
+          available = {
+        original_tag = TUR
+        has_government = radical_socialism
+        }
+
+        visible = {
+        original_tag = TUR
+        }
+
+        fire_only_once = yes
+
+        ai_will_do = {
+            factor = 100
+        }
+        cost = 35
+
+        complete_effect = {
+        GER = {
+        country_event = generic.2
+            }
+        }
+        days_remove = 2
+    }
+}
+
+TUR_aid_lower_classes = {
+TUR_create_job_incentives = {
+
+        icon = jap_conquer_china
+
+        fire_only_once = yes
+          available = {
+        original_tag = TUR
+        }
+
+        visible = {
+        original_tag = TUR
+        }
+
+        fire_only_once = yes
+
+        ai_will_do = {
+            factor = 100
+        }
+        cost = 35
+
+        modifier = {
+        production_factory_max_efficiency_factor = 0.1
+        production_lack_of_resource_penalty_factor = -0.2
+        }
+        days_remove = 200
+    }
+TUR_raise_money_for_homelessness = {
+
+        icon = jap_conquer_china
+
+        fire_only_once = yes
+          available = {
+        original_tag = TUR
+        }
+
+        visible = {
+        original_tag = TUR
+        }
+
+        fire_only_once = yes
+
+        ai_will_do = {
+            factor = 100
+        }
+        cost = 35
+
+        complete_effect = {
+        country_event = turk.39
+        }
+        modifier = {
+        line_change_production_efficiency_factor = 0.05
+        }
+        days_remove = 30
+    }
+}
+TUR_disabled_rights = {
+TUR_lift_anti_disabled_policies = {
+
+        icon = jap_conquer_china
+
+        fire_only_once = yes
+          available = {
+        original_tag = TUR
+        }
+
+        visible = {
+        original_tag = TUR
+        }
+
+        fire_only_once = yes
+
+        ai_will_do = {
+            factor = 100
+        }
+        cost = 35
+
+        complete_effect = {
+        add_ideas = TUR_disabled
+        }
+        days_remove = 2
+    }
+}
+
+TUR_socialist_decisions = {
+TUR_begin_expansion = {
+
+        icon = jap_conquer_china
+
+        fire_only_once = yes
+          available = {
+        original_tag = TUR
+        }
+
+        visible = {
+        original_tag = TUR
+        }
+
+        fire_only_once = yes
+
+        ai_will_do = {
+            factor = 100
+        }
+        cost = 35
+
+        complete_effect = {
+         if = {
+          limit = {
+          ANA = {
+            exists = yes
+                 }
+             }
+             create_wargoal = {
+                            target = "ANA"
+                            type = topple_government
+                            expire = 0
+                        }
+          }
+                        if = {
+          limit = {
+          GRE = {
+            exists = yes
+                 }
+             }
+             create_wargoal = {
+                            target = "GRE"
+                            type = topple_government
+                            expire = 0
+                        }
+          }
+          if = {
+          limit = {
+          ARM = {
+            exists = yes
+                 }
+             }
+             create_wargoal = {
+                            target = "ARM"
+                            type = topple_government
+                            expire = 0
+                        }
+          }
+                       if = {
+          limit = {
+          KUR = {
+            exists = yes
+                 }
+             }
+             create_wargoal = {
+                            target = "KUR"
+                            type = topple_government
+                            expire = 0
+                        }
+          }
+          if = {
+          limit = {
+          EGY = {
+            exists = yes
+                 }
+             }
+             create_wargoal = {
+                            target = "EGY"
+                            type = topple_government
+                            expire = 0
+                        }
+            }
+          if = {
+          limit = {
+          GTA = {
+            exists = yes
+            is_subject = no
+                 }
+             }
+             create_wargoal = {
+                            target = "GTA"
+                            type = topple_government
+                            expire = 0
+                        }
+            }
+          if = {
+          limit = {
+          ARQ = {
+            exists = yes
+            is_subject = no
+                 }
+             }
+             create_wargoal = {
+                            target = "ARQ"
+                            type = topple_government
+                            expire = 0
+                        }
+            }
+          if = {
+          limit = {
+          LEB = {
+            exists = yes
+            is_subject = no
+                 }
+             }
+             create_wargoal = {
+                            target = "LEB"
+                            type = topple_government
+                            expire = 0
+                        }
+            }
+           if = {
+          limit = {
+          ARA = {
+            exists = yes
+                 }
+                 LEB = {
+            exists = yes
+            is_subject = yes
+                 }
+                 ARQ = {
+            exists = yes
+            is_subject = yes
+                 }
+             }
+             create_wargoal = {
+                            target = "ARQ"
+                            type = topple_government
+                            expire = 0
+                        }
+             create_wargoal = {
+                            target = "LEB"
+                            type = topple_government
+                            expire = 0
+                        }
+             create_wargoal = {
+                            target = "ARA"
+                            type = topple_government
+                            expire = 0
+                        }
+            }
+                        if = {
+          limit = {
+          ASS = {
+            exists = yes
+                 }
+             }
+             create_wargoal = {
+                            target = "ASS"
+                            type = topple_government
+                            expire = 0
+                        }
+            }
+          }
+          days_remove = 10
+     
+        }
+    
+ TUR_stick_with_germany = {
+
+        icon = jap_conquer_china
+
+        fire_only_once = yes
+          available = {
+        original_tag = TUR
+        NOT = {
+        has_country_flag = TUR_new_alliance
+        }
+     }
+
+        visible = {
+        original_tag = TUR
+        NOT = {
+        has_country_flag = TUR_new_alliance
+        }
+        }
+
+        fire_only_once = yes
+
+        ai_will_do = {
+            factor = 100
+        }
+        cost = 35
+
+        complete_effect = {
+        GER = {
+        country_event = generic.2
+            }
+            set_country_flag = TUR_german_alliance
+        }
+        days_remove = 2
+    }
+TUR_create_new_faction = {
+
+        icon = jap_conquer_china
+
+        fire_only_once = yes
+          available = {
+        original_tag = TUR
+        NOT = {
+        has_country_flag = TUR_german_alliance
+        }
+        }
+
+        visible = {
+        original_tag = TUR
+        NOT = {
+        has_country_flag = TUR_german_alliance
+        }
+        }
+
+        fire_only_once = yes
+
+        ai_will_do = {
+            factor = 100
+        }
+        cost = 35
+
+        complete_effect = {
+        create_faction = "Anatolian Workers Accord"
+            set_country_flag = TUR_new_alliance
+        }
+        days_remove = 2
+    }
+TUR_liberation_strategy = {
+
+        icon = jap_conquer_china
+
+        fire_only_once = yes
+          available = {
+        original_tag = TUR
+        }
+
+        visible = {
+        original_tag = TUR
+        }
+
+        fire_only_once = yes
+
+        ai_will_do = {
+            factor = 100
+        }
+        cost = 35
+
+        complete_effect = {
+        add_ideas = TUR_liberation_strategy
+        }
+        days_remove = 2
+    }
+TUR_join_germany1 = {
+
+        icon = jap_conquer_china
+
+        fire_only_once = yes
+          available = {
+        original_tag = TUR
+        }
+
+        visible = {
+        original_tag = TUR
+        }
+
+        fire_only_once = yes
+
+        ai_will_do = {
+            factor = 100
+        }
+        cost = 35
+
+        complete_effect = {
+        GER = {
+        country_event = generic.2
+            }
+        }
+        days_remove = 2
+    }
+}

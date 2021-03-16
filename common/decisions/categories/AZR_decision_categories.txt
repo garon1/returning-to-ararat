@@ -1,0 +1,15 @@
+AZR_form_greater_azerbaijan = {
+	priority = 8
+
+	icon = spr_political_assassination
+
+	picture = GFX_decision_cat_generic_greater_azerbaijan
+
+	allowed = {
+		original_tag = "AZR"
+	}
+
+	visible = {
+	original_tag = "AZR"
+	}
+}

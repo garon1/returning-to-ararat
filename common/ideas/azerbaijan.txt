@@ -1,0 +1,364 @@
+ideas = {
+	# MILITARY
+country = {
+AZR_resettlement = {
+			
+			
+			allowed = {
+				original_tag = "AZR"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+				monthly_population = 0.1
+				resistance_decay_on_our_occupied_states = 0.1
+			}
+		}
+AZR_air_manuvers = {
+			
+			
+			allowed = {
+				original_tag = "AZR"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+				air_accidents_factor = -0.15
+				air_attack_factor = 0.08
+				air_defence_factor = 0.08
+			}
+		}
+AZR_offense = {
+			
+			
+			allowed = {
+				original_tag = "AZR"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+				land_night_attack = 0.2
+				army_attack_factor = 0.2
+			}
+		}
+AZR_defense = {
+			
+			
+			allowed = {
+				original_tag = "AZR"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_leader_start_defense_level = 1 
+				army_defence_factor = 0.2
+			}
+		}
+AZR_world_trading = {
+			
+			
+			allowed = {
+				original_tag = "AZR"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+				global_building_slots = 1
+			}
+		}
+AZR_buildup = {
+			
+			
+			allowed = {
+				original_tag = "AZR"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.3
+			}
+		}
+AZR_technological = {
+			
+			
+			allowed = {
+				original_tag = "AZR"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.1
+			consumer_goods_factor = 0.1
+			}
+		}
+AZR_welfare = {
+			
+			
+			allowed = {
+				original_tag = "AZR"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+			political_power_cost = -0.05
+			consumer_goods_factor = 0.1
+			}
+		}
+AZR_oil_invest = {
+			
+			
+			allowed = {
+				original_tag = "AZR"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+			fuel_gain_from_states = 100
+			production_oil_factor = 0.3
+			}
+		}
+AZR_punishment = {
+			
+			
+			allowed = {
+				original_tag = "AZR"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+			consumer_goods_factor = -0.15
+					stability_factor = -0.15
+			}
+		}
+AZR_devalue = {
+			
+			
+			allowed = {
+				original_tag = "AZR"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+			consumer_goods_factor = -0.1
+					stability_factor = -0.08
+			}
+		}
+AZR_rid_old = {
+			
+			
+			allowed = {
+				original_tag = "AZR"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+			nationalism_acceptance = -50
+			totalitarianism_acceptance = -50
+				social_liberal_acceptance = -50
+					stability_factor = -0.08
+			}
+		}
+AZR_human_potential = {
+			
+			
+			allowed = {
+				original_tag = "AZR"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+					research_speed_factor = 0.09
+					stability_factor = 0.08
+			}
+		}
+AZR_oil = {
+			
+			
+			allowed = {
+				original_tag = "AZR"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+					fuel_gain_from_states = 5
+					max_fuel = 50
+			}
+		}
+AZR_marx = {
+			
+			
+			allowed = {
+				original_tag = "AZR"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+					party_popularity_stability_factor = 0.3
+					market_socialism_drift = 0.03
+			}
+		}
+AZR_UCA2 = {
+			
+			
+			allowed = {
+				original_tag = "AZR"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+					stability_factor = -0.15
+					war_support_factor = -0.1
+					political_power_cost = 0.03
+				consumer_goods_factor = 0.04
+			}
+			targeted_modifier = {
+				tag = UCA
+				trade_cost_for_target_factor = -0.05
+				extra_trade_to_target_factor = 0.02
+			}
+		}
+AZR_UCA1 = {
+			
+			
+			allowed = {
+				original_tag = "AZR"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+					stability_factor = -0.30
+					war_support_factor = -0.2
+					political_power_cost = 0.1
+				consumer_goods_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = UCA
+				trade_cost_for_target_factor = -0.15
+				extra_trade_to_target_factor = 0.05
+			}
+		}
+AZR_UCA = {
+			
+			
+			allowed = {
+				original_tag = "AZR"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+					stability_factor = -0.20
+					war_support_factor = -0.15
+					political_power_cost = 0.05
+				consumer_goods_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = UCA
+				trade_cost_for_target_factor = -0.25
+				extra_trade_to_target_factor = 0.15
+			}
+		}
+AZR_armenian_greivences = {
+			
+			
+			allowed = {
+				original_tag = "AZR"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+					stability_factor = -0.20
+					war_support_factor = 0.15
+			}
+		}
+AZR_liberalization = {
+			
+			
+			allowed = {
+				original_tag = "AZR"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+					min_export = 0.15
+                    equipment_conversion_speed = 0.1 
+			}
+		}
+		AZR_mad_at_neighbors = {
+			
+			
+			allowed = {
+				original_tag = "AZR"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+							generate_wargoal_tension = -0.05
+					justify_war_goal_time = -0.15
+			}
+		}
+	}
+}

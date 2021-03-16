@@ -1,0 +1,32 @@
+
+state={
+	id=812
+	name="STATE_812"
+
+	history={
+		owner = ARQ
+		victory_points = {
+			2089 5 
+		}
+		buildings = {
+			infrastructure = 1
+			arms_factory = 2
+			industrial_complex = 2
+			2089 = {
+				naval_base = 5
+
+			}
+
+		}
+		add_core_of = ARQ
+add_claim_by = ARA
+
+	}
+
+	provinces={
+		2089 8085 
+	}
+	manpower=200395
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

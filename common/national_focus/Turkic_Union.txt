@@ -1,0 +1,439 @@
+focus_tree = {
+	id = Turkic_Union
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = TAJ
+		}
+	}
+	default = no
+	focus = {
+		id = TAJ_national_remilitarization
+		icon = GFX_focus_por_workers_of_iberia
+		cost = 7.00
+		x = 16
+		y = 0
+			completion_reward = {
+					839 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TAJ_improve_forces
+		icon = GFX_goal_generic_secret_weapon
+		cost = 7.00
+		prerequisite = {
+			focus = TAJ_national_remilitarization
+		}
+		x = 10
+		y = 1
+			completion_reward = {
+					TAJ = {
+							add_opinion_modifier = {
+									target = SIK
+									modifier = large_increase
+								}
+						}
+					SIK = {
+							add_opinion_modifier = {
+									target = TAJ
+									modifier = large_increase
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TAJ_establish_TMR_trade
+		icon = GFX_goal_generic_soviet_construction
+		cost = 7.00
+		prerequisite = {
+			focus = TAJ_national_remilitarization
+		}
+		x = 16
+		y = 1
+			completion_reward = {
+					TAJ = {
+							add_opinion_modifier = {
+									target = TMS
+									modifier = large_increase
+								}
+							add_political_power = 100
+						}
+					TMS = {
+							add_opinion_modifier = {
+									target = TAJ
+									modifier = large_increase
+								}
+							add_political_power = 100
+						}
+				}
+
+	}
+	focus = {
+		id = TAJ_form_expeditions
+		icon = GFX_goal_generic_wolf_pack
+		cost = 7.00
+		prerequisite = {
+			focus = TAJ_improve_forces
+		}
+		prerequisite = {
+			focus = TAJ_establish_TMR_trade
+		}
+		x = 12
+		y = 2
+			completion_reward = {
+					set_rule = {
+							can_send_volunteers = yes
+						}
+					army_experience = 20
+				}
+
+	}
+	focus = {
+		id = TAJ_improved_army
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 7.00
+		prerequisite = {
+			focus = TAJ_improve_forces
+		}
+		prerequisite = {
+			focus = TAJ_establish_TMR_trade
+		}
+		x = 16
+		y = 2
+			completion_reward = {
+					add_ideas = TAJ_army
+				}
+
+	}
+	focus = {
+		id = TAJ_promote_unrest
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 7.00
+		prerequisite = {
+			focus = TAJ_national_remilitarization
+		}
+		x = 22
+		y = 1
+			completion_reward = {
+					ENG = {
+							add_stability = -0.10
+						}
+					USA = {
+							add_stability = -0.10
+						}
+					JAP = {
+							add_stability = -0.10
+						}
+				}
+
+	}
+	focus = {
+		id = TAJ_german_turkic_research
+		icon = GFX_focus_generic_socialist_science
+		cost = 7.00
+		prerequisite = {
+			focus = TAJ_establish_TMR_trade
+		}
+		prerequisite = {
+			focus = TAJ_promote_unrest
+		}
+		x = 20
+		y = 2
+			completion_reward = {
+					add_research_slot = 1
+					GER = {
+							add_research_slot = 1
+						}
+				}
+
+	}
+	focus = {
+		id = TAJ_expedition_to_russia
+		icon = GFX_goal_generic_alliance
+		cost = 7.00
+		prerequisite = {
+			focus = TAJ_form_expeditions
+		}
+		prerequisite = {
+			focus = TAJ_improved_army
+		}
+		prerequisite = {
+			focus = TAJ_german_turkic_research
+		}
+		x = 13
+		y = 3
+			completion_reward = {
+					SOV = {
+							add_political_power = -20
+							add_stability = -0.15
+							add_popularity = {
+									ideology = anarchism
+									popularity = 0.10
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TAJ_military_ET_pact
+		icon = GFX_goal_anti_comintern_pact
+		cost = 7.00
+		prerequisite = {
+			focus = TAJ_form_expeditions
+		}
+		prerequisite = {
+			focus = TAJ_improved_army
+		}
+		prerequisite = {
+			focus = TAJ_german_turkic_research
+		}
+		x = 16
+		y = 3
+			completion_reward = {
+					SIK = {
+							country_event = turkunion.1
+						}
+				}
+
+	}
+	focus = {
+		id = TAJ_kaz_expedition
+		icon = GFX_focus_TUR_turanist_ambition
+		cost = 7.00
+		prerequisite = {
+			focus = TAJ_form_expeditions
+		}
+		prerequisite = {
+			focus = TAJ_improved_army
+		}
+		prerequisite = {
+			focus = TAJ_german_turkic_research
+		}
+		x = 19
+		y = 3
+			completion_reward = {
+					KAZ = {
+							add_political_power = -20
+							add_stability = -0.15
+							add_popularity = {
+									ideology = anarchism
+									popularity = 0.10
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TAJ_encourage_PUA
+		icon = GFX_focus_usa_tank_destroyer_doctrine
+		cost = 7.00
+		prerequisite = {
+			focus = TAJ_expedition_to_russia
+		}
+		prerequisite = {
+			focus = TAJ_military_ET_pact
+		}
+		prerequisite = {
+			focus = TAJ_kaz_expedition
+		}
+		x = 14
+		y = 4
+		available = {
+		PUA = {
+		exists = yes
+		}
+		}
+			completion_reward = {
+					country_event = turkunion.2
+				}
+		
+
+	}
+	focus = {
+		id = TAJ_expedition_to_usa
+		icon = GFX_focus_usa_guarantee_the_american_dream
+		cost = 7.00
+		prerequisite = {
+			focus = TAJ_encourage_PUA
+		}
+		x = 15
+		y = 5
+			completion_reward = {
+					USA = {
+							add_political_power = -20
+							add_stability = -0.15
+							add_popularity = {
+									ideology = anarchism
+									popularity = 0.10
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TAJ_promote_new_ideas
+		icon = GFX_focus_prc_maoism
+		cost = 7.00
+		prerequisite = {
+			focus = TAJ_expedition_to_russia
+		}
+		prerequisite = {
+			focus = TAJ_military_ET_pact
+		}
+		prerequisite = {
+			focus = TAJ_kaz_expedition
+		}
+		x = 18
+		y = 4
+			completion_reward = {
+					add_ideas = why_we_fight_focus
+					custom_effect_tooltip = why_we_fight_effect
+					hidden_effect = {
+							if = {
+									limit = {
+											NOT = {
+													has_idea = neutrality_idea
+												}
+										}
+									set_rule = {
+											can_create_factions = yes
+										}
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TAJ_closed_economy
+		icon = GFX_focus_usa_voter_registration_act
+		cost = 7.00
+		prerequisite = {
+			focus = TAJ_promote_new_ideas
+		}
+		x = 17
+		y = 5
+			completion_reward = {
+					remove_ideas = TAJ_closed_economy
+				}
+
+	}
+	focus = {
+		id = TAJ_begin_war
+		icon = GFX_focus_generic_provoke_border_clashes
+		cost = 7.00
+		prerequisite = {
+			focus = TAJ_bring_greatness
+		}
+		x = 17
+		y = 8
+			completion_reward = {
+					add_political_power = 100
+				}
+			available = {
+					has_country_flag = TAJ_greatness
+				}
+
+	}
+	focus = {
+		id = TAJ_bring_greatness
+		icon = GFX_focus_RAJ_indian_gentlemen_offcers
+		cost = 7.00
+		prerequisite = {
+			focus = TAJ_expedition_to_usa
+		}
+		prerequisite = {
+			focus = TAJ_closed_economy
+		}
+		x = 16
+		y = 6
+			completion_reward = {
+					add_political_power = 300
+					add_war_support = 0.10
+					set_country_flag = TAJ_greatness
+				}
+
+	}
+	focus = {
+		id = TAJ_why_we_fight
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+		cost = 20.00
+		prerequisite = {
+			focus = TAJ_bring_greatness
+		}
+		x = 15
+		y = 8
+			completion_reward = {
+					742 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+					742 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+					742 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TAJ_take_turkmenistan
+		icon = GFX_focus_hol_war_on_pacifism
+		cost = 7.00
+		prerequisite = {
+			focus = TAJ_why_we_fight
+		}
+		prerequisite = {
+			focus = TAJ_begin_war
+		}
+		x = 16
+		y = 9
+			completion_reward = {
+					TMS = {
+							country_event = turkunion.3
+						}
+				}
+
+	}
+	focus = {
+		id = TAJ_annex_kaz
+		icon = GFX_goal_poland_goal
+		cost = 7.00
+		prerequisite = {
+			focus = TAJ_take_turkmenistan
+		}
+		x = 16
+		y = 10
+			completion_reward = {
+					KAZ = {
+							country_event = saf.2
+							
+						}
+				}
+
+	}
+}

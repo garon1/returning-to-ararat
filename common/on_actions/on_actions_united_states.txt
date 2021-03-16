@@ -1,0 +1,78 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			375 = {	#Texas
+			USA_general_confederate_support = yes
+			}
+			371 = { #Louisiana
+				USA_high_confederate_support = yes
+			}
+			370 = {	#Mississippi
+			USA_high_confederate_support = yes
+			}
+			367 = { #Alabama
+			USA_high_confederate_support = yes
+			}
+			365 = { #Georgia
+			USA_high_confederate_support = yes
+			}
+			366 = { #Florida
+			USA_high_confederate_support = yes
+			}
+			364 = {	#South Carolina
+				USA_general_confederate_support = yes
+			}
+			363 = { #Virginia
+				USA_general_legionist_support = yes
+			}
+			368 = { #Tennesse
+				USA_low_legionist_support = yes
+			}
+			372 = {	#Arkansas
+				USA_low_confederate_support = yes
+			}
+			357 = { #New England
+				USA_general_leftist_support = yes
+			}
+			358 = { #New York
+			USA_high_leftist_support = yes
+			}
+			359 = { #New Jersey
+				USA_general_leftist_support = yes
+			}
+			360 = {	#Pennsylvania
+				USA_general_leftist_support = yes
+			}
+			261 = {	#Ohio
+				USA_general_leftist_support = yes
+			}
+			393 = {	#Michigan
+				USA_general_leftist_support = yes
+			}
+			396 = { #Indiana
+				USA_general_leftist_support = yes
+			}
+			395 = { #Illinois
+			USA_general_leftist_support = yes
+			}
+			386 = { #Washington
+				USA_high_legionist_support = yes
+			}
+			387 = {	#Idaho
+				USA_high_legionist_support = yes
+			}
+			388 = {	#Montana
+				USA_general_legionist_support = yes
+			}
+			381 = { #Wyoming
+			USA_general_legionist_support = yes
+			}
+			380 = { #Utah
+			USA_general_legionist_support = yes
+			}
+			379 = {	#Nevada
+			USA_general_legionist_support = yes
+			}
+		}
+	}
+}

@@ -1,0 +1,26 @@
+state={
+	id=870
+	name="STATE_870"
+	provinces={
+		4073 9947 
+	}
+	history={
+		set_demilitarized_zone = yes
+		owner = GTA
+		buildings = {
+			infrastructure = 2
+			dockyard = 1
+			4073 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = EGY
+		add_core_of = GTA
+
+	}
+	manpower=100359
+	buildings_max_level_factor=1.000
+	state_category=town
+}

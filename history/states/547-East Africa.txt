@@ -1,0 +1,26 @@
+
+state={
+	id=547
+	name="STATE_547"
+
+	history={
+		owner = BAF
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			1939 2 
+		}
+		add_core_of = KEN
+
+	}
+
+	provinces={
+		1939 2066 5079 5160 10860 10962 11145 13135 
+	}
+	manpower=392000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

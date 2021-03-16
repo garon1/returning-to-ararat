@@ -1,0 +1,25 @@
+
+state={
+	id=864
+	name="STATE_864"
+
+	history={
+		owner = AZR
+		add_core_of = AZR
+		victory_points = {
+			1536 2 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+
+		}
+
+	}
+manpower=279602
+	buildings_max_level_factor=1.000
+	state_category=town
+	provinces={
+		1536 11704 
+	}
+}

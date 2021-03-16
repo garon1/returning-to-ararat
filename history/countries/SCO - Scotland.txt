@@ -1,0 +1,161 @@
+﻿capital = 121
+
+#oob = ""
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_convoys = 20
+
+1939.1.1 = {
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = flexible_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	set_technology = {
+
+		#doctrines
+		grand_battle_plan = 1
+		trench_warfare = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		fuel_silos = 1
+		oil_processing = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
+set_politics = {
+	ruling_party = radical_socialism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+radical_socialism = 60
+syndicalism = 15
+market_socialism = 25
+}
+create_country_leader = {
+	name = "William Gallacher"
+	picture = "gfx/leaders/ENG/Portrait_England_William_Gallacher.tga"
+	desc = "POLITICS_WILLIAM_GALLACHER_DESC"
+	expire = "1965.1.1"
+	ideology = market_socialism_subtype
+}
+create_country_leader = {
+	name = "William Gallacher"
+	picture = "gfx/leaders/ENG/Portrait_England_William_Gallacher.tga"
+	desc = "POLITICS_WILLIAM_GALLACHER_DESC"
+	expire = "1965.1.1"
+	ideology = syndicalism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "James Maxton"
+	desc = "POLITICS_JAMES_MAXTON_DESC"
+	picture = "Portrait_Scotland_James_Maxton.tga"
+	expire = "1965.1.1"
+	ideology = anarchism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "James Maxton"
+	desc = "POLITICS_JAMES_MAXTON_DESC"
+	picture = "Portrait_Scotland_James_Maxton.tga"
+	expire = "1965.1.1"
+	ideology = radical_socialism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = nationalism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = totalitarianism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = traditional_conservatism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = monarchism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = market_liberal_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = social_democracy_subtype
+	traits = {
+		#
+	}
+}
+

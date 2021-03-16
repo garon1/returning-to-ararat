@@ -1,0 +1,63 @@
+#Category allowed for ETH
+ETH_territorial_gains = {
+ETH_declare_war_on_france = {
+
+		icon = decision_ita_claim_yugo_1
+
+		available = {
+		date > 1938.1.1
+		ETH = {
+		exists = yes
+		}
+		}
+
+		visible = {
+		date > 1938.1.1
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+
+		complete_effect = {
+			declare_war_on = {
+					target = FRA
+					type = annex_everything
+				}
+
+		}
+	}
+ETH_declare_war_on_italy = {
+
+		icon = decision_spr_political_assassination
+
+		available = {
+		date < 1940.1.1
+		ETH = {
+		exists = yes
+		}
+		}
+
+		visible = {
+		date < 1940.1.1
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+
+		complete_effect = {
+			declare_war_on = {
+					target = ITA
+					type = annex_everything
+				}
+
+		}
+	}
+}

@@ -1,0 +1,129 @@
+################
+#### TURKEY ####
+################
+
+TUR_restoration_project = {
+     icon = generic_prospect_for_resources
+     available = { 
+          original_tag = TUR
+          has_completed_focus = TUR_restoration_project
+     }
+     visible = { 
+          original_tag = TUR
+           has_completed_focus = TUR_restoration_project
+     }
+}
+
+TUR_improve_the_army = {
+
+    icon = hol_obtain_foreign_colonial_investments
+    
+    allowed = {
+        original_tag = TUR
+    }
+
+    visible = {
+    original_tag = TUR
+    }
+}
+
+TUR_socialist_decisions = {
+
+    icon = hol_obtain_foreign_colonial_investments
+    
+    allowed = {
+        original_tag = TUR
+        has_completed_focus = TUR_socialist_decisions
+    }
+
+    visible = {
+    original_tag = TUR
+    has_completed_focus = TUR_socialist_decisions
+    }
+}
+
+TUR_old_alliance = {
+
+    icon = hol_obtain_foreign_colonial_investments
+    
+    allowed = {
+        original_tag = TUR
+         has_completed_focus = 
+    }
+
+    visible = {
+         has_completed_focus = 
+         original_tag = TUR
+    }
+}
+
+TUR_ottoman_decisions = {
+
+    icon = hol_obtain_foreign_colonial_investments
+    
+    allowed = {
+        original_tag = TUR
+        has_completed_focus = TUR_old_alliance
+    }
+
+    visible = {
+    has_completed_focus = TUR_old_alliance
+         original_tag = TUR
+    }
+}
+
+TUR_disabled_rights = {
+
+    icon = hol_obtain_foreign_colonial_investments
+    
+    allowed = {
+        original_tag = TUR
+        has_completed_focus = TUR_disabled_rights
+    }
+
+    visible = {
+    has_completed_focus = TUR_disabled_rights
+         original_tag = TUR
+    }
+}
+
+TUR_aid_lower_classes = {
+
+    icon = hol_obtain_foreign_colonial_investments
+    
+    allowed = {
+        original_tag = TUR
+        has_completed_focus = TUR_aid_lower_classes
+    }
+
+    visible = {
+    has_completed_focus = TUR_aid_lower_classes
+         original_tag = TUR
+    }
+}
+
+TUR_close_to_germanys = {
+
+    icon = hol_obtain_foreign_colonial_investments
+    
+    allowed = {
+        original_tag = TUR
+        has_completed_focus = TUR_germany_closeness
+    }
+
+    visible = {
+    has_completed_focus = TUR_germany_closeness
+         original_tag = TUR
+    }
+}
+
+category_faction_debug_decisions = {
+	priority = 0
+	visible = {
+		is_debug = yes
+	}
+
+	allowed = {
+		original_tag = TUR
+	}
+}

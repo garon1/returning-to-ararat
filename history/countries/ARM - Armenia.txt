@@ -1,0 +1,324 @@
+﻿capital = 353
+
+oob = "ARM_1936"
+set_naval_oob = "ARM_naval"
+set_research_slots = 3
+set_cosmetic_tag = ARM_UNIFIED_neutrality
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_military_police = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	paratroopers = 1
+	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1  # PLACEHOLDER
+	#basic_heavy_tank = 1  # PLACEHOLDER
+	#basic_medium_tank = 1 # PLACEHOLDER
+	early_fighter = 1
+	fighter1 = 1
+	early_bomber = 1
+	strategic_bomber1 = 1
+	naval_bomber1 = 1
+	
+	mass_assault = 1
+	fleet_in_being = 1
+}
+
+add_ideas = {
+ARM_disunification
+ARM_garegin_nzdeh
+ARM_language_barrier
+ARM_militarist_mentality
+}
+
+set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+country_event = {
+	id = tas_political.1
+	hours = 6
+}
+country_event = {
+	id = arm.16
+	hours = 6
+}
+country_event = {
+	id = arm.1
+	days = 200
+}
+
+country_event = {
+	id = arm.6
+	days = 200
+}
+
+set_popularities = {
+	totalitarianism = 60
+	syndicalism = 3
+	market_socialism = 5
+	nationalism = 10
+	traditional_conservatism = 20
+	radical_socialism = 2
+}
+set_politics = {
+	ruling_party = totalitarianism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+create_country_leader = {
+	name = "Drastamat Kanayan"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	expire = "1953.3.1"
+	ideology = nationalism_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Garegin Nzhdeh"
+	desc = "POLITICS_GAREGIN_NZHDEH_DESC"
+	picture = "gfx/leaders/ARM/GZA.dds"
+	expire = "1953.3.1"
+	ideology = totalitarianism_subtype
+	traits = {
+	headstrong	
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = traditional_conservatism_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = syndicalism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = market_socialism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = anarchism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = monarchism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = radical_socialism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = market_liberal_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+		name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = social_democracy_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Grigor Harutyunyan"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	expire = "1953.3.1"
+	ideology = radical_socialism_subtype
+	traits = {
+		
+	}
+}
+
+### Field Marshall
+create_field_marshal = {
+	name = "Christopher Araratov"
+	portrait_path = "gfx/leaders/ARM/Portrait_Armenia_Christophor_Araratov.tga"
+	traits = {
+		logistics_wizard
+		old_guard
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Drastamat Kanayan"
+	portrait_path = "gfx/leaders/ARM/Portrait_Armenia_Drastamat_Kanayan.tga"
+	traits = {
+
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+### Corps Commander
+create_corps_commander = {
+	name = "Hayk Bzhishkyan"
+	portrait_path = "gfx/leaders/ARM/Portrait_Armenia_Hayk_Bzhishkyan.tga"
+	traits = {}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Hamazasp Srvandztyan"
+	portrait_path = "gfx/leaders/ARM/Portrait_Armenia_Hamazasp_Srvandztyan.tga"
+	traits = {}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Sarkis Theodorosi Galajyan"
+	portrait_path = "gfx/leaders/ARM/Portrait_Armenia_Sarkis_Theodorosi_Galajyan.tga"
+	traits = {}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_equipment_variant = {
+		name = "Kanayan FLeet"				# represents Sampson, Caldwell, Clemson, and Wickes classes
+		type = ship_hull_cruiser_2
+		name_group = USA_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Adana FLeet"				# represents Sampson, Caldwell, Clemson, and Wickes classes
+		type = ship_hull_cruiser_2
+		name_group = USA_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Nzdeh Class"				# represents Sampson, Caldwell, Clemson, and Wickes classes
+		type = ship_hull_light_1
+		name_group = USA_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = yes
+	}

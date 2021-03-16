@@ -1,0 +1,25 @@
+ideas = {
+
+
+country = {
+ISR_jewish_homeland = {
+		
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+		
+		removal_cost = -1
+
+		picture = generic_morale_bonus
+	
+			modifier = {
+			monthly_population = 0.10
+			}
+		}
+	}
+}

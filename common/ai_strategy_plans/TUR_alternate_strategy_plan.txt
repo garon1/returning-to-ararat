@@ -1,0 +1,386 @@
+TUR_ottoman_plan = {
+	name = "Ottoman Monarchist Plan"
+	desc = "The Republic of Turkey will fall and the Ottoman Sultanate will be restored."
+
+	allowed = {
+		original_tag = TUR
+		has_dlc = "Battle for the Bosporus"
+	}
+
+	enable = {
+		OR = {
+			has_country_flag = TUR_AI_RANDOM_OTTOMAN
+			has_game_rule = {
+				rule = TUR_ai_behavior 
+				option = OTTOMAN
+			}
+		}
+	}
+	abort = {
+		OR = {	
+			KUR = { exists = yes }
+		}
+	}
+
+	
+	research = {
+
+	}
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+TUR_alternate_kemalist_plan = {
+	name = "Turkey Alternate Kemalist Plan"
+	desc = "Turkey will appoint Fevzi Çakmak to follow in the footsteps of Mustafa Kemal Atatürk as President, and will pursue neutrality for as long as possible before joining the Axis or Allies."
+
+	enable = {
+		OR = {
+			has_country_flag = TUR_AI_RANDOM_ALT_KEMALIST
+			has_game_rule = {
+				rule = TUR_ai_behavior 
+				option = ALTERNATE_KEMALIST
+			}
+		}
+	}
+	abort = {
+		OR = {
+			has_war_with = GER
+			has_war_with = ITA
+			has_war_with = FRA
+			has_war_with = ENG
+			has_war_with = SOV
+			has_war_with = GRE
+			has_government = communism
+			has_government = democratic
+		}
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		TUR_nuri_demirag_prime_minister = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+TUR_communist_plan = {
+	name = "Turkey Communist Plan"
+	desc = "Turkey will adopt a communist government and attempt to join the Comintern."
+
+	enable = {
+		OR = {
+			has_country_flag = TUR_AI_RANDOM_COMMUNISM
+			has_game_rule = {
+				rule = TUR_ai_behavior 
+				option = COMMUNIST_TUR_AI
+			}
+		}
+	}
+	abort = {
+		has_war_with = SOV
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		TUR_sevket_sureyya_aydemir = 5
+		TUR_sefik_husnu = 3
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+TUR_alternate_communist_plan = {
+	name = "Turkey Alternate Communist Plan"
+	desc = "Turkey will adopt a communist government and attempt to form a faction of its own."
+
+	enable = {
+		OR = {
+			has_country_flag = TUR_AI_RANDOM_COMMUNISM_ALTERNATE
+			has_game_rule = {
+				rule = TUR_ai_behavior 
+				option = TUR_COMMUNISM_ALTERNATE
+			}
+		}
+	}
+	abort = {
+		has_war_with = SPR
+	}
+
+	research = {
+
+	}
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+TUR_democratic_plan = {
+	name = "Turkey Democratic Plan"
+	desc = "Celâl Bayar will transition Turkey into a democracy and join the Allies."
+
+	enable = {
+		OR = {
+			has_country_flag = TUR_AI_RANDOM_DEMOCRATIC
+			has_game_rule = {
+				rule = TUR_ai_behavior 
+				option = TUR_DEMOCRATIC_KEMALIST
+			}
+			AND = { 
+				has_country_leader = {
+					name = "Celâl Bayar"
+					ruling_only = yes
+				}
+			}
+		}
+	}
+	abort = {
+		OR = {
+			has_war_with = ENG
+			has_war_with = USA
+			has_government = communism
+			has_government = fascism
+			AND = {
+				has_country_leader = {
+					name = "Adnan Menderes"
+					ruling_only = yes
+				}
+			}
+		}
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		TUR_fethi_okyar = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+TUR_alternate_democratic_plan = {
+	name = "Turkey Alternate Democratic Plan"
+	desc = "Adnan Menderes will transition Turkey into a conservative democracy and join the Allies."
+
+	enable = {
+		OR = {
+			has_country_flag = TUR_AI_RANDOM_DEMOCRATIC_ALTERNATE
+			has_game_rule = {
+				rule = TUR_ai_behavior 
+				option = TUR_DEMOCRATIC_ALTERNATE
+			}
+			AND = { 
+				 has_country_leader = {
+					name = "Adnan Menderes"
+					ruling_only = yes
+				}
+			}
+		}
+	}
+	abort = {
+		OR = {
+			has_war_with = ENG
+			has_war_with = USA
+			has_government = communism
+			has_government = fascism
+			AND = {
+				
+				has_country_leader = {
+					name = "Celâl Bayar"
+					ruling_only = yes
+				}
+			}
+		}
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		TUR_fethi_okyar = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+TUR_fascist_plan = {
+	name = "Turkey Fascist Plan"
+	desc = "Recep Peker shall transition Turkey into a fascist dictatorship and attempt to join the Axis."
+
+	enable = {
+		OR = {
+			has_country_flag = TUR_AI_RANDOM_FASCISM
+			has_game_rule = {
+				rule = TUR_ai_behavior 
+				option = FASCISM_TUR_AI
+			}
+		}
+	}
+	abort = {
+		OR = {
+			has_war_with = GER
+			has_government = communism
+			has_government = democratic
+		}
+	}
+
+	
+	research = {
+
+	}
+
+	ideas = {
+		TUR_recep_peker = 5
+		TUR_ismet_inonu = 3
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+TUR_alternate_fascist_plan = {
+	name = "Turkey Alternate Fascist Plan"
+	desc = "Fevzi Çakmak shall transition Turkey into a quasi-fascist dictatorship and attempt to form a faction with Italy."
+
+	enable = {
+		OR = {
+			has_country_flag = TUR_AI_RANDOM_FASCISM_ALTERNATE
+			has_game_rule = {
+				rule = TUR_ai_behavior 
+				option = TUR_FASCISM_ALTERNATE
+			}
+		}
+	}
+	abort = {
+		OR = {
+			has_war_with = ITA
+			has_government = communism
+			has_government = democratic
+		}
+	}
+
+	
+	research = {
+
+	}
+
+	ideas = {
+		TUR_nuri_demirag_prime_minister = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+TUR_balkan_pact_plan = {
+	name = "Turkey Balkan Entente Plan"
+	desc = "Turkey will commit itself to security in the Balkans and try to form a faction."
+
+	enable = {
+		OR = {
+			has_country_flag = TUR_AI_RANDOM_BALKAN_ENTENTE
+			has_game_rule = {
+				rule = TUR_ai_behavior 
+				option = BALKAN_ENTENTE
+			}
+		}
+	}
+	abort = {
+		OR = {
+			ROM = { has_completed_focus = ROM_balkans_dominance }
+			YUG = { has_completed_focus = YUG_recognize_the_soviet_union }
+			AND = {
+				GRE = { has_war_with = TUR }
+				ROM = { has_war_with = TUR }
+				YUG = { has_war_with = TUR }
+			}
+		}
+	}
+
+
+	research = {
+
+	}
+
+	ideas = {
+		
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

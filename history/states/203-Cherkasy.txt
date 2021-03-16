@@ -1,0 +1,26 @@
+
+state={
+	id=203
+	name="STATE_203"
+
+	history={
+		victory_points = {
+			488 5 
+		}
+		owner =  UKR
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+		add_core_of = UKR
+
+	}
+
+	provinces={
+		434 458  488 504 582 3452 3468 3494 6451 6478 6480 6497 9435 9451 9465 9481 9491 9543 11409 11424 11438 11454 11530 11557 
+	}
+	manpower=805190
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}
