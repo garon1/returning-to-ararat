@@ -1,0 +1,1515 @@
+focus_tree = {
+	id = Red_America
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = PUA
+		}
+	}
+	default = no
+	focus = {
+		id = PUA_re-evaluate_reconstruction
+		icon = GFX_goal_unknown
+		cost = 7.00
+		x = 7
+		y = 0
+
+	}
+	focus = {
+		id = PUA_the_red_giant_awakens
+		icon = GFX_goal_unknown
+		cost = 7.00
+		x = 42
+		y = 0
+
+	}
+	focus = {
+		id = PUA_foreign_policy
+		icon = GFX_goal_unknown
+		cost = 7.00
+		x = 46
+		y = 8
+
+	}
+	focus = {
+		id = PUA_military_focus
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 29
+		y = 4
+
+	}
+	focus = {
+		id = PUA_force_bayard_to_change
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_re-evaluate_reconstruction
+		}
+		mutually_exclusive = {
+			focus = PUA_keep_with_bayards_politics
+		}
+		x = 5
+		y = 1
+
+	}
+	focus = {
+		id = PUA_slow_down_transition
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_force_bayard_to_change
+		}
+		x = 5
+		y = 2
+
+	}
+	focus = {
+		id = PUA_adopt_german_economic_policies
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_slow_down_transition
+		}
+		x = 3
+		y = 3
+
+	}
+	focus = {
+		id = PUA_stop_capitalist_trading
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_adopt_german_economic_policies
+		}
+		x = 2
+		y = 4
+
+	}
+	focus = {
+		id = PUA_stregthen_unionists
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_slow_down_transition
+		}
+		x = 5
+		y = 3
+
+	}
+	focus = {
+		id = PUA_annual_deal_act
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_stregthen_unionists
+		}
+		prerequisite = {
+			focus = PUA_adopt_german_economic_policies
+		}
+		x = 4
+		y = 4
+
+	}
+	focus = {
+		id = PUA_collectivize_the_farms
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_slow_down_transition
+		}
+		x = 7
+		y = 3
+
+	}
+	focus = {
+		id = PUA_from_the_farmers_to_miners
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_collectivize_the_farms
+		}
+		x = 6
+		y = 5
+
+	}
+	focus = {
+		id = PUA_clean_urban_areas
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_stregthen_unionists
+		}
+		prerequisite = {
+			focus = PUA_collectivize_the_farms
+		}
+		x = 10
+		y = 4
+
+	}
+	focus = {
+		id = PUA_housing_act
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_clean_urban_areas
+		}
+		x = 8
+		y = 5
+
+	}
+	focus = {
+		id = PUA_increase_state_working_propaganda
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_from_the_farmers_to_miners
+		}
+		prerequisite = {
+			focus = PUA_housing_act
+		}
+		x = 7
+		y = 6
+
+	}
+	focus = {
+		id = PUA_set_up_union_restaurants
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_stop_capitalist_trading
+		}
+		prerequisite = {
+			focus = PUA_annual_deal_act
+		}
+		x = 4
+		y = 6
+
+	}
+	focus = {
+		id = PUA_decentralized_transformation_is_complete
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_set_up_union_restaurants
+		}
+		prerequisite = {
+			focus = PUA_increase_state_working_propaganda
+		}
+		x = 10
+		y = 7
+
+	}
+	focus = {
+		id = PUA_keep_with_bayards_politics
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_re-evaluate_reconstruction
+		}
+		mutually_exclusive = {
+			focus = PUA_force_bayard_to_change
+		}
+		x = 20
+		y = 1
+
+	}
+	focus = {
+		id = PUA_jobs_for_the_military
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_force_bayard_to_change
+			focus = PUA_keep_with_bayards_politics
+		}
+		x = 13
+		y = 2
+
+	}
+	focus = {
+		id = PUA_military_factor_workers
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_jobs_for_the_military
+		}
+		x = 12
+		y = 3
+
+	}
+	focus = {
+		id = PUA_dockyard_in_the_works
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_jobs_for_the_military
+		}
+		x = 14
+		y = 3
+
+	}
+	focus = {
+		id = PUA_a_new_airforce
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_jobs_for_the_military
+		}
+		x = 16
+		y = 3
+
+	}
+	focus = {
+		id = PUA_improve_working_conditions_for_factories
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_military_factor_workers
+		}
+		prerequisite = {
+			focus = PUA_dockyard_in_the_works
+		}
+		prerequisite = {
+			focus = PUA_a_new_airforce
+		}
+		x = 15
+		y = 4
+
+	}
+	focus = {
+		id = PUA_partial_mobilization
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_improve_working_conditions_for_factories
+		}
+		x = 14
+		y = 5
+
+	}
+	focus = {
+		id = PUA_increase_transition_period
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_keep_with_bayards_politics
+		}
+		x = 20
+		y = 2
+
+	}
+	focus = {
+		id = PUA_based_lenins_policies
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_increase_transition_period
+		}
+		x = 18
+		y = 3
+
+	}
+	focus = {
+		id = PUA_reverse_farming_policies
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_increase_transition_period
+		}
+		x = 21
+		y = 3
+
+	}
+	focus = {
+		id = PUA_new_cities_initative
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_reverse_farming_policies
+		}
+		x = 20
+		y = 4
+
+	}
+	focus = {
+		id = PUA_nationalize_public_transportation
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_based_lenins_policies
+		}
+		prerequisite = {
+			focus = PUA_reverse_farming_policies
+		}
+		x = 17
+		y = 4
+
+	}
+	focus = {
+		id = PUA_maximize_industrial_output
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_nationalize_public_transportation
+		}
+		prerequisite = {
+			focus = PUA_new_cities_initative
+		}
+		x = 18
+		y = 6
+
+	}
+	focus = {
+		id = PUA_nationalize_minerals
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_increase_transition_period
+		}
+		x = 25
+		y = 3
+
+	}
+	focus = {
+		id = PUA_change_the_wage_act
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_reverse_farming_policies
+		}
+		prerequisite = {
+			focus = PUA_nationalize_minerals
+		}
+		x = 23
+		y = 4
+
+	}
+	focus = {
+		id = PUA_new_technological_innovations
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_new_cities_initative
+		}
+		prerequisite = {
+			focus = PUA_change_the_wage_act
+		}
+		x = 21
+		y = 5
+
+	}
+	focus = {
+		id = PUA_the_fishing_industry
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_maximize_industrial_output
+		}
+		prerequisite = {
+			focus = PUA_new_technological_innovations
+		}
+		x = 20
+		y = 7
+
+	}
+	focus = {
+		id = PUA_create_annual_holidays
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_nationalize_minerals
+		}
+		x = 26
+		y = 4
+
+	}
+	focus = {
+		id = PUA_reduce_work_days
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_change_the_wage_act
+		}
+		prerequisite = {
+			focus = PUA_create_annual_holidays
+		}
+		x = 24
+		y = 5
+
+	}
+	focus = {
+		id = PUA_max_agricultural_output
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_new_technological_innovations
+		}
+		prerequisite = {
+			focus = PUA_reduce_work_days
+		}
+		x = 23
+		y = 6
+
+	}
+	focus = {
+		id = PUA_transition_is_complete
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_the_fishing_industry
+		}
+		prerequisite = {
+			focus = PUA_max_agricultural_output
+		}
+		x = 22
+		y = 8
+
+	}
+	focus = {
+		id = PUA_divert_funds_to_the_army
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_military_focus
+		}
+		x = 27
+		y = 5
+
+	}
+	focus = {
+		id = PUA_offensive_doctorines
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_divert_funds_to_the_army
+		}
+		x = 26
+		y = 6
+
+	}
+	focus = {
+		id = PUA_new_modern_guns
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_offensive_doctorines
+		}
+		x = 24
+		y = 7
+
+	}
+	focus = {
+		id = PUA_learn_from_the_civil_war
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_offensive_doctorines
+		}
+		x = 26
+		y = 7
+
+	}
+	focus = {
+		id = PUA_implore_technological_warfare
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_new_modern_guns
+		}
+		prerequisite = {
+			focus = PUA_learn_from_the_civil_war
+		}
+		x = 25
+		y = 8
+
+	}
+	focus = {
+		id = PUA_learn_from_the_great_war
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_offensive_doctorines
+		}
+		x = 28
+		y = 7
+
+	}
+	focus = {
+		id = PUA_abandon_cavalry
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_learn_from_the_civil_war
+		}
+		prerequisite = {
+			focus = PUA_learn_from_the_great_war
+		}
+		x = 27
+		y = 8
+
+	}
+	focus = {
+		id = PUA_divert_funds_to_airforce
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_military_focus
+		}
+		x = 30
+		y = 5
+
+	}
+	focus = {
+		id = PUA_invest_in_better_fighters
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_divert_funds_to_airforce
+		}
+		x = 29
+		y = 6
+
+	}
+	focus = {
+		id = PUA_different_bombers
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_divert_funds_to_airforce
+		}
+		x = 31
+		y = 6
+
+	}
+	focus = {
+		id = PUA_new_air_bases
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_invest_in_better_fighters
+		}
+		prerequisite = {
+			focus = PUA_different_bombers
+		}
+		x = 30
+		y = 7
+
+	}
+	focus = {
+		id = PUA_anti_air
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_new_air_bases
+		}
+		x = 29
+		y = 8
+
+	}
+	focus = {
+		id = PUA_jet_technology
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_new_air_bases
+		}
+		x = 31
+		y = 8
+
+	}
+	focus = {
+		id = PUA_peoples_air_force
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_anti_air
+		}
+		prerequisite = {
+			focus = PUA_jet_technology
+		}
+		x = 30
+		y = 9
+
+	}
+	focus = {
+		id = PUA_divert_funds_to_navy
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_military_focus
+		}
+		x = 33
+		y = 5
+
+	}
+	focus = {
+		id = PUA_create_new_naval_bases
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_divert_funds_to_navy
+		}
+		x = 33
+		y = 6
+
+	}
+	focus = {
+		id = PUA_new_submarines
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_create_new_naval_bases
+		}
+		x = 32
+		y = 7
+
+	}
+	focus = {
+		id = PUA_new_dockyards
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_divert_funds_to_navy
+		}
+		x = 35
+		y = 6
+
+	}
+	focus = {
+		id = PUA_new_destroyers
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_create_new_naval_bases
+		}
+		prerequisite = {
+			focus = PUA_new_dockyards
+		}
+		x = 34
+		y = 7
+
+	}
+	focus = {
+		id = PUA_evaluate_our_situation
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_the_red_giant_awakens
+		}
+		x = 42
+		y = 1
+
+	}
+	focus = {
+		id = PUA_get_rid_of_paranoia
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_evaluate_our_situation
+		}
+		mutually_exclusive = {
+			focus = PUA_exploit_the_peoples_fears
+		}
+		x = 39
+		y = 2
+
+	}
+	focus = {
+		id = PUA_wake_our_populace_up_to_the_threats
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_get_rid_of_paranoia
+		}
+		x = 37
+		y = 3
+
+	}
+	focus = {
+		id = PUA_fortify_the_nation
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_wake_our_populace_up_to_the_threats
+		}
+		x = 36
+		y = 4
+
+	}
+	focus = {
+		id = PUA_invest_in_airforce
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_fortify_the_nation
+		}
+		mutually_exclusive = {
+			focus = PUA_invest_in_the_army
+			focus = PUA_invest_in_the_navy
+		}
+		x = 35
+		y = 5
+
+	}
+	focus = {
+		id = PUA_arm_the_population
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_wake_our_populace_up_to_the_threats
+		}
+		prerequisite = {
+			focus = PUA_get_rid_of_paranoia
+		}
+		x = 38
+		y = 4
+
+	}
+	focus = {
+		id = PUA_invest_in_the_army
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_arm_the_population
+		}
+		prerequisite = {
+			focus = PUA_fortify_the_nation
+		}
+		mutually_exclusive = {
+			focus = PUA_invest_in_airforce
+			focus = PUA_invest_in_the_navy
+		}
+		x = 39
+		y = 5
+
+	}
+	focus = {
+		id = PUA_meddle_in_american_affairs
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_foreign_policy
+		}
+		x = 42
+		y = 9
+
+	}
+	focus = {
+		id = PUA_contact_anti_legionists
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_meddle_in_american_affairs
+		}
+		x = 39
+		y = 10
+
+	}
+	focus = {
+		id = PUA_support_anti_legionists
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_contact_anti_legionists
+		}
+		x = 40
+		y = 11
+
+	}
+	focus = {
+		id = PUA_support_oregon_uprising
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_support_anti_legionists
+		}
+		x = 39
+		y = 12
+
+	}
+	focus = {
+		id = PUA_exploit_the_peoples_fears
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_evaluate_our_situation
+		}
+		mutually_exclusive = {
+			focus = PUA_get_rid_of_paranoia
+		}
+		x = 54
+		y = 2
+
+	}
+	focus = {
+		id = PUA_encourage_the_new_left
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_get_rid_of_paranoia
+			focus = PUA_exploit_the_peoples_fears
+		}
+		mutually_exclusive = {
+			focus = PUA_stick_with_one_ideology
+		}
+		x = 41
+		y = 3
+
+	}
+	focus = {
+		id = PUA_print_lenin
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_encourage_the_new_left
+		}
+		x = 40
+		y = 4
+
+	}
+	focus = {
+		id = PUA_print_rudolf_rocker
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_encourage_the_new_left
+		}
+		x = 42
+		y = 4
+
+	}
+	focus = {
+		id = PUA_bastion_of_leftism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_print_lenin
+		}
+		prerequisite = {
+			focus = PUA_print_rudolf_rocker
+		}
+		x = 41
+		y = 5
+
+	}
+	focus = {
+		id = PUA_stick_with_one_ideology
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_get_rid_of_paranoia
+			focus = PUA_exploit_the_peoples_fears
+		}
+		mutually_exclusive = {
+			focus = PUA_encourage_the_new_left
+		}
+		x = 43
+		y = 3
+
+	}
+	focus = {
+		id = PUA_create_the_CIA
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_bastion_of_leftism
+			focus = PUA_stick_with_one_ideology
+		}
+		mutually_exclusive = {
+			focus = PUA_create_workers_police
+		}
+		x = 41
+		y = 6
+
+	}
+	focus = {
+		id = PUA_contact_quebecians
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_meddle_in_american_affairs
+		}
+		x = 41
+		y = 10
+
+	}
+	focus = {
+		id = PUA_send_aid_to_quebec_separatists
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_contact_quebecians
+		}
+		x = 42
+		y = 11
+
+	}
+	focus = {
+		id = PUA_encourage_quebians_to_rebel
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_send_aid_to_quebec_separatists
+		}
+		x = 42
+		y = 12
+
+	}
+	focus = {
+		id = PUA_create_workers_police
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_bastion_of_leftism
+			focus = PUA_stick_with_one_ideology
+		}
+		mutually_exclusive = {
+			focus = PUA_create_the_CIA
+		}
+		x = 43
+		y = 6
+
+	}
+	focus = {
+		id = PUA_orthodox_syndicalism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_stick_with_one_ideology
+		}
+		mutually_exclusive = {
+			focus = PUA_anarchism
+			focus = PUA_market_socialists
+			focus = PUA_radicalism
+		}
+		x = 44
+		y = 4
+
+	}
+	focus = {
+		id = PUA_elect_reed
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_orthodox_syndicalism
+		}
+		x = 44
+		y = 5
+
+	}
+	focus = {
+		id = PUA_create_nationwide_clubs
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_create_the_CIA
+			focus = PUA_create_workers_police
+		}
+		x = 44
+		y = 7
+
+	}
+	focus = {
+		id = PUA_advisor_plans
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_foreign_policy
+		}
+		x = 46
+		y = 9
+
+	}
+	focus = {
+		id = PUA_contact_the_germans
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_advisor_plans
+		}
+		x = 44
+		y = 10
+
+	}
+	focus = {
+		id = PUA_anarchism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_stick_with_one_ideology
+		}
+		mutually_exclusive = {
+			focus = PUA_orthodox_syndicalism
+			focus = PUA_market_socialists
+			focus = PUA_radicalism
+		}
+		x = 46
+		y = 4
+
+	}
+	focus = {
+		id = PUA_elect_flynn
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_anarchism
+		}
+		x = 46
+		y = 5
+
+	}
+	focus = {
+		id = PUA_contact_the_vietnamese
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_advisor_plans
+		}
+		x = 46
+		y = 10
+
+	}
+	focus = {
+		id = PUA_contact_the_russians
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_advisor_plans
+		}
+		x = 48
+		y = 10
+
+	}
+	focus = {
+		id = PUA_enact_trade_relations_with_cnotp
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_contact_the_germans
+		}
+		prerequisite = {
+			focus = PUA_contact_the_vietnamese
+		}
+		prerequisite = {
+			focus = PUA_contact_the_russians
+		}
+		x = 46
+		y = 11
+
+	}
+	focus = {
+		id = PUA_send_material_aid_to_caribbean
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_enact_trade_relations_with_cnotp
+		}
+		x = 44
+		y = 12
+
+	}
+	focus = {
+		id = PUA_meddle_with_mexico
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_enact_trade_relations_with_cnotp
+		}
+		x = 46
+		y = 12
+
+	}
+	focus = {
+		id = PUA_join_cnotp
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_send_material_aid_to_caribbean
+		}
+		prerequisite = {
+			focus = PUA_meddle_with_mexico
+		}
+		mutually_exclusive = {
+			focus = PUA_create_new_faction
+		}
+		x = 46
+		y = 13
+
+	}
+	focus = {
+		id = PUA_market_socialists
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_stick_with_one_ideology
+		}
+		mutually_exclusive = {
+			focus = PUA_anarchism
+			focus = PUA_orthodox_syndicalism
+			focus = PUA_radicalism
+		}
+		x = 48
+		y = 4
+
+	}
+	focus = {
+		id = PUA_elect_nord
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_market_socialists
+		}
+		x = 48
+		y = 5
+
+	}
+	focus = {
+		id = PUA_create_new_faction
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_meddle_with_mexico
+		}
+		prerequisite = {
+			focus = PUA_send_material_aid_to_caribbean
+		}
+		mutually_exclusive = {
+			focus = PUA_join_cnotp
+		}
+		x = 48
+		y = 13
+
+	}
+	focus = {
+		id = PUA_texas_question
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_foreign_policy
+		}
+		x = 49
+		y = 9
+
+	}
+	focus = {
+		id = PUA_radicalism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_stick_with_one_ideology
+		}
+		mutually_exclusive = {
+			focus = PUA_market_socialists
+			focus = PUA_orthodox_syndicalism
+			focus = PUA_anarchism
+		}
+		x = 50
+		y = 4
+
+	}
+	focus = {
+		id = PUA_re-elect_rustin
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_radicalism
+		}
+		x = 50
+		y = 5
+
+	}
+	focus = {
+		id = PUA_collaborate_with_texas
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_texas_question
+		}
+		mutually_exclusive = {
+			focus = PUA_lay_claim_to_texas
+		}
+		x = 50
+		y = 10
+
+	}
+	focus = {
+		id = PUA_create_propaganda
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_exploit_the_peoples_fears
+		}
+		x = 53
+		y = 3
+
+	}
+	focus = {
+		id = PUA_state_measures
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_exploit_the_peoples_fears
+		}
+		x = 59
+		y = 3
+
+	}
+	focus = {
+		id = PUA_war_measures
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_create_propaganda
+		}
+		prerequisite = {
+			focus = PUA_state_measures
+		}
+		x = 52
+		y = 4
+
+	}
+	focus = {
+		id = PUA_lay_claim_to_texas
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_texas_question
+		}
+		mutually_exclusive = {
+			focus = PUA_collaborate_with_texas
+		}
+		x = 52
+		y = 10
+
+	}
+	focus = {
+		id = PUA_maximize_factory_output
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_create_propaganda
+		}
+		prerequisite = {
+			focus = PUA_state_measures
+		}
+		x = 54
+		y = 4
+
+	}
+	focus = {
+		id = PUA_military_expansion_policy
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_state_measures
+		}
+		x = 56
+		y = 4
+
+	}
+	focus = {
+		id = PUA_arm_the_border
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_war_measures
+		}
+		prerequisite = {
+			focus = PUA_maximize_factory_output
+		}
+		prerequisite = {
+			focus = PUA_military_expansion_policy
+		}
+		x = 55
+		y = 5
+
+	}
+	focus = {
+		id = PUA_implement_martial_law
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_state_measures
+		}
+		prerequisite = {
+			focus = PUA_military_expansion_policy
+		}
+		x = 57
+		y = 5
+
+	}
+	focus = {
+		id = PUA_contact_black_resistance
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_meddle_in_american_affairs
+		}
+		x = 37
+		y = 10
+
+	}
+	focus = {
+		id = PUA_bring_material_aid_to_resistance
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_contact_black_resistance
+		}
+		x = 38
+		y = 11
+
+	}
+	focus = {
+		id = PUA_upllift_black_community
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_military_factor_workers
+		}
+		prerequisite = {
+			focus = PUA_dockyard_in_the_works
+		}
+		prerequisite = {
+			focus = PUA_a_new_airforce
+		}
+		x = 12
+		y = 4
+
+	}
+	focus = {
+		id = PUA_force_out_segregation
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_upllift_black_community
+		}
+		x = 12
+		y = 5
+
+	}
+	focus = {
+		id = PUA_invest_in_the_navy
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_arm_the_population
+		}
+		mutually_exclusive = {
+			focus = PUA_invest_in_airforce
+			focus = PUA_invest_in_the_army
+		}
+		x = 37
+		y = 5
+
+	}
+	focus = {
+		id = PUA_create_boyscouts
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_create_the_CIA
+			focus = PUA_create_workers_police
+		}
+		x = 40
+		y = 7
+
+	}
+	focus = {
+		id = PUA_support_a_black_uprising
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_bring_material_aid_to_resistance
+		}
+		x = 37
+		y = 12
+
+	}
+	focus = {
+		id = PUA_anti_capitalist_crusade
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_join_cnotp
+			focus = PUA_create_new_faction
+		}
+		x = 45
+		y = 14
+
+	}
+	focus = {
+		id = PUA_the_peoples_army
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_implore_technological_warfare
+		}
+		prerequisite = {
+			focus = PUA_abandon_cavalry
+		}
+		x = 25
+		y = 9
+
+	}
+	focus = {
+		id = PUA_up_to_date_hulls
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_new_dockyards
+		}
+		x = 36
+		y = 7
+
+	}
+	focus = {
+		id = PUA_offensive_war
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_new_submarines
+		}
+		prerequisite = {
+			focus = PUA_new_destroyers
+		}
+		prerequisite = {
+			focus = PUA_up_to_date_hulls
+		}
+		x = 33
+		y = 8
+
+	}
+	focus = {
+		id = PUA_defensive_strategies
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_new_submarines
+		}
+		prerequisite = {
+			focus = PUA_new_destroyers
+		}
+		prerequisite = {
+			focus = PUA_up_to_date_hulls
+		}
+		x = 35
+		y = 8
+
+	}
+	focus = {
+		id = PUA_peoples_navy
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_offensive_war
+		}
+		prerequisite = {
+			focus = PUA_defensive_strategies
+		}
+		x = 34
+		y = 9
+
+	}
+}
