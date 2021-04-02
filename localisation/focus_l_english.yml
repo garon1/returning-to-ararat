@@ -1,4 +1,8 @@
 ﻿l_english:
+PUA_propaganda_tt:0 "Creating propaganda for the people will overall provide a §Bboost§! for the current ruling party."
+PUA_workers_police:0 "Creating the §YWorker's Police§! in the §YUnion§! can help calm the populace to an extent §Rbut not totally§!, but as a result §Bstability will return to the Union.§!"
+PUA_cia:0 "Creating the §YCIA§! will ultimatly §Bhelp§! the populace's paranoia, but overall cause §Rinstability§!."
+PUA_black_community_uplifted:0 "§YThe uplifting of the Black community, specifically Black empowerment and nationalism can immediately weaken the Confederates...§!"
 ASY_event_implementation:0 "Implement an event here."
 ASY_may_elections1:0 "§YThe long awaited elections of May will finally be here.§!"
 ARM_victory_in_civil_war:0 "Victory In Civil War"

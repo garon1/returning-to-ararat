@@ -1,0 +1,14 @@
+scripted_gui = {
+
+	arm_parliament_decision_ui = {
+		context_type = decision_category
+		window_name = "arm_parliament_decision_ui_window"
+
+		properties = {
+			arm_parliament_icon = {
+				frame = ARM_current_parliament_icon_frame
+			}
+		}
+	}
+}
+

@@ -5,8 +5,7 @@ state={
 		4073 9947 
 	}
 	history={
-		set_demilitarized_zone = yes
-		owner = GTA
+		owner = EGY
 		buildings = {
 			infrastructure = 2
 			dockyard = 1
@@ -17,7 +16,6 @@ state={
 
 		}
 		add_core_of = EGY
-		add_core_of = GTA
 
 	}
 	manpower=100359

@@ -13,10 +13,6 @@ country_event = {
 	hours = 6
 }
 country_event = {
-	id = unista.3
-	days = 10
-}
-country_event = {
 	id = tas_political.1
 	hours = 6
 }
@@ -103,38 +99,6 @@ if = {
 		mtg_transport = 1
 		improved_airplane_launcher = 1
 	}
-	add_ideas = MTG_naval_treaty_adherent
-
-
-#Monroe Doctrine
-give_guarantee = CAN
-give_guarantee = MEX
-give_guarantee = CUB
-give_guarantee = VEN
-give_guarantee = COL
-give_guarantee = PRU
-give_guarantee = BRA
-give_guarantee = CHL
-
-
-304 = {
-	start_resistance = yes
-	set_compliance = 0
-	set_resistance = 20
-	set_garrison_strength = 1.0
-}
-685 = {
-	start_resistance = yes
-	set_compliance = 0
-	set_resistance = 20
-	set_garrison_strength = 1.0
-}
-686 = {
-	start_resistance = yes
-	set_compliance = 60
-	set_resistance = 1
-	set_garrison_strength = 1.0
-}
 set_convoys = 500
 
 

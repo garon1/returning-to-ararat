@@ -1,4 +1,9 @@
 ﻿l_english:
+PUA_workers_union:0 "Union Of the PUA"
+workers_union_support_header:0 "Union Support"
+PUA_congress_workers_union_support_header:0 "Union Support"
+status_workers_union:0 "Workers Union"
+PUA_congress_workers_union_support_amount:0 "Amount of Support"
  DECISIONVIEW_TITLE:0 "Events and Decisions"
  DECISIONSVIEW_EVENT_HEADER:0 "Events"
  POPUP_NEWS:0 "News Popup"

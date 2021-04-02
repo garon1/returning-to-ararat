@@ -14,7 +14,19 @@ focus_tree = {
 		cost = 7.00
 		x = 7
 		y = 0
-
+		ai_will_do = {
+			factor = 200
+		}
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		country_event = pua.1
+		}
 	}
 	focus = {
 		id = PUA_the_red_giant_awakens
@@ -22,7 +34,20 @@ focus_tree = {
 		cost = 7.00
 		x = 42
 		y = 0
-
+		ai_will_do = {
+			factor = 150
+		}
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_stability = 0.05
+		add_political_power = 150
+		}
 	}
 	focus = {
 		id = PUA_foreign_policy
@@ -30,7 +55,19 @@ focus_tree = {
 		cost = 7.00
 		x = 46
 		y = 8
-
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_ideas = PUA_new_foreign_policy
+		}
 	}
 	focus = {
 		id = PUA_military_focus
@@ -38,7 +75,12 @@ focus_tree = {
 		cost = 5.00
 		x = 29
 		y = 4
-
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+		country_event = pua.2
+		}
 	}
 	focus = {
 		id = PUA_force_bayard_to_change
@@ -52,18 +94,50 @@ focus_tree = {
 		}
 		x = 5
 		y = 1
-
+		ai_will_do = {
+			factor = 200
+		}
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		hidden_effect = {
+		set_country_flag = PUA_bayard_changes
+		}
+		if = {
+		limit = {
+		has_ideas = PUA_communist_transformation
+				}
+				swap_ideas = {
+				add_idea = PUA_communist_transformation1
+				remove_idea = PUA_communist_transformation
+				}
+			}
+		}
 	}
 	focus = {
 		id = PUA_slow_down_transition
 		icon = GFX_goal_unknown
-		cost = 7.00
+		cost = 5.00
 		prerequisite = {
 			focus = PUA_force_bayard_to_change
 		}
 		x = 5
 		y = 2
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_stability = 0.1
+		}
 	}
 	focus = {
 		id = PUA_adopt_german_economic_policies
@@ -74,7 +148,25 @@ focus_tree = {
 		}
 		x = 3
 		y = 3
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		GER = {
+		add_opinion_modifier = { modifier = medium_increase target = PUA }
+		}
+		PUA = {
+		add_opinion_modifier = { modifier = medium_increase target = GER }
+		}
+		add_popularity = {
+		popularity = 0.15
+		ideology = syndicalism
+			}
+		}
 	}
 	focus = {
 		id = PUA_stop_capitalist_trading
@@ -85,7 +177,27 @@ focus_tree = {
 		}
 		x = 2
 		y = 4
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		PUA = {
+		add_opinion_modifier = { modifier = embargo target = SPR }
+			}
+		PUA = {
+		add_opinion_modifier = { modifier = embargo target = FRA }
+			}
+		PUA = {
+		add_opinion_modifier = { modifier = embargo target = ENG}
+			}
+		PUA = {
+		add_opinion_modifier = { modifier = embargo target = CAN }
+			}
+		}
 	}
 	focus = {
 		id = PUA_stregthen_unionists
@@ -96,7 +208,20 @@ focus_tree = {
 		}
 		x = 5
 		y = 3
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_ideas = PUA_unionists_strengthened
+		add_popularity = {
+		popularity = 0.07
+		ideology = syndicalism
+			}
+		}
 	}
 	focus = {
 		id = PUA_annual_deal_act
@@ -110,7 +235,16 @@ focus_tree = {
 		}
 		x = 4
 		y = 4
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		country_event = pua.3
+		}
 	}
 	focus = {
 		id = PUA_collectivize_the_farms
@@ -121,7 +255,24 @@ focus_tree = {
 		}
 		x = 7
 		y = 3
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		if = {
+		limit = {
+		has_ideas = PUA_struggle_for_self_suffenciency
+				}
+				swap_ideas = {
+				add_idea = PUA_struggle_for_self_suffenciency1
+				remove_idea = PUA_struggle_for_self_suffenciency
+				}
+			}
+		}
 	}
 	focus = {
 		id = PUA_from_the_farmers_to_miners
@@ -132,7 +283,33 @@ focus_tree = {
 		}
 		x = 6
 		y = 5
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		if = {
+		limit = {
+		has_ideas = PUA_struggle_for_self_suffenciency
+				}
+				swap_ideas = {
+				add_idea = PUA_struggle_for_self_suffenciency1
+				remove_idea = PUA_struggle_for_self_suffenciency
+				}
+			}
+		if = {
+		limit = {
+		has_ideas = PUA_struggle_for_self_suffenciency1
+				}
+				swap_ideas = {
+				add_idea = PUA_struggle_for_self_suffenciency2
+				remove_idea = PUA_struggle_for_self_suffenciency1
+				}
+			}
+		}
 	}
 	focus = {
 		id = PUA_clean_urban_areas
@@ -146,7 +323,43 @@ focus_tree = {
 		}
 		x = 10
 		y = 4
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
 	}
 	focus = {
 		id = PUA_housing_act
@@ -157,7 +370,16 @@ focus_tree = {
 		}
 		x = 8
 		y = 5
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		country_event = pua.4
+		}
 	}
 	focus = {
 		id = PUA_increase_state_working_propaganda
@@ -171,7 +393,21 @@ focus_tree = {
 		}
 		x = 7
 		y = 6
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_war_support = 0.1
+		add_political_power = 150
+		add_popularity = {
+		popularity = 0.1
+		ideology = syndicalism
+			}
+		}
 	}
 	focus = {
 		id = PUA_set_up_union_restaurants
@@ -185,7 +421,42 @@ focus_tree = {
 		}
 		x = 4
 		y = 6
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		if = {
+		limit = {
+		has_ideas = PUA_communist_transformation2
+				}
+				swap_ideas = {
+				add_idea = PUA_communist_transformation3
+				remove_idea = PUA_communist_transformation2
+				}
+			}
+		if = {
+		limit = {
+		has_ideas = PUA_communist_transformation1
+				}
+				swap_ideas = {
+				add_idea = PUA_communist_transformation2
+				remove_idea = PUA_communist_transformation1
+				}
+			}
+		if = {
+		limit = {
+		has_ideas = PUA_communist_transformation
+				}
+				swap_ideas = {
+				add_idea = PUA_communist_transformation1
+				remove_idea = PUA_communist_transformation
+				}
+			}
+		}
 	}
 	focus = {
 		id = PUA_decentralized_transformation_is_complete
@@ -199,21 +470,48 @@ focus_tree = {
 		}
 		x = 10
 		y = 7
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		country_event = pua.5
+		}
 	}
 	focus = {
 		id = PUA_keep_with_bayards_politics
 		icon = GFX_goal_unknown
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PUA_re-evaluate_reconstruction
 		}
 		mutually_exclusive = {
 			focus = PUA_force_bayard_to_change
 		}
+		ai_will_do = {
+			factor = 50
+		}
 		x = 20
 		y = 1
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		hidden_effect = {
+		set_country_flag = PUA_bayard_stays_the_same
+		}
+		add_popularity = {
+		popularity = 0.1
+		ideology = radical_socialism
+			}
+		}
 	}
 	focus = {
 		id = PUA_jobs_for_the_military
@@ -225,7 +523,16 @@ focus_tree = {
 		}
 		x = 13
 		y = 2
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_ideas = PUA_military_jobs
+		}
 	}
 	focus = {
 		id = PUA_military_factor_workers
@@ -234,9 +541,30 @@ focus_tree = {
 		prerequisite = {
 			focus = PUA_jobs_for_the_military
 		}
+		mutually_exclusive = {
+			focus = PUA_dockyard_in_the_works
+			focus = PUA_a_new_airforce
+		}
 		x = 12
 		y = 3
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		if = {
+		limit = {
+		has_ideas = PUA_military_jobs
+				}
+				swap_ideas = {
+				add_idea = PUA_military_jobs1
+				remove_idea = PUA_military_jobs
+				}
+			}
+		}
 	}
 	focus = {
 		id = PUA_dockyard_in_the_works
@@ -247,7 +575,20 @@ focus_tree = {
 		}
 		x = 14
 		y = 3
-
+		mutually_exclusive = {
+			focus = PUA_military_factory_workers
+			focus = PUA_a_new_airforce
+		}
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_ideas = PUA_dockyard_jobs
+		}
 	}
 	focus = {
 		id = PUA_a_new_airforce
@@ -258,12 +599,53 @@ focus_tree = {
 		}
 		x = 16
 		y = 3
-
+		mutually_exclusive = {
+			focus = PUA_military_factory_workers
+			focus = PUA_dockyard_in_the_works
+		}
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_ideas = PUA_airforce_jobs
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = air_base
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
 	}
 	focus = {
 		id = PUA_improve_working_conditions_for_factories
 		icon = GFX_goal_unknown
-		cost = 7.00
+		cost = 8.00
 		prerequisite = {
 			focus = PUA_military_factor_workers
 		}
@@ -275,7 +657,42 @@ focus_tree = {
 		}
 		x = 15
 		y = 4
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = PUA_partial_mobilization
@@ -286,7 +703,26 @@ focus_tree = {
 		}
 		x = 14
 		y = 5
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		bypass = {
+		has_idea = partial_economic_mobilisation
+		}
+		completion_reward = {
+		if = {
+		limit = {
+		NOT = {
+		has_ideas = partial_economic_mobilisation
+					}
+				}
+				add_ideas = partial_economic_mobilisation
+			}
+		}
 	}
 	focus = {
 		id = PUA_increase_transition_period
@@ -297,7 +733,24 @@ focus_tree = {
 		}
 		x = 20
 		y = 2
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		if = {
+		limit = {
+		has_ideas = PUA_communist_transformation
+				}
+				swap_ideas = {
+				add_idea = PUA_centralized_communist_transformation
+				remove_idea = PUA_communist_transformation
+				}
+			}
+		}
 	}
 	focus = {
 		id = PUA_based_lenins_policies
@@ -308,7 +761,24 @@ focus_tree = {
 		}
 		x = 18
 		y = 3
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		if = {
+		limit = {
+		has_ideas = PUA_centralized_communist_transformation
+				}
+				swap_ideas = {
+				add_idea = PUA_centralized_communist_transformation1
+				remove_idea = PUA_centralized_communist_transformation
+				}
+			}
+		}
 	}
 	focus = {
 		id = PUA_reverse_farming_policies
@@ -319,7 +789,16 @@ focus_tree = {
 		}
 		x = 21
 		y = 3
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		country_event = pua.8
+		}
 	}
 	focus = {
 		id = PUA_new_cities_initative
@@ -330,7 +809,16 @@ focus_tree = {
 		}
 		x = 20
 		y = 4
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		country_event = pua.9
+		}
 	}
 	focus = {
 		id = PUA_nationalize_public_transportation
@@ -344,7 +832,16 @@ focus_tree = {
 		}
 		x = 17
 		y = 4
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_ideas = PUA_nationalized_transportation
+		}
 	}
 	focus = {
 		id = PUA_maximize_industrial_output
@@ -358,7 +855,33 @@ focus_tree = {
 		}
 		x = 18
 		y = 6
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		if = {
+		limit = {
+		has_ideas = PUA_struggle_for_self_suffenciency
+				}
+				swap_ideas = {
+				add_idea = PUA_centralized_struggle
+				remove_idea = PUA_struggle_for_self_suffenciency
+			}
+		}
+		if = {
+		limit = {
+		has_ideas = PUA_centralized_struggle
+				}
+				swap_ideas = {
+				add_idea = PUA_centralized_struggle1
+				remove_idea = PUA_centralized_struggle
+				}
+			}
+		}
 	}
 	focus = {
 		id = PUA_nationalize_minerals
@@ -369,7 +892,30 @@ focus_tree = {
 		}
 		x = 25
 		y = 3
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		bypass = {
+		NOT = {
+		has_full_control_of_state = 373
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		373 = {
+		add_resource = { 
+					type = aluminium
+					amount = 21
+				}
+				add_resource = { 
+					type = steel
+					amount = 9
+				}
+			}
+		}
 	}
 	focus = {
 		id = PUA_change_the_wage_act
@@ -383,10 +929,19 @@ focus_tree = {
 		}
 		x = 23
 		y = 4
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		country_event = pua.10
+		}
 	}
 	focus = {
-		id = PUA_new_technological_innovations
+		id = PUA_promote_jakism
 		icon = GFX_goal_unknown
 		cost = 7.00
 		prerequisite = {
@@ -397,7 +952,29 @@ focus_tree = {
 		}
 		x = 21
 		y = 5
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		MEX = { 
+		add_popularity = {
+		popularity = 0.1
+		ideology = radical_socialism
+		}
+					add_opinion_modifier = { target = PUA modifier = medium_decrease }
+				}
+		CAN = { 
+		add_popularity = {
+		popularity = 0.1
+		ideology = radical_socialism
+		}
+					add_opinion_modifier = { target = PUA modifier = medium_decrease }
+				}
+		}
 	}
 	focus = {
 		id = PUA_the_fishing_industry
@@ -407,11 +984,43 @@ focus_tree = {
 			focus = PUA_maximize_industrial_output
 		}
 		prerequisite = {
-			focus = PUA_new_technological_innovations
+			focus = PUA_promote_jakism
 		}
 		x = 20
 		y = 7
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		bypass = {
+		NOT = {
+		has_full_control_of_state = 359
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_stability = 0.1
+		add_manpower = 20000
+		359 = {
+				if = { 
+					limit = {
+						free_building_slots = {
+							building = dockyard
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+				}	
+			}
+		}
 	}
 	focus = {
 		id = PUA_create_annual_holidays
@@ -422,12 +1031,47 @@ focus_tree = {
 		}
 		x = 26
 		y = 4
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		if = {
+		limit = {
+		has_ideas = PUA_struggle_for_self_suffenciency
+				}
+				swap_ideas = {
+				add_idea = PUA_centralized_struggle
+				remove_idea = PUA_struggle_for_self_suffenciency
+			}
+		}
+		if = {
+		limit = {
+		has_ideas = PUA_centralized_struggle1
+				}
+				swap_ideas = {
+				add_idea = PUA_centralized_struggle2
+				remove_idea = PUA_centralized_struggle1
+				}
+			}
+		if = {
+		limit = {
+		has_ideas = PUA_centralized_struggle
+				}
+				swap_ideas = {
+				add_idea = PUA_centralized_struggle1
+				remove_idea = PUA_centralized_struggle
+				}
+			}
+		}
 	}
 	focus = {
 		id = PUA_reduce_work_days
 		icon = GFX_goal_unknown
-		cost = 7.00
+		cost = 4.00
 		prerequisite = {
 			focus = PUA_change_the_wage_act
 		}
@@ -436,21 +1080,43 @@ focus_tree = {
 		}
 		x = 24
 		y = 5
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_stability = 0.08
+		add_popularity = {
+		popularity = 0.08
+		ideology = radical_socialism
+			}
+		}
 	}
 	focus = {
 		id = PUA_max_agricultural_output
 		icon = GFX_goal_unknown
 		cost = 7.00
 		prerequisite = {
-			focus = PUA_new_technological_innovations
+			focus = PUA_promote_jakism
 		}
 		prerequisite = {
 			focus = PUA_reduce_work_days
 		}
 		x = 23
 		y = 6
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_ideas = PUA_agriculture_focus
+		}
 	}
 	focus = {
 		id = PUA_transition_is_complete
@@ -464,18 +1130,30 @@ focus_tree = {
 		}
 		x = 22
 		y = 8
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		country_event = pua.11
+		}
 	}
 	focus = {
 		id = PUA_divert_funds_to_the_army
 		icon = GFX_goal_unknown
-		cost = 5.00
+		cost = 4.00
 		prerequisite = {
 			focus = PUA_military_focus
 		}
 		x = 27
 		y = 5
-
+		completion_reward = {
+		army_experience = 25
+		add_political_power = -150
+		}
 	}
 	focus = {
 		id = PUA_offensive_doctorines
@@ -486,7 +1164,9 @@ focus_tree = {
 		}
 		x = 26
 		y = 6
-
+		completion_reward = {
+			add_ideas = { FRA_firepower }
+		}
 	}
 	focus = {
 		id = PUA_new_modern_guns
@@ -497,7 +1177,16 @@ focus_tree = {
 		}
 		x = 24
 		y = 7
-
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
 	}
 	focus = {
 		id = PUA_learn_from_the_civil_war
@@ -508,7 +1197,15 @@ focus_tree = {
 		}
 		x = 26
 		y = 7
-
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 2.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
 	}
 	focus = {
 		id = PUA_implore_technological_warfare
@@ -522,7 +1219,15 @@ focus_tree = {
 		}
 		x = 25
 		y = 8
-
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = ROM_modern_at_guns
+				bonus = 1.0
+				uses = 2
+				category = cat_anti_tank
+			}
+		}
 	}
 	focus = {
 		id = PUA_learn_from_the_great_war
@@ -533,7 +1238,15 @@ focus_tree = {
 		}
 		x = 28
 		y = 7
-
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
+		}
 	}
 	focus = {
 		id = PUA_abandon_cavalry
@@ -547,7 +1260,15 @@ focus_tree = {
 		}
 		x = 27
 		y = 8
-
+		available_if_capitulated = yes
+		completion_reward = {
+		add_tech_bonus = {
+				name = ROM_vanatori_de_munte
+				bonus = 1.0
+				uses = 1
+				category = mountaineers_tech
+			}
+		}
 	}
 	focus = {
 		id = PUA_divert_funds_to_airforce
@@ -558,7 +1279,11 @@ focus_tree = {
 		}
 		x = 30
 		y = 5
-
+		available_if_capitulated = yes
+	completion_reward = {
+		air_experience = 20
+		add_political_power = -150
+		}
 	}
 	focus = {
 		id = PUA_invest_in_better_fighters
@@ -569,7 +1294,22 @@ focus_tree = {
 		}
 		x = 29
 		y = 6
-
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+				technology = heavy_fighter1
+				technology = heavy_fighter2
+				technology = heavy_fighter3
+			}
+		}
+		
 	}
 	focus = {
 		id = PUA_different_bombers
@@ -580,7 +1320,18 @@ focus_tree = {
 		}
 		x = 31
 		y = 6
-
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 2
+				technology = strategic_bomber1
+				technology = strategic_bomber2
+				technology = strategic_bomber3
+				category = tactical_bomber
+			}
+		}
 	}
 	focus = {
 		id = PUA_new_air_bases
@@ -594,7 +1345,48 @@ focus_tree = {
 		}
 		x = 30
 		y = 7
+		available_if_capitulated = yes
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = air_focus_bypass_tt
+				NOT = {
+					any_owned_state = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+				}
+			}
+		}
 
+		complete_tooltip = {
+			air_experience = 25
+			every_state = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+				
+			}
+		}
 	}
 	focus = {
 		id = PUA_anti_air
@@ -605,7 +1397,23 @@ focus_tree = {
 		}
 		x = 29
 		y = 8
-
+		available_if_capitulated = yes
+		completion_reward = {
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+				}		
+				add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = anti_air_building
+                    level = 2
+                    instant_build = yes
+                    }
+			}
+ 		}
 	}
 	focus = {
 		id = PUA_jet_technology
@@ -616,12 +1424,21 @@ focus_tree = {
 		}
 		x = 31
 		y = 8
-
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = jet_rocket_bonus
+				ahead_reduction = 2
+				uses = 2
+				category = rocketry
+				category = jet_technology
+			}
+		}
 	}
 	focus = {
 		id = PUA_peoples_air_force
 		icon = GFX_goal_unknown
-		cost = 5.00
+		cost = 4.00
 		prerequisite = {
 			focus = PUA_anti_air
 		}
@@ -630,7 +1447,10 @@ focus_tree = {
 		}
 		x = 30
 		y = 9
-
+		available_if_capitulated = yes
+		completion_reward = {
+			air_experience = 20
+		}
 	}
 	focus = {
 		id = PUA_divert_funds_to_navy
@@ -641,7 +1461,11 @@ focus_tree = {
 		}
 		x = 33
 		y = 5
-
+		available_if_capitulated = yes
+		completion_reward = {
+		navy_experience = 20
+		add_political_power = -150
+		}	
 	}
 	focus = {
 		id = PUA_create_new_naval_bases
@@ -652,7 +1476,33 @@ focus_tree = {
 		}
 		x = 33
 		y = 6
-
+		available_if_capitulated = yes
+		completion_reward = {
+			882 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = naval_base
+						level = 3
+						province = 9832
+						instant_build = yes
+					}
+					
+				}
+			}
+			361 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = naval_base
+						level = 3
+						province = 9786
+						instant_build = yes
+					}
+					
+				}
+			}
+		}
 	}
 	focus = {
 		id = PUA_new_submarines
@@ -663,7 +1513,16 @@ focus_tree = {
 		}
 		x = 32
 		y = 7
-
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = ss_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = ss_tech
+			}
+		}
 	}
 	focus = {
 		id = PUA_new_dockyards
@@ -674,7 +1533,33 @@ focus_tree = {
 		}
 		x = 35
 		y = 6
-
+		available_if_capitulated = yes
+		completion_reward = {
+			358 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						province = 3878
+						instant_build = yes
+					}
+					
+				}
+			}
+			359 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						province = 6882
+						instant_build = yes
+					}
+					
+				}
+			}
+		}
 	}
 	focus = {
 		id = PUA_new_destroyers
@@ -688,18 +1573,36 @@ focus_tree = {
 		}
 		x = 34
 		y = 7
-
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 2.0
+				ahead_reduction = 2
+				uses = 1
+				category = dd_tech
+			}
+		}
 	}
 	focus = {
 		id = PUA_evaluate_our_situation
 		icon = GFX_goal_unknown
-		cost = 7.00
+		cost = 4.00
 		prerequisite = {
 			focus = PUA_the_red_giant_awakens
 		}
 		x = 42
 		y = 1
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_war_support = 0.1
+		}
 	}
 	focus = {
 		id = PUA_get_rid_of_paranoia
@@ -713,18 +1616,49 @@ focus_tree = {
 		}
 		x = 39
 		y = 2
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		if = {
+		limit = {
+		has_idea = PUA_paranoia
+				}
+				swap_ideas = {
+				add_idea = PUA_paranoia1
+				remove_idea = PUA_paranoia
+				}
+			}
+		}
 	}
 	focus = {
 		id = PUA_wake_our_populace_up_to_the_threats
 		icon = GFX_goal_unknown
-		cost = 7.00
+		cost = 5.00
 		prerequisite = {
 			focus = PUA_get_rid_of_paranoia
 		}
 		x = 37
 		y = 3
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_stability = -0.05
+		add_war_support = 0.05
+		add_popularity = {
+		popularity = 0.07
+		ideology = syndicalism
+			}
+		}
 	}
 	focus = {
 		id = PUA_fortify_the_nation
@@ -735,7 +1669,81 @@ focus_tree = {
 		}
 		x = 36
 		y = 4
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		859 = {
+				limit = {
+					is_controlled_by = ROOT
+					is_in_home_area = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes			
+					}
+					level = 2
+					instant_build = yes
+				}
+			}
+		392 = {
+				limit = {
+					is_controlled_by = ROOT
+					is_in_home_area = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes			
+					}
+					level = 2
+					instant_build = yes
+				}
+			}
+			369 = {
+				limit = {
+					is_controlled_by = ROOT
+					is_in_home_area = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes			
+					}
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = PUA_invest_in_airforce
@@ -750,7 +1758,43 @@ focus_tree = {
 		}
 		x = 35
 		y = 5
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = air_base
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
 	}
 	focus = {
 		id = PUA_arm_the_population
@@ -764,8 +1808,39 @@ focus_tree = {
 		}
 		x = 38
 		y = 4
-
-	}
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 10000
+				producer = PUA
+			}
+			division_template = {
+				name = "Militia Garrison Brigade"
+				division_names_group = PUA_GAR_01
+				is_locked = yes
+				regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 392 }
+				create_unit = {
+					division = "division_template = \"Militia Garrison Brigade\" start_experience_factor = 0.1"
+					owner = PUA
+					count = 3
+				}
+			}
+		}
+	}	
 	focus = {
 		id = PUA_invest_in_the_army
 		icon = GFX_goal_unknown
@@ -782,7 +1857,65 @@ focus_tree = {
 		}
 		x = 39
 		y = 5
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		hidden_effect = {
+		add_political_power = -200
+		add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -6000
+				producer = PUA
+			}
+		}
+		division_template = {
+				name = "Cavalry Militia"
 
+	division_names_group = PUA_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 1 y = 3 }
+	}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 361 }
+				create_unit = {
+					division = "division_template = \"Cavalry Militia\" start_experience_factor = 0.1"
+					owner = PUA
+					count = 3
+				}
+			}
+			division_template = {
+				name = "Red Infantry"
+			division_names_group = PUA_INF_01
+			is_locked = yes
+			regiments = {
+			infantry = { x = 0 y = 0 }
+			infantry = { x = 0 y = 1 }
+			infantry = { x = 0 y = 2 }
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 394 }
+				create_unit = {
+					division = "division_template = \"Red Infantry\" start_experience_factor = 0.1"
+					owner = PUA
+					count = 3
+				}
+			}
+		}
 	}
 	focus = {
 		id = PUA_meddle_in_american_affairs
@@ -793,7 +1926,13 @@ focus_tree = {
 		}
 		x = 42
 		y = 9
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 	}
 	focus = {
 		id = PUA_contact_anti_legionists
@@ -804,7 +1943,13 @@ focus_tree = {
 		}
 		x = 39
 		y = 10
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 	}
 	focus = {
 		id = PUA_support_anti_legionists
@@ -815,7 +1960,13 @@ focus_tree = {
 		}
 		x = 40
 		y = 11
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 	}
 	focus = {
 		id = PUA_support_oregon_uprising
@@ -826,7 +1977,13 @@ focus_tree = {
 		}
 		x = 39
 		y = 12
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 	}
 	focus = {
 		id = PUA_exploit_the_peoples_fears
@@ -840,7 +1997,28 @@ focus_tree = {
 		}
 		x = 54
 		y = 2
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_popularity = {
+		popularity = 0.07
+		ideology = radical_socialism
+		}
+		if = {
+		limit = {
+		has_idea = PUA_paranoia
+				}
+				swap_ideas = {
+				add_idea = PUA_paranoia2
+				remove_idea = PUA_paranoia
+				}
+			}
+		}
 	}
 	focus = {
 		id = PUA_encourage_the_new_left
@@ -855,7 +2033,19 @@ focus_tree = {
 		}
 		x = 41
 		y = 3
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_popularity = {
+		popularity = 0.15
+		ideology = market_socialism
+			}
+		}
 	}
 	focus = {
 		id = PUA_print_lenin
@@ -866,7 +2056,16 @@ focus_tree = {
 		}
 		x = 40
 		y = 4
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		country_event = pua.12
+		}
 	}
 	focus = {
 		id = PUA_print_rudolf_rocker
@@ -877,7 +2076,16 @@ focus_tree = {
 		}
 		x = 42
 		y = 4
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		country_event = pua.13
+		}
 	}
 	focus = {
 		id = PUA_bastion_of_leftism
@@ -891,7 +2099,24 @@ focus_tree = {
 		}
 		x = 41
 		y = 5
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		if = {
+		limit = {
+		has_idea = PUA_infighting
+				}
+				swap_ideas = {
+				remove_idea = PUA_infighting
+				add_idea = PUA_infighting1
+				}
+			}
+		}
 	}
 	focus = {
 		id = PUA_stick_with_one_ideology
@@ -906,7 +2131,19 @@ focus_tree = {
 		}
 		x = 43
 		y = 3
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_popularity = {
+		popularity = -0.15
+		ideology = market_socialism
+			}
+		}
 	}
 	focus = {
 		id = PUA_create_the_CIA
@@ -921,7 +2158,27 @@ focus_tree = {
 		}
 		x = 41
 		y = 6
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		hidden_effect = {
+		country_event = {
+		id = pua.16 days = 60#events that cause instability
+				}
+		country_event = {
+		id = pua.15 days = 40#events that cause instability
+				}
+		country_event = {
+		id = pua.14 days = 2
+				}
+			}
+			custom_effect_tooltip = PUA_cia
+		}
 	}
 	focus = {
 		id = PUA_contact_quebecians
@@ -932,7 +2189,13 @@ focus_tree = {
 		}
 		x = 41
 		y = 10
-
+	available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 	}
 	focus = {
 		id = PUA_send_aid_to_quebec_separatists
@@ -943,7 +2206,13 @@ focus_tree = {
 		}
 		x = 42
 		y = 11
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 	}
 	focus = {
 		id = PUA_encourage_quebians_to_rebel
@@ -954,7 +2223,13 @@ focus_tree = {
 		}
 		x = 42
 		y = 12
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 	}
 	focus = {
 		id = PUA_create_workers_police
@@ -969,7 +2244,27 @@ focus_tree = {
 		}
 		x = 43
 		y = 6
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		hidden_effect = {
+		country_event = {
+		id = pua.19 days = 60#events about the police
+				}
+		country_event = {
+		id = pua.18 days = 40#events about the police
+				}
+		country_event = {
+		id = pua.17 days = 2
+				}
+			}
+			custom_effect_tooltip = PUA_workers_police
+		}
 	}
 	focus = {
 		id = PUA_orthodox_syndicalism
@@ -985,7 +2280,21 @@ focus_tree = {
 		}
 		x = 44
 		y = 4
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_stability=  0.05
+		ARM_parliament_support_remove5 = yes
+		add_popularity = {
+		popularity = 0.05
+		ideology = syndicalism
+			}
+		}
 	}
 	focus = {
 		id = PUA_elect_reed
@@ -996,7 +2305,19 @@ focus_tree = {
 		}
 		x = 44
 		y = 5
-
+		available = {
+		always = no
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		hidden_effect = {
+		ARM_parliament_support_remove10 = yes
+			}
+		}
 	}
 	focus = {
 		id = PUA_create_nationwide_clubs
@@ -1008,7 +2329,16 @@ focus_tree = {
 		}
 		x = 44
 		y = 7
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		country_event = pua.19
+		}
 	}
 	focus = {
 		id = PUA_advisor_plans
@@ -1019,7 +2349,13 @@ focus_tree = {
 		}
 		x = 46
 		y = 9
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 	}
 	focus = {
 		id = PUA_contact_the_germans
@@ -1030,7 +2366,13 @@ focus_tree = {
 		}
 		x = 44
 		y = 10
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 	}
 	focus = {
 		id = PUA_anarchism
@@ -1046,7 +2388,21 @@ focus_tree = {
 		}
 		x = 46
 		y = 4
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_stability=  0.04
+		ARM_parliament_support_remove5 = yes
+		add_popularity = {
+		popularity = 0.08
+		ideology = anarchism
+			}
+		}
 	}
 	focus = {
 		id = PUA_elect_flynn
@@ -1057,7 +2413,19 @@ focus_tree = {
 		}
 		x = 46
 		y = 5
-
+		available = {
+		always = no
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		hidden_effect = {
+		ARM_parliament_support_remove5 = yes
+			}
+		}
 	}
 	focus = {
 		id = PUA_contact_the_vietnamese
@@ -1068,7 +2436,13 @@ focus_tree = {
 		}
 		x = 46
 		y = 10
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 	}
 	focus = {
 		id = PUA_contact_the_russians
@@ -1079,7 +2453,13 @@ focus_tree = {
 		}
 		x = 48
 		y = 10
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 	}
 	focus = {
 		id = PUA_enact_trade_relations_with_cnotp
@@ -1096,7 +2476,13 @@ focus_tree = {
 		}
 		x = 46
 		y = 11
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 	}
 	focus = {
 		id = PUA_send_material_aid_to_caribbean
@@ -1107,7 +2493,13 @@ focus_tree = {
 		}
 		x = 44
 		y = 12
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 	}
 	focus = {
 		id = PUA_meddle_with_mexico
@@ -1118,7 +2510,13 @@ focus_tree = {
 		}
 		x = 46
 		y = 12
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 	}
 	focus = {
 		id = PUA_join_cnotp
@@ -1135,7 +2533,13 @@ focus_tree = {
 		}
 		x = 46
 		y = 13
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 	}
 	focus = {
 		id = PUA_market_socialists
@@ -1151,7 +2555,21 @@ focus_tree = {
 		}
 		x = 48
 		y = 4
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_stability = 0.03
+		ARM_parliament_support_remove10 = yes
+		add_popularity = {
+		popularity = 0.1
+		ideology = market_socialism
+			}
+		}
 	}
 	focus = {
 		id = PUA_elect_nord
@@ -1162,7 +2580,19 @@ focus_tree = {
 		}
 		x = 48
 		y = 5
-
+		available = {
+		always = no
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		hidden_effect = {
+		ARM_parliament_support_remove10 = yes
+			}
+		}
 	}
 	focus = {
 		id = PUA_create_new_faction
@@ -1179,7 +2609,13 @@ focus_tree = {
 		}
 		x = 48
 		y = 13
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 	}
 	focus = {
 		id = PUA_texas_question
@@ -1190,7 +2626,13 @@ focus_tree = {
 		}
 		x = 49
 		y = 9
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 	}
 	focus = {
 		id = PUA_radicalism
@@ -1206,7 +2648,21 @@ focus_tree = {
 		}
 		x = 50
 		y = 4
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_stability=  0.04
+		ARM_parliament_support_add10 = yes
+		add_popularity = {
+		popularity = 0.08
+		ideology = radical_socialism
+			}
+		}
 	}
 	focus = {
 		id = PUA_re-elect_rustin
@@ -1217,7 +2673,19 @@ focus_tree = {
 		}
 		x = 50
 		y = 5
-
+		available = {
+		always = no
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		hidden_effect = {
+		ARM_parliament_support_add10 = yes
+			}
+		}
 	}
 	focus = {
 		id = PUA_collaborate_with_texas
@@ -1231,7 +2699,13 @@ focus_tree = {
 		}
 		x = 50
 		y = 10
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 	}
 	focus = {
 		id = PUA_create_propaganda
@@ -1242,7 +2716,58 @@ focus_tree = {
 		}
 		x = 53
 		y = 3
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		custom_effect_tooltip = PUA_propaganda_tt
+		hidden_effect = {
+		if = {
+		limit = {
+		has_completed_focus = PUA_keep_with_bayards_politics
+					}
+					ARM_parliament_support_add5 = yes
+					add_popularity = {
+					popularity = 0.11
+					ideology = radical_socialism
+					}
+					add_popularity = {
+					popularity = -0.04
+					ideology = anarchism
+					}
+					add_popularity = {
+					popularity = -0.03
+					ideology = market_socialism
+					}
+					add_popularity = {
+					popularity = -0.05
+					ideology = syndicalism
+					}
+				}
+		if = {
+		limit = {
+		has_completed_focus = PUA_force_bayard_to_change
+					}
+					ARM_parliament_support_remove5
+					add_popularity = {
+					popularity = 0.07
+					ideology = anarchism
+					}
+					add_popularity = {
+					popularity = 0.05
+					ideology = market_socialism
+					}
+					add_popularity = {
+					popularity = 0.07
+					ideology = syndicalism
+					}
+				}
+			}
+		}
 	}
 	focus = {
 		id = PUA_state_measures
@@ -1253,7 +2778,16 @@ focus_tree = {
 		}
 		x = 59
 		y = 3
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_ideas = PUA_state_measure_act
+		}
 	}
 	focus = {
 		id = PUA_war_measures
@@ -1267,7 +2801,32 @@ focus_tree = {
 		}
 		x = 52
 		y = 4
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		if = {
+		limit = {
+		NOT = {
+		has_ideas = PUA_state_measure_act
+					}
+				}
+				add_ideas = PUA_state_measure_act
+			}
+		if = {
+		limit = {
+		has_ideas = PUA_state_measure_act
+				}
+				swap_ideas = {
+				add_ideas = PUA_state_measure_act1
+				remove_ideas = PUA_state_measure_act
+				}
+			}
+		}
 	}
 	focus = {
 		id = PUA_lay_claim_to_texas
@@ -1281,7 +2840,13 @@ focus_tree = {
 		}
 		x = 52
 		y = 10
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 	}
 	focus = {
 		id = PUA_maximize_factory_output
@@ -1295,7 +2860,32 @@ focus_tree = {
 		}
 		x = 54
 		y = 4
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		bypass = {
+		NOT = {
+		has_full_control_of_state = 880
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		880 = {
+		add_extra_state_shared_building_slots = 1
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					
+				}
+			}
+		}
 	}
 	focus = {
 		id = PUA_military_expansion_policy
@@ -1306,7 +2896,32 @@ focus_tree = {
 		}
 		x = 56
 		y = 4
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		bypass = {
+		NOT = {
+		has_full_control_of_state = 881
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		881 = {
+		add_extra_state_shared_building_slots = 1
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+					
+				}
+			}
+		}
 	}
 	focus = {
 		id = PUA_arm_the_border
@@ -1323,7 +2938,45 @@ focus_tree = {
 		}
 		x = 55
 		y = 5
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		bypass = {
+			OR = {
+				NOT = { country_exists = PUA }
+				NOT = { owns_state = 392 }
+				NOT = { owns_state = 435 }
+			}
+		}
 
+		completion_reward = {
+			369 = {
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+			}
+			392 = {
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = PUA_implement_martial_law
@@ -1337,7 +2990,16 @@ focus_tree = {
 		}
 		x = 57
 		y = 5
-
+		bypass = {
+		OR = {
+			NOT = {
+		has_ideas = war_economy
+				}
+			}
+		}
+		completion_reward = {
+		add_ideas = war_economy
+		}
 	}
 	focus = {
 		id = PUA_contact_black_resistance
@@ -1348,7 +3010,13 @@ focus_tree = {
 		}
 		x = 37
 		y = 10
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 	}
 	focus = {
 		id = PUA_bring_material_aid_to_resistance
@@ -1359,10 +3027,16 @@ focus_tree = {
 		}
 		x = 38
 		y = 11
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 	}
 	focus = {
-		id = PUA_upllift_black_community
+		id = PUA_uplift_black_community
 		icon = GFX_goal_unknown
 		cost = 7.00
 		prerequisite = {
@@ -1376,18 +3050,67 @@ focus_tree = {
 		}
 		x = 12
 		y = 4
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		custom_effect_tooltip = PUA_black_community_uplifted
+		hidden_effect = {
+		COF = {
+		country_event = pua.6
+				}
+			}
+		}
 	}
 	focus = {
 		id = PUA_force_out_segregation
 		icon = GFX_goal_unknown
 		cost = 7.00
 		prerequisite = {
-			focus = PUA_upllift_black_community
+			focus = PUA_uplift_black_community
 		}
 		x = 12
 		y = 5
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		country_event = pua.7
+		hidden_effect = {
+		if = {
+		limit = {
+		has_country_flag = PUA_bayard_stays_the_same
+			}
+			add_popularity = {
+			popularity = 0.15
+			ideology = radical_socialism
+			}
+		}
+		if = {
+		limit = {
+		has_country_flag = PUA_bayard_changes
+			}
+			add_popularity = {
+			popularity = 0.15
+			ideology = syndicalism
+			}
+		}
+		369 = {
+			add_manpower = 50000
+				}
+			363 = {
+			add_manpower = -50000
+				}
+			}
+		}
 	}
 	focus = {
 		id = PUA_invest_in_the_navy
@@ -1402,7 +3125,46 @@ focus_tree = {
 		}
 		x = 37
 		y = 5
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			884 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = naval_base
+						level = 2
+						province = 11830
+						instant_build = yes
+					}
+					
+				}
+			}
+		division_template = {
+				name = "Red Marine Brigade"
+				division_names_group = PUA_MAR_01
+				is_locked = yes
+				regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 361 }
+				create_unit = {
+					division = "division_template = \"Red Marine Brigade\" start_experience_factor = 0.1"
+					owner = PUA
+					count = 3
+				}
+			}
+		}
 	}
 	focus = {
 		id = PUA_create_boyscouts
@@ -1414,7 +3176,16 @@ focus_tree = {
 		}
 		x = 40
 		y = 7
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		country_event = pua.18
+		}
 	}
 	focus = {
 		id = PUA_support_a_black_uprising
@@ -1425,7 +3196,13 @@ focus_tree = {
 		}
 		x = 37
 		y = 12
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 	}
 	focus = {
 		id = PUA_anti_capitalist_crusade
@@ -1437,7 +3214,13 @@ focus_tree = {
 		}
 		x = 45
 		y = 14
-
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 	}
 	focus = {
 		id = PUA_the_peoples_army
@@ -1451,7 +3234,10 @@ focus_tree = {
 		}
 		x = 25
 		y = 9
-
+		available_if_capitulated = yes
+		completion_reward = {
+		army_experience = 20
+		}
 	}
 	focus = {
 		id = PUA_up_to_date_hulls
@@ -1462,7 +3248,17 @@ focus_tree = {
 		}
 		x = 36
 		y = 7
-
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = cl_tech
+				category = ca_tech
+			}
+		}
 	}
 	focus = {
 		id = PUA_offensive_war
@@ -1479,7 +3275,15 @@ focus_tree = {
 		}
 		x = 33
 		y = 8
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = nav_bomber_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = naval_bomber
+			}
+		}
 	}
 	focus = {
 		id = PUA_defensive_strategies
@@ -1496,7 +3300,15 @@ focus_tree = {
 		}
 		x = 35
 		y = 8
+		completion_reward = {
 
+			add_tech_bonus = {
+				name = FRA_naval_doctrine
+				bonus = 1.0
+				uses = 2
+				category = naval_doctrine
+			}
+		}
 	}
 	focus = {
 		id = PUA_peoples_navy
@@ -1510,6 +3322,7 @@ focus_tree = {
 		}
 		x = 34
 		y = 9
-
+		completion_reward = {
+			navy_experience = 20
+		}
 	}
-}

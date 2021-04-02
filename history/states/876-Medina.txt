@@ -8,7 +8,10 @@ state={
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
+			1955 = {
+				naval_base = 5
 
+			}
 		}
 		add_core_of = JBS
 		add_claim_by = ARA

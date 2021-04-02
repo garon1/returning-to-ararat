@@ -521,8 +521,6 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = ger_rebuild_the_nation
-
 			modifier = {
 				industry_repair_factor = 0.20
 				training_time_factor = -0.1

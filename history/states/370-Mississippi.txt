@@ -9,7 +9,7 @@ state={
 	history={
 		owner = COF
 		add_core_of = COF
-		add_core_of = USA
+		add_core_of = NAK
 		victory_points = {
 			4464 1 
 		}

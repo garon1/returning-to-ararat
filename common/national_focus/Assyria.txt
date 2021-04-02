@@ -107,6 +107,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		available = {
+		is_subject = no
 		has_capitulated = no
 		}
 		completion_reward = {
@@ -126,6 +127,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		available = {
+		is_subject = no
 		has_capitulated = no
 		}
 		completion_reward = {
@@ -153,6 +155,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		available = {
+		is_subject = no
 		has_capitulated = no
 		}
 		completion_reward = {
@@ -207,6 +210,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		available = {
+		is_subject = no
 		has_capitulated = no
 		}
 		completion_reward = {
@@ -264,6 +268,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		available = {
+		is_subject = no
 		has_capitulated = no
 		}
 		completion_reward = {
@@ -318,6 +323,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		available = {
+		is_subject = no
 		has_capitulated = no
 		}
 		completion_reward = {
@@ -338,6 +344,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		available = {
+		is_subject = no
 		has_capitulated = no
 		}
 		completion_reward = {
@@ -356,6 +363,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		available = {
+		is_subject = no
 		has_capitulated = no
 		}
 		x = 11
@@ -446,7 +454,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -473,34 +481,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-		random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 1
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 1
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -603,6 +584,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		available = {
+		is_subject = no
 		has_capitulated = no
 		}
 		completion_reward = {
@@ -621,6 +603,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		available = {
+		is_subject = no
 		has_capitulated = no
 		}
 		mutually_exclusive = {
@@ -666,6 +649,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		available = {
+		is_subject = no
 		has_capitulated = no
 		}
 		x = 19
@@ -701,6 +685,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		available = {
+		is_subject = no
 		has_capitulated = no
 		}
 		mutually_exclusive = {
@@ -742,6 +727,13 @@ focus_tree = {
 		}
 		x = 20
 		y = 5
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
+		}
 		completion_reward = {
 		random_owned_controlled_state = {
 				limit = {
@@ -812,7 +804,103 @@ focus_tree = {
 		}
 		x = 22
 		y = 3
-
+		completion_reward = {
+		if = {
+		limit = {
+		has_idea = ASY_enact_private_acts 
+			}
+			swap_ideas = {
+			remove_idea = ASY_enact_private_acts 
+			add_idea = ASY_enact_private_acts1
+			}
+		}
+		add_political_power = -100
+		add_popularity = {
+		popularity = 0.1
+		ideology = traditional_conservatism
+		}
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = ASY_our_cultural_revolution
@@ -823,7 +911,23 @@ focus_tree = {
 		}
 		x = 23
 		y = 5
-
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
+		}
+		completion_reward = {
+		add_political_power = 150
+		add_stability = 0.1
+		if = {
+		limit = {
+		has_idea = ASS_almost_no_industry
+				}
+				remove_ideas = ASS_almost_no_industry
+			}
+		}
 	}
 	focus = {
 		id = ASY_research_boost
@@ -837,82 +941,201 @@ focus_tree = {
 		}
 		x = 22
 		y = 6
-
+		completion_reward = {
+		add_research_slot = 1
+		}
 	}
 	focus = {
 		id = ASY_closer_to_european_imperialists
 		icon = GFX_goal_unknown
 		cost = 7.00
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
+		}
 		prerequisite = {
 			focus = ASY_give_conservatives_the_election
 		}
 		x = 25
 		y = 2
-
+		completion_reward = {
+		ASS = {
+							add_opinion_modifier = {
+									target = FRA
+									modifier = medium_increase
+								}
+						}
+		FRA = {
+							add_opinion_modifier = {
+									target = ASS
+									modifier = medium_increase
+								}
+						}
+		ASS = {
+							add_opinion_modifier = {
+									target = ITA
+									modifier = medium_increase
+								}
+						}
+		ITA = {
+							add_opinion_modifier = {
+									target = ASS
+									modifier = medium_increase
+								}
+						}
+						ASS = {
+							add_opinion_modifier = {
+									target = FRA
+									modifier = medium_increase
+								}
+						}
+		FRA = {
+							add_opinion_modifier = {
+									target = ASS
+									modifier = medium_increase
+								}
+						}
+		}
 	}
 	focus = {
-		id = ASY_stay_with_our_neighbors
+		id = ASY_terminate_kurdish_and_arab_relations
 		icon = GFX_goal_unknown
 		cost = 7.00
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
+		}
 		prerequisite = {
 			focus = ASY_closer_to_european_imperialists
-		}
-		mutually_exclusive = {
-			focus = ASY_european_closeness
 		}
 		x = 24
 		y = 3
-
+		completion_reward = {
+		custom_effect_tooltip = ASY_event_implementation
+		}
 	}
 	focus = {
-		id = ASY_european_closeness
+		id = ASY_european_infrastructure
 		icon = GFX_goal_unknown
 		cost = 7.00
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
+		}
 		prerequisite = {
 			focus = ASY_closer_to_european_imperialists
 		}
 		mutually_exclusive = {
-			focus = ASY_stay_with_our_neighbors
+			focus = ASY_terminate_kurdish_and_arab_relations
 		}
 		x = 26
 		y = 3
-
+		completion_reward = {
+		custom_effect_tooltip = ASY_event_implementation
+		}
 	}
 	focus = {
-		id = ASY_approach_our_neighbors
+		id = ASY_secret_alliance_proposal
 		icon = GFX_goal_unknown
 		cost = 7.00
-		prerequisite = {
-			focus = ASY_stay_with_our_neighbors
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
 		}
 		prerequisite = {
-			focus = ASY_european_closeness
+			focus = ASY_terminate_kurdish_and_arab_relations
+		}
+		prerequisite = {
+			focus = ASY_european_infrastructure
 		}
 		x = 25
 		y = 4
-
+		completion_reward = {
+		if = {
+		limit = {
+		is_in_faction = yes
+				}
+			leave_faction = yes
+		}
+		custom_effect_tooltip = ASY_event_implementation
+		}
 	}
 	focus = {
-		id = ASY_ask_for_italy
+		id = ASY_russian_tactics
 		icon = GFX_goal_unknown
 		cost = 7.00
-		prerequisite = {
-			focus = ASY_european_closeness
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
 		}
-		x = 27
+		prerequisite = {
+			focus = ASY_european_infrastructure
+		}
+		prerequisite = {
+			focus = ASY_clean_up_political_dissident
+		}
+		x = 28
 		y = 4
-
+		completion_reward = {
+		hidden_effect = {
+		ASS = {
+							add_opinion_modifier = {
+									target = RUS
+									modifier = medium_increase
+								}
+						}
+		RUS = {
+							add_opinion_modifier = {
+									target = ASS
+									modifier = medium_increase
+								}
+						}
+			}
+		add_ideas = ASY_adopt_russian_economic_beliefs
+		}
 	}
 	focus = {
 		id = ASY_centralization_acts
 		icon = GFX_goal_unknown
 		cost = 7.00
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
+		}
 		prerequisite = {
 			focus = ASY_give_conservatives_the_election
 		}
 		x = 30
 		y = 2
-
+		completion_reward = {
+		if = {
+		limit = {
+		has_idea = ASS_autonomous_provinces
+				}
+				swap_ideas = {
+				add_idea = ASS_autonomous_provinces1
+				remove_idea = ASS_autonomous_provinces
+				}
+			}
+		}
 	}
 	focus = {
 		id = ASY_clean_up_political_dissident
@@ -923,67 +1146,131 @@ focus_tree = {
 		}
 		x = 28
 		y = 3
-
-	}
-	focus = {
-		id = ASY_french_aid
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = ASY_european_closeness
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
 		}
-		x = 29
-		y = 4
-
+		completion_reward = {
+		custom_effect_tooltip = ASY_event_implementation
+		}
 	}
 	focus = {
 		id = ASY_dont_allow_political_rivals
 		icon = GFX_goal_unknown
 		cost = 7.00
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
+		}
 		prerequisite = {
 			focus = ASY_clean_up_political_dissident
 		}
 		x = 31
 		y = 4
-
+		completion_reward = {
+		custom_effect_tooltip = ASY_event_implementation
+		}
 	}
 	focus = {
 		id = ASY_political_purge
 		icon = GFX_goal_unknown
 		cost = 7.00
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
+		}
 		prerequisite = {
 			focus = ASY_dont_allow_political_rivals
 		}
+		prerequisite = {
+			focus = ASY_russian_tactics
+		}
 		x = 29
 		y = 5
-
+		completion_reward = {
+		custom_effect_tooltip = ASY_event_implementation
+		}
 	}
 	focus = {
 		id = ASY_nomadic_situations
 		icon = GFX_goal_unknown
 		cost = 7.00
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
+		}
 		prerequisite = {
 			focus = ASY_centralization_acts
 		}
 		x = 32
 		y = 3
-
+		completion_reward = {
+		custom_effect_tooltip = ASY_event_implementation
+		}
 	}
 	focus = {
 		id = ASY_strengthen_the_federation
 		icon = GFX_goal_unknown
 		cost = 7.00
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
+		}
 		prerequisite = {
 			focus = ASY_nomadic_situations
 		}
 		x = 31
 		y = 5
-
+		completion_reward = {
+		hidden_effect = {
+		add_stability = -0.15
+		}
+		if = {
+		limit = {
+		has_idea = ASS_autonomous_provinces1
+				}
+				swap_ideas = {
+				add_idea = ASS_autonomous_provinces2
+				remove_idea = ASS_autonomous_provinces1
+				}
+			}
+		if = {
+		limit = {
+		has_idea = ASS_autonomous_provinces
+				}
+				swap_ideas = {
+				add_idea = ASS_autonomous_provinces1
+				remove_idea = ASS_autonomous_provinces
+				}
+			}
+		}
 	}
 	focus = {
 		id = ASY_promote_ethostate_nationalism
 		icon = GFX_goal_unknown
 		cost = 7.00
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
+		}
 		prerequisite = {
 			focus = ASY_political_purge
 		}
@@ -992,45 +1279,169 @@ focus_tree = {
 		}
 		x = 30
 		y = 6
-
+		completion_reward = {
+		hidden_effect = {
+		add_stability = -0.1
+		}
+		if = {
+		limit = {
+		has_idea = ASS_autonomous_provinces2
+				}
+				swap_ideas = {
+				remove_idea = ASS_autonomous_provinces2
+				}
+			}
+		if = {
+		limit = {
+		has_idea = ASS_autonomous_provinces1
+				}
+				swap_ideas = {
+				add_idea = ASS_autonomous_provinces2
+				remove_idea = ASS_autonomous_provinces1
+				}
+			}
+		if = {
+		limit = {
+		has_idea = ASS_autonomous_provinces
+				}
+				swap_ideas = {
+				add_idea = ASS_autonomous_provinces1
+				remove_idea = ASS_autonomous_provinces
+				}
+			}
+		}
 	}
 	focus = {
 		id = ASY_review_ethnic_policies
 		icon = GFX_goal_unknown
 		cost = 7.00
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
+		}
 		prerequisite = {
 			focus = ASY_give_conservatives_the_election
 		}
 		x = 34
 		y = 2
-
+		completion_reward = {
+		if = {
+		limit = {
+		has_idea = ASS_ethnic_tensions
+				}
+				swap_ideas = {
+				add_idea = ASS_ethnic_tensions1
+				remove_idea = ASS_ethnic_tensions
+				}
+			}
+		}
 	}
 	focus = {
 		id = ASY_reach_to_arabs
 		icon = GFX_goal_unknown
 		cost = 7.00
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
+		}
 		prerequisite = {
 			focus = ASY_review_ethnic_policies
 		}
 		x = 35
 		y = 3
-
+		completion_reward = {
+		if = {
+		limit = {
+		has_idea = ASY_differing_ethnic_policies
+			}
+			swap_ideas = {
+			add_idea = ASY_differing_ethnic_policies1
+			remove_idea = ASY_differing_ethnic_policies
+				}
+			}
+		if = {
+		limit = {
+		has_idea = ASS_ethnic_tensions1
+			}
+			swap_ideas = {
+			add_idea = ASY_differing_ethnic_policies
+			remove_idea = ASS_ethnic_tensions1
+				}
+			}
+		if = {
+		limit = {
+		has_idea = ASS_ethnic_tensions
+			}
+			swap_ideas = {
+			add_idea = ASY_differing_ethnic_policies
+			remove_idea = ASS_ethnic_tensions
+				}
+			}
+		}
 	}
 	focus = {
 		id = ASY_reach_to_kurds
 		icon = GFX_goal_unknown
 		cost = 7.00
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
+		}
 		prerequisite = {
 			focus = ASY_review_ethnic_policies
 		}
 		x = 37
 		y = 3
-
+		completion_reward = {
+		if = {
+		limit = {
+		has_idea = ASY_differing_ethnic_policies
+			}
+			swap_ideas = {
+			add_idea = ASY_differing_ethnic_policies1
+			remove_idea = ASY_differing_ethnic_policies
+				}
+			}
+		if = {
+		limit = {
+		has_idea = ASS_ethnic_tensions1
+			}
+			swap_ideas = {
+			add_idea = ASY_differing_ethnic_policies
+			remove_idea = ASS_ethnic_tensions1
+				}
+			}
+		if = {
+		limit = {
+		has_idea = ASS_ethnic_tensions
+			}
+			swap_ideas = {
+			add_idea = ASY_differing_ethnic_policies
+			remove_idea = ASS_ethnic_tensions
+				}
+			}
+		}
 	}
 	focus = {
 		id = ASY_assyria_for_assyrians
 		icon = GFX_goal_unknown
 		cost = 7.00
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
+		}
 		prerequisite = {
 			focus = ASY_reach_to_arabs
 		}
@@ -1039,8 +1450,15 @@ focus_tree = {
 		}
 		x = 34
 		y = 4
-
-	}
+		completion_reward = {
+		if = {
+			limit = {
+		has_ideas = ASS_autonomous_provinces
+					}
+					remove_ideas = ASS_autonomous_provinces
+				}
+			}
+		}
 	focus = {
 		id = ASY_population_exchange
 		icon = GFX_goal_unknown
@@ -1048,9 +1466,18 @@ focus_tree = {
 		prerequisite = {
 			focus = ASY_assyria_for_assyrians
 		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
+		}
 		x = 33
 		y = 5
-
+		completion_reward = {
+		custom_effect_tooltip = ASY_event_implementation
+		}
 	}
 	focus = {
 		id = ASY_encourage_resettlement
@@ -1059,9 +1486,18 @@ focus_tree = {
 		prerequisite = {
 			focus = ASY_assyria_for_assyrians
 		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
+		}
 		x = 35
 		y = 5
-
+		completion_reward = {
+		custom_effect_tooltip = decisiontt
+		}
 	}
 	focus = {
 		id = ASY_appease_diaspora
@@ -1073,9 +1509,18 @@ focus_tree = {
 		prerequisite = {
 			focus = ASY_encourage_resettlement
 		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
+		}
 		x = 34
 		y = 6
-
+		completion_reward = {
+		custom_effect_tooltip = decisiontt
+		}
 	}
 	focus = {
 		id = ASY_20th_century
@@ -1090,9 +1535,19 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = ASY_russian_supplies
 		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
+		}
 		x = 28
 		y = 7
-
+		completion_reward = {
+		add_stability = 0.1
+		add_war_support = 0.1
+		}
 	}
 	focus = {
 		id = ASY_russian_supplies
@@ -1107,9 +1562,18 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = ASY_20th_century
 		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
+		}
 		x = 34
 		y = 7
-
+		completion_reward = {
+		custom_effect_tooltip = decisiontt
+		}
 	}
 	focus = {
 		id = ASY_enable_fascist_politicians
@@ -1118,9 +1582,20 @@ focus_tree = {
 		prerequisite = {
 			focus = ASY_russian_supplies
 		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
+		}
 		x = 34
 		y = 8
-
+		completion_reward = {
+		custom_effect_tooltip = available_political_advisor
+		show_ideas_tooltip = ASY_yusuf_malek
+		set_country_flag = ASY_whatever
+		}
 	}
 	focus = {
 		id = ASY_allow_fascist_mobilization
@@ -1129,9 +1604,18 @@ focus_tree = {
 		prerequisite = {
 			focus = ASY_enable_fascist_politicians
 		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
+		}
 		x = 36
 		y = 9
-
+		completion_reward = {
+		custom_effect_tooltip = ASY_event_implementation
+		}
 	}
 	focus = {
 		id = ASY_reform_assyrian_militias
@@ -1139,6 +1623,13 @@ focus_tree = {
 		cost = 5.00
 		prerequisite = {
 			focus = ASY_military_doctorines
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
 		}
 		x = 42
 		y = 1
@@ -1358,9 +1849,61 @@ focus_tree = {
 		prerequisite = {
 			focus = ASY_assyria_first
 		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
+		}
 		x = 8
 		y = 6
-
+		completion_reward = {
+		if = {
+		limit = {
+		has_idea = ASS_ethnic_tensions4
+				}
+				swap_ideas = {
+				remove_idea = ASS_ethnic_tensions4
+				}
+			}
+		if = {
+		limit = {
+		has_idea = ASS_ethnic_tensions3
+				}
+				swap_ideas = {
+				add_idea = ASS_ethnic_tensions4
+				remove_idea = ASS_ethnic_tensions3
+				}
+			}
+		if = {
+		limit = {
+		has_idea = ASS_ethnic_tensions2
+				}
+				swap_ideas = {
+				add_idea = ASS_ethnic_tensions3
+				remove_idea = ASS_ethnic_tensions2
+				}
+			}
+		if = {
+		limit = {
+		has_idea = ASS_ethnic_tensions1
+				}
+				swap_ideas = {
+				add_idea = ASS_ethnic_tensions2
+				remove_idea = ASS_ethnic_tensions1
+				}
+			}
+		if = {
+		limit = {
+		has_idea = ASS_ethnic_tensions
+				}
+				swap_ideas = {
+				add_idea = ASS_ethnic_tensions1
+				remove_idea = ASS_ethnic_tensions
+					}
+				}
+		}
 	}
 	focus = {
 		id = ASY_integrate_schools
@@ -1372,9 +1915,27 @@ focus_tree = {
 		prerequisite = {
 			focus = ASY_integrate_the_masses
 		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
+		}
 		x = 10
 		y = 6
-
+		completion_reward = {
+		add_political_power = 150
+		add_war_support = 0.05
+		add_popularity = {
+		popularity = 0.1
+		ideology = market_liberal
+			}
+		add_popularity = {
+		popularity = 0.1
+		ideology = social_democracy
+			}
+		}
 	}
 	focus = {
 		id = ASY_mosul_paris_of_east
@@ -1386,9 +1947,45 @@ focus_tree = {
 		prerequisite = {
 			focus = ASY_assyria_first
 		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
+		}
 		x = 17
 		y = 6
-
+		completion_reward = {
+		832 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
 	}
 	focus = {
 		id = ASY_new_constitution
@@ -1406,16 +2003,33 @@ focus_tree = {
 		prerequisite = {
 			focus = ASY_mosul_paris_of_east
 		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
+		}
 		x = 15
 		y = 7
-
+		completion_reward = {
+		custom_effect_tooltip = ASY_event_implementation
+		}
 	}
+	#stop here
 	focus = {
 		id = ASY_nationalize_certain_industries
 		icon = GFX_goal_unknown
 		cost = 7.00
 		prerequisite = {
 			focus = ASY_new_constitution
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
 		}
 		x = 14
 		y = 8
@@ -1427,6 +2041,13 @@ focus_tree = {
 		cost = 7.00
 		prerequisite = {
 			focus = ASY_new_constitution
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
 		}
 		x = 16
 		y = 8
@@ -1445,6 +2066,13 @@ focus_tree = {
 		prerequisite = {
 			focus = ASY_permit_freedom_of_speech
 		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
+		}
 		x = 14
 		y = 9
 
@@ -1456,6 +2084,13 @@ focus_tree = {
 		prerequisite = {
 			focus = ASY_new_criminal_justice_system
 		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
+		}
 		x = 16
 		y = 10
 
@@ -1466,6 +2101,13 @@ focus_tree = {
 		cost = 7.00
 		prerequisite = {
 			focus = ASY_new_criminal_justice_system
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
 		}
 		x = 12
 		y = 10
@@ -1480,6 +2122,13 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = ASY_our_cultural_revolution
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
 		}
 		x = 19
 		y = 6
@@ -1501,6 +2150,13 @@ focus_tree = {
 		prerequisite = {
 			focus = ASY_mosul_paris_of_east
 		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
+		}
 		x = 9
 		y = 7
 
@@ -1515,6 +2171,13 @@ focus_tree = {
 		prerequisite = {
 			focus = ASY_mosque_preservation
 		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
+		}
 		x = 14
 		y = 11
 
@@ -1525,6 +2188,13 @@ focus_tree = {
 		cost = 7.00
 		prerequisite = {
 			focus = ASY_vilayet_system
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
 		}
 		x = 15
 		y = 12
@@ -1537,6 +2207,13 @@ focus_tree = {
 		prerequisite = {
 			focus = ASY_give_marxists_a_seat
 		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
+		}
 		x = 13
 		y = 13
 
@@ -1547,6 +2224,13 @@ focus_tree = {
 		cost = 7.00
 		prerequisite = {
 			focus = ASY_workers_unity
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
 		}
 		x = 12
 		y = 14
@@ -1559,6 +2243,13 @@ focus_tree = {
 		prerequisite = {
 			focus = ASY_give_marxists_a_seat
 		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
+		}
 		x = 15
 		y = 13
 
@@ -1570,6 +2261,13 @@ focus_tree = {
 		prerequisite = {
 			focus = ASY_give_a_peasant_a_tool
 		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
+		}
 		x = 15
 		y = 14
 
@@ -1580,6 +2278,13 @@ focus_tree = {
 		cost = 7.00
 		prerequisite = {
 			focus = ASY_give_a_peasant_a_tool
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
 		}
 		x = 17
 		y = 14
@@ -1598,6 +2303,13 @@ focus_tree = {
 		prerequisite = {
 			focus = ASY_marxist_industrialization
 		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
+		}
 		x = 13
 		y = 15
 
@@ -1608,6 +2320,13 @@ focus_tree = {
 		cost = 7.00
 		prerequisite = {
 			focus = ASY_russian_supplies
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
 		}
 		x = 30
 		y = 8
@@ -1620,6 +2339,13 @@ focus_tree = {
 		prerequisite = {
 			focus = ASY_repeal_religious_protection
 		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
+		}
 		x = 29
 		y = 9
 
@@ -1630,6 +2356,13 @@ focus_tree = {
 		cost = 7.00
 		prerequisite = {
 			focus = ASY_repeal_religious_protection
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
 		}
 		x = 31
 		y = 9
@@ -1644,7 +2377,13 @@ focus_tree = {
 		}
 		x = 33
 		y = 9
-
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
+		}
 	}
 	focus = {
 		id = ASY_officially_turn_fascist
@@ -1662,6 +2401,13 @@ focus_tree = {
 		prerequisite = {
 			focus = ASY_allow_fascist_mobilization
 		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
+		}
 		x = 32
 		y = 10
 
@@ -1675,6 +2421,13 @@ focus_tree = {
 		}
 		x = 32
 		y = 11
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		has_capitulated = no
+		}
 
 	}
 }

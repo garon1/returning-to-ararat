@@ -1,6 +1,18 @@
+BSP = {
+	color = rgb { 52 158 149 }
+	color_ui = rgb { 52 158 149 }
+}
+NAK = {
+	color = rgb { 121 132 71 }
+	color_ui = rgb { 121 132 71 }
+}
 JBS = {
 	color = rgb { 188 134 26 }
 	color_ui = rgb { 188 134 26 }
+}
+PON = {
+	color = rgb { 178 114 173 }
+	color_ui = rgb { 178 114 173 }
 }
 TRC = {
 	color = rgb { 93 129 206 }

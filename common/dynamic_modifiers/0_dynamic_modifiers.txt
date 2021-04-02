@@ -421,90 +421,65 @@ african_guerillas = {
 	state_resources_factor = -0.33
 	disable_strategic_redeployment = 1
 }
-###AMERICAN MODIFIERS###################
-#LEGIONISTS#
-low_legionist_support = {
+########AMERICAN MODIFIERS####################
+black_guerillas = {
 	enable = { always = yes }
+	icon = GFX_modifiers_afr_african_guerillas
 
-	icon = GFX_american_legion_support
-	
-	political_power_factor = -0.05
-	stability_factor = -0.05
-	production_oil_factor = -0.05
-	production_speed_buildings_factor = -0.05
-}
-general_legionist_support = {
-	enable = { always = yes }
-
-	icon = GFX_american_legion_support
-	
-	political_power_factor = -0.1
-	stability_factor = -0.1
-	production_oil_factor = -0.1
-	production_speed_buildings_factor = -0.1
-}
-high_legionist_support = {
-	enable = { always = yes }
-
-	icon = GFX_american_legion_support
-	
-	political_power_factor = -0.15
-	stability_factor = -0.15
-	production_oil_factor = -0.15
-	production_speed_buildings_factor = -0.15
-}
-legionist_governor_in_power = {
-	enable = { always = yes }
-
-	icon = GFX_american_legion_support
-	
-	political_power_factor = -0.2
-	stability_factor = -0.2
-	production_oil_factor = -0.2
 	production_speed_buildings_factor = -0.2
+	state_resources_factor = -0.4
+	repair_speed_arms_factory_factor = -0.25
+	conscription_factor = -0.2
 }
-#LEFTIST#
-low_leftist_support = {
+black_guerillas_placated = {
 	enable = { always = yes }
 
-	icon = GFX_american_syndicalists_support
+	icon = GFX_modifiers_afr_african_guerillas
 	
-	political_power_factor = -0.05
-	stability_factor = -0.05
-	production_oil_factor = -0.05
-	production_speed_buildings_factor = -0.05
-}
-general_leftist_support = {
-	enable = { always = yes }
-
-	icon = GFX_american_syndicalists_support
-	
-	political_power_factor = -0.1
-	stability_factor = -0.1
-	production_oil_factor = -0.1
 	production_speed_buildings_factor = -0.1
+	state_resources_factor = -0.2
+	repair_speed_arms_factory_factor = -0.12
+	conscription_factor = -0.1
 }
-high_leftist_support = {
+black_guerillas_aggressive = {
 	enable = { always = yes }
 
-	icon = GFX_american_syndicalists_support
+	icon = GFX_modifiers_afr_african_guerillas
 	
-	political_power_factor = -0.15
-	stability_factor = -0.15
-	production_oil_factor = -0.15
-	production_speed_buildings_factor = -0.15
+	production_speed_buildings_factor = -0.35
+	state_resources_factor = -0.5
+	repair_speed_arms_factory_factor = -0.5
+	conscription_factor = -0.4
 }
-leftist_governor_in_power = {
+texan_separatism = {
 	enable = { always = yes }
+	icon = GFX_modifiers_tex_texan_rebels
 
-	icon = GFX_american_syndicalists_support
-	
-	political_power_factor = -0.2
-	stability_factor = -0.2
-	production_oil_factor = -0.2
 	production_speed_buildings_factor = -0.2
+	state_resources_factor = -0.4
+	repair_speed_arms_factory_factor = -0.25
+	conscription_factor = -0.2
 }
-#CONFEDERATE#
+texan_separatism_placated = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_tex_texan_rebels
+	
+	production_speed_buildings_factor = -0.1
+	state_resources_factor = -0.2
+	repair_speed_arms_factory_factor = -0.12
+	conscription_factor = -0.1
+}
+texan_separatism_increased = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_tex_texan_rebels
+	
+	production_speed_buildings_factor = -0.35
+	state_resources_factor = -0.5
+	repair_speed_arms_factory_factor = -0.5
+	conscription_factor = -0.4
+}
 low_confederate_support = {
 	enable = { always = yes }
 
@@ -534,14 +509,4 @@ high_confederate_support = {
 	stability_factor = -0.15
 	production_oil_factor = -0.15
 	production_speed_buildings_factor = -0.15
-}
-confederate_governor_in_power = {
-	enable = { always = yes }
-
-	icon = GFX_american_confederate_support
-	
-	political_power_factor = -0.2
-	stability_factor = -0.2
-	production_oil_factor = -0.2
-	production_speed_buildings_factor = -0.2
 }

@@ -7,7 +7,7 @@ state={
 		victory_points = {
 			2054 1 
 		}
-		owner = RAJ
+		owner = IND
 		add_core_of = IND
 		buildings = {
 			infrastructure = 3

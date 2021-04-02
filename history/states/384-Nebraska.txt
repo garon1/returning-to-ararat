@@ -7,6 +7,7 @@ state={
 	state_category = large_town
 
 	history={
+set_demilitarized_zone = yes
 		owner = LOA
 		add_core_of = LOA
 		add_core_of = USA

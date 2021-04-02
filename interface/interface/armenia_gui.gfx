@@ -1,6 +1,37 @@
 ##################used for basically all gui things because im lazy
-
 spriteTypes = {
+spriteType = {
+		name = "GFX_general_confederate_support"
+		texturefile = "gfx/interface/state_modifiers/american_confederate_support.dds"
+	}
+spriteType = {
+		name = "GFX_texan_separatism_increased"
+		texturefile = "gfx/interface/state_modifiers/modifiers_tex_texan_rebels.dds"
+	}
+	spriteType = {
+		name = "GFX_texan_separatism_placated"
+		texturefile = "gfx/interface/state_modifiers/modifiers_tex_texan_rebels.dds"
+	}
+	spriteType = {
+		name = "GFX_texan_separatism"
+		texturefile = "gfx/interface/state_modifiers/modifiers_tex_texan_rebels.dds"
+	}
+spriteType = {
+		name = "GFX_modifiers_tex_texan_rebels"
+		texturefile = "gfx/interface/state_modifiers/modifiers_tex_texan_rebels.dds"
+	}
+spriteType = {
+		name = "GFX_black_guerillas"
+		texturefile = "gfx/interface/state_modifiers/modifiers_afr_african_resistance.dds"
+	}
+		spriteType = {
+		name = "GFX_black_guerillas_placated"
+		texturefile = "gfx/interface/state_modifiers/modifiers_afr_african_resistance.dds"
+	}
+spriteType = {
+		name = "GFX_black_guerillas_aggressive"
+		texturefile = "gfx/interface/state_modifiers/modifiers_afr_african_guerillas.dds"
+	}
 spriteType = {
 		name = "GFX_modifiers_afr_african_resistance"
 		texturefile = "gfx/interface/state_modifiers/modifiers_afr_african_resistance.dds"

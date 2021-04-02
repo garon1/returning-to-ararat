@@ -1,6 +1,154 @@
 
 spriteTypes = {
 spriteType = {
+		name = "GFX_PUA_state_measure_act1"
+		texturefile = "gfx/interface/ideas/generic_goods_red_bonus.dds"
+	}
+spriteType = {
+		name = "GFX_PUA_state_measure_act"
+		texturefile = "gfx/interface/ideas/generic_goods_red_bonus.dds"
+	}
+spriteType = {
+		name = "GFX_BSP_international_zone"
+		texturefile = "gfx/interface/ideas/idea_bul_supremacy_on_the_bosphorus.dds"
+	}
+spriteType = {
+		name = "international_zone"
+		texturefile = "gfx/interface/autonomy/autonomy_international_zone_icon.dds"
+	}
+spriteType = {
+		name = "GFX_autonomy_international_zone_icon"
+		texturefile = "gfx/interface/autonomy/autonomy_international_zone_icon.dds"
+	}
+spriteType = {
+		name = "GFX_PUA_agriculture_focus"
+		texturefile = "gfx/interface/ideas/idea_bul_tobacco_exports.dds"
+	}
+spriteType = {
+		name = "GFX_PUA_centralized_struggle2"
+		texturefile = "gfx/interface/ideas/generic_production_bonus.dds"
+	}
+spriteType = {
+		name = "GFX_PUA_centralized_struggle"
+		texturefile = "gfx/interface/ideas/generic_production_bonus.dds"
+	}
+spriteType = {
+		name = "GFX_PUA_centralized_struggle1"
+		texturefile = "gfx/interface/ideas/generic_production_bonus.dds"
+	}
+spriteType = {
+		name = "GFX_PUA_nationalized_transportation"
+		texturefile = "gfx/interface/ideas/SPR_anarchist_public_transport.dds"
+	}
+spriteType = {
+		name = "GFX_PUA_centralized_communist_transformation1"
+		texturefile = "gfx/interface/ideas/fra_liberte_egalite_solidarite.dds"
+	}
+spriteType = {
+		name = "GFX_PUA_centralized_communist_transformation"
+		texturefile = "gfx/interface/ideas/fra_liberte_egalite_solidarite.dds"
+	}
+spriteType = {
+		name = "GFX_PUA_dockyard_jobs"
+		texturefile = "gfx/interface/ideas/idea_socialist_workers.dds"
+	}
+	spriteType = {
+		name = "GFX_PUA_airforce_jobs"
+		texturefile = "gfx/interface/ideas/idea_socialist_workers.dds"
+	}
+spriteType = {
+		name = "GFX_idea_socialist_workers"
+		texturefile = "gfx/interface/ideas/socialist_workers.dds"
+	}
+	spriteType = {
+		name = "GFX_PUA_military_jobs1"
+		texturefile = "gfx/interface/ideas/idea_socialist_workers.dds"
+	}
+spriteType = {
+		name = "GFX_PUA_military_jobs"
+		texturefile = "gfx/interface/ideas/idea_socialist_workers.dds"
+	}
+	spriteType = {
+		name = "GFX_PUA_centralized_struggle"
+		texturefile = "gfx/interface/ideas/idea_eng_for_the_good_of_the_revolution.dds"
+	}
+spriteType = {
+		name = "GFX_PUA_struggle_for_self_suffenciency2"
+		texturefile = "gfx/interface/ideas/idea_eng_for_the_good_of_the_revolution.dds"
+	}
+spriteType = {
+		name = "GFX_PUA_struggle_for_self_suffenciency1"
+		texturefile = "gfx/interface/ideas/idea_eng_for_the_good_of_the_revolution.dds"
+	}
+spriteType = {
+		name = "GFX_PUA_unionists_strengthened"
+		texturefile = "gfx/interface/ideas/idea_eng_for_the_good_of_the_revolution.dds"
+	}
+spriteType = {
+		name = "GFX_PUA_new_foreign_policy"
+		texturefile = "gfx/interface/ideas/idea_ast_abandon_the_westminster_system_communism.dds"
+	}
+	spriteType = {
+		name = "GFX_PUA_communist_transformation3"
+		texturefile = "gfx/interface/ideas/fra_liberte_egalite_solidarite.dds"
+	}
+	spriteType = {
+		name = "GFX_PUA_communist_transformation2"
+		texturefile = "gfx/interface/ideas/fra_liberte_egalite_solidarite.dds"
+	}
+	spriteType = {
+		name = "GFX_PUA_communist_transformation1"
+		texturefile = "gfx/interface/ideas/fra_liberte_egalite_solidarite.dds"
+	}
+spriteType = {
+		name = "GFX_PUA_communist_transformation"
+		texturefile = "gfx/interface/ideas/fra_liberte_egalite_solidarite.dds"
+	}
+	spriteType = {
+		name = "GFX_PUA_infighting1"
+		texturefile = "gfx/interface/ideas/great_depression.dds"
+	}
+spriteType = {
+		name = "GFX_PUA_infighting"
+		texturefile = "gfx/interface/ideas/great_depression.dds"
+	}
+	spriteType = {
+		name = "GFX_PUA_paranoia2"
+		texturefile = "gfx/interface/ideas/generic_spy_intel.dds"
+	}
+	spriteType = {
+		name = "GFX_PUA_paranoia1"
+		texturefile = "gfx/interface/ideas/generic_spy_intel.dds"
+	}
+spriteType = {
+		name = "GFX_PUA_paranoia"
+		texturefile = "gfx/interface/ideas/generic_spy_intel.dds"
+	}
+spriteType = {
+		name = "GFX_PUA_struggle_for_self_suffenciency"
+		texturefile = "gfx/interface/ideas/generic_production_bonus.dds"
+	}
+spriteType = {
+		name = "GFX_GER_national_revitalization2"
+		texturefile = "gfx/interface/ideas/idea_germany_rebuild_the_nation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_germany_rebuild_the_nation"
+		texturefile = "gfx/interface/ideas/germany_rebuild_the_nation.dds"
+	}
+spriteType = {
+		name = "GFX_idea_rus_rebuild_the_nation"
+		texturefile = "gfx/interface/ideas/idea_rus_rebuild_the_nation.dds"
+	}
+spriteType = {
+		name = "GFX_ASY_adopt_russian_economic_beliefs"
+		texturefile = "gfx/interface/ideas/idea_rus_rebuild_the_nation.dds"
+	}
+spriteType = {
+		name = "GFX_ASS_autonomous_provinces1"
+		texturefile = "gfx/interface/ideas/idea_asy_broken_states.dds"
+	}
+spriteType = {
 		name = "GFX_ASY_italian_dependency1"
 		texturefile = "gfx/interface/ideas/idea_italian_economy.dds"
 	}
@@ -35,6 +183,10 @@ spriteType = {
 	spriteType = {
 		name = "GFX_idea_italian_dependent_economy"
 		texturefile = "gfx/interface/ideas/idea_italian_dependent_economy.dds"
+	}
+spriteType = {
+		name = "GFX_ASY_enact_private_acts1"
+		texturefile = "gfx/interface/ideas/idea_asy_privatize_industry.dds"
 	}
 spriteType = {
 		name = "GFX_ASY_enact_private_acts"

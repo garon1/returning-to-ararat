@@ -1,114 +1,1048 @@
 ideas = {
-	# MILITARY
+
 country = {
-PUA_american_class = {
-			
-			
+PUA_state_measure_act1 = {
+
 			allowed = {
-				original_tag = "PUA"
+				always = no
 			}
 
-			
-			
+			allowed_civil_war = {
+				always = yes
+			}
+
 			removal_cost = -1
+
+			picture = idea_bul_tobacco_exports
 			
 			modifier = {
-					political_power_gain = 0.10
-					war_support_factor = 0.20
+			production_oil_factor = 0.15
+			stability = -0.1
+			production_speed_industrial_complex_factor = -0.15
+			political_power_gain = 0.12
+			production_speed_arms_factory_factor = 0.1
 			}
 		}
-		PUA_women_working = {
-			
-			
+PUA_state_measure_act = {
+
 			allowed = {
-				original_tag = "PUA"
+				always = no
 			}
 
-			
-			
+			allowed_civil_war = {
+				always = yes
+			}
+
 			removal_cost = -1
+
+			picture = idea_bul_tobacco_exports
 			
 			modifier = {
-						global_building_slots = 1
+			production_oil_factor = 0.1
+			stability = -0.05
+			production_speed_industrial_complex_factor = -0.1
+			political_power_gain = 0.1
+			production_speed_arms_factory_factor = 0.5 
 			}
 		}
-		PUA_guarentee_rights = {
-			
-			
+PUA_agriculture_focus = {
+
 			allowed = {
-				original_tag = "PUA"
+				always = no
 			}
 
-			
-			
+			allowed_civil_war = {
+				always = yes
+			}
+
 			removal_cost = -1
+
+			picture = idea_bul_tobacco_exports
 			
 			modifier = {
-						political_power_cost = -0.15
+			production_oil_factor = -0.1
+			stability_weekly = 0.02
+			production_speed_industrial_complex_factor = -0.05
+			production_speed_buildings_factor = -0.1
+			political_power_gain = 0.2
 			}
 		}
-		PUA_new_education = {
-			
-			
+PUA_centralized_struggle2 = {
+
 			allowed = {
-				original_tag = "PUA"
+				always = no
 			}
 
-			
-			
+			allowed_civil_war = {
+				always = yes
+			}
+
 			removal_cost = -1
+
+			picture = generic_production_bonus
 			
 			modifier = {
-					nationalism_acceptance = -85
-					traditional_conservatism_acceptance = -50
-						research_speed_factor = 0.1
+			production_oil_factor = 0.22
+			stability_factor = -0.28
+			production_speed_industrial_complex_factor = 0.22
+			production_speed_buildings_factor = 0.22
 			}
 		}
-		PUA_national_unions = {
-			
-			
+PUA_nationalized_transportation = {
+
+			picture = SPR_anarchist_public_transport
+
 			allowed = {
-				original_tag = "PUA"
+				original_tag = PUA
 			}
 
-			
-			
-			removal_cost = -1
-			
+			allowed_civil_war = {
+				always = yes
+			}
+
 			modifier = {
-					command_power_gain = 0.05
-					radical_socialism_acceptance = 50
+				army_speed_factor = 0.15
+				stability_factor = 0.1
 			}
 		}
-		PUA_nationalization_industry = {
-			
-			
+	PUA_centralized_struggle1 = {
+
 			allowed = {
-				original_tag = "PUA"
+				always = no
 			}
 
-			
-			
+			allowed_civil_war = {
+				always = yes
+			}
+
 			removal_cost = -1
+
+			picture = generic_production_bonus
 			
 			modifier = {
-					production_speed_industrial_complex_factor = 0.1
+			production_oil_factor = 0.25
+			stability_factor = -0.35
+			production_speed_industrial_complex_factor = 0.25
+			production_speed_buildings_factor = 0.25
 			}
 		}
-PUA_civil_war_victory = {
+PUA_centralized_struggle = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+			
+			modifier = {
+			production_oil_factor = 0.2
+			stability_factor = -0.2
+			production_speed_industrial_complex_factor = 0.2
+			production_speed_buildings_factor = 0.2
+			}
+		}
+PUA_centralized_communist_transformation1 = {
+			picture = FRA_liberte_egalite_solidarite
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.3
+				industrial_capacity_factory = 0.35
+				research_speed_factor = -0.25
+			}
+		}
+PUA_centralized_communist_transformation = {
+			picture = FRA_liberte_egalite_solidarite
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.3
+				industrial_capacity_factory = 0.3
+				research_speed_factor = -0.3
+			}
+		}
+PUA_dockyard_jobs = {
+			picture = socialist_workers
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.2
+				repair_speed_factor = 0.1
+				industrial_capacity_dockyard = 0.15
+			}
+		}
+		PUA_airforce_jobs = {
+			picture = socialist_workers
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.2
+				industry_air_damage_factor = -0.1
+				air_superiority_bonus_in_combat = 0.1
+			}
+		}
+PUA_military_jobs1 = {
+			picture = socialist_workers
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.25
+				production_speed_arms_factory_factor = 0.2
+			}
+		}
+PUA_military_jobs = {
+			picture = socialist_workers
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.2
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+PUA_communist_transformation3 = {
+			picture = FRA_liberte_egalite_solidarite
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+				industrial_capacity_factory = 0.15
+				stability_factor = 0.2
+				political_power_cost = -0.25
+				production_speed_buildings_factor = 0.1
+			}
+		}
+PUA_struggle_for_self_suffenciency2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+			
+			modifier = {
+			production_oil_factor = 0.19
+			production_speed_industrial_complex_factor = 0.19
+			production_speed_buildings_factor = 0.19
+			}
+		}
+PUA_struggle_for_self_suffenciency1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+			
+			modifier = {
+			production_oil_factor = 0.15
+			stability_factor = -0.1
+			production_speed_industrial_complex_factor = 0.15
+			production_speed_buildings_factor = 0.15
+			}
+		}
+PUA_unionists_strengthened = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+			
+			modifier = {
+			equipment_conversion_speed = 0.1
+			production_factory_efficiency_gain_factor = 0.1
+			stability_factor = 0.05
+			}
+		}
+PUA_new_foreign_policy = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+			
+			modifier = {
+			offensive_war_stability_factor = 0.3
+			send_volunteer_size = 5
+			production_factory_efficiency_gain_factor = 0.1
+			stability_factor = 0.2
+			ai_join_ally_desire_factor = 0.5
+			}
+		}
+PUA_struggle_for_self_suffenciency = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+			
+			modifier = {
+			production_oil_factor = 0.1
+			stability_factor = -0.25
+			production_speed_industrial_complex_factor = 0.1
+			production_speed_buildings_factor = 0.1
+			}
+		}
+	PUA_paranoia1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_spy_intel
+			
+			modifier = {
+				ai_get_ally_desire_factor = -30
+				stability_factor = -0.15
+				war_support_factor = 0.22
+			}
+		}
+		PUA_paranoia2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_spy_intel
+			
+			modifier = {
+				ai_get_ally_desire_factor = -70
+				stability_factor = -0.3
+				war_support_factor = 0.3
+			}
+		}
+PUA_paranoia = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_spy_intel
+			
+			modifier = {
+				ai_get_ally_desire_factor = -50
+				stability_factor = -0.2
+				war_support_factor = 0.2
+			}
+		}
+		PUA_infighting1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+			
+			modifier = {
+				stability = -0.1
+				political_power_gain = -0.2
+				party_popularity_stability_factor = -0.05
+			}
+		}
+PUA_infighting = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+			
+			modifier = {
+				stability = -0.15
+				political_power_gain = -0.3
+				party_popularity_stability_factor = -0.1
+			}
+		}
+		PUA_communist_transformation2 = {
+			picture = FRA_liberte_egalite_solidarite
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+				industrial_capacity_factory = 0.12
+				stability_factor = 0.15
+				political_power_cost = -0.2
+			}
+		}
+		PUA_communist_transformation1 = {
+			picture = FRA_liberte_egalite_solidarite
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.15
+				industrial_capacity_factory = 0.15
+				research_speed_factor = -0.1
+				stability_factor = 0.1
+				political_power_cost = -0.1
+			}
+		}
+		PUA_communist_transformation = {
+			picture = FRA_liberte_egalite_solidarite
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.2
+				industrial_capacity_factory = 0.2
+				research_speed_factor = -0.2
+			}
+		}
+	}
+
+political_advisor = {
+	
+		earl_browder = {
 			
 			
 			allowed = {
 				original_tag = "PUA"
 			}
+			traits = { communist_revolutionary }
+			
+			ai_will_do = {
+				factor = 10
+			}
+		}	
+		Jack_Shulman = {
+		picture = generic_political_advisor_europe_1
+			allowed = {
+				original_tag = "PUA"
+			}
+						traits = { financial_expert }
+		}
+		victor_perlo = {
+			picture = generic_political_advisor_south_america_2
+			allowed = {
+				original_tag = "PUA"
+			}
+			traits = { economist }
+	}
+		whittaker_chambers = {
+		picture = generic_political_advisor_arab_3
+			allowed = {
+				original_tag = "PUA"
+			}
+			
+			traits = { editor }
+			cost = 0
+			do_effect = {
+		
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		PUA_James_W_Ford = {
+			picture = generic_political_advisor_india_2
+			allowed = {
+				original_tag = "PUA"
+			}
+			allowed_civil_war = {
+				not = {}
+			}
+
+			traits = { editor }
+			cost = 50
+			do_effect = {
+		
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		PUA_Max_Bedacht = {
+			picture = generic_political_advisor_arab_1
+			allowed = {
+				original_tag = "PUA"
+			}
+			allowed_civil_war = {
+				not = {}
+			}
+			
+			
+			traits = { captain_of_industry }
+			cost = 50
+			do_effect = {
+		
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		PUA_john_reed = {
+			picture = generic_political_advisor_europe_3
+			allowed = {
+				original_tag = "PUA"
+			}
+			
+			available = {	
+
+			}
+			
+			traits = { syndicalist_revolutionary }
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		PUA_william_z_foster = {
+			picture = generic_political_advisor_europe_4	
+			allowed = {
+				original_tag = "PUA"
+				NOT = {
+
+				}
+			}
+			available = {
+				NOT = {
+
+				}
+			}
 
 			
+			traits = { face_licker }
 			
-			removal_cost = -1
+			ai_will_do = {
+				factor = 10
+			}		
+		}
+
+		PUA_Elizabeth_Gurly_Flynn = {
 			
-			modifier = {
-					political_power_gain = -0.05
-					stability_weekly = -0.01
+			picture = generic_political_advisor_female_europe
+			
+			allowed = {
+				original_tag = PUA
+
+			}
+			
+			traits = { silent_workhorse }
+		}
+		PUA_Arturo_Giovannitti = {
+		picture = generic_political_advisor_europe_6
+			allowed = {
+				original_tag = PUA
+
+			}
+			available = {
+			original_tag = PUA
+
+			}
+			
+			traits = { headstrong }
+		}
+
+		PUA_Eugene_Dennis = {
+			
+			picture = generic_political_advisor_arab_3
+			
+			allowed = {
+				original_tag = PUA 
+
+			}
+			
+			traits = { compassionate_gentleman }
+		}
+
+		PUA_george_cannon = {
+			
+			picture = generic_political_advisor_south_america_3
+			
+			allowed = {
+				original_tag = PUA 
+
+			}
+			
+			traits = { smooth_talking_charmer }
+		}
+
+		PUA_meyer_london = {
+			picture = generic_political_advisor_europe_6
+			
+			allowed = {
+				original_tag = PUA 
+
+			}
+			available = {
+				not = { has_idea = harry_white }
+			}
+			
+			traits = { financial_expert }
+		}
+
+		milton_wolff = {
+			
+			picture = generic_political_advisor_europe_2
+			
+			allowed = {
+				original_tag = PUA 
+
+			}
+			
+			traits = { war_industrialist }
+		}
+
+		PUA_evans_carlson = {
+			
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = PUA 
+
+			}
+			
+			traits = { armaments_organizer }
+		}
+		
+		PUA_lucille_ball = {
+		picture = generic_political_advisor_female_south_america
+			available = {
+				has_intelligence_agency = yes
+				threat > 0.5
+			}
+			
+			allowed = {
+				original_tag = PUA 
+
+			}
+			
+			traits = { head_of_intelligence }
+
+		}
+	}
+
+	theorist = {
+
+		PUA_william_aalto = {
+			ledger = army
+					
+			picture = generic_army_europe_1
+
+			allowed = {
+				original_tag = PUA
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = { military_theorist }
+		}
+		PUA_smedly_butler = {
+			ledger = army
+					
+			picture = generic_political_advisor_europe_2
+
+			allowed = {
+				original_tag = PUA
+			}
+			
+			research_bonus = {
+				nuclear = 0.07
+			}
+			
+			traits = { nuclear_scientist }
+		}
+		PUA_benjamin_katine = {
+			ledger = air
+					
+			picture = generic_air_europe_2
+					
+			allowed = {
+				original_tag = PUA
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+	}
+	# MILITARY
+	army_chief = {
+		
+		PUA_james_murphy = {
+			picture = generic_army_europe_4
+			
+			allowed = {
+				original_tag = PUA
+			}
+			
+
+			
+			traits = { army_chief_old_guard }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		PUA_robert_hall_merriman = {
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = PUA
+			}
+			
+
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		PUA_maurice_rose = {
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = PUA
+			}
+			
+
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+	
+		PUA_willard_smith = {
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = PUA
+			}
+			
+
+			
+			traits = { air_air_superiority_2}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		PUA_bert_acosta = {
+			picture = generic_air_europe_1
+			
+			allowed = {
+				original_tag = PUA
+			}
+			
+
+			
+			traits = { air_chief_safety_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		PUA_eddie_august_schneider = {
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = PUA
+				has_dlc = "Together for Victory"
+			}
+			
+
+			
+			traits = { air_chief_reform_2}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		PUA_george_watt = {
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = PUA
+				has_dlc = "Together for Victory"
+			}
+			
+
+			
+			traits = { air_air_combat_training_2}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	navy_chief = {
+		
+		PUA_arleign_burke = {
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = PUA
+			}
+			
+
+			
+			traits = { navy_chief_decisive_battle_2  }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		
+
+		PUA_Arthur_Schuyler_Carpender = {
+			picture = generic_navy_europe_1
+			
+			allowed = {
+				original_tag = PUA
+			}
+			
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		PUA_William_Rea_Furlong = {
+			picture = generic_navy_europe_1
+			
+			allowed = {
+				original_tag = PUA
+				has_dlc = "Together for Victory"
+			}
+			
+			traits = { navy_anti_submarine_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	high_command = {
+	
+	
+		PUA_milton_wolff = {
+			ledger = army
+			
+			picture = generic_army_europe_1
+
+			allowed = {
+				original_tag = PUA
+			}
+			
+			traits = { army_artillery_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		PUA_max_farrar = {
+			ledger = air
+			
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = PUA
+			}
+			
+			traits = { air_air_superiority_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		PUA_Hans_Amlie = {
+			ledger = army
+			
+			picture = generic_army_europe_2
+
+			allowed = {
+				original_tag = PUA
+			}
+			
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		PUA_george_anderson = {
+			ledger = army
+			
+			picture = generic_army_europe_3
+
+			allowed = {
+				original_tag = PUA
+			}
+			
+			traits = { army_commando_2 }
+			
+			ai_will_do = {
+				factor = 1
 			}
 		}
 	}

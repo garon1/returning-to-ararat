@@ -44,37 +44,37 @@ ARM_INF_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { ARM_GAR_01 }
 
-	fallback_name = "%dya Armyanska Strelkovaya Div."
+	fallback_name = "%dya Yerevani Hetevakayin Divizia"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%dya Armyanska Strelkovaya Div." }
-		2 = { "%dya Armyanska Strelkovaya Div." }
-		3 = { "%dya Armyanska Strelkovaya Div." }
-		4 = { "%dya Armyanska Strelkovaya Div." }
-		5 = { "%dya Armyanska Strelkovaya Div." }
-		6 = { "%dya Armyanska Strelkovaya Div." }
-		7 = { "%dya Armyanska Strelkovaya Div." }
-		8 = { "%dya Armyanska Strelkovaya Div." }
-		9 = { "%dya Armyanska Strelkovaya Div." }
-		10 = { "%dya Armyanska Strelkovaya Div." }
-		11 = { "%dya Armyanska Strelkovaya Div." }
-		12 = { "%dya Armyanska Strelkovaya Div." }
-		13 = { "%dya Armyanska Strelkovaya Div." }
-		14 = { "%dya Armyanska Strelkovaya Div." }
-		15 = { "%dya Armyanska Strelkovaya Div." }
-		16 = { "%dya Armyanska Strelkovaya Div." }
-		17 = { "%dya Armyanska Strelkovaya Div." }
-		18 = { "%dya Armyanska Strelkovaya Div." }
-		19 = { "%dya Armyanska Strelkovaya Div." }
-		20 = { "%dya Armyanska Strelkovaya Div." }
-		21 = { "%dya Armyanska Strelkovaya Div." }
-		22 = { "%dya Armyanska Strelkovaya Div." }
-		23 = { "%dya Armyanska Strelkovaya Div." }
-		24 = { "%dya Armyanska Strelkovaya Div." }
-		25 = { "%dya Armyanska Strelkovaya Div." }
+		1 = { "%dya Yerevani Hetevakayin Divizia" }
+		2 = { "%dya Yerevani Hetevakayin Divizia" }
+		3 = { "%dya Yerevani Hetevakayin Divizia" }
+		4 = { "%dya Yerevani Hetevakayin Divizia" }
+		5 = { "%dya Yerevani Hetevakayin Divizia" }
+		6 = { "%dya Yerevani Hetevakayin Divizia" }
+		7 = { "%dya Yerevani Hetevakayin Divizia" }
+		8 = { "%dya Yerevani Hetevakayin Divizia" }
+		9 = { "%dya Yerevani Hetevakayin Divizia" }
+		10 = { "%dya Yerevani Hetevakayin Divizia" }
+		11 = { "%dya Yerevani Hetevakayin Divizia" }
+		12 = { "%dya Yerevani Hetevakayin Divizia" }
+		13 = { "%dya Yerevani Hetevakayin Divizia" }
+		14 = { "%dya Yerevani Hetevakayin Divizia" }
+		15 = { "%dya Yerevani Hetevakayin Divizia" }
+		16 = { "%dya Yerevani Hetevakayin Divizia" }
+		17 = { "%dya Yerevani Hetevakayin Divizia" }
+		18 = { "%dya Yerevani Hetevakayin Divizia" }
+		19 = { "%dya Yerevani Hetevakayin Divizia" }
+		20 = { "%dya Yerevani Hetevakayin Divizia" }
+		21 = { "%dya Yerevani Hetevakayin Divizia" }
+		22 = { "%dya Yerevani Hetevakayin Divizia" }
+		23 = { "%dya Yerevani Hetevakayin Divizia" }
+		24 = { "%dya Yerevani Hetevakayin Divizia" }
+		25 = { "%dya Yerevani Hetevakayin Divizia" }
 
 	}
 }
@@ -92,22 +92,22 @@ ARM_CAV_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { ARM_INF_01 }
 
-	fallback_name = "%dya Armyanska Kavaleriyskaya Div."
+	fallback_name = "%dya Hetselazor Brigad"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%dya Armyanska Kavaleriyskaya Div." }
-		2 = { "%dya Armyanska Kavaleriyskaya Div." }
-		3 = { "%dya Armyanska Kavaleriyskaya Div." }
-		4 = { "%dya Armyanska Kavaleriyskaya Div." }
-		5 = { "%dya Armyanska Kavaleriyskaya Div." }
-		6 = { "%dya Armyanska Kavaleriyskaya Div." }
-		7 = { "%dya Armyanska Kavaleriyskaya Div." }
-		8 = { "%dya Armyanska Kavaleriyskaya Div." }
-		9 = { "%dya Armyanska Kavaleriyskaya Div." }
-		10 = { "%dya Armyanska Kavaleriyskaya Div." }
+		1 = { "%dya Hetselazor Brigad" }
+		2 = { "%dya Hetselazor Brigad" }
+		3 = { "%dya Hetselazor Brigad" }
+		4 = { "%dya Hetselazor Brigad" }
+		5 = { "%dya Hetselazor Brigad" }
+		6 = { "%dya Hetselazor Brigad" }
+		7 = { "%dya Hetselazor Brigad" }
+		8 = { "%dya Hetselazor Brigad" }
+		9 = { "%dya Hetselazor Brigad" }
+		10 = { "%dya Hetselazor Brigad" }
 
 	}
 }
@@ -254,37 +254,37 @@ ARM_GAR_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { ARM_INF_01 }
 
-	fallback_name = "%dya Armyanska Strelkovaya Div."
+	fallback_name = "%dya Yerevani Hetevakayin Divizia"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%dya Armyanska Strelkovaya Div." }
-		2 = { "%dya Armyanska Strelkovaya Div." }
-		3 = { "%dya Armyanska Strelkovaya Div." }
-		4 = { "%dya Armyanska Strelkovaya Div." }
-		5 = { "%dya Armyanska Strelkovaya Div." }
-		6 = { "%dya Armyanska Strelkovaya Div." }
-		7 = { "%dya Armyanska Strelkovaya Div." }
-		8 = { "%dya Armyanska Strelkovaya Div." }
-		9 = { "%dya Armyanska Strelkovaya Div." }
-		10 = { "%dya Armyanska Strelkovaya Div." }
-		11 = { "%dya Armyanska Strelkovaya Div." }
-		12 = { "%dya Armyanska Strelkovaya Div." }
-		13 = { "%dya Armyanska Strelkovaya Div." }
-		14 = { "%dya Armyanska Strelkovaya Div." }
-		15 = { "%dya Armyanska Strelkovaya Div." }
-		16 = { "%dya Armyanska Strelkovaya Div." }
-		17 = { "%dya Armyanska Strelkovaya Div." }
-		18 = { "%dya Armyanska Strelkovaya Div." }
-		19 = { "%dya Armyanska Strelkovaya Div." }
-		20 = { "%dya Armyanska Strelkovaya Div." }
-		21 = { "%dya Armyanska Strelkovaya Div." }
-		22 = { "%dya Armyanska Strelkovaya Div." }
-		23 = { "%dya Armyanska Strelkovaya Div." }
-		24 = { "%dya Armyanska Strelkovaya Div." }
-		25 = { "%dya Armyanska Strelkovaya Div." }
+		1 = { "%dya Yerevani Hetevakayin Divizia" }
+		2 = { "%dya Yerevani Hetevakayin Divizia" }
+		3 = { "%dya Yerevani Hetevakayin Divizia" }
+		4 = { "%dya Yerevani Hetevakayin Divizia" }
+		5 = { "%dya Yerevani Hetevakayin Divizia" }
+		6 = { "%dya Yerevani Hetevakayin Divizia" }
+		7 = { "%dya Yerevani Hetevakayin Divizia" }
+		8 = { "%dya Yerevani Hetevakayin Divizia" }
+		9 = { "%dya Yerevani Hetevakayin Divizia" }
+		10 = { "%dya Yerevani Hetevakayin Divizia" }
+		11 = { "%dya Yerevani Hetevakayin Divizia" }
+		12 = { "%dya Yerevani Hetevakayin Divizia" }
+		13 = { "%dya Yerevani Hetevakayin Divizia" }
+		14 = { "%dya Yerevani Hetevakayin Divizia" }
+		15 = { "%dya Yerevani Hetevakayin Divizia" }
+		16 = { "%dya Yerevani Hetevakayin Divizia" }
+		17 = { "%dya Yerevani Hetevakayin Divizia" }
+		18 = { "%dya Yerevani Hetevakayin Divizia" }
+		19 = { "%dya Yerevani Hetevakayin Divizia" }
+		20 = { "%dya Yerevani Hetevakayin Divizia" }
+		21 = { "%dya Yerevani Hetevakayin Divizia" }
+		22 = { "%dya Yerevani Hetevakayin Divizia" }
+		23 = { "%dya Yerevani Hetevakayin Divizia" }
+		24 = { "%dya Yerevani Hetevakayin Divizia" }
+		25 = { "%dya Yerevani Hetevakayin Divizia" }
 
 	}
 }

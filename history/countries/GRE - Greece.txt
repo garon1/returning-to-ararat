@@ -30,6 +30,16 @@ set_technology = {
 	interwar_antiair = 1
 }
 set_autonomy = {
+		target = PON
+		autonomous_state = autonomous_zone
+		freedom_level = 0.1
+	}
+set_autonomy = {
+		target = BSP
+		autonomous_state = international_zone
+		freedom_level = 0.1
+	}
+set_autonomy = {
 		target = ANA
 		autonomous_state = autonomous_zone
 		freedom_level = 0.1
@@ -102,9 +112,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Georgios Kaphantaris"
+	name = "Themistoklis Sofoulis"
 	desc = "POLITICS_Georgios_Kaphantaris_DESC"
-	picture = "gfx/leaders/GRE/Georgios_Kaphantaris.dds"
+	picture = "gfx/leaders/GRE/portrait_gre_themistoklis_sofoulis.dds"
 	expire = "1965.1.1"
 	ideology = social_liberal_subtype
 	traits = {

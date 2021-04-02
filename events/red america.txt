@@ -1,0 +1,490 @@
+add_namespace = pua
+
+#reconstruction event
+country_event = {
+	id = pua.1
+	title = pua.1.t
+	desc = pua.1.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	
+	option = { # 
+		name = pua.1.a
+		PUA_senate_medium_support = yes
+	}
+}
+#military change events
+country_event = {
+	id = pua.2
+	title = pua.2.t
+	desc = pua.2.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	
+	option = { # 
+		name = pua.2.a
+		army_experience = 5
+		navy_experience = 5
+		air_experience = 5
+	}
+}
+#annual deal event
+country_event = {
+	id = pua.3
+	title = pua.3.t
+	desc = pua.3.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	
+	option = { # 
+		name = pua.3.a
+		add_stability = 0.05
+		if = {
+		limit = {
+		has_ideas = PUA_communist_transformation
+				}
+				swap_ideas = {
+				add_idea = PUA_communist_transformation1
+				remove_idea = PUA_communist_transformation
+				}
+			}
+		if = {
+		limit = {
+		has_ideas = PUA_communist_transformation1
+				}
+				swap_ideas = {
+				add_idea = PUA_communist_transformation2
+				remove_idea = PUA_communist_transformation1
+				}
+			}
+	}
+}
+#housing event
+country_event = {
+	id = pua.4
+	title = pua.4.t
+	desc = pua.4.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	
+	option = { # 
+		name = pua.4.a
+		hidden_effect = {
+		357 = {
+		add_manpower = -50000
+			}
+			369 = {
+			add_manpower = 50000
+			}
+			358 = {
+			add_manpower = -75000
+			}
+			359 = {
+			add_manpower = 75000
+			}
+		}
+		359 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		369 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+	}
+}
+#annual deal event
+country_event = {
+	id = pua.5
+	title = pua.5.t
+	desc = pua.5.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	
+	option = { # 
+		name = pua.5.a
+		add_stability = 0.05
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+	}
+}
+#COF event: black nationalists stir shit up
+country_event = {
+	id = pua.6
+	title = pua.6.t
+	desc = pua.6.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	
+	option = { # 
+		name = pua.6.a
+		add_stability = -0.1
+		add_war_support = 0.1
+		random_owned_controlled_state = {
+			limit = {
+				infrastructure > 3
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				infrastructure > 3
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+		}
+	}
+}
+#desegregation is enforced
+country_event = {
+	id = pua.7
+	title = pua.7.t
+	desc = pua.7.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	
+	option = { # 
+		name = pua.7.a
+		add_stability = 0.1
+		add_war_support = 0.1
+		add_political_power = 140
+	}
+}
+#centralized farming event
+country_event = {
+	id = pua.8
+	title = pua.8.t
+	desc = pua.8.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	
+	option = { # 
+		name = pua.8.a
+		if = {
+		limit = {
+		has_ideas = PUA_struggle_for_self_suffenciency
+				}
+				swap_ideas = {
+				add_idea = PUA_centralized_struggle
+				remove_idea = PUA_struggle_for_self_suffenciency
+			}
+		}
+	}
+}
+#new cities
+country_event = {
+	id = pua.9
+	title = pua.9.t
+	desc = pua.9.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	
+	option = { # 
+		name = pua.9.a
+		add_stability = 0.05
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+#expand of the wage
+country_event = {
+	id = pua.10
+	title = pua.10.t
+	desc = pua.10.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	
+	option = { # 
+		name = pua.10.a
+		add_stability = 0.1
+		add_war_support = 0.1
+		add_political_power = -75
+		add_popularity = {
+		popularity = 0.08
+		ideology = radical_socialism
+			}
+		}
+	}
+#annual deal event
+country_event = {
+	id = pua.11
+	title = pua.11.t
+	desc = pua.11.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	
+	option = { # 
+		name = pua.11.a
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+	}
+}
+#lenin is printed
+country_event = {
+	id = pua.12
+	title = pua.12.t
+	desc = pua.12.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	
+	option = { # 
+		name = pua.12.a
+		add_popularity = {
+		popularity = 0.03
+		ideology = radical_socialism
+		}
+		add_stability = 0.04
+		add_popularity = {
+		popularity = 0.03
+		ideology = syndicalism
+		}
+	}
+}
+#rocker is printed
+country_event = {
+	id = pua.13
+	title = pua.13.t
+	desc = pua.13.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	
+	option = { # 
+		name = pua.13.a
+		add_popularity = {
+		popularity = 0.05
+		ideology = syndicalism
+		}
+		add_stability = 0.06
+		add_popularity = {
+		popularity = 0.06
+		ideology = anarchism
+		}
+	}
+}
+#the CIA is created
+country_event = {
+	id = pua.14
+	title = pua.14.t
+	desc = pua.14.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	
+	option = { # 
+		name = pua.14.a
+		if = {
+		limit = {
+		has_idea = PUA_paranoia1
+				}
+				remove_idea = PUA_paranoia1
+			}
+		if = {
+		limit = {
+		has_idea = PUA_paranoia
+				}
+				swap_ideas = {
+				add_idea = PUA_paranoia1
+				remove_idea = PUA_paranoia
+				}
+			}
+		hidden_effect = {
+		add_stability = -0.15
+		add_popularity = {
+		popularity = 0.1
+		ideology = radical_socialism
+			}
+		}
+	}
+}
+#the peoples police is created
+country_event = {
+	id = pua.17
+	title = pua.17.t
+	desc = pua.17.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	
+	option = { # 
+		name = pua.17.a
+		if = {
+		limit = {
+		has_idea = PUA_paranoia
+				}
+				swap_ideas = {
+				add_idea = PUA_paranoia1
+				remove_idea = PUA_paranoia
+				}
+			}
+		hidden_effect = {
+		add_stability = 0.15
+		add_popularity = {
+		popularity = 0.1
+		ideology = anarchism
+			}
+		add_popularity = {
+		popularity = 0.1
+		ideology = syndicalism
+			}
+		}
+	}
+}
+#the peoples police is created
+country_event = {
+	id = pua.18
+	title = pua.18.t
+	desc = pua.18.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	
+	option = { # 
+		name = pua.18.a
+		ARM_parliament_support_remove2 = yes
+		add_stability = 0.02
+	}
+}
+#nationwide clubs
+country_event = {
+	id = pua.19
+	title = pua.19.t
+	desc = pua.19.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	
+	option = { # 
+		name = pua.19.a
+		ARM_parliament_support_remove2 = yes
+		add_stability = 0.02
+	}
+}

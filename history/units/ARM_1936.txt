@@ -1,6 +1,6 @@
 ##### Division Templates #####
 division_template = {
-	name = "Hardzakman Bazhanumy" # Infantry Division
+	name = "Yerevani Hetevakayin Divizia" # Infantry Division
 	division_names_group = ARM_GAR_01
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -22,8 +22,8 @@ division_template = {
 
 
 division_template = {
-	name = "Hetselazorayin Brigad" # Cavalry Division
-	division_names_group = ARM_GAR_01
+	name = "Hetselazor Brigad" # Cavalry Division
+	division_names_group = ARM_CAV_01
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
@@ -40,8 +40,8 @@ units = {
 
 	division= {	# "East Yerevan Cavalry Division"
 		name = "1st Special Cavalry Regiment"
-		location = 12450
-		division_template = "Hetselazorayin Brigad"
+		location = 11853
+		division_template = "Hetselazor Brigad"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ARM" } }
 		start_experience_factor = 10
 		start_equipment_factor = 0.95
@@ -50,7 +50,7 @@ units = {
 	division= {	# "Kars Infantry Division"
 		name = "1st Infantry Regiment"
 		location = 3564
-		division_template = "Hardzakman Bazhanumy"
+		division_template = "Yerevani Hetevakayin Divizia"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ARM" } }
 		start_experience_factor = 10
 		start_equipment_factor = 0.95
@@ -59,7 +59,7 @@ units = {
 	division= {	# "Lori Cavalry Divison"
 		name = "2nd Special Cavalry Regiment"
 		location = 11708
-		division_template = "Hetselazorayin Brigad"
+		division_template = "Hetselazor Brigad"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ARM" } }
 		start_experience_factor = 10
 		start_equipment_factor = 0.95
@@ -68,24 +68,24 @@ units = {
 	
 	division= {	# "Yerevan Infantry Division"
 		name = "2nd Infantry Regiment of Yerevan"
-		location = 12320
-		division_template = "Hardzakman Bazhanumy"
+		location = 6997
+		division_template = "Yerevani Hetevakayin Divizia"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ARM" } }
 		start_experience_factor = 10
 		start_equipment_factor = 0.95
 	}
 division= {	# "Yerevan Infantry Division"
 		name = "2nd Infantry Regiment of Yerevan"
-		location = 12320
-		division_template = "Hardzakman Bazhanumy"
+		location = 806
+		division_template = "Yerevani Hetevakayin Divizia"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ARM" } }
 		start_experience_factor = 10
 		start_equipment_factor = 0.95
 	}
 division= {	# "Yerevan Infantry Division"
 		name = "2nd Infantry Regiment of Yerevan"
-		location = 12320
-		division_template = "Hardzakman Bazhanumy"
+		location = 9777
+		division_template = "Yerevani Hetevakayin Divizia"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ARM" } }
 		start_experience_factor = 10
 		start_equipment_factor = 0.95

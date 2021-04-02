@@ -1,0 +1,23 @@
+state={
+	id=884
+	name="STATE_884"
+	provinces={
+		11830 9832
+	}
+	history={
+		owner = PUA
+		add_core_of = PUA
+		victory_points = {
+			11830 9 
+		}
+		buildings = {
+			infrastructure = 4
+			dockyard = 2
+
+		}
+
+	}
+	manpower=686938
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

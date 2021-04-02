@@ -1,0 +1,165 @@
+# Division template historical names system. Is a new method of naming the divisions based on the names-group PUAigned to it's template.
+# If we run out of all historical names, the names will be PUAigned in the old way.
+#
+# Each group has a made up tag. Use it if you want to append more, or replace existing names with the extra txt files (modding).
+#
+# for_countries - lists all countries that can use it. If empty, or entire tag is missing, all countries in the world can use it.
+#
+# can_use - is a trigger that locks/unlocks the group under specific circumstances. The trigger is in a country scope.
+#
+# division_types - is a list of tokens to corresponding unit types. A player can in fact use any group of names for a div.template
+#			however this tag is a helper for an automated choice (for AI, or if the group must switch on it's own, because
+#			for example the current one is no longer available due to the can_use trigger saying so).
+#			In automated choice, the division template must have at least 1 of the following types for it to be chosen.
+#
+# fallback_name - Is going to be used if we run out of the scripted historical names. If you want to use the old division naming
+#			mechanics to be used for fallbacks, then just skip this option.
+#
+# unordered - It's a list of historical division names that did not have a number. Regardless if such names happened in history or not
+#			this option is available here mainly for a mods.
+#
+# ordered - Is a list of all historical names.
+#			Numbers must start from 1 and up.
+#			Numbers can't repeat in one scope.
+#			If you script the name for this group, at the same number (for example in a mod in another file), the name will be override.
+#			All arguments between the brackets must be separated by spaces. Each argument is wrapped in "quotas".
+#			1st argument = The name. It must contain either:
+#						%d (for decimal number placement)
+#						%s (for string number placement - ROMAN numbers like XIV).
+#			2nd argument is optional = A localizable text describing this historical division. The text will be visible in the tooltip
+#									where you choose the historical division name.
+#			3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
+#									the current game version.
+PUA_INF_01 = {
+	name = "Infantry Division"
+
+	for_countries = { PUA }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { PUA_INF_01 }
+
+	fallback_name = "%s Red Infantry"
+
+	# Names with numbers (only one number per entry).
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "%s Red Infantry" }
+		2 = { "%s Red Infantry" }
+		3 = { "%s Red Infantry" }
+		4 = { "%s Red Infantry" }
+		5 = { "%s Red Infantry" }
+		6 = { "%s Red Infantry" }
+		7 = { "%s Red Infantry" }
+		8 = { "%s Red Infantry" }
+		9 = { "%s Red Infantry" }
+		10 = { "%s Red Infantry" }
+		11 = { "%s Red Infantry" }
+		12 = { "%s Red Infantry" }
+		13 = { "%s Red Infantry" }
+		14 = { "%s Red Infantry" }
+		15 = { "%s Red Infantry" }
+		16 = { "%s Red Infantry" }
+		17 = { "%s Red Infantry" }
+		18 = { "%s Red Infantry" }
+		19 = { "%s Red Infantry" }
+		20 = { "%s Red Infantry" }
+	}
+}
+
+PUA_CAV_01 = {
+	name = "Cavalry Division"
+
+	for_countries = { PUA }
+
+	can_use = { always = yes }
+
+	division_types = { "cavalry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { PUA_INF_01 }
+
+	fallback_name = "%s Cavalry Militia"
+
+	# Names with numbers (only one number per entry).
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "%s Cavalry Militia" }
+		2 = { "%s Cavalry Militia" }
+		3 = { "%s Cavalry Militia" }
+		4 = { "%s Cavalry Militia" }
+		5 = { "%s Cavalry Militia" }
+		6 = { "%s Cavalry Militia" }
+		7 = { "%s Cavalry Militia" }
+		8 = { "%s Cavalry Militia" }
+		9 = { "%s Cavalry Militia" }
+		10 = { "%s Cavalry Militia" }
+	}
+}
+
+PUA_MNT_01 = {
+	name = "Mountain Divisions"
+
+	for_countries = { PUA }
+
+	can_use = { always = yes }
+
+	division_types = { "mountaineers" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { PUA_INF_01 }
+
+	fallback_name = "%s Mountain Divisions"
+
+	# Names with numbers (only one number per entry).
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "%s Mountain Divisions" }
+		2 = { "%s Mountain Divisions" }
+		3 = { "%s Mountain Divisions" }
+		4 = { "%s Mountain Divisions" }
+		5 = { "%s Mountain Divisions" }
+		6 = { "%s Mountain Divisions" }
+		7 = { "%s Mountain Divisions" }
+		8 = { "%s Mountain Divisions" }
+		9 = { "%s Mountain Divisions" }
+		10 = { "%s Mountain Divisions" }
+		11 = { "%s Mountain Divisions" }
+		12 = { "%s Mountain Divisions" }
+		13 = { "%s Mountain Divisions" }
+		14 = { "%s Mountain Divisions" }
+		15 = { "%s Mountain Divisions" }
+		16 = { "%s Mountain Divisions" }
+		17 = { "%s Mountain Divisions" }
+		18 = { "%s Mountain Divisions" }
+		19 = { "%s Mountain Divisions" }
+		20 = { "%s Mountain Divisions" }
+	}
+}
+PUA_MEC_01 = {
+	name = "Mechanized Division"
+
+	for_countries = { PUA }
+
+	can_use = { always = yes }
+
+	division_types = { "mechanized" }
+
+	fallback_name = "%d. Red Infantry kirkhanaya"
+
+	ordered = {
+		1 = { "%d. Red Infantry kirkhanaya" }
+		2 = { "%d. Red Infantry kirkhanaya" }
+		3 = { "%d. Red Infantry kirkhanaya" }
+		4 = { "%d. Red Infantry kirkhanaya" }
+		5 = { "%d. Red Infantry kirkhanaya" }
+		6 = { "%d. Red Infantry kirkhanaya" }
+		7 = { "%d. Red Infantry kirkhanaya" }
+		8 = { "%d. Red Infantry kirkhanaya" }
+		9 = { "%d. Red Infantry kirkhanaya" }
+		10 = { "%d. Red Infantry kirkhanaya" }
+	}
+}

@@ -4,7 +4,7 @@ state={
 	name="STATE_443"
 
 	history={
-		owner = AFE
+		owner = AFG
 		add_core_of = IND
 		add_core_of = KHU
 add_core_of = AFG

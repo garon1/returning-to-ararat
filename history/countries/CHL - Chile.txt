@@ -58,13 +58,14 @@ set_convoys = 20
 
 set_convoys = 5
 set_politics = {
-	ruling_party = totalitarianism
+	ruling_party = radical_socialism
 	last_election = "1932.10.30"
 	election_frequency = 72  #but 4 years after this one in 1938.
 	elections_allowed = no
 }
 set_popularities = {
-totalitarianism = 100
+radical_socialism = 80
+anarchism = 20
 }
 
 create_country_leader = {
@@ -111,15 +112,6 @@ create_country_leader = {
 	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
 	expire = "1965.1.1"
 	ideology = traditional_conservatism_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-		name = "Jonas Lote"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = anarchism_subtype
 	traits = {
 		#
 	}

@@ -271,8 +271,14 @@ create_corps_commander = {
 	planning_skill = 1
 	logistics_skill = 1
 }
+create_navy_leader = {
+	name = "Hovhannes Ter-Isahakyan"
+	picture = "Portrait_Armenia_Hovhannes_Ter-Isahakyan.dds"
+	traits = { blockade_runner superior_tactician }
+	skill = 3
+}
 create_equipment_variant = {
-		name = "Kanayan FLeet"				# represents Sampson, Caldwell, Clemson, and Wickes classes
+		name = "Kanayan Fleet"###class of ships ig??				# represents Sampson, Caldwell, Clemson, and Wickes classes
 		type = ship_hull_cruiser_2
 		name_group = USA_DD_HISTORICAL
 		parent_version = 0
@@ -289,9 +295,8 @@ create_equipment_variant = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Adana FLeet"				# represents Sampson, Caldwell, Clemson, and Wickes classes
+		name = "Adana Fleet"				# represents Sampson, Caldwell, Clemson, and Wickes classes
 		type = ship_hull_cruiser_2
-		name_group = USA_DD_HISTORICAL
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_light_battery_1
@@ -308,7 +313,6 @@ create_equipment_variant = {
 	create_equipment_variant = {
 		name = "Nzdeh Class"				# represents Sampson, Caldwell, Clemson, and Wickes classes
 		type = ship_hull_light_1
-		name_group = USA_DD_HISTORICAL
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_light_battery_1

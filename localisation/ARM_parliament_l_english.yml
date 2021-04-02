@@ -1,0 +1,46 @@
+﻿l_english:
+
+### Parliament ###
+ARM_parliament_support_add2_tt:0 "From this, 2 congress people will §Grally§! behind the government."
+ARM_parliament:0 "National Workers Assembly" #### The name of the Decision category ###
+ARM_parliament_desc_text:1 "The National Workers Assembly of the Peoples' Union of America has been the backbone to the existense of the PUA and the only thing with any real power in the country.\n\n§G[?PUA.armenia_parliament_support]§! members support Jacilist policies out of §R[?PUA.armenia_parliament_total]§! members of congress." ### Replace this with the description
+ARM_parliament_support_header:0 "§YTotal Union Assembly§!" ### Text under the GFX
+ARM_parliament_support_amount:0 "§G[?armenia_parliament_support]§! / §Y[?armenia_parliament_total]§!"
+### Custom Tooltips ###
+#ARM_parliament_support_tt:0 "§GIncrease§! Support from §YCongresspeople§!.\n"
+ARM_parliament_disapproval_tt:0 "§RDecreases§W Support from £discourse_texticon §YCongresspeople§!.§!\n"
+ARM_parliament_support_add5_tt:0 "Up to §Y5 £discourse_texticon Congresspeople§! will §GSupport§! the Government"
+ARM_parliament_support_add10_tt:0 "Up to §Y10 £discourse_texticon Congresspeople§! will §GSupport§! the Government"
+armenia_parliament_support_majority:0 "A §YMajority§! of the National Assembly is supporting the Government."
+ARM_parliament_support_remove5_tt:0 "Up to §Y5 £discourse_texticon Congresspeople§! will join the §ROpposition§!"
+ARM_parliament_support_remove10_tt:0 "Up to §Y10 £discourse_texticon Congresspeople§! will join the §ROpposition§!"
+ARM_parliament_support_remove20_tt:0 "Up to §Y20 £discourse_texticon Congresspeople§! will join the §ROpposition§!"
+
+### Decisions ###
+ARM_parliament_lobbying:0 "Lobby Congresspeople of the Khorhurd for §YSupport§!"
+ARM_parliament_decrease_support:0 "Lose §YSupport§! §R(Test Decision)§!"
+ARM_parliament_lobbying_add5:0 "Small Lobbying Effort"
+ARM_parliament_lobbying_add10:0 "Medium Lobbying Effort"
+ARM_lower_draft_age:0 "Lower Draft Age"
+ARM_lower_vote_age:0 "Lower Voting Age"
+ARM_condemn_atrocities:0 "Condemn Ethnic Clashes"
+ARM_denounce_germany:0 "Denounce Germany"
+ARM_turkish_expansion:0 "Condemn Turkish Expansion"
+ARM_unban_radicals:0 "Unban Radicals from National Assembly"
+ARM_form_new_government:0 "Form a New Cabinet"
+ # Decisions
+  parliament_gui_decision_category:0 "Parliament GUI Examples§!"
+  parliament_gui_decision_category_desc:0 "placeholder text\nplaceholder text\nplaceholder text"
+
+ # Scripted GUIs
+  parliament_gui_title:0 "Grid Parliament"
+  semicircle_parliament_gui_title:0 "Semicircle Parliament"
+  parliament_main_icon_tt:0 "[GetParliamentSeatName] - [GetParliamentPartyName]"
+  parliament_seat_text:0 "Seat [?temp_seat|Y0]"
+  parliament_member_text:0 "[GetParliamentPartyName] - [?parliament_seat_array^parliament_member_index] Seats"
+  parliament_modify_button_tt:0 "§GCtrl+Click§! to add §Y5§! Seats from [GetParliamentPartyName]\n§GShift+Click§! to subtract §Y5§! Seats from [GetParliamentPartyName]"
+
+  party_1_text:0 "Party §RA§!"
+  party_2_text:0 "Party §YB§!"
+  party_3_text:0 "Party §GC§!"
+  party_4_text:0 "Party §BD§!"

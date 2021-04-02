@@ -1,12 +1,8 @@
-PUA_international_affairs = {
-	
-	icon = GFX_decision_category_generic_political_actions
-
+ARM_parliament = {
+	icon = usa_congress
 	allowed = {
 		original_tag = PUA
 	}
-
-	visible = {
-		original_tag = PUA
-	}
+	scripted_gui = arm_parliament_decision_ui
+	priority = 100
 }

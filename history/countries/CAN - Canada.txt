@@ -66,6 +66,11 @@ if = {
 	add_to_tech_sharing_group = commonwealth_research
 }
 set_autonomy = {
+		target = USA
+		autonomous_state = autonomy_satellite
+		freedom_level = 0.75
+	}
+set_autonomy = {
 		target = PAN
 		autonomous_state = autonomy_satellite
 		freedom_level = 0.75
