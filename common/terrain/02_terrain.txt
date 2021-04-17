@@ -5,6 +5,266 @@
 categories =  {
 
 	###CITIES
+	ashgabat = {
+		color = { 155 0 255 }
+		movement_cost = 1.4
+		ai_terrain_importance_factor = 6.0
+		sound_type = plains
+
+		units = {
+			attack = -0.5
+			#movement = -0.2
+		}
+
+		enemy_army_bonus_air_superiority_factor = -0.50
+	}
+	asyut = {
+		color = { 155 0 255 }
+		movement_cost = 1.4
+		ai_terrain_importance_factor = 6.0
+		sound_type = plains
+
+		units = {
+			attack = -0.5
+			#movement = -0.2
+		}
+
+		enemy_army_bonus_air_superiority_factor = -0.50
+	}
+	antwerp = {
+		color = { 155 0 255 }
+		movement_cost = 1.4
+		ai_terrain_importance_factor = 6.0
+		sound_type = plains
+
+		units = {
+			attack = -0.5
+			#movement = -0.2
+		}
+
+		enemy_army_bonus_air_superiority_factor = -0.50
+	}
+	astrakhan = {
+		color = { 155 0 255 }
+		movement_cost = 1.4
+		ai_terrain_importance_factor = 6.0
+		sound_type = plains
+
+		units = {
+			attack = -0.5
+			#movement = -0.2
+		}
+
+		enemy_army_bonus_air_superiority_factor = -0.50
+	}
+	auckland = {
+		color = { 155 0 255 }
+		movement_cost = 1.4
+		ai_terrain_importance_factor = 6.0
+		sound_type = plains
+
+		units = {
+			attack = -0.5
+			#movement = -0.2
+		}
+
+		enemy_army_bonus_air_superiority_factor = -0.50
+	}
+	asyut = {
+		color = { 155 0 255 }
+		movement_cost = 1.4
+		ai_terrain_importance_factor = 6.0
+		sound_type = plains
+
+		units = {
+			attack = -0.5
+			#movement = -0.2
+		}
+
+		enemy_army_bonus_air_superiority_factor = -0.50
+	}
+	aswan = {
+		color = { 155 0 255 }
+		movement_cost = 1.4
+		ai_terrain_importance_factor = 6.0
+		sound_type = plains
+
+		units = {
+			attack = -0.5
+			#movement = -0.2
+		}
+
+		enemy_army_bonus_air_superiority_factor = -0.50
+	}
+	asuncion = {
+		color = { 155 0 255 }
+		movement_cost = 1.4
+		ai_terrain_importance_factor = 6.0
+		sound_type = plains
+
+		units = {
+			attack = -0.5
+			#movement = -0.2
+		}
+
+		enemy_army_bonus_air_superiority_factor = -0.50
+	}
+	arensburg = {
+		color = { 155 0 255 }
+		movement_cost = 1.4
+		ai_terrain_importance_factor = 6.0
+		sound_type = plains
+
+		units = {
+			attack = -0.5
+			#movement = -0.2
+		}
+
+		enemy_army_bonus_air_superiority_factor = -0.50
+	}
+	anzio = {
+		color = { 155 0 255 }
+		movement_cost = 1.4
+		ai_terrain_importance_factor = 6.0
+		sound_type = plains
+
+		units = {
+			attack = -0.5
+			#movement = -0.2
+		}
+
+		enemy_army_bonus_air_superiority_factor = -0.50
+	}
+	austin = {
+		color = { 155 0 255 }
+		movement_cost = 1.4
+		ai_terrain_importance_factor = 6.0
+		sound_type = plains
+
+		units = {
+			attack = -0.5
+			#movement = -0.2
+		}
+
+		enemy_army_bonus_air_superiority_factor = -0.50
+	}
+	antananarivo = {
+		color = { 155 0 255 }
+		movement_cost = 1.4
+		ai_terrain_importance_factor = 6.0
+		sound_type = plains
+
+		units = {
+			attack = -0.5
+			#movement = -0.2
+		}
+
+		enemy_army_bonus_air_superiority_factor = -0.50
+	}
+	anqing = {
+		color = { 155 0 255 }
+		movement_cost = 1.4
+		ai_terrain_importance_factor = 6.0
+		sound_type = plains
+
+		units = {
+			attack = -0.5
+			#movement = -0.2
+		}
+
+		enemy_army_bonus_air_superiority_factor = -0.50
+	}
+	tetouan = {
+		color = { 155 0 255 }
+		movement_cost = 1.4
+		ai_terrain_importance_factor = 6.0
+		sound_type = plains
+
+		units = {
+			attack = -0.5
+			#movement = -0.2
+		}
+
+		enemy_army_bonus_air_superiority_factor = -0.50
+	}
+	allahabad = {
+		color = { 155 0 255 }
+		movement_cost = 1.4
+		ai_terrain_importance_factor = 6.0
+		sound_type = plains
+
+		units = {
+			attack = -0.5
+			#movement = -0.2
+		}
+
+		enemy_army_bonus_air_superiority_factor = -0.50
+	}
+	algiers = {
+		color = { 155 0 255 }
+		movement_cost = 1.4
+		ai_terrain_importance_factor = 6.0
+		sound_type = plains
+
+		units = {
+			attack = -0.5
+			#movement = -0.2
+		}
+
+		enemy_army_bonus_air_superiority_factor = -0.50
+	}
+	alexandrovsk = {
+		color = { 155 0 255 }
+		movement_cost = 1.4
+		ai_terrain_importance_factor = 6.0
+		sound_type = plains
+
+		units = {
+			attack = -0.5
+			#movement = -0.2
+		}
+
+		enemy_army_bonus_air_superiority_factor = -0.50
+	}
+	akhmolinsk = {
+		color = { 155 0 255 }
+		movement_cost = 1.4
+		ai_terrain_importance_factor = 6.0
+		sound_type = plains
+
+		units = {
+			attack = -0.5
+			#movement = -0.2
+		}
+
+		enemy_army_bonus_air_superiority_factor = -0.50
+	}
+	adelaide = {
+		color = { 155 0 255 }
+		movement_cost = 1.4
+		ai_terrain_importance_factor = 6.0
+		sound_type = plains
+
+		units = {
+			attack = -0.5
+			#movement = -0.2
+		}
+
+		enemy_army_bonus_air_superiority_factor = -0.50
+	}
+addis_ababa = {
+		color = { 155 0 255 }
+		movement_cost = 1.4
+		ai_terrain_importance_factor = 6.0
+		sound_type = plains
+
+		units = {
+			attack = -0.5
+			#movement = -0.2
+		}
+
+		enemy_army_bonus_air_superiority_factor = -0.50
+	}
 sokhumi = {
 		color = { 155 0 255 }
 		movement_cost = 1.4

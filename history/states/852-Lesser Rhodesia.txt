@@ -7,7 +7,7 @@ state={
 	manpower=500
 	state_category=enclave
 	history={
-		owner = BAF
+		owner = TZN
 		buildings = {
 			infrastructure = 0
 		}

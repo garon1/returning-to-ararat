@@ -1,6 +1,46 @@
 ideas = {
 
 country = {
+PUA_advisor_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = spr_anti_fascist_crusade
+			
+			modifier = {
+			command_power_gain = 0.1
+			land_reinforce_rate = 0.1
+			fuel_cost = -100
+			}
+		}
+PUA_cappie_crusade = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = spr_anti_fascist_crusade
+			
+			modifier = {
+			justify_war_goal_time = -0.4
+			political_power_gain = 0.1
+			production_speed_arms_factory_factor = 0.1
+			}
+		}
 PUA_state_measure_act1 = {
 
 			allowed = {
@@ -353,7 +393,7 @@ PUA_new_foreign_policy = {
 			send_volunteer_size = 5
 			production_factory_efficiency_gain_factor = 0.1
 			stability_factor = 0.2
-			ai_join_ally_desire_factor = 0.5
+			ai_join_ally_desire_factor = 50
 			}
 		}
 PUA_struggle_for_self_suffenciency = {

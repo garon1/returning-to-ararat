@@ -1,6 +1,14 @@
 
 spriteTypes = {
 spriteType = {
+		name = "GFX_PUA_advisor_idea"
+		texturefile = "gfx/interface/ideas/idea_saf_soviet_advisers.dds"
+	}
+spriteType = {
+		name = "GFX_PUA_cappie_crusade"
+		texturefile = "gfx/interface/ideas/spr_anti_fascist_crusade.dds"
+	}
+spriteType = {
 		name = "GFX_PUA_state_measure_act1"
 		texturefile = "gfx/interface/ideas/generic_goods_red_bonus.dds"
 	}

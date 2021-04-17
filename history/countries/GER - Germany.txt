@@ -132,17 +132,7 @@ set_autonomy = {
 	}
 create_faction = "Combined Nations Of The People"
 add_to_faction = GER
-add_to_faction = HAI
-add_to_faction = ECU
-add_to_faction = BOL
-add_to_faction = TAJ
-add_to_faction = CAU
-add_to_faction = SIK
-add_to_faction = PAR
-add_to_faction = URG
-add_to_faction = VIN
 add_to_faction = SOV
-add_to_faction = ARG
 add_ideas = {
 GER_national_revitalization2
 GER_syndicalist_economy

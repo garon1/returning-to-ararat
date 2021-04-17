@@ -1,14 +1,11 @@
-on_actions = { 
-# ROOT is capitulated country, FROM is winner
-	on_capitulation = {
+on_actions = {
+	on_startup = {
 		effect = {
-			if = {
-				limit = {
-					JAP = { has_idea = JAP_intervene_in_china_5 }
-					original_tag = CHI
-					has_war_with = JAP
+		2 = {
+add_province_modifier = {
+		static_modifiers = { city_rome }
+		province = { id = 9904 }
 				}
-				JAP = { country_event = { id = japan.19 days = 0 } }
 			}
 		}
 	}

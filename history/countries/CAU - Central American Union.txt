@@ -26,6 +26,13 @@ add_ideas = {
 	CAU_national_unity
 
 }
+create_faction = "American Worker's Accord"
+add_to_faction = CAU
+add_to_faction = HAI
+add_to_faction = ECU
+add_to_faction = BOL
+add_to_faction = CHL
+add_to_faction = ARG
 set_popularities = {
 radical_socialism = 15
 syndicalism = 60

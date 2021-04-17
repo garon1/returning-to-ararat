@@ -1,0 +1,15 @@
+#minneapolis conference voting events
+#Voted Aye!
+ROOT_voted_aye_in_minneapolis_convention_effect = {
+	custom_effect_tooltip = ROOT_voted_aye_minneapolis_effect
+	hidden_effect = {	
+		add_to_variable = { var = global.convention_ayes value = 1 }
+	}
+}
+#Voted Nay!
+ROOT_voted_nay_in_minneapolis_convention_effect = {
+	custom_effect_tooltip = ROOT_voted_nay_minneapolis_effect
+	hidden_effect = {	
+		add_to_variable = { var = global.convention_nays value = 1 }
+	}
+}

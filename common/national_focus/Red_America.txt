@@ -1926,13 +1926,56 @@ focus_tree = {
 		}
 		x = 42
 		y = 9
+		bypass = {
+		NOT = {
+		OR = {
+		LOA = {
+		exists = yes
+					}
+		CAL = {
+		exists = yes
+			}
+			COF = {
+		exists = yes
+			}
+		}
+		}
+		}
 		available = {
+		OR = {
+		LOA = {
+		exists = yes
+					}
+		CAL = {
+		exists = yes
+			}
+			COF = {
+		exists = yes
+			}
+		}
 		is_subject = no
 		has_capitulated = no
 		has_war = no
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		completion_reward = {
+		hidden_effect = {
+		country_event = pua.20
+		}
+		COF = {
+		add_opinion_modifier = { modifier = sanctions target = PUA }
+		}
+		PUA = {
+		add_opinion_modifier = { modifier = sanctions target = COF }
+			}
+		LOA = {
+		add_opinion_modifier = { modifier = sanctions target = PUA }
+		}
+		PUA = {
+		add_opinion_modifier = { modifier = sanctions target = LOA }
+			}
+		}
 	}
 	focus = {
 		id = PUA_contact_anti_legionists
@@ -1947,6 +1990,7 @@ focus_tree = {
 		is_subject = no
 		has_capitulated = no
 		has_war = no
+		always = no
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1960,30 +2004,54 @@ focus_tree = {
 		}
 		x = 40
 		y = 11
+		bypass = {
+		CAL = {
+		is_subject = no
+		exists = yes
+			}
+		}
 		available = {
 		is_subject = no
 		has_capitulated = no
 		has_war = no
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-	}
-	focus = {
-		id = PUA_support_oregon_uprising
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = PUA_support_anti_legionists
-		}
-		x = 39
-		y = 12
-		available = {
+		CAL = {
 		is_subject = no
-		has_capitulated = no
-		has_war = no
+		exists = yes
+			}
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		completion_reward = {
+		ARM_parliament_support_remove2 = yes
+		CAL = {
+		add_opinion_modifier = {
+				target = PUA
+				modifier = medium_increase
+			}
+		}
+		add_opinion_modifier = {
+				target = CAL
+				modifier = medium_increase
+			}
+		PUA = {
+		add_manpower = -300
+		army_experience = 10
+		}
+		CAL = {
+		add_manpower = 300
+		army_experience = 10
+		}
+		add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 5000
+				producer = CAL
+			}
+		add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -5000
+				producer = PUA
+			}
+		}
 	}
 	focus = {
 		id = PUA_exploit_the_peoples_fears
@@ -2193,6 +2261,7 @@ focus_tree = {
 		is_subject = no
 		has_capitulated = no
 		has_war = no
+		always = no
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2206,30 +2275,29 @@ focus_tree = {
 		}
 		x = 42
 		y = 11
+		bypass = {
+		NOT = {
+		CAN = {
+		is_subject = no
+		exists = yes		
+				}
+			}
+		}
 		available = {
 		is_subject = no
 		has_capitulated = no
 		has_war = no
+		CAN = {
+		exists = yes
+			}
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-	}
-	focus = {
-		id = PUA_encourage_quebians_to_rebel
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = PUA_send_aid_to_quebec_separatists
+		completion_reward = {
+		CAN = {
+		country_event = pua.22
+			}
 		}
-		x = 42
-		y = 12
-		available = {
-		is_subject = no
-		has_capitulated = no
-		has_war = no
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 	}
 	focus = {
 		id = PUA_create_workers_police
@@ -2356,6 +2424,9 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		completion_reward = {
+		add_ideas = PUA_advisor_idea
+		}
 	}
 	focus = {
 		id = PUA_contact_the_germans
@@ -2370,9 +2441,34 @@ focus_tree = {
 		is_subject = no
 		has_capitulated = no
 		has_war = no
+		GER = {
+		is_subject = no
+		exists = yes
+				}
+		}
+		bypass = {
+		NOT = {
+		GER = {
+		is_subject = no
+		exists = yes
+				}
+			}
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		completion_reward = {
+		GER = {
+		add_opinion_modifier = { modifier = unholy_alliance_opinion target = PUA }
+		}
+		PUA = {
+		add_opinion_modifier = { modifier = unholy_alliance_opinion target = GER }
+			}
+		GER = {
+		country_event = {
+		id = pua.28 days = 2
+				}
+			}
+		}
 	}
 	focus = {
 		id = PUA_anarchism
@@ -2440,9 +2536,34 @@ focus_tree = {
 		is_subject = no
 		has_capitulated = no
 		has_war = no
+		VIN = {
+		is_subject = no
+		exists = yes
+				}
+		}
+		bypass = {
+		NOT = {
+		 VIN = {
+		is_subject = no
+		exists = yes
+				}
+			}
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		completion_reward = {
+		VIN = {
+		add_opinion_modifier = { modifier = unholy_alliance_opinion target = PUA }
+		}
+		PUA = {
+		add_opinion_modifier = { modifier = unholy_alliance_opinion target = VIN }
+			}
+		VIN = {
+		country_event = {
+		id = pua.29 days = 2
+				}
+			}
+		}
 	}
 	focus = {
 		id = PUA_contact_the_russians
@@ -2457,12 +2578,37 @@ focus_tree = {
 		is_subject = no
 		has_capitulated = no
 		has_war = no
+		SOV = {
+		is_subject = no
+		exists = yes
+				}
+		}
+		bypass = {
+		NOT = {
+		 SOV = {
+		is_subject = no
+		exists = yes
+				}
+			}
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		completion_reward = {
+		SOV = {
+		add_opinion_modifier = { modifier = unholy_alliance_opinion target = PUA }
+		}
+		PUA = {
+		add_opinion_modifier = { modifier = unholy_alliance_opinion target = SOV }
+			}
+		SOV = {
+		country_event = {
+		id = pua.29 days = 2
+				}
+			}
+		}
 	}
 	focus = {
-		id = PUA_enact_trade_relations_with_cnotp
+		id = PUA_enact_trade_relations_with_south_american_socialists
 		icon = GFX_goal_unknown
 		cost = 7.00
 		prerequisite = {
@@ -2483,13 +2629,87 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		completion_reward = {
+		if = {
+		limit = {
+		CHL = {
+		OR = {
+			has_government = radical_socialism
+		has_government = syndicalism
+		has_government = anarchism
+		has_government = market_socialism
+						}
+					}
+				}
+				CHL = {
+		add_opinion_modifier = { modifier = small_increase target = PUA }
+		}
+		PUA = {
+		add_opinion_modifier = { modifier = small_increase target = CHL }
+				}
+				CHL = {
+		add_opinion_modifier = { modifier = unholy_alliance_opinion target = PUA }
+		}
+		PUA = {
+		add_opinion_modifier = { modifier = unholy_alliance_opinion target = CHL }
+				}
+			}
+		if = {
+		limit = {
+		ARG = {
+		OR = {
+			has_government = radical_socialism
+		has_government = syndicalism
+		has_government = anarchism
+		has_government = market_socialism
+						}
+					}
+				}
+				ARG = {
+		add_opinion_modifier = { modifier = small_increase target = PUA }
+		}
+		PUA = {
+		add_opinion_modifier = { modifier = small_increase target = ARG }
+				}
+				ARG = {
+		add_opinion_modifier = { modifier = unholy_alliance_opinion target = PUA }
+		}
+		PUA = {
+		add_opinion_modifier = { modifier = unholy_alliance_opinion target = ARG }
+				}
+			}
+		if = {
+		limit = {
+		ECU = {
+		OR = {
+			has_government = radical_socialism
+		has_government = syndicalism
+		has_government = anarchism
+		has_government = market_socialism
+						}
+					}
+				}
+				ECU = {
+		add_opinion_modifier = { modifier = small_increase target = PUA }
+		}
+		PUA = {
+		add_opinion_modifier = { modifier = small_increase target = ECU }
+				}
+				ECU = {
+		add_opinion_modifier = { modifier = unholy_alliance_opinion target = PUA }
+		}
+		PUA = {
+		add_opinion_modifier = { modifier = unholy_alliance_opinion target = ECU }
+				}
+			}
+		}
 	}
 	focus = {
 		id = PUA_send_material_aid_to_caribbean
 		icon = GFX_goal_unknown
 		cost = 7.00
 		prerequisite = {
-			focus = PUA_enact_trade_relations_with_cnotp
+			focus = PUA_enact_trade_relations_with_south_american_socialists
 		}
 		x = 44
 		y = 12
@@ -2498,15 +2718,97 @@ focus_tree = {
 		has_capitulated = no
 		has_war = no
 		}
+		bypass = {
+		OR = {
+		MEX = {
+		NOT = {
+		OR = {
+		has_government = radical_socialism
+		has_government = syndicalism
+		has_government = anarchism
+		has_government = market_socialism
+						}
+					}
+				}
+				CAU = {
+		NOT = {
+		exists = no
+		OR = {
+		has_government = radical_socialism
+		has_government = syndicalism
+		has_government = anarchism
+		has_government = market_socialism
+						}
+					}
+				}
+		HAI = {
+		NOT = {
+		OR = {
+		has_government = radical_socialism
+		has_government = syndicalism
+		has_government = anarchism
+		has_government = market_socialism
+						}
+					}
+				}
+			}
+		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		completion_reward = {
+		if = {
+		limit = {
+		MEX = {
+		OR = {
+			has_government = radical_socialism
+		has_government = syndicalism
+		has_government = anarchism
+		has_government = market_socialism
+						}
+					}
+				}
+			MEX = {
+			country_event = pua.31
+				}
+			}
+		if = {
+		limit = {
+		CAU = {
+		OR = {
+			has_government = radical_socialism
+		has_government = syndicalism
+		has_government = anarchism
+		has_government = market_socialism
+						}
+					}
+				}
+			CAU = {
+			country_event = pua.31
+				}
+			}
+		if = {
+		limit = {
+		HAI = {
+		OR = {
+			has_government = radical_socialism
+		has_government = syndicalism
+		has_government = anarchism
+		has_government = market_socialism
+						}
+					}
+				}
+			HAI = {
+			country_event = pua.31
+				}
+			}
+		}
 	}
 	focus = {
 		id = PUA_meddle_with_mexico
 		icon = GFX_goal_unknown
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
-			focus = PUA_enact_trade_relations_with_cnotp
+			focus = PUA_enact_trade_relations_with_south_american_socialists
 		}
 		x = 46
 		y = 12
@@ -2514,9 +2816,85 @@ focus_tree = {
 		is_subject = no
 		has_capitulated = no
 		has_war = no
+		MEX = {
+		OR = {
+			has_government = radical_socialism
+		has_government = syndicalism
+		has_government = anarchism
+		has_government = market_socialism
+						}
+					}
+		}
+		bypass = {
+		MEX = {
+		OR = {
+			has_government = radical_socialism
+		has_government = syndicalism
+		has_government = anarchism
+		has_government = market_socialism
+						}
+					}
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		completion_reward = {
+		if = {
+		limit = {
+		PUA = {
+			has_government = market_socialism
+					}
+				}
+				MEX = {
+				add_stability = -0.05
+				add_popularity = {
+				popularity = 0.1
+				ideology = market_socialism
+					}
+				}
+			}
+		if = {
+		limit = {
+		PUA = {
+			has_government = anarchism
+					}
+				}
+				MEX = {
+				add_stability = -0.05
+				add_popularity = {
+				popularity = 0.1
+				ideology = anarchism
+					}
+				}
+			}
+		if = {
+		limit = {
+		PUA = {
+			has_government = syndicalism
+					}
+				}
+				MEX = {
+				add_stability = -0.05
+				add_popularity = {
+				popularity = 0.1
+				ideology = syndicalism
+					}
+				}
+			}
+		if = {
+		limit = {
+		PUA = {
+			has_government = radical_socialism
+					}
+				}
+				MEX = {
+				add_stability = -0.05
+				add_popularity = {
+				popularity = 0.1
+				ideology = radical_socialism
+					}
+				}
+			}
+		}
 	}
 	focus = {
 		id = PUA_join_cnotp
@@ -2537,9 +2915,34 @@ focus_tree = {
 		is_subject = no
 		has_capitulated = no
 		has_war = no
+		GER = {
+		OR = {
+			has_government = radical_socialism
+		has_government = syndicalism
+		has_government = anarchism
+		has_government = market_socialism
+						}
+					}
+		}
+		bypass = {
+		GER = {
+		OR = {
+			has_government = radical_socialism
+		has_government = syndicalism
+		has_government = anarchism
+		has_government = market_socialism
+						}
+					}
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		completion_reward = {
+		GER = {
+		country_event = {
+		id = generic.2
+		}
+		}
+		}
 	}
 	focus = {
 		id = PUA_market_socialists
@@ -2616,6 +3019,9 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		completion_reward  {
+		create_faction = "Pan American Workers Alliance"
+		}
 	}
 	focus = {
 		id = PUA_texas_question
@@ -2626,13 +3032,28 @@ focus_tree = {
 		}
 		x = 49
 		y = 9
+		bypass = {
+		TEX = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+			}
+		}
 		available = {
 		is_subject = no
 		has_capitulated = no
 		has_war = no
+		TEX = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+			}
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		completion_reward = {
+		country_event = pua.24
+		}
 	}
 	focus = {
 		id = PUA_radicalism
@@ -2703,6 +3124,7 @@ focus_tree = {
 		is_subject = no
 		has_capitulated = no
 		has_war = no
+		always = no
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2844,6 +3266,7 @@ focus_tree = {
 		is_subject = no
 		has_capitulated = no
 		has_war = no
+		always = no
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -3014,6 +3437,7 @@ focus_tree = {
 		is_subject = no
 		has_capitulated = no
 		has_war = no
+		always = no
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -3027,13 +3451,28 @@ focus_tree = {
 		}
 		x = 38
 		y = 11
+		bypass = {
+		NOT = {
+		COF = {
+		exists = yes
+				}
+			}
+		}
 		available = {
+		COF = {
+		exists = yes
+		}
 		is_subject = no
 		has_capitulated = no
 		has_war = no
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		completion_reward = {
+		COF = {
+		country_event = pua.21
+			}
+		}
 	}
 	focus = {
 		id = PUA_uplift_black_community
@@ -3188,23 +3627,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = PUA_support_a_black_uprising
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = PUA_bring_material_aid_to_resistance
-		}
-		x = 37
-		y = 12
-		available = {
-		is_subject = no
-		has_capitulated = no
-		has_war = no
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-	}
-	focus = {
 		id = PUA_anti_capitalist_crusade
 		icon = GFX_goal_unknown
 		cost = 7.00
@@ -3214,13 +3636,23 @@ focus_tree = {
 		}
 		x = 45
 		y = 14
+		bypass = {
+		NOT = {
+		is_subject = no
+		exists = yes
+			}
+		}
 		available = {
 		is_subject = no
 		has_capitulated = no
 		has_war = no
+		exists = yes
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		completion_reward = {
+		add_ideas = PUA_cappie_crusade
+		}
 	}
 	focus = {
 		id = PUA_the_peoples_army

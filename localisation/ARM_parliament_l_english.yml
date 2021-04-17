@@ -1,7 +1,8 @@
 ﻿l_english:
 
 ### Parliament ###
-ARM_parliament_support_add2_tt:0 "From this, 2 congress people will §Grally§! behind the government."
+ARM_parliament_support_remove2_tt:0 "From this decision, 2 congress people will §Grally§! behind §GSyndicalism§!"
+ARM_parliament_support_add2_tt:0 "From this, 2 congress people will §Grally§! behind Jacalism."
 ARM_parliament:0 "National Workers Assembly" #### The name of the Decision category ###
 ARM_parliament_desc_text:1 "The National Workers Assembly of the Peoples' Union of America has been the backbone to the existense of the PUA and the only thing with any real power in the country.\n\n§G[?PUA.armenia_parliament_support]§! members support Jacilist policies out of §R[?PUA.armenia_parliament_total]§! members of congress." ### Replace this with the description
 ARM_parliament_support_header:0 "§YTotal Union Assembly§!" ### Text under the GFX
@@ -9,12 +10,12 @@ ARM_parliament_support_amount:0 "§G[?armenia_parliament_support]§! / §Y[?arme
 ### Custom Tooltips ###
 #ARM_parliament_support_tt:0 "§GIncrease§! Support from §YCongresspeople§!.\n"
 ARM_parliament_disapproval_tt:0 "§RDecreases§W Support from £discourse_texticon §YCongresspeople§!.§!\n"
-ARM_parliament_support_add5_tt:0 "Up to §Y5 £discourse_texticon Congresspeople§! will §GSupport§! the Government"
-ARM_parliament_support_add10_tt:0 "Up to §Y10 £discourse_texticon Congresspeople§! will §GSupport§! the Government"
+ARM_parliament_support_add5_tt:0 "Up to §Y5 £discourse_texticon Congresspeople§! will §GSupport§! Syndicalism."
+ARM_parliament_support_add10_tt:0 "Up to §Y10 £discourse_texticon Congresspeople§! will §GSupport§! Syndicalism."
 armenia_parliament_support_majority:0 "A §YMajority§! of the National Assembly is supporting the Government."
-ARM_parliament_support_remove5_tt:0 "Up to §Y5 £discourse_texticon Congresspeople§! will join the §ROpposition§!"
-ARM_parliament_support_remove10_tt:0 "Up to §Y10 £discourse_texticon Congresspeople§! will join the §ROpposition§!"
-ARM_parliament_support_remove20_tt:0 "Up to §Y20 £discourse_texticon Congresspeople§! will join the §ROpposition§!"
+ARM_parliament_support_remove5_tt:0 "Up to §Y5 £discourse_texticon Congresspeople§! will join §RJacalism§!"
+ARM_parliament_support_remove10_tt:0 "Up to §Y10 £discourse_texticon Congresspeople§! will join the §RJacalism§!"
+ARM_parliament_support_remove20_tt:0 "Up to §Y20 £discourse_texticon Congresspeople§! will join the §RJacalism§!"
 
 ### Decisions ###
 ARM_parliament_lobbying:0 "Lobby Congresspeople of the Khorhurd for §YSupport§!"

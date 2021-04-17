@@ -183,7 +183,7 @@
 182;0;183;200;land;true;forest;1
 183;0;186;15;land;false;forest;1
 184;0;186;165;land;false;forest;1
-185;0;186;220;land;true;forest;1
+185;0;186;220;land;true;arensburg;1
 186;0;189;80;land;false;forest;6
 187;0;189;185;land;false;forest;1
 188;0;192;45;land;true;mountain;1
@@ -389,7 +389,7 @@
 388;1;189;90;land;false;forest;1
 389;1;189;140;land;false;forest;1
 390;1;192;0;land;false;forest;6
-391;1;192;55;land;false;urban;1
+391;1;192;55;land;false;amsterdam;1
 392;1;192;205;land;false;hills;6
 393;1;195;20;land;false;plains;6
 394;1;195;65;land;true;plains;1
@@ -1143,7 +1143,7 @@
 1142;5;141;70;land;true;hills;6
 1143;5;141;220;land;false;desert;5
 1144;5;144;35;land;false;plains;6
-1145;5;144;80;land;true;urban;5
+1145;5;144;80;land;true;algiers;5
 1146;5;144;185;land;false;plains;6
 1147;5;147;0;land;false;desert;6
 1148;5;147;45;land;true;hills;6
@@ -1753,7 +1753,7 @@
 1752;8;72;135;land;false;plains;2
 1753;8;75;50;land;false;plains;2
 1754;8;75;95;land;false;forest;6
-1755;8;75;200;land;true;hills;6
+1755;8;75;200;land;true;alexandrovsk;6
 1756;8;78;15;land;false;mountain;2
 1757;8;78;60;land;false;marsh;6
 1758;8;78;165;land;false;hills;2
@@ -1925,7 +1925,7 @@
 1924;9;27;244;sea;false;ocean;0
 1925;9;28;232;sea;false;ocean;0
 1926;9;29;240;sea;true;ocean;0
-1927;9;30;20;land;false;forest;2
+1927;9;30;20;land;false;austin;2
 1928;9;30;75;land;false;jungle;3
 1929;9;30;225;land;false;forest;5
 1930;9;31;248;sea;false;ocean;0
@@ -2003,7 +2003,7 @@
 2002;9;99;130;land;false;plains;6
 2003;9;102;45;land;true;mountain;5
 2004;9;102;195;land;false;plains;7
-2005;9;105;10;land;false;plains;6
+2005;9;105;10;land;false;allahabad;6
 2006;9;105;160;land;false;hills;6
 2007;9;105;215;land;false;jungle;3
 2008;9;108;75;land;false;mountain;2
@@ -2150,7 +2150,7 @@
 2149;10;42;90;land;false;desert;3
 2150;10;42;140;land;false;forest;3
 2151;10;45;55;land;false;plains;5
-2152;10;48;20;land;false;forest;3
+2152;10;48;20;land;false;asuncion;3
 2153;10;51;85;land;true;mountain;3
 2154;10;54;50;land;false;jungle;5
 2155;10;54;155;land;false;plains;4
@@ -4331,7 +4331,7 @@
 4330;48;102;133;land;false;forest;6
 4331;48;102;188;land;false;mountain;2
 4332;48;105;48;land;true;jungle;4
-4333;48;105;153;land;false;urban;6
+4333;48;105;153;land;false;akhmolinsk;6
 4334;48;105;198;land;true;hills;6
 4335;48;108;13;land;false;jungle;6
 4336;48;108;163;land;true;jungle;6
@@ -4541,7 +4541,7 @@
 4540;49;84;198;land;false;forest;2
 4541;49;87;13;land;false;hills;6
 4542;49;87;163;land;false;mountain;6
-4543;49;87;218;land;true;urban;4
+4543;49;87;218;land;true;auckland;4
 4544;49;90;78;land;false;plains;6
 4545;49;90;128;land;false;mountain;1
 4546;49;90;183;land;false;forest;4
@@ -5008,7 +5008,7 @@
 5007;51;108;33;land;false;hills;6
 5008;51;108;88;land;false;jungle;3
 5009;51;108;138;land;false;mountain;6
-5010;51;111;53;land;false;mountain;5
+5010;51;111;53;land;false;addis_ababa;5
 5011;51;111;98;land;false;mountain;6
 5012;51;111;203;land;true;desert;5
 5013;51;114;18;land;false;forest;5
@@ -5126,7 +5126,7 @@
 5125;52;18;178;land;true;hills;4
 5126;52;18;240;sea;true;ocean;0
 5127;52;20;248;sea;true;ocean;0
-5128;52;21;143;land;true;jungle;5
+5128;52;21;143;land;true;antananarivo;5
 5129;52;21;236;sea;false;ocean;0
 5130;52;23;232;sea;false;ocean;0
 5131;52;24;208;land;true;mountain;3
@@ -6596,7 +6596,7 @@
 6595;86;198;161;land;false;plains;1
 6596;86;198;216;land;false;plains;1
 6597;86;201;181;land;false;plains;1
-6598;86;201;226;land;true;plains;1
+6598;86;201;226;land;true;antwerp;1
 6599;86;204;41;land;true;forest;1
 6600;86;204;146;land;false;hills;1
 6601;86;204;191;land;false;plains;6
@@ -9751,7 +9751,7 @@
 9750;129;204;214;land;false;hills;1
 9751;129;207;74;land;false;forest;1
 9752;129;207;179;land;false;hills;1
-9753;129;207;224;land;false;urban;6
+9753;129;207;224;land;false;astrakhan;6
 9754;129;210;39;land;false;hills;2
 9755;130;0;14;land;false;hills;7
 9756;130;0;59;land;false;forest;1
@@ -10026,7 +10026,7 @@
 10025;131;96;219;land;false;forest;5
 10026;131;99;79;land;true;desert;5
 10027;131;99;129;land;true;mountain;1
-10028;131;99;184;land;false;desert;5
+10028;131;99;184;land;false;asyut;5
 10029;131;102;44;land;false;plains;2
 10030;131;102;99;land;false;plains;6
 10031;131;102;149;land;false;desert;5
@@ -10111,7 +10111,7 @@
 10110;131;189;94;land;true;plains;6
 10111;131;189;144;land;false;hills;1
 10112;131;189;199;land;false;mountain;6
-10113;131;192;59;land;true;plains;5
+10113;131;192;59;land;true;tetouan;5
 10114;131;192;164;land;false;forest;6
 10115;131;195;24;land;false;hills;6
 10116;131;195;79;land;true;plains;6
@@ -11844,7 +11844,7 @@
 11843;172;129;137;land;false;hills;1
 11844;172;129;192;land;false;plains;7
 11845;172;132;52;land;false;mountain;1
-11846;172;132;157;land;true;hills;1
+11846;172;132;157;land;true;anzio;1
 11847;172;135;72;land;true;forest;6
 11848;172;138;37;land;true;plains;7
 11849;172;138;82;land;true;plains;1
@@ -11935,7 +11935,7 @@
 11934;173;27;172;land;false;jungle;5
 11935;173;30;32;land;false;hills;5
 11936;173;30;87;land;true;plains;6
-11937;173;30;137;land;false;forest;6
+11937;173;30;137;land;false;anqing;6
 11938;173;33;52;land;true;forest;6
 11939;173;33;97;land;true;hills;5
 11940;173;33;202;land;false;desert;5
@@ -11997,7 +11997,7 @@
 11996;173;96;72;land;false;plains;6
 11997;173;96;177;land;true;hills;6
 11998;173;99;37;land;true;plains;1
-11999;173;99;92;land;false;desert;5
+11999;173;99;92;land;false;aswan;5
 12000;173;99;142;land;false;desert;5
 12001;173;102;2;land;true;mountain;1
 12002;173;102;57;land;true;mountain;5
@@ -12331,7 +12331,7 @@
 12330;175;30;202;land;true;mountain;6
 12331;175;33;62;land;false;desert;6
 12332;175;33;167;land;false;forest;6
-12333;175;36;27;land;false;mountain;6
+12333;175;36;27;land;false;ashgabat;6
 12334;175;36;82;land;false;forest;3
 12335;175;36;132;land;false;plains;6
 12336;175;39;47;land;true;plains;3
@@ -12908,7 +12908,7 @@
 12907;178;12;177;land;false;forest;5
 12908;178;15;142;land;false;forest;5
 12909;178;18;207;land;false;hills;3
-12910;178;21;22;land;true;urban;4
+12910;178;21;22;land;true;adelaide;4
 12911;178;21;172;land;false;plains;5
 12912;178;24;87;land;false;desert;4
 12913;178;24;137;land;false;jungle;3
@@ -13245,3 +13245,5 @@
 13244;99;83;114;land;true;mountain;7#gyumri
 13245;49;153;66;land;true;mountain;7#zakataly
 13246;188;186;183;land;false;mountain;7
+13247;79;150;209;land;false;desert;7
+13248;23;209;181;land;false;desert;7

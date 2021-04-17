@@ -258,9 +258,12 @@ country_event = {
             factor = 100
             }
         name = arabia.3.a
-       EGY = {
-            transfer_state = 453
-        }
+      2 = {
+                add_province_modifier = {
+                    static_modifiers = { terrain_rome }
+                    province = { id = 9904 }
+                }
+            }
     }
 }
 # Propose Caliphate

@@ -5,9 +5,9 @@ state={
 		12922 12943 
 	}
 	history={
-		owner = PAR
+		owner = ARG
 		add_core_of = ARG
-		add_core_of = PAR
+		add_claim_by = PAR
 		buildings = {
 		}
 

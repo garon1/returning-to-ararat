@@ -145,33 +145,6 @@ set_popularities = {
 nationalism = 70
 totalitarianism = 30
 }
-
-
-create_faction = Britania
-add_to_faction = ENG
-
-give_military_access = RAJ
-add_to_faction = RAJ		# Must be after puppet
-set_autonomy = {
-		target = RAJ
-		autonomous_state = autonomy_colony
-		freedom_level = 0.4
-	}
-	set_autonomy = {
-		target = BRM
-		autonomous_state = autonomy_colony
-		freedom_level = 0.4
-	}
-set_autonomy = {
-		target = AFE
-		autonomous_state = autonomy_colony
-		freedom_level = 0.4
-	}
-	set_autonomy = {
-		target = BAF
-		autonomous_state = autonomy_colony
-		freedom_level = 0.4
-	}
 create_country_leader = {
 		name = "Jonas Lote"
 	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"

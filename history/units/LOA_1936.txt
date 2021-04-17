@@ -1,0 +1,189 @@
+division_template = {
+	name = "Populist Infantry Division"
+	division_names_group = LOA_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }  # US Hvy Field Arty consisted of 2 Bns, 155mm howitzers
+		engineer = { x = 0 y = 1 }   # US Eng Rgt consisted of 2 Bns
+	}
+}
+division_template = {
+	name = "Silver Legion Cavalry Division"  		# 1st Cavalry Division only
+
+	division_names_group = LOA_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 1 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 1 }   # US Eng Bn
+	}
+}
+units = {
+	division = {
+			division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 853
+		division_template = "Populist Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 4975
+		division_template = "Populist Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.7
+	}
+	division = {
+			division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 7834
+		division_template = "Populist Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.7
+	}
+	division = {
+			division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 1836
+		division_template = "Populist Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.7
+	}
+	division = {
+			division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 7315
+		division_template = "Populist Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.7
+		}
+	division = {
+			division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 9616
+		division_template = "Silver Legion Cavalry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 1815
+		division_template = "Silver Legion Cavalry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.7
+	}
+	division = {
+			division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 1827
+		division_template = "Silver Legion Cavalry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.7
+	}
+	division = {
+			division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 4740
+		division_template = "Silver Legion Cavalry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.7
+	}
+	division = {
+			division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 7315
+		division_template = "Silver Legion Cavalry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.7
+	}
+}
+air_wings = {
+### Starting Production ###
+386 = { 
+		# Naval Patrol Wing 3 
+		nav_bomber_equipment_1 =  {
+			owner = "LOA" 
+			amount = 36
+		}
+	}
+386 = { 
+		# 16th Pursuit Group 
+		fighter_equipment_0 =  {
+			owner = "LOA" 
+			amount = 96
+		}
+		# 6th Composite Group 
+		tac_bomber_equipment_0 = {
+			owner = "LOA" 
+			amount = 12
+			}
+		}
+	}
+instant_effect = {
+		
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "LOA"
+		}
+		requested_factories = 2
+		progress = 0.1
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "LOA" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_0
+			creator = "LOA" 
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 50
+	}
+
+}

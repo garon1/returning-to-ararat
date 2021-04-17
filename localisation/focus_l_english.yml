@@ -61,6 +61,19 @@ ARM_honor_heritage:0 "Honor Our Heritage"
 ARM_honor_heritage_desc:0 "For too long, under the Russians, Persians and Ottomans Armenian identity has been supressed, forced to assimilate into whichever society we were apart of. But that is in the past, and now, we can finally embrace who are are, our history language and customs without consequences."
 ARM_ban_nationalists:0 "Ban Nationalists"
 ARM_ban_nationalists_desc:0 "Some nationalists, despite having their influence stripped are still involved in Armenian society. Considering their past, and their allegiance to the military junta, they cannot be trusted and must be forced out of the country."
+ARM_leftist_path:0 "Support The Armenian Left"
+ARM_leftist_path_desc:0 "There is a reason why all Socialist nations have been stable in these tumultuous times. All Leftist states have meant their word as a nation for and by the people. We must do that too."
+ARM_german_cooperation:0 "Seek German Co-operation"
+ARM_german_cooperation_desc:0 "Germany, established in 1920 after their infamous civil war is the most powerful Syndicalist and Leftist nation in the world. We will face a lot of controversy by transitioning to a Socialist state, and due to this, German support is a must."
+ARM_call_leftist_council:0 "Call The First Armenian Worker's Council"
+ARM_call_leftist_council_desc:0 "With an unclear path that our worker state is taking, whether to be Jacalist or Syndicalist etc. This council should hopefully clear the way and make a new path for our state to follow."
+ARM_read_theory:0 "Promote Theory"
+ARM_read_theory_desc:0 "Despite our similarities, we dissagree with the methods of the Red Russians, Ukranians etc. due to the fact that they only promote 1 ideology and principles of the same person. We will allow every person different options and to really persuade people to Socialism, theory is the right path."
+ARM_nationalize_major_industries:0 "Nationalize Major Industries"
+ARM_nationalize_major_industries_desc:0 "Privatized industries allow for widespread abuse for workers and worker exploitation. How can we call ourselves Socialist if privatization is still around?"
+ARM_securalized_church:0 "Securalize The Church"
+ARM_securalized_church_desc:0 "Although we love the church and God, we must consider that if our society is not securalized then we are not promoting our citizens to think outside the box, to allow religious tolerance which is a vital component of Leftist ideology."
+
 
 
 

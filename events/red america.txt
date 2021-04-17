@@ -1,5 +1,5 @@
 add_namespace = pua
-
+add_namespace = pua_conference
 #reconstruction event
 country_event = {
 	id = pua.1
@@ -486,5 +486,1331 @@ country_event = {
 		name = pua.19.a
 		ARM_parliament_support_remove2 = yes
 		add_stability = 0.02
+	}
+}
+#prelude to major conference
+country_event = {
+	id = pua.20
+	title = pua.20.t
+	desc = pua.20.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	
+	option = { # 
+		name = pua.20.a
+		hidden_effect = {
+		country_event = {
+		id = pua_conference.7 days = 5
+			}
+		}
+	}
+}
+#prelude to major conference
+country_event = {
+	id = pua.21
+	title = pua.21.t
+	desc = pua.21.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	
+	option = { # 
+		name = pua.21.a
+		COF = {
+		add_manpower = -100
+			}
+		}
+		COF = {
+		add_opinion_modifier = {
+				target = PUA
+				modifier = embargo
+			}
+		371 = {
+			damage_building = {
+				type = infrastructure
+				damage = 2
+			}
+		}
+		367 = {
+			damage_building = {
+				type = infrastructure
+				damage = 2
+				}
+			}
+		}
+	}
+#prelude to major conference
+country_event = {
+	id = pua.22
+	title = pua.22.t
+	desc = pua.22.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	
+	option = { # 
+		name = pua.22.a
+		hidden_effect = {
+		CAN = {
+		add_manpower = -150
+		country_event = {
+		id = pua.23 days = 5
+				}
+			}
+		}
+		466 = {
+			damage_building = {
+				type = infrastructure
+				damage = 3
+			}
+		}
+		276 = {
+			damage_building = {
+				type = infrastructure
+				damage = 2
+				}
+			}
+		}
+	}
+#canada finds out
+country_event = {
+	id = pua.23
+	title = pua.23.t
+	desc = pua.23.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	
+	option = { # 
+		name = pua.23.a
+		CAN = {
+		add_opinion_modifier = {
+				target = PUA
+				modifier = embargo
+			}
+		}
+	}
+}
+#texan invitation
+country_event = {
+	id = pua.24
+	title = pua.24.t
+	desc = pua.24.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	
+	option = { #lets cooperate
+		name = pua.24.a
+		ai_chance = {
+		factor = 50
+		}
+		TEX = {
+		country_event = pua.25
+		}
+		hidden_effect = {
+		ARM_parliament_support_remove5 = yes
+		add_popularity = {
+		popularity = 0.05
+		ideology = market_socialism
+			}
+		add_popularity = {
+		popularity = 0.05
+		ideology = anarchism
+			}
+		add_popularity = {
+		popularity = 0.05
+		ideology = syndicalism
+			}
+		}
+	}
+	option = { #no
+		name = pua.24.b
+		ai_chance = {
+		factor = 50
+		}
+		hidden_effect = {
+		ARM_parliament_support_add5 = yes
+		add_popularity = {
+		popularity = 0.05
+		ideology = radical_socialism
+			}
+		}
+	}
+}
+#texas recibes invitation
+country_event = {
+	id = pua.25
+	title = pua.25.t
+	desc = pua.25.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	
+	option = { #yes 
+		name = pua.25.a
+		ai_chance = {
+		factor = 55
+		}
+		hidden_effect = {
+		country_event = {
+		id = pua.26 days = 1
+				}
+		PUA = {
+		country_event = {
+		id = pua.26 days = 1
+				}
+			}
+		}
+	}
+	option = { #no
+		name = pua.25.a
+		ai_chance = {
+		factor = 45
+		}
+		PUA = {
+		country_event = {
+		id = pua.27 days = 1
+				}
+			}
+	}
+}
+#texas accepts
+country_event = {
+	id = pua.26
+	title = pua.26.t
+	desc = pua.26.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	
+	option = { #yes 
+		name = pua.26.a
+		set_country_flag = PUA_texas_agreement
+		complete_national_focus = PUA_collaborate_with_texas
+	}
+}
+#texas not accepts
+country_event = {
+	id = pua.27
+	title = pua.27.t
+	desc = pua.27.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	
+	option = { #yes 
+		name = pua.27.a
+		set_country_flag = PUA_NOT_texas_agreement
+		complete_national_focus = PUA_lay_claim_to_texas
+	}
+}
+#pua reaches to germany
+country_event = {
+	id = pua.28
+	title = pua.28.t
+	desc = pua.28.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	option = { #yes 
+		name = pua.28.a
+		ai_chance = {
+		factor = 100
+		}
+		53 = {
+				if = { 
+					limit = {
+						free_building_slots = {
+							building = dockyard
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+				}	
+			}
+		883 = {
+				if = { 
+					limit = {
+						free_building_slots = {
+							building = dockyard
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+				}	
+			}
+		}
+		option = { #yes 
+		name = pua.28.b
+		ai_chance = {
+		factor = 0
+		}
+		GER = {
+		add_opinion_modifier = { modifier = small_decrease target = PUA }
+		}
+		PUA = {
+		add_opinion_modifier = { modifier = small_decrease target = GER }
+			}
+		}
+	}
+	#pua reaches to vietnam
+country_event = {
+	id = pua.29
+	title = pua.29.t
+	desc = pua.29.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	option = { #yes 
+		name = pua.29.a
+		ai_chance = {
+		factor = 100
+			}
+			army_experience = 20
+			naval_experience = 20
+			PUA = {
+			army_experience = 20
+			naval_experience = 20
+			}
+		option = { #yes 
+		name = pua.29.b
+		ai_chance = {
+		factor = 0
+		}
+		VIN = {
+		add_opinion_modifier = { modifier = small_decrease target = PUA }
+		}
+		PUA = {
+		add_opinion_modifier = { modifier = small_decrease target = VIN }
+			}
+		}
+	}
+}
+	#pua reaches to vietnam
+country_event = {
+	id = pua.30
+	title = pua.30.t
+	desc = pua.30.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	option = { #yes 
+		name = pua.30.a
+		ai_chance = {
+		factor = 100
+			}
+			army_experience = 20
+			naval_experience = 20
+			PUA = {
+			army_experience = 20
+			naval_experience = 20
+			}
+		option = { #yes 
+		name = pua.30.b
+		ai_chance = {
+		factor = 0
+		}
+		SOV = {
+		add_opinion_modifier = { modifier = small_decrease target = PUA }
+		}
+		PUA = {
+		add_opinion_modifier = { modifier = small_decrease target = SOV }
+			}
+		}
+	}
+}
+	#pua reaches to vietnam
+country_event = {
+	id = pua.31
+	title = pua.31.t
+	desc = pua.31.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	option = { #yes 
+		name = pua.31.a
+		ai_chance = {
+		factor = 100
+			}
+			PUA = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -5000
+				producer = PUA
+			}
+			}
+			FROM = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 5000
+				producer = PUA
+				}
+			}
+			army_experience = 10
+			naval_experience = 10
+			PUA = {
+			army_experience = 10
+			naval_experience = 10
+			}
+	}
+}
+#Sending the invitations to the Convention on the Revision of the Treaty of Sevres, Treaty of Lausanne, and the quebec revolt
+country_event = {
+	id = pua_conference.7
+	title = pua_conference.7.t
+	desc = pua_conference.7.desc
+	picture = GFX_report_event_gre_allied_diplomacy
+
+	is_triggered_only = yes
+	immediate = { log = "[GetDateText]: [Root.GetName]: event pua_conference.7" }
+	option = {
+		name = pua_conference.7.a #california
+		trigger = {
+			OR = {
+				country_exists = CAL
+			}
+		}
+		CAL = { country_event = pua_conference.8 }
+		hidden_effect = { 
+			set_country_flag = PUA_attending_minneapolis_convention
+		}
+	}
+}
+#californian invitation to minneapolis conference
+country_event = {
+	id = pua_conference.8
+	title = pua_conference.8.t
+	desc = pua_conference.8.desc
+	picture = GFX_report_event_gre_allied_diplomacy_military
+
+immediate = { log = "[GetDateText]: [Root.GetName]: event pua_conference.8" }
+	is_triggered_only = yes
+	
+	option = {
+		name = pua_conference.8.a
+		ai_chance = {
+			base = 100
+		}
+		hidden_effect = { 
+		PUA = {
+		country_event = pua_conference.9
+		}
+			set_country_flag = PUA_attending_minneapolis_convention
+			if = { 
+				limit = { 
+					original_tag = CAL
+				}
+				PUA = { set_country_flag = PUA_california_attending_convention }
+			}
+		}	
+	}
+	option = {
+		name = pua_conference.8.b 
+		ai_chance = {
+			base = 0
+		}
+		add_political_power = 75
+		hidden_effect = { 
+		PUA = { set_country_flag = PUA_NOT_california_attending_convention }
+			PUA = { 
+				add_opinion_modifier = { 
+					target = ROOT
+					modifier = western_betrayal
+				}
+			}
+		}
+	}
+}
+#Invitations received: california is attending
+country_event = {
+	id = pua_conference.9
+	title = pua_conference.9.t
+	desc = pua_conference.9.desc
+	picture = GFX_report_event_gre_athens
+	immediate = { log = "[GetDateText]: [Root.GetName]: event pua_conference.9" }
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 4
+	}
+	option = {
+		name = pua_conference.9.a 
+		hidden_effect = {  
+			set_country_flag = PUA_only_california_in_attendance
+			clr_country_flag = PUA_california_attending_convention
+			country_event = { id = pua_conference.15 days = 4 }
+			CAL = { set_country_flag = PUA_only_california_in_attendance }
+			CAL = { clr_country_flag = PUA_california_attending_convention }
+			CAL = { 
+				country_event = { id = pua_conference.15 days = 4 }
+			}	
+		}	
+	}
+}
+#Invitations received: california isnt attends
+country_event = {
+	id = pua_conference.12
+	title = pua_conference.12.t
+	desc = pua_conference.12.desc
+	picture = GFX_report_event_gre_allied_diplomacy_military
+
+	fire_only_once = yes
+	immediate = { log = "[GetDateText]: [Root.GetName]: event pua_conference.12" }
+	trigger = {
+		original_tag = PUA
+			has_country_flag = PUA_NOT_california_attending_convention
+	}
+	option = {
+		name = pua_conference.12.a 	
+		hidden_effect = { 
+			country_event = { id = pua_conference.15 days = 4 }		
+		}
+	}
+}
+#First order of business! new afrika
+country_event = {
+	id = pua_conference.15
+	title = pua_conference.15.t
+	desc = pua_conference.15.desc
+	picture = GFX_report_event_gre_cabinet_meeting
+immediate = { log = "[GetDateText]: [Root.GetName]: event pua_conference.15" }
+	is_triggered_only = yes
+	
+	option = {
+		name = pua_conference.15.a #Aye!
+		ai_chance = {
+			factor = 70
+		}
+		hidden_effect = { 
+			ROOT_voted_aye_in_minneapolis_convention_effect = yes 
+			set_country_flag = PUA_deciding_on_new_afrika
+		}	
+	}
+	option = {
+		name = pua_conference.15.b #Nay!
+		ai_chance = {
+			factor = 30
+		}
+		hidden_effect = { 
+			ROOT_voted_nay_in_minneapolis_convention_effect = yes
+			set_country_flag = PUA_deciding_on_new_afrika
+		}	
+	}
+}
+#Results are in on new afrika! It's a...
+country_event = {
+	id = pua_conference.16
+	title = pua_conference.16.t
+	desc = pua_conference.16.desc
+	picture = GFX_report_event_gre_diplomacy
+
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 4
+	}
+	trigger = {
+		original_tag = PUA
+		has_country_flag = PUA_deciding_on_new_afrika
+	}
+	immediate = {
+log = "[GetDateText]: [Root.GetName]: event pua_conference.16"
+		hidden_effect = { 
+			if = { 
+				limit = {
+					has_country_flag = PUA_attending_minneapolis_convention
+					NOT = { 
+						has_country_flag = PUA_only_california_in_attendance
+					}
+				}
+				country_event = { id = pua_conference.18 days = 4 }
+			}
+			else_if = { 
+				limit = {
+					has_country_flag = PUA_attending_minneapolis_convention
+					has_country_flag = PUA_only_california_in_attendance
+				}
+				country_event = { id = pua_conference.18 days = 4 }
+				CAL = { country_event = { id = pua_conference.221 days = 2 } }
+			}
+		}
+	}
+	
+	option = {
+		name = pua_conference.16.a #Yes for new afrika!
+		CAL = { country_event = { id = pua_conference.221 days = 2 } }
+		hidden_effect = {   
+			set_country_flag = PUA_new_afrika
+			clr_country_flag = PUA_deciding_on_new_afrika
+			clear_variable = global.convention_ayes
+			clear_variable = global.convention_nays
+		}	
+	}
+}
+#Aye for new afrika Notification Event
+country_event = {
+	id = pua_conference.221
+	title = pua_conference.221.t
+	desc = pua_conference.221.desc
+	picture = GFX_report_event_gre_diplomacy
+
+	is_triggered_only = yes
+
+	immediate = {
+	log = "[GetDateText]: [Root.GetName]: event pua_conference.221"
+		hidden_effect = {
+			if = { 
+				limit = {
+					has_country_flag = PUA_attending_minneapolis_convention
+					PUA = {
+						NOT = { 
+							has_country_flag = PUA_only_california_in_attendance
+						}
+					}
+				}
+				country_event = { id = pua_conference.18 days = 2 }
+			}
+			else_if = { 
+				limit = {
+					has_country_flag = PUA_attending_minneapolis_convention
+					PUA = { 
+						has_country_flag = PUA_only_california_in_attendance
+					}
+				}
+				country_event = { id = pua_conference.18 days = 2 }
+			}
+		}
+	}
+	
+	option = {
+		name = pua_conference.221.a #Yes for new afrika!
+		hidden_effect = {   
+			set_country_flag = PUA_new_afrika
+			clr_country_flag = PUA_deciding_on_new_afrika
+		}	
+	}
+}
+#Results are in on new afrika! It's a...
+country_event = {
+	id = pua_conference.17
+	title = pua_conference.17.t
+	desc = pua_conference.17.desc
+	picture = GFX_report_event_gre_cabinet_meeting
+
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 4
+	}
+	trigger = {
+		original_tag = PUA
+		has_country_flag = PUA_deciding_on_new_afrika
+		check_variable = {
+			var = global.convention_nays
+			value = 2
+			compare = greater_than_or_equals
+		}
+		NOT = { 
+			check_variable = {
+		    var = global.convention_ayes
+		    value = 2
+		    compare = greater_than_or_equals
+			}
+		}
+	}
+	immediate = {
+	log = "[GetDateText]: [Root.GetName]: event pua_conference.17"
+		hidden_effect = {
+			if = { 
+				limit = {
+					has_country_flag = PUA_attending_minneapolis_convention
+					NOT = { 
+						has_country_flag = PUA_only_california_in_attendance
+						
+					}
+				}
+				country_event = { id = pua_conference.18 days = 4 }
+			}
+			else_if = { 
+				limit = {
+					has_country_flag = PUA_attending_minneapolis_convention
+					has_country_flag = PUA_only_california_in_attendance
+					
+				}
+				country_event = { id = pua_conference.18 days = 4 }
+				CAL = { country_event = { id = pua_conference.221 days = 2 } }
+			}
+		}
+	}
+	
+	option = {
+		name = pua_conference.17.a #No for new afrika!
+		hidden_effect = {   
+			set_country_flag = PUA_no_new_afrika
+			clr_country_flag = PUA_deciding_on_new_afrika
+			clear_variable = global.convention_ayes
+			clear_variable = global.convention_nays
+		}	
+	}
+}
+#Nay for new afrika Notification Event
+country_event = {
+	id = pua_conference.222
+	title = pua_conference.222.t
+	desc = pua_conference.222.desc
+	picture = GFX_report_event_gre_cabinet_meeting
+
+	is_triggered_only = yes
+
+	immediate = {
+	log = "[GetDateText]: [Root.GetName]: event pua_conference.222"
+		hidden_effect = { 
+			if = { 
+				limit = {
+					has_country_flag = PUA_attending_minneapolis_convention
+					PUA =  {	
+						NOT = { 
+							has_country_flag = PUA_only_california_in_attendance
+							
+						}
+					}
+				}
+				country_event = { id = pua_conference.18 days = 2 }
+			}
+			else_if = { 
+				limit = {
+					has_country_flag = PUA_attending_minneapolis_convention
+					PUA = { 
+						has_country_flag = PUA_only_california_in_attendance
+					}
+				}
+				country_event = { id = pua_conference.18 days = 2 }
+			}
+			else_if = { 
+				limit = {
+					has_country_flag = PUA_attending_minneapolis_convention
+					PUA = { 
+						
+						NOT = { 
+							has_country_flag = PUA_only_california_in_attendance
+						}
+					}
+				}
+				country_event = { id = pua_conference.18 days = 2 }
+			}
+		}
+	}
+	
+	option = {
+		name = pua_conference.222.a #No for new afrika!
+		hidden_effect = {   
+			set_country_flag = PUA_no_new_afrika
+			clr_country_flag = PUA_deciding_on_new_afrika
+		}	
+	}
+}
+#Next order of business: californian expansion
+country_event = {
+	id = pua_conference.18
+	title = pua_conference.18.t
+	desc = pua_conference.18.desc
+	picture = GFX_report_event_gre_cabinet_meeting
+
+	is_triggered_only = yes
+	immediate = {
+	log = "[GetDateText]: [Root.GetName]: event pua_conference.18"
+	}
+	option = {
+		name = pua_conference.18.a #Aye!
+		ai_chance = {
+			factor = 80
+		}
+		hidden_effect = { 
+			ROOT_voted_aye_in_minneapolis_convention_effect = yes  
+			set_country_flag = PUA_deciding_on_californian_expansion
+		}	
+	}
+	option = {
+		name = pua_conference.18.b #Nay!
+		ai_chance = {
+			factor = 20
+		}	
+		hidden_effect = { 
+			ROOT_voted_nay_in_minneapolis_convention_effect = yes
+			set_country_flag = PUA_deciding_on_californian_expansion
+		}	
+	}
+}
+#Results are in on californian expansion! It's a...
+country_event = {
+	id = pua_conference.19
+	title = pua_conference.19.t
+	desc = pua_conference.19.desc
+	picture = GFX_report_event_gre_diplomacy
+
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 4
+	}
+	trigger = {
+		original_tag = PUA
+		has_country_flag = PUA_deciding_on_californian_expansion
+	}
+	immediate = {
+	 log = "[GetDateText]: [Root.GetName]: pua_conference.19"
+		hidden_effect = { 
+			if = { 
+				limit = {
+					has_country_flag = PUA_attending_minneapolis_convention
+				}
+				country_event = { id = pua_conference.24 days = 4 }
+			}
+			else_if = { 
+				limit = {
+					has_country_flag = PUA_attending_minneapolis_convention
+					has_country_flag = PUA_only_california_in_attendance
+				}
+				country_event = { id = pua_conference.24 days = 4 }
+				CAL = { country_event = { id = pua_conference.223 days = 2 } }
+			}
+		}
+	}
+	
+	option = {
+		name = pua_conference.19.a #Yes for californian expansion!
+		CAL = { country_event = { id = pua_conference.223 days = 2 } }
+		hidden_effect = {   
+			set_country_flag = PUA_cali_expansion
+			clr_country_flag = PUA_deciding_on_californian_expansion
+			clear_variable = global.convention_ayes
+			clear_variable = global.convention_nays
+		}	
+	}
+}
+#Aye for californian expansion Notification Event
+country_event = {
+	id = pua_conference.223
+	title = pua_conference.223.t
+	desc = pua_conference.223.desc
+	picture = GFX_report_event_gre_diplomacy
+
+	is_triggered_only = yes
+
+	immediate = {
+	log = "[GetDateText]: [Root.GetName]: event pua_conference.223"
+		hidden_effect = { 
+			if = { 
+				limit = {
+					has_country_flag = PUA_attending_minneapolis_convention
+				}
+				country_event = { id = pua_conference.24 days = 2 }
+			}
+			else_if = { 
+				limit = {
+					has_country_flag = PUA_attending_minneapolis_convention
+				}
+				country_event = { id = pua_conference.24 days = 2 }
+			}
+			else = { 
+				country_event = { id = pua_conference.24 days = 2 }
+			}
+		}
+	}
+	
+	option = {
+		name = pua_conference.223.a
+		hidden_effect = {   
+			set_country_flag = PUA_cali_expansion
+			clr_country_flag = PUA_deciding_on_californian_expansion
+		}	
+	}
+}
+#Results are in on californian expansion! It's a...
+country_event = {
+	id = pua_conference.20
+	title = pua_conference.20.t
+	desc = pua_conference.20.desc
+	picture = GFX_report_event_gre_cabinet_meeting
+
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 4
+	}
+	trigger = {
+		original_tag = PUA
+		has_country_flag = PUA_deciding_on_californian_expansion
+		check_variable = {
+		    var = global.convention_nays
+		    value = 2
+		    compare = greater_than_or_equals
+		}
+		NOT = { 
+			check_variable = {
+		    var = global.convention_ayes
+		    value = 2
+		    compare = greater_than_or_equals
+			}
+		}
+	}	
+	immediate = {
+	log = "[GetDateText]: [Root.GetName]: event pua_conference.20"
+		hidden_effect = { 
+			if = { 
+				limit = {
+					has_country_flag = PUA_attending_minneapolis_convention
+					
+				}
+				country_event = { id = pua_conference.24 days = 4 }
+				CAL = { country_event = { id = pua_conference.224 days = 2 } }
+			}
+			else_if = { 
+				limit = {
+					has_country_flag = PUA_attending_minneapolis_convention
+				}
+				country_event = { id = pua_conference.24 days = 4 }
+				CAL = { country_event = { id = pua_conference.224 days = 2 } }
+			}
+			else_if = { 
+				limit = {
+					has_country_flag = PUA_attending_minneapolis_convention
+				}
+				country_event = { id = pua_conference.24 days = 4 }
+				CAL = { country_event = { id = pua_conference.223 days = 2 } }
+			}
+			else_if = { 
+				limit = {
+					has_country_flag = PUA_attending_minneapolis_convention
+					has_country_flag = PUA_only_california_in_attendance
+				}
+				country_event = { id = pua_conference.24 days = 4 }
+				CAL = { country_event = { id = pua_conference.224 days = 2 } }
+			}
+		}
+	}
+	
+	option = {
+		name = pua_conference.20.a #No for British californian expansion!
+		hidden_effect = {   
+			set_country_flag = PUA_no_cali_expansion
+			clr_country_flag = PUA_deciding_on_californian_expansion
+			clear_variable = global.convention_ayes
+			clear_variable = global.convention_nays
+		}	
+	}
+}
+#Nay for British californian expansion Notification Event
+country_event = {
+	id = pua_conference.224
+	title = pua_conference.224.t
+	desc = pua_conference.224.desc
+	picture = GFX_report_event_gre_cabinet_meeting
+
+	is_triggered_only = yes
+
+	immediate = {
+	log = "[GetDateText]: [Root.GetName]: event pua_conference.224"
+		hidden_effect = { 
+			if = { 
+				limit = {
+					has_country_flag = PUA_attending_minneapolis_convention
+				}
+				country_event = { id = pua_conference.24 days = 2 }
+			}
+			else = { 
+				country_event = { id = pua_conference.24 days = 2 }
+			}
+		}
+	}
+	
+	option = {
+		name = pua_conference.224.a #No for californian expansion!
+		hidden_effect = {   
+			set_country_flag = PUA_no_cali_expansion
+			clr_country_flag = PUA_deciding_on_californian_expansion
+		}	
+	}
+}
+#Final order of business: a quebec rebellion!
+country_event = {
+	id = pua_conference.24
+	title = pua_conference.24.t
+	desc = pua_conference.24.desc
+	picture = GFX_report_event_gre_venizelos_speech
+mean_time_to_happen = {
+		days = 4
+	}
+	is_triggered_only = yes
+	immediate = {
+	log = "[GetDateText]: [Root.GetName]: event pua_conference.24"
+	}
+	option = {
+		name = pua_conference.24.a #Aye!
+		ai_chance = {
+			factor = 80
+		}
+		hidden_effect = { 
+		complete_national_focus = PUA_contact_black_resistance
+		complete_national_focus = PUA_contact_anti_legionists
+		complete_national_focus = PUA_contact_quebecians
+			ROOT_voted_aye_in_minneapolis_convention_effect = yes
+			set_country_flag = PUA_deciding_on_quebec
+		}	
+		CAL = { country_event = { id = pua_conference.225 days = 2 }
+	}
+	option = {
+		name = pua_conference.24.b #Nay!
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 0
+				original_tag = PUA
+			}
+		}
+		hidden_effect = { 
+			ROOT_voted_nay_in_minneapolis_convention_effect = yes
+			set_country_flag = PUA_deciding_on_quebec
+		}	
+	}
+}
+#Nay for British californian expansion Notification Event
+country_event = {
+	id = pua_conference.225
+	title = pua_conference.225.t
+	desc = pua_conference.225.desc
+	picture = GFX_report_event_gre_cabinet_meeting
+
+	is_triggered_only = yes
+
+	immediate = {
+	log = "[GetDateText]: [Root.GetName]: event pua_conference.225"
+	}
+	
+	option = {
+		name = pua_conference.225.a #No for californian expansion!
+			set_country_flag = PUA_quebec_revolt_approved
+	}
+}
+#Results are in on whether the quebec revolt has the approval of attendees! It's a...
+country_event = {
+	id = pua_conference.25
+	title = pua_conference.25.t
+	desc = pua_conference.25.desc
+	picture = GFX_report_event_gre_diplomacy
+mean_time_to_happen = {
+		days = 4
+	}
+	fire_only_once = no
+	
+	trigger = {
+		has_country_flag = PUA_deciding_on_quebec
+		original_tag = PUA
+	}
+immediate = {
+	log = "[GetDateText]: [Root.GetName]: event pua_conference.25"
+}
+	option = {
+		name = pua_conference.25.a #Yes for the quebec revolt
+		hidden_effect = {
+			if = {
+				limit = {
+					original_tag = PUA
+				}
+				clr_country_flag = PUA_deciding_on_quebec
+				set_country_flag = PUA_quebec_revolt_approved
+			}
+			if = {
+				limit = {
+					original_tag = CAL
+					has_country_flag = PUA_only_california_in_attendance
+				}
+				clr_country_flag = PUA_deciding_on_quebec
+				set_country_flag = PUA_quebec_revolt_approved
+			}
+		}	
+	}
+}
+#Results are in on whether the quebec revolt has the approval of attendees! It's a...
+country_event = {
+	id = pua_conference.26
+	title = pua_conference.26.t
+	desc = pua_conference.26.desc
+	picture = GFX_report_event_gre_trial
+mean_time_to_happen = {
+		days = 4
+	}
+	fire_only_once = no
+	immediate = {
+	log = "[GetDateText]: [Root.GetName]: event pua_conference.26"
+	}
+	trigger = {
+		has_country_flag = PUA_deciding_on_quebec
+		check_variable = {
+		    var = global.convention_nays
+		    value = 2
+		    compare = greater_than_or_equals
+		}
+		NOT = { 
+			check_variable = {
+		    var = global.convention_ayes
+		    value = 2
+		    compare = greater_than_or_equals
+			}
+		}
+	}	
+	option = {
+		name = pua_conference.26.a #NO for the quebec revolt!
+		hidden_effect = {  
+		complete_national_focus = PUA_contact_black_resistance
+		complete_national_focus = PUA_contact_anti_legionists
+		complete_national_focus = PUA_contact_quebecians
+			if = {
+				limit = { 
+					CAL = { 
+						OR = { 
+							has_country_flag = PUA_new_afrika
+							has_country_flag = PUA_no_new_afrika
+							has_country_flag = PUA_cali_expansion
+							has_country_flag = PUA_no_cali_expansion
+							has_country_flag = PUA_italian_antalya
+							has_country_flag = PUA_italy_snubbed_again
+						}
+					}
+				}
+				clr_country_flag = PUA_deciding_on_quebec
+				clr_country_flag = PUA_new_afrika
+				clr_country_flag = PUA_no_new_afrika
+				clr_country_flag = PUA_cali_expansion
+				clr_country_flag = PUA_no_cali_expansion
+				clr_country_flag = PUA_italian_antalya
+				clr_country_flag = PUA_italy_snubbed_again
+			}
+			if = {
+				limit = { 
+					FRA = { 
+						OR = { 
+							has_country_flag = PUA_new_afrika
+							has_country_flag = PUA_no_new_afrika
+							has_country_flag = PUA_cali_expansion
+							has_country_flag = PUA_no_cali_expansion
+							has_country_flag = PUA_italian_antalya
+							has_country_flag = PUA_italy_snubbed_again
+						}
+					}
+				}
+				clr_country_flag = PUA_deciding_on_quebec
+				clr_country_flag = PUA_new_afrika
+				clr_country_flag = PUA_no_new_afrika
+				clr_country_flag = PUA_cali_expansion
+				clr_country_flag = PUA_no_cali_expansion
+				clr_country_flag = PUA_italian_antalya
+				clr_country_flag = PUA_italy_snubbed_again
+			}
+			if = {
+				limit = { 
+					ITA = { 
+						OR = { 
+							has_country_flag = PUA_new_afrika
+							has_country_flag = PUA_no_new_afrika
+							has_country_flag = PUA_cali_expansion
+							has_country_flag = PUA_no_cali_expansion
+							has_country_flag = PUA_italian_antalya
+							has_country_flag = PUA_italy_snubbed_again
+						}
+					}
+				}
+				clr_country_flag = PUA_deciding_on_quebec
+				clr_country_flag = PUA_new_afrika
+				clr_country_flag = PUA_no_new_afrika
+				clr_country_flag = PUA_cali_expansion
+				clr_country_flag = PUA_no_cali_expansion
+				clr_country_flag = PUA_italian_antalya
+				clr_country_flag = PUA_italy_snubbed_again
+			}
+			if = {
+				limit = { 
+					PUA = { 
+						OR = { 
+							has_country_flag = PUA_new_afrika
+							has_country_flag = PUA_no_new_afrika
+							has_country_flag = PUA_cali_expansion
+							has_country_flag = PUA_no_cali_expansion
+							has_country_flag = PUA_italian_antalya
+							has_country_flag = PUA_italy_snubbed_again
+						}
+					}
+				}
+				clr_country_flag = PUA_attending_minneapolis_convention
+				clr_country_flag = PUA_california_attending_convention
+				clr_country_flag = PUA_france_attending_convention
+				clr_country_flag = PUA_italy_attending_convention
+				clr_country_flag = PUA_deciding_on_quebec
+				clr_country_flag = PUA_new_afrika
+				clr_country_flag = PUA_no_new_afrika
+				clr_country_flag = PUA_cali_expansion
+				clr_country_flag = PUA_no_cali_expansion
+				clr_country_flag = PUA_italian_antalya
+				clr_country_flag = PUA_italy_snubbed_again
+				set_country_flag = PUA_megali_convention_a_failure
+			}
+		}		
+	}
+}
+#The Heraklion Convention is Over - everyone gets something!
+country_event = {
+	id = pua_conference.200
+	title = pua_conference.200.t
+	desc = pua_conference.200.desc
+	picture = GFX_report_event_gre_megali_conference_signing
+
+	fire_only_once = no
+	
+	trigger = {
+		has_country_flag = PUA_quebec_revolt_approved
+		PUA = { has_country_flag = PUA_cali_expansion }
+		PUA = { has_country_flag = PUA_new_afrika }
+		NOT = { 
+			ROOT = { has_country_flag = PUA_minneapolis_convention_finished } 
+		}
+	}	
+	option = {
+		name = pua_conference.200.a
+		add_war_support = 0.05
+		hidden_effect = {
+
+			PUA = {
+				add_state_claim = 341
+				add_state_claim = 797
+				add_state_claim = 347
+				add_state_claim = 340
+				add_state_claim = 339
+			}
+			CAL = {
+				add_state_claim = 354
+			}
+			FRA = {
+				add_state_claim = 344
+				add_state_claim = 350
+				add_state_claim = 352
+				add_state_claim = 353
+				add_state_claim = 800
+				if = {
+					limit = {
+						FRA = { NOT = { controls_state = 799 } }
+					}
+					add_state_claim = 799
+				}
+			}
+			if = { 
+				limit = {
+					ITA = {  }
+				}
+				ITA = {
+					add_state_claim = 342
+					add_state_claim = 345
+				}
+			}
+			ARM = {
+				add_state_core = 354
+			}
+			clear_variable = global.convention_ayes
+			clear_variable = global.convention_nays
+			set_country_flag = PUA_minneapolis_convention_finished
+		}
+	}
+}
+#The Heraklion Convention is Over - cali misses out!
+country_event = {
+	id = pua_conference.201
+	title = pua_conference.201.t
+	desc = pua_conference.201.desc
+	picture = GFX_report_event_gre_megali_conference_signing
+
+	fire_only_once = no
+	
+	trigger = {
+		has_country_flag = PUA_quebec_revolt_approved
+		has_country_flag = PUA_no_cali_expansion
+		NOT = { 
+			ROOT = { has_country_flag = PUA_minneapolis_convention_finished } 
+		}
+	}	
+	option = {
+		name = pua_conference.201.a
+		trigger = { 
+			NOT = {
+				original_tag = CAL 
+			} 
+		}
+		add_war_support = 0.05	
+		hidden_effect = {
+		complete_national_focus = PUA_contact_black_resistance
+		complete_national_focus = PUA_contact_anti_legionists
+		complete_national_focus = PUA_contact_quebecians
+			PUA = {
+				add_state_claim = 341
+				add_state_claim = 797
+				add_state_claim = 347
+				add_state_claim = 340
+				add_state_claim = 339
+			}
+			FRA = {
+				add_state_claim = 344
+				add_state_claim = 350
+				add_state_claim = 352
+				add_state_claim = 353
+				add_state_claim = 800
+				if = {
+					limit = {
+						FRA = { NOT = { controls_state = 799 } }
+					}
+					add_state_claim = 799
+				}
+			}
+			if = {
+				limit = {
+					ITA = {  }
+				}
+				ITA = {
+					add_state_claim = 342
+					add_state_claim = 345
+				}
+			}
+			clear_variable = global.convention_ayes
+			clear_variable = global.convention_nays
+			set_country_flag = PUA_minneapolis_convention_finished
+		}
+	}
+	option = {
+		name = pua_conference.201.b
+		trigger = { 
+			original_tag = CAL
+			CAL = { has_country_flag = PUA_no_cali_expansion }
+		}
+		add_political_power = -75
+		every_other_country = { 
+			limit = {
+				has_country_flag = PUA_no_cali_expansion
+			}
+			reverse_add_opinion_modifier = { 
+				target = CAL
+				modifier = PUA_denied_our_ambitions
+			}
+		}
+		hidden_effect = {
+			clear_variable = global.convention_ayes
+			clear_variable = global.convention_nays
+			set_country_flag = PUA_minneapolis_convention_finished
+		}
 	}
 }

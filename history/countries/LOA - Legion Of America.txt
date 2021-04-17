@@ -40,7 +40,7 @@ nationalism = 95
 create_country_leader = {
 	
 	name = "William Dudley Pelley"
-	picture = "Portrait_TEX_William_Dudley_Pelley.tga"
+	picture = "Portrait_LOA_William_Dudley_Pelley.tga"
 	expire = "1965.1.1"
 	ideology = nationalism_subtype
 	traits = {
@@ -138,4 +138,49 @@ create_country_leader = {
 	traits = {
 		#
 	}
+}
+create_corps_commander = {
+	name = "Leslie McNair"
+	picture = "Portrait_USA_Lesley_McNair.dds"
+	traits = {  old_guard career_officer armor_officer }
+	skill = 3
+
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Jonathan Wainwright"
+	picture = "Portrait_USA_Jonathan_Wainwright.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Russell Hartle"
+	picture = "Portrait_USA_Russell_P_Hartle.dds"
+	traits = { infantry_officer }
+	skill = 1
+	rank = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_field_marshal = {
+	name = "Dwight D. Eisenhower"
+	picture = "Portrait_USA_Dwight_D_Eisenhower.dds"
+	traits = { logistics_wizard organizer offensive_doctrine trait_cautious armor_officer politically_connected }
+	skill = 5
+	id = 602
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 5
 }

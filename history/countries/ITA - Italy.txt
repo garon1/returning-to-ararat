@@ -17,7 +17,12 @@ add_ideas = {
 	limited_conscription
 	partial_economic_mobilisation
 }
-
+2 = {
+				add_province_modifier = {
+					static_modifiers = { terrain_rome }
+					province = { id = 9904 }
+				}
+			}
 550 = {
 	start_resistance = yes
 	set_compliance = 10
