@@ -68,6 +68,10 @@ bookmarks = {
 			history = "SOV_GATHERING_STORM_DESC"
 			ideology = radical_socialism
 			ideas = {
+			SOV_underdeveloped
+	SOV_land_reforms
+	SOV_alexandra_kollontai
+	SOV_need_of_aid
 			}
 			focuses = {
 			}	

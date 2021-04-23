@@ -510,3 +510,14 @@ high_confederate_support = {
 	production_oil_factor = -0.15
 	production_speed_buildings_factor = -0.15
 }
+international_city = {
+	enable = { always = yes }
+
+	icon = GFX_international_city_modifier
+	state_resources_factor = -1
+	disable_strategic_redeployment = 1
+	production_oil_factor = -1
+	production_speed_buildings_factor = -1
+	conscription_factor = -1
+	local_factories = -1
+}

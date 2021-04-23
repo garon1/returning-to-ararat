@@ -503,7 +503,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = ger_rebuild_the_nation
+			picture = idea_germany_rebuild_the_nation
 
 			modifier = {
 				industry_repair_factor = 0.20
@@ -514,7 +514,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-
+picture = germany_rebuilding
 			allowed_civil_war = {
 				 has_government = neutrality
 			}

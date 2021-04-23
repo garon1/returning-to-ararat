@@ -1,0 +1,17 @@
+ PAL_international_city = {
+	custom_effect_tooltip = PAL_international_city
+	hidden_effect = {
+			if = {
+				limit = {
+					has_dynamic_modifier = { modifier = international_city }
+				}
+				remove_dynamic_modifier = { modifier = international_city }
+			}
+			if = {
+				limit = {
+					NOT = { has_dynamic_modifier = { modifier = international_city } }
+				}
+				add_dynamic_modifier = { modifier = international_city }
+			}
+	}
+}

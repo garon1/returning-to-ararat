@@ -836,6 +836,34 @@ focus_tree = {
 
 	}
 	focus = {
+		id = LOA_bring_in_officers
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_focus_outside_of_seattle
+		}
+		prerequisite = {
+			focus = LOA_naval_expeditions
+		}
+		x = 51
+		y = 5
+
+	}
+	focus = {
+		id = LOA_submarine_ussage
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_new_battleships
+		}
+		prerequisite = {
+			focus = LOA_bring_in_officers
+		}
+		x = 48
+		y = 6
+
+	}
+	focus = {
 		id = LOA_take_note_of_russia
 		icon = GFX_goal_unknown
 		cost = 5.00
@@ -844,6 +872,45 @@ focus_tree = {
 		}
 		x = 54
 		y = 5
+
+	}
+	focus = {
+		id = LOA_take_note_of_japan
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_naval_expeditions
+		}
+		x = 56
+		y = 5
+
+	}
+	focus = {
+		id = LOA_new_naval_academy
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_take_note_of_russia
+		}
+		prerequisite = {
+			focus = LOA_take_note_of_japan
+		}
+		x = 55
+		y = 6
+
+	}
+	focus = {
+		id = LOA_the_navy_of_1000_years
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_submarine_ussage
+		}
+		prerequisite = {
+			focus = LOA_new_naval_academy
+		}
+		x = 50
+		y = 7
 
 	}
 	focus = {
@@ -1073,17 +1140,6 @@ focus_tree = {
 		}
 		x = 40
 		y = 6
-
-	}
-	focus = {
-		id = LOA_take_note_of_japan
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = LOA_naval_expeditions
-		}
-		x = 56
-		y = 5
 
 	}
 }
