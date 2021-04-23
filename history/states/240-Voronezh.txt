@@ -1,0 +1,25 @@
+
+state={
+	id=240
+	name="STATE_240"
+
+	history={
+		victory_points = {
+			9449 1 
+		}
+		owner = RUS
+		buildings = {
+			infrastructure = 4
+
+		}
+add_claim_by = SOV
+add_core_of = RUS
+	}
+
+	provinces={
+		473 534 6577 9489 9518 11500 
+	}
+	manpower=1364537
+	buildings_max_level_factor=1.000
+	state_category=town
+}

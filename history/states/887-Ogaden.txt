@@ -1,0 +1,22 @@
+state={
+	id=887
+	name="STATE_887"
+	provinces={
+		4995 7980 12757 12812 
+	}
+	manpower=802030
+	buildings_max_level_factor=1.000
+	state_category=rural
+	history={
+		owner = ETH
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			7980 1.0 
+		}
+		add_core_of = SOM
+		add_claim_by = ETH
+	}
+}

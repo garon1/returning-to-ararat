@@ -1,0 +1,24 @@
+
+state={
+	id=675
+	name="STATE_675"
+
+	history={
+		owner = JBS
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = JBS
+		add_claim_by = ARA
+add_claim_by = SAU
+
+	}
+
+	provinces={
+		4603 4951 8001 8101 10744 10815 10876 12413 12839 
+	}
+	manpower=122093
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

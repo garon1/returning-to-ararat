@@ -1,0 +1,23 @@
+state={
+	id=888
+	name="STATE_888"
+	provinces={
+		1086 
+	}
+	history={
+		owner = PAL
+		victory_points = {
+			1086 10
+		}
+		buildings = {
+			infrastructure = 4
+		}
+		set_demilitarized_zone = yes
+		add_core_of = PAL
+		add_claim_by = ISR
+
+	}
+	manpower=400392
+	buildings_max_level_factor=1.000
+	state_category=town
+}

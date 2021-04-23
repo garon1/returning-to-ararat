@@ -1,0 +1,83 @@
+division_template = {
+	name = "Infantry Division"
+	division_names_group = KHU_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+division_template = {
+	name = "District Garrison"			# Represents precursors to KHUian Infantry Divisions (district divisions)
+	division_names_group = KHU_GAR_01
+										# Has older equipment, lower experience
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Armored-Division"
+	division_names_group = KHU_ARM_01
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+units = {
+	division = {
+		name = "43a Infantry Division"
+		location = 1978
+		division_template = "Armored-Division"
+	}
+	division = {
+		name = "43a Infantry Division"
+		location = 12717 
+		division_template = "Armored-Division"
+	}
+	division = {
+		name = "43a Infantry Division"
+		location = 10905  
+		division_template = "Armored-Division"
+	}
+	division = {
+		name = "43a Infantry Division"
+		location = 7106
+		division_template = "Armored-Division"
+	}
+	division = {
+		name = "43a Infantry Division"
+		location = 1129  
+		division_template = "Armored-Division"
+	}
+	division = {
+		name = "43a Infantry Division"
+		location = 1910
+		division_template = "Armored-Division"
+	}
+	division = {
+		name = "43a Infantry Division"
+		location = 12763
+		division_template = "Armored-Division"
+	}
+	division = {
+		name = "43a Infantry Division"
+		location = 5105
+		division_template = "Armored-Division"
+	}
+}

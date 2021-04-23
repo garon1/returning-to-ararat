@@ -1,0 +1,25 @@
+
+state={
+	id=877
+	name="STATE_877"
+provinces={
+		849 3851 6912 9887 11867 
+	}
+	history={
+		owner = BSP
+set_demilitarized_zone = yes
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 2
+
+		}
+		add_core_of = GRE
+		add_core_of = BSP
+
+	}
+	manpower=593832
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

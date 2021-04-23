@@ -1,0 +1,26 @@
+state={
+	id=809
+	name="STATE_809"
+	provinces={
+		672 11599 11617 11647 
+	}
+history={
+		owner = UCA
+		victory_points = {
+			11617 5 
+		}
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			dockyard = 2
+
+		}
+		add_core_of = ABK
+		add_core_of = UCA
+
+
+	}
+	manpower=120394
+	state_category=town
+}

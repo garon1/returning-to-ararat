@@ -1,0 +1,26 @@
+
+state={
+	id=814
+	name="STATE_814"
+
+	history={
+		owner = ARM
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+
+		}
+		victory_points = {
+		789 1 
+		}
+		add_core_of = ARM
+
+	}
+
+	provinces={
+		789 4583 10472 12376 
+	}
+	manpower=80394
+	buildings_max_level_factor=1.000
+	state_category=town
+}

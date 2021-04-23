@@ -1,0 +1,31 @@
+
+state={
+	id=340
+	name="STATE_340"
+	resources={
+		chromium=39.000
+	}
+
+	history={
+		owner = ANA
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			947 1 
+		}
+		add_core_of = ANA
+		add_claim_by = GRE
+set_demilitarized_zone = yes
+
+	}
+
+	provinces={
+		947 3786 11778 
+	}
+	manpower=926527
+	buildings_max_level_factor=1.000
+	state_category=town
+}
