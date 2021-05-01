@@ -1,0 +1,275 @@
+﻿add_namespace = red_russia
+#beginning event
+country_event = {
+	id = red_russia.1
+	title = red_russia.1.t
+	desc = red_russia.1.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	
+	option = { # 
+		name = red_russia.1.a
+	}
+}
+#political overview
+country_event = {
+	id = red_russia.2
+	title = red_russia.2.t
+	desc = red_russia.2.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	
+	option = { # 
+		name = red_russia.2.a
+	}
+}
+#industrial overview
+country_event = {
+	id = red_russia.3
+	title = red_russia.3.t
+	desc = red_russia.3.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	
+	option = { # 
+		name = red_russia.3.a
+	}
+}
+#military overview
+country_event = {
+	id = red_russia.4
+	title = red_russia.4.t
+	desc = red_russia.4.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	
+	option = { # 
+		name = red_russia.4.a
+	}
+}
+#alexandra is diposed
+country_event = {
+	id = red_russia.5
+	title = red_russia.5.t
+	desc = red_russia.5.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	
+	option = { # 
+		name = red_russia.5.a
+		add_stability = -0.05
+		hidden_effect = {
+		country_event = {
+		id = red_russia.6
+		days = 7
+			}
+		country_event = {
+		id = rta_news.1
+		hours = 8
+			}
+		}
+	}
+}
+#event for successor
+country_event = {
+	id = red_russia.6
+	title = red_russia.6.t
+	desc = red_russia.6.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	
+	option = { #Georgy Malenkov, hardline commie
+		name = red_russia.6.a
+		ai_chance = {
+		factor = 40
+		}
+		hidden_effects  {
+		remove_ideas = SOV_alexandra_kollontai
+		}
+		create_country_leader = {
+				name = "Georgy Malenkov"
+				desc = ""
+				picture = "gfx/leaders/SOV/Portrait_SOV_Georgy_Malenkov.tga"
+				expire = "1965.1.1"
+				ideology = radical_socialism_subtype
+				traits = {
+				veteran_communist
+			}
+		}
+	}
+	option = { #Grigory Zinoviev, marxist-leninist
+		name = red_russia.6.b
+		ai_chance = {
+		factor = 35
+		}
+		hidden_effects  {
+		remove_ideas = SOV_alexandra_kollontai
+		}
+		create_country_leader = {
+				name = "Grigory Zinoviev"
+				desc = ""
+				picture = "gfx/leaders/SOV/Portrait_SOV_Grigory_Zinoviev.tga"
+				expire = "1965.1.1"
+				ideology = radical_socialism_subtype
+				traits = {
+				marxist_leninist
+			}
+		}
+	}
+	option = { #josep stalin, authoritarian socialist
+		name = red_russia.6.c
+		ai_chance = {
+		factor = 25
+		}
+		hidden_effects  {
+		remove_ideas = SOV_alexandra_kollontai
+		}
+		create_country_leader = {
+				name = "Joseph Stalin"
+				desc = ""
+				picture = "gfx/leaders/SOV/Portrait_SOV_Joseph_Stalin.tga"
+				expire = "1965.1.1"
+				ideology = radical_socialism_subtype
+				traits = {
+				staunch_stalinist
+			}
+		}
+	}
+}
+#alexandra is diposed
+country_event = {
+	id = red_russia.7
+	title = red_russia.7.t
+	desc = red_russia.7.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	
+	option = { # 
+		name = red_russia.7.a
+		add_war_support = 0.1
+		add_political_power = 30
+	}
+}
+#syndicates attack in russia
+country_event = {
+	id = red_russia.8
+	title = red_russia.8.t
+	desc = red_russia.8.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	
+	option = { # 
+		name = red_russia.8.a
+		add_manpower = -11
+		195 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+		}
+	}
+}
+#nationalists attack in russia
+country_event = {
+	id = red_russia.9
+	title = red_russia.9.t
+	desc = red_russia.9.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	
+	option = { # 
+		name = red_russia.9.a
+		add_manpower = -10
+		264 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+		}
+	}
+}
+#land lord issue
+country_event = {
+	id = red_russia.10
+	title = red_russia.10.t
+	desc = red_russia.10.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	
+	option = { # 
+		name = red_russia.10.a
+		hidden_effect = {
+		country_event = {
+		id = red_russia.11
+		days = 200
+		}
+		add_manpower = -10000
+		}
+		add_timed_idea = {
+				idea = SOV_purged_landlords
+				days = 200
+			}
+		}
+	}
+#land lord issue is solved
+country_event = {
+	id = red_russia.11
+	title = red_russia.11.t
+	desc = red_russia.11.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	
+	option = { # 
+		name = red_russia.11.a
+		hidden_effect = {
+		random_owned_controlled_state = {
+							limit = {
+									OR = {
+											has_dynamic_modifier = {
+													modifier = low_left_support
+												}
+										}
+								}
+							save_global_event_target_as = SOV_general_left_support
+							SOV_general_left_support = yes
+						}
+		random_owned_controlled_state = {
+							limit = {
+									OR = {
+											has_dynamic_modifier = {
+													modifier = general_left_support
+												}
+										}
+								}
+							save_global_event_target_as = SOV_high_left_support
+							SOV_high_left_support = yes
+						}
+		}
+		add_ideas = SOV_purged_landlords1
+	}
+}
+#alexandra stays
+country_event = {
+	id = red_russia.12
+	title = red_russia.12.t
+	desc = red_russia.12.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	
+	option = { # 
+		name = red_russia.12.a
+		add_stability = 0.05
+		}
+	}
