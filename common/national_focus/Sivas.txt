@@ -1,0 +1,730 @@
+focus_tree = {
+	id = Sivas
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SIV
+		}
+	}
+	default = no
+	focus = {
+		id = SIV_rebellion_is_victorious
+		icon = GFX_goal_unknown
+		cost = 7.00
+		x = 12
+		y = 0
+
+	}
+	focus = {
+		id = SIV_the_army
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 27
+		y = 0
+
+	}
+	focus = {
+		id = SIV_undergoe_elections
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SIV_rebellion_is_victorious
+		}
+		x = 12
+		y = 1
+
+	}
+	focus = {
+		id = SIV_progressive
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SIV_undergoe_elections
+		}
+		x = 11
+		y = 2
+
+	}
+	focus = {
+		id = SIV_nationalization
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SIV_progressive
+		}
+		x = 8
+		y = 3
+
+	}
+	focus = {
+		id = SIV_grant_women_suffrage
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SIV_progressive
+		}
+		x = 10
+		y = 3
+
+	}
+	focus = {
+		id = SIV_conservative
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SIV_undergoe_elections
+		}
+		x = 13
+		y = 2
+
+	}
+	focus = {
+		id = SIV_pass_privatizaton
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SIV_conservative
+		}
+		x = 14
+		y = 3
+
+	}
+	focus = {
+		id = SIV_aid_the_rich
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SIV_conservative
+		}
+		x = 16
+		y = 3
+
+	}
+	focus = {
+		id = SIV_turkish_policies
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SIV_nationalization
+			focus = SIV_grant_women_suffrage
+			focus = SIV_pass_privatizaton
+			focus = SIV_aid_the_rich
+		}
+		x = 12
+		y = 4
+
+	}
+	focus = {
+		id = SIV_stop_armenian_resistance
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SIV_turkish_policies
+		}
+		x = 14
+		y = 5
+
+	}
+	focus = {
+		id = SIV_ban_unionists
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SIV_pass_privatizaton
+		}
+		prerequisite = {
+			focus = SIV_aid_the_rich
+		}
+		x = 17
+		y = 4
+
+	}
+	focus = {
+		id = SIV_mine_for_minerals
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SIV_pass_privatizaton
+		}
+		prerequisite = {
+			focus = SIV_aid_the_rich
+		}
+		x = 19
+		y = 4
+
+	}
+	focus = {
+		id = SIV_turk_safehaven
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SIV_ban_unionists
+		}
+		prerequisite = {
+			focus = SIV_mine_for_minerals
+		}
+		x = 16
+		y = 5
+
+	}
+	focus = {
+		id = SIV_promote_european_styles
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SIV_ban_unionists
+		}
+		prerequisite = {
+			focus = SIV_mine_for_minerals
+		}
+		x = 18
+		y = 5
+
+	}
+	focus = {
+		id = SIV_root_armenian_resistance
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SIV_mine_for_minerals
+		}
+		x = 20
+		y = 5
+
+	}
+	focus = {
+		id = SIV_defend_homeland
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SIV_the_army
+		}
+		mutually_exclusive = {
+			focus = SIV_fight_to_the_last
+		}
+		x = 25
+		y = 1
+
+	}
+	focus = {
+		id = SIV_new_tactics
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SIV_defend_homeland
+		}
+		x = 24
+		y = 2
+
+	}
+	focus = {
+		id = SIV_invest_in_airplanes
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SIV_new_tactics
+		}
+		x = 22
+		y = 3
+
+	}
+	focus = {
+		id = SIV_artillery
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SIV_new_tactics
+		}
+		x = 25
+		y = 3
+
+	}
+	focus = {
+		id = SIV_fighters
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SIV_invest_in_airplanes
+			focus = SIV_artillery
+		}
+		x = 23
+		y = 4
+
+	}
+	focus = {
+		id = SIV_motorization
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SIV_artillery
+		}
+		x = 26
+		y = 4
+
+	}
+	focus = {
+		id = SIV_invest_in_motorization
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SIV_motorization
+		}
+		x = 25
+		y = 5
+
+	}
+	focus = {
+		id = SIV_fight_to_the_last
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SIV_the_army
+		}
+		mutually_exclusive = {
+			focus = SIV_defend_homeland
+		}
+		x = 29
+		y = 1
+
+	}
+	focus = {
+		id = SIV_attrition
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SIV_fight_to_the_last
+		}
+		x = 30
+		y = 2
+
+	}
+	focus = {
+		id = SIV_tanks
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SIV_attrition
+		}
+		x = 29
+		y = 3
+
+	}
+	focus = {
+		id = SIV_fortification
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SIV_tanks
+		}
+		x = 28
+		y = 4
+
+	}
+	focus = {
+		id = SIV_special_forces
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SIV_tanks
+		}
+		x = 30
+		y = 4
+
+	}
+	focus = {
+		id = SIV_forms_of_army
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SIV_fortification
+		}
+		prerequisite = {
+			focus = SIV_special_forces
+		}
+		x = 28
+		y = 5
+
+	}
+	focus = {
+		id = SIV_new_guns
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SIV_attrition
+		}
+		x = 31
+		y = 3
+
+	}
+	focus = {
+		id = SIV_air_superiority
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SIV_new_guns
+		}
+		x = 32
+		y = 4
+
+	}
+	focus = {
+		id = SIV_bombing_program
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SIV_air_superiority
+		}
+		x = 31
+		y = 5
+
+	}
+	focus = {
+		id = SIV_CAS
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SIV_air_superiority
+		}
+		x = 33
+		y = 5
+
+	}
+	focus = {
+		id = SIV_air_doctorine
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SIV_bombing_program
+		}
+		prerequisite = {
+			focus = SIV_CAS
+		}
+		x = 32
+		y = 6
+
+	}
+	focus = {
+		id = SIV_battle_at_seas
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SIV_forms_of_army
+		}
+		prerequisite = {
+			focus = SIV_air_doctorine
+		}
+		x = 30
+		y = 7
+
+	}
+	focus = {
+		id = SIV_new_navy_bases
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SIV_battle_at_seas
+		}
+		x = 29
+		y = 8
+
+	}
+	focus = {
+		id = SIV_full_attacks
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SIV_battle_at_seas
+		}
+		x = 31
+		y = 8
+
+	}
+	focus = {
+		id = SIV_destroyers
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SIV_full_attacks
+		}
+		prerequisite = {
+			focus = SIV_new_navy_bases
+		}
+		x = 32
+		y = 9
+
+	}
+	focus = {
+		id = SIV_rename_the_cities
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SIV_turkish_policies
+		}
+		x = 10
+		y = 5
+
+	}
+	focus = {
+		id = SIV_resettlement_program
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SIV_turkish_policies
+		}
+		x = 12
+		y = 5
+
+	}
+	focus = {
+		id = SIV_encourage_unionism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SIV_nationalization
+		}
+		prerequisite = {
+			focus = SIV_grant_women_suffrage
+		}
+		x = 8
+		y = 4
+
+	}
+	focus = {
+		id = SIV_autonomous_armenians
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SIV_encourage_unionism
+		}
+		x = 4
+		y = 5
+
+	}
+	focus = {
+		id = SIV_no_state_of_islam
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SIV_encourage_unionism
+		}
+		x = 7
+		y = 5
+
+	}
+	focus = {
+		id = SIV_close_to_kurdistan
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SIV_no_state_of_islam
+			focus = SIV_autonomous_armenians
+			focus = SIV_turk_safehaven
+			focus = SIV_promote_european_styles
+			focus = SIV_root_armenian_resistance
+		}
+		prerequisite = {
+			focus = SIV_rename_the_cities
+		}
+		prerequisite = {
+			focus = SIV_resettlement_program
+		}
+		prerequisite = {
+			focus = SIV_stop_armenian_resistance
+		}
+		mutually_exclusive = {
+			focus = SIV_azerbaijani_alliance
+		}
+		x = 12
+		y = 6
+
+	}
+	focus = {
+		id = SIV_ask_for_alliance
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SIV_close_to_kurdistan
+		}
+		x = 11
+		y = 7
+
+	}
+	focus = {
+		id = SIV_azerbaijani_alliance
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SIV_autonomous_armenians
+			focus = SIV_no_state_of_islam
+			focus = SIV_turk_safehaven
+			focus = SIV_promote_european_styles
+			focus = SIV_root_armenian_resistance
+		}
+		prerequisite = {
+			focus = SIV_rename_the_cities
+		}
+		prerequisite = {
+			focus = SIV_resettlement_program
+		}
+		prerequisite = {
+			focus = SIV_stop_armenian_resistance
+		}
+		mutually_exclusive = {
+			focus = SIV_close_to_kurdistan
+		}
+		x = 14
+		y = 6
+
+	}
+	focus = {
+		id = SIV_turkic_alliance
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SIV_azerbaijani_alliance
+		}
+		x = 15
+		y = 7
+
+	}
+	focus = {
+		id = SIV_bring_turkey_into_fold
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SIV_turkic_alliance
+		}
+		x = 16
+		y = 8
+
+	}
+	focus = {
+		id = SIV_railway
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SIV_turkic_alliance
+		}
+		x = 14
+		y = 8
+
+	}
+	focus = {
+		id = SIV_unity
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SIV_railway
+		}
+		prerequisite = {
+			focus = SIV_bring_turkey_into_fold
+		}
+		x = 15
+		y = 9
+
+	}
+	focus = {
+		id = SIV_air_support
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SIV_fighters
+		}
+		x = 22
+		y = 5
+
+	}
+	focus = {
+		id = SIV_capital_ships
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SIV_new_navy_bases
+		}
+		prerequisite = {
+			focus = SIV_full_attacks
+		}
+		x = 28
+		y = 9
+
+	}
+	focus = {
+		id = SIV_navy_dockyards
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SIV_capital_ships
+		}
+		prerequisite = {
+			focus = SIV_destroyers
+		}
+		x = 30
+		y = 10
+
+	}
+	focus = {
+		id = SIV_protect_coastline
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SIV_air_support
+		}
+		prerequisite = {
+			focus = SIV_invest_in_motorization
+		}
+		x = 24
+		y = 6
+
+	}
+	focus = {
+		id = SIV_the_first_subs
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SIV_protect_coastline
+		}
+		x = 22
+		y = 7
+
+	}
+	focus = {
+		id = SIV_transportation
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SIV_protect_coastline
+		}
+		x = 24
+		y = 7
+
+	}
+	focus = {
+		id = SIV_cruisers
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SIV_protect_coastline
+		}
+		x = 26
+		y = 7
+
+	}
+	focus = {
+		id = SIV_carriers
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SIV_the_first_subs
+		}
+		prerequisite = {
+			focus = SIV_transportation
+		}
+		prerequisite = {
+			focus = SIV_cruisers
+		}
+		x = 24
+		y = 8
+
+	}
+}

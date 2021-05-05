@@ -1,0 +1,11 @@
+#on_actions = {
+#	on_startup = {
+#		effect = {
+#			PUA = {
+#set_variable = { var = armenia_parliament_support value = 37 } ### Value of Parliament at start ###
+#set_variable = { var = armenia_parliament_total value = 80 } ### Max Value of Parliament ###
+#ARM_recalc_parliament_icon_frames = yes #### Scripted Effect ###
+#			}
+#		}
+#	}
+#}

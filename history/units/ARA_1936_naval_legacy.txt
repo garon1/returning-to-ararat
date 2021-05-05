@@ -1,0 +1,19 @@
+
+units= {
+
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "Bahriat Maka"			
+		naval_base = 12883				
+		task_force = {					
+			name = "Bahriat Maka"				
+			location = 12883
+			ship = { name = "RHS Katsonis" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ARA } } }		
+			ship = { name = "RHS Papanikolis" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ARA } } }		
+			ship = { name = "RHS Protefs" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ARA } } }		
+			ship = { name = "RHS Nirefs" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ARA } } }		 
+			ship = { name = "RHS Triton" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ARA } } }		
+			ship = { name = "RHS Glafkos" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ARA } } }		
+		}					
+	}
+} 

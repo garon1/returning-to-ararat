@@ -1,0 +1,3760 @@
+focus_tree = {
+	id = Red_America
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = PUA
+		}
+	}
+	default = no
+	focus = {
+		id = PUA_re-evaluate_reconstruction
+		icon = GFX_goal_unknown
+		cost = 7.00
+		x = 7
+		y = 0
+		ai_will_do = {
+			factor = 200
+		}
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		country_event = pua.1
+		}
+	}
+	focus = {
+		id = PUA_the_red_giant_awakens
+		icon = GFX_goal_unknown
+		cost = 7.00
+		x = 42
+		y = 0
+		ai_will_do = {
+			factor = 150
+		}
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_stability = 0.05
+		add_political_power = 150
+		}
+	}
+	focus = {
+		id = PUA_foreign_policy
+		icon = GFX_goal_unknown
+		cost = 7.00
+		x = 46
+		y = 8
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_ideas = PUA_new_foreign_policy
+		}
+	}
+	focus = {
+		id = PUA_military_focus
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 29
+		y = 4
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+		country_event = pua.2
+		}
+	}
+	focus = {
+		id = PUA_force_bayard_to_change
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_re-evaluate_reconstruction
+		}
+		mutually_exclusive = {
+			focus = PUA_keep_with_bayards_politics
+		}
+		x = 5
+		y = 1
+		ai_will_do = {
+			factor = 200
+		}
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		hidden_effect = {
+		set_country_flag = PUA_bayard_changes
+		}
+		if = {
+		limit = {
+		has_ideas = PUA_communist_transformation
+				}
+				swap_ideas = {
+				add_idea = PUA_communist_transformation1
+				remove_idea = PUA_communist_transformation
+				}
+			}
+		}
+	}
+	focus = {
+		id = PUA_slow_down_transition
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_force_bayard_to_change
+		}
+		x = 5
+		y = 2
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_stability = 0.1
+		}
+	}
+	focus = {
+		id = PUA_adopt_german_economic_policies
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_slow_down_transition
+		}
+		x = 3
+		y = 3
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		GER = {
+		add_opinion_modifier = { modifier = medium_increase target = PUA }
+		}
+		PUA = {
+		add_opinion_modifier = { modifier = medium_increase target = GER }
+		}
+		add_popularity = {
+		popularity = 0.15
+		ideology = syndicalism
+			}
+		}
+	}
+	focus = {
+		id = PUA_stop_capitalist_trading
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_adopt_german_economic_policies
+		}
+		x = 2
+		y = 4
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		PUA = {
+		add_opinion_modifier = { modifier = embargo target = SPR }
+			}
+		PUA = {
+		add_opinion_modifier = { modifier = embargo target = FRA }
+			}
+		PUA = {
+		add_opinion_modifier = { modifier = embargo target = ENG}
+			}
+		PUA = {
+		add_opinion_modifier = { modifier = embargo target = CAN }
+			}
+		}
+	}
+	focus = {
+		id = PUA_stregthen_unionists
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_slow_down_transition
+		}
+		x = 5
+		y = 3
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_ideas = PUA_unionists_strengthened
+		add_popularity = {
+		popularity = 0.07
+		ideology = syndicalism
+			}
+		}
+	}
+	focus = {
+		id = PUA_annual_deal_act
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_stregthen_unionists
+		}
+		prerequisite = {
+			focus = PUA_adopt_german_economic_policies
+		}
+		x = 4
+		y = 4
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		country_event = pua.3
+		}
+	}
+	focus = {
+		id = PUA_collectivize_the_farms
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_slow_down_transition
+		}
+		x = 7
+		y = 3
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		if = {
+		limit = {
+		has_ideas = PUA_struggle_for_self_suffenciency
+				}
+				swap_ideas = {
+				add_idea = PUA_struggle_for_self_suffenciency1
+				remove_idea = PUA_struggle_for_self_suffenciency
+				}
+			}
+		}
+	}
+	focus = {
+		id = PUA_from_the_farmers_to_miners
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_collectivize_the_farms
+		}
+		x = 6
+		y = 5
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		if = {
+		limit = {
+		has_ideas = PUA_struggle_for_self_suffenciency
+				}
+				swap_ideas = {
+				add_idea = PUA_struggle_for_self_suffenciency1
+				remove_idea = PUA_struggle_for_self_suffenciency
+				}
+			}
+		if = {
+		limit = {
+		has_ideas = PUA_struggle_for_self_suffenciency1
+				}
+				swap_ideas = {
+				add_idea = PUA_struggle_for_self_suffenciency2
+				remove_idea = PUA_struggle_for_self_suffenciency1
+				}
+			}
+		}
+	}
+	focus = {
+		id = PUA_clean_urban_areas
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_stregthen_unionists
+		}
+		prerequisite = {
+			focus = PUA_collectivize_the_farms
+		}
+		x = 10
+		y = 4
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	focus = {
+		id = PUA_housing_act
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_clean_urban_areas
+		}
+		x = 8
+		y = 5
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		country_event = pua.4
+		}
+	}
+	focus = {
+		id = PUA_increase_state_working_propaganda
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_from_the_farmers_to_miners
+		}
+		prerequisite = {
+			focus = PUA_housing_act
+		}
+		x = 7
+		y = 6
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_war_support = 0.1
+		add_political_power = 150
+		add_popularity = {
+		popularity = 0.1
+		ideology = syndicalism
+			}
+		}
+	}
+	focus = {
+		id = PUA_set_up_union_restaurants
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_stop_capitalist_trading
+		}
+		prerequisite = {
+			focus = PUA_annual_deal_act
+		}
+		x = 4
+		y = 6
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		if = {
+		limit = {
+		has_ideas = PUA_communist_transformation2
+				}
+				swap_ideas = {
+				add_idea = PUA_communist_transformation3
+				remove_idea = PUA_communist_transformation2
+				}
+			}
+		if = {
+		limit = {
+		has_ideas = PUA_communist_transformation1
+				}
+				swap_ideas = {
+				add_idea = PUA_communist_transformation2
+				remove_idea = PUA_communist_transformation1
+				}
+			}
+		if = {
+		limit = {
+		has_ideas = PUA_communist_transformation
+				}
+				swap_ideas = {
+				add_idea = PUA_communist_transformation1
+				remove_idea = PUA_communist_transformation
+				}
+			}
+		}
+	}
+	focus = {
+		id = PUA_decentralized_transformation_is_complete
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_set_up_union_restaurants
+		}
+		prerequisite = {
+			focus = PUA_increase_state_working_propaganda
+		}
+		x = 10
+		y = 7
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		country_event = pua.5
+		}
+	}
+	focus = {
+		id = PUA_keep_with_bayards_politics
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = PUA_re-evaluate_reconstruction
+		}
+		mutually_exclusive = {
+			focus = PUA_force_bayard_to_change
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		x = 20
+		y = 1
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		hidden_effect = {
+		set_country_flag = PUA_bayard_stays_the_same
+		}
+		add_popularity = {
+		popularity = 0.1
+		ideology = radical_socialism
+			}
+		}
+	}
+	focus = {
+		id = PUA_jobs_for_the_military
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_force_bayard_to_change
+			focus = PUA_keep_with_bayards_politics
+		}
+		x = 13
+		y = 2
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_ideas = PUA_military_jobs
+		}
+	}
+	focus = {
+		id = PUA_military_factor_workers
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_jobs_for_the_military
+		}
+		mutually_exclusive = {
+			focus = PUA_dockyard_in_the_works
+			focus = PUA_a_new_airforce
+		}
+		x = 12
+		y = 3
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		if = {
+		limit = {
+		has_ideas = PUA_military_jobs
+				}
+				swap_ideas = {
+				add_idea = PUA_military_jobs1
+				remove_idea = PUA_military_jobs
+				}
+			}
+		}
+	}
+	focus = {
+		id = PUA_dockyard_in_the_works
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_jobs_for_the_military
+		}
+		x = 14
+		y = 3
+		mutually_exclusive = {
+			focus = PUA_military_factory_workers
+			focus = PUA_a_new_airforce
+		}
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_ideas = PUA_dockyard_jobs
+		}
+	}
+	focus = {
+		id = PUA_a_new_airforce
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_jobs_for_the_military
+		}
+		x = 16
+		y = 3
+		mutually_exclusive = {
+			focus = PUA_military_factory_workers
+			focus = PUA_dockyard_in_the_works
+		}
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_ideas = PUA_airforce_jobs
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = air_base
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	focus = {
+		id = PUA_improve_working_conditions_for_factories
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = PUA_military_factor_workers
+		}
+		prerequisite = {
+			focus = PUA_dockyard_in_the_works
+		}
+		prerequisite = {
+			focus = PUA_a_new_airforce
+		}
+		x = 15
+		y = 4
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = PUA_partial_mobilization
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_improve_working_conditions_for_factories
+		}
+		x = 14
+		y = 5
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		bypass = {
+		has_idea = partial_economic_mobilisation
+		}
+		completion_reward = {
+		if = {
+		limit = {
+		NOT = {
+		has_ideas = partial_economic_mobilisation
+					}
+				}
+				add_ideas = partial_economic_mobilisation
+			}
+		}
+	}
+	focus = {
+		id = PUA_increase_transition_period
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_keep_with_bayards_politics
+		}
+		x = 20
+		y = 2
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		if = {
+		limit = {
+		has_ideas = PUA_communist_transformation
+				}
+				swap_ideas = {
+				add_idea = PUA_centralized_communist_transformation
+				remove_idea = PUA_communist_transformation
+				}
+			}
+		}
+	}
+	focus = {
+		id = PUA_based_lenins_policies
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_increase_transition_period
+		}
+		x = 18
+		y = 3
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		if = {
+		limit = {
+		has_ideas = PUA_centralized_communist_transformation
+				}
+				swap_ideas = {
+				add_idea = PUA_centralized_communist_transformation1
+				remove_idea = PUA_centralized_communist_transformation
+				}
+			}
+		}
+	}
+	focus = {
+		id = PUA_reverse_farming_policies
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_increase_transition_period
+		}
+		x = 21
+		y = 3
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		country_event = pua.8
+		}
+	}
+	focus = {
+		id = PUA_new_cities_initative
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_reverse_farming_policies
+		}
+		x = 20
+		y = 4
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		country_event = pua.9
+		}
+	}
+	focus = {
+		id = PUA_nationalize_public_transportation
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_based_lenins_policies
+		}
+		prerequisite = {
+			focus = PUA_reverse_farming_policies
+		}
+		x = 17
+		y = 4
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_ideas = PUA_nationalized_transportation
+		}
+	}
+	focus = {
+		id = PUA_maximize_industrial_output
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_nationalize_public_transportation
+		}
+		prerequisite = {
+			focus = PUA_new_cities_initative
+		}
+		x = 18
+		y = 6
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		if = {
+		limit = {
+		has_ideas = PUA_struggle_for_self_suffenciency
+				}
+				swap_ideas = {
+				add_idea = PUA_centralized_struggle
+				remove_idea = PUA_struggle_for_self_suffenciency
+			}
+		}
+		if = {
+		limit = {
+		has_ideas = PUA_centralized_struggle
+				}
+				swap_ideas = {
+				add_idea = PUA_centralized_struggle1
+				remove_idea = PUA_centralized_struggle
+				}
+			}
+		}
+	}
+	focus = {
+		id = PUA_nationalize_minerals
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_increase_transition_period
+		}
+		x = 25
+		y = 3
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		bypass = {
+		NOT = {
+		has_full_control_of_state = 373
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		373 = {
+		add_resource = { 
+					type = aluminium
+					amount = 21
+				}
+				add_resource = { 
+					type = steel
+					amount = 9
+				}
+			}
+		}
+	}
+	focus = {
+		id = PUA_change_the_wage_act
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_reverse_farming_policies
+		}
+		prerequisite = {
+			focus = PUA_nationalize_minerals
+		}
+		x = 23
+		y = 4
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		country_event = pua.10
+		}
+	}
+	focus = {
+		id = PUA_promote_jakism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_new_cities_initative
+		}
+		prerequisite = {
+			focus = PUA_change_the_wage_act
+		}
+		x = 21
+		y = 5
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		MEX = { 
+		add_popularity = {
+		popularity = 0.1
+		ideology = radical_socialism
+		}
+					add_opinion_modifier = { target = PUA modifier = medium_decrease }
+				}
+		CAN = { 
+		add_popularity = {
+		popularity = 0.1
+		ideology = radical_socialism
+		}
+					add_opinion_modifier = { target = PUA modifier = medium_decrease }
+				}
+		}
+	}
+	focus = {
+		id = PUA_the_fishing_industry
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_maximize_industrial_output
+		}
+		prerequisite = {
+			focus = PUA_promote_jakism
+		}
+		x = 20
+		y = 7
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		bypass = {
+		NOT = {
+		has_full_control_of_state = 359
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_stability = 0.1
+		add_manpower = 20000
+		359 = {
+				if = { 
+					limit = {
+						free_building_slots = {
+							building = dockyard
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+				}	
+			}
+		}
+	}
+	focus = {
+		id = PUA_create_annual_holidays
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_nationalize_minerals
+		}
+		x = 26
+		y = 4
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		if = {
+		limit = {
+		has_ideas = PUA_struggle_for_self_suffenciency
+				}
+				swap_ideas = {
+				add_idea = PUA_centralized_struggle
+				remove_idea = PUA_struggle_for_self_suffenciency
+			}
+		}
+		if = {
+		limit = {
+		has_ideas = PUA_centralized_struggle1
+				}
+				swap_ideas = {
+				add_idea = PUA_centralized_struggle2
+				remove_idea = PUA_centralized_struggle1
+				}
+			}
+		if = {
+		limit = {
+		has_ideas = PUA_centralized_struggle
+				}
+				swap_ideas = {
+				add_idea = PUA_centralized_struggle1
+				remove_idea = PUA_centralized_struggle
+				}
+			}
+		}
+	}
+	focus = {
+		id = PUA_reduce_work_days
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = PUA_change_the_wage_act
+		}
+		prerequisite = {
+			focus = PUA_create_annual_holidays
+		}
+		x = 24
+		y = 5
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_stability = 0.08
+		add_popularity = {
+		popularity = 0.08
+		ideology = radical_socialism
+			}
+		}
+	}
+	focus = {
+		id = PUA_max_agricultural_output
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_promote_jakism
+		}
+		prerequisite = {
+			focus = PUA_reduce_work_days
+		}
+		x = 23
+		y = 6
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_ideas = PUA_agriculture_focus
+		}
+	}
+	focus = {
+		id = PUA_transition_is_complete
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_the_fishing_industry
+		}
+		prerequisite = {
+			focus = PUA_max_agricultural_output
+		}
+		x = 22
+		y = 8
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		country_event = pua.11
+		}
+	}
+	focus = {
+		id = PUA_divert_funds_to_the_army
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = PUA_military_focus
+		}
+		x = 27
+		y = 5
+		completion_reward = {
+		army_experience = 25
+		add_political_power = -150
+		}
+	}
+	focus = {
+		id = PUA_offensive_doctorines
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_divert_funds_to_the_army
+		}
+		x = 26
+		y = 6
+		completion_reward = {
+			add_ideas = { FRA_firepower }
+		}
+	}
+	focus = {
+		id = PUA_new_modern_guns
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_offensive_doctorines
+		}
+		x = 24
+		y = 7
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id = PUA_learn_from_the_civil_war
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_offensive_doctorines
+		}
+		x = 26
+		y = 7
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 2.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = PUA_implore_technological_warfare
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_new_modern_guns
+		}
+		prerequisite = {
+			focus = PUA_learn_from_the_civil_war
+		}
+		x = 25
+		y = 8
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = ROM_modern_at_guns
+				bonus = 1.0
+				uses = 2
+				category = cat_anti_tank
+			}
+		}
+	}
+	focus = {
+		id = PUA_learn_from_the_great_war
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_offensive_doctorines
+		}
+		x = 28
+		y = 7
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = PUA_abandon_cavalry
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_learn_from_the_civil_war
+		}
+		prerequisite = {
+			focus = PUA_learn_from_the_great_war
+		}
+		x = 27
+		y = 8
+		available_if_capitulated = yes
+		completion_reward = {
+		add_tech_bonus = {
+				name = ROM_vanatori_de_munte
+				bonus = 1.0
+				uses = 1
+				category = mountaineers_tech
+			}
+		}
+	}
+	focus = {
+		id = PUA_divert_funds_to_airforce
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_military_focus
+		}
+		x = 30
+		y = 5
+		available_if_capitulated = yes
+	completion_reward = {
+		air_experience = 20
+		add_political_power = -150
+		}
+	}
+	focus = {
+		id = PUA_invest_in_better_fighters
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_divert_funds_to_airforce
+		}
+		x = 29
+		y = 6
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+				technology = heavy_fighter1
+				technology = heavy_fighter2
+				technology = heavy_fighter3
+			}
+		}
+		
+	}
+	focus = {
+		id = PUA_different_bombers
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_divert_funds_to_airforce
+		}
+		x = 31
+		y = 6
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 2
+				technology = strategic_bomber1
+				technology = strategic_bomber2
+				technology = strategic_bomber3
+				category = tactical_bomber
+			}
+		}
+	}
+	focus = {
+		id = PUA_new_air_bases
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_invest_in_better_fighters
+		}
+		prerequisite = {
+			focus = PUA_different_bombers
+		}
+		x = 30
+		y = 7
+		available_if_capitulated = yes
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = air_focus_bypass_tt
+				NOT = {
+					any_owned_state = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			air_experience = 25
+			every_state = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+				
+			}
+		}
+	}
+	focus = {
+		id = PUA_anti_air
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_new_air_bases
+		}
+		x = 29
+		y = 8
+		available_if_capitulated = yes
+		completion_reward = {
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+				}		
+				add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = anti_air_building
+                    level = 2
+                    instant_build = yes
+                    }
+			}
+ 		}
+	}
+	focus = {
+		id = PUA_jet_technology
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_new_air_bases
+		}
+		x = 31
+		y = 8
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = jet_rocket_bonus
+				ahead_reduction = 2
+				uses = 2
+				category = rocketry
+				category = jet_technology
+			}
+		}
+	}
+	focus = {
+		id = PUA_peoples_air_force
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = PUA_anti_air
+		}
+		prerequisite = {
+			focus = PUA_jet_technology
+		}
+		x = 30
+		y = 9
+		available_if_capitulated = yes
+		completion_reward = {
+			air_experience = 20
+		}
+	}
+	focus = {
+		id = PUA_divert_funds_to_navy
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_military_focus
+		}
+		x = 33
+		y = 5
+		available_if_capitulated = yes
+		completion_reward = {
+		navy_experience = 20
+		add_political_power = -150
+		}	
+	}
+	focus = {
+		id = PUA_create_new_naval_bases
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_divert_funds_to_navy
+		}
+		x = 33
+		y = 6
+		available_if_capitulated = yes
+		completion_reward = {
+			882 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = naval_base
+						level = 3
+						province = 9832
+						instant_build = yes
+					}
+					
+				}
+			}
+			361 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = naval_base
+						level = 3
+						province = 9786
+						instant_build = yes
+					}
+					
+				}
+			}
+		}
+	}
+	focus = {
+		id = PUA_new_submarines
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_create_new_naval_bases
+		}
+		x = 32
+		y = 7
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = ss_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = ss_tech
+			}
+		}
+	}
+	focus = {
+		id = PUA_new_dockyards
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_divert_funds_to_navy
+		}
+		x = 35
+		y = 6
+		available_if_capitulated = yes
+		completion_reward = {
+			358 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						province = 3878
+						instant_build = yes
+					}
+					
+				}
+			}
+			359 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						province = 6882
+						instant_build = yes
+					}
+					
+				}
+			}
+		}
+	}
+	focus = {
+		id = PUA_new_destroyers
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_create_new_naval_bases
+		}
+		prerequisite = {
+			focus = PUA_new_dockyards
+		}
+		x = 34
+		y = 7
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 2.0
+				ahead_reduction = 2
+				uses = 1
+				category = dd_tech
+			}
+		}
+	}
+	focus = {
+		id = PUA_evaluate_our_situation
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = PUA_the_red_giant_awakens
+		}
+		x = 42
+		y = 1
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = PUA_get_rid_of_paranoia
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_evaluate_our_situation
+		}
+		mutually_exclusive = {
+			focus = PUA_exploit_the_peoples_fears
+		}
+		x = 39
+		y = 2
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		if = {
+		limit = {
+		has_idea = PUA_paranoia
+				}
+				swap_ideas = {
+				add_idea = PUA_paranoia1
+				remove_idea = PUA_paranoia
+				}
+			}
+		}
+	}
+	focus = {
+		id = PUA_wake_our_populace_up_to_the_threats
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_get_rid_of_paranoia
+		}
+		x = 37
+		y = 3
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_stability = -0.05
+		add_war_support = 0.05
+		add_popularity = {
+		popularity = 0.07
+		ideology = syndicalism
+			}
+		}
+	}
+	focus = {
+		id = PUA_fortify_the_nation
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_wake_our_populace_up_to_the_threats
+		}
+		x = 36
+		y = 4
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		859 = {
+				limit = {
+					is_controlled_by = ROOT
+					is_in_home_area = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes			
+					}
+					level = 2
+					instant_build = yes
+				}
+			}
+		392 = {
+				limit = {
+					is_controlled_by = ROOT
+					is_in_home_area = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes			
+					}
+					level = 2
+					instant_build = yes
+				}
+			}
+			369 = {
+				limit = {
+					is_controlled_by = ROOT
+					is_in_home_area = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes			
+					}
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = PUA_invest_in_airforce
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_fortify_the_nation
+		}
+		mutually_exclusive = {
+			focus = PUA_invest_in_the_army
+			focus = PUA_invest_in_the_navy
+		}
+		x = 35
+		y = 5
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = air_base
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	focus = {
+		id = PUA_arm_the_population
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_wake_our_populace_up_to_the_threats
+		}
+		prerequisite = {
+			focus = PUA_get_rid_of_paranoia
+		}
+		x = 38
+		y = 4
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 10000
+				producer = PUA
+			}
+			division_template = {
+				name = "Militia Garrison Brigade"
+				division_names_group = PUA_GAR_01
+				is_locked = yes
+				regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 392 }
+				create_unit = {
+					division = "division_template = \"Militia Garrison Brigade\" start_experience_factor = 0.1"
+					owner = PUA
+					count = 3
+				}
+			}
+		}
+	}	
+	focus = {
+		id = PUA_invest_in_the_army
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_arm_the_population
+		}
+		prerequisite = {
+			focus = PUA_fortify_the_nation
+		}
+		mutually_exclusive = {
+			focus = PUA_invest_in_airforce
+			focus = PUA_invest_in_the_navy
+		}
+		x = 39
+		y = 5
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		hidden_effect = {
+		add_political_power = -200
+		add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -6000
+				producer = PUA
+			}
+		}
+		division_template = {
+				name = "Cavalry Militia"
+
+	division_names_group = PUA_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 1 y = 3 }
+	}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 361 }
+				create_unit = {
+					division = "division_template = \"Cavalry Militia\" start_experience_factor = 0.1"
+					owner = PUA
+					count = 3
+				}
+			}
+			division_template = {
+				name = "Red Infantry"
+			division_names_group = PUA_INF_01
+			is_locked = yes
+			regiments = {
+			infantry = { x = 0 y = 0 }
+			infantry = { x = 0 y = 1 }
+			infantry = { x = 0 y = 2 }
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 394 }
+				create_unit = {
+					division = "division_template = \"Red Infantry\" start_experience_factor = 0.1"
+					owner = PUA
+					count = 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = PUA_meddle_in_american_affairs
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_foreign_policy
+		}
+		x = 42
+		y = 9
+		bypass = {
+		NOT = {
+		OR = {
+		LOA = {
+		exists = yes
+					}
+		CAL = {
+		exists = yes
+			}
+			COF = {
+		exists = yes
+			}
+		}
+		}
+		}
+		available = {
+		OR = {
+		LOA = {
+		exists = yes
+					}
+		CAL = {
+		exists = yes
+			}
+			COF = {
+		exists = yes
+			}
+		}
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		hidden_effect = {
+		country_event = pua.20
+		}
+		COF = {
+		add_opinion_modifier = { modifier = sanctions target = PUA }
+		}
+		PUA = {
+		add_opinion_modifier = { modifier = sanctions target = COF }
+			}
+		LOA = {
+		add_opinion_modifier = { modifier = sanctions target = PUA }
+		}
+		PUA = {
+		add_opinion_modifier = { modifier = sanctions target = LOA }
+			}
+		}
+	}
+	focus = {
+		id = PUA_contact_anti_legionists
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_meddle_in_american_affairs
+		}
+		x = 39
+		y = 10
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		always = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = PUA_support_anti_legionists
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_contact_anti_legionists
+		}
+		x = 40
+		y = 11
+		bypass = {
+		CAL = {
+		is_subject = no
+		exists = yes
+			}
+		}
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		CAL = {
+		is_subject = no
+		exists = yes
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		ARM_parliament_support_remove2 = yes
+		CAL = {
+		add_opinion_modifier = {
+				target = PUA
+				modifier = medium_increase
+			}
+		}
+		add_opinion_modifier = {
+				target = CAL
+				modifier = medium_increase
+			}
+		PUA = {
+		add_manpower = -300
+		army_experience = 10
+		}
+		CAL = {
+		add_manpower = 300
+		army_experience = 10
+		}
+		add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 5000
+				producer = CAL
+			}
+		add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -5000
+				producer = PUA
+			}
+		}
+	}
+	focus = {
+		id = PUA_exploit_the_peoples_fears
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_evaluate_our_situation
+		}
+		mutually_exclusive = {
+			focus = PUA_get_rid_of_paranoia
+		}
+		x = 54
+		y = 2
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_popularity = {
+		popularity = 0.07
+		ideology = radical_socialism
+		}
+		if = {
+		limit = {
+		has_idea = PUA_paranoia
+				}
+				swap_ideas = {
+				add_idea = PUA_paranoia2
+				remove_idea = PUA_paranoia
+				}
+			}
+		}
+	}
+	focus = {
+		id = PUA_encourage_the_new_left
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_get_rid_of_paranoia
+			focus = PUA_exploit_the_peoples_fears
+		}
+		mutually_exclusive = {
+			focus = PUA_stick_with_one_ideology
+		}
+		x = 41
+		y = 3
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_popularity = {
+		popularity = 0.15
+		ideology = market_socialism
+			}
+		}
+	}
+	focus = {
+		id = PUA_print_lenin
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_encourage_the_new_left
+		}
+		x = 40
+		y = 4
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		country_event = pua.12
+		}
+	}
+	focus = {
+		id = PUA_print_rudolf_rocker
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_encourage_the_new_left
+		}
+		x = 42
+		y = 4
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		country_event = pua.13
+		}
+	}
+	focus = {
+		id = PUA_bastion_of_leftism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_print_lenin
+		}
+		prerequisite = {
+			focus = PUA_print_rudolf_rocker
+		}
+		x = 41
+		y = 5
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		if = {
+		limit = {
+		has_idea = PUA_infighting
+				}
+				swap_ideas = {
+				remove_idea = PUA_infighting
+				add_idea = PUA_infighting1
+				}
+			}
+		}
+	}
+	focus = {
+		id = PUA_stick_with_one_ideology
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_get_rid_of_paranoia
+			focus = PUA_exploit_the_peoples_fears
+		}
+		mutually_exclusive = {
+			focus = PUA_encourage_the_new_left
+		}
+		x = 43
+		y = 3
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_popularity = {
+		popularity = -0.15
+		ideology = market_socialism
+			}
+		}
+	}
+	focus = {
+		id = PUA_create_the_CIA
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_bastion_of_leftism
+			focus = PUA_stick_with_one_ideology
+		}
+		mutually_exclusive = {
+			focus = PUA_create_workers_police
+		}
+		x = 41
+		y = 6
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		hidden_effect = {
+		country_event = {
+		id = pua.16 days = 60#events that cause instability
+				}
+		country_event = {
+		id = pua.15 days = 40#events that cause instability
+				}
+		country_event = {
+		id = pua.14 days = 2
+				}
+			}
+			custom_effect_tooltip = PUA_cia
+		}
+	}
+	focus = {
+		id = PUA_contact_quebecians
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_meddle_in_american_affairs
+		}
+		x = 41
+		y = 10
+	available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		always = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = PUA_send_aid_to_quebec_separatists
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_contact_quebecians
+		}
+		x = 42
+		y = 11
+		bypass = {
+		NOT = {
+		CAN = {
+		is_subject = no
+		exists = yes		
+				}
+			}
+		}
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		CAN = {
+		exists = yes
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		CAN = {
+		country_event = pua.22
+			}
+		}
+	}
+	focus = {
+		id = PUA_create_workers_police
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_bastion_of_leftism
+			focus = PUA_stick_with_one_ideology
+		}
+		mutually_exclusive = {
+			focus = PUA_create_the_CIA
+		}
+		x = 43
+		y = 6
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		hidden_effect = {
+		country_event = {
+		id = pua.19 days = 60#events about the police
+				}
+		country_event = {
+		id = pua.18 days = 40#events about the police
+				}
+		country_event = {
+		id = pua.17 days = 2
+				}
+			}
+			custom_effect_tooltip = PUA_workers_police
+		}
+	}
+	focus = {
+		id = PUA_orthodox_syndicalism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_stick_with_one_ideology
+		}
+		mutually_exclusive = {
+			focus = PUA_anarchism
+			focus = PUA_market_socialists
+			focus = PUA_radicalism
+		}
+		x = 44
+		y = 4
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_stability=  0.05
+		ARM_parliament_support_remove5 = yes
+		add_popularity = {
+		popularity = 0.05
+		ideology = syndicalism
+			}
+		}
+	}
+	focus = {
+		id = PUA_elect_reed
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_orthodox_syndicalism
+		}
+		x = 44
+		y = 5
+		available = {
+		always = no
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		hidden_effect = {
+		ARM_parliament_support_remove10 = yes
+			}
+		}
+	}
+	focus = {
+		id = PUA_create_nationwide_clubs
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_create_the_CIA
+			focus = PUA_create_workers_police
+		}
+		x = 44
+		y = 7
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		country_event = pua.19
+		}
+	}
+	focus = {
+		id = PUA_advisor_plans
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_foreign_policy
+		}
+		x = 46
+		y = 9
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_ideas = PUA_advisor_idea
+		}
+	}
+	focus = {
+		id = PUA_contact_the_germans
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_advisor_plans
+		}
+		x = 44
+		y = 10
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		GER = {
+		is_subject = no
+		exists = yes
+				}
+		}
+		bypass = {
+		NOT = {
+		GER = {
+		is_subject = no
+		exists = yes
+				}
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		GER = {
+		add_opinion_modifier = { modifier = unholy_alliance_opinion target = PUA }
+		}
+		PUA = {
+		add_opinion_modifier = { modifier = unholy_alliance_opinion target = GER }
+			}
+		GER = {
+		country_event = {
+		id = pua.28 days = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = PUA_anarchism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_stick_with_one_ideology
+		}
+		mutually_exclusive = {
+			focus = PUA_orthodox_syndicalism
+			focus = PUA_market_socialists
+			focus = PUA_radicalism
+		}
+		x = 46
+		y = 4
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_stability=  0.04
+		ARM_parliament_support_remove5 = yes
+		add_popularity = {
+		popularity = 0.08
+		ideology = anarchism
+			}
+		}
+	}
+	focus = {
+		id = PUA_elect_flynn
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_anarchism
+		}
+		x = 46
+		y = 5
+		available = {
+		always = no
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		hidden_effect = {
+		ARM_parliament_support_remove5 = yes
+			}
+		}
+	}
+	focus = {
+		id = PUA_contact_the_vietnamese
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_advisor_plans
+		}
+		x = 46
+		y = 10
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		VIN = {
+		is_subject = no
+		exists = yes
+				}
+		}
+		bypass = {
+		NOT = {
+		 VIN = {
+		is_subject = no
+		exists = yes
+				}
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		VIN = {
+		add_opinion_modifier = { modifier = unholy_alliance_opinion target = PUA }
+		}
+		PUA = {
+		add_opinion_modifier = { modifier = unholy_alliance_opinion target = VIN }
+			}
+		VIN = {
+		country_event = {
+		id = pua.29 days = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = PUA_contact_the_russians
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_advisor_plans
+		}
+		x = 48
+		y = 10
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		SOV = {
+		is_subject = no
+		exists = yes
+				}
+		}
+		bypass = {
+		NOT = {
+		 SOV = {
+		is_subject = no
+		exists = yes
+				}
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		SOV = {
+		add_opinion_modifier = { modifier = unholy_alliance_opinion target = PUA }
+		}
+		PUA = {
+		add_opinion_modifier = { modifier = unholy_alliance_opinion target = SOV }
+			}
+		SOV = {
+		country_event = {
+		id = pua.29 days = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = PUA_enact_trade_relations_with_south_american_socialists
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_contact_the_germans
+		}
+		prerequisite = {
+			focus = PUA_contact_the_vietnamese
+		}
+		prerequisite = {
+			focus = PUA_contact_the_russians
+		}
+		x = 46
+		y = 11
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		if = {
+		limit = {
+		CHL = {
+		OR = {
+			has_government = radical_socialism
+		has_government = syndicalism
+		has_government = anarchism
+		has_government = market_socialism
+						}
+					}
+				}
+				CHL = {
+		add_opinion_modifier = { modifier = small_increase target = PUA }
+		}
+		PUA = {
+		add_opinion_modifier = { modifier = small_increase target = CHL }
+				}
+				CHL = {
+		add_opinion_modifier = { modifier = unholy_alliance_opinion target = PUA }
+		}
+		PUA = {
+		add_opinion_modifier = { modifier = unholy_alliance_opinion target = CHL }
+				}
+			}
+		if = {
+		limit = {
+		ARG = {
+		OR = {
+			has_government = radical_socialism
+		has_government = syndicalism
+		has_government = anarchism
+		has_government = market_socialism
+						}
+					}
+				}
+				ARG = {
+		add_opinion_modifier = { modifier = small_increase target = PUA }
+		}
+		PUA = {
+		add_opinion_modifier = { modifier = small_increase target = ARG }
+				}
+				ARG = {
+		add_opinion_modifier = { modifier = unholy_alliance_opinion target = PUA }
+		}
+		PUA = {
+		add_opinion_modifier = { modifier = unholy_alliance_opinion target = ARG }
+				}
+			}
+		if = {
+		limit = {
+		ECU = {
+		OR = {
+			has_government = radical_socialism
+		has_government = syndicalism
+		has_government = anarchism
+		has_government = market_socialism
+						}
+					}
+				}
+				ECU = {
+		add_opinion_modifier = { modifier = small_increase target = PUA }
+		}
+		PUA = {
+		add_opinion_modifier = { modifier = small_increase target = ECU }
+				}
+				ECU = {
+		add_opinion_modifier = { modifier = unholy_alliance_opinion target = PUA }
+		}
+		PUA = {
+		add_opinion_modifier = { modifier = unholy_alliance_opinion target = ECU }
+				}
+			}
+		}
+	}
+	focus = {
+		id = PUA_send_material_aid_to_caribbean
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_enact_trade_relations_with_south_american_socialists
+		}
+		x = 44
+		y = 12
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		bypass = {
+		OR = {
+		MEX = {
+		NOT = {
+		OR = {
+		has_government = radical_socialism
+		has_government = syndicalism
+		has_government = anarchism
+		has_government = market_socialism
+						}
+					}
+				}
+				CAU = {
+		NOT = {
+		exists = no
+		OR = {
+		has_government = radical_socialism
+		has_government = syndicalism
+		has_government = anarchism
+		has_government = market_socialism
+						}
+					}
+				}
+		HAI = {
+		NOT = {
+		OR = {
+		has_government = radical_socialism
+		has_government = syndicalism
+		has_government = anarchism
+		has_government = market_socialism
+						}
+					}
+				}
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		if = {
+		limit = {
+		MEX = {
+		OR = {
+			has_government = radical_socialism
+		has_government = syndicalism
+		has_government = anarchism
+		has_government = market_socialism
+						}
+					}
+				}
+			MEX = {
+			country_event = pua.31
+				}
+			}
+		if = {
+		limit = {
+		CAU = {
+		OR = {
+			has_government = radical_socialism
+		has_government = syndicalism
+		has_government = anarchism
+		has_government = market_socialism
+						}
+					}
+				}
+			CAU = {
+			country_event = pua.31
+				}
+			}
+		if = {
+		limit = {
+		HAI = {
+		OR = {
+			has_government = radical_socialism
+		has_government = syndicalism
+		has_government = anarchism
+		has_government = market_socialism
+						}
+					}
+				}
+			HAI = {
+			country_event = pua.31
+				}
+			}
+		}
+	}
+	focus = {
+		id = PUA_meddle_with_mexico
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = PUA_enact_trade_relations_with_south_american_socialists
+		}
+		x = 46
+		y = 12
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		MEX = {
+		OR = {
+			has_government = radical_socialism
+		has_government = syndicalism
+		has_government = anarchism
+		has_government = market_socialism
+						}
+					}
+		}
+		bypass = {
+		MEX = {
+		OR = {
+			has_government = radical_socialism
+		has_government = syndicalism
+		has_government = anarchism
+		has_government = market_socialism
+						}
+					}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		if = {
+		limit = {
+		PUA = {
+			has_government = market_socialism
+					}
+				}
+				MEX = {
+				add_stability = -0.05
+				add_popularity = {
+				popularity = 0.1
+				ideology = market_socialism
+					}
+				}
+			}
+		if = {
+		limit = {
+		PUA = {
+			has_government = anarchism
+					}
+				}
+				MEX = {
+				add_stability = -0.05
+				add_popularity = {
+				popularity = 0.1
+				ideology = anarchism
+					}
+				}
+			}
+		if = {
+		limit = {
+		PUA = {
+			has_government = syndicalism
+					}
+				}
+				MEX = {
+				add_stability = -0.05
+				add_popularity = {
+				popularity = 0.1
+				ideology = syndicalism
+					}
+				}
+			}
+		if = {
+		limit = {
+		PUA = {
+			has_government = radical_socialism
+					}
+				}
+				MEX = {
+				add_stability = -0.05
+				add_popularity = {
+				popularity = 0.1
+				ideology = radical_socialism
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = PUA_join_cnotp
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_send_material_aid_to_caribbean
+		}
+		prerequisite = {
+			focus = PUA_meddle_with_mexico
+		}
+		mutually_exclusive = {
+			focus = PUA_create_new_faction
+		}
+		x = 46
+		y = 13
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		GER = {
+		OR = {
+			has_government = radical_socialism
+		has_government = syndicalism
+		has_government = anarchism
+		has_government = market_socialism
+						}
+					}
+		}
+		bypass = {
+		GER = {
+		OR = {
+			has_government = radical_socialism
+		has_government = syndicalism
+		has_government = anarchism
+		has_government = market_socialism
+						}
+					}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		GER = {
+		country_event = {
+		id = generic.2
+		}
+		}
+		}
+	}
+	focus = {
+		id = PUA_market_socialists
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_stick_with_one_ideology
+		}
+		mutually_exclusive = {
+			focus = PUA_anarchism
+			focus = PUA_orthodox_syndicalism
+			focus = PUA_radicalism
+		}
+		x = 48
+		y = 4
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_stability = 0.03
+		ARM_parliament_support_remove10 = yes
+		add_popularity = {
+		popularity = 0.1
+		ideology = market_socialism
+			}
+		}
+	}
+	focus = {
+		id = PUA_elect_nord
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_market_socialists
+		}
+		x = 48
+		y = 5
+		available = {
+		always = no
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		hidden_effect = {
+		ARM_parliament_support_remove10 = yes
+			}
+		}
+	}
+	focus = {
+		id = PUA_create_new_faction
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_meddle_with_mexico
+		}
+		prerequisite = {
+			focus = PUA_send_material_aid_to_caribbean
+		}
+		mutually_exclusive = {
+			focus = PUA_join_cnotp
+		}
+		x = 48
+		y = 13
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward  {
+		create_faction = "Pan American Workers Alliance"
+		}
+	}
+	focus = {
+		id = PUA_texas_question
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_foreign_policy
+		}
+		x = 49
+		y = 9
+		bypass = {
+		TEX = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+			}
+		}
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		TEX = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		country_event = pua.24
+		}
+	}
+	focus = {
+		id = PUA_radicalism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_stick_with_one_ideology
+		}
+		mutually_exclusive = {
+			focus = PUA_market_socialists
+			focus = PUA_orthodox_syndicalism
+			focus = PUA_anarchism
+		}
+		x = 50
+		y = 4
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_stability=  0.04
+		ARM_parliament_support_add10 = yes
+		add_popularity = {
+		popularity = 0.08
+		ideology = radical_socialism
+			}
+		}
+	}
+	focus = {
+		id = PUA_re-elect_rustin
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_radicalism
+		}
+		x = 50
+		y = 5
+		available = {
+		always = no
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		hidden_effect = {
+		ARM_parliament_support_add10 = yes
+			}
+		}
+	}
+	focus = {
+		id = PUA_collaborate_with_texas
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_texas_question
+		}
+		mutually_exclusive = {
+			focus = PUA_lay_claim_to_texas
+		}
+		x = 50
+		y = 10
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		always = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = PUA_create_propaganda
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_exploit_the_peoples_fears
+		}
+		x = 53
+		y = 3
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		custom_effect_tooltip = PUA_propaganda_tt
+		hidden_effect = {
+		if = {
+		limit = {
+		has_completed_focus = PUA_keep_with_bayards_politics
+					}
+					ARM_parliament_support_add5 = yes
+					add_popularity = {
+					popularity = 0.11
+					ideology = radical_socialism
+					}
+					add_popularity = {
+					popularity = -0.04
+					ideology = anarchism
+					}
+					add_popularity = {
+					popularity = -0.03
+					ideology = market_socialism
+					}
+					add_popularity = {
+					popularity = -0.05
+					ideology = syndicalism
+					}
+				}
+		if = {
+		limit = {
+		has_completed_focus = PUA_force_bayard_to_change
+					}
+					ARM_parliament_support_remove5
+					add_popularity = {
+					popularity = 0.07
+					ideology = anarchism
+					}
+					add_popularity = {
+					popularity = 0.05
+					ideology = market_socialism
+					}
+					add_popularity = {
+					popularity = 0.07
+					ideology = syndicalism
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = PUA_state_measures
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_exploit_the_peoples_fears
+		}
+		x = 59
+		y = 3
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_ideas = PUA_state_measure_act
+		}
+	}
+	focus = {
+		id = PUA_war_measures
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_create_propaganda
+		}
+		prerequisite = {
+			focus = PUA_state_measures
+		}
+		x = 52
+		y = 4
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		if = {
+		limit = {
+		NOT = {
+		has_ideas = PUA_state_measure_act
+					}
+				}
+				add_ideas = PUA_state_measure_act
+			}
+		if = {
+		limit = {
+		has_ideas = PUA_state_measure_act
+				}
+				swap_ideas = {
+				add_ideas = PUA_state_measure_act1
+				remove_ideas = PUA_state_measure_act
+				}
+			}
+		}
+	}
+	focus = {
+		id = PUA_lay_claim_to_texas
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_texas_question
+		}
+		mutually_exclusive = {
+			focus = PUA_collaborate_with_texas
+		}
+		x = 52
+		y = 10
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		always = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = PUA_maximize_factory_output
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_create_propaganda
+		}
+		prerequisite = {
+			focus = PUA_state_measures
+		}
+		x = 54
+		y = 4
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		bypass = {
+		NOT = {
+		has_full_control_of_state = 880
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		880 = {
+		add_extra_state_shared_building_slots = 1
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					
+				}
+			}
+		}
+	}
+	focus = {
+		id = PUA_military_expansion_policy
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_state_measures
+		}
+		x = 56
+		y = 4
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		bypass = {
+		NOT = {
+		has_full_control_of_state = 881
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		881 = {
+		add_extra_state_shared_building_slots = 1
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+					
+				}
+			}
+		}
+	}
+	focus = {
+		id = PUA_arm_the_border
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_war_measures
+		}
+		prerequisite = {
+			focus = PUA_maximize_factory_output
+		}
+		prerequisite = {
+			focus = PUA_military_expansion_policy
+		}
+		x = 55
+		y = 5
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		bypass = {
+			OR = {
+				NOT = { country_exists = PUA }
+				NOT = { owns_state = 392 }
+				NOT = { owns_state = 435 }
+			}
+		}
+
+		completion_reward = {
+			369 = {
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+			}
+			392 = {
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = PUA_implement_martial_law
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_state_measures
+		}
+		prerequisite = {
+			focus = PUA_military_expansion_policy
+		}
+		x = 57
+		y = 5
+		bypass = {
+		OR = {
+			NOT = {
+		has_ideas = war_economy
+				}
+			}
+		}
+		completion_reward = {
+		add_ideas = war_economy
+		}
+	}
+	focus = {
+		id = PUA_contact_black_resistance
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_meddle_in_american_affairs
+		}
+		x = 37
+		y = 10
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		always = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = PUA_bring_material_aid_to_resistance
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_contact_black_resistance
+		}
+		x = 38
+		y = 11
+		bypass = {
+		NOT = {
+		COF = {
+		exists = yes
+				}
+			}
+		}
+		available = {
+		COF = {
+		exists = yes
+		}
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		COF = {
+		country_event = pua.21
+			}
+		}
+	}
+	focus = {
+		id = PUA_uplift_black_community
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_military_factor_workers
+		}
+		prerequisite = {
+			focus = PUA_dockyard_in_the_works
+		}
+		prerequisite = {
+			focus = PUA_a_new_airforce
+		}
+		x = 12
+		y = 4
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		custom_effect_tooltip = PUA_black_community_uplifted
+		hidden_effect = {
+		COF = {
+		country_event = pua.6
+				}
+			}
+		}
+	}
+	focus = {
+		id = PUA_force_out_segregation
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_uplift_black_community
+		}
+		x = 12
+		y = 5
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		country_event = pua.7
+		hidden_effect = {
+		if = {
+		limit = {
+		has_country_flag = PUA_bayard_stays_the_same
+			}
+			add_popularity = {
+			popularity = 0.15
+			ideology = radical_socialism
+			}
+		}
+		if = {
+		limit = {
+		has_country_flag = PUA_bayard_changes
+			}
+			add_popularity = {
+			popularity = 0.15
+			ideology = syndicalism
+			}
+		}
+		369 = {
+			add_manpower = 50000
+				}
+			363 = {
+			add_manpower = -50000
+				}
+			}
+		}
+	}
+	focus = {
+		id = PUA_invest_in_the_navy
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_arm_the_population
+		}
+		mutually_exclusive = {
+			focus = PUA_invest_in_airforce
+			focus = PUA_invest_in_the_army
+		}
+		x = 37
+		y = 5
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			884 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = naval_base
+						level = 2
+						province = 11830
+						instant_build = yes
+					}
+					
+				}
+			}
+		division_template = {
+				name = "Red Marine Brigade"
+				division_names_group = PUA_MAR_01
+				is_locked = yes
+				regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 361 }
+				create_unit = {
+					division = "division_template = \"Red Marine Brigade\" start_experience_factor = 0.1"
+					owner = PUA
+					count = 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = PUA_create_boyscouts
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_create_the_CIA
+			focus = PUA_create_workers_police
+		}
+		x = 40
+		y = 7
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		country_event = pua.18
+		}
+	}
+	focus = {
+		id = PUA_anti_capitalist_crusade
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = PUA_join_cnotp
+			focus = PUA_create_new_faction
+		}
+		x = 45
+		y = 14
+		bypass = {
+		NOT = {
+		is_subject = no
+		exists = yes
+			}
+		}
+		available = {
+		is_subject = no
+		has_capitulated = no
+		has_war = no
+		exists = yes
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_ideas = PUA_cappie_crusade
+		}
+	}
+	focus = {
+		id = PUA_the_peoples_army
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_implore_technological_warfare
+		}
+		prerequisite = {
+			focus = PUA_abandon_cavalry
+		}
+		x = 25
+		y = 9
+		available_if_capitulated = yes
+		completion_reward = {
+		army_experience = 20
+		}
+	}
+	focus = {
+		id = PUA_up_to_date_hulls
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_new_dockyards
+		}
+		x = 36
+		y = 7
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = cl_tech
+				category = ca_tech
+			}
+		}
+	}
+	focus = {
+		id = PUA_offensive_war
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_new_submarines
+		}
+		prerequisite = {
+			focus = PUA_new_destroyers
+		}
+		prerequisite = {
+			focus = PUA_up_to_date_hulls
+		}
+		x = 33
+		y = 8
+		completion_reward = {
+			add_tech_bonus = {
+				name = nav_bomber_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = naval_bomber
+			}
+		}
+	}
+	focus = {
+		id = PUA_defensive_strategies
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_new_submarines
+		}
+		prerequisite = {
+			focus = PUA_new_destroyers
+		}
+		prerequisite = {
+			focus = PUA_up_to_date_hulls
+		}
+		x = 35
+		y = 8
+		completion_reward = {
+
+			add_tech_bonus = {
+				name = FRA_naval_doctrine
+				bonus = 1.0
+				uses = 2
+				category = naval_doctrine
+			}
+		}
+	}
+	focus = {
+		id = PUA_peoples_navy
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = PUA_offensive_war
+		}
+		prerequisite = {
+			focus = PUA_defensive_strategies
+		}
+		x = 34
+		y = 9
+		completion_reward = {
+			navy_experience = 20
+		}
+	}

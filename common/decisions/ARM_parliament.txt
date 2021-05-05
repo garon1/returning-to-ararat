@@ -1,0 +1,203 @@
+##############################################################
+###Thanks to Emperor of Borisia#7904 for help with the code###
+##############################################################
+
+ARM_parliament = {
+    
+	ARM_parliament_lobbying_add5 = {
+		icon = generic_political_discourse
+		available = {
+			custom_trigger_tooltip = {
+				check_variable = {
+					var = armenia_parliament_support_add5
+					value = 80
+					compare = less_than
+				}
+			}
+		}
+		visible = {
+			always = yes
+		}
+		cost = 50
+		complete_effect = {
+			ARM_parliament_support_add5 = yes
+		}
+	}
+    
+	ARM_parliament_lobbying_add10 = {
+		icon = generic_political_discourse
+		available = {
+			custom_trigger_tooltip = {
+				check_variable = {
+					var = armenia_parliament_support_add10
+					value = 80
+					compare = less_than
+				}
+			}
+		}
+		visible = {
+			always = yes
+		}
+		cost = 75
+		complete_effect = {
+			ARM_parliament_support_add10 = yes
+		}
+	}
+
+	ARM_lower_draft_age = {
+		available = {
+			has_country_flag = armenia_parliament_support_majority
+		}
+		fire_only_once = yes
+		visible = {
+			always = yes
+			has_idea = extensive_conscription
+		}
+		cost = 100
+		complete_effect = {
+			add_ideas = { 
+				ARM_lowered_draft 
+			}
+		}
+	}
+
+	ARM_lower_vote_age = {
+		available = {
+			has_country_flag = armenia_parliament_support_majority
+		}
+		fire_only_once = yes
+		visible = {
+			always = yes
+		}
+		cost = 75
+		complete_effect = {
+			add_stability = 0.05
+		}
+	}
+
+	ARM_form_new_government = {
+		available = {
+			#has_country_flag = armenia_parliament_support_majority
+		}
+		fire_only_once = yes
+		visible = {
+			always = yes
+			USA = { is_puppet_of = TUR }
+		}
+		icon = eng_support_imperialist_coup
+		cost = 100
+		complete_effect = {
+			#country_event = armenia.x
+		}
+	}
+
+	ARM_condemn_atrocities = {
+		available = {
+			custom_trigger_tooltip = {
+				check_variable = {
+					var = armenia_parliament_support_add10
+					value = 80
+					compare = less_than
+				}
+			}
+		}
+		fire_only_once = yes
+		visible = {
+			always = yes
+			OR = {
+				has_idea = AZR_ethnic_tensions
+				has_idea = RH_turkish_opposition1
+				has_idea = RH_turkish_opposition2
+				has_idea = RH_turkish_opposition3
+			}
+		}
+		cost = 30
+		complete_effect = {
+			add_stability = 0.01
+			ARM_parliament_support_remove5 = yes
+		}
+	}
+
+	ARM_denounce_germany = {
+		available = {
+			has_country_flag = armenia_parliament_support_majority
+		}
+		fire_only_once = yes
+		visible = {
+			always = yes
+			NOT = {
+				has_government = fascism
+				ARM = {
+					is_in_faction_with = GER
+				}
+			}
+			GER = {
+				AND = {
+					has_government = fascism
+					has_completed_focus = GER_danzig_or_war
+					has_war = yes
+				}
+			}
+		}
+		cost = 30
+		complete_effect = {
+			add_war_support = 0.01
+			GER = {
+				add_opinion_modifier = { 
+					target = ROOT
+					modifier = medium_decrease
+				}
+			}
+		}
+	}
+
+	ARM_turkish_expansion = {
+		available = {
+			custom_trigger_tooltip = {
+				check_variable = {
+					var = armenia_parliament_support_add10
+					value = 80
+					compare = less_than
+				}
+			}
+		}
+		fire_only_once = yes
+		visible = {
+			always = yes
+			is_puppet = no
+			NOT = {
+				ARM = {
+					is_in_faction_with = TUR
+				}
+			}
+			TUR = { has_war = yes }
+		}
+		cost = 30
+		complete_effect = {
+			TUR = {
+				add_opinion_modifier = { 
+					target = ROOT
+					modifier = medium_decrease
+				}
+			}
+			ARM_parliament_support_add10 = yes
+		}
+	}
+
+	ARM_unban_radicals = {
+		available = {
+			has_country_flag = armenia_parliament_support_majority
+		}
+		fire_only_once = yes
+		visible = {
+			NOT = { has_completed_focus = ARM_Give_Rise_To_Radicals }
+			NOT = { has_completed_focus = ARM_Preserve_The_Constitution }
+		}
+		cost = 75
+		complete_effect = {
+			add_stability = -0.1
+			complete_national_focus = ARM_Give_Rise_To_Radicals
+			ARM_parliament_support_remove10 = yes
+		}
+	}
+}

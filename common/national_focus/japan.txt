@@ -1,0 +1,1645 @@
+focus_tree = {
+	id = japan
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = JAP
+		}
+	}
+	default = no
+	focus = {
+		id = JAP_let_radicals_take_over
+		icon = GFX_focus_BUL_condemn_macedonian_organizations
+		cost = 7.00
+		mutually_exclusive = {
+			focus = JAP_stay_as_we_are
+		}
+		x = 7
+		y = 0
+			completion_reward = {
+					custom_effect_tooltip = unlock_focuses
+				}
+			available = {
+					always = no
+				}
+
+	}
+	focus = {
+		id = JAP_stay_as_we_are
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		cost = 7.00
+		mutually_exclusive = {
+			focus = JAP_let_radicals_take_over
+		}
+		x = 17
+		y = 0
+			completion_reward = {
+					custom_effect_tooltip = unlock_focuses1
+				}
+			available = {
+					always = no
+				}
+
+	}
+	focus = {
+		id = JAP_industrial
+		icon = GFX_goal_generic_cavalry
+		cost = 5.00
+		x = 14
+		y = 8
+		completion_reward = {
+					add_stability = 0.05
+				}
+
+	}
+	focus = {
+		id = JAP_army
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 5.00
+		x = 28
+		y = 0
+completion_reward = {
+					army_experience = 10
+				}
+
+	}
+	focus = {
+		id = JAP_naval_awakening
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 5.00
+		x = 25
+		y = 6
+		completion_reward = {
+					navy_experience = 10
+				}
+		
+
+	}
+	focus = {
+		id = JAP_air_focus
+		icon = GFX_goal_generic_build_airforce
+		cost = 5.00
+		x = 37
+		y = 0
+		completion_reward = {
+					add_ideas = HUN_indigenous_designs
+				}
+
+	}
+	focus = {
+		id = JAP_address_nation1
+		icon = GFX_focus_generic_treaty
+		cost = 7.00
+		prerequisite = {
+			focus = JAP_let_radicals_take_over
+		}
+		x = 7
+		y = 1
+			completion_reward = {
+					add_timed_idea = {
+							idea = JAP_purge_military
+							days = 180
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_privatization
+		icon = GFX_focus_mex_privatisation
+		cost = 7.00
+		prerequisite = {
+			focus = JAP_address_nation1
+		}
+		x = 3
+		y = 2
+			completion_reward = {
+					add_political_power = 200
+					add_stability = -0.1
+				}
+
+	}
+	focus = {
+		id = JAP_expel_unions
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 7.00
+		prerequisite = {
+			focus = JAP_privatization
+		}
+		x = 4
+		y = 3
+			completion_reward = {
+					country_event = japan.24
+				}
+
+	}
+	focus = {
+		id = JAP_militarize_public
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 7.00
+		prerequisite = {
+			focus = JAP_address_nation1
+		}
+		x = 7
+		y = 2
+			completion_reward = {
+					add_ideas = military_youth_focus
+				}
+
+	}
+	focus = {
+		id = JAP_militarize_puppets
+		icon = GFX_goal_generic_political_pressure
+		cost = 7.00
+		prerequisite = {
+			focus = JAP_militarize_public
+		}
+		x = 7
+		y = 3
+			completion_reward = {
+					MAL = {
+							333 = {
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = {
+											type = arms_factory
+											level = 1
+											instant_build = yes
+										}
+								}
+						}
+					MEN = {
+							330 = {
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = {
+											type = arms_factory
+											level = 1
+											instant_build = yes
+										}
+								}
+						}
+					MAN = {
+							714 = {
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = {
+											type = arms_factory
+											level = 1
+											instant_build = yes
+										}
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_new_school_system
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 7.00
+		prerequisite = {
+			focus = JAP_address_nation1
+		}
+		x = 11
+		y = 2
+			completion_reward = {
+					add_ideas = paramilitarism_focus
+				}
+
+	}
+	focus = {
+		id = JAP_assimilate_non_japanese
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 7.00
+		prerequisite = {
+			focus = JAP_new_school_system
+		}
+		x = 10
+		y = 3
+			completion_reward = {
+					add_ideas = JAP_assimilation
+				}
+
+	}
+	focus = {
+		id = JAP_destabilize_china
+		icon = GFX_focus_chi_one_china_policy
+		cost = 7.00
+		prerequisite = {
+			focus = JAP_expel_unions
+		}
+		prerequisite = {
+			focus = JAP_militarize_puppets
+		}
+		prerequisite = {
+			focus = JAP_assimilate_non_japanese
+		}
+		x = 7
+		y = 4
+			completion_reward = {
+					CHI = {
+							add_ideas = JAP_CHI_destabilization
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_athiest_state
+		icon = GFX_focus_mex_triumph_over_the_cristeros
+		cost = 7.00
+		prerequisite = {
+			focus = JAP_destabilize_china
+		}
+		x = 4
+		y = 5
+			completion_reward = {
+					add_war_support = 0.15
+				}
+
+	}
+	focus = {
+		id = JAP_denounce_russia
+		icon = GFX_focus_generic_provoke_border_clashes
+		cost = 7.00
+		prerequisite = {
+			focus = JAP_destabilize_china
+		}
+		x = 10
+		y = 5
+			completion_reward = {
+					SOV = {
+							country_event = japan.25
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_address_nation
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 7.00
+		prerequisite = {
+			focus = JAP_stay_as_we_are
+		}
+		x = 17
+		y = 1
+			completion_reward = {
+					country_event = japan.26
+				}
+
+	}
+	focus = {
+		id = JAP_allow_free_alchohol
+		icon = GFX_focus_TUR_ratify_the_six_arrows
+		cost = 7.00
+		prerequisite = {
+			focus = JAP_address_nation
+		}
+		x = 14
+		y = 2
+			completion_reward = {
+					add_ideas = JAP_free_alchohol
+				}
+
+	}
+	focus = {
+		id = JAP_legalize_drugs
+		icon = GFX_goal_continuous_boost_freedom
+		cost = 7.00
+		prerequisite = {
+			focus = JAP_allow_free_alchohol
+		}
+		x = 13
+		y = 3
+			completion_reward = {
+					add_ideas = JAP_free_drugs
+				}
+
+	}
+	focus = {
+		id = JAP_become_anti_kempatai
+		icon = GFX_focus_TUR_purge_the_kemalists
+		cost = 7.00
+		prerequisite = {
+			focus = JAP_address_nation
+		}
+		x = 17
+		y = 2
+			completion_reward = {
+					add_manpower = -3000
+				}
+
+	}
+	focus = {
+		id = JAP_kempatai_raids
+		icon = GFX_goal_anti_comintern_pact
+		cost = 7.00
+		prerequisite = {
+			focus = JAP_become_anti_kempatai
+		}
+		x = 17
+		y = 3
+			completion_reward = {
+					add_political_power = 150
+					add_popularity = {
+							ideology = monarchism
+							popularity = -0.1
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_provide_jobs
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		cost = 7.00
+		prerequisite = {
+			focus = JAP_legalize_drugs
+		}
+		prerequisite = {
+			focus = JAP_kempatai_raids
+		}
+		x = 15
+		y = 4
+			completion_reward = {
+					add_ideas = JAP_better_economy
+				}
+
+	}
+	focus = {
+		id = JAP_integrate_minorities_to_edu
+		icon = GFX_focus_jap_spiritual_mobilization
+		cost = 7.00
+		prerequisite = {
+			focus = JAP_address_nation
+		}
+		x = 20
+		y = 2
+			completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = JAP_protect_minorities
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 7.00
+		prerequisite = {
+			focus = JAP_integrate_minorities_to_edu
+		}
+		x = 21
+		y = 3
+			completion_reward = {
+					add_ideas = JAP_assimilation
+				}
+
+	}
+	focus = {
+		id = JAP_mine_minerals
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		cost = 7.00
+		prerequisite = {
+			focus = JAP_legalize_drugs
+		}
+		prerequisite = {
+			focus = JAP_kempatai_raids
+		}
+		prerequisite = {
+			focus = JAP_protect_minorities
+		}
+		x = 17
+		y = 4
+			completion_reward = {
+					add_ideas = JAP_mining
+				}
+
+	}
+	focus = {
+		id = JAP_protect_empire
+		icon = GFX_focus_generic_japanese_imperial_glory
+		cost = 7.00
+		prerequisite = {
+			focus = JAP_kempatai_raids
+		}
+		prerequisite = {
+			focus = JAP_protect_minorities
+		}
+		x = 19
+		y = 4
+
+	}
+	focus = {
+		id = JAP_integrate_manchuria
+		icon = GFX_focus_jap_manchurian_project
+		cost = 7.00
+		prerequisite = {
+			focus = JAP_provide_jobs
+		}
+		prerequisite = {
+			focus = JAP_protect_empire
+		}
+		x = 12
+		y = 5
+			completion_reward = {
+					MAN = {
+							add_ideas = JAP_for_puppets
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_integrate_siberia
+		icon = GFX_focus_jap_manchurian_project
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_provide_jobs
+		}
+		prerequisite = {
+			focus = JAP_protect_empire
+		}
+		prerequisite = {
+			focus = JAP_mine_minerals
+		}
+		prerequisite = {
+			focus = JAP_protect_empire
+		}
+		x = 22
+		y = 5
+			completion_reward = {
+					SIB = {
+							add_ideas = JAP_for_puppets
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_flexible
+		icon = GFX_goal_generic_build_navy
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_naval_awakening
+		}
+		x = 23
+		y = 7
+		completion_reward = {
+					add_tech_bonus = {
+							name = sub_op_bonus
+							bonus = 1.0
+							uses = 2
+							technology = convoy_interdiction_ti
+							technology = unrestricted_submarine_warfare
+							technology = wolfpacks
+							technology = advanced_submarine_warfare
+							technology = combined_operations_raiding
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_submarine
+		icon = GFX_goal_generic_navy_submarine
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_flexible
+		}
+		x = 23
+		y = 8
+		completion_reward = {
+					add_tech_bonus = {
+							name = ss_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = ss_tech
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_destroyer
+		icon = GFX_focus_generic_destroyer
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_submarine
+		}
+		x = 23
+		y = 9
+		completion_reward = {
+					add_tech_bonus = {
+							name = dd_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = dd_tech
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_infantry
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_army
+		}
+		x = 25
+		y = 1
+completion_reward = {
+					add_tech_bonus = {
+							name = infantry_artillery_bonus
+							bonus = 1.0
+							uses = 1
+							category = infantry_weapons
+						}
+				}
+	}
+	focus = {
+		id = JAP_artillery
+		icon = GFX_goal_generic_army_artillery2
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_infantry
+		}
+		x = 25
+		y = 2
+		completion_reward = {
+					add_tech_bonus = {
+							name = infantry_artillery_bonus
+							bonus = 1.0
+							uses = 1
+							category = infantry_weapons
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_mobile_tanks
+		icon = GFX_goal_generic_army_tanks
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_artillery
+		}
+		x = 25
+		y = 3
+		completion_reward = {
+					custom_effect_tooltip = available_designer
+				}
+
+	}
+	focus = {
+		id = JAP_special_forces
+		icon = GFX_goal_generic_special_forces
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_mobile_tanks
+		}
+		x = 25
+		y = 4
+		completion_reward = {
+					add_ideas = special_forces
+					add_tech_bonus = {
+							name = special_forces_bonus
+							bonus = 1.0
+							uses = 1
+							technology = paratroopers
+							technology = paratroopers2
+							technology = marines
+							technology = marines2
+							technology = tech_mountaineers
+							technology = tech_mountaineers2
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_coast
+		icon = GFX_focus_generic_coastal_fort
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_naval_awakening
+		}
+		x = 25
+		y = 8
+		completion_reward = {
+					navy_experience = 25
+					if = {
+							limit = {
+									NOT = {
+											any_owned_state = {
+													dockyard > 0
+													free_building_slots = {
+															building = dockyard
+															size > 2
+															include_locked = yes
+														}
+												}
+										}
+									any_owned_state = {
+											is_coastal = yes
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											is_coastal = yes
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = dockyard
+											level = 3
+											instant_build = yes
+										}
+								}
+							set_country_flag = naval_effort_built
+						}
+					if = {
+							limit = {
+									NOT = {
+											has_country_flag = naval_effort_built
+										}
+									any_owned_state = {
+											dockyard > 0
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											dockyard > 0
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = dockyard
+											level = 3
+											instant_build = yes
+										}
+								}
+							set_country_flag = naval_effort_built
+						}
+					if = {
+							limit = {
+									NOT = {
+											has_country_flag = naval_effort_built
+										}
+									NOT = {
+											any_owned_state = {
+													free_building_slots = {
+															building = dockyard
+															size > 2
+															include_locked = yes
+														}
+												}
+										}
+								}
+							random_state = {
+									limit = {
+											controller = {
+													tag = ROOT
+												}
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = dockyard
+											level = 3
+											instant_build = yes
+										}
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_large
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_naval_awakening
+		}
+		x = 27
+		y = 7
+		completion_reward = {
+					add_tech_bonus = {
+							name = fleet_in_being_bonus
+							bonus = 1.0
+							uses = 2
+							category = fleet_in_being_tree
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_cruiser
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_large
+		}
+		x = 27
+		y = 8
+		completion_reward = {
+					add_tech_bonus = {
+							name = cr_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = cl_tech
+							category = ca_tech
+						}
+				}
+		
+
+	}
+	focus = {
+		id = JAP_capital
+		icon = GFX_goal_generic_navy_battleship
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_cruiser
+		}
+		x = 27
+		y = 9
+		completion_reward = {
+					navy_experience = 25
+					add_tech_bonus = {
+							name = capital_ships_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = bc_tech
+							category = bb_tech
+							category = cv_tech
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_doctrine
+		icon = GFX_goal_generic_army_doctrines
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_army
+		}
+		x = 28
+		y = 1
+		completion_reward = {
+					army_experience = 5
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 1.0
+							uses = 1
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_doctorine1
+		icon = GFX_goal_generic_army_doctrines
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_doctrine
+		}
+		x = 28
+		y = 2
+		completion_reward = {
+					army_experience = 5
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 1.0
+							uses = 1
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_assault
+		icon = GFX_goal_generic_amphibious_assault
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_doctorine1
+		}
+		x = 28
+		y = 3
+		completion_reward = {
+					add_ideas = HUN_assault_gun_focus
+				}
+
+	}
+	focus = {
+		id = JAP_mobile
+		icon = GFX_goal_generic_air_production
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_assault
+		}
+		x = 28
+		y = 4
+		completion_reward = {
+					add_tech_bonus = {
+							name = HUN_mobile_focus
+							bonus = 1.0
+							uses = 1
+							category = cat_mobile_warfare
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_defense
+		icon = GFX_goal_generic_small_arms
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_army
+		}
+		x = 31
+		y = 1
+		completion_reward = {
+					army_experience = 5
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 1.0
+							uses = 1
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_fortify
+		icon = GFX_goal_generic_construct_military
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_defense
+		}
+		x = 31
+		y = 2
+		completion_reward = {
+					408 = {
+							add_building_construction = {
+									type = coastal_bunker
+									province = 957
+									level = 2
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = coastal_bunker
+									province = 3739
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_mechanization
+		icon = GFX_goal_generic_army_motorized
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_fortify
+		}
+		x = 31
+		y = 3
+		completion_reward = {
+					add_tech_bonus = {
+							name = motorized_bonus
+							ahead_reduction = 2
+							uses = 1
+							category = motorized_equipment
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_armor
+		icon = GFX_goal_generic_defence
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_mechanization
+		}
+		x = 31
+		y = 4
+		completion_reward = {
+					add_tech_bonus = {
+							name = armor_bonus
+							bonus = 1.0
+							uses = 2
+							category = armor
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_army1
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_special_forces
+		}
+		prerequisite = {
+			focus = JAP_mobile
+		}
+		prerequisite = {
+			focus = JAP_armor
+		}
+		x = 28
+		y = 5
+		completion_reward = {
+					army_experience = 15
+				}
+
+	}
+	focus = {
+		id = JAP_heavy
+		icon = GFX_goal_generic_air_fighter
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_air_focus
+		}
+		x = 35
+		y = 1
+		completion_reward = {
+					add_tech_bonus = {
+							name = HUN_heavy_fighter_effort
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							technology = heavy_fighter1
+							technology = heavy_fighter2
+							technology = heavy_fighter3
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_tactical
+		icon = GFX_goal_generic_air_bomber
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_heavy
+		}
+		x = 35
+		y = 2
+		completion_reward = {
+					add_tech_bonus = {
+							name = HUN_tac_focus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = tactical_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_integrate_malaysia
+		icon = GFX_focus_jap_manchurian_project
+		cost = 7.00
+		prerequisite = {
+			focus = JAP_provide_jobs
+		}
+		prerequisite = {
+			focus = JAP_protect_empire
+		}
+		x = 19
+		y = 5
+			completion_reward = {
+					MAL = {
+							add_ideas = JAP_for_puppets
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_integrate_menjiang
+		icon = GFX_focus_jap_manchurian_project
+		cost = 7.00
+		prerequisite = {
+			focus = JAP_provide_jobs
+		}
+		prerequisite = {
+			focus = JAP_mine_minerals
+		}
+		prerequisite = {
+			focus = JAP_protect_empire
+		}
+		x = 15
+		y = 5
+			completion_reward = {
+					MEN = {
+							add_ideas = JAP_for_puppets
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_strike_south_doctorine
+		icon = GFX_focus_jap_strike_south
+		cost = 7.00
+		prerequisite = {
+			focus = JAP_integrate_manchuria
+		}
+		prerequisite = {
+			focus = JAP_integrate_menjiang
+		}
+		prerequisite = {
+			focus = JAP_integrate_malaysia
+		}
+		prerequisite = {
+			focus = JAP_integrate_siberia
+		}
+		x = 19
+		y = 6
+		completion_reward = {
+		add_war_support = 0.1
+		}
+
+	}
+	focus = {
+		id = JAP_integrate_china
+		icon = GFX_focus_chi_united_front
+		cost = 7.00
+		prerequisite = {
+			focus = JAP_integrate_manchuria
+		}
+		prerequisite = {
+			focus = JAP_integrate_menjiang
+		}
+		prerequisite = {
+			focus = JAP_integrate_malaysia
+		}
+		prerequisite = {
+			focus = JAP_integrate_siberia
+		}
+		x = 15
+		y = 6
+			completion_reward = {
+					add_state_core = 743
+					add_state_claim = 609
+				}
+			available = {
+					CHI = {
+							has_capitulated = yes
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_colonize_china
+		icon = GFX_focus_jap_cast_the_die
+		cost = 7.00
+		prerequisite = {
+			focus = JAP_integrate_china
+		}
+		x = 11
+		y = 7
+			completion_reward = {
+					613 = {
+					if = {
+					limit = {
+									is_fully_controlled_by = ROOT
+								}
+					}
+							add_manpower = 25417
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+							set_state_flag = MAN_invite_japanese_settlers_2IC
+						}
+					608 = {
+							if = {
+					limit = {
+									is_fully_controlled_by = ROOT
+								}
+					}
+							add_manpower = 33846
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+							set_state_flag = MAN_invite_japanese_settlers_2IC
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_sign_non_aggression_pact_with_usa
+		icon = GFX_focus_usa_recruit_the_free_corps
+		cost = 7.00
+		prerequisite = {
+			focus = JAP_strike_south_doctorine
+		}
+		x = 17
+		y = 7
+			completion_reward = {
+					diplomatic_relation = {
+							country = USA
+							relation = non_aggression_pact
+						}
+					hidden_effect = {
+							news_event = {
+									hours = 20
+									id = news.371
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_attack_america
+		icon = GFX_focus_usa_focus_on_europe
+		cost = 15.00
+		prerequisite = {
+			focus = JAP_strike_south_doctorine
+		}
+		x = 21
+		y = 7
+		completion_reward = {
+					create_wargoal = {
+							target = "USA"
+							type = annex_everything
+							expire = 0
+						}
+					}
+
+	}
+	focus = {
+		id = JAP_take_pacific
+		icon = GFX_focus_AST_war_japan
+		cost = 7.00
+		prerequisite = {
+			focus = JAP_sign_non_aggression_pact_with_usa
+		}
+		prerequisite = {
+			focus = JAP_attack_america
+		}
+		x = 19
+		y = 8
+			completion_reward = {
+					create_wargoal = {
+							target = "INS"
+							type = puppet_wargoal_focus
+							expire = 0
+						}
+					add_ai_strategy = {
+							type = conquer
+							id = "INS"
+							value = 400
+						}
+					create_wargoal = {
+							target = "PHI"
+							type = puppet_wargoal_focus
+							expire = 0
+						}
+					add_ai_strategy = {
+							type = conquer
+							id = "PHI"
+							value = 200
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_public_reform
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 7.00
+		prerequisite = {
+			focus = JAP_destabilize_china
+		}
+		x = 7
+		y = 5
+			completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = JAP_announce_ambitions
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 7.00
+		prerequisite = {
+			focus = JAP_athiest_state
+		}
+		prerequisite = {
+			focus = JAP_public_reform
+		}
+		prerequisite = {
+			focus = JAP_denounce_russia
+		}
+		x = 7
+		y = 6
+			completion_reward = {
+					custom_effect_tooltip = japan_ambitionstt
+					hidden_effect = {
+							country_event = {
+									hours = 3
+									id = news.370
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_all_out_war
+		icon = GFX_focus_ger_oppose_hitler
+		cost = 17.00
+		prerequisite = {
+			focus = JAP_announce_ambitions
+		}
+		x = 9
+		y = 7
+			completion_reward = {
+					unlock_decision_tooltip = {
+							decision = JAP_expansion
+						}
+					if = {
+							limit = {
+									country_exists = HAW
+								}
+							unlock_decision_tooltip = {
+									decision = JAP_expansion6
+								}
+						}
+					if = {
+							limit = {
+									country_exists = HAW
+								}
+							unlock_decision_tooltip = {
+									decision = JAP_expansion5
+								}
+						}
+					if = {
+							limit = {
+									country_exists = PHI
+								}
+							unlock_decision_tooltip = {
+									decision = JAP_expansion4
+								}
+						}
+					if = {
+							limit = {
+									country_exists = RAJ
+								}
+							unlock_decision_tooltip = {
+									decision = JAP_expansion3
+								}
+						}
+					if = {
+							limit = {
+									country_exists = INS
+								}
+							unlock_decision_tooltip = {
+									decision = JAP_expansion1
+								}
+						}
+					if = {
+							limit = {
+									country_exists = IND
+								}
+							unlock_decision_tooltip = {
+									decision = JAP_expansion2
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_con1
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_industrial
+		}
+		x = 9
+		y = 9
+		completion_reward = {
+					408 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_con2
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_industrial
+		}
+		x = 11
+		y = 9
+		completion_reward = {
+					536 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_con3
+		icon = GFX_goal_generic_construct_civilian
+		cost = 0.00
+		prerequisite = {
+			focus = JAP_con1
+		}
+		prerequisite = {
+			focus = JAP_con2
+		}
+		x = 11
+		y = 10
+		completion_reward = {
+					745 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_con4
+		icon = GFX_goal_generic_construct_civilian
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_con1
+		}
+		prerequisite = {
+			focus = JAP_con2
+		}
+		x = 9
+		y = 10
+		completion_reward = {
+					743 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_pro1
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_industrial
+		}
+		x = 17
+		y = 9
+		completion_reward = {
+					530 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_pro2
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_industrial
+		}
+		x = 19
+		y = 9
+		completion_reward = {
+					527 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_pro3
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_pro1
+		}
+		prerequisite = {
+			focus = JAP_pro2
+		}
+		x = 17
+		y = 10
+		completion_reward = {
+					528 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_pro4
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_pro1
+		}
+		prerequisite = {
+			focus = JAP_pro2
+		}
+		x = 19
+		y = 10
+		completion_reward = {
+					524 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_nuclear
+		icon = GFX_focus_wonderweapons
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_con4
+		}
+		prerequisite = {
+			focus = JAP_con3
+		}
+		prerequisite = {
+			focus = JAP_pro3
+		}
+		prerequisite = {
+			focus = JAP_pro4
+		}
+		x = 12
+		y = 11
+		completion_reward = {
+					add_tech_bonus = {
+							name = nuclear_bonus
+							ahead_reduction = 0.5
+							category = nuclear
+						}
+				}
+
+
+	}
+	focus = {
+		id = JAP_research
+		icon = GFX_focus_research
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_con4
+		}
+		prerequisite = {
+			focus = JAP_con3
+		}
+		prerequisite = {
+			focus = JAP_pro3
+		}
+		prerequisite = {
+			focus = JAP_pro4
+		}
+		x = 14
+		y = 11
+		completion_reward = {
+					add_research_slot = 2
+				}
+
+	}
+	focus = {
+		id = JAP_secret
+		icon = GFX_goal_generic_secret_weapon
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_con4
+		}
+		prerequisite = {
+			focus = JAP_con3
+		}
+		prerequisite = {
+			focus = JAP_pro3
+		}
+		prerequisite = {
+			focus = JAP_pro4
+		}
+		x = 16
+		y = 11
+		completion_reward = {
+					add_tech_bonus = {
+							name = secret_bonus
+							bonus = 0.5
+							uses = 4
+							category = electronics
+							category = nuclear
+							category = rocketry
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_light
+		icon = GFX_goal_generic_air_fighter2
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_air_focus
+		}
+		x = 39
+		y = 1
+		completion_reward = {
+					add_tech_bonus = {
+							name = HUN_light_fighter_effort
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							technology = early_fighter
+							technology = fighter1
+							technology = fighter2
+							technology = fighter3
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_CAS
+		icon = GFX_goal_generic_CAS
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_light
+		}
+		x = 39
+		y = 2
+		completion_reward = {
+					add_tech_bonus = {
+							name = CAS_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = cas_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_air
+		icon = GFX_focus_eng_special_air_service
+		cost = 5.00
+		prerequisite = {
+			focus = JAP_tactical
+		}
+		prerequisite = {
+			focus = JAP_CAS
+		}
+		x = 37
+		y = 3
+		completion_reward = {
+					air_experience = 5
+				}
+
+	}
+}

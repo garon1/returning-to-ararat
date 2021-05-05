@@ -1,0 +1,34 @@
+
+state={
+	id=321
+	name="STATE_321"
+
+	history={
+		owner = POR
+		add_core_of = IND
+		victory_points = {
+			1273 1 
+		}
+		buildings = {
+			infrastructure = 7
+air_base = 1
+			1273 = {
+				naval_base = 1
+
+			}
+1349 = {
+				naval_base = 6
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		1273 1349 4291 4395 7232 12208 12269 
+	}
+	manpower=8533952
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

@@ -1,0 +1,5 @@
+ETH_territorial_gains = {
+	allowed = {
+		original_tag = ETH
+	}
+}

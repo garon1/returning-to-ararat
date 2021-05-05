@@ -1,0 +1,177 @@
+add_namespace = egypt
+
+
+#fuad is killed
+country_event = {
+	id = egypt.1
+	title = egypt.1.t
+	desc = egypt.1.d
+	picture = GFX_report_event_generic_funeral
+	
+	is_triggered_only = yes
+
+	option = {#bitch
+		name = egypt.1.a
+		ai_chance = { factor = 100 }
+		    kill_country_leader = yes
+			create_country_leader = {
+				name = "Farouk I"
+				desc = ""
+				picture = "Portrait_Egypt_Farouk.tga"
+				expire = "1965.1.1"
+				ideology = monarchism_subtype
+				traits = {
+					the_gentleman_president
+				}
+			}
+		
+	 	}
+	}
+#crackdown on racism
+country_event = {
+	id = egypt.2
+	title = egypt.2.t
+	desc = egypt.2.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+
+	option = {#ACAB
+		name = egypt.2.a
+		ai_chance = { factor = 100 }
+		   add_popularity = { ideology = nationalism popularity = -0.10 }
+		   add_popularity = { ideology = monarchism popularity = 0.10 }
+		
+	 	}
+	}
+#egypt decides to stay conservative
+country_event = {
+	id = egypt.3
+	title = egypt.3.t
+	desc = egypt.3.d
+	picture = GFX_report_event_molotov_ribentrop_handshake
+	
+	is_triggered_only = yes
+
+	option = {#ok
+		name = egypt.3.a
+		ai_chance = { factor = 100 }
+		   add_popularity = { ideology = monarchism popularity = 0.10 }
+		   add_political_power = 100
+		   add_stability = -0.10
+        add_war_support = 0.10
+		
+	 	}
+	}
+	#becomes progressive
+country_event = {
+	id = egypt.4
+	title = egypt.4.t
+	desc = egypt.4.d
+	picture = GFX_report_event_molotov_ribentrop_handshake
+	
+	is_triggered_only = yes
+
+	option = {#ok
+		name = egypt.4.a
+		ai_chance = { factor = 100 }
+		add_popularity = { ideology = market_socialism popularity = 0.10 }
+		   add_popularity = { ideology = monarchism popularity = -0.10 }
+		   add_political_power = -100
+		   add_stability = 0.10
+        add_war_support = -0.10
+		
+	 	}
+	}
+	#call for liberation of africans from europeans
+	country_event = {
+	id = egypt.5
+	title = egypt.5.t
+	desc = egypt.5.d
+	picture = GFX_report_event_molotov_ribentrop_handshake
+	
+	is_triggered_only = yes
+
+	option = {#ok
+		name = egypt.5.a
+		ai_chance = { factor = 100 }
+		   add_political_power = 100
+		   add_stability = 0.10
+        add_war_support = 0.10
+        hidden_effect = {
+				news_event = { id = news.348 hours = 6 }
+			}
+			add_named_threat = { threat = 5 name = generic.15 }
+		
+	 	}
+	}
+	#instigate coups in italian africa and start the war
+	country_event = {
+	id = egypt.6
+	title = egypt.6.t
+	desc = egypt.6.d
+	picture = GFX_report_event_saf_coup
+	
+	is_triggered_only = yes
+
+	option = {#ok
+		name = egypt.6.a
+		ai_chance = { factor = 100 }
+		ETH = {country_event = egypt.7}
+		ITA = {country_event = italy.20}
+		LBA = {
+					transfer_state = 448
+				}
+				EGY = {
+					declare_war_on = {
+					    target = ITA
+					    type = take_state_focus
+					}
+				}
+				ITA = {
+					declare_war_on = {
+					    target = LBA
+					    type = annex_everything
+					}
+				}
+        hidden_effect = {
+				news_event = { id = news.349 hours = 6 }
+			}
+			add_named_threat = { threat = 8 name = generic.15 }
+		
+	 	}
+	}
+	#for asking if ethiopia will join war
+	country_event = {
+	id = egypt.7
+	title = egypt.7.t
+	desc = egypt.7.d
+	picture = GFX_report_event_pierre_laval
+	
+	is_triggered_only = yes
+
+	option = {#yas we will queen you deserve it
+		name = egypt.7.a
+		ai_chance = { factor = 75 }
+				ETH = {
+					declare_war_on = {
+					    target = ITA
+					    type = annex_everything
+					}
+				}
+				ITA = {
+					declare_war_on = {
+					    target = ETH
+					    type = annex_everything
+					}
+				}
+			add_named_threat = { threat = 3 name = generic.15 }
+		
+	 	}
+	 	option = {#nah we gonna be pussies about it
+		name = egypt.7.b
+		ai_chance = { factor = 25 }
+		EGY = {add_opinion_modifier = { target = ETH modifier = at_war_with_faction } }
+		
+	 	}
+	}

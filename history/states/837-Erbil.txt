@@ -1,0 +1,36 @@
+
+state={
+	id=837
+	name="STATE_837"
+
+	history={
+		owner = KUR
+		victory_points = {
+			3916 5 
+		}
+		victory_points = {
+			10811 5 
+		}
+		victory_points = {
+			8123 5 
+		}
+		victory_points = {
+			12476 5 
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+
+		}
+		add_core_of = KUR
+
+	}
+
+	provinces={
+		3916 5014 6826 8123 10811 12476 13240 
+	}
+	manpower=550395
+	buildings_max_level_factor=1.000
+	state_category=town
+}

@@ -1,0 +1,33 @@
+###OOB File for ARM.txt
+units = {
+	fleet = {
+		name = "Royal Fleet Of Hayastan"#####entire fleet name
+		naval_base = 11753 ###Change to proper province number
+		task_force = {
+			name = "Royal Fleet Of Hayastan"
+			location = 11753 ###Change to proper province number
+			ship = { name = "Nzden" definition = battle_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ARM version_name = "Nzdeh Class" } } }
+		}
+	}
+	fleet = {
+		name = "Royal Fleet Of Hayastan"
+		naval_base = 806 ###Change to proper province number
+		task_force = {
+			name = "Southern Hayastani Fleet"
+			location = 806 ###Change to proper province number
+			ship = { name = "Adina"###individual ship names definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ARM version_name = "Adana Fleet" } } }
+			ship = { name = "Kanayan" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ARM version_name = "Kanayan Fleet" } } }
+		}
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = light_cruiser_1
+			creator = "ARM" 
+		}
+		requested_factories = 2
+		progress = 0.33
+		amount = 2
+	}
+}

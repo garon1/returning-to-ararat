@@ -1,0 +1,2527 @@
+focus_tree = {
+	id = Russian_Socialist_Republic
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SOV
+		}
+	}
+	default = no
+	focus = {
+		id = SOV_the_war_has_been_won
+		icon = GFX_goal_unknown
+		cost = 7.00
+		x = 3
+		y = 0
+			ai_will_do = {
+					factor = 200
+				}
+			completion_reward = {
+					add_war_support = 0.15
+					add_stability = 0.1
+				}
+				cancel_if_invalid = yes
+		continue_if_invalid = no
+			available = {
+					has_country_flag = SOV_second_red_white_war_is_won
+					is_subject = no
+					has_capitulated = no
+					has_war = no
+				}
+
+	}
+	focus = {
+		id = SOV_politics_overview
+		icon = GFX_goal_unknown
+		cost = 7.00
+		x = 13
+		y = 0
+			ai_will_do = {
+					factor = 125
+				}
+			completion_reward = {
+					country_event = red_russia.2
+				}
+				cancel_if_invalid = yes
+		continue_if_invalid = no
+			available = {
+					is_subject = no
+					has_capitulated = no
+					has_war = no
+				}
+
+	}
+	focus = {
+		id = SOV_industrial_overview
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 32
+		y = 0
+			ai_will_do = {
+					factor = 125
+				}
+			completion_reward = {
+					country_event = red_russia.3
+				}
+				cancel_if_invalid = yes
+		continue_if_invalid = no
+			available = {
+					is_subject = no
+					has_capitulated = no
+					has_war = no
+				}
+
+	}
+	focus = {
+		id = SOV_military_overview
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 51
+		y = 0
+		ai_will_do = {
+					factor = 100
+				}
+			available = {
+					is_subject = no
+					has_capitulated = no
+					has_war = no
+				}
+				cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+					country_event = red_russia.4
+				}
+
+	}
+	focus = {
+		id = SOV_infiltration
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SOV_the_war_has_been_won
+		}
+		x = 1
+		y = 1
+		ai_will_do = {
+					factor = 100
+				}
+			available = {
+					is_subject = no
+					has_capitulated = no
+					has_war = no
+				}
+				cancel_if_invalid = yes
+		continue_if_invalid = no
+
+	}
+	focus = {
+		id = SOV_cooperation_with_people
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_the_war_has_been_won
+		}
+		x = 3
+		y = 1
+		ai_will_do = {
+					factor = 100
+				}
+			available = {
+					is_subject = no
+					has_capitulated = no
+					has_war = no
+				}
+				cancel_if_invalid = yes
+		continue_if_invalid = no
+
+	}
+	focus = {
+		id = SOV_nationalize_white_russian_industry
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_infiltration
+		}
+		prerequisite = {
+			focus = SOV_cooperation_with_people
+		}
+		x = 2
+		y = 2
+		ai_will_do = {
+					factor = 100
+				}
+			available = {
+					is_subject = no
+					has_capitulated = no
+					has_war = no
+				}
+				cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = SOV_provide_mass_jobs
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SOV_nationalize_white_russian_industry
+		}
+		x = 1
+		y = 3
+		ai_will_do = {
+					factor = 100
+				}
+			available = {
+					is_subject = no
+					has_capitulated = no
+					has_war = no
+				}
+				cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = SOV_encourage_leftist_readings
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SOV_the_war_has_been_won
+		}
+		x = 5
+		y = 1
+		ai_will_do = {
+					factor = 100
+				}
+			available = {
+					is_subject = no
+					has_capitulated = no
+					has_war = no
+				}
+				cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = SOV_land_reforms
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = SOV_cooperation_with_people
+		}
+		prerequisite = {
+			focus = SOV_encourage_leftist_readings
+		}
+		x = 4
+		y = 2
+
+	}
+	focus = {
+		id = SOV_provide_relief
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SOV_land_reforms
+		}
+		x = 5
+		y = 3
+		ai_will_do = {
+					factor = 100
+				}
+			available = {
+					is_subject = no
+					has_capitulated = no
+					has_war = no
+				}
+				cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = SOV_weve_done_what_we_can
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SOV_provide_mass_jobs
+		}
+		prerequisite = {
+			focus = SOV_provide_relief
+		}
+		x = 3
+		y = 4
+		ai_will_do = {
+					factor = 100
+				}
+			available = {
+					is_subject = no
+					has_capitulated = no
+					has_war = no
+				}
+				cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = SOV_council_replaces_alexandra
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SOV_politics_overview
+		}
+		mutually_exclusive = {
+			focus = SOV_let_alexandra_stay
+		}
+		x = 10
+		y = 1
+		ai_will_do = {
+					factor = 150
+				}
+			available = {
+					is_subject = no
+					has_capitulated = no
+					has_war = no
+				}
+				cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		country_event = red_russia.5
+		}
+	}
+	focus = {
+		id = SOV_reverse_syndicalist_policies
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SOV_council_replaces_alexandra
+		}
+		x = 8
+		y = 2
+		ai_will_do = {
+					factor = 100
+				}
+			available = {
+					is_subject = no
+					has_capitulated = no
+					has_war = no
+				}
+				cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_ideas = SOV_anti_syndicalism
+		}
+	}
+	focus = {
+		id = SOV_socialism_in_one_country
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SOV_council_replaces_alexandra
+		}
+		x = 10
+		y = 3
+		ai_will_do = {
+					factor = 100
+				}
+			available = {
+					is_subject = no
+					has_capitulated = no
+					has_war = no
+				}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_ideas = SOV_socialism_in_one_country_idea
+		}
+	}
+	focus = {
+		id = SOV_enforce_bolshevism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SOV_reverse_syndicalist_policies
+		}
+		prerequisite = {
+			focus = SOV_socialism_in_one_country
+		}
+		x = 7
+		y = 4
+		ai_will_do = {
+					factor = 100
+				}
+			available = {
+					is_subject = no
+					has_capitulated = no
+					has_war = no
+				}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_stability = -0.03
+		add_popularity = {
+		ideology = radical_socialism
+		popularity = 0.05
+			}
+		add_popularity = {
+		ideology = syndicalism
+		popularity = -0.05
+			}
+		}
+	}
+	focus = {
+		id = SOV_sympathize_with_totalism
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_enforce_bolshevism
+		}
+		mutually_exclusive = {
+			focus = SOV_go_with_leninism
+		}
+		x = 5
+		y = 5
+		ai_will_do = {
+					factor = 50
+				}
+			available = {
+					is_subject = no
+					has_capitulated = no
+					has_war = no
+				}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_stability = -0.05
+				add_political_power = 120
+				effect_tooltip = { add_ideas = lavrentiy_beria }
+		}
+	}
+	focus = {
+		id = SOV_adopt_stalinism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SOV_sympathize_with_totalism
+		}
+		x = 4
+		y = 6
+		ai_will_do = {
+					factor = 50
+				}
+			available = {
+					is_subject = no
+					has_capitulated = no
+					has_war = no
+				}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_stability = -0.05
+		if = {
+		limit = {
+		has_idea = SOV_anti_syndicalism
+				}
+				swap_ideas = {
+				add_idea = SOV_stalinism
+				remove_idea = SOV_anti_syndicalism
+				}
+			}
+		}
+	}
+	focus = {
+		id = SOV_extend_power_to_head_of_state
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SOV_council_replaces_alexandra
+		}
+		x = 12
+		y = 2
+		ai_will_do = {
+					factor = 100
+				}
+			available = {
+					is_subject = no
+					has_capitulated = no
+					has_war = no
+				}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_stability = -0.05
+		add_political_power = 150
+		add_popularity = {
+		popularity = -0.05
+		ideology = syndicalism
+			}
+		}
+	}
+	focus = {
+		id = SOV_reverse_the_constitution
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_socialism_in_one_country
+		}
+		prerequisite = {
+			focus = SOV_extend_power_to_head_of_state
+		}
+		x = 10
+		y = 4
+		ai_will_do = {
+					factor = 100
+				}
+			available = {
+					is_subject = no
+					has_capitulated = no
+					has_war = no
+				}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		country_event = red_russia.7
+		hidden_effect = {
+		add_stability = -0.1
+		add_political_power = -150
+			}
+		}
+	}
+	focus = {
+		id = SOV_communist_ideals
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SOV_reverse_the_constitution
+		}
+		prerequisite = {
+			focus = SOV_enforce_bolshevism
+		}
+		x = 9
+		y = 5
+		ai_will_do = {
+					factor = 100
+				}
+			available = {
+					is_subject = no
+					has_capitulated = no
+					has_war = no
+				}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_ideas = SOV_communist_ideas
+		}
+	}
+	focus = {
+		id = SOV_one_party_policies
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SOV_reverse_the_constitution
+		}
+		x = 12
+		y = 5
+		ai_will_do = {
+					factor = 100
+				}
+			available = {
+					is_subject = no
+					has_capitulated = no
+					has_war = no
+				}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		hidden_effect = {
+		random_owned_controlled_state = {
+							limit = {
+									OR = {
+											has_dynamic_modifier = {
+													modifier = general_left_support
+												}
+										}
+								}
+							save_global_event_target_as = SOV_low_left_support
+							SOV_low_left_support = yes
+						}
+		if = {
+		limit = {
+		has_idea = SOV_need_of_aid
+				}
+				swap_ideas = {
+				add_idea = SOV_need_of_aid1
+				remove_idea = SOV_need_of_aid
+				}
+			}
+		}
+		custom_effect_tooltip = SOV_one_party_consequences
+		GER = {
+				add_opinion_modifier = { target = SOV modifier = GER_anti_syndicalism }
+				reverse_add_opinion_modifier = { target = GER modifier = GER_anti_syndicalism }
+			}
+		}
+	}
+	focus = {
+		id = SOV_cult_of_personality
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SOV_communist_ideals
+		}
+		prerequisite = {
+			focus = SOV_one_party_policies
+		}
+		x = 10
+		y = 6
+		ai_will_do = {
+					factor = 100
+				}
+			available = {
+					is_subject = no
+					has_capitulated = no
+					has_war = no
+				}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		random_owned_controlled_state = {
+							limit = {
+									OR = {
+											has_dynamic_modifier = {
+													modifier = low_left_support
+												}
+										}
+								}
+							save_global_event_target_as = SOV_general_left_support
+							SOV_general_left_support = yes
+						}
+		if = {
+		limit = {
+		has_idea = SOV_communist_ideas
+				}
+				swap_ideas = {
+				remove_idea = SOV_communist_ideas
+				add_idea = SOV_personality_cult
+				}
+			}
+		}
+	}
+	focus = {
+		id = SOV_eliminate_nationalistic_spirits
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_cult_of_personality
+		}
+		prerequisite = {
+			focus = SOV_one_party_policies
+		}
+		x = 11
+		y = 7
+		ai_will_do = {
+					factor = 100
+				}
+			available = {
+					is_subject = no
+					has_capitulated = no
+					has_war = no
+				}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		custom_effect_tooltip = SOV_elimate_nationalism
+		hidden_effect = {
+		add_stability = -0.1
+		random_owned_controlled_state = {
+							limit = {
+									OR = {
+											has_dynamic_modifier = {
+													modifier = general_left_support
+												}
+										}
+								}
+							save_global_event_target_as = SOV_low_left_support
+							SOV_low_left_support = yes
+						}
+		random_owned_controlled_state = {
+							limit = {
+									OR = {
+											has_dynamic_modifier = {
+													modifier = general_left_support
+												}
+										}
+								}
+							save_global_event_target_as = SOV_low_left_support
+							SOV_low_left_support = yes
+						}
+		}
+		add_popularity = {
+		popularity = 0.1
+		ideology = radical_socialism
+			}
+		}
+	}
+	focus = {
+		id = SOV_discourage_germany
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SOV_communist_ideals
+		}
+		prerequisite = {
+			focus = SOV_one_party_policies
+		}
+		x = 14
+		y = 6
+		ai_will_do = {
+					factor = 100
+				}
+			available = {
+					is_subject = no
+					has_capitulated = no
+					has_war = no
+				}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		if = {
+		limit = {
+		has_idea = SOV_need_of_aid1
+				}
+				swap_ideas = {
+				add_idea = SOV_need_of_aid2
+				remove_idea = SOV_need_of_aid1
+				}
+			}
+		if = {
+		limit = {
+		has_idea = SOV_need_of_aid
+				}
+				swap_ideas = {
+				add_idea = SOV_need_of_aid1
+				remove_idea = SOV_need_of_aid
+				}
+			}
+		}
+	}
+	focus = {
+		id = SOV_eliminate_landlordism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SOV_cult_of_personality
+		}
+		prerequisite = {
+			focus = SOV_discourage_germany
+		}
+		prerequisite = {
+			focus = SOV_eliminate_nationalistic_spirits
+		}
+		x = 11
+		y = 8
+		ai_will_do = {
+					factor = 100
+				}
+			available = {
+					is_subject = no
+					has_capitulated = no
+					has_war = no
+				}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		country_event = red_russia.10
+		hidden_effect = {
+		random_owned_controlled_state = {
+							limit = {
+									OR = {
+											has_dynamic_modifier = {
+													modifier = general_left_support
+												}
+										}
+								}
+							save_global_event_target_as = SOV_low_left_support
+							SOV_low_left_support = yes
+						}
+		random_owned_controlled_state = {
+							limit = {
+									OR = {
+											has_dynamic_modifier = {
+													modifier = high_left_support
+												}
+										}
+								}
+							save_global_event_target_as = SOV_general_left_support
+							SOV_general_left_support = yes
+						}
+					}
+				}
+			}
+	focus = {
+		id = SOV_let_alexandra_stay
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SOV_politics_overview
+		}
+		mutually_exclusive = {
+			focus = SOV_council_replaces_alexandra
+		}
+		x = 16
+		y = 1
+		ai_will_do = {
+					factor = 175
+				}
+			available = {
+					is_subject = no
+					has_capitulated = no
+					has_war = no
+				}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		country_event = red_russia.12
+		random_owned_controlled_state = {
+							limit = {
+									OR = {
+											has_dynamic_modifier = {
+													modifier = low_left_support
+												}
+										}
+								}
+							save_global_event_target_as = SOV_general_left_support
+							SOV_general_left_support = yes
+						}
+		}
+	}
+	focus = {
+		id = SOV_cut_germany_off_completely
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SOV_discourage_germany
+		}
+		mutually_exclusive = {
+			focus = SOV_stick_with_status_quo
+		}
+		x = 16
+		y = 7
+		ai_will_do = {
+					factor = 125
+				}
+			available = {
+					is_subject = no
+					has_capitulated = no
+					has_war = no
+				}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		if = {
+		limit = {
+		has_idea = SOV_need_of_aid2
+				}
+				swap_ideas = {
+				add_idea = SOV_need_of_aid3
+				remove_idea = SOV_need_of_aid2
+				}
+			}
+		if = {
+		limit = {
+		has_idea = SOV_need_of_aid1
+				}
+				swap_ideas = {
+				add_idea = SOV_need_of_aid2
+				remove_idea = SOV_need_of_aid1
+				}
+			}
+		if = {
+		limit = {
+		has_idea = SOV_need_of_aid
+				}
+				swap_ideas = {
+				add_idea = SOV_need_of_aid1
+				remove_idea = SOV_need_of_aid
+				}
+			}
+		}
+	}
+	focus = {
+		id = SOV_enforce_syndicalist_sentiment
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SOV_let_alexandra_stay
+		}
+		x = 18
+		y = 2
+		ai_will_do = {
+					factor = 100
+				}
+			available = {
+					is_subject = no
+					has_capitulated = no
+					has_war = no
+				}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_ideas = SOV_syndicalist_influence
+		}
+	}
+	focus = {
+		id = SOV_from_each_according_to_needs
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SOV_enforce_syndicalist_sentiment
+		}
+		x = 15
+		y = 3
+		ai_will_do = {
+					factor = 100
+				}
+			available = {
+					is_subject = no
+					has_capitulated = no
+					has_war = no
+				}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		if = {
+		limit = {
+		has_idea = SOV_need_of_aid
+			}
+			swap_ideas = {
+			add_idea = SOV_waning_aid
+			remove_idea = SOV_need_of_aid
+			}
+		}
+		add_popularity = {
+		popularity = 0.05
+		ideology = syndicalism
+			}
+		}
+	}
+	focus = {
+		id = SOV_promote_democratic_ideals
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SOV_from_each_according_to_needs
+		}
+		x = 13
+		y = 4
+		ai_will_do = {
+					factor = 100
+				}
+			available = {
+					is_subject = no
+					has_capitulated = no
+					has_war = no
+				}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		random_owned_controlled_state = {
+							limit = {
+									OR = {
+											has_dynamic_modifier = {
+													modifier = general_left_support
+												}
+										}
+								}
+							save_global_event_target_as = SOV_high_left_support
+							SOV_high_left_support = yes
+						}
+		add_popularity = {
+		popularity = 0.04
+		ideology = social_democracy
+		}
+		add_ideas = SOV_democratic_ideals
+		}
+	}
+	focus = {
+		id = SOV_peoples_courts
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SOV_from_each_according_to_needs
+		}
+		x = 17
+		y = 4	
+		ai_will_do = {
+					factor = 100
+				}
+			available = {
+					is_subject = no
+					has_capitulated = no
+					has_war = no
+				}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		country_event = red_russia.13
+		hidden_effect = {
+		random_owned_controlled_state = {
+							limit = {
+									OR = {
+											has_dynamic_modifier = {
+													modifier = high_left_support
+												}
+										}
+								}
+							remove_dynamic_modifier = {
+							modifier = high_left_support
+							}
+						}
+			}
+		}
+	}
+	focus = {
+		id = SOV_anti_bolshevism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SOV_enforce_syndicalist_sentiment
+		}
+		x = 18
+		y = 3
+		ai_will_do = {
+					factor = 100
+				}
+			available = {
+					is_subject = no
+					has_capitulated = no
+					has_war = no
+				}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_war_support = 0.05
+		add_stability = 0.05
+		add_popularity = {
+		popularity = 0.03
+		ideology = radical_socialism
+		}
+		GER = {
+				add_opinion_modifier = { target = SOV modifier = GER_anti_bolshevism }
+				reverse_add_opinion_modifier = { target = GER modifier = GER_anti_bolshevism }
+			}
+		}
+	}
+	focus = {
+		id = SOV_police_militias
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SOV_peoples_courts
+		}
+		prerequisite = {
+			focus = SOV_promote_democratic_ideals
+		}
+		x = 18
+		y = 5
+		ai_will_do = {
+					factor = 100
+				}
+			available = {
+					is_subject = no
+					has_capitulated = no
+					has_war = no
+				}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		country_event = red_russia.14
+		}
+	}
+	focus = {
+		id = SOV_arrest_stalin
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SOV_anti_bolshevism
+		}
+		x = 20
+		y = 4
+		ai_will_do = {
+					factor = 100
+				}
+			available = {
+					is_subject = no
+					has_capitulated = no
+					has_war = no
+				}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		country_event = red_russia.15
+		}
+	}
+	focus = {
+		id = SOV_purge_totalism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SOV_arrest_stalin
+		}
+		x = 20
+		y = 5
+		ai_will_do = {
+					factor = 100
+				}
+			available = {
+					is_subject = no
+					has_capitulated = no
+					has_war = no
+				}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_timed_idea = {
+		idea = SOV_anti_totalism
+		days = 365
+			}
+		}
+	}
+	focus = {
+		id = SOV_close_with_germany
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SOV_enforce_syndicalist_sentiment
+		}
+		x = 23
+		y = 3
+		ai_will_do = {
+					factor = 100
+				}
+			available = {
+					is_subject = no
+					has_capitulated = no
+					has_war = no
+					GER = {
+					exists = yes
+					is_puppet = no
+					}
+				}
+				bypass = {
+				NOT = {
+				GER = {
+					exists = yes
+					is_puppet = no
+						}
+					}
+				}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		GER = {
+		country_event = red_russia.19
+			}
+		}
+	}
+	focus = {
+		id = SOV_denounce_populism
+		icon = GFX_goal_unknown
+		cost = 5.50
+		prerequisite = {
+			focus = SOV_close_with_germany
+		}
+		x = 22
+		y = 4
+		ai_will_do = {
+					factor = 100
+				}
+			available = {
+					is_subject = no
+					has_capitulated = no
+					has_war = no
+				}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		if = {
+		limit = {
+		ENG = {
+		has_government = nationalism
+					}
+				}
+				SOV = {
+				add_opinion_modifier = { target = ENG modifier = anti_populism }
+				reverse_add_opinion_modifier = { target = SOV modifier = anti_populism }
+				}
+			}
+		if = {
+		limit = {
+		BRA = {
+		has_government = nationalism
+					}
+				}
+				SOV = {
+				add_opinion_modifier = { target = BRA modifier = anti_populism }
+				reverse_add_opinion_modifier = { target = SOV modifier = anti_populism }
+				}
+			}
+		if = {
+		limit = {
+		RUS = {
+		has_government = nationalism
+					}
+				}
+				SOV = {
+				add_opinion_modifier = { target = RUS modifier = anti_populism }
+				reverse_add_opinion_modifier = { target = SOV modifier = anti_populism }
+				}
+			}
+		}
+	}
+	focus = {
+		id = SOV_purge_bolshevism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SOV_arrest_stalin
+		}
+		x = 22
+		y = 5
+		ai_will_do = {
+					factor = 100
+				}
+			available = {
+					is_subject = no
+					has_capitulated = no
+					has_war = no
+				}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		if = {
+		limit = {
+		has_idea = SOV_anti_totalism
+					}
+					swap_ideas = {
+					remove_idea = SOV_anti_totalism
+					add_timed_idea = {
+						idea = SOV_anti_totalism1
+						days = 365
+						}
+					}
+				}
+		if = {
+		limit = {
+		NOT = {
+		has_idea = SOV_anti_totalism
+					}
+				}
+				add_timed_idea = {
+				idea = SOV_anti_totalism
+				days = 365
+				}
+			}
+		}
+	}
+	focus = {
+		id = SOV_close_with_CNT
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_close_with_germany
+		}
+		x = 24
+		y = 4
+		ai_will_do = {
+					factor = 100
+				}
+			available = {
+					is_subject = no
+					has_capitulated = no
+					has_war = no
+				}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		SOV = {
+				add_opinion_modifier = { target = SPR modifier = pro_syndicalism }
+				reverse_add_opinion_modifier = { target = SOV modifier = pro_syndicalism }
+				}
+		SPR = {
+		add_popularity = {
+		popularity = 0.05
+		ideology = syndicalism
+				}
+			}
+		}
+	}
+	focus = {
+		id = SOV_close_with_CGT
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_close_with_germany
+		}
+		x = 26
+		y = 4
+		ai_will_do = {
+					factor = 100
+				}
+			available = {
+					is_subject = no
+					has_capitulated = no
+					has_war = no
+				}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		SOV = {
+				add_opinion_modifier = { target = FRA modifier = pro_syndicalism }
+				reverse_add_opinion_modifier = { target = SOV modifier = pro_syndicalism }
+				}
+		FRA = {
+		add_popularity = {
+		popularity = 0.05
+		ideology = syndicalism
+				}
+			}
+		}
+	}
+	focus = {
+		id = SOV_close_with_PUA
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_close_with_CNT
+		}
+		prerequisite = {
+			focus = SOV_close_with_CGT
+		}
+		x = 24
+		y = 5
+		ai_will_do = {
+					factor = 100
+				}
+			available = {
+					is_subject = no
+					has_capitulated = no
+					has_war = no
+				}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		SOV = {
+		add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -250
+				producer = SOV
+			}
+		}
+		add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 250
+				producer = PUA
+			}
+		SOV = {
+				add_opinion_modifier = { target = PUA modifier = pro_syndicalism1 }
+				reverse_add_opinion_modifier = { target = SOV modifier = pro_syndicalism1 }
+				}
+		PUA = {
+		add_popularity = {
+		popularity = 0.05
+		ideology = syndicalism
+				}
+			}
+		}
+	}
+	focus = {
+		id = SOV_syndicalist_policies
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_industrial_overview
+		}
+		x = 29
+		y = 1
+
+	}
+	focus = {
+		id = SOV_german_assistance
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_syndicalist_policies
+		}
+		x = 28
+		y = 2
+
+	}
+	focus = {
+		id = SOV_encourage_unionism
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_german_assistance
+		}
+		x = 30
+		y = 3
+
+	}
+	focus = {
+		id = SOV_build_a_new_dam
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_encourage_unionism
+		}
+		x = 28
+		y = 4
+
+	}
+	focus = {
+		id = SOV_encourage_farming
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_encourage_unionism
+		}
+		x = 30
+		y = 4
+
+	}
+	focus = {
+		id = SOV_build_rural_schools
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_build_a_new_dam
+		}
+		prerequisite = {
+			focus = SOV_encourage_farming
+		}
+		x = 27
+		y = 5
+
+	}
+	focus = {
+		id = SOV_collectivize_created_farms
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_encourage_farming
+		}
+		x = 30
+		y = 5
+
+	}
+	focus = {
+		id = SOV_women_in_workplace
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_encourage_unionism
+		}
+		x = 32
+		y = 4
+
+	}
+	focus = {
+		id = SOV_management_tactics
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_women_in_workplace
+		}
+		x = 33
+		y = 5
+
+	}
+	focus = {
+		id = SOV_salary_question
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_build_rural_schools
+		}
+		prerequisite = {
+			focus = SOV_collectivize_created_farms
+		}
+		prerequisite = {
+			focus = SOV_management_tactics
+		}
+		x = 25
+		y = 6
+
+	}
+	focus = {
+		id = SOV_keep_money
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_salary_question
+		}
+		mutually_exclusive = {
+			focus = SOV_scrap_money
+		}
+		x = 24
+		y = 7
+
+	}
+	focus = {
+		id = SOV_scrap_money
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_salary_question
+		}
+		mutually_exclusive = {
+			focus = SOV_keep_money
+		}
+		x = 26
+		y = 7
+
+	}
+	focus = {
+		id = SOV_reforestation
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_collectivize_created_farms
+		}
+		prerequisite = {
+			focus = SOV_management_tactics
+		}
+		x = 31
+		y = 6
+
+	}
+	focus = {
+		id = SOV_irrigation_works
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_reforestation
+		}
+		x = 30
+		y = 7
+
+	}
+	focus = {
+		id = SOV_socialize_wood_industry
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_reforestation
+		}
+		x = 32
+		y = 7
+
+	}
+	focus = {
+		id = SOV_communist_policies
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_industrial_overview
+		}
+		x = 36
+		y = 1
+
+	}
+	focus = {
+		id = SOV_promote_centralized_planners
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SOV_communist_policies
+		}
+		x = 35
+		y = 2
+
+	}
+	focus = {
+		id = SOV_new_five_year_plan
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_communist_policies
+		}
+		x = 38
+		y = 2
+
+	}
+	focus = {
+		id = SOV_construct_leningrad_hydro_plant
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_promote_centralized_planners
+		}
+		prerequisite = {
+			focus = SOV_new_five_year_plan
+		}
+		x = 34
+		y = 3
+
+	}
+	focus = {
+		id = SOV_new_dam
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_construct_leningrad_hydro_plant
+		}
+		x = 35
+		y = 4
+
+	}
+	focus = {
+		id = SOV_create_the_gosplan
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_new_five_year_plan
+		}
+		x = 38
+		y = 3
+
+	}
+	focus = {
+		id = SOV_move_onto_the_farms
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_promote_centralized_planners
+		}
+		prerequisite = {
+			focus = SOV_new_five_year_plan
+		}
+		x = 42
+		y = 3
+
+	}
+	focus = {
+		id = SOV_immediately_collectivize
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_move_onto_the_farms
+		}
+		x = 40
+		y = 4
+
+	}
+	focus = {
+		id = SOV_industrialize_farmland
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_create_the_gosplan
+		}
+		prerequisite = {
+			focus = SOV_move_onto_the_farms
+		}
+		x = 37
+		y = 4
+
+	}
+	focus = {
+		id = SOV_emphasis_heavy_industry
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_industrialize_farmland
+		}
+		prerequisite = {
+			focus = SOV_immediately_collectivize
+		}
+		x = 39
+		y = 5
+
+	}
+	focus = {
+		id = SOV_arrest_wealthy_peasants
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_move_onto_the_farms
+		}
+		x = 43
+		y = 4
+
+	}
+	focus = {
+		id = SOV_force_out_the_kulaks
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_immediately_collectivize
+		}
+		prerequisite = {
+			focus = SOV_arrest_wealthy_peasants
+		}
+		x = 43
+		y = 5
+
+	}
+	focus = {
+		id = SOV_better_agricultural_tools
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_emphasis_heavy_industry
+		}
+		prerequisite = {
+			focus = SOV_force_out_the_kulaks
+		}
+		x = 41
+		y = 6
+
+	}
+	focus = {
+		id = SOV_expand_our_naval_fleet
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_military_overview
+		}
+		x = 48
+		y = 1
+
+	}
+	focus = {
+		id = SOV_modernize_leningrad
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_expand_our_naval_fleet
+		}
+		x = 45
+		y = 2
+
+	}
+	focus = {
+		id = SOV_expand_onega
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_modernize_leningrad
+		}
+		x = 45
+		y = 3
+
+	}
+	focus = {
+		id = SOV_naval_base_coast
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_modernize_leningrad
+		}
+		x = 47
+		y = 3
+
+	}
+	focus = {
+		id = SOV_keep_with_naval_status_quo
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_expand_our_naval_fleet
+		}
+		mutually_exclusive = {
+			focus = SOV_a_new_day
+		}
+		x = 50
+		y = 2
+
+	}
+	focus = {
+		id = SOV_destroyers
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_keep_with_naval_status_quo
+		}
+		x = 48
+		y = 4
+
+	}
+	focus = {
+		id = SOV_invest_in_carriers
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_keep_with_naval_status_quo
+		}
+		x = 49
+		y = 3
+
+	}
+	focus = {
+		id = SOV_naval_aircraft
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_keep_with_naval_status_quo
+		}
+		x = 50
+		y = 4
+
+	}
+	focus = {
+		id = SOV_cruisers
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_keep_with_naval_status_quo
+		}
+		x = 52
+		y = 4
+
+	}
+	focus = {
+		id = SOV_a_new_day
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_expand_our_naval_fleet
+		}
+		mutually_exclusive = {
+			focus = SOV_keep_with_naval_status_quo
+		}
+		x = 54
+		y = 2
+
+	}
+	focus = {
+		id = SOV_naval_technology
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_a_new_day
+		}
+		x = 54
+		y = 3
+
+	}
+	focus = {
+		id = SOV_invest_in_submarines
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_naval_technology
+		}
+		x = 54
+		y = 4
+
+	}
+	focus = {
+		id = SOV_new_types_of_cruisers
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_naval_technology
+		}
+		x = 56
+		y = 4
+
+	}
+	focus = {
+		id = SOV_a_new_air_force
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_military_overview
+		}
+		x = 60
+		y = 1
+
+	}
+	focus = {
+		id = SOV_new_technology
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_a_new_air_force
+		}
+		x = 62
+		y = 2
+
+	}
+	focus = {
+		id = SOV_new_fighters
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_new_technology
+		}
+		x = 61
+		y = 3
+
+	}
+	focus = {
+		id = SOV_nighttime_training
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_new_technology
+		}
+		x = 59
+		y = 3
+
+	}
+	focus = {
+		id = SOV_prioritize_air_support
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_nighttime_training
+		}
+		prerequisite = {
+			focus = SOV_new_fighters
+		}
+		x = 58
+		y = 4
+
+	}
+	focus = {
+		id = SOV_inspiration_from_germany
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_new_technology
+		}
+		x = 63
+		y = 3
+
+	}
+	focus = {
+		id = SOV_adopt_german_models
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_inspiration_from_germany
+		}
+		x = 62
+		y = 4
+
+	}
+	focus = {
+		id = SOV_bomber_aircraft
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_new_fighters
+		}
+		prerequisite = {
+			focus = SOV_adopt_german_models
+		}
+		x = 61
+		y = 5
+
+	}
+	focus = {
+		id = SOV_best_ideas_tactics
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_inspiration_from_germany
+		}
+		x = 65
+		y = 4
+
+	}
+	focus = {
+		id = SOV_army_focus
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_military_overview
+		}
+		x = 71
+		y = 1
+
+	}
+	focus = {
+		id = SOV_reform_the_militias
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_army_focus
+		}
+		mutually_exclusive = {
+			focus = SOV_form_a_proper_army
+		}
+		x = 68
+		y = 2
+
+	}
+	focus = {
+		id = SOV_reform_officers
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_reform_the_militias
+		}
+		x = 67
+		y = 3
+
+	}
+	focus = {
+		id = SOV_guerrilla_tactics
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_reform_the_militias
+		}
+		x = 69
+		y = 3
+
+	}
+	focus = {
+		id = SOV_prioritize_artillery
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_reform_officers
+		}
+		prerequisite = {
+			focus = SOV_guerrilla_tactics
+		}
+		x = 68
+		y = 4
+
+	}
+	focus = {
+		id = SOV_keep_the_command
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_reform_the_militias
+		}
+		x = 71
+		y = 3
+
+	}
+	focus = {
+		id = SOV_less_division_training_time
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_guerrilla_tactics
+		}
+		prerequisite = {
+			focus = SOV_keep_the_command
+		}
+		x = 70
+		y = 4
+
+	}
+	focus = {
+		id = SOV_red_army_militias
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_prioritize_artillery
+		}
+		prerequisite = {
+			focus = SOV_less_division_training_time
+		}
+		x = 69
+		y = 5
+
+	}
+	focus = {
+		id = SOV_form_a_proper_army
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_army_focus
+		}
+		mutually_exclusive = {
+			focus = SOV_reform_the_militias
+		}
+		x = 74
+		y = 2
+
+	}
+	focus = {
+		id = SOV_cleanse_the_command
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_form_a_proper_army
+		}
+		x = 73
+		y = 3
+
+	}
+	focus = {
+		id = SOV_disband_militias
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_form_a_proper_army
+		}
+		x = 76
+		y = 3
+
+	}
+	focus = {
+		id = SOV_proper_command
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_cleanse_the_command
+		}
+		prerequisite = {
+			focus = SOV_disband_militias
+		}
+		x = 74
+		y = 4
+
+	}
+	focus = {
+		id = SOV_mass_assault_doctorines
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_proper_command
+		}
+		x = 71
+		y = 5
+
+	}
+	focus = {
+		id = SOV_refocus_factories
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_proper_command
+		}
+		x = 74
+		y = 5
+
+	}
+	focus = {
+		id = SOV_expand_city_sizes
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_force_workers_into_cities
+		}
+		x = 28
+		y = 7
+
+	}
+	focus = {
+		id = SOV_rationizing
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_food_stamp_alternative
+		}
+		x = 24
+		y = 9
+
+	}
+	focus = {
+		id = SOV_reorganize_equipment
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_disband_militias
+		}
+		x = 77
+		y = 5
+
+	}
+	focus = {
+		id = SOV_siphon_oil_deposits
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_expand_city_sizes
+		}
+		x = 29
+		y = 8
+
+	}
+	focus = {
+		id = SOV_go_with_leninism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SOV_enforce_bolshevism
+		}
+		mutually_exclusive = {
+			focus = SOV_sympathize_with_totalism
+		}
+		x = 7
+		y = 5
+
+	}
+	focus = {
+		id = SOV_focus_on_the_church
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SOV_reverse_the_constitution
+		}
+		prerequisite = {
+			focus = SOV_communist_ideals
+		}
+		x = 7
+		y = 6
+
+	}
+	focus = {
+		id = SOV_force_the_church_out
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SOV_focus_on_the_church
+		}
+		x = 9
+		y = 7
+
+	}
+	focus = {
+		id = SOV_stick_with_status_quo
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SOV_discourage_germany
+		}
+		mutually_exclusive = {
+			focus = SOV_cut_germany_off_completely
+		}
+		x = 13
+		y = 7
+
+	}
+	focus = {
+		id = SOV_institute_class_based_violence
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SOV_force_the_church_out
+		}
+		prerequisite = {
+			focus = SOV_cult_of_personality
+		}
+		x = 8
+		y = 8
+
+	}
+	focus = {
+		id = SOV_forever_destroy_class_enemies
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SOV_institute_class_based_violence
+		}
+		prerequisite = {
+			focus = SOV_eliminate_landlordism
+		}
+		x = 9
+		y = 9
+
+	}
+	focus = {
+		id = SOV_declare_the_soviet_union
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SOV_forever_destroy_class_enemies
+		}
+		prerequisite = {
+			focus = SOV_eliminate_landlordism
+		}
+		x = 11
+		y = 10
+
+	}
+	focus = {
+		id = SOV_anarcho_syndicalism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SOV_from_each_according_to_needs
+		}
+		x = 15
+		y = 4
+
+	}
+	focus = {
+		id = SOV_patriotic_socialism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SOV_promote_democratic_ideals
+		}
+		prerequisite = {
+			focus = SOV_anarcho_syndicalism
+		}
+		x = 15
+		y = 5
+
+	}
+	focus = {
+		id = SOV_blur_class_lines
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SOV_patriotic_socialism
+		}
+		prerequisite = {
+			focus = SOV_police_militias
+		}
+		prerequisite = {
+			focus = SOV_purge_totalism
+		}
+		prerequisite = {
+			focus = SOV_purge_bolshevism
+		}
+		prerequisite = {
+			focus = SOV_close_with_PUA
+		}
+		x = 17
+		y = 6
+
+	}
+	focus = {
+		id = SOV_eliminate_class_tactics
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SOV_blur_class_lines
+		}
+		x = 18
+		y = 7
+
+	}
+	focus = {
+		id = SOV_communal_housing
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SOV_blur_class_lines
+		}
+		x = 21
+		y = 7
+
+	}
+	focus = {
+		id = SOV_state_sponsered_athiesm
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SOV_eliminate_class_tactics
+		}
+		prerequisite = {
+			focus = SOV_communal_housing
+		}
+		x = 19
+		y = 8
+
+	}
+	focus = {
+		id = SOV_pro_feminist_ideas
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SOV_communal_housing
+		}
+		x = 23
+		y = 8
+
+	}
+	focus = {
+		id = SOV_bastion_of_socialism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = SOV_state_sponsered_athiesm
+		}
+		prerequisite = {
+			focus = SOV_pro_feminist_ideas
+		}
+		x = 21
+		y = 9
+
+	}
+	focus = {
+		id = SOV_evaluate_the_ruble
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_new_dam
+		}
+		prerequisite = {
+			focus = SOV_industrialize_farmland
+		}
+		x = 35
+		y = 5
+
+	}
+	focus = {
+		id = SOV_create_a_new_central_bank
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_evaluate_the_ruble
+		}
+		prerequisite = {
+			focus = SOV_emphasis_heavy_industry
+		}
+		x = 37
+		y = 6
+
+	}
+	focus = {
+		id = SOV_no_external_finances
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_evaluate_the_ruble
+		}
+		x = 34
+		y = 6
+
+	}
+	focus = {
+		id = SOV_class_of_educated_workers
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_create_a_new_central_bank
+		}
+		prerequisite = {
+			focus = SOV_better_agricultural_tools
+		}
+		x = 43
+		y = 7
+
+	}
+	focus = {
+		id = SOV_invest_in_oil
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_no_external_finances
+		}
+		prerequisite = {
+			focus = SOV_create_a_new_central_bank
+		}
+		x = 34
+		y = 7
+
+	}
+	focus = {
+		id = SOV_invest_with_rubber
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_invest_in_oil
+		}
+		x = 34
+		y = 8
+
+	}
+	focus = {
+		id = SOV_trash_classic_economic_models
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_create_a_new_central_bank
+		}
+		x = 38
+		y = 7
+
+	}
+	focus = {
+		id = SOV_fund_schools
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_class_of_educated_workers
+		}
+		x = 40
+		y = 8
+
+	}
+	focus = {
+		id = SOV_increase_fishing_industry
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_expand_city_sizes
+		}
+		x = 27
+		y = 8
+
+	}
+	focus = {
+		id = SOV_force_workers_into_cities
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_build_rural_schools
+		}
+		x = 27
+		y = 6
+
+	}
+	focus = {
+		id = SOV_new_naval_dockyards
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_increase_fishing_industry
+		}
+		x = 26
+		y = 9
+
+	}
+	focus = {
+		id = SOV_food_stamp_alternative
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_scrap_money
+		}
+		x = 25
+		y = 8
+
+	}
+	focus = {
+		id = SOV_libertarian_socialism_prosperity
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_rationizing
+		}
+		prerequisite = {
+			focus = SOV_new_naval_dockyards
+		}
+		prerequisite = {
+			focus = SOV_siphon_oil_deposits
+		}
+		x = 27
+		y = 10
+
+	}
+	focus = {
+		id = SOV_the_mighty_air_force
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_prioritize_air_support
+		}
+		prerequisite = {
+			focus = SOV_bomber_aircraft
+		}
+		prerequisite = {
+			focus = SOV_best_ideas_tactics
+		}
+		x = 61
+		y = 6
+
+	}
+}

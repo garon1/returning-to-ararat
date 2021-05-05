@@ -1,0 +1,20 @@
+opinion_modifiers = {
+	GER_anti_bolshevism = {
+		value = 25
+	}
+	GER_anti_syndicalism = {
+		value = -30
+	}
+	anti_populism = {
+	value = -75
+	}
+	persuing_greater_friendship = {
+	value = 18
+	}
+	pro_syndicalism = {
+	value = -30
+	}
+	pro_syndicalism1 = {
+	value = 30
+	}
+}

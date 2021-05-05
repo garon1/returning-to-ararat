@@ -1,0 +1,15 @@
+ARM_parliament = {
+	icon = usa_congress
+	allowed = {
+		original_tag = PUA
+	}
+	scripted_gui = arm_parliament_decision_ui
+	priority = 100
+}
+PUA_american_wars = {
+	icon = eng_appeal_to_imperial_loyalists
+	allowed = {
+		original_tag = PUA
+		}
+		priority = 95
+}

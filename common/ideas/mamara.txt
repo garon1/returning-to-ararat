@@ -1,0 +1,39 @@
+ideas = {
+country = {
+BSP_international_zone = {
+		
+		
+		allowed = {
+			always = no
+		}
+		
+		removal_cost = -1
+
+		picture = bul_supremacy_on_the_bosphorus
+
+		targeted_modifier = {
+				tag = TUR
+				trade_cost_for_target_factor = -0.4
+				extra_trade_to_target_factor = 0.40
+			}
+
+		targeted_modifier = {
+				tag = BUL
+				trade_cost_for_target_factor = -0.4
+				extra_trade_to_target_factor = 0.40
+			}
+
+		targeted_modifier = {
+				tag = GRE
+				trade_cost_for_target_factor = -0.4
+				extra_trade_to_target_factor = 0.40
+			}
+	
+			targeted_modifier = {
+				tag = ENG
+				trade_cost_for_target_factor = -0.4
+				extra_trade_to_target_factor = 0.40
+			}
+		}
+	}
+}

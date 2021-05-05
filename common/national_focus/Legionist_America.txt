@@ -1,0 +1,1145 @@
+focus_tree = {
+	id = Legionist_America
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = LOA
+		}
+	}
+	default = no
+	focus = {
+		id = LOA_look_at_our_problems_to_fix
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 16
+		y = 0
+
+	}
+	focus = {
+		id = LOA_political_situation
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_look_at_our_problems_to_fix
+		}
+		x = 9
+		y = 1
+
+	}
+	focus = {
+		id = LOA_black_legion
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = LOA_political_situation
+		}
+		mutually_exclusive = {
+			focus = LOA_silver_legion
+		}
+		x = 5
+		y = 2
+
+	}
+	focus = {
+		id = LOA_nourish_radicalism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_black_legion
+		}
+		x = 2
+		y = 3
+
+	}
+	focus = {
+		id = LOA_print_legionist_literature
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_black_legion
+		}
+		x = 5
+		y = 3
+
+	}
+	focus = {
+		id = LOA_promote_aryanism
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_nourish_radicalism
+		}
+		prerequisite = {
+			focus = LOA_print_legionist_literature
+		}
+		x = 3
+		y = 4
+
+	}
+	focus = {
+		id = LOA_invest_in_armament
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_promote_aryanism
+		}
+		x = 1
+		y = 5
+
+	}
+	focus = {
+		id = LOA_take_down_silver_legion
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_black_legion
+		}
+		x = 7
+		y = 3
+
+	}
+	focus = {
+		id = LOA_black_legion_domnation
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_take_down_silver_legion
+		}
+		x = 5
+		y = 4
+
+	}
+	focus = {
+		id = LOA_silver_legion
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = LOA_political_situation
+		}
+		mutually_exclusive = {
+			focus = LOA_black_legion
+		}
+		x = 14
+		y = 2
+
+	}
+	focus = {
+		id = LOA_manhunt_for_enemies
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_black_legion
+			focus = LOA_silver_legion
+		}
+		x = 11
+		y = 3
+
+	}
+	focus = {
+		id = LOA_negotiate_with_capitalists
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_print_legionist_literature
+		}
+		prerequisite = {
+			focus = LOA_manhunt_for_enemies
+		}
+		x = 7
+		y = 4
+
+	}
+	focus = {
+		id = LOA_promote_the_church
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_promote_aryanism
+		}
+		prerequisite = {
+			focus = LOA_negotiate_with_capitalists
+		}
+		x = 4
+		y = 5
+
+	}
+	focus = {
+		id = LOA_root_out_syndicalists
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_manhunt_for_enemies
+		}
+		x = 10
+		y = 4
+
+	}
+	focus = {
+		id = LOA_root_out_federalists
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_manhunt_for_enemies
+		}
+		x = 12
+		y = 4
+
+	}
+	focus = {
+		id = LOA_mandatory_education_for_all
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_root_out_syndicalists
+		}
+		prerequisite = {
+			focus = LOA_root_out_federalists
+		}
+		x = 11
+		y = 5
+
+	}
+	focus = {
+		id = LOA_no_workers_rights
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_mandatory_education_for_all
+		}
+		x = 9
+		y = 6
+
+	}
+	focus = {
+		id = LOA_new_language_initiative
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_promote_aryanism
+		}
+		x = 3
+		y = 6
+
+	}
+	focus = {
+		id = LOA_the_new_market
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_negotiate_with_capitalists
+		}
+		x = 7
+		y = 5
+
+	}
+	focus = {
+		id = LOA_milk_the_factories
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_invest_in_armament
+		}
+		x = 1
+		y = 6
+
+	}
+	focus = {
+		id = LOA_ban_elections_overall
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_new_language_initiative
+		}
+		prerequisite = {
+			focus = LOA_promote_the_church
+		}
+		prerequisite = {
+			focus = LOA_the_new_market
+		}
+		prerequisite = {
+			focus = LOA_milk_the_factories
+		}
+		mutually_exclusive = {
+			focus = LOA_keep_sham_elections
+		}
+		x = 12
+		y = 7
+
+	}
+	focus = {
+		id = LOA_we_are_on_our_own
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_the_new_market
+		}
+		x = 5
+		y = 6
+
+	}
+	focus = {
+		id = LOA_purge_black_legionists
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_silver_legion
+		}
+		x = 18
+		y = 3
+
+	}
+	focus = {
+		id = LOA_isolationist_policies
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_purge_black_legionists
+		}
+		x = 16
+		y = 4
+
+	}
+	focus = {
+		id = LOA_militarism_glory
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_isolationist_policies
+		}
+		x = 14
+		y = 5
+
+	}
+	focus = {
+		id = LOA_nationwide_unity
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_purge_black_legionists
+		}
+		x = 19
+		y = 4
+
+	}
+	focus = {
+		id = LOA_enforce_civilian_loyalty
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_isolationist_policies
+		}
+		prerequisite = {
+			focus = LOA_nationwide_unity
+		}
+		x = 16
+		y = 5
+
+	}
+	focus = {
+		id = LOA_manifest_destiny_mentality
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_militarism_glory
+		}
+		prerequisite = {
+			focus = LOA_enforce_civilian_loyalty
+		}
+		x = 13
+		y = 6
+
+	}
+	focus = {
+		id = LOA_new_banking_strategies
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_enforce_civilian_loyalty
+		}
+		x = 15
+		y = 7
+
+	}
+	focus = {
+		id = LOA_invite_populist_foreign_aid
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_nationwide_unity
+		}
+		x = 18
+		y = 5
+
+	}
+	focus = {
+		id = LOA_privatize_various_industries
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_invite_populist_foreign_aid
+		}
+		x = 17
+		y = 6
+
+	}
+	focus = {
+		id = LOA_integrate_legionist_diasporas
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_nationwide_unity
+		}
+		x = 21
+		y = 6
+
+	}
+	focus = {
+		id = LOA_dudley_youth_clubs
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_privatize_various_industries
+		}
+		prerequisite = {
+			focus = LOA_integrate_legionist_diasporas
+		}
+		x = 19
+		y = 7
+
+	}
+	focus = {
+		id = LOA_go_our_own_way
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_manifest_destiny_mentality
+		}
+		prerequisite = {
+			focus = LOA_new_banking_strategies
+		}
+		prerequisite = {
+			focus = LOA_dudley_youth_clubs
+		}
+		x = 16
+		y = 8
+
+	}
+	focus = {
+		id = LOA_industrial_focus
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_look_at_our_problems_to_fix
+		}
+		x = 26
+		y = 1
+
+	}
+	focus = {
+		id = LOA_job_plans
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_industrial_focus
+		}
+		x = 26
+		y = 2
+
+	}
+	focus = {
+		id = LOA_infrastructure_focus
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_job_plans
+		}
+		x = 23
+		y = 3
+
+	}
+	focus = {
+		id = LOA_refurbish_railroads
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_infrastructure_focus
+		}
+		x = 21
+		y = 4
+
+	}
+	focus = {
+		id = LOA_renew_broken_roads
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_infrastructure_focus
+		}
+		x = 26
+		y = 4
+
+	}
+	focus = {
+		id = LOA_industry_focus
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_job_plans
+		}
+		x = 30
+		y = 3
+
+	}
+	focus = {
+		id = LOA_divert_funds_to_northern_states
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_industry_focus
+		}
+		x = 29
+		y = 4
+
+	}
+	focus = {
+		id = LOA_divert_funds_south
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_industry_focus
+		}
+		x = 31
+		y = 4
+
+	}
+	focus = {
+		id = LOA_fund_military_tree
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_divert_funds_to_northern_states
+		}
+		prerequisite = {
+			focus = LOA_divert_funds_south
+		}
+		x = 28
+		y = 5
+
+	}
+	focus = {
+		id = LOA_civilian_economical_trees
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_divert_funds_south
+		}
+		prerequisite = {
+			focus = LOA_divert_funds_to_northern_states
+		}
+		x = 32
+		y = 5
+
+	}
+	focus = {
+		id = LOA_seek_privatized_funding
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_fund_military_tree
+			focus = LOA_civilian_economical_trees
+		}
+		x = 30
+		y = 6
+
+	}
+	focus = {
+		id = LOA_expand_operations_in_another_state
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_seek_privatized_funding
+		}
+		prerequisite = {
+			focus = LOA_fund_military_tree
+		}
+		x = 31
+		y = 7
+
+	}
+	focus = {
+		id = LOA_send_aid_for_civilian_boosting
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_seek_privatized_funding
+		}
+		prerequisite = {
+			focus = LOA_civilian_economical_trees
+		}
+		x = 33
+		y = 7
+
+	}
+	focus = {
+		id = LOA_expand_metropolitians
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_send_aid_for_civilian_boosting
+		}
+		x = 32
+		y = 8
+
+	}
+	focus = {
+		id = LOA_military_focuses
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_look_at_our_problems_to_fix
+		}
+		x = 39
+		y = 1
+
+	}
+	focus = {
+		id = LOA_rebuild_army
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_military_focuses
+		}
+		x = 36
+		y = 2
+
+	}
+	focus = {
+		id = LOA_bring_army_morale
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_rebuild_army
+		}
+		x = 34
+		y = 3
+
+	}
+	focus = {
+		id = LOA_new_technologies
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_rebuild_army
+		}
+		x = 36
+		y = 3
+
+	}
+	focus = {
+		id = LOA_lower_conscription_standards
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_new_technologies
+		}
+		x = 36
+		y = 4
+
+	}
+	focus = {
+		id = LOA_new_conscription
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_lower_conscription_standards
+		}
+		x = 37
+		y = 5
+
+	}
+	focus = {
+		id = LOA_add_radios
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_bring_army_morale
+		}
+		prerequisite = {
+			focus = LOA_new_technologies
+		}
+		x = 39
+		y = 4
+
+	}
+	focus = {
+		id = LOA_tank_divisions
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_new_conscription
+		}
+		prerequisite = {
+			focus = LOA_add_radios
+		}
+		x = 38
+		y = 6
+
+	}
+	focus = {
+		id = LOA_prepare_our_airforce
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_military_focuses
+		}
+		x = 42
+		y = 2
+
+	}
+	focus = {
+		id = LOA_expand_time_for_duty
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_prepare_our_airforce
+		}
+		x = 40
+		y = 3
+
+	}
+	focus = {
+		id = LOA_coordinate_new_techniques
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_prepare_our_airforce
+		}
+		x = 43
+		y = 3
+
+	}
+	focus = {
+		id = LOA_expand_air_bases
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_coordinate_new_techniques
+		}
+		prerequisite = {
+			focus = LOA_expand_time_for_duty
+		}
+		x = 42
+		y = 4
+
+	}
+	focus = {
+		id = LOA_diversify_the_force
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_expand_air_bases
+		}
+		x = 40
+		y = 5
+
+	}
+	focus = {
+		id = LOA_night_time_training
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_expand_air_bases
+		}
+		x = 42
+		y = 5
+
+	}
+	focus = {
+		id = LOA_new_military_plane_production
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_expand_air_bases
+		}
+		x = 45
+		y = 5
+
+	}
+	focus = {
+		id = LOA_evaluate_the_navy
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_military_focuses
+		}
+		x = 47
+		y = 2
+
+	}
+	focus = {
+		id = LOA_new_naval_pride
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_evaluate_the_navy
+		}
+		x = 49
+		y = 3
+
+	}
+	focus = {
+		id = LOA_new_cruisers
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_new_naval_pride
+		}
+		x = 47
+		y = 4
+
+	}
+	focus = {
+		id = LOA_focus_outside_of_seattle
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_new_naval_pride
+		}
+		x = 50
+		y = 4
+
+	}
+	focus = {
+		id = LOA_new_battleships
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_new_cruisers
+		}
+		prerequisite = {
+			focus = LOA_focus_outside_of_seattle
+		}
+		x = 48
+		y = 5
+
+	}
+	focus = {
+		id = LOA_naval_expeditions
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_new_naval_pride
+		}
+		x = 52
+		y = 4
+
+	}
+	focus = {
+		id = LOA_bring_in_officers
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_focus_outside_of_seattle
+		}
+		prerequisite = {
+			focus = LOA_naval_expeditions
+		}
+		x = 51
+		y = 5
+
+	}
+	focus = {
+		id = LOA_submarine_ussage
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_new_battleships
+		}
+		prerequisite = {
+			focus = LOA_bring_in_officers
+		}
+		x = 48
+		y = 6
+
+	}
+	focus = {
+		id = LOA_take_note_of_russia
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_naval_expeditions
+		}
+		x = 54
+		y = 5
+
+	}
+	focus = {
+		id = LOA_take_note_of_japan
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_naval_expeditions
+		}
+		x = 56
+		y = 5
+
+	}
+	focus = {
+		id = LOA_new_naval_academy
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_take_note_of_russia
+		}
+		prerequisite = {
+			focus = LOA_take_note_of_japan
+		}
+		x = 55
+		y = 6
+
+	}
+	focus = {
+		id = LOA_the_navy_of_1000_years
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_submarine_ussage
+		}
+		prerequisite = {
+			focus = LOA_new_naval_academy
+		}
+		x = 50
+		y = 7
+
+	}
+	focus = {
+		id = LOA_keep_sham_elections
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = LOA_new_language_initiative
+		}
+		prerequisite = {
+			focus = LOA_promote_the_church
+		}
+		prerequisite = {
+			focus = LOA_the_new_market
+		}
+		prerequisite = {
+			focus = LOA_milk_the_factories
+		}
+		mutually_exclusive = {
+			focus = LOA_ban_elections_overall
+		}
+		x = 10
+		y = 7
+
+	}
+	focus = {
+		id = LOA_create_new_railroads
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_refurbish_railroads
+		}
+		prerequisite = {
+			focus = LOA_bringing_water
+		}
+		x = 23
+		y = 5
+
+	}
+	focus = {
+		id = LOA_trade_lines
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_renew_broken_roads
+		}
+		prerequisite = {
+			focus = LOA_bringing_water
+		}
+		x = 25
+		y = 5
+
+	}
+	focus = {
+		id = LOA_bringing_water
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_infrastructure_focus
+		}
+		x = 23
+		y = 4
+
+	}
+	focus = {
+		id = LOA_construct_electric_dams
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_trade_lines
+		}
+		x = 26
+		y = 6
+
+	}
+	focus = {
+		id = LOA_air_conditioning
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_construct_electric_dams
+		}
+		x = 25
+		y = 7
+
+	}
+	focus = {
+		id = LOA_expand_the_rail_line
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_create_new_railroads
+		}
+		x = 23
+		y = 6
+
+	}
+	focus = {
+		id = LOA_agriculture_focus
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_expand_the_rail_line
+		}
+		prerequisite = {
+			focus = LOA_air_conditioning
+		}
+		prerequisite = {
+			focus = LOA_seek_privatized_funding
+		}
+		x = 29
+		y = 8
+
+	}
+	focus = {
+		id = LOA_water_canals_for_farms
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_agriculture_focus
+		}
+		x = 28
+		y = 9
+
+	}
+	focus = {
+		id = LOA_farming_techniques_study
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_agriculture_focus
+		}
+		x = 30
+		y = 9
+
+	}
+	focus = {
+		id = LOA_expand_widwestern_farms
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_water_canals_for_farms
+		}
+		prerequisite = {
+			focus = LOA_farming_techniques_study
+		}
+		x = 28
+		y = 10
+
+	}
+	focus = {
+		id = LOA_feed_whole_country_act
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_expand_widwestern_farms
+		}
+		x = 27
+		y = 11
+
+	}
+	focus = {
+		id = LOA_expand_operations_in_arizona
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_seek_privatized_funding
+		}
+		prerequisite = {
+			focus = LOA_fund_military_tree
+		}
+		x = 28
+		y = 7
+
+	}
+	focus = {
+		id = LOA_use_countries_for_experience
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_bring_army_morale
+		}
+		x = 34
+		y = 4
+
+	}
+	focus = {
+		id = LOA_anti_air_preparations
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_use_countries_for_experience
+		}
+		prerequisite = {
+			focus = LOA_new_conscription
+		}
+		x = 34
+		y = 6
+
+	}
+	focus = {
+		id = LOA_expand_the_budget
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_anti_air_preparations
+		}
+		prerequisite = {
+			focus = LOA_tank_divisions
+		}
+		x = 36
+		y = 7
+
+	}
+	focus = {
+		id = LOA_purchase_materials
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LOA_diversify_the_force
+		}
+		prerequisite = {
+			focus = LOA_night_time_training
+		}
+		prerequisite = {
+			focus = LOA_new_military_plane_production
+		}
+		x = 40
+		y = 6
+
+	}
+}

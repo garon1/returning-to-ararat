@@ -1,0 +1,867 @@
+add_namespace = azr
+
+#elections
+country_event = {
+	id = azr.1
+	title = azr.1.t
+	desc = azr.1.d
+	picture = GFX_Capture28
+
+	is_triggered_only = yes
+	
+	option = {
+		name = azr.1.a
+		set_country_flag = AZR_country_finished
+		hidden_effect = {
+		country_event = { id = azr.2 days = 20 }
+		complete_national_focus = AZR_election
+		}
+	}
+}
+country_event = { #hidden election event
+	id = azr.2
+	title = azr.2.t
+	desc = azr.2.d
+	picture = GFX_report_event_persia
+hidden = yes
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { #totalitarianism
+		name = azr.2.a
+		ai_chance = {
+		factor = 30
+		}
+		country_event = azr.6
+		retire_country_leader = yes
+		set_politics = {
+		ruling_party = totalitarianism
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_country_flag = PER_nationalismtt
+		create_country_leader = {
+	name = "Ali-Agha Shikhlinski"
+	picture = "Portrait_Azerbaijan_Ali_Agha_Shikhlinski.tga"
+	expire = "1965.1.1"
+	ideology = totalitarianism_subtype
+}
+
+	}
+	option = { #liberalism again
+		name = azr.2.a
+		ai_chance = {
+		factor = 33
+		}
+		set_country_flag = PER_liberalstt
+		country_event = azr.3
+	}
+	option = { #market socialists
+		name = azr.2.a
+		ai_chance = {
+		factor = 37
+		}
+		set_country_flag = PER_socialismtt
+		retire_country_leader = yes
+		country_event = azr.7
+		set_politics = {
+		ruling_party = market_socialism
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	create_country_leader = {
+	name = "Alsan bey Sefikurdski"
+	picture = "Portrait_Azerbaijan_Alsan_bey_Sefikurdski.tga"
+	expire = "1965.1.1"
+	ideology = market_socialism_subtype
+}
+	}
+}
+#hidden if liberals are elected, if (azr,getleader) will stay in power or be replaced
+country_event = {
+	id = azr.3
+	title = azr.3.t
+	desc = azr.3.d
+	picture = GFX_report_event_azr1
+
+	is_triggered_only = yes
+	hidden = yes
+	option = {#no
+		name = azr.3.a
+		ai_chance = {
+		factor = 55
+		}
+		
+		country_event = azr.4
+		}
+	option = {#yes
+		name = azr.3.b
+		ai_chance = {
+		factor = 45
+		}
+		
+		country_event = azr.5
+		
+		set_politics = {
+		ruling_party = market_liberal
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+		create_country_leader = {
+	name = "Behbud Khan Javanshir"
+	picture = "Portrait_Azerbaijan_Behbud_Khan_Javanshir.tga"
+	expire = "1965.1.1"
+	ideology = market_liberal_subtype
+		}
+	}
+}
+	
+
+#liberal president stays
+country_event = {
+	id = azr.4
+	title = azr.4.t
+	desc = azr.4.d
+	picture = GFX_Capture5
+
+	is_triggered_only = yes
+	
+	option = {
+		name = azr.4.a
+		complete_national_focus = AZR_social_liberals_elected
+	}
+}
+#liberalism stays but new president
+country_event = {
+	id = azr.5
+	title = azr.5.t
+	desc = azr.5.d
+	picture = GFX_Capture5
+
+	is_triggered_only = yes
+	
+	option = {
+		name = azr.5.a
+		complete_national_focus = AZR_social_liberals_elected
+
+	}
+}
+#totalitarianist is elected
+country_event = {
+	id = azr.6
+	title = azr.6.t
+	desc = azr.6.d
+	picture = GFX_Capture5
+
+	is_triggered_only = yes
+	
+	option = {
+		name = azr.6.a
+		complete_national_focus = AZR_right_wing_wins
+		}
+}
+#socialist is elected
+country_event = {
+	id = azr.7
+	title = azr.7.t
+	desc = azr.7.d
+	picture = GFX_Capture5
+
+	is_triggered_only = yes
+	
+	option = {
+		name = azr.7.a
+		complete_national_focus = AZR_leftists_win
+	}
+}
+country_event = { #elections are closed
+	id = azr.8
+	title = azr.8.t
+	desc = azr.8.d
+	picture = GFX_Capture10
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { #totalitarianism
+		name = azr.8.a
+		add_political_power = -125
+		
+		set_politics = {
+		ruling_party = totalitarianism
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = no
+		
+		}
+	}
+}
+#manhunt of those libshards
+country_event = {
+	id = azr.9
+	title = azr.9.t
+	desc = azr.9.d
+	picture = GFX_Capture8
+
+	is_triggered_only = yes
+	
+	option = {
+		name = azr.9.a
+		add_popularity = {
+		popularity = -0.15
+		ideology = social_liberal
+			}
+			add_popularity = {
+		popularity = -0.15
+		ideology = market_liberal
+			}
+			hidden_effect = {
+		news_event = { id = news.403 hours = 8 }
+		}
+			ARM = {
+			country_event = { id = azr.10 days = 3}
+			}
+		}
+	}
+#ultimatium to armenia for political prisoners
+country_event = {
+	id = azr.10
+	title = azr.10.t
+	desc = azr.10.d
+	picture = GFX_Capture25
+
+	is_triggered_only = yes
+	
+	option = {
+		name = azr.10.a#we accept
+		ai_chance = {
+		factor = 30
+		}
+			
+			AZR = {
+			country_event = { id = azr.12 hours = 6}
+			}
+		}
+	
+	option = {
+		name = azr.10.b#we dont accept
+		ai_chance = {
+		factor = 70
+		}
+		
+			AZR= {
+			country_event = { id = azr.11 hours = 6}
+			}
+		}
+	}
+
+#they didnt help
+country_event = {
+	id = azr.11
+	title = azr.11.t
+	desc = azr.11.d
+	picture = GFX_Capture25
+
+	is_triggered_only = yes
+	
+	option = {
+		name = azr.11.a#we accept
+		add_political_power = -150
+			add_opinion_modifier = {
+					target = ARM
+					modifier = refused_help
+				}
+				ARM = {
+				add_opinion_modifier = {
+					target = AZR
+					modifier = refused_help
+				}
+			}
+	}
+}
+#they helped
+country_event = {
+	id = azr.12
+	title = azr.12.t
+	desc = azr.12.d
+	picture = GFX_Capture25
+
+	is_triggered_only = yes
+	
+	option = {
+		name = azr.12.a#we accept
+		add_political_power = 150
+			add_opinion_modifier = {
+					target = ARM
+					modifier = took_stand_for_us
+				}
+				ARM = {
+				add_opinion_modifier = {
+					target = AZR
+					modifier = took_stand_for_us
+				}
+			}
+	}
+}
+#constituional convention
+country_event = {
+	id = azr.13
+	title = azr.13.t
+	desc = azr.13.d
+	picture = GFX_Capture7
+
+	is_triggered_only = yes
+	
+	option = {
+		name = azr.13.a#we accept
+		
+		add_political_power = 150
+		add_stability = 0.10
+		}
+
+		}
+	
+
+#break from uca
+country_event = {
+	id = azr.14
+	title = azr.14.t
+	desc = azr.14.d
+	picture = GFX_Capture5
+
+	is_triggered_only = yes
+	
+	option = {
+		name = azr.14.a #we accept
+		
+		AZR = {
+		leave_faction = yes
+		remove_idea = AZR_UCA2
+			}
+					add_opinion_modifier = {
+							target = AZR
+							modifier = withdrew_advisors
+						}
+		}
+	}
+
+#azerbaijan is now an empire
+country_event = {
+	id = azr.15
+	title = azr.15.t
+	desc = azr.15.d
+	picture = GFX_Capture9
+
+	is_triggered_only = yes
+	
+	option = {
+		name = azr.15.a #we accept
+		hidden_effect = {
+		news_event = { id = news.401 hours = 8 }
+		}
+		
+		AZR = {
+		set_cosmetic_tag = AZR_empire
+		818 = {
+				add_core_of = AZR
+				arm_increase_revolt_risk = yes
+				}
+				819 = {
+				arm_increase_revolt_risk = yes
+				add_core_of = AZR
+					}
+					231 = {
+				arm_increase_revolt_risk = yes
+				add_core_of = AZR
+				}
+			}
+		}
+	}
+
+#azerbaijan is now a sultanate dynasty
+country_event = {
+	id = azr.16
+	title = azr.16.t
+	desc = azr.16.d
+	picture = GFX_Capture17
+
+	is_triggered_only = yes
+	
+	option = {
+		name = azr.16.a #we accept
+		hidden_effect = {
+		news_event = { id = news.402 hours = 8 }
+		}
+		AZR = {
+		set_cosmetic_tag = AZR_sultan
+		818 = {
+				add_core_of = AZR
+				arm_increase_revolt_risk = yes
+				}
+				819 = {
+				arm_increase_revolt_risk = yes
+				add_core_of = AZR
+					}
+					231 = {
+				arm_increase_revolt_risk = yes
+				add_core_of = AZR
+				}
+			}
+		}
+	}
+
+#public speeches
+country_event = {
+	id = azr.17
+	title = azr.17.t
+	desc = azr.17.d
+	picture = GFX_Capture11
+
+	is_triggered_only = yes
+	
+	option = {
+		name = azr.17.a #we accept
+		
+		add_stability = 0.15
+		add_popularity = {
+		popularity = 0.09
+		ideology = market_socialism
+			}
+		}
+	}
+
+#strip and exile the rich
+country_event = {
+	id = azr.18
+	title = azr.18.t
+	desc = azr.18.d
+	picture = GFX_Capture1
+
+	is_triggered_only = yes
+	
+	option = {
+		name = azr.18.a #we accept
+		
+		add_stability = 0.1
+		add_manpower = -200
+		add_political_power = 150
+		}
+	}
+
+#azr terminates uca's relationship
+country_event = {
+	id = azr.19
+	title = azr.19.t
+	desc = azr.19.d
+	picture = GFX_Capture6
+
+	is_triggered_only = yes
+	
+	option = {
+		name = azr.19.a #we accept
+		
+		AZR = {
+		add_ideas = AZR_punishment
+			}
+		}
+	}
+
+#reach towards armenia
+country_event = {
+	id = azr.20
+	title = azr.20.t
+	desc = azr.20.d
+	picture = GFX_Capture14
+
+	is_triggered_only = yes
+	
+	option = {
+	ai_chance = {
+		factor = 40
+		}
+		name = azr.20.a #we accept
+		hidden_effect = {
+		news_event = { id = news.404 hours = 8 }
+		}
+		AZR = { add_opinion_modifier = {
+							target = ARM
+							modifier = medium_increase
+						}
+					}
+		add_opinion_modifier = {
+							target = AZR
+							modifier = medium_increase
+						}
+		}
+	option = {
+		name = azr.20.b #we dont accept
+		ai_chance = {
+		factor = 60
+		}
+		
+		AZR = { add_opinion_modifier = {
+							target = ARM
+							modifier = medium_decrease
+						}
+					}
+		add_opinion_modifier = {
+							target = AZR
+							modifier = medium_decrease
+						}
+		}	
+}
+#azr geo railway
+country_event = {
+	id = azr.21
+	title = azr.21.t
+	desc = azr.21.d
+	picture = GFX_Capture22
+
+	is_triggered_only = yes
+	
+	option = {
+	ai_chance = {
+		factor = 50
+		}
+		name = azr.21.a #we accept
+		AZR = { add_opinion_modifier = {
+							target = GEO
+							modifier = medium_increase
+						}
+						country_event = azr.22
+					}
+		add_opinion_modifier = {
+							target = GEO
+							modifier = medium_increase
+						}
+		
+	}
+	option = {
+		name = azr.21.b #we dont accept
+		ai_chance = {
+		factor = 50
+		}
+		AZR = {
+		country_event = azr.23
+			}
+		
+	}
+}
+#azr geo railway is accepted
+country_event = {
+	id = azr.22
+	title = azr.22.t
+	desc = azr.22.d
+	picture = GFX_Capture2
+
+	is_triggered_only = yes
+	
+	option = {
+		name = azr.22.a #we accept
+		
+		AZR = { 
+		229 = {
+		add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+					}
+				}
+				229 = {
+		add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+					}
+				}
+				231 = {
+		add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+					}
+				}
+				825 = {
+		add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+					}
+				}
+				863 = {
+		add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+					}
+				}
+			}
+		}
+	}
+#railway isnt built
+country_event = {
+	id = azr.23
+	title = azr.23.t
+	desc = azr.23.d
+	picture = GFX_Capture2
+
+	is_triggered_only = yes
+	
+	option = {
+		name = azr.23.a #damn them
+	}
+}
+#azr uca railway
+country_event = {
+	id = azr.24
+	title = azr.24.t
+	desc = azr.24.d
+	picture = GFX_Capture0
+
+	is_triggered_only = yes
+	
+	option = {
+	ai_chance = {
+		factor = 50
+		}
+		name = azr.24.a #we accept
+		AZR = { add_opinion_modifier = {
+							target = GEO
+							modifier = medium_increase
+						}
+						country_event = azr.25
+					}
+		add_opinion_modifier = {
+							target = GEO
+							modifier = medium_increase
+						}
+		
+	}
+	option = {
+		name = azr.24.b #we dont accept
+		ai_chance = {
+		factor = 50
+		}
+		AZR = {
+		country_event = azr.23
+			}
+		
+	}
+}
+#azr uca railway is accepted
+country_event = {
+	id = azr.25
+	title = azr.25.t
+	desc = azr.25.d
+	picture = GFX_Capture0
+
+	is_triggered_only = yes
+	
+	option = {
+		name = azr.25.a #we accept
+		UCA = {
+		add_political_power = -200
+		}
+		AZR = { 
+		add_political_power = -200
+				229 = {
+		add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+					}
+				}
+				232 = {
+		add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+					}
+				}
+				235 = {
+		add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+					}
+				}
+				234 = {
+		add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+					}
+				}
+			}
+		}
+	}
+#railway isnt built
+country_event = {
+	id = azr.26
+	title = azr.26.t
+	desc = azr.26.d
+	picture = GFX_Capture0
+
+	is_triggered_only = yes
+	
+	option = {
+		name = azr.26.a #damn them
+	}
+}
+#they decide whether theyll stay just like they are, or realize azeri ambitions
+country_event = {
+	id = azr.27
+	title = azr.27.t
+	desc = azr.27.d
+	picture = GFX_Capture3
+
+	is_triggered_only = yes
+	
+	option = {#stay liberalist
+		name = azr.27.a #damn them
+		ai_chance = {
+		factor = 50
+		}
+		set_country_flag = AZR_reforms_finished
+	}
+	option = {#stay liberalist but realize azeri ambitions
+		name = azr.27.b 
+		ai_chance = {
+		factor = 50
+		}
+	}
+}
+#resettle azeris
+country_event = {
+	id = azr.28
+	title = azr.28.t
+	desc = azr.28.d
+	picture = GFX_download
+
+	is_triggered_only = yes
+	
+	option = {
+		name = azr.28.a
+		add_ideas = AZR_resettlement
+	}
+}
+#reforms finished
+country_event = {
+	id = azr.29
+	title = azr.29.t
+	desc = azr.29.d
+	picture = GFX_Capture24
+
+	is_triggered_only = yes
+	
+	option = {
+		name = azr.29.a
+		add_research_slot = 1
+		set_country_flag = AZR_reforms_finished
+	}
+}
+#beginning event
+country_event = {
+	id = azr.30
+	title = azr.30.t
+	desc = azr.30.d
+	picture = GFX_Capture20
+
+	is_triggered_only = yes
+	
+	option = {
+		name = azr.30.a
+		add_political_power = 30
+	}
+}
+#################events just para azerbaijan for things like stability, world news etc etc etc
+#bombing in ganja
+country_event = {
+	id = azr.31
+	title = azr.31.t
+	desc = azr.31.d
+	picture = GFX_Capture32
+
+	is_triggered_only = yes
+	
+	option = {
+		name = azr.31.a
+		add_political_power = -150
+		add_stability = -0.15
+		hidden_effect = {
+		add_manpower = -100
+		news_event = { id = news.400 hours = 8 }
+		}
+	}
+}
+#syndicalists strike
+country_event = {
+	id = azr.32
+	title = azr.32.t
+	desc = azr.32.d
+	picture = GFX_Capture31
+
+	is_triggered_only = yes
+	
+	option = {#let them strike
+		name = azr.32.a
+		add_popularity = {
+		popularity = 0.1
+		ideology = radical_socialism
+		}
+		add_political_power = 50
+		add_stability = 0.05
+	}
+	option = {#crush it
+		name = azr.32.a
+		add_popularity = {
+		popularity = -0.1
+		ideology = radical_socialism
+		}
+		add_political_power = -50
+		add_stability = -0.05
+	}
+}
+#nationalists call for a military takeover
+country_event = {
+	id = azr.33
+	title = azr.33.t
+	desc = azr.33.d
+	picture = GFX_Capture3
+
+	is_triggered_only = yes
+	
+	option = {#let them strike
+		name = azr.33.a
+		add_popularity = {
+		popularity = 0.05
+		ideology = nationalism
+		}
+		add_political_power = -100
+		add_stability = -0.08
+	}
+}
+#book is published calling for armenia to be taken over
+country_event = {
+	id = azr.34
+	title = azr.34.t
+	desc = azr.34.d
+	picture = GFX_Capture31
+
+	is_triggered_only = yes
+	
+	option = {#let them strike
+		name = azr.34.a
+		add_popularity = {
+		popularity = 0.03
+		ideology = nationalism
+		}
+		add_political_power = 100
+		add_stability = 0.02
+		add_war_support = 0.12
+	}
+}

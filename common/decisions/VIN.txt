@@ -1,0 +1,83 @@
+#Category allowed for VIN
+VIN_Indochinese_union = {
+VIN_unite_indochina = {
+
+		icon = jap_conquer_china
+
+		available = {
+		has_country_flag = indo_declared
+		}
+
+		visible = {
+		has_country_flag = indo_declared
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 100
+
+		complete_effect = {
+		if = {
+				limit = {
+					SIA = {
+					controls_state = 847
+					controls_state = 848
+					}
+				}
+				declare_war_on = {
+					target = SIA
+					type = annex_everything
+				}
+			}
+		if = {
+				limit = {
+					country_exists = CAM
+				}
+				declare_war_on = {
+					target = CAM
+					type = annex_everything
+				}
+			}
+
+
+		}
+	}
+
+	VIN_form_indochina = {
+
+		icon = jap_conquer_china
+
+		available = {
+		has_country_flag = VIN_INC
+		}
+
+		visible = {
+		has_country_flag = VIN_INC
+		}
+
+		fire_only_once = yes
+
+		days_remove = 0
+		days_re_enable = 30
+
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+
+		complete_effect = {
+			set_cosmetic_tag = VIN_INC
+			hidden_effect = {
+			add_state_core = 848
+			add_state_core = 847
+			add_state_core = 670
+			set_country_flag = indo_declared
+			unlock_decision_tooltip = VIN_unite_indochina
+			news_event = { id = news.391 hours = 10 }
+			}
+		}
+	}
+}

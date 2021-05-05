@@ -1,0 +1,26 @@
+
+state={
+	id=843
+	name="STATE_843"
+
+	history={
+		owner = UCA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			719 3 
+		}
+		add_core_of = UCA
+
+	}
+
+	provinces={
+		717 719 735 3698 3717 3720 3760 6721 6736 6738 9663 9674 9696 11668 11681 
+	}
+	manpower=400938
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

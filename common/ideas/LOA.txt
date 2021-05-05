@@ -1,0 +1,386 @@
+ideas = {
+country = {
+LOA_spiraling_debt = {
+			
+			
+			allowed = {
+				original_tag = "CAU"
+			}
+
+			
+			
+			removal_cost = -1
+			
+			modifier = {
+					political_power_factor = -0.10
+			}
+		}
+	}
+political_advisor = {	
+		harry_white = {
+		picture = generic_political_advisor_europe_1
+			allowed = {
+				original_tag = "LOA"
+			}
+						traits = { financial_expert }
+		}
+		Charles_Edward_Coughlin = {
+			picture = generic_political_advisor_south_america_2
+			allowed = {
+				original_tag = "LOA"
+			}
+			traits = { economist }
+	}
+		louis_f_hart = {
+		picture = generic_political_advisor_arab_3
+			allowed = {
+				original_tag = "LOA"
+			}
+			
+			traits = { editor }
+			cost = 0
+			do_effect = {
+		
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		C_ben_ross = {
+			picture = generic_political_advisor_india_2
+			allowed = {
+				original_tag = "LOA"
+			}
+			allowed_civil_war = {
+				not = {}
+			}
+
+			traits = { editor }
+			cost = 50
+			do_effect = {
+		
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		joe_mcwilliams = {
+			picture = generic_political_advisor_arab_1
+			allowed = {
+				original_tag = "LOA"
+			}
+			allowed_civil_war = {
+				not = {}
+			}
+			
+			
+			traits = { captain_of_industry }
+			cost = 50
+			do_effect = {
+		
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		phillip_johnson = {
+			picture = generic_political_advisor_europe_4	
+			allowed = {
+				original_tag = "LOA"
+				NOT = {
+
+				}
+			}
+			available = {
+				NOT = {
+
+				}
+			}
+
+			
+			traits = { face_licker }
+			
+			ai_will_do = {
+				factor = 10
+			}		
+		}
+
+		william_griffin = {
+			
+			picture = generic_political_advisor_female_europe
+			
+			allowed = {
+				original_tag = LOA
+
+			}
+			
+			traits = { silent_workhorse }
+		}
+		LOA_William_Shepard = {
+		picture = generic_political_advisor_europe_6
+			allowed = {
+				original_tag = LOA
+
+			}
+			available = {
+			original_tag = LOA
+
+			}
+			
+			traits = { headstrong }
+		}
+
+		gerald_winrod = {
+			
+			picture = generic_political_advisor_arab_3
+			
+			allowed = {
+				original_tag = LOA 
+
+			}
+			
+			traits = { compassionate_gentleman }
+		}
+
+		robert_edward_edmondson = {
+			
+			picture = generic_political_advisor_south_america_3
+			
+			allowed = {
+				original_tag = LOA 
+
+			}
+			
+			traits = { smooth_talking_charmer }
+		}
+
+		ulrich_fleischhauer = {
+			picture = generic_political_advisor_europe_6
+			
+			allowed = {
+				original_tag = LOA 
+
+			}
+			
+			traits = { financial_expert }
+		}
+
+		george_sylvester_viereck = {
+			
+			picture = generic_political_advisor_europe_2
+			
+			allowed = {
+				original_tag = LOA 
+
+			}
+			
+			traits = { war_industrialist }
+		}
+
+		lawerence_dennis = {
+			
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = LOA 
+
+			}
+			
+			traits = { armaments_organizer }
+		}
+		
+		edward_reed_fields = {
+		picture = generic_political_advisor_female_south_america
+			available = {
+				has_intelligence_agency = yes
+				threat > 0.5
+			}
+			
+			allowed = {
+				original_tag = LOA 
+
+			}
+			
+			traits = { head_of_intelligence }
+
+		}
+	}
+
+	theorist = {
+
+		erwin_rommel = {
+			ledger = army
+					
+			picture = generic_army_europe_1
+
+			allowed = {
+				original_tag = LOA
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.30
+			}
+			
+			traits = { military_theorist }
+		}
+		walter_gerlach = {
+			ledger = army
+					
+			picture = generic_political_advisor_europe_2
+
+			allowed = {
+				original_tag = LOA
+			}
+			
+			research_bonus = {
+				nuclear = 0.07
+			}
+			
+			traits = { nuclear_scientist }
+		}
+		walter_wever = {
+			ledger = air
+					
+			picture = generic_air_europe_2
+					
+			allowed = {
+				original_tag = LOA
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+	}
+	# MILITARY
+	army_chief = {
+		
+		george_marshall = {
+			picture = generic_army_europe_4
+			
+			allowed = {
+				original_tag = LOA
+			}
+			
+
+			
+			traits = { army_chief_old_guard }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		walter_kruiger = {
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = LOA
+			}
+			
+
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+	
+		carl_spaatz = {
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = LOA
+			}
+			
+
+			
+			traits = { air_air_superiority_2}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	navy_chief = {
+		
+		chester_nimitz = {
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = LOA
+			}
+			
+
+			
+			traits = { navy_chief_decisive_battle_2  }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	high_command = {
+	
+	
+		courtney_hodges = {
+			ledger = army
+			
+			picture = generic_army_europe_1
+
+			allowed = {
+				original_tag = LOA
+			}
+			
+			traits = { army_artillery_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		joseph_stilwell = {
+			ledger = air
+			
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = LOA
+			}
+			
+			traits = { air_air_superiority_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		mark_clark = {
+			ledger = army
+			
+			picture = generic_army_europe_2
+
+			allowed = {
+				original_tag = LOA
+			}
+			
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

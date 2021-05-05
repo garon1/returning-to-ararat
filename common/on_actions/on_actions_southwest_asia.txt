@@ -1,0 +1,72 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			#For starting garrisons
+			ARM = {
+				add_manpower = 20000
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 2000
+					producer = ARM
+				}
+			}
+
+			#Setup the armenian mechanics
+			ARM = {
+				add_manpower = -6000
+			}
+			799 = {	#Hatay
+			}
+			888 = { #Jerusalem
+				PAL_international_city = yes
+			}
+			815 = { #Erzingan
+				ARM_turkish_separatism = yes
+			}
+			818 = {	#Zangezur
+				ARM_conservative_opposition = yes
+				ARM_azerbaijani_separatism = yes
+			}
+			819 = { #Aras
+				ARM_conservative_opposition = yes
+				ARM_azerbaijani_separatism = yes
+			}
+			800 = { #Van
+				ARM_kurdish_separatism = yes
+			}
+			350 = { #Malatya
+				ARM_turkish_separatism = yes
+			}
+			353 = {	#Karin
+				ARM_conservative_sedition = yes
+				ARM_turkish_separatism = yes
+			}
+			813 = { #Lazistan
+				ARM_conservative_sedition = yes
+				ARM_turkish_separatism = yes
+			}
+			349 = { #Sivas
+				ARM_turkish_separatism = yes
+			}
+			344 = {	#Adana
+				ARM_turkish_separatism = yes
+				ARM_liberal_opposition = yes
+			}
+			352 = { #South East Anatolia
+				ARM_kurdish_separatism = yes
+			}
+			230 = { #Erivan
+			ARM_liberal_opposition = yes
+			}
+			814 = { #Ghars
+				ARM_turkish_separatism = yes
+			}
+			842 = {	#Lachin
+				ARM_azerbaijani_rebels = yes
+			}
+			831 = {	#Karabakh
+				ARM_conservative_sedition = yes
+			}
+		}
+	}
+}

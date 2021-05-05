@@ -1,0 +1,158 @@
+PUA_american_wars = {
+PUA_declare_war_on_california = {
+
+		icon = jap_conquer_china
+
+		available = {
+			original_tag = PUA
+			date > 1939.6.1
+			NOT = {
+			COF = {
+			exists = yes
+				}
+			LOA = {
+			exists = yes
+				}
+			}
+			NOT = {
+			has_country_flag = PUA_cali_expansion
+			}
+		}
+
+		visible = {
+		date > 1939.6.1
+			NOT = {
+			COF = {
+			exists = yes
+				}
+			LOA = {
+			exists = yes
+				}
+			}
+		original_tag = PUA
+		NOT = {
+			has_country_flag = PUA_cali_expansion
+			}
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 25
+		}
+		cost = 0
+
+		complete_effect = {
+		declare_war_on = {
+				target = LOA
+				type = annex_everything
+			}
+		}
+	}
+PUA_declare_war_on_texas = {
+
+		icon = jap_conquer_china
+
+		available = {
+			original_tag = PUA
+			date > 1939.6.1
+			NOT = {
+			COF = {
+			exists = yes
+				}
+			LOA = {
+			exists = yes
+				}
+			}
+			NOT = {
+			has_country_flag = PUA_texas_agreement
+			}
+		}
+
+		visible = {
+		date > 1939.6.1
+			NOT = {
+			COF = {
+			exists = yes
+				}
+			LOA = {
+			exists = yes
+				}
+			}
+		original_tag = PUA
+		NOT = {
+			has_country_flag = PUA_texas_agreement
+			}
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 25
+		}
+		cost = 0
+
+		complete_effect = {
+		declare_war_on = {
+				target = LOA
+				type = annex_everything
+			}
+		}
+	}
+PUA_declare_war_on_confederates = {
+
+		icon = jap_conquer_china
+
+		available = {
+			original_tag = PUA
+			date > 1939.6.1
+		}
+
+		visible = {
+		original_tag = PUA
+		date > 1939.6.1
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 0
+
+		complete_effect = {
+		declare_war_on = {
+				target = COF
+				type = annex_everything
+			}
+		}
+	}
+PUA_declare_war_on_legion = {
+
+		icon = jap_conquer_china
+
+		available = {
+			original_tag = PUA
+			date > 1939.6.1
+		}
+
+		visible = {
+		original_tag = PUA
+		date > 1939.6.1
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 0
+
+		complete_effect = {
+		declare_war_on = {
+				target = LOA
+				type = annex_everything
+			}
+		}
+	}
+}

@@ -1,0 +1,60 @@
+SOV_low_left_support = {
+	custom_effect_tooltip = SOV_low_left_support
+	hidden_effect = {
+		if = {
+			limit = { is_owned_by = SOV }
+			if = {
+				limit = {
+					has_dynamic_modifier = { modifier = low_left_support }
+				}
+				remove_dynamic_modifier = { modifier = low_left_support }
+			}
+			if = {
+				limit = {
+					NOT = { has_dynamic_modifier = { modifier = low_left_support } }
+				}
+				add_dynamic_modifier = { modifier = low_left_support }
+			}
+		}
+	}
+}
+SOV_general_left_support = {
+	custom_effect_tooltip = SOV_general_left_support
+	hidden_effect = {
+		if = {
+			limit = { is_owned_by = SOV }
+			if = {
+				limit = {
+					has_dynamic_modifier = { modifier = general_left_support }
+				}
+				remove_dynamic_modifier = { modifier = general_left_support }
+			}
+			if = {
+				limit = {
+					NOT = { has_dynamic_modifier = { modifier = general_left_support } }
+				}
+				add_dynamic_modifier = { modifier = general_left_support }
+			}
+		}
+	}
+}
+SOV_high_left_support = {
+	custom_effect_tooltip = SOV_high_left_support
+	hidden_effect = {
+		if = {
+			limit = { is_owned_by = SOV }
+			if = {
+				limit = {
+					has_dynamic_modifier = { modifier = high_left_support }
+				}
+				remove_dynamic_modifier = { modifier = high_left_support }
+			}
+			if = {
+				limit = {
+					NOT = { has_dynamic_modifier = { modifier = high_left_support } }
+				}
+				add_dynamic_modifier = { modifier = high_left_support }
+			}
+		}
+	}
+}

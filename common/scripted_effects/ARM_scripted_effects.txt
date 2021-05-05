@@ -1,0 +1,122 @@
+#######################################
+###Thanks to shadow of sevres mod for this code because this was a bitch to figure out###
+#######################################
+
+ARM_recalc_parliament_icon_frames = { ### Always use this after adding value to the variable, updates the GFX 
+	
+	set_temp_variable = { parliament_temp = armenia_parliament_support } ### Assigns the currrent parliament support to a temporary variable
+	divide_temp_variable = { parliament_temp = armenia_parliament_total } ### Divides the current support by the max value
+	multiply_temp_variable = { parliament_temp = 10 } ### Set it to 10, 1 less than the max because the first frame of the GFX has 0 green seats
+	add_to_temp_variable = { parliament_temp = 1 } ### Adding 1 to the variable in order to make all frames accessable
+	if = {
+		limit = { check_variable = { parliament_temp > 0 } }
+		clamp_temp_variable = {
+			var = parliament_temp
+			min = 1
+			max = 11
+		}
+	}
+	else = {
+		set_temp_variable = { parliament_temp = 1 }
+	}
+	set_variable = { ARM_current_parliament_icon_frame = parliament_temp } ### Sets the current frame number to the one caluclated
+	ARM_parliament_support_majority = yes ### Runs script further down
+}
+
+ARM_parliament_support_add2 = { ### Use this when adding 1-2 support
+	custom_effect_tooltip = ARM_parliament_support_add2_tt ### Custom tooltip
+	set_temp_variable = { temp_factor = random } ### Generates a random value between 0 and 1
+	multiply_temp_variable = { temp_factor = 2 } ### Multiplies the value by 2 to get a value between 0 and 10
+	clamp_temp_variable = { var = temp_factor max = 2 min = 1 } ### Is used to cap the variable, currently set that it can be at most 2 and at least 1
+	add_to_variable = { armenia_parliament_support = temp_factor } ### Increases the support by the value generated
+	round_variable = armenia_parliament_support ### Rounds the support to the nearest int
+	clamp_variable = { var = armenia_parliament_support max = armenia_parliament_total min = 0 } ### Clamps the support value so it can't exceed the maximum
+	ARM_recalc_parliament_icon_frames = yes ### Look at the top of the page for more info
+}
+
+ARM_parliament_support_add5 = { ### Use this when adding 1-5 support
+	custom_effect_tooltip = ARM_parliament_support_add5_tt ### Custom tooltip
+	set_temp_variable = { temp_factor = random } ### Generates a random value between 0 and 1
+	multiply_temp_variable = { temp_factor = 5 } ### Multiplies the value by 5 to get a value between 0 and 10
+	clamp_temp_variable = { var = temp_factor max = 5 min = 1 } ### Is used to cap the variable, currently set that it can be at most 5 and at least 1
+	add_to_variable = { armenia_parliament_support = temp_factor } ### Increases the support by the value generated
+	round_variable = armenia_parliament_support ### Rounds the support to the nearest int
+	clamp_variable = { var = armenia_parliament_support max = armenia_parliament_total min = 0 } ### Clamps the support value so it can't exceed the maximum
+	ARM_recalc_parliament_icon_frames = yes ### Look at the top of the page for more info
+}
+
+ARM_parliament_support_add10 = { ### Use this when adding 6-10 support
+    custom_effect_tooltip = ARM_parliament_support_add10_tt ### Custom tooltip
+    set_temp_variable = { temp_factor = random } ### Generates a random value between 0 and 1
+    multiply_temp_variable = { temp_factor = 10 } ### Multiplies the value by 10 to get a value between 0 and 10
+    clamp_temp_variable = { var = temp_factor max = 10 min = 5 } ### Is used to cap the variable, currently set that it can be at most 10 and at least 1
+    add_to_variable = { armenia_parliament_support  = temp_factor } ### Increases the support by the value generated
+    round_variable = armenia_parliament_support ### Rounds the support to the nearest int
+    clamp_variable = { var = armenia_parliament_support max = armenia_parliament_total min = 0 } ### Clamps the support value so it can't exceed the maximum
+    ARM_recalc_parliament_icon_frames = yes ### Look at the top of the page for more info
+}
+
+ARM_parliament_disapproval = { ### Use this when removing support
+	custom_effect_tooltip = ARM_parliament_disapproval_tt ### Custom tooltip
+	set_temp_variable = { temp_factor = random } ### Generates a random value between 0 and 1
+	multiply_temp_variable = { temp_factor = -10 } ### Multiplies the value by -10 to get a value between 0 and -10
+	clamp_temp_variable = { var = temp_factor max = -1 min = -10 } ### Is used to cap the variable, currently set that it can be at least -10 and at most 1
+	add_to_variable = { armenia_parliament_support = temp_factor } ### Increases the support by the value generated
+	round_variable = armenia_parliament_support ### Rounds the support to the nearest int
+	clamp_variable = { var = armenia_parliament_support max = armenia_parliament_total min = 0 } ### Clamps the support value so it can't exceed the minimum
+	ARM_recalc_parliament_icon_frames = yes ### Look at the top of the page for more info
+}
+
+ARM_parliament_support_remove2 = { ### Use this when removing 1-2 support
+	custom_effect_tooltip = ARM_parliament_support_remove2_tt ### Custom tooltip
+	set_temp_variable = { temp_factor = random } ### Generates a random value between 0 and 1
+	multiply_temp_variable = { temp_factor = -2 } ### Multiplies the value by 2 to get a value between 0 and 10
+	clamp_temp_variable = { var = temp_factor max = -2 min = -1 } ### Is used to cap the variable, currently set that it can be at most 2 and at least 1
+	add_to_variable = { armenia_parliament_support = temp_factor } ### Increases the support by the value generated
+	round_variable = armenia_parliament_support ### Rounds the support to the nearest int
+	clamp_variable = { var = armenia_parliament_support max = armenia_parliament_total min = 0 } ### Clamps the support value so it can't exceed the maximum
+	ARM_recalc_parliament_icon_frames = yes ### Look at the top of the page for more info
+}
+
+ARM_parliament_support_remove5 = { ### Use this when removing 1-5 support
+	custom_effect_tooltip = ARM_parliament_support_remove5_tt ### Custom tooltip
+	set_temp_variable = { temp_factor = random } ### Generates a random value between 0 and 1
+	multiply_temp_variable = { temp_factor = -5 } ### Multiplies the value by 5 to get a value between 0 and 10
+	clamp_temp_variable = { var = temp_factor max = -5 min = -1 } ### Is used to cap the variable, currently set that it can be at most 5 and at least 1
+	add_to_variable = { armenia_parliament_support = temp_factor } ### Increases the support by the value generated
+	round_variable = armenia_parliament_support ### Rounds the support to the nearest int
+	clamp_variable = { var = armenia_parliament_support max = armenia_parliament_total min = 0 } ### Clamps the support value so it can't exceed the maximum
+	ARM_recalc_parliament_icon_frames = yes ### Look at the top of the page for more info
+}
+
+ARM_parliament_support_remove10 = { ### Use this when removing 5-10 support
+	custom_effect_tooltip = ARM_parliament_support_remove10_tt ### Custom tooltip
+	set_temp_variable = { temp_factor = random } ### Generates a random value between 0 and 1
+	multiply_temp_variable = { temp_factor = -10 } ### Multiplies the value by 5 to get a value between 0 and 10
+	clamp_temp_variable = { var = temp_factor max = -10 min = -5 } ### Is used to cap the variable, currently set that it can be at most 5 and at least 1
+	add_to_variable = { armenia_parliament_support = temp_factor } ### Increases the support by the value generated
+	round_variable = armenia_parliament_support ### Rounds the support to the nearest int
+	clamp_variable = { var = armenia_parliament_support max = armenia_parliament_total min = 0 } ### Clamps the support value so it can't exceed the maximum
+	ARM_recalc_parliament_icon_frames = yes ### Look at the top of the page for more info
+}
+
+ARM_parliament_support_remove20 = { ### Use this when removing 15-20 support
+	custom_effect_tooltip = ARM_parliament_support_remove20_tt ### Custom tooltip
+	set_temp_variable = { temp_factor = random } ### Generates a random value between 0 and 1
+	multiply_temp_variable = { temp_factor = -20 } ### Multiplies the value by 5 to get a value between 0 and 10
+	clamp_temp_variable = { var = temp_factor max = -20 min = -15 } ### Is used to cap the variable, currently set that it can be at most 5 and at least 1
+	add_to_variable = { armenia_parliament_disapproval = temp_factor } ### Increases the support by the value generated
+	round_variable = armenia_parliament_disapproval ### Rounds the support to the nearest int
+	clamp_variable = { var = armenia_parliament_disapproval max = armenia_parliament_total min = 0 } ### Clamps the support value so it can't exceed the maximum
+	ARM_recalc_parliament_icon_frames = yes ### Look at the top of the page for more info
+}
+
+ARM_parliament_support_majority = { ### Used to calculate if the number of supportive seats are more than 40
+    if = {
+        limit = { check_variable = { armenia_parliament_support > 40 } }
+        set_country_flag = armenia_parliament_support_majority
+    }
+    else = {
+        clr_country_flag = armenia_parliament_support_majority
+    }
+}

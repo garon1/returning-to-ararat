@@ -1,0 +1,12 @@
+on_actions = {
+	on_startup = {
+		effect = {
+		2 = {
+add_province_modifier = {
+		static_modifiers = { city_rome }
+		province = { id = 9904 }
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,21 @@
+﻿###########################
+# rta_news Events
+###########################
+
+add_namespace = rta_news
+
+# Alexandra Kollontai resigns
+news_event = {
+	id = rta_news.1
+	title = rta_news.1.t
+	desc = rta_news.1.d
+	picture = GFX_rta_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rta_news.1.a
+	}
+}

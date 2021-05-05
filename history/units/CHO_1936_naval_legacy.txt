@@ -1,0 +1,11 @@
+units = {
+	fleet = {
+	task_force = {				
+			name = "Flotilla de Submarinos nro. 2"			
+			location = 5228 # Coquimbo
+			ship = { name = "BACH Capitán O'Brien" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CHO version_name = "Capitán O'Brien Class" } } }
+			ship = { name = "BACH Almirante Simpson" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CHO version_name = "Capitán O'Brien Class" } } }
+			ship = { name = "BACH Capitán Thomson" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CHO version_name = "Capitán O'Brien Class" } } }
+		}
+	}
+}

@@ -1,0 +1,267 @@
+﻿capital = 671 #Hanoi
+
+oob = "VIN_1936"
+
+set_research_slots = 3
+
+country_event = {
+	id = tas_political.1
+	hours = 6
+}
+
+set_autonomy = {
+		target = LAO
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.4
+	}
+
+# Starting tech
+# clone of France
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_recon = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	basic_light_tank = 1
+	improved_light_tank = 1
+	early_fighter = 1
+	naval_bomber1 = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	early_bomber = 1
+	tactical_bomber1 = 1
+	CAS1 = 1
+	trench_warfare = 1
+	fleet_in_being = 1
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		basic_heavy_cruiser = 1
+		early_battleship = 1
+		early_battlecruiser = 1
+		early_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		mtg_transport = 1
+		basic_battery = 1
+		basic_torpedo = 1
+	}
+}
+
+add_ideas = {
+VIN_poor_construction
+VIN_french_payments	
+}
+
+set_politics = {
+	ruling_party = syndicalism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+radical_socialism = 13
+social_democracy = 10
+market_liberal = 3
+social_liberal = 4
+syndicalism = 60
+anarchism = 10
+}
+
+#NOTICE# please watch out for spelling, im using Vietnamese names as they spell them, game might not support these characters!
+### Leader Spam ###
+create_country_leader = {
+	name = "Pham Van Dong"
+	desc = "POLITICS_PHAM_VAN_DONG_DESC"
+	picture = "gfx/leaders/VIE/Portrait_INC_Pham_Van_Dong.tga"
+	expire = "2000.4.29"
+	ideology = market_socialism_subtype
+}
+create_country_leader = {
+	name = "Ta Thu Thau"
+	desc = "POLITICS_TA_THU_THAO_DESC"
+	picture = "gfx/leaders/VIE/Portrait_INC_Ta_Thu_Thau.tga"
+	expire = "1956.9.12"
+	ideology = syndicalism_subtype
+}
+create_country_leader = {
+	name = "Nguyen An Ninh"
+	desc = "POLITICS_NGUYEN_AN_NINH_DESC"
+	picture = "gfx/leaders/VIE/Portrait_INC_Nguyen_An_Ninh.tga"
+	expire = "1974.8.25"
+	ideology = anarchism_subtype
+}
+create_country_leader = {
+	name = "Nguyen An Ninh"
+	desc = "POLITICS_NGUYEN_AN_NINH_DESC"
+	picture = "gfx/leaders/VIE/Portrait_INC_Nguyen_An_Ninh.tga"
+	expire = "1974.8.25"
+	ideology = radical_socialism_subtype
+}
+create_country_leader = {
+	name = "Nguyen Thai Hoc"
+	desc = "POLITICS_NGUYEN_TAI_HOC_DESC"
+	picture = "gfx/leaders/VIE/Portrait_INC_Nguyen_Tai_Hoc.tga"
+	expire = "1977.6.19"
+	ideology = social_democracy_subtype
+}
+create_country_leader = {
+	name = "Bui Quang Chieu"
+	picture = "gfx/leaders/VIE/Portrait_INC_Bui_Quang_Chieu.tga"
+	expire = "1962.1.11"
+	ideology = social_liberal_subtype
+}
+create_country_leader = {
+	name = "Bui Quang Chieu"
+	picture = "gfx/leaders/VIE/Portrait_INC_Bui_Quang_Chieu.tga"
+	expire = "1962.1.11"
+	ideology = market_liberal_subtype
+}
+create_country_leader = {
+	name = "Bui Quang Chieu"
+	picture = "gfx/leaders/VIE/Portrait_INC_Bui_Quang_Chieu.tga"
+	expire = "1962.1.11"
+	ideology = traditional_conservatism_subtype
+}
+create_country_leader = {
+	name = "Truong Tu Anh"
+	picture = "gfx/leaders/VIE/Portrait_INC_Truong_Tu_Anh.tga"
+	expire = "1946.12.5"
+	ideology = totalitarianism_subtype
+}
+create_country_leader = {
+	name = "Truong Tu Anh"
+	picture = "gfx/leaders/VIE/Portrait_INC_Truong_Tu_Anh.tga"
+	expire = "1946.12.5"
+	ideology = monarchism_subtype
+}
+create_country_leader = {
+	name = "Truong Tu Anh"
+	picture = "gfx/leaders/VIE/Portrait_INC_Truong_Tu_Anh.tga"
+	expire = "1946.12.5"
+	ideology = nationalism_subtype
+}
+
+### Corps Commande
+create_corps_commander = {
+	name = "Chu Van Tan"
+	portrait_path = "gfx/leaders/VIE/Portrait_INC_Chu_Van_Tan.tga"
+	traits = { infantry_officer infantry_leader }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Hoang Van Thai"
+	portrait_path = "gfx/leaders/VIE/Portrait_INC_Hoang_Van_Thai.tga"
+	traits = { trickster }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Van Tien Dung"
+	portrait_path = "gfx/leaders/VIE/Portrait_INC_Van_Tien_Dung.tga"
+	traits = { skilled_staffer media_personality }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 4
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Nguyen Son"
+	portrait_path = "gfx/leaders/VIE/Portrait_INC_Nguyen_Son.tga"
+	traits = { career_officer hill_fighter infantry_leader }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 1
+	id = 899
+}
+create_corps_commander = {
+	name = "Nguyen Chi Thanh"
+	portrait_path = "gfx/leaders/VIE/Portrait_INC_Nguyen_Chi_Thanh.tga"
+	traits = { inflexible_strategist infantry_officer commando }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 4
+	id = 900
+}
+create_corps_commander = {
+	name = "Nguyen Binh"
+	portrait_path = "gfx/leaders/VIE/Portrait_INC_Nguyen_Binh.tga"
+	traits = { trickster commando }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+	id = 901
+}
+create_corps_commander = {
+	name = "Ta Xuan Thu"
+	portrait_path = "gfx/leaders/VIE/Portrait_INC_Ta_Xuan_Thu.tga"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+### Naval Commander ###
+create_navy_leader = {
+	name = "Ta Xuan Thu"
+	portrait_path = "gfx/leaders/VIE/Portrait_INC_Ta_Xuan_Thu.tga"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+create_navy_leader = {
+	name = "Tran Van Giang"
+	portrait_path = "gfx/leaders/VIE/Portrait_INC_Tran_Van_Giang.tga"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}

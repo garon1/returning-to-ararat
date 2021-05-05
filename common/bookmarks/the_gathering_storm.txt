@@ -1,0 +1,158 @@
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 1936.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "ARM"
+		default = yes
+		
+		"ENG"={
+			history = "CAU_GATHERING_STORM_DESC"
+			ideology = nationalism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		
+		"USA"={
+			history = "USA_GATHERING_STORM_DESC"
+			ideology = traditional_conservatism
+			ideas = {
+				home_of_the_free
+				great_depression
+				undisturbed_isolation
+			}
+			focuses = {
+				USA_new_nation1
+				USA_topple_syndicalism1
+				USA_interventionism1
+			}
+		}
+		"GER"={
+			history = "GER_GATHERING_STORM_DESC"
+			ideology = syndicalism
+			ideas = {
+				GER_national_revitalization2
+				GER_syndicalist_economy
+				GER_will
+			}
+			focuses = {
+				GER_maintain_allies
+				GER_syndicalist_international
+				GER_revolution_begin
+			}
+		}
+		"JAP"={
+			history = "JAP_GATHERING_STORM_DESC"
+			ideology = monarchism
+			ideas = {
+				state_shintoism
+				JAP_zaibatsus
+				JAP_militarism
+			}	
+			focuses = {
+				JAP_stay_as_we_are
+				JAP_sign_non_aggression_pact_with_usa
+				JAP_announce_ambitions
+			}			
+		}
+		"SOV"={
+			history = "SOV_GATHERING_STORM_DESC"
+			ideology = radical_socialism
+			ideas = {
+			SOV_underdeveloped
+	SOV_land_reforms
+	SOV_alexandra_kollontai
+	SOV_need_of_aid
+			}
+			focuses = {
+			}	
+		}
+
+		"RUS"={
+			history = "RUS_GATHERING_STORM_DESC"
+			ideology = nationalism
+			ideas = {
+				trotskyite_plot
+				home_of_revolution
+			}
+			focuses = {
+				SOV_glory
+				SOV_strike_europe
+				SOV_strike_asia
+			}	
+		}
+
+		"QNG"={
+			history = "QNG_GATHERING_STORM_DESC"
+			ideology = monarchism
+			ideas = {
+				#trotskyite_plot
+				#home_of_revolution
+			}
+			focuses = {
+				#SOV_glory
+				#SOV_strike_europe
+				#SOV_strike_asia
+			}	
+		}
+
+
+
+		"PER"={
+			minor = yes
+			history = "PERSIA_GATHERING_STORM_DESC"
+			ideology = monarchism
+			ideas = {
+				PER_political_clashes
+				PER_rise_of_nationalism
+				PER_ethnic_conflict
+				PER_backward_reforms
+			}
+			focuses = {
+				PER_protect_shah
+				PER_reinvigorate_glory_days
+				PER_for_glory
+			}
+		}
+
+		"AZR"={
+			minor = yes
+			history = "AZR_GATHERING_STORM_DESC"
+			ideology = social_liberal
+			ideas = {
+				AZR_UCA
+				AZR_mad_at_neighbors
+				AZR_liberalization
+			}
+			focuses = {
+				AZR_social_liberals_elected
+				AZR_end_treaty_grozny
+				AZR_proclaim_empire
+			}
+		}
+
+		"ARM"={
+			minor = yes
+			history = "ARM_GATHERING_STORM_DESC"
+			ideology = totalitarianism
+			ideas = {
+			ARM_garegin_nzdeh
+			ARM_disunification
+			ARM_language_barrier
+			}
+			focuses = {
+				ARM_garegin_nzdeh_retires
+				ARM_republican_path
+				ARM_attack_caucasus
+			}
+		}
+		
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

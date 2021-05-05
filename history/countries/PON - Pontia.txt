@@ -1,0 +1,78 @@
+capital = 354
+
+oob = "PON_1936"
+
+country_event = {
+	id = tas_political.1
+	hours = 6
+}
+
+set_research_slots = 2
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_mountaineers = 1
+	tech_support = 1		
+	tech_recon = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_battery = 1
+		basic_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_torpedo = 1
+		coastal_defense_ships = 1
+		pre_dreadnoughts = 1
+		mtg_transport = 1
+	}
+}
+
+set_convoys = 10
+set_politics = {
+	ruling_party = market_liberal 
+	last_election = "1935.6.9"
+	election_frequency = 12
+	elections_allowed = yes # none after offset 1
+}
+set_popularities = {
+market_liberal = 45
+social_liberal = 15
+traditional_conservatism = 40
+}
+
+set_stability = 0.45
+set_war_support = 0.2
+
+create_country_leader = {
+	name = "Nikos Kapetanidis"
+	desc = ""
+	picture = "Portrait_PON_Nikos_Kapetanidis.tga"
+	expire = "1965.1.1"
+	ideology = market_liberal_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Georgios Kaphantaris"
+	desc = "POLITICS_Georgios_Kaphantaris_DESC"
+	picture = "gfx/leaders/GRE/Georgios_Kaphantaris.dds"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
+	traits = {
+		national_integralist
+	}
+}

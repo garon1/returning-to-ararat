@@ -1,0 +1,27 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			375 = {	#Texas
+			COF_texan_separatism = yes
+			}
+			371 = { #Louisiana
+			COF_black_guerillas = yes
+			}
+			370 = {	#Mississippi
+			COF_black_guerillas = yes
+			}
+			367 = { #Alabama
+			COF_black_guerillas = yes
+			}
+			365 = { #Georgia
+			COF_black_guerillas = yes
+			}
+			364 = {	#South Carolina
+			COF_black_guerillas = yes
+			}
+			874 = {	#Southern Texas
+			USA_general_confederate_support = yes
+			}
+		}
+	}
+}

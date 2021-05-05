@@ -1,0 +1,23 @@
+state={
+	id=817
+	name="STATE_817"
+	provinces={
+		10904 13238
+	}
+manpower = 8394
+	
+	state_category = enclave
+
+	history={
+		owner = PER
+		
+		buildings = {
+			infrastructure = 1
+			10904 = {
+				naval_base = 5
+			}
+		}
+		add_claim_by = ARA
+		add_core_of = PER
+	}
+}

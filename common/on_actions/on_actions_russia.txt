@@ -1,0 +1,21 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			208 = {
+			SOV_high_left_support = yes	
+			}
+			244 = {
+			SOV_high_left_support = yes	
+			}
+			264 = {
+			SOV_general_left_support = yes	
+			}
+			216 = {
+			SOV_general_left_support = yes	
+			}
+			215 = {
+			SOV_low_left_support = yes	
+			}
+		}
+	}
+}
