@@ -1380,17 +1380,6 @@ continue_if_invalid = no
 		}
 		x = 30
 		y = 3
-		ai_will_do = {
-			factor = 100
-		}
-	available = {
-			is_subject = no
-			has_capitulated = no
-			has_war = no
-		}
-cancel_if_invalid = yes
-continue_if_invalid = no
-	}
 	focus = {
 		id = SOV_build_a_new_dam
 		icon = GFX_goal_unknown
